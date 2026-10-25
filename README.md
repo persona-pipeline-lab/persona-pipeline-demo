@@ -117,6 +117,15 @@ If you change a template file, regenerate `frozen_hashes.csv` deliberately; the 
 - The default coder is the generating model (a simplification).
 - Synthetic texts cannot show that findings from real data would be reproduced.
 
-## 8. License
+## 8. Status, provenance and how to verify
+
+- **Version.** Tag `v0.1-stage1` is the snapshot that accompanies a Stage 1 research proposal under anonymous review. Author names and a citation will be added at a later stage.
+- **Tested on.** Windows 11 (Python 3.12.10) and Ubuntu via GitHub Actions (Python 3.12): `python -m pytest`, `python demo.py check`, `python demo.py replay` and `python tools/check_forbidden.py`.
+- **Saved run.** `projects/demo_synthetic/RUN_RECORD.md` records the model revision, server version, generation parameters, counts, timing and the two rejected answers.
+- **Synthetic texts.** The six autobiographies were written for this demo; `projects/demo_synthetic/WRITING_NOTES.md` records the writing rules and the checks made (no years, no real names, no real events). They were also compared with the texts of the underlying study (no 12-character overlap) and probed with three commercial models using the study's frozen re-identification prompt (0 of 90 trials named a person of the underlying study under the pre-registered rules).
+- **Integrity.** `projects/_template/templates/frozen_hashes.csv` and `projects/demo_synthetic/outputs_example/manifest.json` hold SHA-256 values; `python demo.py replay` stops if any template, text or relevant config value differs from the saved run.
+- **Not included.** Real autobiographies, real names, the real-data answers, and the analysis code for the study's hypotheses. During review, questions reach the authors through the journal.
+
+## 9. License
 
 Code: Apache-2.0 (`LICENSE`). Documents, templates, scenarios, questions and synthetic texts: CC BY 4.0 (`docs/LICENSE-docs`). Copyright holder: "The authors" (`NOTICE`), anonymous during Stage 1 review; to be updated at Stage 3.

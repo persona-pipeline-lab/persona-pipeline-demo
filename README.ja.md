@@ -92,6 +92,15 @@
 - 既定のコード化は生成と同じモデルです（簡略化）。
 - 合成文章では、実データの知見が再現されることは示せません。
 
-## 7. ライセンス
+## 7. 現在地・由来・確かめ方
+
+- **版**: タグ `v0.1-stage1` は、匿名審査中の Stage 1 提案に添える版です。著者名と引用情報は後の段階で加えます。
+- **動作を確かめた環境**: Windows 11（Python 3.12.10）と、GitHub Actions 上の Ubuntu（Python 3.12）。`python -m pytest`、`python demo.py check`、`python demo.py replay`、`python tools/check_forbidden.py` を実行しています。
+- **保存した実行**: `projects/demo_synthetic/RUN_RECORD.md` に、モデルの版、サーバの版、生成パラメータ、件数、時間、不合格 2 件の内容を記録しています。
+- **合成文章**: 6 本はこのデモのために書き下ろしたものです。`projects/demo_synthetic/WRITING_NOTES.md` に執筆の規律と点検（年号・実名・実在の出来事を置かない）を記録しています。本研究の文章との 12 字一致が 0 であること、本研究の凍結した再同定指示文で商用 3 モデルに問うても本研究の人物を挙げなかったこと（事前登録の規則で 90 試行中 0 件）も確かめています。
+- **改ざんの検知**: `projects/_template/templates/frozen_hashes.csv` と `projects/demo_synthetic/outputs_example/manifest.json` に SHA-256 を置き、`python demo.py replay` は雛形・文章・設定のどれかが保存時と違えば止まります。
+- **含まれないもの**: 実在の自伝、実名、実データの回答、本研究の仮説を検定する分析コード。審査中の問い合わせは誌面（査読過程）を通じて著者に届きます。
+
+## 8. ライセンス
 
 コード: Apache-2.0（`LICENSE`）。文書・雛形・シナリオ・質問・合成文章: CC BY 4.0（`docs/LICENSE-docs`）。著作権者の表記は「The authors」（`NOTICE`）。Stage 1 の審査中は匿名とし、Stage 3 で正式な表記に直す。
