@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot01|C0|international|2",
+ "seq": 50,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "60e4ff315fe0905af8636f020c428ef93acf0f6c182713611a67a288105573c0",
+ "prompt_sha256": "3fd1bbc6122a5c11ed8ff17370b79153351d0390373ee5cc611b5d849985e424",
+ "raw_text": "{\"exp_types\": [\"その他\"], \"confidence\": \"medium\"}",
+ "reasoning_text": "We need to choose all applicable classifications for the experience described in the statement. It describes: \"過去に別市場で同様の規制強化に直面した際、合弁事業を組んで投資を分担し、リスクを軽減した経験があります。今回もパートナーシップで投資を共有する方針を支持します。\"\n\nInterpretation: Past experience of facing similar regulatory tightening in a separate market. They formed a joint venture, shared investment and risk. This is about risk management, joint venture, etc.\n\nWhich categories match? \"危機対処\" (crisis response) could be used if it is crisis. But it's about regulatory tightening, maybe considered environment or risk. The reaction is to mitigate risk, not necessarily crisis.\n\n\"技術・開発\" - not present.\n\n\"海外\" - Not explicitly overseas, but could be different market; nothing says it's overseas. It only says \"別市場\" which could be internal or cross-border. So probably not overseas.\n\n\"創業・立ち上げ\" - not about founding a new company, just joint venture.\n\n\"人・組織\" - no.\n\n\"その他\" - unclear. The experience is a joint venture and risk sharing.\n\nIt might fit \"危機対処\" because facing regulatory tightening can be considered a crisis. But the category specifically deals with \"赤字・倒産危機・事故・不祥事・需要崩壊への対処\". Regulatory tightening isn't exactly those. Could be considered \"危機対処\" as a form of crisis, but maybe too broad.\n\nBetter might be \"その他\" as it doesn't match any of the categories. However, we can consider \"危機対処\" because regulatory tightening can be considered an external threat. Yet the guidelines: we should only pick categories explicitly described. The record \"過去に別市場で同様の規制強化\" implies a regulatory environment crisis? It's not by default \"危機\" like bankruptcy. Might be considered a risk environment. This could be a \"危機対処\" scenario.\n\nBut maybe more appropriate classification is \"その他\" since none of the other categories fit strictly. Let's see: \"海外\" would apply only if the market is overseas; not indicated. \"技術・開発\" no. \"創業・立ち上げ\" no. \"人・組織\" no.\n\nThus pick \"その他\". The confidence likely medium: it's not clearly defined.\n\nTherefore JSON: {\"exp_types\": [\"その他\"], \"confidence\": \"medium\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:23:21.466241+00:00",
+ "timestamp_responded": "2026-10-25T11:23:23.087662+00:00"
+}

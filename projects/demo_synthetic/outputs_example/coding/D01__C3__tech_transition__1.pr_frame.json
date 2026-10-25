@@ -1,0 +1,24 @@
+{
+ "job_id": "D01|C3|tech_transition|1",
+ "seq": 25,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "b6652f87ec8c50da8c991f78f2aabe7a082f4adabd2251946338593f4725b98b",
+ "prompt_sha256": "a4f23142fdccb251af9fa752aa57f4680ca568298e8908cde35692df18103073",
+ "raw_text": "{\"pr_frame\":\"市場競争\",\"confidence\":\"high\"}",
+ "reasoning_text": "We need to identify the principal problem frame based on the description. The description: \"市場シェアが急速に奪われており、競争が激化しているため、事業の継続性が脅かされる問題である。\" Means \"Market share being rapidly taken away, competition intensifying, threatening business continuity.\" So main focus: market competition issues, competition and customer acquisition. That falls under \"市場競争\". So output JSON: {\"pr_frame\":\"市場競争\", \"confidence\":\"high\"}.\n\n",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:21:46.947894+00:00",
+ "timestamp_responded": "2026-10-25T11:21:47.350190+00:00"
+}

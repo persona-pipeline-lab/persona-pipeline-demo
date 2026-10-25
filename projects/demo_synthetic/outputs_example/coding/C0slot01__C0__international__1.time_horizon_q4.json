@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot01|C0|international|1",
+ "seq": 49,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "669dfe4913a633c640e4138ba8e18d6bef8d88b079673bef5ee1d4afb8039766",
+ "prompt_sha256": "4a76ebe7aacc326cea266bdbd13b7474d66c8faa5c98dbf3852606533b4ea3f4",
+ "raw_text": "{\"time_horizon\": 4, \"confidence\": \"medium\"}",
+ "reasoning_text": "We need to parse the reasoning. The discourse: \"提携により投資負担を分散し、現地企業の知見と販路を活用できる。資金負担を軽減しつつ市場成長に参加できるため、リスクを抑えつつ長期的価値維持が可能だ。\" They mention investment burden distributed, use local knowledge and distribution channels, lower capital burden, participate in market growth, risk reduced, long-term value maintenance possible.\n\nThey're emphasizing long-term value maintenance - \"長期的価値維持\". So time horizon maybe 4 or 5. Does mentions of \"market growth\" implies they see future growth benefiting from local partner. Likely long-term oriented: 4 or 5. The style: mention of risk reduction and long-term value maintenance. Good focus on sustaining value over time. There's no explicit time horizon, but \"長期的価値維持\" suggests long-term. I'd assign 4: long-term寄り. Confidence maybe medium because not explicitly saying 5-10 years. Probably 4. Output JSON with confidence \"high\"? The question: \"outer knowledge\" cannot be used. They didn't specify a period, just \"長期的\". Could interpret as >3 years? The scale: 5 is 5-10 years growth, 4 is longer-term oriented but not strictly >5? The phrase \"長期的価値維持\" maybe indicates long-term focus. I'd assign 4. Confidence medium? Likely high. But they didn't specify duration. I'd give medium.\n\nThus, output: {\"time_horizon\": 4, \"confidence\": \"medium\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:23:14.175599+00:00",
+ "timestamp_responded": "2026-10-25T11:23:15.263877+00:00"
+}

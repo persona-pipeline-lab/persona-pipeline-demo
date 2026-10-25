@@ -1,0 +1,24 @@
+{
+ "job_id": "D05|C3W|international|2",
+ "seq": 94,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "d0c1ca685cfa8b5d754a1f0724178d8b2f1da898fe1855cb1128504af1c71307",
+ "prompt_sha256": "3ead308047f4893f2bb5994f72a2ecbf14f8b5b4461b7bd47d38fa0d3cba4a10",
+ "raw_text": "{\"risk_orient\": 4, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to read description and deduce risk orientation. This description: \"長期的な市場成長(10%/年)とブランド・品質優位を活かすためには投資が必須だ。追加投資で自生産体制を確立し、品質差を維持しながらコスト競争力を高める。社内外のステークホルダーへの信頼を維持するため、段階的投資とリスク管理を徹底する。\" So basically they say that for long-term growth they need investment. They aim to achieve self-production to maintain quality & costs. They maintain trust via phased investment and thorough risk management. They do talk about risk management and incremental steps. They still consider risk, but they don't talk about risk aversion. They want to invest. \"段階的投資とリスク管理を徹底する\" indicates some risk management but still invest. So risk orientation is somewhat risk-averse but also willing to invest. They mention risk management fully but still choose to invest. So they want to accept risk but mitigate. So rating around 3 or 4. It's more like risk acceptance but not fully aggressive. They want to invest because of long-term growth, but they use risk management. So arguably 4 (受容寄り) because they accept risk with careful management. Meanwhile 5 would be strong acceptance, but they still emphasize risk management, so slightly cautious. So 4 maybe. Confidence: high. Let's produce JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:26:09.512459+00:00",
+ "timestamp_responded": "2026-10-25T11:26:10.512213+00:00"
+}

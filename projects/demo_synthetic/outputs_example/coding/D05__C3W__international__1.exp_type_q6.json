@@ -1,0 +1,24 @@
+{
+ "job_id": "D05|C3W|international|1",
+ "seq": 93,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "4e7dc545800470cc8d2029f22ea5cfbfe34ccfa8217819439281071877e5bd67",
+ "prompt_sha256": "2f55c24a637e83dd0d90474df255edcbb7747b7b55aa8eceee3f70bea2b47335",
+ "raw_text": "{\"exp_types\": [\"人・組織\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We have to find classifications that match the experience described. The description: \"過去に従業員からの提案を1週間以内に返答し、信頼を築くことで、現場と経営の連携を保った経験があり、現在でもその方針を基に決断に結び付けている。\" This is about responding to employee proposals within a week, building trust, keeping close link between floor and management. It is about people, organization, human resources, organizational operation. So classification \"人・組織\" is the most relevant. The description doesn't mention crisis, technology, overseas, founding, etc. So only \"人・組織.\" Confidence: high. Output JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:26:08.385698+00:00",
+ "timestamp_responded": "2026-10-25T11:26:08.921452+00:00"
+}

@@ -1,0 +1,24 @@
+{
+ "job_id": "D06|C3-mixed|withdrawal|2",
+ "seq": 120,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "a657c738c82d6e1f7ed778d1bbcf83ea94db478b434a9c6f9b7eda7d5ae56f4e",
+ "prompt_sha256": "bebe13bf09d28afa746bb27aa3ec6ebd2f30531be3b185eb4d8573b79d40d421",
+ "raw_text": "{\"exp_types\": [\"危機対処\", \"人・組織\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to classify experiences described in the passage into categories. The passage: \"再建の三年で研究所予算を削減しつつ安全設備を更新した経験が大きく影響しました。その際、従業員や取引先の信頼を保ちつつ投資を継続できたことから、短期的な負担よりも長期的な価値創造を重視する判断基準が確立しました。\"\n\nWe need to pick the categories that fit described experiences. Let's parse:\n\n1) \"再建の三年で研究所予算を削減しつつ安全設備を更新した経験\" - This is in context of \"再建\" - restructuring? Financial crisis? \"再建\" implies crisis management. The experience is about managing budget cuts, possibly in the context of financial strain. That would relate to \"危機対処\" category. They mention \"budget consolidation (削減) and safety equipment updates\". So it is crisis response.\n\n2) Also it's \"研究所\" so maybe \"技術・開発\" but that's in the sense of research about technology or development of equipment? However the category \"技術・開発\" refers to experience in research development, product development, production technology. Here the experience is updated safety equipment. That might be in the realm of research institution, but not necessarily product development. Could be considered \"技術・開発\"? But the passage is about \"budget\" management and decide to invest in safety equipment. Not specifically about research or development of new product. However the category might still apply if the research institution encourages new development. But it's more about investing in safety equipment than product R&D.\n\nThe categories: \"危機対処\" (crisis management/rescue) - appears relevant.\n\n\"技術・開発\" (R&D, product development, production technology) - the passage mentions \"研究所\" and \"安全設備\" meaning safety equipment. That could be considered R&D? Might be \"技術・開発\" but not entirely sure.\n\n\"海外\": no mention.\n\n\"創業・立ち上げ\": no mention.\n\n\"人・組織\": mention \"従業員や取引先の信頼を保ちつつ投資を継続できた\". That indicates people & organization management, building trust etc. So this is \"人・組織\"?\n\nBut the directive: \"根拠にのみ記述された経験のみ拾う（推測しない）\". The passage says: \"再建の三年で研究所予算を削減しつつ安全設備を更新した経験\" -- that's crisis management & budget reduction. The line about \"従業員や取引先の信頼\" refers to people & organization experience. We disregard the aspect of \"valuation of long-term vs short-term\"; that's a judgment pattern.\n\nHence we should include the categories that refer to the experience: \"危機対処\" & \"人・組織\". \"技術・開発\" maybe not necessary, because safety equipment vs R&D? It could be considered tech management, but maybe only if the passage mentions R&D of new tech. But mention \"研究所\" not a research project. It's about budget. So not \"技術・開発\".\n\nThus classification: [\"危機対処\", \"人・組織\"] with high confidence.\n\nLet's produce JSON accordingly.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:27:58.258790+00:00",
+ "timestamp_responded": "2026-10-25T11:28:00.442006+00:00"
+}

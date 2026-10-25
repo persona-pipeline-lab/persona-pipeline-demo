@@ -1,0 +1,24 @@
+{
+ "job_id": "D01|C3|international|1",
+ "seq": 13,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "8fc535f6213022b2ac3545e36ee4d70afc4778b6aceaac1bafffe55315406653",
+ "prompt_sha256": "ee5a929f07e890ff90ed8fd26ad469c904b2fc3bf6e99bacf8bbbf9d0d399e3f",
+ "raw_text": "{\"exp_types\": [\"危機対処\", \"人・組織\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to identify the experience types from the described experience. The passage: \"配管破裂事故で生じた信頼喪失と、社員・顧客・住民に対して謝罪し改善策を提示した経験が、設備投資とステークホルダーへの対応が最重要であると教えてくれた。この体験から、経営判断は安全と透明性を最優先とするようになった。\"\n\nWe need to pick from categories: \"危機対処\" (crisis response, e.g., accident, need collapse etc), \"技術・開発\", \"海外\", \"創業・立ち上げ\", \"人・組織\", \"その他\".\n\nThis experience: a pipe burst accident leading to loss of trust, apology to employees/customers/locals, presented improvement measures. This clearly is crisis response.\n\nIt is about a pipeline accident - that is an incident requiring crisis management. The experience taught about equipment investment and stakeholder response.\n\nAlso we might see if \"人・組織\" - dealing with employees, customers, residents is also human/organizational. But the main experience is crisis. There's no explicit mention of overseas, founding, technical dev. So likely only \"危機対処\" and possibly \"人・組織\".\n\nShould we include \"人・組織\"? The experience involved apologizing to employees, customers, residents; improvement measures. That covers people and stakeholders. Does it classify as \"人・組織\"? The category is for human resources, labor, organization management, mentoring relationships. This is more general stakeholder engagement. Possibly included? But the core event is accident/crisis.\n\nThus we might include both \"危機対処\" and \"人・組織\". The instruction: \"記述に明示された経験のみ拾う（推測しない）.\" The text says \"配管破裂事故で生じた信頼喪失\" and \"謝罪し改善策を提示\" to employees, customers, and residents. That implies crisis and stakeholder communication. So two categories.\n\nConfidence? Hmm we are quite certain about crisis; somewhat moderate about human/organization because not explicitly \"personnel\" but it includes employees. The category's definition: \"人事・労務・組織運営・師弟関係\". We have \"社員\" (employees). The experience involves employees; though it's more about stakeholders. But still aligns with human/organizational management. So high confidence? Hmm I'll set high confidence for crisis, medium for people.\n\nBut the output format expects a single confidence field for the overall listing. We need to select a single confidence high/medium/low. We think high confidence for these categories. So we present:\n\n{\"exp_types\": [\"危機対処\", \"人・組織\"], \"confidence\": \"high\"}\n\nYes.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:21:00.272622+00:00",
+ "timestamp_responded": "2026-10-25T11:21:02.110446+00:00"
+}

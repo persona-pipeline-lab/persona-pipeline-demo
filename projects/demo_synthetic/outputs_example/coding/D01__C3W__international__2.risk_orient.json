@@ -1,0 +1,24 @@
+{
+ "job_id": "D01|C3W|international|2",
+ "seq": 86,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "1b8b5de4d5981d8532a55a279c7b3f466b57c8223c7608490b85a45ac4895878",
+ "prompt_sha256": "c1ff5c1d84db72e5606b20c36569ffa602fdab51aa1afd2ecbc566c522dd879c",
+ "raw_text": "{\"risk_orient\": 2, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to evaluate risk orientation from text. The description: \"提携によって現地生産体制を共有し、投資負担を軽減できる。この方法は規制に適応しつつ市場シェアを守り、従業員の雇用を維持し、地域社会への影響も最小限に抑える。\"\n\nThey mention risk mitigation by sharing production, reducing investment burden, adapting to regulations, maintain market share, maintain employment, minimize community impact. The tone seems cautious, wants to reduce risk via partnership. Focused on stability, risk avoidance. So risk orientation is low risk orientation = 1 or 2. They highlight risk reduction and saving costs. I'd choose 2? They emphasize reducing risk fairly strongly. Since they talk about maintaining employment and minimal impact, suggests risk-averse. I'd choose 2.\n\nConfidence: high.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:25:39.070318+00:00",
+ "timestamp_responded": "2026-10-25T11:25:39.688261+00:00"
+}

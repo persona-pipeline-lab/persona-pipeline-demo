@@ -1,0 +1,24 @@
+{
+ "job_id": "D01|C3-mixed|withdrawal|1",
+ "seq": 109,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "4e260623d003f515c5f40ea5945753ea0ea3fd80b652e201233071fb1a91b1e3",
+ "prompt_sha256": "00abf4927ab944ea76f1ee3d50ee2fbb44a0adbafec752cb5c5e5e036c5917e9",
+ "raw_text": "{\"pr_frame\":\"市場競争\",\"confidence\":\"high\"}",
+ "reasoning_text": "We need to pick main problem frame, focusing on core of statement, not word count. The statement: \"市場成長率が高い上に競合が投資を加速しているため、競争優位が失われる前に我々が取り組む必要があるという問題です。\" It indicates market growth high, competitors accelerating investment, and we need to act before losing competitive advantage. The core is about competition and market growth: a competitive threat. So the frame is \"市場競争\". Not finance, tech, organization, etc. So output JSON. Confidence high.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:27:03.442934+00:00",
+ "timestamp_responded": "2026-10-25T11:27:03.873672+00:00"
+}

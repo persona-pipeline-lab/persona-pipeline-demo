@@ -1,0 +1,24 @@
+{
+ "job_id": "D01|C3-mixed|withdrawal|2",
+ "seq": 110,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "34a51454450156c2f03012de6daabc0a69c22be08ae0a8387a9da378b90a2b58",
+ "prompt_sha256": "071c19e7820cb346d4c7360feea6c8f67da6c83148d461c7949e4705169c6bb5",
+ "raw_text": "{\"exp_types\": [\"海外\", \"創業・立ち上げ\", \"技術・開発\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to pick types from categories. The statement: \"海外工場立ち上げで、技術の差ではなく『理由』を伝えることが重要だと学んだ経験がある。顧客と直接対面し、フィードバックを取り入れて製品を改善することの価値を実感した。\"\n\nThis explicitly states overseas factory set up—overseas experience. Also product development / improvement, but they mention that he learned that reasoning is important, not technological difference, meaning communication matters when doing overseas factory. It's about overseas factory? The categories: \"海外\" (overseas), \"技術・開発\" (technical/development), \"創業・立ち上げ\" (founding/startup). The experience is about overseas factory set-up which is a type of establishment, but the category \"創業・立ち上げ\" is for founding a new business or company, possibly including start of new factories? The phrase \"海外工場立ち上げ\" meaning establishing an overseas factory. So it is more an \"創業・立ち上げ\" (startup). The phrase \"海外工場立ち上げ\" indicates establishing a factory overseas – likely a new venture, so it's a start-up. But the category \"創業・立ち上げ\" might be used for new ventures or new companies, but overseas factory could also be considered a \"立ち上げ\" of a new factory. So we might include both. Also \"技術・開発\" is a bit of a stretch because they mention product improvement, but underlying is not technical skills but communication. But it's about product improvement. The categories for \"技術・開発\" could cover research development, product development, production technology experience. They mention \"製品を改善\" - that might fall under \"技術・開発\" because it is basically product development. So possible classification: overseas, startup, technology/development. Should we include all? Let's see if the statement includes multiple categories: \"海外工場立ち上げ\" includes overseas and startup. Also \"フィードバックを取り入れて製品を改善\" is development. So can list all three.\n\nConfidence? The statement explicitly states overseas factory set up; so overseas. The startup: \"立ち上げ\" implies a new operational set up. So yes. The tech/dev: It says \"製品を改善\" which is product development. So likely yes.\n\nConfidence high.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:27:10.736328+00:00",
+ "timestamp_responded": "2026-10-25T11:27:12.348105+00:00"
+}

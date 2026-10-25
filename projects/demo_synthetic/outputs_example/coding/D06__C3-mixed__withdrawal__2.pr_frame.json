@@ -1,0 +1,24 @@
+{
+ "job_id": "D06|C3-mixed|withdrawal|2",
+ "seq": 120,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "1eed5bcbc3d03e2a1825e05d002ef108ea9e983d1839d4db39166f367fe1ccc5",
+ "prompt_sha256": "0777a69e5067662ea498b1def09bb97cc585c12a81c13ae07248afa5f5809611",
+ "raw_text": "{\"pr_frame\": \"組織ステークホルダー\", \"confidence\": \"high\"}",
+ "reasoning_text": "We need to classify into one of five categories: \"財務収益\", \"市場競争\", \"技術\", \"組織ステークホルダー\", \"複数拮抗\". The description: \"将来の成長機会や技術優位性がある一方、従業員や地域社会への影響が最重要であるため、組織・ステークホルダーの問題として捉える。\". It says that although there are future growth opportunities and competitive advantage from technology, but the impact on employees and local community is most important; thus they see it as an organizational, stakeholder problem. They emphasize the stakeholders. So the class is \"組織ステークホルダー\". Confidence high. Output JSON.\n\nMake sure format exactly: {\"pr_frame\": \"組織ステークホルダー\", \"confidence\": \"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:27:55.553661+00:00",
+ "timestamp_responded": "2026-10-25T11:27:56.189186+00:00"
+}

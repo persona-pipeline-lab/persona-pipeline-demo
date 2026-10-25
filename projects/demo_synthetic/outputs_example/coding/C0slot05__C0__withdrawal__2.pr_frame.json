@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot05|C0|withdrawal|2",
+ "seq": 46,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "6efd6c5aa46e8a24188d8e21b3149d5e85dc4e0054cf6c0ca02b4e0e6b07cc35",
+ "prompt_sha256": "0eb170338438fee9c5d8cde2df41b799bc1ecefee7a96c1ed223f82af6834845",
+ "raw_text": "{\"pr_frame\":\"市場競争\",\"confidence\":\"high\"}",
+ "reasoning_text": "The user says: \"You are a coding worker for management science research. The following is a brief statement by a respondent who explains what issue the situation is: 'This situation is what problem?'. Based on just the statement, select the main problem frame among classes: '財務収益', '市場競争', '技術', '組織ステークホルダー', '複数拮抗'. Rules: choose by what the statement calls the core issue. No external knowledge. Output only JSON: {\"pr_frame\": \"...\", \"confidence\":\"...\"}.\" The statement: \"市場・競争の問題として、競合優位性の確保と顧客獲得の鈍化が主な課題です。\" This clearly focuses on market competition: ensuring competitive advantage, customer acquisition slowdown. So answer: market competition. Confidence: high.\n\nThus output: {\"pr_frame\": \"市場競争\", \"confidence\": \"high\"}.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:23:02.346226+00:00",
+ "timestamp_responded": "2026-10-25T11:23:02.997014+00:00"
+}

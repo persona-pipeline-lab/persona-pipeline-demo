@@ -1,0 +1,24 @@
+{
+ "job_id": "D02|C3-mixed|withdrawal|2",
+ "seq": 112,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "49a8dfb41dd28bd1eed3a16a028debdfa7342a8066b5a66ce9603d5e1578bb7b",
+ "prompt_sha256": "15e3a8d12ec4f1a789fedc963ed981a87f63584287c1f2e2aa4c8f1fa10c089f",
+ "raw_text": "{\"pr_frame\":\"財務収益\",\"confidence\":\"high\"}",
+ "reasoning_text": "We need to pick one of the frames: \"財務収益\", \"市場競争\", \"技術\", \"組織ステークホルダー\", or \"複数拮抗\". The statement says: \"財務・収益の問題：追加投資を実行できるか、赤字をどう回復できるかが最重要課題です.\" So it's obviously a financial/revenue problem, so \"財務収益\". The confidence should be high. The output must be a JSON: {\"pr_frame\": \"...\", \"confidence\": \"…\"} with classification name exactly as one of the options? The classification names: 「財務収益」（赤字・投資負担・収益性が中心）等. The first is \"財務収益\". So we output that.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:27:17.854845+00:00",
+ "timestamp_responded": "2026-10-25T11:27:18.429172+00:00"
+}

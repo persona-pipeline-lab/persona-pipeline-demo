@@ -1,0 +1,24 @@
+{
+ "job_id": "D04|C3|withdrawal|1",
+ "seq": 7,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "3eb376479798f4345e001ed8316bd12945f1d84bb90c96d456403025cfde54c4",
+ "prompt_sha256": "fbdd087fef17e8e741ec162040a0f0311c8b093158b776906a9f2288d43bf731",
+ "raw_text": "{\"pr_frame\":\"財務収益\",\"confidence\":\"high\"}",
+ "reasoning_text": "We need to choose primary problem frame based on the description. The description states issues: \"財務的に赤字を収支改善し、投資負担を管理しつつ、市場成長を捉えるために事業継続が課題です。\"\n\nMeaning: To continue operations, need to improve financial deficits, manage investment burden, while capturing market growth. The core appears to be financial issues: red flagged by \"赤字\" and \"投資負担\" - financial revenue. However also \"市場成長\" appears, but the focus is on making business continuity, balancing finances while achieving growth. The main frame likely \"財務収益\" because the focus on balancing deficits and investment burdens. So classification: \"財務収益\". Confidence? The description uses financial terms more. So \"high\".",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:20:38.403618+00:00",
+ "timestamp_responded": "2026-10-25T11:20:38.978766+00:00"
+}

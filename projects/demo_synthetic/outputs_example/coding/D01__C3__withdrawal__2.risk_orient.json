@@ -1,0 +1,24 @@
+{
+ "job_id": "D01|C3|withdrawal|2",
+ "seq": 2,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "187dbaadac27fc893cb6a3762c630d4646904766dff06b2a422d5431fcdc6785",
+ "prompt_sha256": "79c975acaab17f5b1b1c8fbca9d78fc6a0e6df503c9efff1d5ebccd2e61d35bd",
+ "raw_text": "{\"risk_orient\":4,\"confidence\":\"high\"}",
+ "reasoning_text": "We need to evaluate risk orientation based on the statement. The statement says: \"市場成長率が高く、技術優位性も依然として有効と見られるので、短期的な赤字は受け止めつつ長期的価値を失わないように投資を継続する。投資に伴うリスクは、徹底した安全管理と顧客への説明で軽減できると確信している。\"\n\nInterpreting: They prioritize future value, invest despite short-term losses. They believe risk can be mitigated through thorough safety measures and customer explanation. So they are risk accepting, but assume risk mitigated. They accept risk but mitigate it. They are not fully risk-averse, they accept the risk, but with controls and confidence. So risk orientation maybe 4 (risk accepting) because they continue investing expecting value. However the language is confident in mitigating risk, so maybe 4, but not 5 because not taking extreme risk. They are risk-accepting but not extremely risk-seeking. So 4 seems appropriate.\n\nConfidence: high, as the description is clear. So output JSON: {\"risk_orient\":4,\"confidence\":\"high\"}\n\nEnsure output only JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:01:09.360583+00:00",
+ "timestamp_responded": "2026-10-25T11:01:10.247123+00:00"
+}

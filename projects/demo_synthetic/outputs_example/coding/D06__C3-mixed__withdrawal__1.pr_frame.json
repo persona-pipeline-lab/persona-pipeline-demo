@@ -1,0 +1,24 @@
+{
+ "job_id": "D06|C3-mixed|withdrawal|1",
+ "seq": 119,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "38a282344b81eaf5424a4de86094c1a6faca0adaad5e412be41b6b6c567b441a",
+ "prompt_sha256": "49ce91574ebe9affc04a43f3c101167d4e9ac7793a9a275a155afb16bfe138a3",
+ "raw_text": "{\"pr_frame\":\"市場競争\",\"confidence\":\"high\"}",
+ "reasoning_text": "We have a description: \"市場成長率と競合対策が主な課題だ。技術優位の持続可能性は不確定だが、長期的に市場に残る必要がある。\"\n\nWe need to pick the main problem frame: \"財務収益\", \"市場競争\", \"技術\", \"組織ステークホルダー\", or \"複数拮抗\".\n\nWe look at the description: It says the main issue is market growth rate and competition strategy. Technology sustainability is uncertain but needs to remain in the market long term. So primary focus is on market growth and competition, which is \"市場競争\" likely.\n\nHowever, there is mention of technology sustainability. But the core is about market growth and competition. They say \"市場成長率と競合対策が主な課題だ\" (\"Market growth rate and competition measures are the main challenges\"). That's definitely \"市場競争\". So the main frame is \"市場競争\".\n\nConfidence: high. JSON output.\n\nLet's produce: {\"pr_frame\":\"市場競争\",\"confidence\":\"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:27:49.313905+00:00",
+ "timestamp_responded": "2026-10-25T11:27:50.063926+00:00"
+}

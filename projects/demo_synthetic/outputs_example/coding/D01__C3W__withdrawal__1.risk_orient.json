@@ -1,0 +1,24 @@
+{
+ "job_id": "D01|C3W|withdrawal|1",
+ "seq": 73,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "d9a55cc5235f256ce64f12e1f90e8feab78fd8acb1a410f0ff464d232b804c38",
+ "prompt_sha256": "143819d073c7d9f4733865f0625651c0ceecc1148e5f106b29d369199bcacf59",
+ "raw_text": "{\"risk_orient\": 5, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to assign risk orientation based on the justification language. The statement: \"市場成長率が高く、技術優位性も残っているため、撤退は将来機会を失うリスクが大きいと判断しました。加えて、従業員や地域社会への社会的影響を最小限に抑え、ブランド価値の継続を図るためには投資を継続する方が望ましいと考えます。新たな投資を行えば、競合と比較して優位性を維持できると判断しました。\"\n\nThey argue not to retreat because missing out on opportunity risk high. They also want to invest to maintain brand and social impact. They conclude new investment can maintain advantage. Their orientation is risk acceptance: they are willing to invest in uncertain future to maintain advantage. This suggests strong risk acceptance, leaning 5. Maybe 4? They consider high growth and tech advantage; they see retreat as possibility of opportunity loss. They emphasize 'risk of losing opportunities' rather than risk of losses. That indicates they prioritize opportunity over loss. So rank 5. Provide confidence high.\n\nThus output: {\"risk_orient\": 5, \"confidence\": \"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:24:49.554458+00:00",
+ "timestamp_responded": "2026-10-25T11:24:50.399905+00:00"
+}

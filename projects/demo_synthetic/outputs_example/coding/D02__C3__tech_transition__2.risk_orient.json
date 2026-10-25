@@ -1,0 +1,24 @@
+{
+ "job_id": "D02|C3|tech_transition|2",
+ "seq": 28,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "29a240d7c376dd051ea1b5e5cbdaab22437042f23b5fb15d08c446b8e72820d8",
+ "prompt_sha256": "4cc8af7b96ac0deadbffe72458264349ba4fc7ccb454dae9bfe17a4248c46b71",
+ "raw_text": "{\"risk_orient\": 2, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to evaluate risk orientation based on reasoning language, not the choice itself. The statement: \"市場成長率と既存顧客の離脱兆候を踏まえると、内部開発だけではリスクが大きい。海外新興企業と提携することで技術リスクを共有し、資金負担を軽減できる。さらに既存顧客に対して継続的なサポートを保証し、ブランドへのネガティブインパクトを抑えられる。提携によって速やかに新方式を推進しつつ、社内リソースを他部門へ再配分できる。\" \n\nThe reasoning: They identify internal development risk high; partnering shares technical risk and reduces financial burden; also get support for existing customers; quick push of new product; reallocate resources. They weigh benefits and manage risks. It's risk-averse? They are avoiding risk by partnering to share risk. They assess risk and reduce it. There's less emphasis on seizing opportunity in uncertain environment; focus is on mitigating. So orientation likely around 2 (avoidance). But maybe moderate risk aversion (2). Confidence? The statements show careful reasoning, so high confidence. So output JSON: risk_orient 2, confidence \"high\".",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:21:55.248920+00:00",
+ "timestamp_responded": "2026-10-25T11:21:56.128090+00:00"
+}

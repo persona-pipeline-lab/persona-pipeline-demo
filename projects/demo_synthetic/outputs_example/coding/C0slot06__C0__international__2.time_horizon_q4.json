@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot06|C0|international|2",
+ "seq": 60,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "37cbf2aa96f13c097441a71605e42ae97e5fc68982ab64b2b45c17e7f88f7a46",
+ "prompt_sha256": "fd480498382c878b588956ccce6cb59631c89fdfa8258e1383ea12c12e5606e2",
+ "raw_text": "{\"time_horizon\":4, \"confidence\":\"high\"}",
+ "reasoning_text": "We need to judge the time horizon based on reasoning style. The description: \"市場は年率10％で成長を続けているため、持続的にビジネスを行う意義は高い。投資規模が売上の30％に相当し、赤字継続は危険なので投資負担を分担できるパートナーとの提携を選択しました。パートナーは既存の生産設備を活用し、規制や通貨リスク低減にも協力します。さらに従業員と地域社会への影響を最小化しつつ、ブランド価値を維持できます。\"\n\nThis reasoning focuses on long-term sustainability due to growing market, mitigating risks, maintaining brand value, minimizing impact, but also concerns short-term losses. The main driver: sustained business in a growing market, partnership to share costs, risk reduction. This looks long-term orientation. But the scale of investment as 30% of sales and risk of continuous loss suggests near-term risk concern. But overall they choose partnership to ensure viability long-term. The time horizon might be 4 or 5. Let's see category: 5=5-10+ years growth. 4=long-term oriented, perhaps 3-5 years. The mention of \"年率10％で成長\" suggests a medium to long term view. They care about brand value persistence, but also risk mitigation. So overall likely long-term (4). Confidence? The reasoning has explicit long-term indicators but also risk things. I'd say moderate? Maybe \"high\". Considering purposeful mention of \"市場は年率10％で成長を続けているため、持続的にビジネスを行う意義は高い\" strongly indicates long-term. I'd give high confidence. So JSON: {\"time_horizon\":4, \"confidence\":\"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:24:03.107523+00:00",
+ "timestamp_responded": "2026-10-25T11:24:04.334371+00:00"
+}

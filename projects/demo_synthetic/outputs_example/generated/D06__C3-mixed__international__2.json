@@ -1,0 +1,32 @@
+{
+ "job_id": "D06|C3-mixed|international|2",
+ "seq": 132,
+ "person_id": "D06",
+ "condition": "C3-mixed",
+ "scenario": "international",
+ "rep": 2,
+ "model": "gpt-oss-20b",
+ "sent_sha256": "d7e147733d5c95045f6fc91d9675e4c4a6c47468a38c28cc6fe5fa89b9ef88e9",
+ "sent_file": "sent/D06__C3-mixed__international__2.txt",
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 8192,
+  "seed": 100002,
+  "reasoning_effort": "medium"
+ },
+ "status": "ok",
+ "error_message": "",
+ "response_text": "{\n  \"q1\": [\"B\", \"C\", \"H\"],\n  \"q2_category\": 1,\n  \"q2_text\": \"主に財務・収益の問題です。現地通貨の急落で赤字が生じ、継続には大規模投資が必要ですが、資金調達が課題になります。\",\n  \"q3\": \"継続投資\",\n  \"q4_text\": \"長期成長率10%で市場は拡大しているため、競争優位を維持するには生産体制を強化する必要があります。過去に安全投資で短期的に赤字になった経験があるが、最終的に投資が売上と利益を安定させました。従業員と顧客の信頼を失わないためにも、持続的投資が重要だと判断します。\",\n  \"q5_ranking\": [\"従業員\", \"顧客\", \"地域社会\", \"取引先\", \"株主\"],\n  \"q6_text\": \"ホテルで従業員の提案を実行し、離職率を低下させた経験がある。研究所の予算を削減した際、従業員の安全と品質を守るために投資を再開した結果、長期的に利益を出せました。これらを通じて、投資は人と顧客の価値を守る手段だと学びました。\"\n}",
+ "reasoning_text": "We need to answer the 6 questions based on the autobiography experiences values only. Can't use external knowledge. Use experiences: focus on people, employees matters, investing in people, delegating, leading with technology, safety, balancing investments, big investments, stakeholder. He prioritized people first, then customers, then financial? He says \"人は買えない\". He valued stakeholders, employees, safety, training. He also had \"talent\" numbers. He also said \"技術の優位は安全上の土台\". He has experience with decentralised decisions and letting employees propose. He did make tough investment cuts for research to fund safety. He also said \"外部リスク vs 標榜\". For Q2 choose one classification: It looks like \"組織・ステークホルダーの問題\" (4) because many aspects of employees, customers, brand, region. But also financial due to loss. But primary problem: After regulation and currency drop, the business is losing money; need big investment. It's a financial/operational problem. In the story, he faced debt and must decide to cut or invest. He emphasized stakeholder. Let's analyze Q2 definition: 1 finance, 2 market, 3 tech, 4 org/stakeholder. He had to weigh employees, brand, region because risk of exit. He says market growth still high; brand impact; local employees. So the core problem is \"組織・ステークホルダー\" because the challenge is balancing multiple. Hmm.\n\nBut question is what is the \"問題\" he sees in this situation? Might be overall \"財務・収益\" because it's a loss. He also had to decide. But social/investment aspects are part of stake. He has experience of implementing additional investment even if it hurt profits due to safety. He used to cut research budget to invest in safety, but then restored. So he'd probably treat this as finance but also stakeholder. Which category holds? He says \"経営者が意志を持って決めなければならない\" for investment decisions. The question: \"この状況を何の問題だと捉えますか\" want to categorize. He had choice to invest further. That selection would be #1. He may consider the firm must decide whether to continue investing vs stop. So it's a \"財務・収益\". So choose 1.\n\nFor Q3 choose: He has history focusing on sustainable growth and people, but invests even if profit negative. Could choose \"継続投資\" due to market growth and brand. He might prefer to invest to maintain presence & avoid negative brand impact. He also has experience with adding new product lines. He previously invested in safety.\n\nBut there might be risk: large debt. Yet given long-term growth, he might choose \"継続投資\". Or could choose \"提携\" to share risk. He hasn't used. But he might prefer to continue.\n\nHe may also choose \"縮小\" but we need justification.\n\nBetter choose \"継続投資\".\n\nNow Q4 explanation: 3-5 sentences referencing experience: invest in safety, training, address employees, maintain brand trust, ensure long-term growth, mitigate future risk. For justification.\n\nQ5 ranking: According to him, employees first, then customers, then local society? He prioritized people to keep. He also cares about customers trust: customers. He cares about brand/partners. He cares about region. He may rank: 従業員 > 顧客 > 地域社会 > 取引先 > 株主. But he might put 株主 last. But the ranking must contain all five. Provide unique order.\n\nLet's rationalize: He cares about employees as central, brand & customers important, society next due to impact, 取引先 and 株主 less. I think: \"従業員\", \"顧客\", \"地域社会\", \"取引先\", \"株主\".\n\nAlternatively, \"従業員\", \"顧客\", \"取引先\", \"地域社会\", \"株主\". Provide one order. Let's produce: [\"従業員\",\"顧客\",\"地域社会\",\"取引先\",\"株主\"]\n\nQ6 explain past experience: Could mention his experience stable investment in safety and research cuts, or his early experience at hotel where he accepted proposals and built trust. Provide 2-4 sentences.\n\nee.\n\nProvide JSON.\n\nLet's construct.",
+ "finish_reason": "stop",
+ "actual_model": "gpt-oss-20b",
+ "response_id": "chatcmpl-9ea8ee283dbaaf6e",
+ "usage": {
+  "prompt_tokens": 4006,
+  "completion_tokens": 1272
+ },
+ "endpoint_kind": "local",
+ "timestamp_requested": "2026-10-25T11:19:22.566094+00:00",
+ "timestamp_responded": "2026-10-25T11:19:26.359103+00:00"
+}

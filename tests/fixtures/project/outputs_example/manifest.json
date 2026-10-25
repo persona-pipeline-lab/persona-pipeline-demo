@@ -1,0 +1,49 @@
+{
+ "manifest_version": 1,
+ "created_at": "2026-10-25T15:50:53",
+ "templates": {
+  "coding_prompt.md": "01a6b26d5420292dc4bc2d5af2eea0c4a620ad5add03b74ec24961a9e6efdda6",
+  "generation_params.yaml": "cdeae4ab424d2a6ec8b3be829352c53139ecc09341e46f70e522bfde2a762ce2",
+  "instruction_header.md": "d8f3df58768a6cade7ab19f32dbc5c8bd369efcc59ec6566f90fe3267da09f51",
+  "output_format.md": "54ceb6f271c52b568e088105c409c102ec805f7911206c9b37ed133a98cc95e6",
+  "persona_block.md": "4fe4b46006ff2a1d242fd4039ee55ae1a7ba4975956b2cd8f2c84f9bde45786b",
+  "questions.md": "e268ae61265c2cbce0e9d5bd1fd4131421ff44e98025f9f74ab66bde54746924",
+  "scenario_a.md": "23459a9e4795c42e4255bf9c5619d7bb73211991f67203502d7580524b4ccb66",
+  "scenario_b.md": "5b1dd49318eb4d4be88f780d67b30ab45d2b2897abed88d2afbe0619f501796f",
+  "frozen_hashes.csv": "7d6597271a1dfb6966c783a074464bd58751204dd444ce5d25ba179788990734"
+ },
+ "persons_csv": "f2a514b36afb032f0819ff238c9af1a82a0ed5ba3939375a62d78769944a42eb",
+ "texts": {
+  "T1": "f7c08069b5f98afb5880d741b320752b4d33031db2aae8ae2031b46a265379b3",
+  "T2": "a86199ba4eae9aae98a1425b7a12973825376fb7e153b3e8cf9cfe329fa4605a",
+  "T3": "944280e3ac66962deb6b25db16254e10c2591d840bae7b99caee251eb4fe7c11"
+ },
+ "config_subset_sha256": "c4eb9d7bea046d6aaea29aefe47165faf2411a3eab11ec14e444565d9afa213c",
+ "generation": {
+  "model": "mock-model",
+  "actual_model_ids": [
+   "mock-model-1"
+  ],
+  "endpoint_kind": "mock",
+  "reasoning_effort": "medium",
+  "params": {
+   "temperature": 1.0,
+   "top_p": 1.0,
+   "max_tokens": 8192,
+   "seed_base": 7
+  },
+  "n_records": 48,
+  "first_request": "2026-10-25T06:50:53.496992+00:00",
+  "last_request": "2026-10-25T06:50:53.586030+00:00"
+ },
+ "coding": {
+  "model": "mock-model",
+  "endpoint_kind": "mock",
+  "same_as_generation": true,
+  "blocks": [
+   "block_one",
+   "block_two"
+  ]
+ },
+ "python": "3.12.10"
+}

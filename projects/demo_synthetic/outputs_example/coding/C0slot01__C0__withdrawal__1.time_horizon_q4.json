@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot01|C0|withdrawal|1",
+ "seq": 37,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "9816cbea3ab7c4830ccdb49c282ff5f628dc2298dbb913a534ae982a60982622",
+ "prompt_sha256": "63e40aec095d2c0698f0294438fdcabe4a3556a15cf9529c806bae155023f5f4",
+ "raw_text": "{\"time_horizon\": 3, \"confidence\": \"medium\"}",
+ "reasoning_text": "We need to rate time horizon 1-5 based only on the textual reasoning. Let's parse the description. It's about large investment, time to raise funds, risk distribution via partnership. They mention that technology advantage maintained, competitors doing large investment, synergy potential. They want to maintain shareholder value while minimizing employee / community impact. They consider partnering to mitigate risk. The emphasis is on large investment, partnership, risk distribution. There's no direct mention of long-term versus short-term, but arguably the need to spread risk and synergy suggests longer horizon.\n\nTime horizon scale: 1=short-term (now quarter/short profit), 2=short-term leaning, 3=mid-term/dual, 4=long-term leaning, 5=long-term (5-10+\".\n\nThe strategic decision: they want to do a large investment but partner to reduce risk. The emphasis on large investment might take long time to realize benefits. But they also mention \"to maintain shareholder value\" which is more short-term. They mention maintain employees and community. Also \"competitors doing large investments\" implies they want to keep pace. That might be more mid-term (1-3 years). Probably mid-term. The wording \"資金調達に時間がかかる\" indicates they plan for long-term, likely 3-5 years. So maybe time horizon 3 or 4. I'd lean 3. The confidence: None conflicting signals. I'd say medium. Let's output JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:22:28.923294+00:00",
+ "timestamp_responded": "2026-10-25T11:22:29.866389+00:00"
+}

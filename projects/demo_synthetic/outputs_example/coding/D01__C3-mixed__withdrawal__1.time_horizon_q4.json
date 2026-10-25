@@ -1,0 +1,24 @@
+{
+ "job_id": "D01|C3-mixed|withdrawal|1",
+ "seq": 109,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "a02f4c10a28e9749685968d83a3d2660dd0279dc075a73e28ce39c291c564130",
+ "prompt_sha256": "06adc0e2861a4c993da2fe29b6f6cf6ac67dacc92065dd06a95cef7b38c002a2",
+ "raw_text": "{\"time_horizon\": 5, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to rate time horizon from 1-5. The description: 12% growth, tech advantage, but risk of being overtaken if no investment. Also withdrawal would harm brand trust and regional employment. They prioritize employee & community responsibilities, and decide to continue investment with risk management. It's about sustaining growth, protecting market position, important for long-term viability. They are investing to maintain advantage, considering community impact. Investment is likely large, so likely long-term horizon. We should choose 4 or 5. The program: \"市場成長率が12％で技術優位があるにも関わらず、追加投資がなければ競合に追い抜かれる恐れがあります。さらに撤退するとブランド信頼と地域雇用に大きなマイナス影響が生じます。従業員と地域社会への責務を最優先にしつつ、リスクを管理しつつ投資を継続する方針としました。\" There is a strategic choice to continue investment to preserve market position and community. The decision is more about sustaining competitiveness over time. That's a strategic choice with long-term orientation, likely 5. But 5 is defined as 5-10 years growth & survival main axis. They mention technology and market growth so a long-term improvement option. So I'd rate 5. Confidence high.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:27:04.902661+00:00",
+ "timestamp_responded": "2026-10-25T11:27:05.821959+00:00"
+}

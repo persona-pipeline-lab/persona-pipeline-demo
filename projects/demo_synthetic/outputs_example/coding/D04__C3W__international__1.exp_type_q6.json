@@ -1,0 +1,24 @@
+{
+ "job_id": "D04|C3W|international|1",
+ "seq": 91,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "1cc28febf3decf44059791da0e3b11775d39496021ff2a701c294883eeb4144b",
+ "prompt_sha256": "37891e1fe82fb10fa1341c07ea394bb93da324d1378d5591a1ff2e7febcf503b",
+ "raw_text": "{\"exp_types\":[\"人・組織\"],\"confidence\":\"high\"}",
+ "reasoning_text": "We need to parse the Japanese statement: \"取引先の社長に対して彼の言葉と名前を覚え、定期的に手紙を送ることで信頼関係を築いた経験が、協働の際の関係構築に役立っている。\" Means: The experience of remembering the CEO's words and name, and sending letters regularly to build a trust relationship, has helped in building relationships during cooperation.\n\nWhich experience category? It's about relationship building with a client, trust building. That's \"人・組織\" category: \"人事・労務・組織運営・師弟関係\". Actually \"人・組織\" refers to \"人事・労務・組織運営・師弟関係\" – relates to people and organization. The experience is building trust with partner. So it's \"人・組織\". Not others.\n\nThus output:\n\n{\"exp_types\":[\"人・組織\"],\"confidence\":\"high\"}\n\nWe ensure JSON.\n\n",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:26:01.345885+00:00",
+ "timestamp_responded": "2026-10-25T11:26:02.050716+00:00"
+}

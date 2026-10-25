@@ -1,0 +1,24 @@
+{
+ "job_id": "D02|C3W|tech_transition|2",
+ "seq": 100,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "a9d27bb52a32505eda3cd2126e5097cb3b1c3dad399476a797ef12bd9b1a861d",
+ "prompt_sha256": "ccf502882949bcf040512b00bd03a670520c1015cab352cec228fcd8f9234307",
+ "raw_text": "{\"pr_frame\": \"技術\", \"confidence\": \"high\"}",
+ "reasoning_text": "We have to choose main problem frame: \"財務収益\" \"市場競争\" \"技術\" \"組織ステークホルダー\" \"複数拮抗\". The text: \"技術の進化に遅れ、競合に対抗できないのが主な問題である。\" That is about technology lag, cannot compete. So the main problem is 技術. There's also mention of competition, but it's due to tech lag. The core issue is \"技術\". So choose \"技術\" frame. Confidence high.\n\nReturn JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:26:31.248068+00:00",
+ "timestamp_responded": "2026-10-25T11:26:31.677915+00:00"
+}

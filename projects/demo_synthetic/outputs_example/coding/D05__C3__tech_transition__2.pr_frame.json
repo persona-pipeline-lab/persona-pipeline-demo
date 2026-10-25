@@ -1,0 +1,24 @@
+{
+ "job_id": "D05|C3|tech_transition|2",
+ "seq": 34,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "5b913813925e618f88b5656a815e1c8965a9dd12961e22d86161ada4556f8598",
+ "prompt_sha256": "ba772387afe26c6489e6b60bc650ed1bd402e7fd50e057865443d7c33fcc81d1",
+ "raw_text": "{\"pr_frame\":\"市場競争\",\"confidence\":\"high\"}",
+ "reasoning_text": "We have to decide main problem frame from options: \"財務収益\", \"市場競争\", \"技術\", \"組織ステークホルダー\", or \"複数拮抗\".\n\nDescription: \"新方式の市場で競合が先行し、顧客が流出しているため、競争優位の喪失が中心的な課題となっている。\"\n\nSo it's about market competition, loss of competitive advantage, customers leaving. It's market competition. So answer: market competition. Confidence high. JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:22:18.344848+00:00",
+ "timestamp_responded": "2026-10-25T11:22:18.756112+00:00"
+}

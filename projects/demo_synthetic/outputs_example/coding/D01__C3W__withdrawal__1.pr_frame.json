@@ -1,0 +1,24 @@
+{
+ "job_id": "D01|C3W|withdrawal|1",
+ "seq": 73,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "2b2ed372ecc88ee3a822dd13b7670da7902bbd955fdda214dac202c353cc4474",
+ "prompt_sha256": "1ed7e03ee773bc4c9149c710a609cd8bc369df483698c4ffe03c59fffce878b2",
+ "raw_text": "{\"pr_frame\":\"財務収益\",\"confidence\":\"high\"}",
+ "reasoning_text": "We need to classify. The statement says: \"主な課題は財務・収益にあります。赤字と追加投資の負担が企業の継続性を脅かしています。\" So clearly the main issues are financial/earnings. It belongs to \"財務収益\" frame. Confidence high.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:24:49.274984+00:00",
+ "timestamp_responded": "2026-10-25T11:24:49.552877+00:00"
+}

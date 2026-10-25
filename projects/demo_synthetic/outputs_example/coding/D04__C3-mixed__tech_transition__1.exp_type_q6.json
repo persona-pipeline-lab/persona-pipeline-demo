@@ -1,0 +1,24 @@
+{
+ "job_id": "D04|C3-mixed|tech_transition|1",
+ "seq": 139,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "a592665ceaf75cf39563e1ad6764bfcb63c5dd641d498f840937c97c3b522d1f",
+ "prompt_sha256": "cd3ca118762c63f7c1a070c0faee69ce1108d63cc5c59c90b45d7be2ba341364",
+ "raw_text": "{\"exp_types\": [\"人・組織\", \"技術・開発\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to identify the experience types mentioned: \"後継者に『社長に向いていない』と言われた際に意思決定を受け入れたこと\" indicates a decision acceptance maybe crisis? It is being told you're not suitable for CEO, you accept decisions? Could that be \"危機対処\" because management crisis? Might also be \"人・組織\" (organization). Accepting decision from successor? Possibly interview context.\n\nAlso \"顧客の声を直接聞き技術者がフィードバックする文化\" implies tech/development. That's \"技術・開発\". So likely includes \"人・組織\" and \"技術・開発\".\n\nBut check the categories: \"危機対処\" is crisis. The passage doesn't mention crisis like downturn, but being told it's not fitting maybe internal crisis? Might not be explicitly crisis. Might rather be \"人・組織\" because refers to succession / leadership.\n\nThus answer: [\"人・組織\",\"技術・開発\"].\n\nConfidence high.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:29:11.464793+00:00",
+ "timestamp_responded": "2026-10-25T11:29:12.220125+00:00"
+}

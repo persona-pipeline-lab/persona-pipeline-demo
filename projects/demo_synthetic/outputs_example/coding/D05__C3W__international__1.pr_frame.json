@@ -1,0 +1,24 @@
+{
+ "job_id": "D05|C3W|international|1",
+ "seq": 93,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "a47b9f22a8fa4e1dcfed8909b0384c3ac855b1ecca4d8c4eb5b1d18df861ef16",
+ "prompt_sha256": "44733afa6313c9e893c8edc69084d1dad656ae5fef786be15ec05fb682b7b251",
+ "raw_text": "{\"pr_frame\": \"財務収益\", \"confidence\": \"high\"}",
+ "reasoning_text": "We identify main problem: \"今期の営業赤字\" (operating loss) and \"今後の追加投資\" plus focus on financial burden. So classification: \"財務収益\". Confidence high. Output JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:26:06.489318+00:00",
+ "timestamp_responded": "2026-10-25T11:26:06.713552+00:00"
+}

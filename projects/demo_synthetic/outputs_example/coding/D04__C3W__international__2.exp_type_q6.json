@@ -1,0 +1,24 @@
+{
+ "job_id": "D04|C3W|international|2",
+ "seq": 92,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "a1211d89c428f1622ed8e345f5ff0d6153cf28337eac362f11e833c420079d11",
+ "prompt_sha256": "791e96428a0271795c48eedfe9e0470c1091966b8f4d84baea686770bad5b0e3",
+ "raw_text": "{\"exp_types\": [\"人・組織\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to choose types that match the described experience. The example is about building trust with a client through sending letters etc., leading to large transactions. It involves \"人・組織\" perhaps? Actually it's about interpersonal relationships, personal trust, management of business relationships. That aligns with \"人・組織\" classification: people management / organizational relationships. This is not \"危機対処\". Not \"技術・開発\". Not \"海外\". Not \"創業・立ち上げ\". So just \"人・組織\". Output JSON.\n\nConfidence likely high; only one classification. Let's produce.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:26:06.036026+00:00",
+ "timestamp_responded": "2026-10-25T11:26:06.487657+00:00"
+}

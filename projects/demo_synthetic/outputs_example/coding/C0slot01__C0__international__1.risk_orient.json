@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot01|C0|international|1",
+ "seq": 49,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "669dfe4913a633c640e4138ba8e18d6bef8d88b079673bef5ee1d4afb8039766",
+ "prompt_sha256": "d74a05138d54c3691cffbee5cf719f6ec0a0b06e5f8a246c72551a29f401d0eb",
+ "raw_text": "{\"risk_orient\": 2, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to evaluate risk orientation from the reasoning. The rationale: \"提携により投資負担を分散し、現地企業の知見と販路を活用できる。資金負担を軽減しつつ市場成長に参加できるため、リスクを抑えつつ長期的価値維持が可能だ。\" Essentially: By partnering, spread investment burden, use local knowledge and distribution. Reduce capital burden while participating growth, thus risk is mitigated, long-term value maintained. They emphasize risk mitigation, not risk acceptance. So orientation likely 2 (risk-averse/avoidance). It's about risk mitigation, but not extreme. They say \"リスクを抑えつつ\" - risk is suppressed. So moderate risk avoidance. Perhaps 2.\n\nConfidence: The reasoning is clear that they want to mitigate risk. So confidence high.\n\nReturn JSON as specified.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:23:13.539628+00:00",
+ "timestamp_responded": "2026-10-25T11:23:14.173025+00:00"
+}

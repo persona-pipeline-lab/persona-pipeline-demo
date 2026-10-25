@@ -1,0 +1,24 @@
+{
+ "job_id": "D03|C3|withdrawal|1",
+ "seq": 5,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "36b8138925e1d363b23f495c38c01682b104e83db93c2943e7e45f78ddf18321",
+ "prompt_sha256": "8bf522ab5c627fca53c2f88067cec8bdcc9fd2229bcf11b4d270d0c90b444718",
+ "raw_text": "{\"time_horizon\": 5, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to evaluate time horizon.\n\nThe reasoning: Market growth 12% long term, existing tech advantage maintained by 30% investment. They refer to long-term brand spread, social impact, and that short-term profit improvement alone does not contribute to long-term success. They talk about \"withdrawal would damage brand/region effects, so short-term profit improvement alone does not lead to long-term success.\" So goal is long-term growth. They mention 12% growth, which is presumably across years. So seems long-term. The evaluation scale: 1 short-term, 5 long-term 5-10+ years. They mention long-term success. Likely 5. Confidence? The reasoning seems quite clear: long-term justification, strong. So confidence high.\n\nThus JSON: {\"time_horizon\": 5, \"confidence\": \"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:20:31.273153+00:00",
+ "timestamp_responded": "2026-10-25T11:20:31.852625+00:00"
+}

@@ -1,0 +1,24 @@
+{
+ "job_id": "D03|C3W|tech_transition|2",
+ "seq": 102,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "23ad885c38a4568853dc39ca84c71429188e933db03b7405be399da9a32b7bcb",
+ "prompt_sha256": "0901c2e6836ae86d1305f45573e424de422691d7994f08893da5e9806eb61e12",
+ "raw_text": "{\"pr_frame\":\"技術\",\"confidence\":\"high\"}",
+ "reasoning_text": "We have to classify the main problem frame among the listed categories, based on the description content. Description: \"技術優位性の維持と差別化が失われ、競合に取られやすくなる危機が生じている。\" This states \"the maintaining and differentiation of technical superiority is lost, and there is a crisis of being taken by competitors.\" So the core is technology: loss of technical advantage. The \"technology\" frame deals with technical superiority and technology transition. So decide \"技術\" ( 技術). Confidence: high. JSON: {\"pr_frame\":\"技術\",\"confidence\":\"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:26:39.000464+00:00",
+ "timestamp_responded": "2026-10-25T11:26:39.447243+00:00"
+}

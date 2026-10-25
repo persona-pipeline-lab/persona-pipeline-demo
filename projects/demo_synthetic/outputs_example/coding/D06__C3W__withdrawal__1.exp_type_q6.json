@@ -1,0 +1,24 @@
+{
+ "job_id": "D06|C3W|withdrawal|1",
+ "seq": 83,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "bf284dc0003f9122449eb447593f38a47acb81683e2d9396fed27b842e603ce4",
+ "prompt_sha256": "3f7268691ad9633a0d9e5e2f4e22ddb00088717ae1eec0e90e634aff44768056",
+ "raw_text": "{\"exp_types\": [\"危機対処\", \"技術・開発\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to look at the description: \"過去に工場の配管破裂事故を受け、研究予算を削減し安全設備の更新に投資した経験がある。事故後に事故原因を公開し、地域や従業員に責任を取ることで信用を回復した際の教訓が、今回の判断に直結している。\"\n\nWe must pick from 6 categories: \"危機対処\", \"技術・開発\", \"海外\", \"創業・立ち上げ\", \"人・組織\", \"その他\".\n\nWe should only pick categories explicitly mentioned. The description mentions: \"工場の配管破裂事故\" (factory pipe burst accident) => crisis → crisis management. Also \"安全設備の更新\" maybe related to technology development? But the incident was an accident, then they invested in safety equipment - but the experience is from crisis handling. The phrasing: \"事故原因を公開し、地域や従業員に責任を取ることで信用を回復\" → organizational responsibility - but that's more about crisis handling and people/organization. But categories we consider: \"危機対処\" definitely. Maybe also \"人・組織\" because involvement with people and society, but the description is not about HR like hiring or training but rather dealing with stakeholders. It might still be \"人・組織\"? The description says \"地域や従業員に責任を取る\"— that's about responsible behavior toward people. But I'm not sure if that is person/organization category. The category \"人・組織\" refers to HR, labor, organization management, mentorship. It doesn't necessarily include crisis communication. But maybe it could be considered as part of organizational governance. The phrase \"責任を取る\" might indicate accountability as part of organizational leadership. But the description is primarily crisis management. \"技術・開発\" could be considered since updating safety equipment, but the phrase \"安全設備の更新\" (update of safety equipment) involves technology. However, they are citing the experience of deciding to cut research budget to invest in safety equipment: it's about investment decision regarding technology. But is \"技術・開発\" classification pertains to \"研究開発・製品開発・生産技術の経験\"? If you invest in improved safety equipment, that's manufacturing technology improvements, included. But the core reason: aligning with crisis. But we need to pick all relevant categories \"that are mentioned.\"\n\nThe text states: \"工場の配管破裂事故を受け\" (due to pipe rupture accident). So crisis. \"研究予算を削減し安全設備の更新に投資\" (cut research budget and invest in safety equipment). That might be part of \"技術・開発\"? Might not be exactly \"技術・開発\" classification: the investment is in safety equipment - a technical upgrade. But it's not necessarily product development but improvement of production technology. The category includes \"生産技術の経験\" - yes, yes.\n\nAlso \"事故後に事故原因を公開し、地域や従業員に責任を取る\" (disclosing cause and taking responsibility to region and employees). That indicates organizational communication. Could be \"人・組織\"? Not necessarily \"HR\" but part of corporate governance. Maybe it's best to include \"人・組織\".\n\nNow \"海外\"? No mention. \"創業・立ち上げ\"? No. \"その他\"? Not necessary.\n\nThus likely categories: \"危機対処\" and maybe \"技術・開発\" (maybe \"人・組織\"). Since the instruction: \"言及された経験の型を次の6分類から該当するものすべて選んでください.\" We need to identify all categories that are explicitly described. Let's see if \"技術・開発\" is explicit: \"安全設備の更新\" – that's a safety equipment update, which is a production technology improvement. So yes.\n\n\"人・組織\" – do we mention \"責任を取ることで信用を回復\" – this is about social responsibility, but not necessarily about HR or organization management. The classification \"人・組織\" includes \"人事・労務・組織運営・師弟関係\" – nothing about HR or labor. So maybe not.\n\nGiven the categories, I'll include \"危機対処\" and \"技術・開発\". Confidence: high that it's crisis and tech.\n\nThus JSON:\n\n{\"exp_types\": [\"危機対処\", \"技術・開発\"], \"confidence\": \"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:25:26.350287+00:00",
+ "timestamp_responded": "2026-10-25T11:25:29.283907+00:00"
+}

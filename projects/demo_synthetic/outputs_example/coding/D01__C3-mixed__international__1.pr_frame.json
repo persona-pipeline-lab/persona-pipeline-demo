@@ -1,0 +1,24 @@
+{
+ "job_id": "D01|C3-mixed|international|1",
+ "seq": 121,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "6454f7a9648331bc9564838543a39705544db37f8e7a6a08c4e84333793d6e34",
+ "prompt_sha256": "e1ea8db681c12a38ab9d6e8a87f7942aaf66591cf377640b90c67a3da814f4b7",
+ "raw_text": "{\"pr_frame\": \"財務収益\", \"confidence\": \"high\"}",
+ "reasoning_text": "We need to pick the main problem frame among four categories:\n\n- \"財務収益\": focus on profitability, losses, investment burden, profitability.\n\n- \"市場競争\": focus on market growth, competition, customer acquisition.\n\n- \"技術\": technological advantage, transition.\n\n- \"組織ステークホルダー\": employees, partners, community.\n\n- \"複数拮抗\".\n\nThe description: \"競合の価格攻勢と規制強化によって利益圧迫が進み、事業の持続性が揺らいでいる。\"\n\nKey points: \"競合の価格攻勢\" => competitive prices. \"規制強化\" => regulatory pressure. Both cause \"利益圧迫\"—profit squeeze. The core problem is that profits are decreasing due to competition and regulation, threatening sustained operation.\n\nWhich frame fits? It could be \"市場競争\" because of competitor price attack. However the description also mentions regulatory pressure. That could be \"市場競争\" but also \"財務収益\" because it's about profit pressure. Zo prioritized \"市場競争\" because they talk about competition and price war. But the phrase \"利益圧迫\" indicates profits. Which is more core? The phrase \"利益圧迫が進み、事業の持続性が揺らいでいる\" note the profits as core, but also it's due to price competition (市場競争) and regulation (organizing). The question states pick one frame where \"問題の核心\" is expressed. The core might be profit squeeze due to competition and regulation. Which category is more central? \"市場競争\" emphasises price attacks leads to lower profits. But regulatory constraints also contribute to profitability.\n\nGiven the options: \"市場競争\" should capture the competitor price attack as core. Because the description explicitly addresses \"競合の価格攻勢\". \"財務収益\" would be concerned with profitability and reduction. Yet the specific driver is external competition and regulation.\n\n\"市場競争\" seems more central. I'd output high confidence.\n\nCheck if multiple are present: \"財務収益\" and \"市場競争\". Because \"利益圧迫\" is finance, and \"競合の価格攻勢\" is competition. Which one is the core? If they ask you to choose primary frame, you need to evaluate which dimension is emphasized as problem's core. The description says: \"競合の価格攻勢と規制強化によって利益圧迫が進み、事業の持続性が揺らいでいる。\" The phrase \"競合の価格攻勢と規制強化によって利益圧迫が進み\" indicates that the core problem is profit squeeze due to competition and regulation. Since that is a financial performance issue, I'd maybe pick \"財務収益\". However the problem's core appears to be the profitability squeeze caused by external competition and regulation. But the dominant dimension? The context of the description focuses on price war and regulation leading to reduced profits. The main thing that maybe corporate managers care about is revenue/profit slump. But the prompt states to choose \"問題の核心\" exactly expressed, not extraneous. The rest is details. The phrase that defines the main problem: \"利益圧迫\" as the core problem? That leans to financial performance. But classification \"市場競争\" is about price attacks. The phrase \"競合の価格攻勢\" likely emphasises competition.\n\nHmm: classification \"市場競争\" emphasises \"市場の成長・競合・顧客獲得が中心\". The problem is about competition. \"財務収益\" emphasises \"赤字・投資負担・収益性が中心\". The main problem is \"利益圧迫\". This is part of \"収益性が中心\". So classification \"財務収益\" would capture the problem. The competition is just a cause. The core is the profit squeeze. The phrase \"利益圧迫が進み、事業の持続性が揺らいでいる\" is central. So \"財務収益\" likely.\n\nThe interplay: We can't choose multiple. The core is likely \"財務収益\". I'll output high confidence.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:28:00.443601+00:00",
+ "timestamp_responded": "2026-10-25T11:28:03.090586+00:00"
+}

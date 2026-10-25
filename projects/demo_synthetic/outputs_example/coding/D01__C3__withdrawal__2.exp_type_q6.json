@@ -1,0 +1,24 @@
+{
+ "job_id": "D01|C3|withdrawal|2",
+ "seq": 2,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "077c75128944e69397b951986d2a28c42618be08e94863728dc1aebded5fde87",
+ "prompt_sha256": "a69d494c11755d61cedc3d9edb6595babd0893752a1feba02a796a4747f7297a",
+ "raw_text": "{\"exp_types\": [\"危機対処\", \"技術・開発\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to analyze the description. It says: \"事故時に配管更新を遅延させてはならないと学び、現場の安全性と顧客信頼を最優先に投資と情報公開を決断した経験が、今回の継続投資判断に直結した。\"\n\nTranslation: \"I learned that during an accident, you must not delay pipe replacement, and that experience led me to decide that investment and information disclosure should prioritize on-site safety and customer trust. This experience directly influenced the current ongoing investment decision.\"\n\nWe need to choose all applicable categories among the six types: \"危機対処\" (crisis handling), \"技術・開発\" (tech/dev), \"海外\" (overseas), \"創業・立ち上げ\" (founding & startup), \"人・組織\" (human/organisational), \"その他\".\n\nThe described experience: a crisis (accident), handling it: \"事故時に配管更新を遅延させてはならない\" -> crisis response. It also involved safety and investments—lean on technical aspects (pipe replacement). But the key given is \"事故\" => crisis. It is not overseas. Not founding. Not human/organisation? Possibly: decision impacted safety and trust; but human is about HR, labour, organizational management, etc. This seems more about technical and crisis handling. There's no mention of overseas or founding. So likely \"危機対処\" and \"技術・開発\" both apply. Although the directive says only pick based on explicit mentions. There's mention of \"配管更新\" which is pipeline replacement, which is technical. So \"技術・開発\" indeed is about production technique, product development, research and development. Pipe replacement is a technical maintenance/production technique. So yes, it's included.\n\n\"危機対処\": accident, crisis. So we pick both.\n\nWe need JSON with exp_types array, and confidence high presumably because it's straightforward. Output only JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:01:11.113880+00:00",
+ "timestamp_responded": "2026-10-25T11:01:12.533936+00:00"
+}

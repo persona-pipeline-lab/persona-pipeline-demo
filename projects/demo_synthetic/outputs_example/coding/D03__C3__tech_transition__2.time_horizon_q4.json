@@ -1,0 +1,24 @@
+{
+ "job_id": "D03|C3|tech_transition|2",
+ "seq": 30,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "29d77e01569c2e57bf0bb773a0378ff4ccc0e2afb77bd6d4a3d205f79dc71a8a",
+ "prompt_sha256": "7e55672905f26f88a0d3ff323433654e008c4826fe93fc89757f307e6e05f337",
+ "raw_text": "{\"time_horizon\": 2, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to judge the time horizon based on the reasoning. The description: \"新方式へのアクセスを高速化しながら、初期投資を限定できる提携は、短期的な赤字を抑えつつ市場シフトに対応できる。顧客の声を直接反映させる開発体制を確保し、ブランド価値を保つことが重要だ。既存技術の強みを保ちつつ、協業先の知見を取り入れることで競争優位性を維持できると判断した。\"\n\nThe key points: It mentions short-term deficits being kept low, respond to market shift, ensuring development team to incorporate customer voices, maintain brand value, keep existing technology strengths, integrate partner's knowledge. It seems more short-term to mid-term? The focus is on short-term deficits, market shift response, keeping brand value. This seems shortish, maybe 2 (short-term leaning). It emphasizes \"短期的な赤字を抑えつつ\" indicates short-term. There's also strategy to keep competitiveness by using partner knowledge. There is \"市場シフトに対応できる\" which might be short-term. There's no mention of 5-10 year growth.\n\nThus time horizon rating: 2. Confidence: high, because the language explicitly uses short-term language and there's a clear emphasis.\n\nReturn JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:22:03.331374+00:00",
+ "timestamp_responded": "2026-10-25T11:22:04.275604+00:00"
+}

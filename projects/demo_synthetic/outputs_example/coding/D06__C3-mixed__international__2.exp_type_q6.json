@@ -1,0 +1,24 @@
+{
+ "job_id": "D06|C3-mixed|international|2",
+ "seq": 132,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "ecaee5b7f9697932518278016a787c384cfb77408a1c5743893059759ac1bc23",
+ "prompt_sha256": "7d5931159a1333b0637b2584245c63e1eb630b37c3b8aeddf925a2427d38bc1a",
+ "raw_text": "{\"exp_types\":[\"人・組織\"],\"confidence\":\"high\"}",
+ "reasoning_text": "We must identify all types that match experiences. The provided statement: \"ホテルで従業員の提案を実行し、離職率を低下させた経験がある。研究所の予算を削減した際、従業員の安全と品質を守るために投資を再開した結果、長期的に利益を出せました。これらを通じて、投資は人と顧客の価値を守る手段だと学びました。\"\n\nExperience types: It refers to humans that involves: \"ホテルで従業員の提案を実行し、離職率を低下させた経験\" refers to \"人・組織\" (human resources/organization). It doesn't mention crisis or B2B. \"研究所の予算を削減\" - and then invest back for safety and quality. That's also about managing people and investing - still human/organization? It's about maintaining safety, quality - could be also \"危機対処\"? It's not described as crisis but a budget cut, then investing back, not exactly crisis. It might be \"危機対処\" due to crisis of financial cut? But it's more about resource budgeting and risk. Might not be crisis. \"技術・開発\" doesn't appear. \"海外\" not. \"創業・立ち上げ\" not. So only \"人・組織\". But also maybe \"危機対処\" because dealing with budget cut could be considered crisis, but it's not a crisis event. But \"により従業員の安全と品質を守るために投資を再開\" is like preventing risks. But not clearly a crisis; it's preventative.\n\nThus only \"人・組織\". We must output JSON with exp_types array, confidence high. Let's produce JSON.\n\n",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:28:44.001622+00:00",
+ "timestamp_responded": "2026-10-25T11:28:45.217590+00:00"
+}

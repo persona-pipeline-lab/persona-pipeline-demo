@@ -1,0 +1,24 @@
+{
+ "job_id": "D01|C3W|withdrawal|2",
+ "seq": 74,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "0a319755bf8cb2cc353f154c0c8d4e5c822e85b5788de2ae9187b298aca81804",
+ "prompt_sha256": "cfdbe5adc14fb5af0a8eb7019bfe37f02b1758992576f59be04d65b034560576",
+ "raw_text": "{\"time_horizon\":4,\"confidence\":\"high\"}",
+ "reasoning_text": "We need to read the description: \"市場成長率が高く、技術的優位性を保持できれば長期的に収益改善が期待できる。数字面の改善と地域・従業員への配慮を組み合わせ、安定的な投資を継続する方がリスクが低いと判断した。\"\n\nWe are to judge the time horizon: 1 short term, 2 short-term leaning, 3 medium or both, 4 long-term leaning, 5 long-term. We must judge based on the arguments, not external knowledge. The argument references long-term return (\"長期的に収益改善が期待できる\"), but also mentions \"数字面の改善\" (numerical improvement) and \"安定的な投資を継続する方がリスクが低い\" (stability of investment). So there's long-term focus but also risk management. The emphasis: maintain technological advantage in a high growth market to get long-term profitability. So likely long-term. However maybe moderate: 4? It's more leaning long-term but not purely short-term. So 4 is \"long-term leaning\". Confidence high because it's clear.\n\nThus JSON: {\"time_horizon\":4,\"confidence\":\"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:24:53.665223+00:00",
+ "timestamp_responded": "2026-10-25T11:24:54.508628+00:00"
+}

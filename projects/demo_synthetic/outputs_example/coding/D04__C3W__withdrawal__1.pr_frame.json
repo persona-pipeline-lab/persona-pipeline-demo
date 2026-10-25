@@ -1,0 +1,24 @@
+{
+ "job_id": "D04|C3W|withdrawal|1",
+ "seq": 79,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "0b8a41053a0dedcb3e2d751d0cc0c84b16c59e89190f6d7dc4699a00e14d7d4f",
+ "prompt_sha256": "16e928743a64e518477907d6d0db8036e93f3856f9acf2d6a4b9db19f87ee63f",
+ "raw_text": "{\"pr_frame\":\"市場競争\",\"confidence\":\"high\"}",
+ "reasoning_text": "We need to classify the short description into one of the frames: \"財務収益\", \"市場競争\", \"技術\", \"組織ステークホルダー\", or \"複数拮抗\". The description: \"市場の成長は見込めるものの、新規顧客獲得の鈍化と競合の大型投資が事業継続を大きくリスク化しています。\"\n\nWe analyze: They talk about \"市場の成長\" (market growth), \"新規顧客獲得の鈍化\" (slow new customer acquisition), \"競合の大型投資\" (competitors large investment), \"事業継続を大きくリスク化している\" (business continuity risk). The core is about market competition - acquiring new customers, competition, and risk. The key words: 市場, 顧客獲得, 競合. There is no mention of profit margins, revenue, technology, or stakeholders. So we should select \"市場競争\".\n\nConfidence: high.\n\nWe output JSON the required fields.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:25:11.274036+00:00",
+ "timestamp_responded": "2026-10-25T11:25:12.029716+00:00"
+}

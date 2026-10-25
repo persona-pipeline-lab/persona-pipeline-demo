@@ -1,0 +1,24 @@
+{
+ "job_id": "D03|C3-mixed|tech_transition|2",
+ "seq": 138,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "20f036b9b3af425b578091366b008b33f9f672f957521f8558b29aac2780d2e8",
+ "prompt_sha256": "18d893e15bb06ad8abb27abe3a342ad9972e7b868c9d77de6c81fe5e85380fd1",
+ "raw_text": "{\"pr_frame\": \"技術\", \"confidence\": \"high\"}",
+ "reasoning_text": "We need to pick one of the classifications: \"財務収益\" (financial profit), \"市場競争\" (market competition), \"技術\" (technology), \"組織ステークホルダー\" (stakeholder), or \"複数拮抗\" (multiple competing frames with no clear priority).\n\nThe description says: \"The core issue is that our existing technology is lagging behind the new format, jeopardizing our market position and requiring significant R&D investment.\"\n\nKey points: existing technology is lagging, jeopardizing market position (like a competitive threat), requiring significant R&D investment. The core problem appears to be technology lag, leading to market position threat, also large R&D investment—financial issue but core is technology. They mention needing significant R&D investment – that might imply finance, but it's due to technology. The phrase \"leading to significant R&D investment\" may be a cost aspect, but the core is that technology is lagging. So the main frame is Technology.\n\nThus \"技術\" is prominent. The \"market position\" aspect is also embedded but it's due to technology. However the sentence highlights \"existing technology is lagging behind the new format,\" so technology is the issue. So the classification is \"技術\".\n\nConfidence: high, because the main core issue addressed is technology lag. Not multiple. So JSON:\n\n{\"pr_frame\": \"技術\", \"confidence\": \"high\"}\n\n",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:29:04.926775+00:00",
+ "timestamp_responded": "2026-10-25T11:29:05.843420+00:00"
+}

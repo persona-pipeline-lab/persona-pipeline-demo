@@ -1,0 +1,24 @@
+{
+ "job_id": "D04|C3|tech_transition|2",
+ "seq": 32,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "e151ab9cf9b3fea763c5e4c7a02010271bbe60140d0df561fbee6bc4403f3917",
+ "prompt_sha256": "860b3410409e82d08a2efee0646331a6856f6b9e3738a2b5c92680e78e24e983",
+ "raw_text": "{\"risk_orient\": 1, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to evaluate risk orientation from the reasoning text (not the choice). The excerpt: \"提携により、当社の現在の強みと外部の新技術を統合し、低リスクで新方式開発を進めることができる。従業員は継続的に学ぶ機会を持ち、組織のモチベーションを保ちつつ、投資負担を分担できる。外部パートナーの技術と当社のオペレーションノウハウを組み合わせることで、低コストかつ高リスク回避の開発が可能となる。\"\n\nThis says they can integrate current strengths and external tech to develop low risk new method; employees continuous learning; invest burdens shared; combination yields low cost and high risk-avoidance development.\n\nIt emphasises low risk, risk avoidance. The phrase \"高リスク回避\" means including risk avoidance. So risk orientation is strongly risk-averse.\n\nSo rating 1. The confidence likely high because clear language.\n\nReturn JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:22:12.348347+00:00",
+ "timestamp_responded": "2026-10-25T11:22:13.101215+00:00"
+}

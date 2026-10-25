@@ -1,0 +1,24 @@
+{
+ "job_id": "D04|C3|withdrawal|2",
+ "seq": 8,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "161903f6ebdab7d911e935c3335b212ac1c443920068be5789b999c3acb570d0",
+ "prompt_sha256": "8ec2e3a64efc54d7c0077b648f6bd57f1c2e3c76bf5ec9096cadfd1c4a8d70b0",
+ "raw_text": "{\"risk_orient\": 4, \"confidence\": \"medium\"}",
+ "reasoning_text": "We need to interpret risk orientation. The description: \"市場は年率12%で成長しており、我々の技術優位性は今後も維持できる可能性が高い。投資を行わなければ、競合他社に市場シェアを奪われる恐れがある。従業員や地域社会への支援を継続することで、離職率を抑え、ブランドイメージを維持できる。したがって、財務面の課題は短期的に対処しつつ、長期的成長を目指して投資を継続する方針を取る。\"\n\nThey emphasize investing despite financial challenges; acknowledges risk of losing market share if do not invest. They see technology advantage high likely, and want long-term growth. This suggests a relatively risk-accepting stance for future growth: want to invest, despite current financial constraints, but will tackle short-term issues. That points towards risk-oriented 4 or 5. But their reasoning is more balanced: they present risk of loss, but also opportunity. They say \"investment to avoid losing market share\" and \"we maintain brand image\" etc. They decide to continue investing. That indicates more risk acceptance.\n\nWe need to pick 4 or 5. 5 is \"strong risk acceptance, even if uncertain but opportunity\". 4 is \"risk acceptance\".\n\nFrom text: \"財務面の課題は短期的に対処しつつ、長期的成長を目指して投資を継続する\" meaning they are proceed with investment anyway while addressing short-term finances. That indicates acceptance of risk for long-term potential. I think risk_orient=4.\n\nConfidence maybe medium because not super explicit but likely 4.\n\nReturn JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:20:41.579971+00:00",
+ "timestamp_responded": "2026-10-25T11:20:42.779686+00:00"
+}

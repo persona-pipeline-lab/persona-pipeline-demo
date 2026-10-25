@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot01|C0|withdrawal|2",
+ "seq": 38,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "9d022cfc8de51fbf26dbd960bf9ff56e3577f72e013db6f293be063ce9a8ca25",
+ "prompt_sha256": "73c720d923a9c70f09b0aef1f68dc1fe677b8411965ea9d069c6557b190e11a8",
+ "raw_text": "{\"risk_orient\": 4, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to assign risk orientation 1-5 based on reason's tone. The description: \"年間12%の市場成長率は引き続き高く、貴社の技術優位性を活かす機会があります。競合も大手が投資を進める中、早期投資が遅れるとシェアを失う恐れがあるため、追加投資による技術継続性が必要です。投資コストは当面赤字を伸ばす可能性がありますが、将来の利益増大と雇用維持の観点から継続が最適と判断します。\"\n\nThis is a rationale -- they see high growth, risk of losing share, so they argue continued investment is necessary despite short-term losses, because of future benefits. They emphasize opportunity, but also fear of losing share. It's moderate risk orientation? They are willing to accept short-term losses for future gains; encouraging risk acceptance; they see \"早期投資が遅れるとシェアを失う恐れがある\" as negative if not act. They emphasize continuing despite cost. They basically accept risk. Check categories: 1 strongly risk-averse, 5 strongly risk-tolerant.\n\nThey are making a case for investment because of growth and future benefit, accepting losses now. This indicates a risk-taking attitude: they accept risk to obtain future benefit. There's some risk because if their investment fails, they'd get lost. But the rationale shows they'd accept it because of future benefits and losing share if not invest. It leans more toward risk uptake (4-5). However, they double-check that they talk about \"投資コストは当面赤字を伸ばす可能性がありますが、将来の利益増大と雇用維持の観点から継続が最適と判断します.\" They only mention risk in that it's short-term loss; not a high risk factor. They emphasize opportunity. So risk tolerance is high, rating 4 or 5.\n\nBut 5 would be \"strongly risk-return oriented. Will take risk.\" They are ready to accept some loss, but they do mention \"危険\" in \"早期投資が遅れるとシェアを失う恐れがある\" (fear). It indicates a risk avoidance aspect: they fear losing share. However, they decide still to invest to avoid that risk. They accept the risk. It might be not fully \"strongly risk-retentive (5)\" but \"risk acceptance (4)\".\n\nThus rating 4. Confidence medium. There's little external knowledge required; just reading. So:\n\n{\"risk_orient\": 4, \"confidence\": \"high\"} — Wait \"confidence\" high? We can be confident. Should be high. Okay.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:22:30.850255+00:00",
+ "timestamp_responded": "2026-10-25T11:22:32.642869+00:00"
+}

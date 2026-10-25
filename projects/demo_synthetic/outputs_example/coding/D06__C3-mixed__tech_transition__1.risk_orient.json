@@ -1,0 +1,24 @@
+{
+ "job_id": "D06|C3-mixed|tech_transition|1",
+ "seq": 143,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "29f815555e9a0114909a0c63a2377170de28ed49e3197db678a6efffd4830da4",
+ "prompt_sha256": "2ba0868802fb9f02500c184508f63c5b020f24f3b2619b86f839c3ca99ca0ca6",
+ "raw_text": "{\"risk_orient\": 4, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to determine the risk orientation based solely on the reasoning presented. We have description: For new method development, requires 30% of sales as additional investment. Existing tech advantage can be maintained, but if differentiation lost, risk of losing market share is high. Employees: potential reduction in partner staff, but maintain stability, keep technology investment, to protect long‑term value.\n\nWe can see the reasoning emphasizes risk: high risk of losing share if differentiation lost. Emphasizes keeping employees stable, investing in tech to protect long-term value. The writer acknowledges risk but still chooses to invest to protect value. Is the stance risk-accepting or risk-averse?\n\nThey say: \"従業員の安定を図りつつ技術投資を継続する方が長期的に会社の価値を守ることができる\" => The approach is to continue tech investment while maintaining employee stability, to protect long-term value. They accept risk of 30% investment, but justify that risk is necessary to avoid bigger risk of losing market share. This indicates a proactive stance: they are willing to invest to mitigate potential larger risk. That sounds risk-accepting.\n\nBut they also weigh risk: they mention that differentiation loss is high risk and they have potential employee reduction. They take it consciously. They see risk of shop but also potential of investment to preserve.\n\nBetter to assign risk orientation 4? 4 is \"受容寄り\" – risk tolerance slightly high. They are open to risk but weighed it. Avoidance? They are not strongly avoiding. They are taking a risk to preserve value. So I'd lean 4. There's no mention of \"機会を逃すことに罪悪感\" etc. They are taking risk for safeguarding.\n\nThus \"risk_orient\":4.\n\nConfidence: given we rely on text only. It's fairly clear. I would assign high confidence. But maybe medium? There's some nuance. Let's choose high.\n\nThus output JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:29:22.183227+00:00",
+ "timestamp_responded": "2026-10-25T11:29:23.437539+00:00"
+}

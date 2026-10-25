@@ -1,0 +1,24 @@
+{
+ "job_id": "D04|C3|international|1",
+ "seq": 19,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "113d5c42d307061d544150bbbf8dafb70cfcb4326859facf29b4dcb90b3a3d96",
+ "prompt_sha256": "203f4b7b63592af914059f191214921b96cf4238579ecb65fa4cecdf77b248b4",
+ "raw_text": "{\"time_horizon\":5,\"confidence\":\"high\"}",
+ "reasoning_text": "We need to parse this reason. The statement includes: maintains operation to protect employees and local partners, sustain brand credibility, address regulatory and currency challenges through investment in local production. \"The long‑term market growth makes the upfront cost worthwhile, and keeping the workforce motivated reduces turnover losses.\" Also mention company culture and employee engagement.\n\nWe must decide time horizon rating 1-5. The perspective: long-term. Because mentions long-term market growth, the upfront cost, investment, brand credibility, employee satisfaction. So likely 4 or 5. The statement mentions \"long-term market growth\" specifically. That suggests 5? But 5 is 5-10+ years. The mention of long-term market growth might be moderate. It says upfront cost worthwhile. This suggests horizon is long. The mention of keeping workforce motivated to reduce turnover losses - short-term, but that is part of establishing long-run benefit. The phrase \"long-term market growth makes the upfront cost worthwhile\" indicates that they are investing for long-run. So rating maybe 4? The overall orientation appears to be long-term. Could be 4. But \"long-term market growth\" might be emphasis on beyond 5 years? Market growth could be over decade. However, since they discuss regulatory and currency challenges and local production investment, those also suggest long-term strategic alignment, not quick fix. So I'd say 4? Let's look at rating definitions: 1=short term (quarterly). 2=shorter near. 3=mid-term. 4=long-term oriented. 5=long-term extremely long. The argument siding towards long-term growth based on cost-to-benefit. They say \"upfront cost worthwhile\" which implies long-term payback. They say \"the company’s culture and employee engagement are key to success.\" That's long-term. So I'd assign 5? But the question says \"the long‑term market growth makes the upfront cost worthwhile\". That suggests that they see their costs as worthwhile due to long-term growth. That growth maybe over 5-10 years. That is long. So maybe 5. However rating 5 is \"5-10年以上\" is their main axis. The argument seems to revolve significantly around that.\n\nBut we need to choose integer 1-5. Let's think: The mention of \"long-term market growth\" - likely 5. But can we support that? Let's check guidelines: \"External knowledge not used.\" Only use the text. They mention \"long-term market growth\". That explicitly references long-term. They also mention \"upfront cost worthwhile\" which is likely a long-term return. So yes. So we assign 5.\n\nConfidence: high: because clear long-term reasoning.  \n\nReturn JSON: {\"time_horizon\":5,\"confidence\":\"high\"}\n\nCheck formatting: must be JSON only, no extra. Ensure integer. Yes.\n\n",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:21:25.834285+00:00",
+ "timestamp_responded": "2026-10-25T11:21:27.585281+00:00"
+}

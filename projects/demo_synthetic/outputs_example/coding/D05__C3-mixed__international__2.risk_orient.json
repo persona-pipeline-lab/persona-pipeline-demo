@@ -1,0 +1,24 @@
+{
+ "job_id": "D05|C3-mixed|international|2",
+ "seq": 130,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "a571269c76a713e07e821312914a3ad1c958c2eb9508c8f70ed4ac3d678fbe16",
+ "prompt_sha256": "05e3af74e82f279babf8fe4b5315a53f1621c2a21911cebca846b3196e6c5085",
+ "raw_text": "{\"risk_orient\": 4, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to evaluate risk orientation from description. The description says: \"市場成長が確実に続く上で、長期的な競争優位を保持するためには投資が不可欠だ。現地従業員の安定は事業の根幹を支える。品質・耐久性で差別化できる自社技術をさらに強化し、ブランド信頼を維持する。\"\n\nInterpretation: They say market growth sure, investing is essential to maintain competitive advantage; staff stability important; strengthen technology, maintain brand trust. The emphasis is on investing, staying strong, not risk avoidance. They think growth is certain, so risk is low? They are investing positively. So risk oriented leaning towards 4 or 5. But are they strongly risk-taker? They are focusing on protecting stability and brand trust. It's more cautious but proactive. They are expanding investment. They assume certainty, so they are risk-seeking. The language: \"投資が不可欠\" \"品質・耐久性で差別化\" \"ブランド信頼を維持\" - This reflects risk acceptance: investing for future advantage.\n\nThus risk orientation maybe 4 (accepting) or 5 (strongly accepting). Because it shows they think market growth is certain, so they invest, but also mention employee stability etc. The risk is included but again they consider that necessary. They don't mention loss avoidance. So leaning risk acceptance. I'd say 4.\n\nConfidence: high: The description clearly indicates acceptance of risk. Let's output.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:28:35.666528+00:00",
+ "timestamp_responded": "2026-10-25T11:28:36.683104+00:00"
+}

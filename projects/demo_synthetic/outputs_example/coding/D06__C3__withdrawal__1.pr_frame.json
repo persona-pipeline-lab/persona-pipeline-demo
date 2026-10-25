@@ -1,0 +1,24 @@
+{
+ "job_id": "D06|C3|withdrawal|1",
+ "seq": 11,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "e9c80a0d3f0eb352c89f212d9dabab3c84edff51fe6ca3f830c9d784e96a848c",
+ "prompt_sha256": "c9b9dbfeb0982189c676c4b425ad8fe4ed87d48fa8a301eda351af72d79e921e",
+ "raw_text": "{\"pr_frame\":\"組織ステークホルダー\",\"confidence\":\"high\"}",
+ "reasoning_text": "We need to classify the problem frame. The description says \"組織・ステークホルダーの問題である。従業員の雇用、地域社会への貢献、ブランドへの影響が、事業継続の重要な要素だからだ。\" It identifies the core problems: employees, region, brand. That points to \"組織ステークホルダー\". So the primary frame is \"組織ステークホルダー.\" Confidence is high.\n\nThus produce JSON: {\"pr_frame\":\"組織ステークホルダー\",\"confidence\":\"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:20:51.538369+00:00",
+ "timestamp_responded": "2026-10-25T11:20:51.990372+00:00"
+}

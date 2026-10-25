@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot05|C0|international|2",
+ "seq": 58,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "60e4ff315fe0905af8636f020c428ef93acf0f6c182713611a67a288105573c0",
+ "prompt_sha256": "3fd1bbc6122a5c11ed8ff17370b79153351d0390373ee5cc611b5d849985e424",
+ "raw_text": "{\"exp_types\": [\"その他\"], \"confidence\": \"low\"}",
+ "reasoning_text": "We need to identify the experience types present. The sentence: \"過去に別市場で同様の規制強化に直面した際、合弁事業を組んで投資を分担し、リスクを軽減した経験があります。今回もパートナーシップで投資を共有する方針を支持します。\"\n\nWe look for categories:\n\n- 危機対処: crisis handling, e.g., financial crisis, accident, scandal, demand collapse. Not clearly a crisis, it's facing regulation tightening, but is that a crisis? It's a regulatory challenge. Not exactly a crisis like bankruptcy. Could be considered a risk? They faced \"規制強化\" (regulatory tightening) in another market, they formed a joint venture with shared investment to mitigate risk. Is that \"危機対処\"? Not obvious. It might be risk management, not crisis.\n\n- 技術・開発: research/ product development, not relevant.\n\n- 海外: overseas presence or overseas business. The text says \"別市場\" (different market) not necessarily overseas. Could be domestic markets or international. We don't know. No explicit overseas or foreign. So maybe not.\n\n- 創業・立ち上げ: founding or startup, not relevant.\n\n- 人・組織: human resources or organization management, not relevant except joint venture? That could involve organizational aspects, but the experience described is about joint venture to share investment. The type \"人・組織\" covers \"人事・労務・組織運営・師弟関係\". This might not count as managemt.\n\n- その他: if none apply, use others.\n\nBut we need to treat if the experience type \"創業・立ち上げ\" might apply if forming a joint venture is akin to new venture creation? But it's not explicit about founding a new company, just a joint venture. In classification, \"創業・立ち上げ\" refers to \"創業・新事業や新会社の立ち上げ\". Joint venture is not exactly founding a new company; but maybe considered new business? Not necessarily.\n\n\"危機対処\" might apply because regulatory tightening could threaten market exit or business viability. However, classification likely means major crisis like insolvency, accidents... This seems mild. It's risk, not crisis.\n\nThis is borderline. I think maybe the relevant classification is \"その他\" because none of the categories mention regulatory risk mitigation. The style choices: The instruction says \"頂いた記述のみに満たし. No external knowledge. So we stick to explicit mention. The only direct act is: \"合弁事業を組んで投資を分担し、リスクを軽減した経験\". This is about joint venture. The categories: \"海外\" not mentioned. \"技術開発\" not mentioned. \"人・組織\" not mentioned. \"危機対処\" also not mentioned but risk. \"創業・立ち上げ\" maybe? But it didn't say \"創業\" or \"立ち上げ\". It just mentions partnership. So I'd choose \"その他\"? Hmm.\n\nBut maybe \"協業\" relates to \"人・組織\"? It's about organizational aspects – joint ventures.\n\nHowever instruction: \"言及された経験の型を次の6分類から該当するものすべて選んでください。規則: 記述に明示された経験のみ拾う\". The only experience explicitly mentioned is \"合弁事業を組んで投資を分担し、リスクを軽減した経験\". The type of that experience? It might be \"危機対処\" because it addresses regulatory risk.\n\nGiven the categories, I'd lean \"危機対処\"? But the phrase \"規制強化に直面\" could be a risk but not crisis. However it's about risk mitigation. So maybe \"リスク対応の経験\" maybe \"危機対処\"? I'd put \"危機対処\". And maybe \"その他\"? Usually if none match exactly, you choose \"その他\".\n\nHowever classification might include \"リスク\" under \"危機対処\"? Let's examine: \"危機対処\" is defined as: \"赤字・倒産危機・事故・不祥事・需要崩壊への対処\". No regulatory scenario. So strictly none. So the best is \"その他\".\n\nConfidence? I think low.\n\nThus output JSON.\n\n",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:23:53.881649+00:00",
+ "timestamp_responded": "2026-10-25T11:23:56.644409+00:00"
+}

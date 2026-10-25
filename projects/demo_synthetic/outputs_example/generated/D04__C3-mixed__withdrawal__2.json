@@ -1,0 +1,32 @@
+{
+ "job_id": "D04|C3-mixed|withdrawal|2",
+ "seq": 116,
+ "person_id": "D04",
+ "condition": "C3-mixed",
+ "scenario": "withdrawal",
+ "rep": 2,
+ "model": "gpt-oss-20b",
+ "sent_sha256": "37c23f045663a7e028faa579ff6468eade649507bf535540530fd769b767e7bc",
+ "sent_file": "sent/D04__C3-mixed__withdrawal__2.txt",
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 8192,
+  "seed": 100002,
+  "reasoning_effort": "medium"
+ },
+ "status": "ok",
+ "error_message": "",
+ "response_text": "{\"q1\":[\"A\",\"B\",\"G\"],\"q2_category\":2,\"q2_text\":\"市場成長率の高さと競合が同市場で大規模投資を行っている状況が、事業継続の値判断を決める主な課題となっている。\",\"q3\":\"継続投資\",\"q4_text\":\"市場が年率12%で拡大し続ける点と、自社技術が現段階で優位である点を踏まえ、将来の売上拡大を見込めると判断した。追加投資によりリードを維持できれば、短期の赤字を早期に打ち消し、長期的に利益拡大できる見込みが高い。ブランドや地域社会への影響も継続することで保護できる。\",\"q5_ranking\":[\"従業員\",\"地域社会\",\"顧客\",\"取引先\",\"株主\"],\"q6_text\":\"取引先からの手紙を読む習慣と、顧客工場で現場担当者と直接会話して改善要望を集めた経験が、意思決定時に大きく影響した。\"}",
+ "reasoning_text": "We need to answer based on autobiographical content, no external knowledge. Need to choose Q1: which three info from A-H we want to verify first. Must consider their author perspective: value of listening, careful reading, patience, stakeholder value, etc.\n\nFrom text: Approach emphasises stakeholder, listening, long-term, measurement of commitments, careful evaluation. Likely want to confirm: market growth (A) to judge future potential. Also cost of investment vs returns: B. Also social impact H? They value region. Also G: brand impact. They value relationships. My answer should consider that. I'll pick A, B, G maybe? Or H maybe. Let's think. The first priority is to see if market growth is as great. Most important info to verify: A. Financial burden B: cost proportion. G: brand impact to others. Might choose H? But brand is important too. He cares about brand across company lines, so G might be crucial. So Q1: [\"A\",\"B\",\"G\"].\n\nQ2 category: likely 2 (market & competition). Because description: market growth, competition. Though financial issues heavy. But he might consider more market. Choose 2.\n\nQ3: among options: \"継続投資\" maybe? Because market growth holds, he sees as long-term, wants to invest. Also wants to keep tech advantage. But need to weigh risk. He also values stakeholder region. He might choose \"継続投資\". So choose that.\n\nQ4: justification: explain logic. We need 3-5 sentences. Should reference market growth, tech advantage, risk of losing brand, stakeholders. He may admit risk but see higher upside. I will comply.\n\nQ5 ranking of stakeholders: He values employees, customers, stakeholders, shareholders. In his autobiography, he prioritised employee listening, but also region support. Also brand with customers. He sees brand as both customers and trade partners. Likely ranking: 従業員, 顧客, 地域社会, 取引先, 株主. Wait brand impacted others. He also values customers but region bigger social responsibility. He may put 従業員 highest, 地域社会 second due to impact, 顧客 third, 取引先 fourth, 株主 last. Let's examine: He sees \"人の話を聞く\" importance. Emphasises region, brand as part of other businesses. He might consider 株主 less immediate. So ranking: [\"従業員\",\"地域社会\",\"顧客\",\"取引先\",\"株主\"].\n\nQ6: Past experience: He mentions experience with a subordinate's report not coming back, learning to listen. He also mentions traveling and learning about courtesy. But which relevant? The decision: \"parent recognized\" major was his experience with his former past subordinate: the need to listen. But for investment decision, he might recall the time when he left a small outsider, or that best friend? The relevant experience may be that he learned to listen and keep commitments, as his founding values. But question \"判断に最も影響した過去経験があるとすれば、どのような経験ですか\". He draws from childhood travel - value of respect, relationships. He also holds technique of not cutting planned outsider objects. He also used to put one line describing each day. But the infrastructure decision: probably the most relevant is his earlier experience with the subordinate (reward and listening). But if ask about investment decision, I'd say his experience of \"損失回避により株主の信頼が大きく下がったまま\" but not in text. He mentions \"顧客の工場を訪ねる\", etc. He might talk about \"顧客の工場からフィードバックを集めて改善した経験\" as relevant. He said he would note feedback. Probably mention the importance of \"手紙\" and listening to customers. He also had experience measured commitments: \"毎月数えて約束する\".\n\nWill answer: \"取引先からの手紙を読む習慣や顧客工場訪問で得たフィードバックを基に製品改善する経験に影響され\".\n\nSo 2-4 sentences.\n\nLet's craft JSON.\n\n",
+ "finish_reason": "stop",
+ "actual_model": "gpt-oss-20b",
+ "response_id": "chatcmpl-a5970977689f1432",
+ "usage": {
+  "prompt_tokens": 3920,
+  "completion_tokens": 1171
+ },
+ "endpoint_kind": "local",
+ "timestamp_requested": "2026-10-25T11:18:06.101372+00:00",
+ "timestamp_responded": "2026-10-25T11:18:09.528169+00:00"
+}

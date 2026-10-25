@@ -1,0 +1,24 @@
+{
+ "job_id": "D04|C3|international|2",
+ "seq": 20,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "8ca1c82456f871305aaf9f7ab4a71dfb2deaa688adb038a7606f30ca9b9607a3",
+ "prompt_sha256": "5362edacd8dd4e3c29245f1bfd17115a770bcbee12d512b8488abc46558a9a62",
+ "raw_text": "{\"risk_orient\": 2, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to judge risk stance from the wording. The description: \"従業員が事業の根幹であると自らの経験から確信している。投資があることで現地での雇用を守り、従業員の学びの場と認められる環境を維持できる。ブランドへの影響を最小化し、国内外での信頼を保持できると判断した。\"\n\nThey say: They are convinced employees are core, investment protects local employment and environment, mitigates brand impact, maintain trust. There's focus on minimizing brand impact, maintaining trust, protecting employment. This is risk-averse language? They justify investment as risk reduction, protecting brand, trust. The wording shows they are trying to avoid negative consequences and minimize impact. They don't mention seizing opportunity, it's about protecting. So moderate risk-averse. Score 2? Because \"回避寄り\" but maybe slightly risk-averse but not extreme. Let's pick 2.\n\nConfidence: high (the description is clear). Output JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:21:28.877754+00:00",
+ "timestamp_responded": "2026-10-25T11:21:29.612375+00:00"
+}

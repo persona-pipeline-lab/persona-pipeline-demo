@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot05|C0|withdrawal|2",
+ "seq": 46,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "9d022cfc8de51fbf26dbd960bf9ff56e3577f72e013db6f293be063ce9a8ca25",
+ "prompt_sha256": "73c720d923a9c70f09b0aef1f68dc1fe677b8411965ea9d069c6557b190e11a8",
+ "raw_text": "{\"risk_orient\": 5, \"confidence\": \"high\"}",
+ "reasoning_text": "We have a statement about strategy: \"Annual growth rate 12% high; tech advantage; large competitors investing; early investment needed to avoid share loss; additional investment may lead to short-term losses but future profit increase and job maintenance justify continuation.\" We need to evaluate risk orientation. The reasoning suggests accepting risk: They acknowledge short-term losses, but they see future profit; also they mention job maintenance; but they consider lack of risk aversion; but actual scenario: they see need early investment to maintain share; compete; it's about risk acceptance. They are aware of potential losses, but highlight opportunity of growth and competition. This is risk acceptance, maybe 4 or 5. \"Risk orientation scale\" 1 = strongly risk-averse, 5 = strongly risk-accepting. They say \"投資コストは当面赤字を伸ばす可能性がありますが、将来の利益増大と雇用維持の観点から継続が最適と判断します\" This implies they accept short-term losses for long-term gains, and see that later benefits outweigh. So rating is likely 5: strongly risk-accepting. Confidence: The reasoning is fairly detailed and indicates a pro-risk stance; high confidence. So output JSON: {\"risk_orient\": 5, \"confidence\": \"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:23:02.999268+00:00",
+ "timestamp_responded": "2026-10-25T11:23:03.860635+00:00"
+}

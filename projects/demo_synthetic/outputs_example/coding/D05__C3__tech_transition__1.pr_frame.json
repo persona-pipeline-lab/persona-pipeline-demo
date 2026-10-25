@@ -1,0 +1,24 @@
+{
+ "job_id": "D05|C3|tech_transition|1",
+ "seq": 33,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "e8b8e8793eb64b7a42397df1ff9bb9fe2b3b300a271f7ce0641d645da6525bb0",
+ "prompt_sha256": "7083856312d65e7c2e5237ecf04a373e885d69f5757bf0fb4db131217f746eb9",
+ "raw_text": "{\"pr_frame\":\"技術\",\"confidence\":\"high\"}",
+ "reasoning_text": "We need to classify into one of categories: financial profit, market competition, technology, stakeholder, or multiple.\n\nThe description: \"既存技術の優位が失われると、顧客の流出リスクが高まり、業界内での競争力を維持できなくなるという技術的遅れが主な問題です。\"\n\nWe notice emphasis: existing technology advantage lost -> technology lag -> customer loss -> competitive disadvantage. The main problem is \"技術的遅れ\" => technology disadvantage. So classification: 「技術」。\n\nWe want confidence high because it's clear.\n\nThus JSON: {\"pr_frame\":\"技術\",\"confidence\":\"high\"}\n\nLet's produce.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:22:14.997089+00:00",
+ "timestamp_responded": "2026-10-25T11:22:15.485984+00:00"
+}

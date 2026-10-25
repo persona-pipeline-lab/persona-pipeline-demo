@@ -1,0 +1,24 @@
+{
+ "job_id": "D05|C3-mixed|international|2",
+ "seq": 130,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "86974ded9697eb72c25000ed4c7b0f4d0da5b72925c3c1ff528cc00e8172919d",
+ "prompt_sha256": "a37743f2cc8a0730238e6b908c9e2bc7b2f70787967a6ce1dc5ef0d74cee182e",
+ "raw_text": "{\"exp_types\": [\"技術・開発\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We must analyze the Japanese text. The response: \"設計部長として、短期コスト圧に対抗し品質向上へ投資した経験がある。正しい投資は、初期赤字を将来利益へ転換する鍵になることを学んだ。\"\n\nWe need to pick experience categories from the six. The categories: 危機対処, 技術・開発, 海外, 創業・立ち上げ, 人・組織, その他.\n\nWhat described? Design department director investing in quality improvement to counter short-term cost pressure. That is \"技術・開発\" (product development, improvement). Perhaps also \"人・組織\"? The text says \"設計部長\" (design manager) - likely management role. But the core experience: investing in quality improvement: this is about product quality, process improvement. That falls under 技術・開発. Not necessarily 危機対処 because it's not describing crisis but short-term cost pressure. It's not overseas or創業・立ち上げ. Person/Organizational? The experience touches on leadership in design department; but the key action is investing in quality improvement, to turn initial losses to future profits. That is about product development or technical improvement.\n\nTherefore the classification is \"技術・開発\". Possibly also \"人・組織\"? But the text does not explicitly mention HR, labor, organization. It says \"design manager as a head\" but the experience is about investing. So we should include only \"技術・開発\". Output JSON: {\"exp_types\": [\"技術・開発\"], \"confidence\": \"high\"}.\n\n",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:28:37.539102+00:00",
+ "timestamp_responded": "2026-10-25T11:28:38.638136+00:00"
+}

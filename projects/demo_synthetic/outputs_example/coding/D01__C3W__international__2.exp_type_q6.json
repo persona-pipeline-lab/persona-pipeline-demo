@@ -1,0 +1,24 @@
+{
+ "job_id": "D01|C3W|international|2",
+ "seq": 86,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "0b45d6854a6a4331b0b18290d9937f7df3dd6763eb63f16b5ea473b243b1605e",
+ "prompt_sha256": "bc720ca76ae5a1bd97ad037c3ba97b9517ab4cf0cfc9555ac7e58a09613586de",
+ "raw_text": "{\"exp_types\": [\"危機対処\", \"人・組織\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to identify experience types among the six categories: \"危機対処\" (crisis handling, e.g., financial crisis, bankruptcy, accident, scandal, demand collapse); \"技術・開発\" (research or product development); \"海外\" (overseas posting or overseas business); \"創業・立ち上げ\" (founding or new business launch); \"人・組織\" (HR, labor, organization management, mentoring); \"その他\" (none of the above, used alone).\n\nThe description: \"卸部門の大取引先の資金繰り危機を乗り越える際、数字を正確に把握し、従業員と共有した経験がある。そこから、数字と人の重要性を同時に考える必要性を痛感した。\"\n\nIt explicitly mentions handling a supplier (卸部門) major client (大取引先) with a liquidity crisis (資金繰り危機). That's a financial crisis of a partner, overall this is a crisis situation that one must handle, thus \"危機対処\". It also involves number accuracy and sharing with employees, so that's about people/organization. So experience types: \"危機対処\" and \"人・組織\".\n\nCheck the item types list: If mention of \"人・組織\" seems to reflect HR, labor, organization operations. The mention of employee sharing indicates communication and possibly management. So it's both \"危機対処\" and \"人・組織\". There's no other types.\n\nWe need to output JSON with exp_types array of strings, and confidence high, medium, low.\n\nSince description directly references crisis of client; we have high confidence that \"危機対処\" applies. Also mentions employees; so high confidence \"人・組織\". So confidence high.\n\nLet's create JSON: {\"exp_types\": [\"危機対処\", \"人・組織\"], \"confidence\": \"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:25:40.656209+00:00",
+ "timestamp_responded": "2026-10-25T11:25:41.958276+00:00"
+}

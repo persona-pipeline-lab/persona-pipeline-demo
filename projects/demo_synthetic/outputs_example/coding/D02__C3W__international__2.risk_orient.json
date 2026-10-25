@@ -1,0 +1,24 @@
+{
+ "job_id": "D02|C3W|international|2",
+ "seq": 88,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "4f1871366df4c15e845272fdaa3a3925815179db1abd471404d47e7d06cfba4c",
+ "prompt_sha256": "1ef53d7a93df37bd13e53671a016e8119b823e3a966b6ed1b1bb89183d97b7ff",
+ "raw_text": "{\"risk_orient\": 4, \"confidence\": \"medium\"}",
+ "reasoning_text": "We need to assess risk orientation based on wording of the decision rationale. The passage: \"市場成長率は依然として高く、当社製品への信頼も厚いため、長期的に本土競争力を保ち、顧客満足度を維持するには、現在の生産体制を強化し投資を継続する必要があります。これにより、技術優位性を維持し、ブランド価値を高められると考えます。\"\n\nBasically it's a rationale for continued investment. It mentions high market growth, strong customer trust, need to strengthen production and keep investing. They believe it will maintain tech advantage and brand value. This implies they are not significantly worried about risk; they see opportunity. Are there any words indicating risk? \"Continuous investment is necessary\". It's about maintaining competitiveness. The tone: more risk-accepting, because they are investing to keep advantage, rather than cutting losses. So risk orientation leaning high: 4-5. But is it \"Strongly risk accepting\"? Does it indicate high risk? The passage doesn't mention uncertainty or risk. It's more of a benefit statement. It might be that they are risk neutral? The wording indicates they think the investment will continue to pay off, not discuss downside. So they likely are risk accepting. On scale 1-5, maybe 4? Because they are accepting risk but not describing extremely high risk potential. There's no mention of \"maximizing potential despite risk.\" It's more like \"continue to invest because it's necessary to maintain advantage\". That is more risk-accepting those want to invest. There is no mention of risk or loss prevention. Could be 5, but 5 would be \"強くリスク受容的（不確実でも機会を取りに行くことが判断の主軸）\" - but the justification doesn't mention uncertainty. It says \"市場成長率は依然として高く\" etc. The risk orientation may lean toward 4. Let's choose 4, confidence medium? Since it's fairly clear. So JSON: {\"risk_orient\": 4, \"confidence\": \"medium\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:25:48.215107+00:00",
+ "timestamp_responded": "2026-10-25T11:25:49.598153+00:00"
+}

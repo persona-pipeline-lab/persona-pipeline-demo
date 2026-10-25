@@ -1,0 +1,24 @@
+{
+ "job_id": "D03|C3|international|2",
+ "seq": 18,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "4f1871366df4c15e845272fdaa3a3925815179db1abd471404d47e7d06cfba4c",
+ "prompt_sha256": "1ef53d7a93df37bd13e53671a016e8119b823e3a966b6ed1b1bb89183d97b7ff",
+ "raw_text": "{\"risk_orient\":5, \"confidence\":\"high\"}",
+ "reasoning_text": "We need to evaluate risk orientation from justification text: \"市場成長率は依然として高く、当社製品への信頼も厚いため、長期的に本土競争力を保ち、顧客満足度を維持するには、現在の生産体制を強化し投資を継続する必要があります。これにより、技術優位性を維持し、ブランド価値を高められると考えます。\"\n\nThe justification is about investing to maintain competitive advantage. This indicates that they believe growth remains high, product trust is good, so they'll continue investing. They acknowledge potential risk of out-of-date technology? They do not mention risk, only justification of continuation investment. The rhetoric seems risk-accepting (they see benefits outweigh risk). No mention of loss avoidance. So risk orientation likely 5? But maybe moderate? They focus on benefits and not mention risk. The scale: 5 = strongly risk-accepting (take risk even if uncertain to seize opportunities). This seems like they think high returns due to high growth and trust, so they'll continue invest. That is risk-accepting. No mention of potential downside. So I would give 5. Confidence: high? The statement is fairly explicit that risk acceptance. So high confidence. Output: {\"risk_orient\":5, \"confidence\":\"high\"}.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:21:18.655987+00:00",
+ "timestamp_responded": "2026-10-25T11:21:19.565889+00:00"
+}

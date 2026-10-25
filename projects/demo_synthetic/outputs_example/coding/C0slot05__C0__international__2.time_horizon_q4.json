@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot05|C0|international|2",
+ "seq": 58,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "37cbf2aa96f13c097441a71605e42ae97e5fc68982ab64b2b45c17e7f88f7a46",
+ "prompt_sha256": "fd480498382c878b588956ccce6cb59631c89fdfa8258e1383ea12c12e5606e2",
+ "raw_text": "{\"time_horizon\": 3, \"confidence\": \"medium\"}",
+ "reasoning_text": "We need to decide the time horizon from the reasoning. The reasoning mentions market growth year 10%, ongoing business. Investment scale is 30% of sales. They talk about the risk of continued deficits, want to partner to share burden. They mention partner using existing production, regulation/currency risk reduction, minimizing employee & community impact, maintain brand value. That looks like a medium-term? 10% growth suggests expectation of long-term return, but they still worry about short-term deficits and risk. They consider aligning with partner for short-term (cost sharing) but also long-term value. The focus is on maintain brand and mitigate risk, but mention like \"長期寄り\" maybe 4. However maybe 3 moderate? The reason: They view sustained growth, but adjust risk and partnering; not purely long-term but emphasis on sustained growth and risk sharing. So time horizon maybe 3. Confidence maybe medium.\n\nLet's produce JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:23:53.257891+00:00",
+ "timestamp_responded": "2026-10-25T11:23:53.880047+00:00"
+}

@@ -1,0 +1,24 @@
+{
+ "job_id": "D03|C3-mixed|international|2",
+ "seq": 126,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "9d570129ba3f14fc67e72d32531ab767cbf8239eeea8a9b17aba8ea91f06a131",
+ "prompt_sha256": "5f7b4b5798d4bb1c9670bb4c2bdde00f42b1841da9878ce2ba778d3b50de7c73",
+ "raw_text": "{\"risk_orient\": 4, \"confidence\": \"medium\"}",
+ "reasoning_text": "We need to determine risk orientation based on the text.\n\nText: \"現地市場の成長は継続的に見込めるため、損失を短期的に受け入れ、採算性を回復する投資が必要です。技術優位性とブランドを守ることで長期的競争力を維持できます。従業員と地域への影響も大きく、撤退は大きな社会的損失を招きます。投資はリスク分散の手段として重要です。\"\n\nKey elements: The decision is to invest and accept short-term losses to recover profitability. They argue that the market's growth is continuous, technology advantage ensures long-term competitiveness. They consider the social impact: withdrawal would bring significant social loss. Investment is key to risk diversification. The reasoning is that the lost is accepted to invest; they talk about risk distribution. There's a positive view of risk taking, but also a sense that risk mitigation by diversification is important. They highlight risk.\n\nI think it's on the risk-acceptance side. But they still mention risk distribution importance. The risk orientation is fairly positive: 4? They accept short-term loss, invest in risk diversification. They see risk as a necessary step. So probably 4: Risk accepting.\n\nConfidence: The text provides strong reasons for risk acceptance, but not extremely high (like \"I don't care about anything?\"). So medium confidence. But think: It's clear they accept risk, but also remind to diversify risk, but basically they accept risk. I'd say rating 4, understanding confidence medium.\n\nReturn JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:28:21.391594+00:00",
+ "timestamp_responded": "2026-10-25T11:28:22.452680+00:00"
+}

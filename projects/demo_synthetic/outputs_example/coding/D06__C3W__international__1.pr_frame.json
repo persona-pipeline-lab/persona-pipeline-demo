@@ -1,0 +1,24 @@
+{
+ "job_id": "D06|C3W|international|1",
+ "seq": 95,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "e2a342f2afab6c320c29d18aba5274d0a91754df82321593e5eb1db9c4b2958e",
+ "prompt_sha256": "337b85b9c251e9a7020dd67d02c9fda0076b782563e40e40d06614e691ca5923",
+ "raw_text": "{\"pr_frame\": \"組織ステークホルダー\", \"confidence\": \"high\"}",
+ "reasoning_text": "We need to choose the primary problem frame based on the given description. The description: \"市場と組織の両面からの危機で、特に従業員・地域・ブランドが大きなリスクに直面していることを最優先で捉える。\"\n\nWe should identify what the core issue is: The phrase highlights \"market and organization crisis\" but specifically emphasizes that employees, local region, and brand are at significant risk. So primary focus on \"組織ステークホルダー\" (employees, local community, brand). The phrase says \"市場と組織の両面からの危機\" though, but core is the risk to stakeholders. So the frame likely \"組織ステークホルダー\".\n\nConfidence: high.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:26:12.274576+00:00",
+ "timestamp_responded": "2026-10-25T11:26:12.852929+00:00"
+}

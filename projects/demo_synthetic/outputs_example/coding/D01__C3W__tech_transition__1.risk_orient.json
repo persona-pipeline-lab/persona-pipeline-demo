@@ -1,0 +1,24 @@
+{
+ "job_id": "D01|C3W|tech_transition|1",
+ "seq": 97,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "34bf78df1d0329ff8c12217f5f7d00277dfd1878235f6b206b53cae6395f70ff",
+ "prompt_sha256": "07baf13ab79d2a6d42e0e360a2d94c8a379113d3c26945f019fc32aa2ba1bf26",
+ "raw_text": "{\"risk_orient\":4,\"confidence\":\"high\"}",
+ "reasoning_text": "We need to assign risk orientation based on the reasoning. The text: \"新方式は既存技術に比べ遅れを取っており、追加投資を避けられない。提携により外部技術を活用し、開発コストを抑えると同時に顧客への継続的供給を確保できる。既存従業員の技術を保持しつつ、ブランドイメージを維持できる点が重要。さらに、地域社会との連携を損なわずに新技術を導入するため、外部パートナーとの協業が最も適切だ。\"\n\nInterpret: They acknowledge that new technology is behind and needs investment. They propose partnership to reduce cost, maintain brand, maintain social ties. They see collaboration as optimal. So they are risk-accepting? But they mention \"追加投資を避けられない\" meaning unavoidable investment, but they try to mitigate risk by external tech. They avoid failure by partnering, so risk is mitigated. They are not overtly risk-averse; they are accepting risk to gain benefits but seeking mitigation. So that's risk orientation 4? Because they are \"受容寄り\" (accept risk) but also balance risk by partnering. They are not strongly risk-averse or extremely aggressive. So rating 4.\n\nConfidence: The reasoning is straightforward; we are confident. So \"high\" confidence.\n\nThus output: {\"risk_orient\":4, \"confidence\":\"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:26:17.998221+00:00",
+ "timestamp_responded": "2026-10-25T11:26:19.015730+00:00"
+}

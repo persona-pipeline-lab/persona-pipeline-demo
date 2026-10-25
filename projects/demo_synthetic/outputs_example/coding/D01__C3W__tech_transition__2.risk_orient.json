@@ -1,0 +1,24 @@
+{
+ "job_id": "D01|C3W|tech_transition|2",
+ "seq": 98,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "29a240d7c376dd051ea1b5e5cbdaab22437042f23b5fb15d08c446b8e72820d8",
+ "prompt_sha256": "4cc8af7b96ac0deadbffe72458264349ba4fc7ccb454dae9bfe17a4248c46b71",
+ "raw_text": "{\"risk_orient\": 2, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to evaluate risk orientation from the reasoning text. The statement: Market growth and existing customer churn signals suggest that internal development alone is too risky. Partnering with overseas emerging companies shares tech risk and reduces financial burden. Also ensures support to existing customers, reduce brand negative impact. Fast promotion, reallocate resources. The reasoning acknowledges risk from internal dev but sees partnership as risk mitigation. The attitude is somewhat risk-averse: They see internal dev risky but choose partnerships to share risk. They take steps to reduce risk, don't mention seizing risk. So risk stance maybe 2: \"回避寄り\". The text shows risk avoidance but also some risk acceptance by pursuing partnership to accelerate while controlling risk. Overall it's risk-averse. So risk_orient 2. Confidence? Reasoning is clear: risk concern high for internal dev; they choose partnership to mitigate. High confidence. Output JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:26:23.634057+00:00",
+ "timestamp_responded": "2026-10-25T11:26:24.233281+00:00"
+}

@@ -1,0 +1,24 @@
+{
+ "job_id": "D03|C3|international|2",
+ "seq": 18,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "e6642994a7b9e87b093e5edcf365296e24d457c5af1d8b1c9ce095ad0296a64d",
+ "prompt_sha256": "cc9f9381295b842ef5b1ff8d47f2781849a55cfd6f87f447134ee06622080a38",
+ "raw_text": "{\"exp_types\": [\"海外\", \"技術・開発\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to analyze the user's request. They are an assistant that must output JSON with keys \"exp_types\" as an array of classification names, selecting all that apply. Must only pick experiences explicitly mentioned. We are given six categories: \"危機対処\", \"技術・開発\", \"海外\", \"創業・立ち上げ\", \"人・組織\", \"その他\". The description: \"海外工場で現地従業員の作業手順を詳細に文書化し、技術とその理由を共有した経験が、技術優位性とローカルニーズの両立の重要性を教えてくれました。また、第一製品でユーザーの可用性を無視した失敗から、顧客と従事員の視点を常に取り入れるべきだと学びました。\"\n\nWe need to identify the experiences mentioned: (1) \"海外工場で現地従業員の作業手順を詳細に文書化し、技術とその理由を共有した経験\" means overseas factory experience, technology development/detailed documentation, etc. So that corresponds to \"海外\" and \"技術・開発\" maybe. Also \"視点を取り入れるべき\" suggests people/organization, but that's less explicit: it is about \"顧客と従業員の視点\". That's about stakeholders. But \"人・組織\" is about people, organization operations, mentor/mentee. It's about incorporating customer and employee viewpoint which could be \"人・組織\". But we must be careful: The regulation says \"記述に明示された経験のみ拾う（推測しない）\". The explicit experiences: (1) overseas factory, (2) documentation of work procedures, technology sharing, (3) user availability oversight failure at first product. There's a failure. The first product failure meeting a crisis? But \"危機対処\" is for things like deficits, collapse, accidents, scandals. That failure might not be crisis but product failure due to oversight. The classification \"技術・開発\" is definitely present: research/ product development, tech development. \"海外\" is present: overseas factory. \"人・組織\" might be present: \"顧客と従業員の視点\". But is that explicitly describing an experience about people or organization? It's more about stakeholder perspective. It's in category \"人・組織\" (people and organization management? includes relationship between employees). It might be considered. However, the instruction says we only pick \"経験\" categories as described. The factual experiences described: \"海外工場で現地従業員の作業手順を詳細に文書化し、技術とその理由を共有した\". That is a particular experience with overseas location and technical documentation. So \"海外\" and \"技術・開発\". Also \"第一製品でユーザーの可用性を無視した失敗\" is an experience about product failure; maybe \"技術・開発\" but also \"人・組織\" maybe not. But maybe just \"技術・開発\". Because it's about product. So we can include \"技術・開発\". Also there is direct mention of \"顧客と従業員の視点を常に取り入れるべき\". That shows learning about inclusive perspective; maybe that qualifies as \"人・組織\". But \"人・組織\" means personnel, labor, organization operation, mentorship. Though the mention of customers as separate from employees might not be covered by \"人・組織\" in this sense. The classification may also be interpreted as \"人・組織\" because it's about stakeholder management. The instruction says we don't guess. The mention: \"顧客と従業員\" indicates an experience where the person's viewpoint. They mention \"ユーザーの可用性を無視した失敗\" and \"顧客と従業員の視点を常に取り入れるべきだ\". That could be considered as \"人・組織\". But I think the safe answer is including \"海外\" and \"技術・開発\". Possibly also \"人・組織\" but not necessary. But the description explicitly states \"顧客と従業員の視点\" thus might be considered \"人・組織\" rather than \"技術・開発\" because it's about how to incorporate viewpoints into product creation.\n\nLet's read the classification definitions: \"人・組織\": 人事・労務・組織運営・師弟関係. So it's about personnel and organization management. That would include the viewpoint from employees and customers? It focuses on employees, but customers may be considered external. But the category \"人・組織\" deals with internal human resource. Customers are not internal. So maybe it's not strictly \"人・組織\". Might be \"技術・開発\" because product development including user perspective is part of product tech development. So we can keep only those two categories: \"海外\" and \"技術・開発\".\n\nWe need to express confidence level. Real confidence high because we have concrete matches. Output JSON: {\"exp_types\": [\"海外\", \"技術・開発\"], \"confidence\":\"high\"}.\n\nMake sure use colons and quotes and array.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:21:20.154861+00:00",
+ "timestamp_responded": "2026-10-25T11:21:23.555354+00:00"
+}

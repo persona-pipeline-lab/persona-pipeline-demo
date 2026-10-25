@@ -1,0 +1,24 @@
+{
+ "job_id": "D02|C3W|international|1",
+ "seq": 87,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "c7c20268dd91e0b850481750c8ad6880111c861e70d3ef847f8eacca75b0334f",
+ "prompt_sha256": "7e2a5fa934230dc44051268163de0c1961e4399bf4cf4326d735fb4d3595dd0f",
+ "raw_text": "{\"exp_types\": [\"海外\", \"創業・立ち上げ\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to classify experiences mentioned. The record: \"海外工場立ち上げ時に、手順の理由を文書化し、現地スタッフへ適切に伝える重要性と、雇用・地域社会への責任を再認識した経験が、今回の判断に影響した.\" Which classifications apply? It mentions overseas factory establishment (海外) => \"海外\". Also mentions \"立ち上げ\" - factory setup => \"創業・立ち上げ\" maybe? But it's a factory establishment, not a startup or new company, but still a \"立ち上げ\" type. The classification includes \"創業・立ち上げ\" for \"創業・新事業や新会社の立ち上げ\". That can include factory establishment? It's establishing a factory abroad. That can be considered as \"立ち上げ\" of a new facility, intangible. The item \"海外\" definitely. Possibly \"人・組織\" as it deals with staff communication and social responsibility? The classification criteria: \"人・組織\" includes organization management. But the main explicit experiences: overseas factory establishment. I think we should list both \"海外\" and \"創業・立ち上げ\". Maybe also \"人・組織\" because of staff communication and responsibility. The question: \"記述に明示された経験のみ拾う（推測しない）\" So we can't infer beyond what is mentioned. They mention \"海外工場立ち上げ時\" so that's overseas and factory establishment. They also mention that \"雇用・地域社会への責任\" but not explicitly about organizational management? It's about responsibilities. There's no explicit mention of \"人事・労務\" or \"組織運営\". They mention \"手順の理由を文書化し、現地スタッフへ適切に伝える重要性\". This indicates knowledge transfer/communication. Could be  \"人・組織\" because it involves staff communication. But the classification might not include \"コミュニケーション\". \"人・組織\" includes \"人事・労務・組織運営・師弟関係\". The statement is about communication, not about HR or management practices. It's more about documentation of procedures for local staff. That can be considered part of \"組織運営\" maybe. But rule: only explicit experiences. The phrase \"手順の理由を文書化し、現地スタッフへ適切に伝える重要性\" is an experience in communication. But \"人・組織\" category includes \"組織運営\" which could include communication. So maybe we can include \"人・組織\".\n\nBut to be safe, we can include \"海外\", \"創業・立ち上げ\", \"人・組織\"? We must decide. The question: \"根拠に、言及された経験の型を次の6分類から該当するものすべて選んでください。\" So all applicable categories. So I think we should include all that are truly mentioned. They mention overseas factory establishment (海外). They mention that the experience was at the time of establishing a factory overseas, so that's \"創業・立ち上げ\". There's no mention of crises or tech dev, or other. Might include \"人・組織\". The phrase about \"手順の理由を文書化し、現地スタッフへ適切に伝える重要性\" involves staff and \"emphasis on appropriate communication\", which is about organization. So it's \"人・組織\". I'd lean to include it. The risk is if we include a category not explicitly present. But it says \"記述に明示された経験のみ拾う\". This is quite subjective. I'd argue that they did explicitly mention \"海外工場立ち上げ時\" and \"手順の理由を文書化し...\". This likely falls under \"海外\" and \"創業・立ち上げ\" and possibly \"人・組織\". But might want only \"海外\" and \"創業・立ち上げ\". Hmm.\n\nGiven limited clarity, maybe we should proceed with the broader categories: \"海外\" and \"創業・立ち上げ\". \"人・組織\" like is maybe too indirect. The question is about decision's most impacted experience. The worst-case overclassifying may be okay? But best is safe.\n\nThus output: {\"exp_types\": [\"海外\", \"創業・立ち上げ\"], \"confidence\": \"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:25:44.467249+00:00",
+ "timestamp_responded": "2026-10-25T11:25:47.332848+00:00"
+}

@@ -1,0 +1,32 @@
+{
+ "job_id": "D03|C3-mixed|international|1",
+ "seq": 125,
+ "person_id": "D03",
+ "condition": "C3-mixed",
+ "scenario": "international",
+ "rep": 1,
+ "model": "gpt-oss-20b",
+ "sent_sha256": "16c08a2000a8f75be10cf508c1ee3367837d8e53d5dd85c7e9c3c0c0ad8de691",
+ "sent_file": "sent/D03__C3-mixed__international__1.txt",
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 8192,
+  "seed": 100001,
+  "reasoning_effort": "medium"
+ },
+ "status": "ok",
+ "error_message": "",
+ "response_text": "{\n  \"q1\": [\"B\", \"A\", \"H\"],\n  \"q2_category\": 1,\n  \"q2_text\": \"主要な課題は現地事業の財務的な赤字と投資負担にあります。市場成長は期待できるものの、為替・規制のリスクを踏まえると収益性の確保が最優先です。\",\n  \"q3\": \"継続投資\",\n  \"q4_text\": \"長期成長性は確かに高い。従業員を失わずに生産体制を整えることで、ブランド価値と市場シェアを守る。リスクを分散させるために、現地パートナーとの協業を図りつつ、投資を進める。\",\n  \"q5_ranking\": [\"従業員\", \"地域社会\", \"顧客\", \"取引先\", \"株主\"],\n  \"q6_text\": \"工場長時代に老朽化した設備の更新を後回しにした経験がある。結果としてコストが増大し、現場との信頼関係に亀裂が入った。そこで、投資決断を早めて実行する重要性を学んだ。\"\n}",
+ "reasoning_text": "We must answer based on autobiographical experiences only: closeness to employees, importance of employee voices, decision making, fear of numbers suppressed, etc. Need to decide.\n\nQ1: We choose three info to confirm: A (market growth), B (financial burden), D (customer base). But could also want H. Let's think: The decisions: we need info on market growth, financial burden, employees? But choose A, B, H perhaps. But Q1: \"最初に確認したい情報\" means initial confirmation. We can pick A (growth), B (cost), D (customers) or H (social impact). Probably the autobiographical emphasis on employees and region might lead to H. I'd choose B, A, H: first check financial burden, then market growth, then social impact. Order matters.\n\nQ2: main problem: classification 1: financial/earnings. Because it's about赤字, investment burden, etc. Also risk of forking into brand. But given we weigh finances heavily (biographical emphasis on number reading), choose 1.\n\nQ3: choice: we must decide between options. In autobiographical experience, we saw that decision to keep investing and building local relationships is valuable. They often involved continuous investment. But risk: maybe we choose \"継続投資\" but with integrated social and risk management. But maybe \"提携\" is a good compromise because we can combine with partners to share risk and maintain brand. But autobiographic: they already built synergy with local suppliers, risk of losing employees. They keep operations to preserve. So likely decide to continue investment.\n\nQ4: explanation: need 3-5 sentence free writing: mention long-term growth, building relationships, brand trust, risk balancing.\n\nQ5: rank stakeholders: According to autobiographic values: employees, customers, region society, suppliers, shareholders. In order: \"従業員\" first, \"地域社会\" second, \"顧客\" third, \"取引先\" fourth? Wait \"取引先\" may be same as customers? In translator: \"取引先\" used separately. But we need to rank all 5. Considering values: employees first, then地域社会, then顧客, then取引先, then株主. However maybe \"顧客\" before \"取引先\". Let's reorder: 従業員, 地域社会, 顧客, 取引先, 株主.\n\nQ6: past experience influencing decision: their experience at 工場長: building automation and overcoming resistance; but also dealing with 事業継続 by adjusting priorities; They also had experience with asset risk leading to learning about facility modernization delays.\n\nWe'll answer: Past experience is including managing factory modernization delay; learning to act proactively to avoid major costs. Also memory about mother writing diary, retaining information.\n\nBut we choose \"過去経験\" as their experience with the plant's aging equipment causing high cost - that forced them to commit to modernization earlier.\n\nWe'll answer. Provide JSON.\n\nLet's craft final.",
+ "finish_reason": "stop",
+ "actual_model": "gpt-oss-20b",
+ "response_id": "chatcmpl-a04239f693a5b8b6",
+ "usage": {
+  "prompt_tokens": 4018,
+  "completion_tokens": 928
+ },
+ "endpoint_kind": "local",
+ "timestamp_requested": "2026-10-25T11:18:50.116664+00:00",
+ "timestamp_responded": "2026-10-25T11:18:52.891065+00:00"
+}

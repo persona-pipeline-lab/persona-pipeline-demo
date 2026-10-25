@@ -1,0 +1,24 @@
+{
+ "job_id": "D05|C3-mixed|tech_transition|2",
+ "seq": 142,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "0d5a711c5e8f32f77a6be300fddcc76e4b705c38a77e577215f49c27b516d56f",
+ "prompt_sha256": "97be3c526c4eb6f2863a1c7c9eaf3bf0a020310ad0d931815efad34da44e44af",
+ "raw_text": "{\"risk_orient\": 4, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to assign risk orientation based on the reasoning. The reasoning says: maintain current competitive advantage, enter new market, internal develop; \"急速な資金投入を行い、短期的な赤字を受け入れつつ長期的利益を確保\" meaning they accept short-term losses, invest quickly, to secure long-term profit. They emphasize continuity of employees and customers. So they accept risk, but they think structuring to manage risk: still likely moderately risk-accepting. They highlight that short-term loss is accepted to achieve long-term gains. So a risk orientation of 4 maybe. Because they are accepting some risk but within manageable internal development. They are not extremely risk neutral? They seem to have a proactive stance: \"急速な資金投入\" (rapid capital investment) and \"短期的な赤字を受け入れつつ長期的利益\". They accept short-term negative but plan to secure long-term positive. That is a risk acceptance. Could be 4. A bit risk-accepting. 5 would be strongly risk-accepting: \"any risk, seize opportunity.\" This statement acknowledges risk and implies that it's acceptable. But they also emphasize that they have proven tech and organizational power, i.e., lower risk. So 4: risk accept orientation. Confidence: high because language is specific. output JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:29:18.798791+00:00",
+ "timestamp_responded": "2026-10-25T11:29:19.698307+00:00"
+}

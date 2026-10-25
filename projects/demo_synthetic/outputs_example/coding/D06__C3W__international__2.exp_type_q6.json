@@ -1,0 +1,24 @@
+{
+ "job_id": "D06|C3W|international|2",
+ "seq": 96,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "64bac0a7715609260718e0e19d5617b4a99366937020e8b06124953e480fc33e",
+ "prompt_sha256": "b5574cb33e44eea2b1473c91f38d3bdea5d2bc071f8e3411a0b513a73d021a9d",
+ "raw_text": "{\"exp_types\": [\"危機対処\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to find all applicable types from six options based on the text. The text: \"工場がパイプ破裂し地域と従業員に大きな被害を与えた。危機対応で投資を断念せず、安全と透明性を徹底し、事故後に信用を取り戻した経験\". So this is a crisis response situation due to factory pipe rupture. So \"危機対処\" is obviously. It is also a (not necessarily) a \"技術・開発\"? It's an accident at a factory, but the crisis response is about safety and transparency. No mention of developing tech. Not overseas. Not entrepreneurship. Not people organization. So only \"危機対処\". Possibly \"人・組織\"? It mentions employees and community: but it's crisis response itself, not specifically a person/organization experience. But \"危機対処\" is clearly. The rule: \"記述に明示された経験のみ拾う (推測しない)\". It explicitly states crisis (attack) and recovery. So classification: \"危機対処\". Just that. Confidence: high. So output JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:26:16.882203+00:00",
+ "timestamp_responded": "2026-10-25T11:26:17.671505+00:00"
+}

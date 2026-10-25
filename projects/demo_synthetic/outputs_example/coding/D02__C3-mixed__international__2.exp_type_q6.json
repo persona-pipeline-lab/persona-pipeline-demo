@@ -1,0 +1,24 @@
+{
+ "job_id": "D02|C3-mixed|international|2",
+ "seq": 124,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "ac075a4170e7eb016ef6a9f1f608181f9902fe6276d16081424bfbac362c2b92",
+ "prompt_sha256": "acc0b94b8043b0a1760a2eeb5087b04518bf2767a20467fe207fa22af073443d",
+ "raw_text": "{\"exp_types\": [\"危機対処\"], \"confidence\":\"high\"}",
+ "reasoning_text": "We need to identify types: categories: crisis response, tech/dev, overseas, startup, people/org, other. The description: \"再建三年で、研究所予算を削減しつつ工場の安全投資を優先した経験がある。短期コストを犠牲にしても、長期的な競争力を確保する投資は不可欠と学んだ。\"\n\nWe need to pick all types that were explicitly stated. The answer says \"in the last 3 years of rebuilding, I have reduced the research lab budget while prioritising factory safety investment. I learned that sacrificing short-term cost for long-term competitiveness is essential.\"\n\nWhat type is that? It seems like crisis/turnaround: \"再建\" means rebuilding after a crisis likely. But might also be \"危機対処\" because it's a crisis twist of rebuilding. The category for crisis is \"危機対処\" (赤字・倒産危機・事故・不祥事・需要崩壊への対処). That seems plausible. They didn't mention technical development as \"研究所予算\" maybe research, but it's budget. Not directly a research/dev action. They also didn't mention overseas. So we might choose \"危機対処\".\n\nAlso possibly \"技術・開発\" because research labs are part of tech. But the crucial mention: \"研究所予算を削減しつつ工場の安全投資を優先\". That's a decision regarding investment in technology safety? It could be seen as \"技術・開発\" because they are dealing with factory safety investments. But the classification is for experience categories: \"技術・開発\" is \"research development and product development and production technology experience.\" That might apply if the context is experiencing development projects at research labs or factory improvements. However, the text focuses on budgeting, not on actual development of technology. So they might want to include it as \"危機対処\" only.\n\nThus produce JSON: {\"exp_types\": [\"危機対処\"], \"confidence\":\"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:28:14.866375+00:00",
+ "timestamp_responded": "2026-10-25T11:28:16.195849+00:00"
+}

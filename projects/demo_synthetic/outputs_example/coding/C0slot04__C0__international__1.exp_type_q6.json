@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot04|C0|international|1",
+ "seq": 55,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "c58744712de72941eb38680967376ba5b1c72059d25bfb22903bf9082eaf7b7c",
+ "prompt_sha256": "5ad97eb81f4c8972a63733d65eda3eea01bf53165b339c48f97544ca6c5439f8",
+ "raw_text": "{\"exp_types\": [\"海外\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to consider the statement: \"以前、国外事業の再編で現地パートナーとの合弁を結び、投資コストを低減し市場シェアを確保した経験があります。これを今回の判断に活かしています。\"\n\nWe must pick all relevant categories (multiple fits). Only experience explicitly stated. The statement says: \"国外事業の再編で現地パートナーとの合弁\" - that's overseas (海外). Also \"再編\" probably not crisis, but it's corporate restructuring. It could be \"海外\" and maybe \"創業・立ち上げ\" but not, it's reorganization of existing business, not startup. It's definitely overseas experience. Also \"投資コスト低減し市場シェア確保\" indicates potentially business development/market strategies, but categories limited to those 6. \"海外\" is definitely one. \"危機対処\" not present. \"技術・開発\" not present. \"人・組織\" not present explicitly. \"その他\" no. So only \"海外\". Confidence high.\n\nAnswer: {\"exp_types\": [\"海外\"], \"confidence\": \"high\"}\n\n",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:23:43.712640+00:00",
+ "timestamp_responded": "2026-10-25T11:23:44.505274+00:00"
+}

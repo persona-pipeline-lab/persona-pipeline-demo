@@ -1,0 +1,24 @@
+{
+ "job_id": "D02|C3W|withdrawal|2",
+ "seq": 76,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "4d5d0a522884a9dcfd3e7f3751763fa3a35313d0d513cdce58ed24cba337f31e",
+ "prompt_sha256": "c20d3d04083baeae6fdac112defbd22edb38453d5a3ef558e248b4d7725e5ffe",
+ "raw_text": "{\"risk_orient\": 2, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to rate risk orientation based on the reason's wording only. The text: market grows 12% annually, technology advantage but will fade without investment; avoidance of exit due to employee livelihood and brand consequences. They choose to continue investment even at slight loss. They highlight risk of losing trust if exit. They prioritize preserving brand, employees, external trust, even at slight loss. The tone implies risk aversion: They avoid exit despite small losses because of perceived risk to brand and employees. They are risk-averse to exit, but they are investing despite risk. However fully, they mention risk of losing trust if exit, they choose to invest and continue despite losses. They weigh long-term risk of losing trust vs short-term losses. They say \"若干の赤字を咎めつつ継続投資\" indicates they accept short-term losses for risk mitigation of brand trust. That is risk-averse in that they avoid exit. But they are not too negative. It's more like risk-averse with risk acceptance for investments to maintain advantage. So orientation likely 2 (risk-avoidant). But let's see: The wording \"業務を継続しなければ雇用を守れない ... 若干の赤字\" They emphasize loss avoidance and risk of falling behind without investment. They claim \"撤退は避ける\" due to risk of loss - risk-avoidence. They choose investment to avoid risk, not to seize high risk. So risk orientation = 2. Confidence: high because clear.\n\nWe provide JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:24:58.967029+00:00",
+ "timestamp_responded": "2026-10-25T11:24:59.963843+00:00"
+}

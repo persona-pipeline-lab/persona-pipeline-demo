@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot03|C0|tech_transition|2",
+ "seq": 66,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "7778dc2182ca622e8f44973050c1ab9c530e233b282c06d41f2b0259e1148ddb",
+ "prompt_sha256": "63ab384ba4aa2fb9f41e0b98a9d86fe3f1f41a0d2bf741e87654313de09fd769",
+ "raw_text": "{\"pr_frame\":\"技術\",\"confidence\":\"high\"}",
+ "reasoning_text": "We need to pick main problem frame. The description: \"市場拡大と競合先行に対して、現在の技術力の低下だけでなく顧客離れが進行しており、競争優位性の喪失が主たる問題となっている。\"\n\nIt highlights market expansion, competition, but main focus: technology decline and customer attrition leading to loss of competitive advantage. So two frames: market competition and technology. It might be multiple but we choose main. The core is loss of competitive advantage due to tech and customers. That's more about technology causing decline, and maybe stakeholder. The key dimension: technology decline. It says \"現在の技術力の低下\" describes tech. And \"顧客離れ\" of customer. So maybe commercial. The phrase \"競合先行\" means competitors advanced. So main is market competition? But \"競争優位性の喪失\" - we can tie to both. The instruction: choose primary if one frame is core. The description mentions tech decline and customer attrition as contributing to loss of competitive advantage. Which one is central? It states \"現在の技術力の低下だけでなく顧客離れが進行しており\" indicates both. But core may be technology because it's causing the decline? Hard. I think frame \"技術\" because it mentions technology decline. Or \"市場競争\" because it's about competition.\n\nWe pick one. I'd choose \"市場競争\" because it's about market expansion, competitor advanced. And the loss of competitive advantage is a competition basic issue. But the description is about tech contributing. But the question: \"主たる問題フレーム\" - the main problem frame. The key phrase: \"競争優位性の喪失が主たる問題\". That often fall into market competition. Yet \"技術力の低下\" suggests technology. I'd interpret that the root cause is technology but the competitive scenario. The instruction says: select only when core is in description. The description emphasizes \"技術力の低下\" - that is core. So \"技術\" frame. I will pick technology with high confidence.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:24:22.262489+00:00",
+ "timestamp_responded": "2026-10-25T11:24:23.656794+00:00"
+}

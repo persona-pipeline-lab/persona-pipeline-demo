@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot03|C0|international|2",
+ "seq": 54,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "60e4ff315fe0905af8636f020c428ef93acf0f6c182713611a67a288105573c0",
+ "prompt_sha256": "3fd1bbc6122a5c11ed8ff17370b79153351d0390373ee5cc611b5d849985e424",
+ "raw_text": "{\"exp_types\": [\"その他\"], \"confidence\": \"medium\"}",
+ "reasoning_text": "We need to identify categories from description: \"別市場で同様の規制強化に直面した際、合弁事業を組んで投資を分担し、リスクを軽減した経験がある。今回もパートナーシップで投資を共有する方針を支持します.\" The experience is dealing with regulatory strengthening in a different market, partnering in a joint venture, engaging investment sharing, risk mitigation. Which categories apply? The categories: \"危機対処\" (crisis handling: deficits, bankruptcy, accident, scandal, demand collapse). Here it's regulatory pressure but not explicitly crisis? Regulatory prompting could be considered crisis? Possibly it's managing regulatory risk rather than crisis. But we need to select categories that match explicitly expressed experiences. The experience is: joint venture, risk sharing, investment sharing. This could align with \"技術・開発\"? No. \"海外\"? It was in a different market, but not stated overseas specifically; \"別市場\" could be domestic market. So not necessarily \"海外\". The relevant category: \"人・組織\"? It's about partnership and JV; collaboration, but not specifically people management. This is more about \"投資\" and \"リスクを軽減\" via partnership. That might be \"危機対処\"? Not necessarily crisis. \"創業・立ち上げ\"? Not creation; it's about existing JV? \"技術・開発\"? No. \"その他\"? Might be \"その他\" because not any of the categories: it's about partner investment sharing. None of the given categories directly matched. But maybe classify as \"危機対処\"? The situation: regulatory strengthening is akin to a risk. But not explicit crisis.\n\nWe might decide it's \"その他\". According to instruction: only explicit experience. There's no explicit mention of overseas, crisis, founding, or people. Might include \"技術・開発\"? Not. \"海外\"? not. \"人・組織\"? partnership but could be considered organization. But \"人・組織\" is about people management, labor, operations, mentorship. This is about partnership with other firms. Might be considered \"人・組織\" but not clearly. Seems best to choose \"その他\". Confidence maybe medium.\n\nOutput JSON with exp_types: [\"その他\"]. Confidence: medium.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:23:39.615188+00:00",
+ "timestamp_responded": "2026-10-25T11:23:41.075986+00:00"
+}

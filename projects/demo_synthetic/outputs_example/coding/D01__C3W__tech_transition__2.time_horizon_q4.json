@@ -1,0 +1,24 @@
+{
+ "job_id": "D01|C3W|tech_transition|2",
+ "seq": 98,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "29a240d7c376dd051ea1b5e5cbdaab22437042f23b5fb15d08c446b8e72820d8",
+ "prompt_sha256": "e20486edf3524c341fccc292c49bbe3c2eeee2ef9c6b7ab9fb1f74fa137fed37",
+ "raw_text": "{\"time_horizon\": 2, \"confidence\": \"medium\"}",
+ "reasoning_text": "We need to evaluate the \"判断の時間視野\" i.e., the time horizon of the decision described. The scope: \"市場成長率と既存顧客の離脱兆候...\" The reasoning: they talk about taking risk, partnering with emerging overseas companies to share tech risk, reduce funding burden, guarantee support to existing customers to keep brand, accelerate new methodology, reallocate internal resources. This is focusing on mitigating short-term risk, but also reallocation of resources for potential new device. The words: \"リスクが大きい\" (big risk) \"速やかに新方式を推進しつつ\" (accelerate new method) \"社内リソースを他部門へ再配分\" (reallocate). They don't talk about a decade-long growth; it's more immediate to reduce risk and accelerate adoption. This is more short- to mid-term. The scale: 1 = short-term, 2 = short-term leaning, 3 = medium, 4 = long-term leaning, 5 = long-term. The description emphasises risk and immediate benefits. So horizon about 2? \"短期寄り\". They are concerned with near-term growth and risk. They want to accelerate. No mention of 5-10 years. So likely 2. Confidence medium: The reasoning seems fairly straightforward.\n\nSo output: {\"time_horizon\": 2, \"confidence\": \"medium\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:26:24.234844+00:00",
+ "timestamp_responded": "2026-10-25T11:26:25.165291+00:00"
+}

@@ -1,0 +1,24 @@
+{
+ "job_id": "D04|C3-mixed|withdrawal|1",
+ "seq": 115,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "63bf0a3d580262c900cdd37b27ecc6284b60ce4162375ce2d1cb52701dd7fa17",
+ "prompt_sha256": "ff2a6fb14ffee5b7c5dfebe73198ca9821441fb484e4388179714ba19781dbb4",
+ "raw_text": "{\"risk_orient\": 4, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to grade the risk orientation based on the textual justification.\n\nThe reasoning: The statement says \"市場成長率が高く技術優位性も残っている上に、追加投資によって将来の収益基盤を維持できる。ブランドと地域社会への信頼を失うことは、他事業への波及効果が大きい。短期的な利益よりも長期的な価値を守るため、継続投資を選択する。\"\n\nInterpretation: They justify investment because growth, tech advantage remains, future revenue foundation can be maintained, risk of losing brand trust could spread to other businesses. They prefer long-term value over short-term profit. They choose to continue investing.\n\nRisk orientation: They are accepting risk, because they invest for future despite uncertainties. They see potential long-term benefit, so it's risk-friendly. The language is not overly cautious; it's about long-term value, no fear described. That suggests risk acceptance orientation: 4 maybe, not strongly 5? Strongly risk accepting (5) would be if they say \"take risk; opportunity\". This is more about preserving value. But still they choose investment over withdrawal, so risk acceptance. I'd assign 4: risk acceptive. Confidence maybe high.\n\nThus output JSON: {\"risk_orient\": 4, \"confidence\": \"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:27:34.600309+00:00",
+ "timestamp_responded": "2026-10-25T11:27:35.506738+00:00"
+}

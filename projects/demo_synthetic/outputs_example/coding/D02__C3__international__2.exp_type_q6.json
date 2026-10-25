@@ -1,0 +1,24 @@
+{
+ "job_id": "D02|C3|international|2",
+ "seq": 16,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "0b45d6854a6a4331b0b18290d9937f7df3dd6763eb63f16b5ea473b243b1605e",
+ "prompt_sha256": "bc720ca76ae5a1bd97ad037c3ba97b9517ab4cf0cfc9555ac7e58a09613586de",
+ "raw_text": "{\"exp_types\": [\"危機対処\", \"人・組織\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to pick all applicable categories based on described experience. The description: \"卸部門の大取引先の資金繰り危機を乗り越える際、数字を正確に把握し、従業員と共有した経験がある。そこから、数字と人の重要性を同時に考える必要性を痛感した。\"\n\nJapanese: \"In overcoming the cash flow crisis of a major customer in the wholesale department, I have an experience of accurately grasping the numbers and sharing with employees. From there, I realized the necessity of simultaneously considering the importance of numbers and people.\"\n\nWe are to classify into categories: 「危機対処」 etc. The crisis: \"資金繰り危機\" => that's a financial crisis. This is crisis handling (危機対処). There's also \"人・組織\" involvement? Experience involves sharing numbers with employees, so some involvement in organizational aspects. But the instruction: we only pick categories for which the described experience explicitly mentions. The description says that the employee shared information; so that indicates some involvement with people and organization. That likely qualifies for 「人・組織」. But we must \"決める\" which categories apply. The original says: \"根拠に、言及された経験の型を次の6分類から該当するものすべて選んでください\". So if there is mention of crisis, it's \"危機対処\". Also mention of organizational aspects: \"従業員と共有\" -> appears to be about people. So \"人・組織\" also qualifies.\n\nBut we need to be careful: The \"経験\" is \"資金繰り危機を乗り越える経験\" which is crisis. The mention of sharing numbers with employees is part of the process but does it itself qualifies as \"人・組織\" experience? The categories: \"人・組織\" refers to experience in personnel, labor, organization management, mentor-mentee relations. Taking into account the experience includes interacting with employees, but is that classified as \"人・組織\"? It seems like it's a part of the crisis management but they experience the importance of people. There is some pending: The instruction says \"根拠に、言及された経験の型を次の6分類から該当するものすべて選んでください。規則：記述に明示された経験のみ拾う（推測しない）\". The phrase \"従業員と共有した経験\" indicates that there was engagement with employees; but is that a direct '人・組織' type? It's not explicitly an experience in personnel management, but just a communication action. The assignment likely wants us to pick \"危機対処\" as the primary, and maybe \"人・組織\" if we interpret that as included. But we should see the classification categories: \"人・組織 (personnel, labor, organization management, mentor-mentee relationships)\". The described action is sharing numbers with employees. It indicates management of people involvement. I'd say it's definitely related to organizational management.\n\nThus, include both \"危機対処\" and \"人・組織\". Also category \"その他\" not used. \"技術・開発\", \"海外\", \"創業・立ち上げ\" not from description.\n\nConfidence: high? The crisis is explicit, and sharing with employees is explicit. So high confidence.\n\nOutput JSON: {\"exp_types\": [\"危機対処\", \"人・組織\"], \"confidence\":\"high\"}\n\nMake sure to use correct category names: The categories themselves are Japanese: \"危機対処\", \"技術・開発\", \"海外\", \"創業・立ち上げ\", \"人・組織\", \"その他\".\n\nThus produce JSON.\n\n",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:21:11.871860+00:00",
+ "timestamp_responded": "2026-10-25T11:21:14.308350+00:00"
+}

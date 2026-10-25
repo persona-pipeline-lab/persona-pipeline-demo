@@ -1,0 +1,24 @@
+{
+ "job_id": "D04|C3-mixed|tech_transition|2",
+ "seq": 140,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "2c05c3c6fe816be84b0b5cb3ad7c58b1d95e577e1048a556d5ba6cbd9cbe6447",
+ "prompt_sha256": "8b04b7a670088815b863718b7e6d6e182e1269a123a3cd65f633dd2f52c4910d",
+ "raw_text": "{\"time_horizon\": 3, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to judge the time horizon from reason alone. Reason says: new tech requires resources/time beyond internal capacity, so partner overseas to supplement knowledge and resources, maintain existing tech revenue. Additionally, partnership allows risk diversification, reduce investment burden. So decision is about partnering to speed up technology, keep existing revenue, share risk. It's about immediate operational synergy? The reason includes reducing investment burden. That is somewhat medium to long term? It says new tech will take resources time, so partner now. Does the reasoning emphasize immediate risk reduction? The goal is to maintain current profitability while developing new tech, balancing growth? This seems more medium-term. Because they're adopting new tech but not committing fully. Maybe 3? But consider: It says \"将来の成長\" unclear. But the phrase \"資源と時間が不足\" indicates they need to accelerate development, they want to maintain revenue. That is short-term strategy: maintain current revenue while improving new tech. But the risk diversification and investment burden reduction is more about medium-term.\n\nScale: 1 short-term, 4 long-term, 5 long. 1 might be too short: They still are planning for new tech future. 4-5 would be long-term growth. But they specifically mention \"current tech revenue\" and \"risk distribution\". I think it's medium-term, maybe 3. Because while short term they maintain revenue, but also long term new tech.\n\nThus time_horizon 3. Confidence: high, since reasoning is clear.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:29:13.093996+00:00",
+ "timestamp_responded": "2026-10-25T11:29:14.054719+00:00"
+}

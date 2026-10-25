@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot01|C0|tech_transition|1",
+ "seq": 61,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "339554ab36538f104f09fdefb7c7e06f335d03c64ff4880f2e6e9a03a82a2352",
+ "prompt_sha256": "2b84d2dea7b7ccfa6a6d8adcbf282862bc1f0d2ff891e11cf3bc8f76c550c013",
+ "raw_text": "{\"risk_orient\": 2, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to read reasoning: They choose partnership to split development cost and risk, incorporate technology quickly, market entry, service continuity, brand leverage, employment. Reasons emphasize risk sharing, using partnership to reduce risk, preserve service continuity, reduce brand burden, maintain employment.\n\nThus risk orientation seems risk-averse, focusing on risk mitigation via partnership. Sentences describe risk reduction, benefits; no mention of ignoring risk, daring. So rating likely 2 (avoidance). For confidence maybe high because it's clear about risk mitigation.\n\nOutput: {\"risk_orient\":2,\"confidence\":\"high\"}\n\nEnsure correct JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:24:07.611564+00:00",
+ "timestamp_responded": "2026-10-25T11:24:08.042126+00:00"
+}

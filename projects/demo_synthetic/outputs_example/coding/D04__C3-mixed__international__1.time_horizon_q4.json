@@ -1,0 +1,24 @@
+{
+ "job_id": "D04|C3-mixed|international|1",
+ "seq": 127,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "aafddff19225248dca5541b7f472620a890c9d84cf811bc2949357275d5c3a76",
+ "prompt_sha256": "74992bfee404b8a17c79459521f516c85b06159bfa26d747566dada9eaf7702a",
+ "raw_text": "{\"time_horizon\": 5, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to judge the time horizon of decision based on reasoning expressed. Statement: \"従業員と地域社会に対して責任を持ちつつ、ブランドと顧客の信頼を守るために投資を継続する方針です。大規模な投資は短期的に赤字を招くものの、市場の成長を失わずに将来の収益を確保する唯一の手段だと判断しました。\"\n\nThey emphasize that large investment causes short-term losses but ensures future revenue to not lose market growth. They are making a decision to invest continuously to maintain trust. That is a long-term perspective. They consider future revenue and long-term growth 5-10+ years? The phrase \"将来の収益を確保\" indicates long term. So time horizon likely 4 or 5. Distinguish: 4=長期寄り, 5=長期 (5〜10年以上). The description about single investment as only way to secure future revenue. Could be a 5-year horizon? But typical corporate long-term could be 5-10+ years. There is no exact period. The phrase \"将来\" and \"市場の成長を失わずに将来の収益\" signals long-term. I'd choose 5 as maximum, but maybe 4 is long-term lean? Because they said \"市場の成長を失わずに将来の収益\". That implies long horizon. Might be 5. Let's assign 5.\n\nConfidence: high.\n\nReturn JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:28:26.477101+00:00",
+ "timestamp_responded": "2026-10-25T11:28:27.519632+00:00"
+}

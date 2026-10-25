@@ -1,0 +1,32 @@
+{
+ "job_id": "C0slot05|C0|international|1",
+ "seq": 57,
+ "person_id": "",
+ "condition": "C0",
+ "scenario": "international",
+ "rep": 1,
+ "model": "gpt-oss-20b",
+ "sent_sha256": "dfc570b3130e5fa382a086fe5948f5e24a7f18c338f605d027e96dfb92321642",
+ "sent_file": "sent/C0slot05__C0__international__1.txt",
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 8192,
+  "seed": 100001,
+  "reasoning_effort": "medium"
+ },
+ "status": "ok",
+ "error_message": "",
+ "response_text": "{\"q1\":[\"B\",\"E\",\"A\"],\"q2_category\":1,\"q2_text\":\"現状では営業赤字と追加投資が企業財務を圧迫しており、短期的な収益性が大きな課題となっています。\",\"q3\":\"提携\",\"q4_text\":\"提携により現地投資負担を分担し、政府支援を受けた競合に対抗できる資源と知識を確保します。また、合弁やパートナーシップで市場シェアを維持し、ブランドリスクを緩和できると考えます。\",\"q5_ranking\":[\"株主\",\"従業員\",\"地域社会\",\"取引先\",\"顧客\"],\"q6_text\":\"以前、国外事業の再編で現地パートナーとの合弁を結び、投資コストを低減し市場シェアを確保した経験があります。これを今回の判断に活かしています。\"}",
+ "reasoning_text": "We need to answer with JSON only. We need to choose Q1: 3 items from A-H in order of priority. Which ones would we want to confirm? We're rational: would need further info on financial burden (C? B?), competitive environment (E?), market growth (A). Let's pick B (financial burden), E (competition), A (market growth). But ask order: first confirming financial burden, then competition, then market growth.\n\nQ2: classify main issue. Let's think: It's about financial health (赤字, 投資負担) but also competition. The main category likely 1 = 財務・収益の問題. We'll mention that the crushing financial loss and required investment threaten viability.\n\nQ3: choose? It asks for selection: \"撤退\",\"縮小\",\"継続投資\",\"提携\". Let's choose \"提携\". Because we have high growth, strong brand, but need investment and competition. Strategic partnership could open capital, share risk.\n\nAlternatively \"継続投資\" could be chosen, but risk is high. Better choose \"提携\" and maybe partnership with local firm to share investment and mitigate risk. So answer \"提携\".\n\nQ4: explain 3-5 sentences: We need reason about why choose alliance: to reduce cost, share risk, leverage partner networks, maintain market presence, mitigate regulatory pressure.\n\nQ5: ranking stakeholders. Which most important? For a Japanese Kōjō, but overseas business has 18% of employees. Considering risk, maybe priority: 株主 (profit, continuity), 従業員 (10-18% employees, risk). But must maintain customer trust. Perhaps we rank: 株主 > 従業員 > 取引先 > 顧客 > 地域社会? Actually brand and region. Let's think: The company's overall reputation may spike with local employee layoffs and social issues. The question can be subjective. Let's decide: 株主 > 従業員 > 地域社会 > 取引先 > 顧客? But maybe for domestic, risk to customers; but brand trust. Actually let's think of highest: 株主 (financial sustain), 従業員 (their livelihoods), 地域社会 (social impact), 取引先 (partner companies), 顧客 (customer trust). But we need all five. Let's output as such.\n\nBut we need to consider that the question may want to emphasize f. The answer likely: 株主 > 従業員 > 地域社会 > 取引先 > 顧客. The brand risk might shift order but it's not asked. It's ambiguous.\n\nLet's decide: The rest: \"Q5 ranking\": [\"株主\",\"従業員\",\"地域社会\",\"取引先\",\"顧客\"]. We'll do that.\n\nQ6: Past experience: \"特にない\" or talk about previous restructure. But we can mention: \"前回、第三国の事業再編で合弁会社を設立し、リスクを分散した経験があります\" something like that. but ensure: 2-4 sentences. Let's do: \"以前、国外事業の再編で現地パートナーとの合弁を結び、投資コストを低減し市場シェアを確保した経験があります。これを今回の判断に活かしています。\" That's two sentences. Good.\n\nMake JSON: all keys correct.\n\nLet's ensure object order with question mapping. Provide correct types. JSON must not have trailing commas. Ensure \"q1\" array with strings.\n\nLet's craft final.",
+ "finish_reason": "stop",
+ "actual_model": "gpt-oss-20b",
+ "response_id": "chatcmpl-b2701ef79745480f",
+ "usage": {
+  "prompt_tokens": 1373,
+  "completion_tokens": 977
+ },
+ "endpoint_kind": "local",
+ "timestamp_requested": "2026-10-25T11:13:48.556735+00:00",
+ "timestamp_responded": "2026-10-25T11:13:51.390776+00:00"
+}

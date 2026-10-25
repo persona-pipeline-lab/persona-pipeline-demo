@@ -1,0 +1,24 @@
+{
+ "job_id": "D02|C3-mixed|tech_transition|2",
+ "seq": 136,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "2ca7991c7bfda6ead4da84a92dd18984427fcb2a56ed210b86c96fd70fa40b52",
+ "prompt_sha256": "65f8729accdc352cb431c57b630fb4e712a05105eef827893c55f95aa0d2d3e1",
+ "raw_text": "{\"exp_types\":[\"危機対処\",\"技術・開発\"],\"confidence\":\"high\"}",
+ "reasoning_text": "We need to identify the types of experience mentioned. The text: \"回復期に研究所予算を削減し安全設備への投資を決定した経験が、短期損失を耐えながら長期的基盤を築く重要性を教えてくれた。また、B社とのパートナーシップはリスク分担と専門知識共有が成功のカギであることを示した。\"\n\nSo the experiences:\n\n1. During recovery period, reduced research institute budget and decided to invest in safety equipment. That's about budget reducing and investing in safety equipment. This is aiming to secure long-term foundation. That's more about cost management, safety investment. Could be considered \"技術・開発\" because it's about research institute and safety equipment? But the situation about budget cuts is more about crisis management: \"回復期\" implies a recovery period after a crisis maybe? But the recall: \"回復期に研究所予算を削減し安全設備への投資を決定\" - oh, that is \"budget cuts while investing in safety equipment\". That could be about risk management, budgeting.\n\nThe categories: \"危機対処\", \"技術・開発\", \"海外\", \"創業・立ち上げ\", \"人・組織\", \"その他\".\n\nWhat type(s) of experience present?\n\n- The event of budget reduction and investing in safety equipment: That falls under maybe \"危機対処\" because it happened during recovery from some crisis. But no explicit mention of crisis like bankruptcy, accident, etc. It says \"回復期\" which might mean after a crisis.\n\n- \"技術・開発\" might also be present because it's about research institute and safety equipment, likely technical/environmental. The description: \"研究所予算を削減し安全設備への投資\" suggests dealing with research facilities, maybe improve R&D infrastructure. This could be seen as a tech development scenario. But I'd interpret as \"技術・開発\".\n\n- \"人・組織\": not explicitly about personnel.\n\n- \"海外\": no mention.\n\n- \"創業・立ち上げ\": no mention.\n\n- \"その他\": Maybe if none of the above categories apply.\n\nAlso the second part: \"B社とのパートナーシップはリスク分担と専門知識共有が成功のカギであることを示した。\" That refers to partnership with B company, risk sharing and shared expertise. This shows a collaborations experience. Could be considered \"危機対処\"? Only if partnership used to handle risk. But it maybe more about \"技術・開発\"? A partnership for expertise sharing could be seen as \"技術・開発\" as it deals with technical knowledge. But not necessarily technology-specific. Could be \"その他\". The categories have no \"partnership\" specifically, but \"技術・開発\" includes research and product development, so could be considered partnership for development. But also could be under \"人・組織\" if partnership includes organizational relationship, but it's external. But the instructions: only pick categories that the translation explicitly says. The text says \"B社とのパートナーシップはリスク分担と専門知識共有が成功のカギである\". It doesn't mention a particular domain like overseas, startup, tech, crisis. But we can infer it is about risk management and knowledge sharing, maybe internal aspects. It does not mention overseas or startup. It might be considered \"技術・開発\" because expertise sharing maybe for technology development. Or \"危機対処\" because risk sharing. However the context: \"B社とのパートナーシップはリスク分担と専門知識共有が成功のカギ\" likely a partnership to share risk and knowledge, maybe R&D partnerships, so \"技術・開発\".\n\nWe need to choose all applicable types based solely on the text. Could be both \"危機対処\" and \"技術・開発\" from both parts. But we may argue \"危機対処\" is a bit of a reach: \"回復期\" suggests recovery after past crisis. The text: \"回復期に研究所予算を削減し安全設備への投資を決定\" This could be considered as strategic decisions during recovery period which might be part of crisis response. So \"危機対処\" applies. \"技術・開発\" also because it's about research institute. And partnership could be in \"技術・開発\".\n\nAdditionally, maybe \"人・組織\" because partnership involves organizational collaboration. But the text: \"B社とのパートナーシップ\", doesn't mention internal organization.\n\nThus I'd include \"危機対処\" and \"技術・開発\".\n\nWhat about \"その他\"? Only if none fit. But we have fit.\n\nThus produce JSON:\n\n{\n\"exp_types\": [\"危機対処\", \"技術・開発\"],\n\"confidence\": \"high\"\n}\n\nI think high confidence.\n\nLet's produce.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:28:58.357578+00:00",
+ "timestamp_responded": "2026-10-25T11:29:01.478002+00:00"
+}

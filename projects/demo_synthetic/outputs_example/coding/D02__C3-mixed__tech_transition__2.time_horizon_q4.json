@@ -1,0 +1,24 @@
+{
+ "job_id": "D02|C3-mixed|tech_transition|2",
+ "seq": 136,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "f9b324e0cbf52f96b6aa3da6d63110c32f4b5a44f20f6d4a35d49f8ed668c9c2",
+ "prompt_sha256": "e4db3a98fe0d31166859f8d84bb1ecff6e3ffe9796a868149549143ab198d508",
+ "raw_text": "{\"time_horizon\": 2, \"confidence\": \"high\"}",
+ "reasoning_text": "The user wants to assign a time horizon rating (1-5) based on the reasoning text. Must only use reasoning text, no external knowledge. Judgement: The statement refers \"海外新興企業との提携\" to share development costs, exchange expertise, maintain brand and safety, but also importantly \"市場シェアを奪われる前に技術力を補完し、競争力を確保するため\" which indicates market share is being threatened soon. That signals a more short-term urgency: the need to prevent losing market share before it happens. Yet the partnership for sharing development costs also suggests a medium-term collaboration to maintain competitiveness. However given the urgency, the time horizon would be short or short-range: 1 or 2.\n\nThe phrase \"市場シェアを奪われる前に\" suggests imminent threat (short-term). They also talk about \"従業員が学び続ける環境を守りつつ\" - that's more of a long-term perspective. But main driver seems to be a short-term competitive threat.\n\nThus I'd lean to 2 (short-term oriented). I'll assign high confidence. The output JSON only.\n\nLet's produce: {\"time_horizon\": 2, \"confidence\":\"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:28:57.529354+00:00",
+ "timestamp_responded": "2026-10-25T11:28:58.355671+00:00"
+}

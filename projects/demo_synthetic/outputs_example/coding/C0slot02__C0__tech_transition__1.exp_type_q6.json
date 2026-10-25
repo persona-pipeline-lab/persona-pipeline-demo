@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot02|C0|tech_transition|1",
+ "seq": 63,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "e734a3968c0d6627fdcac7d8179fb7acfb9391f123638e13be45971f66fc28fb",
+ "prompt_sha256": "c5f269282e783856649f23d01fb486387b08b732326697a4b8018ba9174a4d56",
+ "raw_text": "{\"exp_types\": [\"技術・開発\",\"海外\"], \"confidence\":\"high\"}",
+ "reasoning_text": "We need to read the statement in Japanese:\n\n\"前職では、国内市場が成熟した製造業で新しいデジタルプラットフォームを導入した際、海外のITベンダーと提携し、育成と導入を統合。顧客への価値提供を維持しながらコストを削減した経験がある。\"\n\nThe experiences: \"導入\" of a digital platform in an established manufacturing company. It involved partnering with overseas IT vendor. This is about technology/dev. Also \"育成と導入を統合\" - integration of training and implementation. It may involve tech and overseas aspects. So classification: \"技術・開発\" (since it's about new digital platform). Also \"海外\" (since partnering with overseas vendor). It doesn't mention crisis, founding, or people/org. So return those two.\n\nConfidence: high because it's explicitly stated. Output JSON: {\"exp_types\": [\"技術・開発\",\"海外\"], \"confidence\":\"high\"} The classification names should match given Japanese names exactly. Good.\n\nLet's produce.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:24:15.537009+00:00",
+ "timestamp_responded": "2026-10-25T11:24:16.288820+00:00"
+}

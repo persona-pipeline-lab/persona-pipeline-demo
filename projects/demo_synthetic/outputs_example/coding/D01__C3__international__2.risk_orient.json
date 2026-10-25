@@ -1,0 +1,24 @@
+{
+ "job_id": "D01|C3|international|2",
+ "seq": 14,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "49a4c5a05f2951909f6954a8484be909fb577d0c1675e105d772b3f8bafedc0e",
+ "prompt_sha256": "adbf4df33f6fc4a066cb1776de67e1878aaf4962970b61bcd0d2381320bca4e6",
+ "raw_text": "{\"risk_orient\": 4, \"confidence\": \"high\"}",
+ "reasoning_text": "We have a Japanese prompt: The user says: \"あなたは経営学研究のコーディング作業者です。以下は、ある戦略的選択の判断理由の記述です。記述だけを根拠に、リスクへの姿勢を1〜5の整数で評定してください。\n\n尺度: 1=強くリスク回避的（損失・不確実性の回避が判断の主軸）、2=回避寄り、3=中立・両論、4=受容寄り、5=強くリスク受容的（不確実でも機会を取りに行くことが判断の主軸）\n\n規則: 選ばれた選択肢そのものではなく、理由の語り方で判定する（撤退でも「機会を惜しむが損失が怖い」なら回避側）。外部知識を使わない。出力は次のJSONのみ:\n{\"risk_orient\": 整数1-5, \"confidence\": \"high/medium/low\"}\n\n【記述】\n市場は10％成長が続き、我々の製品は品質優位が残っている。必要な投資は確かに大きいが、短期赤字を受け止め将来利益を確保するために本土投資を行う。\"\n\nInterpretation: They say the market grows 10%, product has quality advantage. Investment is large, but they will bear short-term losses to secure future profits.\n\nSo the reasoning: They are acknowledging substantial risk (large investment, short-term loss) but commit to investment because they foresee future benefit. The tone: \"short-term loss is accepted, to secure future profit.\" The risk orientation: They accept risk for future benefit, indicate risk acceptance. But how risk orientation scale? 4=受容寄り, 5=強くリスク受容. They mention \"短期赤字を受け止め\" (bear short-term loss) to ensure future profit. They are open to accepting temporary losses for future returns. That is risk acceptance; but they mention \"必要な投資は確かに大きい\". Could them be weighing risk? They don't mention fear; they just accept. So it's risk acceptance oriented, maybe 4.\n\nConfidence: The statement is clear; moderately confident; high? Let's assess. No ambiguous; risk orientation 4. Confidence high, because clear risk acceptance. They express that they will accept negative short-term effect.\n\nThus output JSON: {\"risk_orient\": 4, \"confidence\": \"high\"}\n\n",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:21:02.489700+00:00",
+ "timestamp_responded": "2026-10-25T11:21:04.191038+00:00"
+}

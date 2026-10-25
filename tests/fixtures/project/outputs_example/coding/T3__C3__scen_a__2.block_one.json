@@ -1,0 +1,24 @@
+{
+ "job_id": "T3|C3|scen_a|2",
+ "seq": 6,
+ "block": "block_one",
+ "source": "q2_text",
+ "input_sha256": "6742ef18171021f635c2abaf09c83ddf1e4bf87728ca1b5e82b529cc62976c62",
+ "prompt_sha256": "a8bf260ece632a9b9de8649878880c5b22eb09edbe822cea2c5d3887e6bf8add",
+ "raw_text": "{\"label_one\": \"ラベルA\", \"confidence\": \"high\"}",
+ "reasoning_text": "",
+ "error_message": "",
+ "model": "mock-model",
+ "actual_model": "mock-model-1",
+ "endpoint_kind": "mock",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T06:50:53.608317+00:00",
+ "timestamp_responded": "2026-10-25T06:50:53.608317+00:00"
+}

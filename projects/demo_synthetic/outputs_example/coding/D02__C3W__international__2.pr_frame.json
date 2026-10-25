@@ -1,0 +1,24 @@
+{
+ "job_id": "D02|C3W|international|2",
+ "seq": 88,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "e0cb734a57298da8ab15eb0af031e085292fbb764fae01f1f55659a22292cd3b",
+ "prompt_sha256": "e85228f0fa4b2e7bbca3a43c88d656fb8dbb7ccfda71dd3b33211ba4c7e9fc08",
+ "raw_text": "{\"pr_frame\":\"市場競争\",\"confidence\":\"high\"}",
+ "reasoning_text": "We need to parse the short description:\n\n\"本件は、規制強化と為替変動により収益圧迫され、価格競争が加速する中で、市場シェアと利益率を維持できるかという競争と市場の問題に直面しています。\"\n\nIt's essentially: due to regulation tightening and foreign exchange fluctuations compressing profits, and intensified price competition, the key issue is whether to maintain market share and profit margin. Problem frames:\n\n- \"財務収益\" (profitability, financial receipts, cost, etc.)\n- \"市場競争\" (market growing, competition, customer acquisition)\n- \"技術\" (technology advantage, transformation)\n- \"組織ステークホルダー\" (responsibility to employees, partners, community, brand)\n- \"複数拮抗\" (multiple frames)\n\nThe description states \"price competition being accelerated, maintaining market share and profit margins\" = that's market competition. Also mentions regulation tightening and FX changes compressing earnings, but the core is the competition and market. The classification is \"市場競争\".\n\nConfidence? The description definitely points toward market competition; also mention profit margin. But the explanation is \"競争と市場の問題\". So high.\n\nTherefore JSON:\n\n{\"pr_frame\": \"市場競争\", \"confidence\": \"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:25:47.334389+00:00",
+ "timestamp_responded": "2026-10-25T11:25:48.213286+00:00"
+}

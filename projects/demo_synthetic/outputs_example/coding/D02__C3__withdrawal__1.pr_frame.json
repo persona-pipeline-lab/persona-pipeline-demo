@@ -1,0 +1,24 @@
+{
+ "job_id": "D02|C3|withdrawal|1",
+ "seq": 3,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "180bf1d8ef9936c74cbf782ef47f3f1c7f38f3161efe8f3f3bbcca9a00856fa0",
+ "prompt_sha256": "fc92410305158f3badac8f5e83d980ba8c0942c216285bb9cc6390f31dee8d6d",
+ "raw_text": "{\"pr_frame\":\"財務収益\",\"confidence\":\"high\"}",
+ "reasoning_text": "We need to choose classification: The description says \"主に財務的な赤字と追加投資の負担が大きく、事業の継続が不透明\". So key issue: financial profitability, deficits, investment burden. That matches \"財務収益\" frame. So pr_frame: \"財務収益\". Confidence high. Output JSON with exact format.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:01:12.535379+00:00",
+ "timestamp_responded": "2026-10-25T11:01:12.863973+00:00"
+}

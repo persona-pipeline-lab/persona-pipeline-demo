@@ -1,0 +1,32 @@
+{
+ "job_id": "D02|C3-mixed|international|2",
+ "seq": 124,
+ "person_id": "D02",
+ "condition": "C3-mixed",
+ "scenario": "international",
+ "rep": 2,
+ "model": "gpt-oss-20b",
+ "sent_sha256": "47a44b473b9addc3c179f4c1c91138810936e1e335752d9e9e8b8bc54766f6d7",
+ "sent_file": "sent/D02__C3-mixed__international__2.txt",
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 8192,
+  "seed": 100002,
+  "reasoning_effort": "medium"
+ },
+ "status": "ok",
+ "error_message": "",
+ "response_text": "{\"q1\":[\"B\",\"A\",\"E\"],\"q2_category\":1,\"q2_text\":\"財務的負担と投資必要性が最も直面する課題であり、長期的な成長を維持するために不可欠な投資確保が不可欠だと考える。\",\"q3\":\"継続投資\",\"q4_text\":\"現地市場は今後も10%の成長が見込まれ、ブランドと顧客信頼は大きい。競合は価格競争で優位に立つものの、品質と耐久性の差はまだ残る。大規模投資をして生産体制を強化すれば、規制・為替リスクの軽減と長期利益の確保が可能だと判断した。\",\"q5_ranking\":[\"従業員\",\"地域社会\",\"顧客\",\"取引先\",\"株主\"],\"q6_text\":\"再建三年で、研究所予算を削減しつつ工場の安全投資を優先した経験がある。短期コストを犠牲にしても、長期的な競争力を確保する投資は不可欠と学んだ。\"}",
+ "reasoning_text": "We need to respond with a JSON object only, no explanation. Use only self-contained. We need to think as person with experiences.\n\nContext: big Japanese listed company. Overseas core business turned into loss due to regulation and currency depreciation. We must decide to pull out, scale down, invest, or partner. Use we derived from autobiography: emphasis on people not leaving due to pay but due to learning opportunity; importance of training and development; values: focus on employee retention, treat evaluation to develop; important to keep safety and long term investments; reluctant to reduce research? They value service.\n\nWe must use past experiences: at the time of recapitalization, they cut research budget for a reason but promised to return it after investment; used negotiation with union; told \"the s\" no.\n\nAlso had experience that rating system is to nurture. So they may weigh employees and stakeholder heavily.\n\nQ1: Choose 3 info to confirm first. Which ones? We need strategic to evaluate. Likely D: customer base, E: competitor actions, B: financial burden, maybe A: growth whether to continue.\n\nFrom priorities: We should confirm \"B: financial burden,\" \"E: competitor actions,\" \"A: growth.\" We need to weigh guarantee of long term growth. But \"E: competitor actions\" to gauge market threat. Actually we would also want \"B\" to gauge viability. So maybe B, E, A (growth). Put in order B, E, A.\n\nBut we must follow from past experience: At restructure, they gathered data, engaged with union; also satisfaction with safety, etc. They also value transparency, but info to confirm first? The question: \"最初に確認したい情報\" The order: B, E, A.\n\nBut also D: new customer acquisition slow. Actually may confirm that. But only 3. I'll choose B, E, D? Or B, A, D? Let's think scenario: \"To decide: invest/withdraw.\" Important to know financial burden and growth potential. Also competitor actions could confirm approach. I'll pick B, A, E.\n\nLet's craft Q1 array: [\"B\", \"A\", \"E\"].\n\nQ2: Which category main? Could be 1 (financial) because redline: need almost 30% of revenue to invest to continue, and negative profit 9%. But also competition. Past experience indicates focusing on employee retention and safety; but main issue is finances. I'd select 1.\n\nBut maybe combine? We must pick main one. I'd say 1: financial/ revenue issue. But \"market & competition\" also important but maybe treat as external & not controlling. Because they have brand.\n\nWe'll pick numeric 1.\n\nQ3: We choose \"継続投資\" (continue investment). Because resilience: growth market, brand, employees, commitments. Unless too much risk. They prefer to invest infrastructure to compete.\n\nHowever need to consider that B: 30% of revenue required maybe too high if red. But if we invest now we might maintain brand and employment.\n\nBut the experience: they had to cut research spending but promised to return after improvement. Similarly we might cut something else.\n\nYes, choose \"継続投資\".\n\nQ4: Reason explanation: 3-5 sentences. We'll craft: They have high long-term growth, brand trust, and employees. Investment needed to match competitor production; without new plant can't compete. We must mitigate currency risk by local production. The market remains attractive; losing all cause risk.\n\nAlso mention your value of people: Company will still keep jobs, maintain community. Based on experience with restart, you are comfortable to temporarily reduce research or pay to cover investment. OK.\n\nQ5: Stakeholder ranking. Based on personal values: They value employees first and workers. But also stakeholders: Local community, employees, customers, shareholders, suppliers. In the autobiography: key emphasis on employees and retention. Also community: region. The ranking probably: 従業員, 地域社会, 顧客, 取引先, 株主. But maybe also 取引先 close after customers? In corporate context, customers > 取引先? Probably ranking: 従業員, 地域社会, 顧客, 取引先, 株主 (top to bottom). Let's pick that.\n\nQ6: Past experience that influenced the decision: The time when you had to cut research budget, with negotiation and promise to revive after investment; experience of balancing short-term cost vs long-term potential, learning that investing in critical infrastructure and company value outweighs immediate ROI. Also the evaluation system and training experience.\n\nWrite 2-4 sentences. Provide the text: mention the experience in \"再建三年\" where you cut research budget to invest in plant safety and guarantee through union. That influenced you to decide to invest now. Also mention \"human resource\" aspect: you value employee training and preventing attrition, so investment is needed to maintain workforce.\n\nAlright ready. Provide JSON.",
+ "finish_reason": "stop",
+ "actual_model": "gpt-oss-20b",
+ "response_id": "chatcmpl-a474b48fd298feb8",
+ "usage": {
+  "prompt_tokens": 4024,
+  "completion_tokens": 1309
+ },
+ "endpoint_kind": "local",
+ "timestamp_requested": "2026-10-25T11:18:46.283908+00:00",
+ "timestamp_responded": "2026-10-25T11:18:50.113432+00:00"
+}

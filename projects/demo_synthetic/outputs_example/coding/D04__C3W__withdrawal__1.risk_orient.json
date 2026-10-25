@@ -1,0 +1,24 @@
+{
+ "job_id": "D04|C3W|withdrawal|1",
+ "seq": 79,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "4cd66b3b68a5b8a4fef1f9660c027a5f67341c775d188ba030114e1472b22555",
+ "prompt_sha256": "ab11914c76e99b6b40b0934db9d9a7c7da7ae372b307f35ebe111e494f7dedee",
+ "raw_text": "{\"risk_orient\": 4, \"confidence\": \"high\"}",
+ "reasoning_text": "The user asks: \"あなたは経営学研究のコーディング作業者です。以下は、ある戦略的選択の判断理由の記述です。記述だけを根拠に、リスクへの姿勢を1〜5の整数で評定してください。\"\n\nWe need to assess risk orientation from the reasoning text:\n\n\"投資によって技術優位性を保ち、長期的に市場シェアを拡大できる見込みがあるため。既存顧客の関係を維持しつつ、新規開拓の土台を築く必要がある。投資を行わないと競合に先を行けない。\"\n\nThis indicates: They see an investment as necessary to maintain technological advantage, expand market share. They emphasize the need to maintain current customer relationships while building new. They state \"if not invest, competitors already ahead.\" Language indicates that they consider risk high: They will invest to avoid falling behind. It's not strongly risk-averse or risk-tolerant? They are basically rational: \"Need to invest to maintain advantage.\" That's a proactive risk-taking stance: they see the risk of not investing. The risk orientation seems to be \"taking risk\" to maintain competitive advantage, but risk tolerance also considered: they accept risk rather than avoid. So rating 4 or 5? They did not mention fear of loss, they talk about maintaining advantage; they see the investment as necessary; not strongly risk-averse. But perhaps risk-accepting moderate: 4. So output: risk_orient 4, confidence high maybe medium? The text is clear; so confidence high. So JSON: {\"risk_orient\": 4, \"confidence\": \"high\"}.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:25:12.031357+00:00",
+ "timestamp_responded": "2026-10-25T11:25:13.168616+00:00"
+}

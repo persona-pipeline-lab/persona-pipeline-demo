@@ -1,0 +1,24 @@
+{
+ "job_id": "D04|C3-mixed|withdrawal|2",
+ "seq": 116,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "678c3074b683c35aec6a977638a95fd290a686fcf59926f79f4e15ce1e781b6d",
+ "prompt_sha256": "21e57bf9b748af027550b92cfb60053b20ab30f218d9a7dc1aefa6fd97f3072f",
+ "raw_text": "{\"time_horizon\": 4, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to determine time horizon rating 1-5. Look at language. They mention market growth 12% annually, technology advantage, future sales expansion. Also mention short-term loss could be offset, but also long-term profitability. The emphasis seems balanced: mention short-term losses, but long-term profit. They also mention protecting brand and community. The overall perspective seems leaning slightly long-term but still acknowledges short-term. The scale: 1=short-term, 2=short-term leaning, 3=mid-term, 4=long-term leaning, 5=long-term. They mention \"将来の売上拡大\" and \"長期的に利益拡大\" as well as short-term red side. The language: \"短期の赤字を早期に打ち消し\" indicates some short-term aspects. But overall they focus on long-term growth potential. I'd rate 4 (long-term leaning) maybe? Let's see: \"市場が年率12%で拡大し続ける点\" long-term trend. Also \"自社技術が現段階で優位\" short-term advantage. \"将来の売上拡大\" long-term. \"短期の赤字\" short-term risk. \"長期的に利益拡大\" long-term payoff. \"ブランドや地域社会への影響も継続することで保護できる\" long-term brand. I'd assign time_horizon 4. Confidence high because text clearly more emphasis on long-term growth.\n\nWe output JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:27:39.357397+00:00",
+ "timestamp_responded": "2026-10-25T11:27:40.366581+00:00"
+}

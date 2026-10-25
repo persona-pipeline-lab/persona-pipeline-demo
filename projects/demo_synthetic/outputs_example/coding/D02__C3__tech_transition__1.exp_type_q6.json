@@ -1,0 +1,24 @@
+{
+ "job_id": "D02|C3|tech_transition|1",
+ "seq": 27,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "eeae72fc32dfcdd6e48d58ebc37e9f59885433ac1186b6e3f0ad1710db6cf981",
+ "prompt_sha256": "c641efb8833ddd978c6fa46af680e734e81be2b797df6f7fa29ba2325df77af5",
+ "raw_text": "{\"exp_types\":[\"危機対処\",\"技術・開発\",\"人・組織\"],\"confidence\":\"high\"}",
+ "reasoning_text": "We need to identify all applicable categories from the 6: \"危機対処\" (crisis management: deficits, insolvency, accidents, scandals, demand collapse), \"技術・開発\" (R&D, product dev, production tech), \"海外\" (overseas presence/operations), \"創業・立ち上げ\" (founding, new venture), \"人・組織\" (HR, labor, org operations, mentorship), \"その他\".\n\nThe described experience: \"店舗を閉めるとき、従業員と顧客の『顔』を直接聞き、数字と人間関係を結びつける重要性を痛感した経験がある。そこで、急速な技術転換を求められる場面でも、顧客と従業員の実感を最優先し、数字を理解して支える戦略を取ることを決断した.\"\n\nKey details: closed a store, talked to staff and customers, realized importance of linking numbers with human relationships; in rapid technological change scenario, prioritized customers and employees' perceptions, used understanding of numbers to support strategy.\n\nWhich categories are explicitly present?\n\nThe store closed indicates crisis? It's a shutdown of a store, maybe due to poor performance. This could be considered a \"危機対処\" because it addresses a store closing \"危機\" (like business closure). But the context: \"店舗を閉めるとき\" could be closure as part of restructuring, not necessarily crisis; but still it's a crisis for employees. They mention \"急速な技術転換\" - technological change; they used strategy addressing customers/ employees. That involves \"技術・開発\" maybe because technology change is being handled. But it's not necessarily new product dev. Could be adaptation to new tech, but still in business side.\n\n\"人・組織\" clearly: they talk to employees and customers, dealing with human relationships, HR / org. So that category definitely applies.\n\n\"\n\nCrises: store closure - that is related to crisis management: \"危機対処\"? Could be. The closure is a crisis for the business. We should include \"危機対処\".\n\nTechnological transformation: \"急速な技術転換を求められる場面\" - Could be \"技術・開発\"? It's more about adaptation rather than development. But the question: The classification \"技術・開発\" is defined as \"研究開発・製品開発・生産技術の経験\". The actually experiences mention \"技術転換\". That might be considered as part of technology adaptation, but the category is about experience in R&D, dev, production tech. There's no mention of actual R&D or product dev, just adopting tech. Probably not broadly \"技術・開発\" but it's about dealing with tech change. But we could still include \"技術・開発\" because they mention technology switching.\n\nThe rest: overseas etc no. 创业 none.\n\nThus likely categories: 「危機対処」, 「人・組織」, maybe \"技術・開発\" if we interpret \"技術転換\" as tech changes. So include those three? The instructions: \"記述に明示された経験のみ拾う（推測しない）。外部知識を使わない.\" We must not guess.\n\nIt states: \"急速な技術転換を求められる場面\" - The words \"技術転換\" is manifest. So that indicates involvement in technology change. But \"技術・開発\" refers to research, product, production tech. Is that capturing technology change? Might be yes, as it implies involvement in rapid tech transitions. But that's not exactly R&D, but the classification may encompass tech change as part of technology/tech dev. So we can include it.\n\nThus output: {\"exp_types\":[\"危機対処\",\"人・組織\",\"技術・開発\"],\"confidence\":\"high\"}.\n\nThe confidence: high. I'd output JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:21:52.122525+00:00",
+ "timestamp_responded": "2026-10-25T11:21:54.692490+00:00"
+}

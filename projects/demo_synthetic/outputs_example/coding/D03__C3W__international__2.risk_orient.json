@@ -1,0 +1,24 @@
+{
+ "job_id": "D03|C3W|international|2",
+ "seq": 90,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "8ca1c82456f871305aaf9f7ab4a71dfb2deaa688adb038a7606f30ca9b9607a3",
+ "prompt_sha256": "5362edacd8dd4e3c29245f1bfd17115a770bcbee12d512b8488abc46558a9a62",
+ "raw_text": "{\"risk_orient\": 1, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to interpret the reasoning text. The text says: \"従業員が事業の根幹であると自らの経験から確信している。投資があることで現地での雇用を守り、従業員の学びの場と認められる環境を維持できる。ブランドへの影響を最小化し、国内外での信頼を保持できると判断した。\"\n\nWhat risk orientation? The reasoning states: they believe employees are core to business. Investment will preserve local employment, maintain learning environment for employees. Brand impact minimized, trust kept. They talk about reasons: minimize brand damage, maintain trust. They seem risk-averse: concerned about brand impact and loss. They also emphasize maintaining status/relationships. They choose to invest presumably to preserve. So risk orientation: it seems more risk-averse. They are protecting brand, trust, employee environment. They are cautious about negative impact. They focus on minimizing risk. So rating likely 1 or 2. \n\nWhich is more risk-averse? They are not seeking to take big gambles. The reasoning mentions minimizing brand impact, ensuring trust. That's risk-averse. So risk_orient 1: \"強くリスク回避的\". They are convinced employees are core; invest to maintain. Not explicitly risk-taking. So 1. Confidence: The text strongly indicates risk avoidance. So high confidence. Output JSON accordingly.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:25:55.842376+00:00",
+ "timestamp_responded": "2026-10-25T11:25:56.797074+00:00"
+}

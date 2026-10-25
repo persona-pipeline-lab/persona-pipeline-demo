@@ -1,0 +1,24 @@
+{
+ "job_id": "D04|C3|withdrawal|2",
+ "seq": 8,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "6f2e1fbe6b852e8b366bb1e50e84ca52173db1c8a3fbdf4bf9cf71b8223a736d",
+ "prompt_sha256": "00d383600def7e094d48371299edd6349cec2f5e850dfaa888873f4b22d89541",
+ "raw_text": "{\"exp_types\": [\"人・組織\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to analyze the given description and determine all applicable experience types from the categories. The description: \"私は支配人として、多くの若手従業員が学びと認められる環境を整えることの重要性を痛感してきた。従業員が技術を学べずに離職してしまうケースを目にし、それを防ぐために投資を惜しまない姿勢を身につけた。\" As a managing director (?) or manager. He says he saw employees leaving because they couldn't learn technology. He got into investing in environment? So type: \"人・組織\" because it's about people, training, learning environment. Possibly \"技術・開発\"? Since employees learning \"技術\" suggests technical learning environment. But the experience type focuses on his role as a manager dealing with employees to learn technology. The experience type: \"人・組織\" is about human resources management. It does not mention crisis or overseas, or startup. So maybe just \"人・組織\" only. But also \"技術・開発\" could be relevant because he talks about employees not learning technology. However, the experience is about environment to learn, not about actual tech development. The category \"技術・開発\" refers to \"研究開発・製品開発・生産技術の経験\". This scenario is not about his own technical development but about ensuring employees can learn technology. It's more about HR environment. So I'd choose only \"人・組織\". The question: \"言及された経験の型を次の6分類から該当するものすべて選んでください。規則: 記述に明示された経験のみ拾う（推測しない）。\" The only explicit thing is being managing director, learning environment, employees learning, preventing turnover. No mention of crisis, overseas, startup, tech development. So \"人・組織\" is relevant. Could also be \"その他\"? No because it's actual experience. So output:\n\nJSON with \"exp_types\": [\"人・組織\"] and \"confidence\": \"high\".",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:20:44.055221+00:00",
+ "timestamp_responded": "2026-10-25T11:20:45.444833+00:00"
+}

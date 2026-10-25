@@ -1,0 +1,24 @@
+{
+ "job_id": "D03|C3|international|1",
+ "seq": 17,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "b9153758f18abf7af8181e338b5e0d6ffea18d872aeb44c137e8c0080d3879a5",
+ "prompt_sha256": "0bccb1988dd5bc4aed19920e5bb36e962d96dd31f769874223cabeac140ea3d9",
+ "raw_text": "{\"exp_types\": [\"技術・開発\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to pick all categories that fit to described experience. The statement: \"第二製品開発時、顧客工場を二か月訪れ作業者の動きを観察し、設計に反映した経験。ユーザーの実体験を測定し、製品の使いやすさを向上させたことで市場での成功につながった事実が、今回の意思決定に大きく影響した。\"\n\nSo it's about product development, observing employees, applying to design; product usability, market success. That's \"技術・開発\" (research and product development). Also possibly \"人・組織\" because they observed workers and considered human factors? But the main focus is design and usability improvement. It's not crisis, overseas, startup. \"その他\" no. So I'd pick \"技術・開発\".\n\nAdditionally maybe \"人・組織\" because \"作業者の動きを観察し設計に反映\" indicates considering operator ergonomics. But the question: \"記述に明示された経験のみ拾う\". It says \"作業者の動きを観察し、設計に反映\" which is still part of product development. The act of observing workers is part of human factors study, but it's not specifically \"人事・労務・組織運営・師弟関係\". There's no mention of HR or staff. So we likely only choose 技術・開発.\n\nConfidence: high.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:21:16.813346+00:00",
+ "timestamp_responded": "2026-10-25T11:21:17.821327+00:00"
+}

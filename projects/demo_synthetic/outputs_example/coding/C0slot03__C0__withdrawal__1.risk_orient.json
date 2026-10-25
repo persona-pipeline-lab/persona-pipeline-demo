@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot03|C0|withdrawal|1",
+ "seq": 41,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "8cd86cd733e6e40d785d352d32eba4a4ad506e3dacf2ffc0dc7f9d99c8ed8efc",
+ "prompt_sha256": "456ff466099ccc38740e2adf781de2862885e7a4f70888fd541e0851d9dc4bfc",
+ "raw_text": "{\"risk_orient\":4, \"confidence\":\"high\"}",
+ "reasoning_text": "We need to rate risk orientation from 1 to 5 based on the reasoning. The statement: \"技術優位を継続的に活かしつつ、投資負担はパートナーシップで分担し、リスクを低減したい。市場成長率が高いため、共同開発により差別化を保ちつつ、短期的な財務負担も抑えることが可能です。\"\n\nAnalysis: They want to maintain tech advantage, but share investment burden with partners to reduce risk. They see high market growth rate, so they can differentiate and keep short-term financial burden low. So they are reducing risk by sharing burden, but still take advantage of high growth; they are cautiously managing risk but still pursuing opportunity. It shows a moderate risk tolerance: they don't outright avoid investment; they split it to lower risk. They still want to pursue growth. Likely in the range of 4: risk acceptance but cautious. They are \"受容寄り\" (risk-accepting) because they're willing to invest but with partnerships to mitigate risk. So rating 4. Confidence: medium? The reasoning is fairly clear; I'd say confidence medium or high? It's fairly explicit. I'd say high confidence. So output JSON: {\"risk_orient\":4, \"confidence\":\"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:22:44.926528+00:00",
+ "timestamp_responded": "2026-10-25T11:22:45.805966+00:00"
+}

@@ -1,0 +1,32 @@
+{
+ "job_id": "C0slot01|C0|international|1",
+ "seq": 49,
+ "person_id": "",
+ "condition": "C0",
+ "scenario": "international",
+ "rep": 1,
+ "model": "gpt-oss-20b",
+ "sent_sha256": "dfc570b3130e5fa382a086fe5948f5e24a7f18c338f605d027e96dfb92321642",
+ "sent_file": "sent/C0slot01__C0__international__1.txt",
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 8192,
+  "seed": 100001,
+  "reasoning_effort": "medium"
+ },
+ "status": "ok",
+ "error_message": "",
+ "response_text": "{\"q1\":[\"B\",\"E\",\"A\"],\"q2_category\":1,\"q2_text\":\"主な課題は、現地事業の営業赤字と要求される投資負担が収益性を圧迫している点にある。大規模な投資が必要で短期的に利益を上げられず、財務上のリスクが高まっている。\",\"q3\":\"提携\",\"q4_text\":\"提携により投資負担を分散し、現地企業の知見と販路を活用できる。資金負担を軽減しつつ市場成長に参加できるため、リスクを抑えつつ長期的価値維持が可能だ。\",\"q5_ranking\":[\"株主\",\"従業員\",\"顧客\",\"取引先\",\"地域社会\"],\"q6_text\":\"過去に、新興市場で不採算だった事業を現地パートナーと提携することで回復させた経験があります。その際、投資の分散と現地営業知識の活用が決定的な効果をもたらしました。\"}",
+ "reasoning_text": "We need to answer with JSON only. We need to choose Q1: 3 items from A-H in order of priority. Which ones would we want to confirm? We're rational: would need further info on financial burden (C? B?), competitive environment (E?), market growth (A). Let's pick B (financial burden), E (competition), A (market growth). But ask order: first confirming financial burden, then competition, then market growth.\n\nQ2: classify main issue. Let's think: It's about financial health (赤字, 投資負担) but also competition. The main category likely 1 = 財務・収益の問題. We'll mention that the crushing financial loss and required investment threaten viability.\n\nQ3: choose? It asks for selection: \"撤退\",\"縮小\",\"継続投資\",\"提携\". Likely we'd choose \"提携\" - partner with local firm to reduce investment and share risk. But could also be \"継続投資\" if we commit. Let's think: With heavy costs, high risk, perhaps partnering. Q3 answer: \"提携\".\n\nQ4: reasons: partnership reduces capital, leverages local knowledge; maintains brand; mitigates risk; still can capture 10% growth market.\n\nQ5: ranking stakeholders: Who matters most? As CEO of Japanese firm, we must balance shareholders, employees, customers, partners, society. Likely shareholders first, then employees, customers, suppliers (取引先), region society. But maybe employees important. We need a ranking order. I'd choose: \"株主\" first (preserve value), \"従業員\" second (major part of workforce), \"顧客\" third (maintain revenue), \"取引先\" fourth (supply chain), \"地域社会\" fifth. That seems plausible.\n\nQ6: past experience: maybe \"過去に新興市場での不採算事業を提携して回復させた経験がある\". We'll produce 3-4 sentences.\n\nNow need to output in JSON format. All keys included. Ensure \"q1\" values are string of letters A-H. They are quotes in array.\n\nCheck Q5: use exactly names \"株主\",\"従業員\",\"顧客\",\"取引先\",\"地域社会\".\n\nNow produce JSON. Ensure no spaces or formatting aside from JSON pretty printing? It's okay.",
+ "finish_reason": "stop",
+ "actual_model": "gpt-oss-20b",
+ "response_id": "chatcmpl-95226ca5f10a06d0",
+ "usage": {
+  "prompt_tokens": 1373,
+  "completion_tokens": 762
+ },
+ "endpoint_kind": "local",
+ "timestamp_requested": "2026-10-25T11:13:09.233005+00:00",
+ "timestamp_responded": "2026-10-25T11:13:11.472736+00:00"
+}

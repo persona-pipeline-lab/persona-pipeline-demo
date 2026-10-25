@@ -1,0 +1,24 @@
+{
+ "job_id": "D04|C3|tech_transition|2",
+ "seq": 32,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "23ad885c38a4568853dc39ca84c71429188e933db03b7405be399da9a32b7bcb",
+ "prompt_sha256": "0901c2e6836ae86d1305f45573e424de422691d7994f08893da5e9806eb61e12",
+ "raw_text": "{\"pr_frame\": \"技術\", \"confidence\": \"high\"}",
+ "reasoning_text": "We need to pick a main frame from categories: 財務収益, 市場競争, 技術, 組織ステークホルダー, 複数拮抗. The statement says: \"技術優位性の維持と差別化が失われ、競合に取られやすくなる危機が生じている。\" This clearly focuses on technology advantage, i.e., technological competitive advantage. So \"技術\" frame. Confidence: high. Output JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:22:11.956484+00:00",
+ "timestamp_responded": "2026-10-25T11:22:12.346881+00:00"
+}

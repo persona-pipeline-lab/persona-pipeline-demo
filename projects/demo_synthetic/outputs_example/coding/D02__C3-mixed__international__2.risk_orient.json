@@ -1,0 +1,24 @@
+{
+ "job_id": "D02|C3-mixed|international|2",
+ "seq": 124,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "a451c6e368503ec920f0eea50f197890dfbaf1ed3095a307c198aad2b37f4a4b",
+ "prompt_sha256": "f916a63b6aaa5b90a486aa4224c3d8be84f2436a7b2baa421247fdf02dc63cfe",
+ "raw_text": "{\"risk_orient\": 4, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to decide risk orientation. The statement: \"現地市場は今後も10%の成長が見込まれ、ブランドと顧客信頼は大きい。競合は価格競争で優位に立つものの、品質と耐久性の差はまだ残る。大規模投資をして生産体制を強化すれば、規制・為替リスクの軽減と長期利益の確保が可能だと判断した。\"\n\nIt indicates they see growth, brand, trust, and that quality advantage persists, but competition price pressure. They think large investment can mitigate regulatory and exchange risk and secure long-term profit. They are evaluating risk, see investment, believing it reduces risk. They do not mention fear of loss, but maintain that long-term profit is possible. Thus risk orientation is risk-accepting or risk-neutral? The text indicates a focus on long-term gains, certifying risk mitigation. It expresses acceptance of risk (大規模投資). This is risk acceptance, oriented to acquiring opportunity. So 4 or 5? Should assess as 4 (accepting). Not too high because maybe not \"強くリスク受容的\" because they mention risk reducing benefits. Might be 4.\n\nConfidence: high. Output JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:28:13.407790+00:00",
+ "timestamp_responded": "2026-10-25T11:28:14.283517+00:00"
+}

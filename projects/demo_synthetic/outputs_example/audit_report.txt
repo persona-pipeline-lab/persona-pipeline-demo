@@ -1,0 +1,6 @@
+audit: ledger rows = 144
+audit: sent files present = 144, output records present = 144
+audit: match = 144, mismatch = 0
+audit: unique SHA-256 of sent texts = 39; by condition: {"C3": 18, "C0": 3, "C3W": 18, "C3-mixed": 18}
+audit: jobs in the fresh rebuild that are not in the ledger = 0
+audit: RESULT = OK

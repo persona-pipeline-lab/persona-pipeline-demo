@@ -1,0 +1,24 @@
+{
+ "job_id": "D03|C3W|tech_transition|2",
+ "seq": 102,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "c30f85ed9f906586369ae59221e8eef7bb1575f4cea155aafb66ed4e30810a51",
+ "prompt_sha256": "ab35cfe3a92be4c88f7df5078a583c726daa97b264ec81d374124b2f5a981396",
+ "raw_text": "{\"exp_types\": [\"人・組織\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to pick classification types that match the experiences mentioned in the description. The description: \"旅館の現場で従業員が学び、成長できる環境を整えた経験\". So workplace, employee growth environment. Also \"離職率を大幅に低減させた\". Also \"技術変化を乗り越える鍵は人材の育成にある\". So classification that matches: \"人・組織\" (人事・労務・組織運営・師弟関係). Could also be \"創業・立ち上げ\"? No mention of founding or startup. \"技術・開発\"? Not directly, but mention of training staff to overcome technology change, but it's about people training, not product development. \"危機対処\"? They talk about reducing turnover, but not crisis. \"海外\"? No mention. \"その他\"? Not necessary. So likely just \"人・組織\".\n\nWe must output JSON: {\"exp_types\": [\"人・組織\"], \"confidence\": \"high\"}. Let's check if any other classification might apply. The description mentions \"旅館の現場\" (inn), they set up an environment for employee learning and growth as part of the organization, improving retention. So the experience type is indeed \"人・組織\". It's not \"創業・立ち上げ\" because not about starting. It's not \"技術・開発\" because no product or technical development except staff training. \"危機対処\"? The focus is not about crisis but about reducing turnover. So only \"人・組織\".\n\nThus answer.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:26:42.019420+00:00",
+ "timestamp_responded": "2026-10-25T11:26:43.106570+00:00"
+}

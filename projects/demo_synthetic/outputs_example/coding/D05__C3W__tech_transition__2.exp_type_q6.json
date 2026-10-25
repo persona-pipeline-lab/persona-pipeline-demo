@@ -1,0 +1,24 @@
+{
+ "job_id": "D05|C3W|tech_transition|2",
+ "seq": 106,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "6203ee52c51f10dfefd4c473ee2dfc4e432ede88dd86e7c4665b1a382b5be1b6",
+ "prompt_sha256": "e15bb169bb10fa927b3557d7bc769c4ee5774487a3e313a1393a5d699429abac",
+ "raw_text": "{\"exp_types\": [\"技術・開発\", \"人・組織\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We must identify existing experience types described in this statement: The literal text: \"父の『人の仕事をばかにするな』という言葉を胸に、外部パートナーの技術を受け入れつつ、従業員の取り組みを尊重し、社内外の信頼を継続することを重視した。\"\n\nWe need to list all applicable categories from the list: crisis management, technology/development, overseas, start-up/launch, people/organization, other. The statement references respecting employees, internal and external trust, external partner technology adoption. This is more about people/organization: respect employees, management of trust. Also technology/development: external partner technology adoption. Possibly overseas? No mention of overseas. Crisis? No. Start-up? No. Other? No. So likely \"人・組織\" and \"技術・開発\". But \"外部パートナーの技術を受け入れつつ\" indicates technology/ development experience. So both. The statement not explicit about crisis or overseas. So answer these two categories. Provide JSON: {\"exp_types\": [\"技術・開発\", \"人・組織\"], \"confidence\": \"high\"}.\n\nCheck requirement: \"明示された経験のみ拾う（推測しない）\", We have clearly that the statement refers to technology adoption. So yes. Provide JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:26:58.169082+00:00",
+ "timestamp_responded": "2026-10-25T11:26:59.134437+00:00"
+}

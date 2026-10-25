@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot03|C0|tech_transition|1",
+ "seq": 65,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "75d0f79e5de0cfa045e842b1a480c313ed30ce4a2abc4ed7d42ff2d6f73cea68",
+ "prompt_sha256": "7737581a190fa9337d3294fbf78b169257d5b9f4d5db6d1d605f89bd2985dee6",
+ "raw_text": "{\"pr_frame\":\"技術\",\"confidence\":\"high\"}",
+ "reasoning_text": "We need to classify an issue into one of the frames: 財務収益, 市場競争, 技術, 組織ステークホルダー, 複数拮抗.\n\nWe look at the description: \"主に技術的遅れと競合優位性の喪失が深刻で、既存技術の優位を維持しつつ新方式へ転換が不可欠だ。\"\n\nKey words: 技術的遅れ, 競合優位性の喪失, 既存技術の優位, 新方式へ転換.\n\nFocus: technological lag and losing competitive advantage. It indicates technology issues: needing to preserve current technology advantage and shift to new ways.\n\nThus main frame: 技術 (Technology). It's not purely market competition? It mentions competitive advantage but ties to technology. The main core is technology lag and moving to a new technology.\n\nHence classify as \"技術\". Confidence: high.\n\nOutput JSON: {\"pr_frame\":\"技術\",\"confidence\":\"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:24:19.703283+00:00",
+ "timestamp_responded": "2026-10-25T11:24:20.407787+00:00"
+}

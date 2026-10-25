@@ -1,0 +1,24 @@
+{
+ "job_id": "D03|C3W|international|1",
+ "seq": 89,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "1dfefa2f04d14fede7df842884bb186ae53a0a15fb954065444eaceb5859d9dc",
+ "prompt_sha256": "ff2b94787985aa8689f17bf73037080de105a1a906c03f3d9d734bf3c9caed3e",
+ "raw_text": "{\"time_horizon\":5, \"confidence\":\"high\"}",
+ "reasoning_text": "We need to assign time horizon based solely on the reasoning text. The reasoning mentions market growth 10% continuous, risk of losing market share if not invest, and need to keep scale, invest in production. That indicates longer-term consideration, valuing growth. So likely 4 or 5. Let's analyze.\n\nThe reasoning: \"market grows 10% continuously\" is long-term growth. \"invest\" to avoid losing share in future. \"need to maintain scale, strengthen local production for competitiveness.\" That indicates future orientation, long-term. Possibly 5. However, 5 is defined as 5-10+ years growth and survival. There's no explicit time horizon mentioned. It's about market growth continuous, but the risk is ignoring investment leads to future share loss. This is long-term oriented, but is it beyond 5-10 years? Could be mid-to-long. The mention of continuous growth suggests long-term. So maybe 5. But maybe 4 fits better (<5 years but long-term orientation). The decision hinges on \"市場は10％成長し続けており\" The phrase \"成長し続けており\" could imply indefinite future, could be 5+. So I'd give 5. Include confidence? Moderate-high. No external knowledge. I'll decide: confidence medium? Actually the statement clearly indicates long-term. So high. So:\n\n{\"time_horizon\":5, \"confidence\":\"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:25:53.827198+00:00",
+ "timestamp_responded": "2026-10-25T11:25:54.743029+00:00"
+}

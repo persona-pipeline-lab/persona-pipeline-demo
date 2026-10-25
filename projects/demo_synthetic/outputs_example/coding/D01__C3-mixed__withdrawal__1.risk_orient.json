@@ -1,0 +1,24 @@
+{
+ "job_id": "D01|C3-mixed|withdrawal|1",
+ "seq": 109,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "a02f4c10a28e9749685968d83a3d2660dd0279dc075a73e28ce39c291c564130",
+ "prompt_sha256": "a25bf523782d060ef539f2f26b6681a64e210dc212eb7325eda9970c05b5542c",
+ "raw_text": "{\"risk_orient\": 3, \"confidence\": \"medium\"}",
+ "reasoning_text": "We need to analyze the reasoning description. It says: Market growth 12%, tech advantage present but without further investment possible to be overtaken. Additionally withdrawing would cause brand trust and regional employment negative impact. They prioritize responsibility to employees and local community, while managing risk and continuing investment.\n\nInterpretation: They are risk-averse? They are concerned about brand trust, unemployment, so they don't want to abandon. They also \"manage risk and continue investment.\" They are somewhat risk-averse but also willing to invest. They are not strongly risk averse because they invest to maintain advantage. The risk orientation: likely between 2 and 3? They are not aggressively taking risk, they are careful about brand trust and employees. They are hoping to maintain competitive position. They are risk-averse in that they don't want to lose. The phrase \"リスクを管理しつつ投資を継続\" implies they will manage risk but continue investing. That indicates acceptance but risk control. So rating 4? But \"強くリスク回避的\" would be 1. 2 is slightly avoid. 3 neutral. 4 accept. 5 strongly accept. They are more risk averse? They fear losing brand trust. But they still continue investment to avoid being overtaken. It seems they have a balanced mixture: they are not extremely risk-averse because they are investing, but they are still concerned about losses. They might lean slightly towards risk aversion but also accept some risk. I'd say 3. Confidence medium. So output: {\"risk_orient\": 3, \"confidence\":\"medium\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:27:03.875214+00:00",
+ "timestamp_responded": "2026-10-25T11:27:04.901158+00:00"
+}

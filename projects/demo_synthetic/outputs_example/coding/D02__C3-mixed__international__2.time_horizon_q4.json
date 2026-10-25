@@ -1,0 +1,24 @@
+{
+ "job_id": "D02|C3-mixed|international|2",
+ "seq": 124,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "a451c6e368503ec920f0eea50f197890dfbaf1ed3095a307c198aad2b37f4a4b",
+ "prompt_sha256": "43f407eac64e63e160fb63ba5b9209a3dcf3a4285465c5289490fc1350dd3bba",
+ "raw_text": "{\"time_horizon\": 4, \"confidence\": \"high\"}",
+ "reasoning_text": "We must read the description. The company seeing 10% growth in local market, brand and customer trust high. Competitors price compete, but difference remains in quality and durability. Large investment to scale up production will reduce regulation and FX risk and secure long-term profit. So reasons: long-term benefits: reduce risk, secure long-term profit. They mention \"長期利益の確保\" and large investment. The decision likely long-term, maybe 4 or 5. 5 indicates 5-10+ years growth/sustainability. The reasoning mentions \"long-term profit\" and \"regulation and FX risk\". The phrase indicates long-term focus. 4: long-term oriented. They mention 10% growth but don't emphasise immediate profits. Thus I think 4. Confidence: high because no ambiguous? provided straightforward. I'll output JSON.\n\n",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:28:14.285049+00:00",
+ "timestamp_responded": "2026-10-25T11:28:14.864312+00:00"
+}

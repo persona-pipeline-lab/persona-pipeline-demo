@@ -1,0 +1,24 @@
+{
+ "job_id": "D03|C3W|tech_transition|1",
+ "seq": 101,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "c210ff46942c85b5c6685b8e5eb88bcd9f48d43501ce0f25466a4e7c3d1243af",
+ "prompt_sha256": "0c9d4935606d24a90ff6bf2cf907a227dde8c5f8b149c289d78658caaf98e83f",
+ "raw_text": "{\"exp_types\": [\"技術・開発\", \"人・組織\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We have one record: \"料理長と若手のスキル移転プロジェクト。若手に実務を担わせ、毎週の共有学習を設けたことで離職率を半減できた経験が、従業員育成と技術革新を結ぶ重要性を示している。\"\n\nWe need to identify experience types from the 6 categories:\n\n- 危機対処: crisis handling (赤字・倒産危機・事故・不祥事・需要崩壊への対処)\n- 技術・開発: research & development, product development, production tech experience\n- 海外: overseas posting / overseas business\n- 創業・立ち上げ: founding / new venture\n- 人・組織: HR, labor, organization management, mentor-mentee relationships\n- その他: none of above\n\nWe need to pick all applicable. The text is about a skill transfer project with head chef and junior staff, weekly learning, reduced attrition, connecting staff development and tech innovation. This is experience in \"人・組織\" because involves staff development, HR, organization learning. Also \"技術・開発\" maybe because it involves skill transfer and technology innovation? It's more about technical skills and \"技術革新\". It is a skill transfer project -> could be under \"技術・開発\". It is not overseas, not founding, not crisis. So possible matches: 技術・開発 and 人・組織.\n\nBut the instruction: \"記述に明示された経験のみ拾う\" – Only explicit experiences. The text explicitly states \"料理長と若手のスキル移転プロジェクト\" – skill transfer. It's a \"プロジェクト\" that likely is technical skills. So yes. Also addresses staff retention (人事). So both categories.\n\nConfidence: high.\n\nOutput JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:26:37.736522+00:00",
+ "timestamp_responded": "2026-10-25T11:26:38.998482+00:00"
+}

@@ -1,0 +1,24 @@
+{
+ "job_id": "D01|C3-mixed|international|2",
+ "seq": 122,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "c58b82903f440ceb1b062e291fc48228cb06323d6a584c82643a2c1a6202bcd9",
+ "prompt_sha256": "a4603f2099a31985abcb75c6e9e151193c4a352586b7db876bc14e9a09101612",
+ "raw_text": "{\"pr_frame\":\"組織ステークホルダー\",\"confidence\":\"high\"}",
+ "reasoning_text": "We have to choose main problem frame based on the description. The statement: \"組織・ステークホルダーの問題として、従業員・地域社会への影響とブランドへの波及が大きい点が最優先であると考える。\" Means: As an organizational stakeholder problem, we consider that the impact on employees and local society and the diffusion to brand is biggest priority.\n\nThe frames: {「財務収益」「市場競争」「技術」「組織ステークホルダー」「複数拮抗\"}. They mention \"組織・ステークホラー\" which corresponds to \"組織ステークホルダー\" frame. So answer: \"組織ステークホルダー\" high confidence. Output JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:28:05.029054+00:00",
+ "timestamp_responded": "2026-10-25T11:28:05.595708+00:00"
+}

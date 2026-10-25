@@ -1,0 +1,32 @@
+{
+ "job_id": "D05|C3-mixed|international|1",
+ "seq": 129,
+ "person_id": "D05",
+ "condition": "C3-mixed",
+ "scenario": "international",
+ "rep": 1,
+ "model": "gpt-oss-20b",
+ "sent_sha256": "a801f3864baba331e03081814374fcae69d614217f02ae8ea28218eb1da3bf89",
+ "sent_file": "sent/D05__C3-mixed__international__1.txt",
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 8192,
+  "seed": 100001,
+  "reasoning_effort": "medium"
+ },
+ "status": "ok",
+ "error_message": "",
+ "response_text": "{\"q1\":[\"A\",\"B\",\"H\"],\"q2_category\":4,\"q2_text\":\"組織とステークホルダーが直面する持続可能性と社会的責任の問題が最も大きい。\",\"q3\":\"提携\",\"q4_text\":\"ローカルパートナーと提携して投資負担を共有し、既存の優れた品質を維持するとともに地域雇用を守る。これにより現地政府の支援を活用しながら、価格競争に対抗できる。\",\"q5_ranking\":[\"従業員\",\"地域社会\",\"顧客\",\"取引先\",\"株主\"],\"q6_text\":\"設計部長として高品質を保つため三年かけて投資を行い、経営者としてその財務リスクとリターンを見極めた経験が、今回の提携判断につながった。\"}",
+ "reasoning_text": "We need to answer questions per autobiographical perspective. As the writer, we have experiences: technology vs economics, people management, evaluation, importance of learning/training, retention, etc. The scenario: overseas business facing regulation, currency devaluation, competition with government subsidies. We must choose decisions following their values: technical superiority but diminishing, cost control, wrong?\n\nWe need to pick one of the four options: retreat, shrink, continue investment, or partnership. Based on the aspirational values: I value people, avoid overreliance on low-cost competition, maintain quality, but also must consider responsibilities to employees, local community, brand.\n\nObservations: The company's overseas plant provides jobs; withdrawal would devastate local employment. The company has high quality but cost advantage diminishing; need large investment for local capacity. There is market growth 10% annually, 10-year outlook positive. We have 9% sales loss due to currency; 30% of sales of the business for investment. So it's a big cost. But the company recognizes local employees 18% of total staff; local community also big.\n\nAlso brand: withdrawal may erode trust. However the government might subsidize competitors but not company.\n\nGiven my past values: I value people and learning, retention, local hires. Also value 'remembering a person first before financials' and 'heritage of not cutting people'.\n\nFrom the scenario, '継続投資' may be aligned but we might require justification of cost. We can justify by focusing on long-term growth. Yet we might risk financial losses in near term but we could do '提携' with local partner to share cost. However partner may not share brand same? But could maintain quality.\n\nGiven the company's values: The technical 'measurement + adaptive' improved quality and quality advantage decreased each year, so investment needed to keep that advantage. We might go '継続投資' with a local partner? The options only include four: '撤退','縮小','継続投資','提携'. \"提携\" might be considered a form of investment.\n\nWe weigh: Continue investment results in cost and risk; shrink may reduce risk but company loses market share, maybe triggers job cuts (bad for community). Withdrawal may be too severe. Partner may allow some cost sharing.\n\nGiven these, a plausible answer: '提携' (partner). But was '提携' chosen by policy? Let's examine: They want to maintain brand and local employment, and sustain quality. Partnering with local or complementary technology provider may allow sharing investment, reduce risk while maintaining presence.\n\nHence we choose \"提携\".\n\nNow question 1: Which 3 info to confirm first? The autogenous intros: The decision requires evaluation of market, risk, financials, community. We might confirm: market growth (A), financial burden (B), and competitor dynamic (E) or community impact (H). But maybe 'market growth' (A) to confirm viability; 'financial burden' (B) to understand cost; 'community impact' (H) to gauge risk of withdrawal. Or maybe 'customer base' (D). But I'd pick A, B, H because these cover big issues.\n\nNow Q2: main problem category: I think category 4 (組織・ステークホルダーの問題). Because retaining employees and community is key. But might also be #2 (market competing). But the question is: \"この状況を何の問題\" – it's a stakeholder combination: yes, but also financial. I'd think #4 fits best: it's about people and brand.\n\nSo maybe \"4\" with text: \"企業が拠点としている地域の雇用・生産ネットワークを維持しつつ、財務的に持続できるかという組織的課題が最も大きい\".\n\nQ3: \"提携\".\n\nQ4: explanation: need to maintain presence, keep high quality, share cost, keep employees, build on local partner's support, address government subsidies, maintain brand trust. 3-5 sentences.\n\nQ5: ranking of stakeholders: I will say order: \"従業員\", \"地域社会\", \"株主\", \"取引先\", \"顧客\". But maybe the company value customers? Wait: Many experiences: \"顧客の工場での不良率を示す\" and \"顧客の数字で\". So customers also vital. But which is most prioritized? I think: employees > community > customers > suppliers > shareholders? But ranking requires specifically: \"株主、従業員、顧客、取引先、地域社会\". Our order we want: \"従業員\", \"地域社会\", \"顧客\", \"取引先\", \"株主\". But we must include \"株主\" somewhere; maybe I consider shareholders as lowest priority? But maybe not; they'd be last.\n\nSo: [\"従業員\",\"地域社会\",\"顧客\",\"取引先\",\"株主\"].\n\nCheck: We must order 5 names. That is 5.\n\nQ6: Past experience: The skill cue: \"安さで競えば…彼そこで測る機械\" and \"客の人材育成\" etc. Specific experience: The design manager's decision to invest in measurement automation to maintain quality, even though cost high. Or the human resource learning synergy. We can refer: \"設計部長として高品質を保つために長期開発投資を行い、経営者として負担を見極める経験\". Or \"人事部で若手離職を減らすための直接的な人材育成の取り組み\" leading to value on people.\n\nSo Q6: \"設計部長として高品質を維持するために三年かけた投資を行い、社長としては利益と品質の両立を評価した経験が、今回の投資判断に影響している\". 2-4 sentences.\n\nNow compile JSON. Use correct formatting.",
+ "finish_reason": "stop",
+ "actual_model": "gpt-oss-20b",
+ "response_id": "chatcmpl-b13554182d7af6a3",
+ "usage": {
+  "prompt_tokens": 3920,
+  "completion_tokens": 1486
+ },
+ "endpoint_kind": "local",
+ "timestamp_requested": "2026-10-25T11:19:06.801951+00:00",
+ "timestamp_responded": "2026-10-25T11:19:12.010186+00:00"
+}

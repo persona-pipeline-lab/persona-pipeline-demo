@@ -1,0 +1,32 @@
+{
+ "job_id": "D05|C3W|international|1",
+ "seq": 93,
+ "person_id": "D05",
+ "condition": "C3W",
+ "scenario": "international",
+ "rep": 1,
+ "model": "gpt-oss-20b",
+ "sent_sha256": "dbda12f52c5528b36c9e5623a87d36eb378341b3e5cf0595c4089e64538b4022",
+ "sent_file": "sent/D05__C3W__international__1.txt",
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 8192,
+  "seed": 100001,
+  "reasoning_effort": "medium"
+ },
+ "status": "ok",
+ "error_message": "",
+ "response_text": "{\"q1\":[\"B\",\"E\",\"A\"],\"q2_category\":1,\"q2_text\":\"今期の営業赤字と今後の追加投資が最重要課題であり、財務的な負担が勝手に上昇し続けるリスクを引き止めることが先決と考える。\",\"q3\":\"継続投資\",\"q4_text\":\"長期的な市場成長（10％/年）と高い顧客信頼を見失う恐れが大きい。現地投資を行わないと他社に遅れを取り、ブランド価値に損失が拡大する。投資は将来に向けた防衛策であり、従業員や地域社会への責任を果たす。\",\"q5_ranking\":[\"従業員\",\"地域社会\",\"顧客\",\"取引先\",\"株主\"],\"q6_text\":\"過去に従業員からの提案を1週間以内に返答し、信頼を築くことで、現場と経営の連携を保った経験があり、現在でもその方針を基に決断に結び付けている。\"}",
+ "reasoning_text": "We need to answer each question per autobiographical values and experiences: The autobiography emphasizes listening, listening to employees, cautious decision making, waiting, avoiding criticism, value alignment, one-line daily reflection, don't cut the unplanned, keep non-colored tasks, respect work. They value employees, trust, stewardship. They don't like making visible decisions, avoid friction, \"don't belittle other people's work\". Their decision style: gather information, wait.\n\nIn question Q1: choose three important infos to confirm: I think: A (market growth), B (financial burden), C (employers), E (competition), etc. The priority maybe: B - financial burden; E - competition; C - employees? Actually from perspective: The key info that matters: the financial cost of continuing (B), the competitive pressure (E), and market growth (A). Also depend on brand, social impact. They might ask about financial, market dynamics, and region. But the instruction: choose in order of confirmation priority. I'd pick: B, E, A.\n\nQ2: classify main issue: It's both finance and market but classification: \"1 = 財務・収益の問題\". Because red. but also market. But choose main. They would pick \"1\".\n\nQ3: choose \"継続投資\" because they see long-term growth, value heritage, staying; avoid withdrawal because negative brand, risk. They would invest.\n\nQ4: explain: \"long-term market growth 10% each year; product superior but margin drop; need to consolidate. Investment ensures continued presence, protects employees, maintain trust, avoid brand impact. Risk manageable after evaluation.\"\n\nQ5: ranking: \"従業員\" (they value employees), \"地域社会\" (social impact matters), \"顧客\" (brand trust), \"取引先\" (customers?), \"株主\" (profit). but maybe \"株主\" last? Actually they might value shareholders but less. So: 従業員, 地域社会, 顧客, 取引先, 株主.\n\nBut we have to include \"株主\", \"従業員\", \"顧客\", \"取引先\", \"地域社会\" exactly once each. Let's decide rank: \"従業員\" > \"地域社会\" > \"顧客\" > \"取引先\" > \"株主\". That is consistent. But maybe \"取引先\" bigger than \"顧客\"? They care about trust. I'd keep as above.\n\nQ6: Past experience that influenced: from autobiography: experience as CEO, maintain 3 promises for employees, respect employees, uncritical attitude. So \"自社の提案箱\" and \"一語で返事\" maybe. The question: what past experience is most influential for the decision: \"親身な従業員へのサポート+信頼構築\" maybe, or \"同じように競合に対し防衛的で不明確\" . I'd write: \"Earlier I handled challenges by listening, not belittling others' work, and maintaining small-scale improvements; this shaped my view that continued investment is more sustainable than abrupt withdrawal.\"\n\nAlso we might mention \"祖父の畑\" perspective: never cut unplanned items. So \"permitted strategic investment\".\n\nBut easier: mention \"自社の一週間以内知ら新部署提案はして、従業員の提案箱維持\" – emphasises stakeholder. \"Restrain action\".\n\nSo answer: \"過去に、従業員の提案を受け入れ、長期的な価値を創造した経験\".\n\nLet's craft final JSON. Ensure all keys. Provide 2-4 sentences for q6. Summaries.\n\nOk, produce JSON with relevant keys.\n\n",
+ "finish_reason": "stop",
+ "actual_model": "gpt-oss-20b",
+ "response_id": "chatcmpl-9185c71b4141ee54",
+ "usage": {
+  "prompt_tokens": 3919,
+  "completion_tokens": 1071
+ },
+ "endpoint_kind": "local",
+ "timestamp_requested": "2026-10-25T11:16:10.568066+00:00",
+ "timestamp_responded": "2026-10-25T11:16:13.703430+00:00"
+}

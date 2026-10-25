@@ -1,0 +1,24 @@
+{
+ "job_id": "D05|C3|international|1",
+ "seq": 21,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "9c2e9e67ab40e20a70ba879830add0ceca939bd44ca4ec7d55d7e2e75c636f90",
+ "prompt_sha256": "8f3902163b831e190e787b9512ba704012a3ae5a4dd83ec5ac079e9237ae4e33",
+ "raw_text": "{\"risk_orient\": 3, \"confidence\": \"medium\"}",
+ "reasoning_text": "We need to grade risk orientation based on the reasoning text. The text: \"従業員と地域社会への影響を最小限にしつつ、現地の投資負担をパートナーと共有することで財務リスクを軽減できます。継続的な市場成長と品質優位を維持しつつ、競争力のある価格設定を可能にする協力関係を築くことで、ブランド信頼を保持することができます。\"\n\nInterpretation: They are sharing investment burden with partners to reduce financial risk; maintaining growth, quality advantage and competitive pricing while preserving brand trust. Reasoning says financial risk reduced; but still pursuing growth, quality, brand trust. There's risk mitigation (sharing with partner). They do not talk about fear of losses; they highlight managing risk but also pursuit of growth/quality. I'd classify as risk-accepting to moderate. They emphasize minimal impact on employees and society; they risk-share; but the focus is on risk reduction so risk-averse? They see risk as mitigable. They also highlight opportunity: maintain growth and quality. The tone is balanced: risk mitigation while pursuing growth and brand trust. I would evaluate as risk orient 3, moderate confidence. But could be 4? They actively share risk to reduce, but still maintaining opportunities. The risk orientation: Since they focus on mitigating risk, but still allow growth, I'd say slightly risk-averse to neutral: 3. Confidence medium.\n\nSo output JSON: {\"risk_orient\": 3, \"confidence\":\"medium\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:21:32.331112+00:00",
+ "timestamp_responded": "2026-10-25T11:21:33.354097+00:00"
+}

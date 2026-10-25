@@ -1,0 +1,24 @@
+{
+ "job_id": "D01|C3W|tech_transition|2",
+ "seq": 98,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "a1656e14b93ae8a0329782a4f7d0981654be4340c22c9106652eae5000d84d23",
+ "prompt_sha256": "e079ccfd341802efc4aaf231f5b261da6eda49deda1b942686eaed95704a69f6",
+ "raw_text": "{\"exp_types\": [\"危機対処\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We have to identify experienced types based on the description. The description: \"B社の財務危機に直面したとき、数字を見逃していた自分を痛感し、財務管理の重要性を学んだ。失敗を通じて、データと顧客声を統合した意思決定が企業を救うのだと悟った。\" Means: faced a financial crisis at B company and learned importance of financial management. There's mention of crisis e.g., financial crisis. So includes crisis handling (危機対処). It also mentions finance management, maybe \"人・組織\"? No. It's crisis. So likely just \"危機対処\". There's no mention of overseas, technology, founding, etc. So output: exp_types [\"危機対処\"], confidence high.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:26:25.167358+00:00",
+ "timestamp_responded": "2026-10-25T11:26:25.754881+00:00"
+}

@@ -1,0 +1,24 @@
+{
+ "job_id": "D05|C3-mixed|withdrawal|2",
+ "seq": 118,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "34ef7133299841b26056743bb643dff5ff1fd29f8e91d132cfa6d229fee5a0a0",
+ "prompt_sha256": "b85823fbd5ccb2260cc88125f7ee469fca7dfa2a388a56850cadf5e887666f57",
+ "raw_text": "{\"exp_types\": [\"技術・開発\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to identify types of experiences mentioned. The text: \"設計部長時代に、競合の低価格戦略に抵抗し、測定と自動修正の高価な投資を3年間推進。顧客の測定データで成果を示し、信頼を確立した経験が、投資継続の意思決定に最も強く影響している。\"\n\nWhat experience categories? He was \"設計部長\" (Design Department Manager). He resisted low price strategy by competition. He pushed expensive high-cost investment in measurement and auto correction technologies for 3 years. He used customer measurement data to demonstrate effectiveness, built trust. So experiences: \"技術・開発\" because deals with measurement tech and auto correction; also \"危機対処\" maybe? But it's resisting low-cost competitor strategy not necessarily crisis but competitive pressure. But crisis type is defined as \"赤字・倒産危機・事故・不祥事・需要崩壊への対処\". Not exactly crisis. Could be \"人・組織\" (managing department). But \"設計部長\" indicates leadership of a design department - could be considered person/organization. But the description emphasises technology investment.\n\nHe did not mention overseas. Not founding. So types: \"技術・開発\" definitely. Also possibly \"人・組織\" because he is a manager. But the text emphasises technology, and the decisions were about investment continuity. So likely \"技術・開発\". Could also be \"人・組織\" due to his role as department head, but the actual description does not explicitly state \"人事・労務・組織運営\" experiences. He didn't mention hiring, personnel, etc. So maybe not.\n\nHence the relevant types: 技術・開発. Possibly also \"危機対処\"? Not quite.\n\nTherefore choose only one: 技術・開発. Confidence: high. Let's produce JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:27:48.001459+00:00",
+ "timestamp_responded": "2026-10-25T11:27:49.312167+00:00"
+}

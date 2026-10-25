@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot06|C0|withdrawal|2",
+ "seq": 48,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "9d022cfc8de51fbf26dbd960bf9ff56e3577f72e013db6f293be063ce9a8ca25",
+ "prompt_sha256": "4a6f0451dca3a5813b66f411f40dd0b95d61a5ddeb437471b83334c66426ab53",
+ "raw_text": "{\"time_horizon\": 3, \"confidence\": \"medium\"}",
+ "reasoning_text": "We need to decide the time horizon based on language of justification. The reasoning hints at: \"年間12％の市場成長率は引き続き高く、技術優位性を活かす機会があります。競合も大手が投資を進める中、早期投資が遅れるとシェアを失う恐れがあるため、追加投資による技術継続性が必要です。投資コストは当面赤字を伸ばす可能性がありますが、将来の利益増大と雇用維持の観点から継続が最適と判断します。\"\n\nThis indicates a need for early investment to maintain market share and capitalizes on growth, expecting future benefits, but also acknowledges current losses. It is a strategic investment to maintain competitive advantage. Timing appears to be more medium-term focus: focusing on the coming years to keep shares, but also long-term growth.\n\nThe language: \"将来の利益増大\" indicates future benefits. But also they emphasize early promptness due to competitive pressure. The time horizon likely 3 or 4. The phrase \"頃の\" refers to early investment is needed to avoid losing share; the return will be realized over time. \"当面赤字を伸ばす可能性があります\" means harm in the short term. So it may be a mid-term horizon with potential for long-term growth. The decision that investment is required now and that future benefits are expected.\n\nThus the time horizon: 3 (中期・両論). The hint \"当面赤字を伸ばす可能性\" but goal is long-term. There's also mention \"将来の利益増大\" - long-term. But the mention of \"市場成長率は引き続き高く\" indicating that they want to capitalize on high growth. short term of a few years? Possibly 3: mid-term and both. \"定量\" - I think 3.\n\nConfidence: high? The statement is fairly clear. The mention of early investment risk elimination suggests a medium-term horizon indeed. There's not explicit 5-year or 10-year time horizon. It seems 1-2 years? maybe.\n\nGiven uncertain, I'd rate confidence medium. Let's produce JSON: {\"time_horizon\": 3, \"confidence\": \"medium\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:23:10.814155+00:00",
+ "timestamp_responded": "2026-10-25T11:23:12.304754+00:00"
+}

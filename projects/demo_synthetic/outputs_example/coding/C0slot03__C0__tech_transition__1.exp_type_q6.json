@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot03|C0|tech_transition|1",
+ "seq": 65,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "e734a3968c0d6627fdcac7d8179fb7acfb9391f123638e13be45971f66fc28fb",
+ "prompt_sha256": "c5f269282e783856649f23d01fb486387b08b732326697a4b8018ba9174a4d56",
+ "raw_text": "{\"exp_types\":[\"技術・開発\",\"海外\"],\"confidence\":\"high\"}",
+ "reasoning_text": "We need to select all applicable categories.\n\nUser describes: In previous employment, they introduced new digital platform in a mature domestic manufacturing industry, collaborating with overseas IT vendor, integrating development and implementation, maintained customer value while reducing costs.\n\nPossible categories: 「技術・開発」: they mention product development / digital platform; yes. 「海外」: collaboration with overseas IT vendor; they worked with overseas vendor. That counts as overseas experience. 「その他」: not necessary. It is not a crisis, not founding, not people/organisational only. So we pick 技術・開発 and 海外.\n\nCheck the instruction: \"記述に明示された経験のみ拾う\" - They explicitly mention overseas IT vendor collaboration. So overseas category qualifies. So outputs: {\"exp_types\":[\"技術・開発\",\"海外\"],\"confidence\":\"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:24:21.673469+00:00",
+ "timestamp_responded": "2026-10-25T11:24:22.260251+00:00"
+}

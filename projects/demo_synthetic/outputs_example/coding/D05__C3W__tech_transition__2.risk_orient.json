@@ -1,0 +1,24 @@
+{
+ "job_id": "D05|C3W|tech_transition|2",
+ "seq": 106,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "25c10fc9e54e2345a56efcfbf865a41b8b392f24a93ae13d1da77cc2e699de94",
+ "prompt_sha256": "fb974ae53e216f59dab63fc520c509e543264409a75986e36a4c2cf2dd5b9d5f",
+ "raw_text": "{\"risk_orient\": 4, \"confidence\": \"high\"}",
+ "reasoning_text": "We have to analyze the writing: \"新方式を自社で開発するには多額の投資が必要だが、早期の協業により技術を取り込みつつリスクを分散できる。外部との提携で技術調達をスピードアップし、既存のブランド価値と従業員の雰囲気を保てる。\"\n\nWe focus on the reasoning. The tone: They recognize high investment needed for independent development, but propose early collaboration to acquire tech and spread risk. They emphasize that partnering will reduce risk by diversification and speed up tech acquisition, and maintain brand value and employee culture. So they are affording risk by using partnerships to manage risk. They are not avoiding risk; they see that collaboration can reduce risk, but also they implies risk is less due to partnership. So orientation: somewhat risk-accepting because they think cooperating reduces risk, but they still show risk. But they talk about risk dispersal. They are proactively managing risk, not avoiding risk. The stance is likely 4: risk acceptance/support.\n\nConfidence? The description is clear, it's a risk-balanced approach. I'd say moderate-high confidence. But we output \"high\" or \"medium\" or \"low\". Here we can pick \"high\" because there's clear reasoning. Let's output JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:26:56.397807+00:00",
+ "timestamp_responded": "2026-10-25T11:26:57.276521+00:00"
+}

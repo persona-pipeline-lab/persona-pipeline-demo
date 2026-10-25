@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot01|C0|international|2",
+ "seq": 50,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "37cbf2aa96f13c097441a71605e42ae97e5fc68982ab64b2b45c17e7f88f7a46",
+ "prompt_sha256": "fd480498382c878b588956ccce6cb59631c89fdfa8258e1383ea12c12e5606e2",
+ "raw_text": "{\"time_horizon\":5, \"confidence\":\"medium\"}",
+ "reasoning_text": "We need to judge the decision's time horizon based on reasoning expressed. The description: \"市場は年率10％で成長を続けているため、持続的にビジネスを行う意義は高い。投資規模が売上の30％に相当し、赤字継続は危険なので投資負担を分担できるパートナーとの提携を選択しました。パートナーは既存の生産設備を活用し、規制や通貨リスク低減にも協力します。さらに従業員と地域社会への影響を最小化しつつ、ブランド価値を維持できます。\"\n\nKey aspects: 10% annual growth indicates medium to long-term outlook. Emphasis on sustainability of business. They mention investment proportion (30% of revenue). They want to avoid continuous deficits; partner will share burden. They leverage partner's existing production to reduce regulatory and currency risk. They also want to minimize employee and community impact while preserving brand. The reasoning is oriented towards sustained, long-term viability and risk mitigation.\n\nThe question: \"時間視野\" evaluation from 1 to 5: 1 short-term, 2 short-term-ish, 3 medium, 4 long-term-ish, 5 long-term (5-10+ years). They mention annual growth 10%, partner for funding, risk reduction, minimize negative impact on employees and community, preserve brand value. This seems more long-term oriented because market growth ongoing, partnership aims for sustainability and risk mitigation, brand value. So likely 4 or 5. Let's see.\n\nWe have to pick integer between 1-5 inclusive. They consider annual growth; 10% sustainable growth is long-term. They speak of '持続的にビジネスを行う意義は高い' meaning 'the significance of sustaining business is high'. That likely is long-term.\n\nBut also they are concerned about immediate risk of continuing deficits, and invested 30% of revenue. They choose partner to share burden to mitigate risk. That could show a near-term concern? But overall they talk about long-term growth and risk mitigation. The presence of partner could be more about near-term risk reduction though. But they speak '市場は年率10％で成長を続けているため...' That indicates a longer horizon. Also they talk about brand value, community impact across long period. So I would label as 4 or 5. Let's consider time horizon scale: 4=長期寄り, 5=長期（5〜10年以上の成長・存続が判断の主軸). The description suggests they look at the 10% growth rate presumably over years, agriculture. If it's just a series of numbers, isn't it maybe considered medium? But describing active risk mitigation and investment to maintain brand, it's likely a 5. The difference between 4 and 5: 5 emphasises 5-10+ yrs growth and survival as main criteria. The text says '市場は年率10％で成長を続けているため、持続的にビジネスを行う意義は高い.' That indicates a view that sustaining the business in future is important - Could be 5.\n\nThey also mention partner's involvement mitigating risk and brand. That is similar to long-term strategic partnership building.\n\nThus I'd choose 5. Confidence likely medium high because we use only given text, but there's some ambiguity. Provide JSON: {\"time_horizon\":5, \"confidence\":\"medium\"}.\n\nLet's produce output.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:23:19.228628+00:00",
+ "timestamp_responded": "2026-10-25T11:23:21.464287+00:00"
+}

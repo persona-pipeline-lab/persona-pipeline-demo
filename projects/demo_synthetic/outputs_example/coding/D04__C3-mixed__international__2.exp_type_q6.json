@@ -1,0 +1,24 @@
+{
+ "job_id": "D04|C3-mixed|international|2",
+ "seq": 128,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "dbe6da1f39f7aa1348863dd5cee4264ab1f235e2c1d0b88815dccdc4d5533367",
+ "prompt_sha256": "e59119b0f98720d942b455cfca5fb2410f58c64c72f8e5a6212346d438f2597d",
+ "raw_text": "{\"exp_types\": [\"人・組織\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to analyze the statement: \"従業員が流れたとき、手を止めることを忘れたことで関係が崩れた経験がある。そこから、聞き役としての姿勢と人への配慮が長期的な事業成功には不可欠だと痛感した。\"\n\nWe see: \"従業員が流れたとき\" meaning employees left. \"手を止めることを忘れた\" meaning forgot to stop some action. \"関係が崩れた\" relationships collapsed. Then realization about listening and caring toward people.\n\nWhat type? This is a personal experience: employee churn, connection with employees, people, organization. Not crisis like financial collapse? It's about people and organization. Which categories: \"人・組織\" seems relevant: human resources, employee relations, organization management. Also maybe \"その他\" but we need to pick all applicable. This is specifically about people, HR, organizational culture. So \"人・組織\".\n\nIt doesn't mention crisis? Actually employees leaving leads to collapse. But \"手を止めることを忘れた\" could be a failure in management, resulting in collapse. That might be \"危機対処\"? It's more of a relational collapse, not exactly crisis like bankruptcy, accident. But employees leaving can be a crisis for organization. But we need explicitly claims of \"危機対処\" categories: red letters, bankruptcy crisis, accident, scandal, demand collapse. That could be extended: employee exodus leads to collapse of relationships. But not financial crisis. Might be considered crisis in operations. But the classification: \"危機対処\" is used for crisis like debt, bankruptcy, accidents, scandal, demand collapse. This scenario isn't described as that; it's internal employee relations failure. So \"人・組織\" is clear. So output:\n\n{\"exp_types\": [\"人・組織\"], \"confidence\": \"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:28:30.630622+00:00",
+ "timestamp_responded": "2026-10-25T11:28:31.908906+00:00"
+}

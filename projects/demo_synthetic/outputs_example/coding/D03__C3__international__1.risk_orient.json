@@ -1,0 +1,24 @@
+{
+ "job_id": "D03|C3|international|1",
+ "seq": 17,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "881a07af26c321e79961e39ded52ce020be7c792108979cf1e05eb29058afffe",
+ "prompt_sha256": "c656955ba2101481c50736138c621d6a211f240f87365b8edd645ed253730672",
+ "raw_text": "{\"risk_orient\": 4, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to evaluate risk orientation based on the wording. The description: growth rate high 10%, brand strong, need investment to keep tech advantage and price competition. Retreat would lose long-term market share and social credibility. So reasoning suggests they support continuing investment because of high growth, maintain tech advantage, fear losing market share. That indicates a risk acceptance orientation: they see investment (risk) as necessary to maintain advantage; they risk investment to avoid loss. Focus on opportunity and risk but also fear loss. The wording: \"市場成長率は10%と高く、ブランド認知も強固である\" – positive. \"技術優位性を維持し、価格競合に耐えるには投資が不可欠である。\" They think investment is indispensable. \"撤退すると長期的な市場シェアの喪失と、社会的信用の低下が生じる。\" So avoid retreat because of loss. So orientation is leaning toward risk acceptance. Only slightly maybe moderate? But they are focusing on maintaining advantage, preventing losses, and investing. But is it strong risk acceptance? They emphasise risk of loss if retreat, but do they consider potential upside? They mention maximizing growth. They show investment as necessity, not optional. So they are taking risk to maintain advantage. That suggests 4: \"受容寄り\". They might be risk-averse in sense of losing market share but they accept risk to invest. I'd assign 4 maybe 3? The scale: 1 strongly risk-averse, 2 somewhat risk-averse, 3 neutral, 4 somewhat risk-loving, 5 highly risk-loving. This reasoning is fairly risk-accepting. I'd lean toward 4. Confidence medium or high? The description is quite clear. I'd say confidence high. Output JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:21:14.843625+00:00",
+ "timestamp_responded": "2026-10-25T11:21:16.001341+00:00"
+}

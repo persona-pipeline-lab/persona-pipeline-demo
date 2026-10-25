@@ -1,0 +1,24 @@
+{
+ "job_id": "D05|C3-mixed|withdrawal|1",
+ "seq": 117,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "f3a35de31b90158bb54328e1c8b6179a8eef01791e2e18251a6244fa5cc8aa68",
+ "prompt_sha256": "d71d0bbb9cb151ea6792f3b3b973692f0182f4290b53c27edf357ea2f0421c71",
+ "raw_text": "{\"exp_types\": [\"技術・開発\"], \"confidence\":\"high\"}",
+ "reasoning_text": "We need to analyze the given description:\n\n\"設計部長時代に３年間かけて測定から自動修正までの仕組みを導入した経験が最も影響しました。技術投資と経営判断を同時に考え、従業員と顧客の実際のデータで価値を示すことで、企業の持続可能性を体感しました。\"\n\nWe must select all applicable types from six categories:\n\n- \"危機対処\" (crisis management)\n- \"技術・開発\" (tech/dev R&D)\n- \"海外\"\n- \"創業・立ち上げ\"\n- \"人・組織\" (people/HR/organization leadership)\n- \"その他\"\n\nWe only capture experiences explicitly mentioned. The description mentions a design manager (設計部長) during which for 3 years they introduced a system from measurement to auto correction. This is a technology development / engineering improvement. So definitely \"技術・開発\".\n\nIt also mentions \"技術投資と経営判断...\" So a combination of tech and management decisions, but the experience is about implementing a technical system. There's no related crisis, no overseas, no founding, no human resources explicitly. So \"人・組織\" is not obvious unless we interpret \"従業員と顧客の実際のデータ\" but that's not necessarily about HR or organization. It might not count. It's simply using employee data. That's not an organizational experience.\n\nThus only \"技術・開発\". This is the only express. This is straightforward.\n\nConfidence: high.\n\nReturn JSON: {\"exp_types\": [\"技術・開発\"], \"confidence\":\"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:27:44.560601+00:00",
+ "timestamp_responded": "2026-10-25T11:27:45.692427+00:00"
+}

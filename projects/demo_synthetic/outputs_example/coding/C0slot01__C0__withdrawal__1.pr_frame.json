@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot01|C0|withdrawal|1",
+ "seq": 37,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "e92d23026ef332cd4fb2bf2eb2b89bf6c31665fa853a8f21d4988389d442a491",
+ "prompt_sha256": "b679fe6ad683c38f3a8de5c92d550090174fa039adec05f061dafae5dd1d774e",
+ "raw_text": "{\"pr_frame\":\"財務収益\",\"confidence\":\"high\"}",
+ "reasoning_text": "We need to classify into one of: 財務収益, 市場競争, 技術, 組織ステークホルダー, 複数拮抗.\n\nThe statement: \"2022年度以降継続的な営業赤字と、追加投資による資金負担が財務的な圧迫となっている。\"\n\nCore problem: financial—operational losses (赤字) and funding burden (資金負担), financial pressure. That matches \"財務収益\". So pr_frame should be \"財務収益\".\n\nConfidence: high.\n\nReturn JSON accordingly.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:22:27.392607+00:00",
+ "timestamp_responded": "2026-10-25T11:22:27.846218+00:00"
+}

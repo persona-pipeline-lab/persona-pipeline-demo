@@ -1,0 +1,24 @@
+{
+ "job_id": "D03|C3|tech_transition|1",
+ "seq": 29,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "395b8a6bf8044cfb372ed353a3e1f1ff03240d1b22ae4c51cbbd0e7537927e6c",
+ "prompt_sha256": "e5ed0311d8b5ab39faea12ac06551fbaee621b997f90643a4c9b3d0a558af75a",
+ "raw_text": "{\"risk_orient\": 2, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to interpret the rationale describing why they choose partnership instead of developing in-house. The commentary: \"新方式を自社でゼロから開発するには資源と時間が不足しています。提携すれば、技術的短期的ギャップを埋めつつ、既存の精度経験を活かすことが可能です。さらに、提携先と協働することで、顧客への迅速な価値提供とブランド維持が図れます。\" So they talk about lacking resources/time, ability to fill technical gaps via partnership, using partner's experience, quick value, maintaining brand. This reflects risk avoidance: they avoid the risk of internal development due to resource/time constraints. They choose alliance to mitigate risk. They emphasize loss of missing internal resources is too high; risk of failure internal. So assessment is risk-averse, leaning toward 1 or 2. Which? They might be somewhat risk-averse given mention of limited resources. They might be \"回避寄り\" but not strongly risk-averse. Probably 2. Confidence? The description is quite clear; moderate-high. I'd say high confidence. But ensure output JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:21:57.750181+00:00",
+ "timestamp_responded": "2026-10-25T11:21:58.542366+00:00"
+}

@@ -1,0 +1,24 @@
+{
+ "job_id": "D02|C3-mixed|tech_transition|1",
+ "seq": 135,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "dcaeee269d5529803292bcc4316ab900e84e67a1e6b023023498af4f1f838e3c",
+ "prompt_sha256": "36a81491a1716138f5d28eaef3c74f044462be31d1cef1ac44c33d4248b7ce49",
+ "raw_text": "{\"pr_frame\":\"技術\",\"confidence\":\"high\"}",
+ "reasoning_text": "We have a description: \"新方式の開発遅滞が主な技術的課題であり、既存技術の優位を維持しながら市場シェアを確保する必要がある。\"\n\nWe need to pick the main problem frame: \"財務収益\", \"市場競争\", \"技術\", \"組織ステークホルダー\", or \"複数拮抗\". The description centers on \"新方式の開発遅滞が主な技術的課題\" i.e., new technology development delay is the main technical issue, and ensures maintaining existing technology advantage while securing market share.\n\nComments: It mentions \"技術的課題\" (technical challenge), but also \"市場シェア\" (market share). But which core is emphasized? The phrase \"主な技術的課題\" indicates key issue: technical. While market share is a result or concurrent but technically it says \"既存技術の優位を維持しながら市場シェアを確保\". The main problem is delayed development, which is technical. So primary frame: \"技術\".\n\nConfidence high.\n\nReturn JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:28:51.691940+00:00",
+ "timestamp_responded": "2026-10-25T11:28:52.485777+00:00"
+}

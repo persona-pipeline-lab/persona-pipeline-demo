@@ -1,0 +1,24 @@
+{
+ "job_id": "D02|C3W|withdrawal|2",
+ "seq": 76,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "e32653ac263b363990167072c156ac3976f990cd2e9b79fe54525425624b8137",
+ "prompt_sha256": "1cd37081d24d7387e0e8e0805af9d789688b90cc205fb9b86154ae1c02c8bfcb",
+ "raw_text": "{\"exp_types\": [\"技術・開発\", \"海外\"], \"confidence\": \"high\"}",
+ "reasoning_text": "The user is asking: Based on the statement (the respondent's description of past experience that most influenced their judgment), we need to pick all categories from the six that apply based on what is explicitly stated in the description. No speculation. Use only the explicit mention.\n\nThe six categories:\n\n- \"危機対処\" (crisis response, such as deficits, bankruptcy crisis, accidents, scandals, demand collapse)\n- \"技術・開発\" (research & development, product development, production technology experience)\n- \"海外\" (overseas assignment / overseas business experience)\n- \"創業・立ち上げ\" (founding, new business or new company startup)\n- \"人・組織\" (HR, labor relations, organization management, mentor-mentee relationships)\n- \"その他\" (neither of the above; used only if none match or sole category)\n\nWe need to output JSON: {\"exp_types\": [...], \"confidence\": ...}.\n\nWe must not guess; pick only those that are explicitly stated.\n\nRead the description text:\n\n\"最初の製品が売れなかった経験からユーザーを観察し、作業者の「測りたくなるか」を設計に取り入れたことや、海外工場で手順の理由を文書化し文化ギャップを埋めた経験が、何度も投資と改善を繰り返す意志を支えています。\"\n\nLet's parse. It says: from the experience that the first product did not sell, observe the user and incorporate the 'need to measure' into design. Also, at an overseas factory, document the reasons for procedures and bridge cultural gaps. This experience supports repeated investment & improvement.\n\nWhat categories are explicitly mentioned?\n\n- The first product did not sell -> no explicit mention of crisis (like bankruptcy). It's just a product failure. Not necessarily crisis.\n\nHowever \"最初の製品が売れなかった経験\" might be considered product development or crisis? But it's not about crisis. It's about product failure. Not necessarily crisis or crisis management.\n\nIt states \"ユーザーを観察し、作業者の「測りたくなるか」を設計に取り入れたこと\" - This is design, product development. So \"技術・開発\" is matched.\n\nIt also says \"海外工場で手順の理由を文書化し文化ギャップを埋めた経験\" - This is overseas factory. So \"海外\".\n\nSo we should include \"技術・開発\" and \"海外\".\n\nCheck whether there's any mention of crisis: It mentions first product didn't sell, but no direct crisis like \"赤字・倒産危機\" etc. So not \"危機対処\".\n\n何も創業・立ち上げ: No mention. Not \"人・組織\".\n\nTherefore categories: \"技術・開発\" and \"海外\".\n\nConfidence: high. Because we are sure these categories are explicitly stated.\n\nSo return JSON: {\"exp_types\": [\"技術・開発\",\"海外\"], \"confidence\": \"high\"}.\n\nBut check: Are there any categories that could be argued? It says \"何度も投資と改善を繰り返す意志\", but no category. So no.\n\nThus final.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:25:02.830576+00:00",
+ "timestamp_responded": "2026-10-25T11:25:04.913134+00:00"
+}

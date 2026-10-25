@@ -1,0 +1,24 @@
+{
+ "job_id": "D06|C3|tech_transition|2",
+ "seq": 36,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "f40ee55262d118cbb37261cc0e08964ed83c644deafa38083387047e9873b7ed",
+ "prompt_sha256": "a6806762f5e1d6576316fe2f6067f0dfc4672fb8407d1264a55d26c2536b019d",
+ "raw_text": "{\"pr_frame\": \"市場競争\", \"confidence\": \"high\"}",
+ "reasoning_text": "We need to pick a problem frame: finance revenue, market competition, technology, organization stakeholder, multiple opposing.\n\nThe description: \"競合の新方式が市場で拡大しており、主要顧客の切り替えが進むため、競争と成長機会の押さえ方が課題となっている。\" Roughly: \"The competitor's new method is expanding in the market, and the shift of main customers is progressing, so the issue is how to keep competitive and capture growth opportunities.\" That focuses on competition and growth opportunity management. The relevant frame is \"市場競争\" (market competition).\n\nConfidence is high because it's clear.\n\nReturn JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:22:23.945993+00:00",
+ "timestamp_responded": "2026-10-25T11:22:24.440119+00:00"
+}

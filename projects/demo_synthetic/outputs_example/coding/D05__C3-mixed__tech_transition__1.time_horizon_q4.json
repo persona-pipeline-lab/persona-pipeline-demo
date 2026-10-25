@@ -1,0 +1,24 @@
+{
+ "job_id": "D05|C3-mixed|tech_transition|1",
+ "seq": 141,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "c6363b66e0cef1fbce35e33b9d3e7e9940db01b65ad45c176d50f9b4a6879e70",
+ "prompt_sha256": "c1f19ece2f603b647da3f20789b9bad704eda49fcf42701b4541722afd428623",
+ "raw_text": "{\"time_horizon\": 2, \"confidence\": \"medium\"}",
+ "reasoning_text": "We need to infer time horizon from phrasing. Description says: propose partnership, quickly adopt foreign advanced tech while maintaining own strengths and quality control, spread investment burden, employee tech training for continuous hiring, provide data-driven value to customers, protect brand rating. Focus on quickly adopting tech, training, brand. The phrasing indicates short-term to medium-term: The partnership enables fast adoption, but also continuous training. Emphasis on \"迅速に取り入れつつ\" and \"投資負担を分散し\" suggests short-term benefit. Could be 2 - short-term lit. 3? It's somewhat medium: Preparation for future but immediate benefits. The phrase \"データ駆動型\" might be more mid-term. I think 2. Confidence medium.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:29:16.939324+00:00",
+ "timestamp_responded": "2026-10-25T11:29:17.475309+00:00"
+}

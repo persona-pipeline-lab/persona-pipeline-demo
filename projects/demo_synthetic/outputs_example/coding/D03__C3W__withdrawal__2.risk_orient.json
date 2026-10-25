@@ -1,0 +1,24 @@
+{
+ "job_id": "D03|C3W|withdrawal|2",
+ "seq": 78,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "161903f6ebdab7d911e935c3335b212ac1c443920068be5789b999c3acb570d0",
+ "prompt_sha256": "8ec2e3a64efc54d7c0077b648f6bd57f1c2e3c76bf5ec9096cadfd1c4a8d70b0",
+ "raw_text": "{\"risk_orient\": 4, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to read the passage, evaluate risk orientation. The passage says: market grows 12% annually, tech advantage likely maintained. Not investing risks being overtaken. Supports employees and community to reduce attrition/brand, so long-term growth. They plan to face short-term financial issues while pursuing investment for long-term growth. So emphasis on opportunity, growth, long-term. They are willing to accept risk and invest despite financial issues. So risk-orient = 4 or 5? It's risk-accepting because they prioritize growth over short-term risk. They say \"財務面の課題は短期的に対処しつつ、長期的成長を目指して投資を継続\" meaning \"we will handle short-term financial issues while continuing investment to aim for long-term growth.\" So they accept risk. Are they strongly risk-accepting or moderately? They state they will handle financial issues short-term, but commitment to investment. That seems risk-accepting but cautious: They do not say \"Go all in.\" They plan to mitigate, but still commit. So rating 4 (risk acceptable) maybe 5? Strong risk accept if they treat uncertainty as opportunity. They say \"市場は年率12%で成長しており、技術優位性は今後も維持できる可能性が高い。投資を行わなければ...\". So positive outlook.\n\nConfidence: high? We can infer. This is fairly straightforward. So output JSON with risk_orient: 4 or 5, confidence: high. I'd pick 4, because they still address short-term issues. They are not strongly risk-averse. So risk-orient 4. Confidence high.\n\nOk.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:25:08.060286+00:00",
+ "timestamp_responded": "2026-10-25T11:25:09.175689+00:00"
+}

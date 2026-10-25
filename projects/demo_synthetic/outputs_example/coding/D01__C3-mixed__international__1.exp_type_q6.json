@@ -1,0 +1,24 @@
+{
+ "job_id": "D01|C3-mixed|international|1",
+ "seq": 121,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "4a177f55677ae16cc1a4e0dc395c863d445363b4af14b985c1db3a5d5d5ed51b",
+ "prompt_sha256": "1d875d7590cab6a894cb442015619b67aff9c5339be7e0f7ffb8f836973b216f",
+ "raw_text": "{\"exp_types\": [\"海外\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to list classification types based on described experience: \"海外工場での生活経験\", \"現地従業員と共に生活し、手順の理由を文書化\". This is foreign presence. Also mentions investment, quality, employee pride. The \"海外\" category fits. There may also be \"技術・開発\" because skill about processes? But explicit mention: \"手順の理由を文書化\" - documenting processes, but that's not necessarily product dev directly? It's about documentation for local operation. It's about local factory operation, but maybe it's a type of \"海外\" not \"技術・開発\". There's no mention of starting a business, crisis, or people/organization. So likely \"海外\". Also the act of supporting decision to invest could reflect \"海外\" experience. So exp_types = [\"海外\"]. Confidence: high.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:28:04.427828+00:00",
+ "timestamp_responded": "2026-10-25T11:28:05.027249+00:00"
+}

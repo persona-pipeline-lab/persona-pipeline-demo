@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot01|C0|withdrawal|2",
+ "seq": 38,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "9d022cfc8de51fbf26dbd960bf9ff56e3577f72e013db6f293be063ce9a8ca25",
+ "prompt_sha256": "4a6f0451dca3a5813b66f411f40dd0b95d61a5ddeb437471b83334c66426ab53",
+ "raw_text": "{\"time_horizon\": 4, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to rate the time horizon of the decision based on just the reasoning text. No external knowledge. The text mentions \"年間12%の市場成長率は引き続き高く\" (annual growth 12% remains high), \"競合も大手が投資を進める中、早期投資が遅れるとシェアを失う恐れがある\" (early investment is critical to avoid losing share), \"将来の利益増大と雇用維持の観点から継続が最適\" (future profit and employment perspectives). It mentions potential short-term deficit, but \"投資コストは当面赤字を伸ばす可能性\". So it emphasizes immediate competition, early investment, but also long-term benefits. The language leans to long-term growth due to high market growth and technology advantage. It considers that early investment is needed now. The decision is because of \"将来の利益増大と雇用維持\" i.e., future benefits. That indicates a long-term horizon? But perhaps the system writes \"長期寄り\" or \"長期\". The scale: 5 = long-term (5-10+ years). 4 = long-term slightly. 3 = moderate mid-term. 2 = short-term a bit, 1 = short-term.\n\nThe reasoning: \"年間12%の市場成長率は引き続き高く、貴社の技術優位性を活かす機会があります。競合も大手が投資を進める中、早期投資が遅れるとシェアを失う恐れがあるため、追加投資による技術継続性が必要です。投資コストは当面赤字を伸ばす可能性がありますが、将来の利益増大と雇用維持の観点から継続が最適と判断します。\"\n\nIt balances short-term losses but focuses on long-term benefits. But which horizon? \"市場成長率は引き続き高く\" implies a longer term more than short-term. \"将来の利益増大\" indicates beyond present, could be medium or long. But likely more long-term because they talk about growth and maintaining employment, not immediate. But also worry about share loss if even one cycle delays. So maybe a \"4\" (long-term寄り) because they prioritize long-term growth but note immediate risk. Probably \"4\". Confidence high due to clear mention of growth and future benefits. Provide JSON accordingly.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:22:32.644430+00:00",
+ "timestamp_responded": "2026-10-25T11:22:34.290112+00:00"
+}

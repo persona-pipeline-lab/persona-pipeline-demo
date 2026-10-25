@@ -1,0 +1,24 @@
+{
+ "job_id": "D05|C3|international|1",
+ "seq": 21,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "d8cdb9faee7a2e13e03ea193b1a35d2a924b756bce30ed95415be89711fbcb1a",
+ "prompt_sha256": "615c45746580affc735e9be135775c2d4060393db1828d6bb00c1d6fa187f02a",
+ "raw_text": "{\"exp_types\": [\"人・組織\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to pick all applicable categories based on described experiences. The text: \"前に対処が難しい顧客に手紙を書いて関係を構築した経験が、相手の立場を理解しながら協力体制を構築できると示唆しています。また、部下に「どうする？」と問い、解決策を自ら導き出させた経験が、パートナーシップを通じて共働きを推進する根拠になっています。\"\n\nSo mention: dealing with difficult customer (relationship building), writing letter to customer. Also influence subordinate to solve. The categories: possibilities: \"人・組織\" (people, organization, relationship building, leading subordinates). It is about managing people relationships. Also could be \"危機対処\"? Not. Not about crisis. Not \"技術・開発\", not overseas, not startup. So only \"人・組織\".\n\nThus output JSON: exp_types: [\"人・組織\"], confidence high.\n\nAlso verify: The person said \"前に対処が難しい顧客に手紙を書いて関係を構築した経験\" - this is about external client relationship management, could be considered \"人・組織\" as it is about management of relationships. So yes.\n\nReturn JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:21:34.920993+00:00",
+ "timestamp_responded": "2026-10-25T11:21:35.828704+00:00"
+}

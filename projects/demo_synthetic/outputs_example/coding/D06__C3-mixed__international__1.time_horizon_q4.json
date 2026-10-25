@@ -1,0 +1,24 @@
+{
+ "job_id": "D06|C3-mixed|international|1",
+ "seq": 131,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "c12f3b399c4f28421cdde8db21d927c5c0e8edd712f2027384d4346f7e43d94f",
+ "prompt_sha256": "c0f67b592067cdf520e35e5dc64a2996a6ecaed87164419f9270afb614215a82",
+ "raw_text": "{\"time_horizon\": 5, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to assign a time horizon rating 1-5 based on the language. Let's parse the reasoning:\n\n- \"長期的な市場成長が継続していると判断し、現地生産体制への投資を継続する方が… ブランドの信頼維持と雇用確保に寄与します。さらに技術優位性を守り、有利な価格競争につながる基盤を整備します。投資により短期赤字を吸収できると見込め、将来の利益回復を促進します。\"\n\nWe have references to \"長期的な市場成長\", \"将来の利益回復\" and also mention \"短期赤字を吸収\". But the main rationale is long-term growth, brand trust, employment sichern, preserving tech superiority, good price competition. They talk about short-term financial loss absorption but overall it's about long-term growth.\n\nTime horizon rating: seems quite toward 4 (long-term) or 5 (5-10+ years). The phrase \"長期的な市場成長が継続している\" (long-term market growth continues). The decision is to invest in local production to maintain brand trust and employment, preserves technology advantage, and prepares for price competition. This is more than just a few years? Possibly long-term like 5-10+ years. There's no explicit 5 year horizon, but \"将来\" vs \"短期\". The main decision driver is long-term. So rating 5? Others are short-term oriented, 1 to 3. The mention of \"将来の利益回復\" plus \"短期赤字\" absorption indicates some short-term losses but benefit is long-term. So I'd rate 5 but consider safety: maybe 4? Let's examine: \"長期的\" and \"将来\" indicates intent of longer horizon, but they mention brand trust and employment, presumably 5+ years. So rating 5. Confidence: we have clear language pointing to long-term. High confidence. Output: JSON.\n\n",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:28:39.521504+00:00",
+ "timestamp_responded": "2026-10-25T11:28:40.857821+00:00"
+}

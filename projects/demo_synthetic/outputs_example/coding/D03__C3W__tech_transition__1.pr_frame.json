@@ -1,0 +1,24 @@
+{
+ "job_id": "D03|C3W|tech_transition|1",
+ "seq": 101,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "9bf67d9541c2f0b37f5538ce719e9dd4433992466d9edead6849c24eaa344b40",
+ "prompt_sha256": "dd4db86cf9e75ad335122ce68919098e92d474a57a59720e4a523029dda24b98",
+ "raw_text": "{\"pr_frame\":\"市場競争\",\"confidence\":\"high\"}",
+ "reasoning_text": "We need to choose one of the categories. The description says \"市場・競争の問題。新方式の急速普及により顧客離れが進み、我々の主力事業が市場シェアを失いつつある。\" That is clearly \"市場競争\" (market competition). There's no mention of finances, technology, stakeholders, etc. So output JSON with \"pr_frame\":\"市場競争\" and confidence high.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:26:35.640210+00:00",
+ "timestamp_responded": "2026-10-25T11:26:35.990853+00:00"
+}

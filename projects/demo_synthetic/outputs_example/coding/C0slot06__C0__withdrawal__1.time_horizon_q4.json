@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot06|C0|withdrawal|1",
+ "seq": 47,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "8cd86cd733e6e40d785d352d32eba4a4ad506e3dacf2ffc0dc7f9d99c8ed8efc",
+ "prompt_sha256": "f1951d19641b3797749f30eea7ef621f4b6ccaa374fb4e534bd45a8c3c67c1d3",
+ "raw_text": "{\"time_horizon\":1,\"confidence\":\"high\"}",
+ "reasoning_text": "We need to evaluate the time horizon of the decision based on the reasoning described.\n\nStatement: \"技術優位を継続的に活かしつつ、投資負担はパートナーシップで分担し、リスクを低減したい。市場成長率が高いため、共同開発により差別化を保ちつつ、短期的な財務負担も抑えることが可能です。\"\n\nIt shows continuation of technology advantage, partnership to share investment burden, risk reduction, high market growth rate, collaboration to maintain differentiation, and also short-term financial burden reduction. The focus seems to be on short-term benefits (reduce short-term financial burden) but also maintaining technology advantage for future? However the phrasing: \"短期的な財務負担も抑えることが可能です。\" indicates short-term focus. But also they mention ongoing advantage and differentiation. But the primary emphasis is on risk reduction and short-term financial burden.\n\nThus likely 1 (short-term). Confidence high? Reason fairly clear. So JSON: {\"time_horizon\":1,\"confidence\":\"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:23:08.017910+00:00",
+ "timestamp_responded": "2026-10-25T11:23:08.768333+00:00"
+}

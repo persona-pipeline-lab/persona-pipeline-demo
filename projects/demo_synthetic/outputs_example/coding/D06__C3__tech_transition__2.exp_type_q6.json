@@ -1,0 +1,24 @@
+{
+ "job_id": "D06|C3|tech_transition|2",
+ "seq": 36,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "6203ee52c51f10dfefd4c473ee2dfc4e432ede88dd86e7c4665b1a382b5be1b6",
+ "prompt_sha256": "e15bb169bb10fa927b3557d7bc769c4ee5774487a3e313a1393a5d699429abac",
+ "raw_text": "{\"exp_types\": [\"技術・開発\", \"人・組織\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to classify based on the described experience. The text: \"父の『人の仕事をばかにするな』という言葉を胸に、外部パートナーの技術を受け入れつつ、従業員の取り組みを尊重し、社内外の信頼を継続することを重視した。\" It says: He valued respecting employees' efforts and maintained trust. It mentions receiving external partners' technology while respecting employees. This describes an experience of incorporating external technology while respecting internal workforce. It's about internal organization and technology acquisition. But it's not crisis, not overseas, not founding, not purely tech dev: It's about technology integration but might be \"技術・開発\" since it's about external partners' technology. It's also about \"人・組織\" because respecting employees. The question says \"言及された経験の型を次の6分類から該当するものすべて選んでください。\" We must pick all that apply based purely on explicit text.\n\nExplicit: \"外部パートナーの技術を受け入れつつ\" indicates experience with external partner technology: that's \"技術・開発\". Also \"従業員の取り組みを尊重\" indicates experience related to people/org: \"人・組織\". So both. The wording also about trust: \"社内外の信頼を継続すること\" maybe implies organizational trust, but we keep the categories.\n\nThus exp_types: [\"技術・開発\", \"人・組織\"]. Confidence: high.\n\nReturn JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:22:26.305301+00:00",
+ "timestamp_responded": "2026-10-25T11:22:27.390601+00:00"
+}

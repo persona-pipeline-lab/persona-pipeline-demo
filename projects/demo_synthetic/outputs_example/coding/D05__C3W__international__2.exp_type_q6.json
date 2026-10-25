@@ -1,0 +1,24 @@
+{
+ "job_id": "D05|C3W|international|2",
+ "seq": 94,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "69e5a2f2c9165bbf9ae62ec48d1395664b5b1090a54026bc234e0f1949b209bc",
+ "prompt_sha256": "0649913e240be706ee206c9ad63ff6c8cb098fa8efa600d1948cc04ae11bbed2",
+ "raw_text": "{\"exp_types\": [\"人・組織\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We have to identify which of the six categories applies to the experience mentioned in the description. The description mentions: father’s “don't mock people's work” and first boss's advice to “stop and listen” influencing decision to prioritize employees and customers while continuing existing business. It's about decision-making following influence of father and boss. Which categories could it fit? The categories: 「危機対処」 (crisis response), 「技術・開発」 (technology/development), 「海外」 (overseas), 「創業・立ち上げ」 (startup), 「人・組織」 (people/organization), 「その他」.\n\nThe experience described includes decision to continue existing business while prioritizing employees and customers; this relates to organization/people. It's an internal management decision. So \"人・組織\" definitely fits. It doesn't mention crisis or technology or overseas or startup. So only \"人・組織\". Can't be \"その他\" because it's a type of experience. So output:\n\n{\"exp_types\": [\"人・組織\"], \"confidence\": \"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:26:11.542164+00:00",
+ "timestamp_responded": "2026-10-25T11:26:12.272590+00:00"
+}

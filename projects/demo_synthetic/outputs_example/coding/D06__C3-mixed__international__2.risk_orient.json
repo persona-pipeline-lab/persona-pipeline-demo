@@ -1,0 +1,24 @@
+{
+ "job_id": "D06|C3-mixed|international|2",
+ "seq": 132,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "93039add1e9f73b9143bf71c15b97dc84b53c10ee1ccf538471cac512e8d17b1",
+ "prompt_sha256": "d661c081004d71c58035569265de47b673231dd74a49f18b6d3e3abaa1468196",
+ "raw_text": "{\"risk_orient\": 4, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to rate risk orientation. The text: \"長期成長率10%で市場は拡大しているため、競争優位を維持するには生産体制を強化する必要があります。過去に安全投資で短期的に赤字になった経験があるが、最終的に投資が売上と利益を安定させました。従業員と顧客の信頼を失わないためにも、持続的投資が重要だと判断します。\"\n\nThey talk about need to invest, past risk of short-term losses but long-term gains. They mention trust, maintain competitiveness. They are somewhat risk-tolerant but also cautious? They view that despite risk, they believe it's justified. They accept risk for long-term benefit. That leans towards risk acceptance. Score maybe 4. Confidence medium? Probably high because clear positive risk orientation. Provide JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:28:42.752948+00:00",
+ "timestamp_responded": "2026-10-25T11:28:43.405549+00:00"
+}

@@ -1,0 +1,24 @@
+{
+ "job_id": "D05|C3|international|1",
+ "seq": 21,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "9c2e9e67ab40e20a70ba879830add0ceca939bd44ca4ec7d55d7e2e75c636f90",
+ "prompt_sha256": "953bc5debf998d25d983f3549df4920dfb49154a9d0b2869b76bcf8a5b30bdbf",
+ "raw_text": "{\"time_horizon\": 3, \"confidence\": \"medium\"}",
+ "reasoning_text": "We need to parse the text. The prompt: \"経営学研究のコーディング作業者\" they've given a text: \"従業員と地域社会への影響を最小限にしつつ、現地の投資負担をパートナーと共有することで財務リスクを軽減できます。継続的な市場成長と品質優位を維持しつつ、競争力のある価格設定を可能にする協力関係を築くことで、ブランド信頼を保持することができます。\"\n\nWe need to evaluate time horizon based on reasoning only. Without external knowledge. The reasoning: They emphasize minimizing impacts on employees & community, sharing investment burden with partner, reduce financial risk. They keep continuous market growth, quality advantage, competitive pricing maintain brand trust.\n\nTime horizon: They mention \"継続的な市場成長\" (continuous market growth). \"維持しつつ\" (while maintaining), \"競争力のある価格設定\" (competitive pricing). They focus on short-term risk mitigation, share costs. There's no mention of multi-year growth or long-term strategy beyond 5-10 years. It's about reducing risk, local investment burden sharing, maintain brand trust. That feels like a medium-term or short-term strategic choice. Probably 2 or 3. Let's analyze: They share local investment burden: might be planning to reduce financial risk in near future, ongoing.\n\n\"継続的な市場成長\" indicates they aim for continuous growth, not just a one-time. But they might want ongoing (mid-term). The phrase \"continuous\" not \"long-term\" like 10 years. It's more about ensuring ongoing growth and quality advantage. Might be medium-term: 3. The time horizon categories: 1=short-term (covering current period). 2=short-term leaning. 3=mid-term OR both claims. 4=long-term leaning. 5=long-term 5-10 years.\n\nIt seems to lean towards medium: 3. Confidence? The reason uses multiple factors but not giving explicit long-term horizon. Also could be 2.\n\nLet's base on guidelines: \"規則: 選択肢そのものではなく理由の語り方で判定する\". So the phrase \"continuously market growth, maintain quality, keep brand trust\" suggests multiple aspects but no mention of 5+ years. So medium. confidence medium.\n\nLet's produce JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:21:33.356113+00:00",
+ "timestamp_responded": "2026-10-25T11:21:34.919303+00:00"
+}

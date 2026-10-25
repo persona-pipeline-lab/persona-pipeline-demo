@@ -1,0 +1,24 @@
+{
+ "job_id": "D05|C3-mixed|international|1",
+ "seq": 129,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "bf6089ca54fca2e5f7e02a9942f38e084e4cff4e8c581a56620c76e6899fec26",
+ "prompt_sha256": "aedaff55247ba6ee35ea3f856743be0e813cdf3d40b5af690fab7de3af3aeecc",
+ "raw_text": "{\"time_horizon\": 2, \"confidence\": \"medium\"}",
+ "reasoning_text": "We need to judge time horizon from description. Statement: \"ローカルパートナーと提携して投資負担を共有し、既存の優れた品質を維持するとともに地域雇用を守る。これにより現地政府の支援を活用しながら、価格競争に対抗できる。\"\n\nInterpretation: They choose to partner with local partner to share investment, keep quality, protect local jobs, use local government support to counter price competition. This seems more towards medium-term? They are preserving current operations and jobs, leveraging local gov for support, and addressing price competition. Not long-term strategic growth, rather short to mid-term. Likely 2 or 3. Short-term 1 would be focused on immediate profit. Here the emphasis is on maintaining quality, employment, local support; that suggests medium-term, 3? But \"投資負担を共有\" - they already invest shares now. They maintain quality, and counter price competition. Likely to create stability, long-term viability. But the direct mention: \"地域雇用を守る\" - job protection is a short-term to medium-term consideration, not a 5-year growth. Price competition countering - short-term.\n\nThus 2 plausible. \"短期寄り\" (2). Confidence medium? They speak about share of investment but not long-term growth. Might lean 2. So JSON: time_horizon 2, confidence medium.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:28:33.025983+00:00",
+ "timestamp_responded": "2026-10-25T11:28:33.990397+00:00"
+}

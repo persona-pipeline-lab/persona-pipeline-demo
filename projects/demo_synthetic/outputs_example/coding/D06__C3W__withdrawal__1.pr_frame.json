@@ -1,0 +1,24 @@
+{
+ "job_id": "D06|C3W|withdrawal|1",
+ "seq": 83,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "468f4a526a0e6d9a01b60411f1822b9c2807416220fb64c6873975cccbb3ad66",
+ "prompt_sha256": "b2aaef8c28b965bfdcc28e958e94d9dd06a119f837c02ffbc5a6865c24c0d178",
+ "raw_text": "{\"pr_frame\": \"組織ステークホルダー\", \"confidence\": \"high\"}",
+ "reasoning_text": "We have description: \"組織・ステークホルダーの問題である。事業継続が従業員や地域社会、顧客・取引先への影響を伴うため、これらをどのように保護し、回復させるかが主要課題となる。\"\n\nWe need to pick main problem frame. Options: 財務収益, 市場競争, 技術, 組織ステークホルダー, 複数拮抗.\n\nThe description explicitly states \"組織・ステークホルダーの問題である\" so it's that. So classify as \"組織ステークホルダー\". Confidence high.\n\nReturn JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:25:23.688914+00:00",
+ "timestamp_responded": "2026-10-25T11:25:24.236178+00:00"
+}

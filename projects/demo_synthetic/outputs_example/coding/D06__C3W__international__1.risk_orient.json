@@ -1,0 +1,24 @@
+{
+ "job_id": "D06|C3W|international|1",
+ "seq": 95,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "38ab2ac4cbd04562365bbfba0562a7fcc4125c9ce9be0bb209f8c21723c98c53",
+ "prompt_sha256": "192ff4f32a45e5dc6d7ee4b3809ec6408ae6964b7b5994bd2a9fd53247abf95e",
+ "raw_text": "{\"risk_orient\": 4, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to interpret the reasoning: The reason states: \"Long-term market growth, technology advantage, trust brand, investment will lead to recovery and share expansion. If postpone investment, regulations & competition will accelerate weakness, loss bigger than retreat. Need risk management and transparency, secure funding, phased facility updates.\" So they're emphasizing potential benefits, but also acknowledges risk but says risk management and phased approach. They say risk management and transparency is necessary. Risk aversion? They are clearly advocating investment. They see risk but says can manage. So risk orientation leaning toward acceptor of risk because they want to invest to maintain strategic advantages, but they do mention risk management. They accept risk but plan to control. The scale: 1=strong risk-averse, 5=strong risk-accepting. Considering \"investment is necessary\" vs \"risk management\". Likely a 3 or 4. Evaluate: They say \"損失が大きくなる\" but they talk a lot about potential benefits: \"市場成長性、技術優位性、ブランド\". They propose risk management. That suggests moderate to accepting: 4 perhaps.\n\nConfidence: fairly high because clear actionable. So output:\n\n{\"risk_orient\": 4, \"confidence\": \"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:26:12.855248+00:00",
+ "timestamp_responded": "2026-10-25T11:26:13.677134+00:00"
+}

@@ -1,0 +1,24 @@
+{
+ "job_id": "D03|C3|tech_transition|2",
+ "seq": 30,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "a9d27bb52a32505eda3cd2126e5097cb3b1c3dad399476a797ef12bd9b1a861d",
+ "prompt_sha256": "ccf502882949bcf040512b00bd03a670520c1015cab352cec228fcd8f9234307",
+ "raw_text": "{\"pr_frame\":\"技術\",\"confidence\":\"high\"}",
+ "reasoning_text": "We need to choose main problem frame among categories: financial, market competition, technology, stakeholder, multi-competitive if more than one equal weight. The description: \"技術の進化に遅れ、競合に対抗できないのが主な問題である。\" Translation: \"Lagging behind in technological evolution, unable to compete against competitors is the main problem.\" The core problem: technological lag affecting competition. The categories: technology (tech advantage/transformation) or market competition (market growth, competition, customer acquisition). The text emphasises technology lag causing inability to compete. That frames as tech issue. So choose {\"pr_frame\":\"技術\",\"confidence\":\"high\"}.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:22:01.015327+00:00",
+ "timestamp_responded": "2026-10-25T11:22:02.003833+00:00"
+}

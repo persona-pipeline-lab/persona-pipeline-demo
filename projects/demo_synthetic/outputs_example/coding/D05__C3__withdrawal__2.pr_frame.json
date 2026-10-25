@@ -1,0 +1,24 @@
+{
+ "job_id": "D05|C3|withdrawal|2",
+ "seq": 10,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "4141ecd9c6d6a1117d7194ad96eaaad859ab2266fe5e2043d2fb18d78f5ebd41",
+ "prompt_sha256": "5280bf5a6608e2f9247a486351b27b941357d7d5997ed526be85bd026200f867",
+ "raw_text": "{\"pr_frame\":\"組織ステークホルダー\",\"confidence\":\"high\"}",
+ "reasoning_text": "We have to classify the main problem frame from the given description. The description: “主に組織とステークホルダーの関係性の問題だと捉えている。事業の存続には、従業員・顧客・地域社会・取引先・株主という多様な関係者への影響が大きい。” => \"It is mainly a problem of the relationship between organization and stakeholders. For the business to survive, the impacts on diverse stakeholders such as employees, customers, local community, suppliers, shareholders are big.\" So the frame seems to be “組織ステークホルダー” (organizational stakeholder). Therefore answer: {\"pr_frame\": \"組織ステークホルダー\", \"confidence\": \"high\"}.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:20:47.876816+00:00",
+ "timestamp_responded": "2026-10-25T11:20:48.447009+00:00"
+}

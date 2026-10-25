@@ -1,0 +1,24 @@
+{
+ "job_id": "D01|C3|international|1",
+ "seq": 13,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "9367194cf30ec0512d2fbe4c5378d75b49495b0145c0919e077b041820dd8999",
+ "prompt_sha256": "4e9ff5f742bc1e118d92d71d66afa2ee38c281b80560ce43a0f6caff67c7c4ca",
+ "raw_text": "{\"risk_orient\": 4, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to evaluate risk orientation. The statement: \"改善で安全基準を満たし事故リスク低減。長期的市場成長のため、短期的赤字を受け入れつつ投資を進める必要がある。顧客信頼と地域社会への責任感が再建に不可欠.\" The emphasis: accept short-term losses to invest for long-term growth; improving safety reduces risk. This shows pro-investment, risk acceptance: they are willing to endure losses for future. So orientation likely 4 (acceptance) or 5? There's mention of need to accept short-term losses: indicates risk acceptance. But not extremely bold? They talk about \"must invest to meet safety standards\". So risk oriented moderate acceptance. 4 seems likely. Confidence: sufficient. So high. Output JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:20:59.085113+00:00",
+ "timestamp_responded": "2026-10-25T11:20:59.676290+00:00"
+}

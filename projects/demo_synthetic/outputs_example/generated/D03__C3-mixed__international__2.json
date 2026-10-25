@@ -1,0 +1,32 @@
+{
+ "job_id": "D03|C3-mixed|international|2",
+ "seq": 126,
+ "person_id": "D03",
+ "condition": "C3-mixed",
+ "scenario": "international",
+ "rep": 2,
+ "model": "gpt-oss-20b",
+ "sent_sha256": "16c08a2000a8f75be10cf508c1ee3367837d8e53d5dd85c7e9c3c0c0ad8de691",
+ "sent_file": "sent/D03__C3-mixed__international__2.txt",
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 8192,
+  "seed": 100002,
+  "reasoning_effort": "medium"
+ },
+ "status": "ok",
+ "error_message": "",
+ "response_text": "{\n  \"q1\": [\"A\", \"B\", \"C\"],\n  \"q2_category\": 1,\n  \"q2_text\": \"主要な課題は財務・収益の不安定さです。赤字と投資負担が事業継続を脅かしています。\",\n  \"q3\": \"継続投資\",\n  \"q4_text\": \"現地市場の成長は継続的に見込めるため、損失を短期的に受け入れ、採算性を回復する投資が必要です。技術優位性とブランドを守ることで長期的競争力を維持できます。従業員と地域への影響も大きく、撤退は大きな社会的損失を招きます。投資はリスク分散の手段として重要です。\",\n  \"q5_ranking\": [\"従業員\", \"地域社会\", \"顧客\", \"取引先\", \"株主\"],\n  \"q6_text\": \"工場長時代に老朽化した設備を先送りにした結果、事故が起きて多大な費用と安全リスクを生じた経験が、投資の重要性を痛感させました。\"\n}",
+ "reasoning_text": "We need to use only the autobiographical experiences and values. Let's interpret.\n\nQ1: Which information to confirm first. We need three letters from A-H, in order. Based on autobiography: emphasizes employee relationships, partners, stakeholders; careful about financials and risk; value of people and customers, but also stakeholders. Observations: He sees we need to know \"financial burden\" numbers? Also \"local employees\" as significant. He also cares about brand impact. He took iterative approach, listening to employees and customers. He also had to make decisions after crisis. He valued partners and financial data. Let's decide.\n\nWe might choose: (C) employees, (E) competition actions, (F) technology advantage? Or maybe (A) market growth, because potential long-term.\n\nBut \"information to confirm\" could be: market growth (A), financial burden (B), employee distribution (C). Those directly affect decision.\n\nLet's choose A, B, C in that order.\n\nQ2: What problem is main? Based on his perspective: He values stakeholder relationships; he experienced crisis that needed financial courage, but also balancing risk and growth. He may think of \"市場・競争の問題\" as main, because competition price war, new customers slow, need guarantee of survival. He also sees \"財務・収益\" due to loss and investment. Which?\n\nHis autobiographical approach: He would likely emphasize \"組織・ステークホルダー\" because he cared about employees and region. But top problem might be financial because can't sustain? Let's decide: Sort by what would be main? He studied financial numbers, overcame fear of numbers, but that was skill. He now would see problem: the business has negative cash flows and heavy investment needed, threatening viability. So #1: 財務・収益の問題. Write 1-2 sentences.\n\nQ3: choose one: \"継続投資\" maybe, as he values long-term growth, technology, brand, employee welfare, etc. He will prefer to keep it and invest.\n\nAlternatively could choose \"提携\" if wanting to reduce risk; but he values controlling? He would choose \"継続投資\".\n\nQ4: Reason explanation: mention financial risk, market potential, technology advantage, employees, brand. Use 3-5 sentences.\n\nQ5: Ranking stakeholders: He values employees heavily, region society, customers, creditors? In autobiography he cares about employees and region; brand matters but maybe less than people. He would rank: 従業員 > 地域社会 > 顧客 > 取引先 > 株主? But also shareholder ultimate, but he might prioritize. In similar scenario, they'd rank: 従業員, 地域社会, 顧客, 取引先, 株主. But recall he said \"I rely on superordinate typical suggestions.\" He valued shareholders? Actually he said infrastructure. In his experience, \"ソーシャル\" and \"community\" matter. He emphasised employees and customers. Also he had a promise of \"reply in 1 week.\" And \"brand\" matters. But still rank: 従業員 > 地域社会 > 顧客 > 取引先 > 株主.\n\nQ6: Past experience influencing decision: He had to invest in plant upgrades to prevent collapse after crisis, built safety equipment: the \"工場長として\" experience where neglected equipment aging caused a big cost. He emphasised that \"来年には\" kept saying without action. So that experience taught him the importance of investing to prevent future cost. Also his father. But the question: \"判断に最も影響した過去経験\" likely the factory maintenance incident where failure led to large cost, making him learn to invest proactively.\n\nWrite 2-4 sentences.\n\nNow produce JSON. Ensure no extraneous characters.\n\nLet's craft:\n\n{\n  \"q1\": [\"A\",\"B\",\"C\"],\n  \"q2_category\": 1,\n  \"q2_text\": \"主要な課題は財務・収益の不安定さです。赤字と投資負担が事業継続を脅かしています。\",\n  \"q3\": \"継続投資\",\n  \"q4_text\": \"現地市場の成長は継続的に見込めるため、損失を短期的に受け入れ、採算性を回復する投資が必要です。技術優位性とブランドを守ることで長期的競争力を維持できます。従業員と地域への影響も大きく、撤退は大きな社会的損失を招きます。投資はリスク分散の手段として重要です。\",\n  \"q5_ranking\": [\"従業員\",\"地域社会\",\"顧客\",\"取引先\",\"株主\"],\n  \"q6_text\": \"工場長時代に老朽化した設備を先送りにした結果、事故が起きて多大な費用と安全リスクを生じた経験が、投資の重要性を痛感させました。\"\n}\n\nCheck that lengths fine. Should be within constraints. Use no extra chars.",
+ "finish_reason": "stop",
+ "actual_model": "gpt-oss-20b",
+ "response_id": "chatcmpl-85f0f4715890d103",
+ "usage": {
+  "prompt_tokens": 4018,
+  "completion_tokens": 1389
+ },
+ "endpoint_kind": "local",
+ "timestamp_requested": "2026-10-25T11:18:52.893975+00:00",
+ "timestamp_responded": "2026-10-25T11:18:56.945050+00:00"
+}

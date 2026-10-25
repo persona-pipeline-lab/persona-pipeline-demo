@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot02|C0|withdrawal|1",
+ "seq": 39,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "468032e61705515fe15ecd20faaa5eaac4cdc94c8633813a6665ddd16b6ace6e",
+ "prompt_sha256": "0433f0cbab18876f9ba0472e67925a4da0282fe5e7f4080136f8c5a0a8481160",
+ "raw_text": "{\"pr_frame\": \"財務収益\", \"confidence\": \"high\"}",
+ "reasoning_text": "We have to select one of the classification: 財務収益, 市場競争, 技術, 組織ステークホルダー, 複数拮抗. The description: \"市場に本質的な成長機会がありつつも、現在の赤字と大規模投資要求に直面し、財務的に持続可能かを検討する必要があります。\"\n\nCore issue: market growth opportunity vs current deficits and large investment, need to assess financial sustainability. So the primary focus is about financial profitability and sustainability given investment burdens etc. So classification: \"財務収益\". It's just one. Confidence: high. Output JSON.\n\n",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:22:35.025566+00:00",
+ "timestamp_responded": "2026-10-25T11:22:35.534630+00:00"
+}

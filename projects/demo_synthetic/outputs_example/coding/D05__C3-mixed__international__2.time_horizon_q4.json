@@ -1,0 +1,24 @@
+{
+ "job_id": "D05|C3-mixed|international|2",
+ "seq": 130,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "a571269c76a713e07e821312914a3ad1c958c2eb9508c8f70ed4ac3d678fbe16",
+ "prompt_sha256": "9d3502e380ab1f861698fba8fcbe3e291a119483c0e66efb31ccbd9f4a3333af",
+ "raw_text": "{\"time_horizon\":4,\"confidence\":\"high\"}",
+ "reasoning_text": "Given excerpt: \"市場成長が確実に続く上で、長期的な競争優位を保持するためには投資が不可欠だ。現地従業員の安定は事業の根幹を支える。品質・耐久性で差別化できる自社技術をさらに強化し、ブランド信頼を維持する。\"\n\nWe're asked to judge time horizon 1-5 based on reasoning. The statement emphasises \"長期的な競争優位を保持\" and \"投資が不可欠\" for long-term growth, \"品質・耐久性で差別化\" is long-term brand trust. So it's long term, maybe 4 or 5? They emphasize future growth and sustaining competitive advantage, so likely 4 or 5. However weight: \"投資が不可欠\" implies long-term. But they don't mention 5-10 year specifically, but \"長期的\" might be 4 (long-term oriented). The scale: 5 is 5-10+ years long-term growth. 4 is long-term oriented. This suggests 4. Confidence: high because clear long-term focus.\n\nThus produce JSON: {\"time_horizon\":4,\"confidence\":\"high\"}\n\nReturn only JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:28:36.684768+00:00",
+ "timestamp_responded": "2026-10-25T11:28:37.537142+00:00"
+}

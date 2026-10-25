@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot03|C0|international|2",
+ "seq": 54,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "37cbf2aa96f13c097441a71605e42ae97e5fc68982ab64b2b45c17e7f88f7a46",
+ "prompt_sha256": "598e5a6451b9053944ed87479d4951b24462bbb8c30dd13dadffd69508890138",
+ "raw_text": "{\"risk_orient\": 2, \"confidence\": \"high\"}",
+ "reasoning_text": "Need to evaluate risk orientation based on language. The reasoning: market growing 10% so high significance, investment 30% of sales, continuing loss is dangerous so they opted for partnership to share burden. They mention partner allows splitting risk, using existing equipment, reducing regulatory/currency risk, minimize employee/social impacts, maintain brand value. They emphasize risk reduction and cooperation; but also choose partnership to continue business. They focus on risk sharing and mitigation. They don't say they are very risk-loving; rather they are prudent: they share risk and mitigate. So risk orientation is 2? Because they avoid risk by partnership and risk sharing. Let's scan text: \"投資規模が売上の30％に相当し、赤字継続は危険なので投資負担を分担できるパートナーとの提携を選択しました。” Means they avoided potential loss by sharing cost. \"パートナーは既存の生産設備を活用し、規制や通貨リスク低減にも協力します\" emphasises risk reduction. \"従業員と地域社会への影響を最小化しつつ、ブランド価値を維持できます\" indicates risk averse to social risk. So orientation is risk-averse. Score 2? Possibly 1 if very strongly risk-averse, but mention of \"市場は年率10％で成長を続けているため、持続的にビジネスを行う意義は高い\" indicates they perceive risk as moderate; but they allocate investment proportionally. They also note \"赤字継続は危険\" So risk-averse but still proceed.\n\nScale: 1 = strong risk-averse, 2 = risk-averse, 3 = neutral, 4 = risk-tolerant, 5 = strongly risk-tolerant. So 2 seems appropriate (risk-averse). Confidence: high, because language explicitly emphasises mitigation and risk sharing.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:23:37.839752+00:00",
+ "timestamp_responded": "2026-10-25T11:23:39.100536+00:00"
+}

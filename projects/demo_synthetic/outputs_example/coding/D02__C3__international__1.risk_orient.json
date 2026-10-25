@@ -1,0 +1,24 @@
+{
+ "job_id": "D02|C3|international|1",
+ "seq": 15,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "b5a61c1cd3acc8f253748f759501b15e29c7610b9784c385071a39f5e51b6636",
+ "prompt_sha256": "3ef42df441ee91679a87b64218d92a36ee1bafac1e5d2efc0e8608a8c13af62c",
+ "raw_text": "{\"risk_orient\": 5, \"confidence\":\"high\"}",
+ "reasoning_text": "We must assess risk orientation from the reasoning only. The reasoning: \"market growth high, brand trust strong. Long-term profit recovery needs local production investment; retreat would harm brand and region. Employees and customers continuity to maintain value.\" This suggests a risk-accepting stance: they see investment as necessary, and fear retreat would cause harm. They accept risk to achieve long-term recovery. So rating likely 5? They highlight opportunity and importance. So \"strongly risk-accepting\". Confidence: the text is fairly explicit, so high confidence.\n\nReturn JSON: {\"risk_orient\": 5, \"confidence\":\"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:21:06.004644+00:00",
+ "timestamp_responded": "2026-10-25T11:21:06.446727+00:00"
+}

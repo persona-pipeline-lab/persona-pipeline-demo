@@ -1,0 +1,24 @@
+{
+ "job_id": "D03|C3W|tech_transition|2",
+ "seq": 102,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "e151ab9cf9b3fea763c5e4c7a02010271bbe60140d0df561fbee6bc4403f3917",
+ "prompt_sha256": "860b3410409e82d08a2efee0646331a6856f6b9e3738a2b5c92680e78e24e983",
+ "raw_text": "{\"risk_orient\": 1, \"confidence\": \"high\"}",
+ "reasoning_text": "We interpret the Japanese text. The statement: \"提携により、当社の現在の強みと外部の新技術を統合し、低リスクで新方式開発を進めることができる。従業員は継続的に学ぶ機会を持ち、組織のモチベーションを保ちつつ、投資負担を分担できる。外部パートナーの技術と当社のオペレーションノウハウを組み合わせることで、低コストかつ高リスク回避の開発が可能となる。\"\n\nAnalyse for risk orientation: They mention \"低リスク\" and \"高リスク回避\" developing possibility, \"低コストかつ高リスク回避\". They focus on risk avoidance, careful. The phrase \"低リスクで\" \"高リスク回避\". They also mention \"投資負担を分担できる\" which reduces risk at financial level. So risk oriented: strongly risk-averse: Score 1.\n\nConfidence: High because the text explicitly states risk avoidance. \"低リスク\" \"高リスク回避\". So high confidence.\n\nSo output JSON: {\"risk_orient\": 1, \"confidence\": \"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:26:39.449220+00:00",
+ "timestamp_responded": "2026-10-25T11:26:40.322405+00:00"
+}

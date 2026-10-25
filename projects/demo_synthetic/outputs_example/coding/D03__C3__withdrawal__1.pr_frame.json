@@ -1,0 +1,24 @@
+{
+ "job_id": "D03|C3|withdrawal|1",
+ "seq": 5,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "24951fd5ff34dc13169554f1b5a103c7c4dfb3285ed3f9a44faf3158a8244eca",
+ "prompt_sha256": "fad83b79aff7fdfe6683de31bdd957e1a5164cb0542ac3629bc7016e819a760f",
+ "raw_text": "{\"pr_frame\":\"技術\",\"confidence\":\"high\"}",
+ "reasoning_text": "We need to classify the main problem frame. The statement: \"技術優位がいつまで続くか不明であることが主な問題であり、将来の競争力確保が不安になっている。\" That is about technology advantage. So classification is \"技術\". Confidence likely high. Output JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:20:30.023318+00:00",
+ "timestamp_responded": "2026-10-25T11:20:30.438598+00:00"
+}

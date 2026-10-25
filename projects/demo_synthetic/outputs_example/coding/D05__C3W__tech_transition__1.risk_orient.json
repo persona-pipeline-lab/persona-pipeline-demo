@@ -1,0 +1,24 @@
+{
+ "job_id": "D05|C3W|tech_transition|1",
+ "seq": 105,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "2f90d76ce819f227d2ce7c641e3f38e4295da8ebf2264db685cb006104922d6e",
+ "prompt_sha256": "01945154a21ec4af153644a8d0a30092a5675c4b06dcfc0b1e6e07e1cc82f35c",
+ "raw_text": "{\"risk_orient\": 4, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to judge risk orientation based on the reasoning in the text. The decision: new method development reduces time, but funding and risk is hard for single company. They propose partnership to spread investment burden, combine technical advantage and market knowledge. Also alliance partner's existing customer base can enhance immediate revenue.\n\nWe interpret the language. They say new method reduces time; but risk & investment too high alone. They propose partnership to share risk. They see advantage: technical advantage & market knowledge, plus immediate sales. So they see risk, but they propose acceptance via partnership, seeing opportunities. They mention risk but they mitigate by partners. They don't express fear, rather opportunity to reduce risk.\n\nRisk orientation: They are willing to accept risk by partnering. They are not strongly risk-averse. They see that partnership spreads risk. So rating about 4. They are acceptor-involved, since they propose partnership to handle risk. It's risk-accepting but rational. So 4. Confidence medium? It's fairly clear. I'd say high confidence.\n\nLet's output JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:26:52.519003+00:00",
+ "timestamp_responded": "2026-10-25T11:26:53.210324+00:00"
+}

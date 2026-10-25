@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot05|C0|tech_transition|1",
+ "seq": 69,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "e734a3968c0d6627fdcac7d8179fb7acfb9391f123638e13be45971f66fc28fb",
+ "prompt_sha256": "c5f269282e783856649f23d01fb486387b08b732326697a4b8018ba9174a4d56",
+ "raw_text": "{\"exp_types\": [\"技術・開発\", \"海外\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to assign categories based on the statement. The statement: \"前職では、国内市場が成熟した製造業で新しいデジタルプラットフォームを導入した際、海外のITベンダーと提携し、育成と導入を統合。顧客への価値提供を維持しながらコストを削減した経験がある。\"\n\nWhat categories could apply? Let's parse.\n\n1. \"国内市場が成熟した製造業で新しいデジタルプラットフォームを導入\". That's technology/development. So \"技術・開発\" category.\n\n2. \"海外のITベンダーと提携\" indicates overseas involvement. So \"海外\" category.\n\n3. Does it involve crisis? No. So \"危機対処\" no.\n\n4. \"創業・立ち上げ\"? No.\n\n5. \"人・組織\"? Not explicitly. The statement mentions \"育成と導入を統合\". That might refer to training staff? That might be a bit ambiguous. \"育成\" could mean training. But \"育成\" in the context of platform might refer to development of the platform? Could be ambiguous.\n\nBut the instruction: \"根拠に記述だけ\" Only pick categories explicitly stated. The statement mentions \"海外のITベンダーと提携\" - indicates overseas collaboration - qualifies \"海外\". Also \"デジタルプラットフォーム導入\" - qualifies \"技術・開発\". No mention of crisis or founding. \"人・組織\": is there any mention? It says \"育成と導入を統合\" which may refer to internal training maybe? But not clear. Might mention that it's internal training and systems integration. That could be regarded as \"人・組織\" but it's ambiguous. I'd lean not to include unless straightforward. The instruction says \"明示された経験のみ拾う\". That means explicit mention. \"育成\" could be ambiguous but might be internal training. But it's not explicitly \"人事・労務・組織運営・師弟関係\". Could be considered as part of implementation. I'd exclude.\n\nThus categories: 技術・開発, 海外.\n\nConfidence: high. JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:24:36.365443+00:00",
+ "timestamp_responded": "2026-10-25T11:24:37.847476+00:00"
+}

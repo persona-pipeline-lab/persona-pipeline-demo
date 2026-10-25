@@ -1,0 +1,24 @@
+{
+ "job_id": "D02|C3-mixed|international|1",
+ "seq": 123,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "ae00454a91309413126f0e4954cace4d416521cb64c0c26aa6837acc9be4f0d2",
+ "prompt_sha256": "0335c809c212bfa5174a278bf4ca3d26eccadf66d985d7d07302364adbd7be5d",
+ "raw_text": "{\"risk_orient\":4, \"confidence\":\"high\"}",
+ "reasoning_text": "We need to output a JSON: { \"risk_orient\": integer 1-5, \"confidence\":\"high/medium/low\" }.\n\nWe need to assess the risk orientation based on the reasoning.\n\nText:\n\n\"現地の市場は成長が続くし、我々の品質・耐久性が差別化要因となる。従業員と地域社会に安定した雇用を提供し、ブランドの信頼を守るためには現地生産体制の拡充が不可欠だ。短期の赤字は投資回収期間を踏まえて許容でき、優先的に資金を確保して投資を実施する計画を立てるべきだ。提携・縮小よりも継続投資で市場シェアを守る方がリスクを低減する。\"\n\nKey points: Market growth, differentiation via quality, stable employment, extend local production, short-term losses acceptable, prioritize funding investment, extension of investment to preserve share reduces risk.\n\nThis shows acceptance of short-term losses outweighing potential longer-term benefits. The reasoning states risk is low: \"リスクを低減\" (risk reduction). They are willing to invest.\n\nHence risk-orient likely 4 (absorption) or 5? They say short-term losses acceptable but they will proceed. They frame risk reduction as preserving share. That is moderate risk acceptance: they accept risk currently to maintain position, but they consider risk is reduced by continuing investment. That indicates risk acceptance. They don't seem extremely risk-averse, though they mention \"short-term losses are acceptable\".\n\nThus rank likely 4: risk-acceptance oriented.\n\nConfidence: They are quite sure: \"優先的に資金を確保して投資を実施する計画\". They are quite confident. So \"high\".\n\nReturn:\n\n{\"risk_orient\":4, \"confidence\":\"high\"}\n\nMake sure JSON format.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:28:09.444584+00:00",
+ "timestamp_responded": "2026-10-25T11:28:10.707612+00:00"
+}

@@ -1,0 +1,1 @@
+SYNTHETIC DEMONSTRATION DATA. These tables were produced from fictional texts to show that the procedure runs end to end. They have no research meaning and must not be analysed as findings.

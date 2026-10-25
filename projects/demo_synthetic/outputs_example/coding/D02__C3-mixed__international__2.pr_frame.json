@@ -1,0 +1,24 @@
+{
+ "job_id": "D02|C3-mixed|international|2",
+ "seq": 124,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "0eec837b83a9aaaae9bc945c9daac4b5486d49bdfb34a5c43b8936e809451ca8",
+ "prompt_sha256": "fd171ac877c9ed7d58b7cd2c85517fcdf4f39a1847a3925128af3b30aad4041f",
+ "raw_text": "{\"pr_frame\":\"財務収益\",\"confidence\":\"high\"}",
+ "reasoning_text": "We have a short description: \"財務的負担と投資必要性が最も直面する課題であり、長期的な成長を維持するために不可欠な投資確保が不可欠だと考える。\"\n\nWe need to determine the main problem frame among: 「財務収益」（赤字・投資負担・収益性が中心）／「市場競争」／「技術」／「組織ステークホルダー」／「複数拮抗」\n\nWe read: \"財務的負担と投資必要性が最も直面する課題であり、長期的な成長を維持するために不可欠な投資確保が不可欠だと考える。\"\n\nIn Japanese, \"財務的負担と投資必要性\" refers directly to financial burden and investment necessity. So this is a financial profitability issue. So the classification is \"財務収益\". No other overlapping. So classification: \"財務収益\" with high confidence.\n\nHence output JSON: {\"pr_frame\":\"財務収益\",\"confidence\":\"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:28:12.620560+00:00",
+ "timestamp_responded": "2026-10-25T11:28:13.406070+00:00"
+}

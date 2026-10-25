@@ -1,0 +1,24 @@
+{
+ "job_id": "D04|C3W|international|2",
+ "seq": 92,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "8d3ef19c4c9483475312207fc4ccd01639c3f57387032a128af374bb079fd637",
+ "prompt_sha256": "6c7970b9329a9d50365f82bd4d75dd157c12911112425d21b4c280407ecdbacb",
+ "raw_text": "{\"time_horizon\": 2, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to read the provided description. It's about strategic choice, reasons for integrating with a partner: respond to regulations and competition pressure by partnering with government-supported competitors and sharing supply chain. Benefit: share investment burden, maintain brand and jobs, leverage partner's knowledge & network to address declining new customer acquisition. We must evaluate time horizon: 1 short-term focus on current period profits, 5 long-term.\n\nThis description appears to focus on mitigating competition, securing brand, protecting jobs, and using partner's knowledge for new customers. It mentions share investment burden, protecting brand and employment. It says \"現地の規制と競争圧力 ... 政府支援を受けた競合との協業やサプライチェーンの共有\". The emphasis seems to be on immediate threat from regulations & competition, and using partnership to offset current costs, maintain brand and hire.\n\nBut is it short-term? It might be somewhat short-term: dealing with regulatory pressure, competition. However, also mentions sharing knowledge to address new customer acquisition decline, which could be longer-term.\n\nThe phrasing: \"投資負担を分担し、ブランドと雇用を守ることができる\", maybe short-term survival. \"新規顧客獲得の鈍化にも対処できる\" indicates response to slowdown.\n\nIt doesn't explicitly mention long-term growth beyond 5-10 years, but it does emphasize sharing knowledge and networks, which might have medium-term benefits.\n\nThus I'd lean medium to long-term? However, \"短期寄り\" could be 2. But is there any mention of \"5-10年離れ\"? No. Looks like it's addressing near-term threats.\n\nThus time horizon 2 (short-term orient). Confidence medium maybe.\n\nOut-of quotes: \"選択肢そのものではなく理由の語り方\" so we judge on language. \"将来\" not mentioned. So it's more immediate. So 2.\n\nConfidence high? The text focuses on current threat and near-term synergy. Might not be many speculative long-term points. So confidence medium? But seems fairly straightforward: immediate threat mitigation. So confidence high maybe.\n\nWe can choose confidence high.\n\nThus output: {\"time_horizon\":2,\"confidence\":\"high\"}.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:26:04.607014+00:00",
+ "timestamp_responded": "2026-10-25T11:26:06.034032+00:00"
+}

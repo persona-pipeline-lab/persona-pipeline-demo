@@ -1,0 +1,24 @@
+{
+ "job_id": "D03|C3-mixed|international|2",
+ "seq": 126,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "3adff1038d1756f9c869599007976e0742f715ff56767207bf1a7d46a82aa486",
+ "prompt_sha256": "a57adc302ff8e6b25208c1d8c141260aefa8c85d3b3d9b4a7680b779724027b2",
+ "raw_text": "{\"exp_types\": [\"危機対処\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We have to categorize the experience types mentioned in the statement. The statement:\n\n\"工場長時代に老朽化した設備を先送りにした結果、事故が起きて多大な費用と安全リスクを生じた経験が、投資の重要性を痛感させました。\"\n\nMeaning: When I was a plant manager, I deferred maintenance on aging equipment, an accident occurred, causing huge costs and safety risks. This made me realize the importance of investment.\n\nWhich classifications apply? Let's see: \"危機対処\" involved accidents? The classification defined as: “危機対処（赤字・倒産危機・事故・不祥事・需要崩壊への対処）\". Yes, this includes accident. So that's one.\n\nOther classification: “技術・開発” refers to research development, product development, production technology. The experience was about maintenance of aging equipment. This might be a \"production technology\" or maintenance management, but does that count? Possibly \"技術・開発\" might include production technology? The classification includes \"生産技術の経験\". This could be generating new production technology? The mention is \"設備を先送りにした結果\" i.e., acceptance of old equipment. This is more about maintenance, not development or new tech.\n\nLet's see definitions: \"技術・開発（研究開発・製品開発・生産技術の経験）\". So we have equipment maintenance, but not necessarily developing new technology. But the experience involves production technology as the old equipment. The classification maybe loaded. The key is to follow rule: \"記述に明示された経験のみ拾う（推測しない）\". The statement: \"老朽化した設備を先送りし、事故が起きた\". That is candidly describing an accident due to neglect of maintenance. That is a crisis due to accident. So \"危機対処\" is definitely appropriate. The only other classification explicitly mentioned seems none. \"危機対処\" includes accidents. Others are not explicitly mentioned.\n\nThus we should output:\n\n{\"exp_types\": [\"危機対処\"], \"confidence\": \"high\"}\n\nLet's consider if \"技術・開発\" qualifies. The phrase \"設備\" is equipment. However, description: \"工場長時代に老朽化した設備を先送りにした結果、事故が起きて多大な費用と安全リスクを生じた\". The experience is dealing with the maintenance of aging equipment; though that could be a part of production technology operations, but the classification may treat that as part of \"危機対処\" because of accident. The classification \"技術・開発\" seems to speak about new tech. The accident, however, is more about crisis.\n\nThus answer: Only \"危機対処\".\n\nConfidence high.\n\nSo build JSON: {\"exp_types\": [\"危機対処\"], \"confidence\": \"high\"}\n\n",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:28:23.156497+00:00",
+ "timestamp_responded": "2026-10-25T11:28:25.027257+00:00"
+}

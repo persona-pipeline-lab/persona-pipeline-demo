@@ -1,0 +1,24 @@
+{
+ "job_id": "D01|C3|withdrawal|1",
+ "seq": 1,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "0b3dfff8a6aca5ddfb58b5b067241043d8f523fc0926013ae5a1016f55eb95d7",
+ "prompt_sha256": "c4ce8123b86147bee19c2e188bb30fc825a6c217dda15dc4de366ae9d9522685",
+ "raw_text": "{\"time_horizon\": 5, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to grade time horizon. The statement: \"安全基盤を整備し、技術優位を維持するためには追加投資が必要不可欠。短期的な赤字は許容でき、長期的な市場成長を確保するために投資を継続する方が企業価値を高める。事故の教訓...\" That indicates they view long-term benefits. The phrase \"長期的な市場成長を確保\" is a clear long-term focus. So assign 5. Confidence: high because clear.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:01:06.242830+00:00",
+ "timestamp_responded": "2026-10-25T11:01:06.710832+00:00"
+}

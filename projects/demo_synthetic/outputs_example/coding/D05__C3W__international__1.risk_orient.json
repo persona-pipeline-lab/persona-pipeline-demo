@@ -1,0 +1,24 @@
+{
+ "job_id": "D05|C3W|international|1",
+ "seq": 93,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "e149f6b61088a3fbf3abf796bb486d562fe8ed80d0b792b76b9675f85ef88332",
+ "prompt_sha256": "fe196875fd48147fc2712cba180648ba072d0d70ff321dd2fa5a4ce24ca27e74",
+ "raw_text": "{\"risk_orient\": 1, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to read the described statement. Evaluate risk orientation focusing on narrative. The statement expresses concern: \"長期的な市場成長（10％/年）と高い顧客信頼を見失う恐れが大きい。現地投資を行わないと他社に遅れを取り、ブランド価値に損失が拡大する。投資は将来に向けた防衛策であり、従業員や地域社会への責任を果たす。\"\n\nThe reasoning basically: risk of loss if not investing, advantage of investing, brand risks. They see investing as imperative defense. They are concerned about loss/negative outcomes if they don't invest. They view investment as an imperative to avoid falling behind. This shows risk-averse or risk-avoidant stance: they want to avoid losses, be protective.\n\nBut also they highlight long-term growth and brand value. They see investment as protective and responsible. It's risk-avoidance. That's category 1 or 2? They are strongly concerned about loss; not willing to accept risk. So Score 1 (strongly risk-averse). Confidence? The text is fairly clear. I'd say high confidence.\n\nReturn JSON: {\"risk_orient\": 1, \"confidence\": \"high\"}\n\nBut double-check: They say: \"投資は将来に向けた防衛策…責任…\". This indicates they see risk as potential loss. So risk-averse. Score 1.\n\nThus output accordingly.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:26:06.715091+00:00",
+ "timestamp_responded": "2026-10-25T11:26:07.714310+00:00"
+}

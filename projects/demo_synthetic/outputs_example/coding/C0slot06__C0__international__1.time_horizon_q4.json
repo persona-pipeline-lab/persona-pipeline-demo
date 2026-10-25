@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot06|C0|international|1",
+ "seq": 59,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "9321a6bb9452b893a2c328c0c434b523d5e75a7fe7456803cb24dd8f45c3476b",
+ "prompt_sha256": "9a2937ca722d0d8de3b135df63ebd3359e1729ca9fa231ada95070a261fe9e57",
+ "raw_text": "{\"time_horizon\": 4, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to classify time horizon 1-5 and confidence. The paragraph: \"提携により現地投資負担を分担し、政府支援を受けた競合に対抗できる資源と知識を確保します。また、合弁やパートナーシップで市場シェアを維持し、ブランドリスクを緩和できると考えます。\" So they are talking about partnerships to share local investment burden, secure resources and knowledge to counter government-supported competitors; maintain market share and mitigate brand risk. This suggests mid-term to long-term? It's about building partnerships for resources and brand risk mitigation, likely mid to long term. It might be mid-term because they secure resources and maintain market share over time. But also \"政府支援を受けた競合に対抗できる資源と知識を確保\" suggests building capability to compete over time, not immediate. So likely mid to long; maybe 3 or 4. The description emphasizes sustaining market share and risk mitigation, reflecting a longer time horizon. I'd lean 4 (long-term oriented). The confidence? It's a clear strategy, so high confidence. Provide JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:23:58.309572+00:00",
+ "timestamp_responded": "2026-10-25T11:23:59.111089+00:00"
+}

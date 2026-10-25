@@ -1,0 +1,24 @@
+{
+ "job_id": "D05|C3-mixed|withdrawal|2",
+ "seq": 118,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "3a8b2e679d54a455b1c01e5f6ad13324ed1a1b18393c7594363e5c07d51d96fc",
+ "prompt_sha256": "daa3cead5f674ecc8544eff68198cd6c0888059fa5f322f9a67147257418af12",
+ "raw_text": "{\"time_horizon\": 3, \"confidence\": \"medium\"}",
+ "reasoning_text": "We need to classify time horizon based on the reasoning. The passage: \"技術優位性は不確定でも、市場成長率が高く、投資額を抑えつつも将来の競争力を確保する必要がある。加えて、従業員や地域社会の雇用を守ることでブランド信頼を損なわない。\"\n\nKey elements: technology advantage uncertain but market growth high. Requires investment low but ensure future competitiveness. Also, protect employees and local society employment to maintain brand trust. This suggests a moderate-term: concern about future competitiveness while balancing short-term investment and employment, but the focus seems on future competitiveness (which could be medium-term). Also protecting brand trust through employment indicates not ultra-short term. There's no explicit long-term beyond 5-10 years. So likely 3 (中期・両論). Confidence? Reason appears clear about future competitiveness, but some ambiguity. I'd say \"medium\". So JSON: {\"time_horizon\": 3, \"confidence\": \"medium\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:27:47.280222+00:00",
+ "timestamp_responded": "2026-10-25T11:27:47.999412+00:00"
+}

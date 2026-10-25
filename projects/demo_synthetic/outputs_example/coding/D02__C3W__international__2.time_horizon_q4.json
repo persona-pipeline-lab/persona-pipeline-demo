@@ -1,0 +1,24 @@
+{
+ "job_id": "D02|C3W|international|2",
+ "seq": 88,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "4f1871366df4c15e845272fdaa3a3925815179db1abd471404d47e7d06cfba4c",
+ "prompt_sha256": "da17cf6c0391457496073e28ae66e5618e3ad03490766abd271b029a191cf176",
+ "raw_text": "{\"time_horizon\": 5, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to interpret the time horizon from the description. The description: \"市場成長率は依然として高く、当社製品への信頼も厚いため、長期的に本土競争力を保ち、顧客満足度を維持するには、現在の生産体制を強化し投資を継続する必要があります。これにより、技術優位性を維持し、ブランド価値を高められると考えます。\"\n\nThey talk about \"長期的に\" (long-term) and want to maintain competitiveness and customer satisfaction. They mention investing to sustain technical advantage. So it's 5 (long-term). Confidence? The language strongly indicates long-term orientation. So confidence \"high\".\n\nOutput JSON: {\"time_horizon\": 5, \"confidence\": \"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:25:49.599906+00:00",
+ "timestamp_responded": "2026-10-25T11:25:50.197902+00:00"
+}

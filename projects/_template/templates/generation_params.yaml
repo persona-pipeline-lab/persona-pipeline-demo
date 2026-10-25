@@ -1,0 +1,5 @@
+# Frozen generation parameters (values only). The seed itself is set in config/demo.yaml (seed_base).
+temperature: 1.0
+top_p: 1.0
+max_tokens: 8192
+seed_rule: "seed_base * 100 + rep"

@@ -1,0 +1,24 @@
+{
+ "job_id": "D06|C3W|international|2",
+ "seq": 96,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "49a4c5a05f2951909f6954a8484be909fb577d0c1675e105d772b3f8bafedc0e",
+ "prompt_sha256": "d45801439723a57bb535c8647d74aa2eebc7c2082211001a48f61c5665bf8906",
+ "raw_text": "{\"time_horizon\": 4, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to judge time horizon of the decision based on the justification text.\n\nThe text: \"市場は10％成長が続き、我々の製品は品質優位が残っている。必要な投資は確かに大きいが、短期赤字を受け止め将来利益を確保するために本土投資を行う。\"\n\nInterpretation: They refer to 10% market growth continuing, product has quality advantage, they need big investment but they're willing to absorb short-term losses to secure future profits with domestic investment. This suggests long-term orientation because they are okay with short-term losses for future gains. But also mention short-term. However the justification seems to weigh future benefits: \"将来利益を確保\" - securing future profits. So likely long-term oriented: maybe 4 or 5. They talk about market growth 10%, quality advantage, willingness to accept short-term loss.\n\nGiven the scale 1-5, 5 is long-run 5-10+. 4 is long-term but not super long. They mention future profits but not extremely long? They still accept short-term red. So maybe 4.\n\nConfidence? I'd say high because text indicates long-term orientation.\n\nReturn JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:26:16.052122+00:00",
+ "timestamp_responded": "2026-10-25T11:26:16.880361+00:00"
+}

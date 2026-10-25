@@ -1,0 +1,24 @@
+{
+ "job_id": "D04|C3-mixed|withdrawal|1",
+ "seq": 115,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "30f646ba81ded96c53d9899607750e23f4892b1f26f044f06ebf0dee90ccf7e6",
+ "prompt_sha256": "4262f32166a5126343c03b5d14ff1a5558637e475bfc955eff1405ada894d2d1",
+ "raw_text": "{\"exp_types\": [\"人・組織\", \"技術・開発\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to determine which experience types are mentioned in the description. The description: \"最初の上司が教えてくれた『人の話を聞くときは手を止める』という教えと、顧客工場を訪問して技術者が抱える問題を聴き取った経験が、今回の判断に最も影響した。\" The respondent says two experiences: \"the first boss taught them a lesson about listening: 'stop while listening'\" and \"visiting a customer factory and listening to engineers about problems\".\n\nWhich categories? Let's interpret.\n\n1. The first boss's lesson about listening relates to \"人・組織\" (human/organization) because it's about communication and interpersonal skill. It also could be \"人・組織\" as it's about interpersonal/human relations.\n\n2. Visiting customer factory and listening to engineers about problems: That involves technical aspects: \"技術・開発\" (technology/development) because it's about technical issues at the factory. It's also a customer visit, which is also \"海外\"? No, it's a customer factory visit in presumably domestic. So not overseas.\n\nThus categories: \"人・組織\" and \"技術・開発\".\n\nThus resulting JSON: {\"exp_types\": [\"人・組織\", \"技術・開発\"], \"confidence\": \"high\"}.\n\nCheck that we only mention categories explicitly. We mention \"技術者が抱える問題を聴き取った経験が\" - that implies technical problems. So \"技術・開発\" fits. And \"人の話を聞く\" is listening skills => \"人・組織\". So answer.\n\nCheck for other possible categories:\n\n- \"危機対処\" not applicable.\n- \"海外\" not applicable.\n- \"創業・立ち上げ\" not applicable.\n- \"その他\" would be used if none matched, but we have 2.\n\nThus correct.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:27:36.673186+00:00",
+ "timestamp_responded": "2026-10-25T11:27:37.962720+00:00"
+}

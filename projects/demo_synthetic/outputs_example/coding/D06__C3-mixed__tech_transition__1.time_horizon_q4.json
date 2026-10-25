@@ -1,0 +1,24 @@
+{
+ "job_id": "D06|C3-mixed|tech_transition|1",
+ "seq": 143,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "29f815555e9a0114909a0c63a2377170de28ed49e3197db678a6efffd4830da4",
+ "prompt_sha256": "4c745f5e61ee8181ebd4c0f9584b14e6c2c4f57fb87278b40a8987abcf7990a6",
+ "raw_text": "{\"time_horizon\": 5, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to interpret the given reasoning and assign a time horizon rating 1-5. The reasoning: \"新方式の開発には事業売上の3割相当の追加投資が必要である。既存技術の優位性は保てるものの、差別化が失われれば市場でのシェアを失うリスクが高い。雇用面でも提携先の人材が減少する可能性があるため、従業員の安定を図りつつ技術投資を継続する方が長期的に会社の価値を守ることができる。\" It says \"The new method development requires additional investment equal to 30% of sales. Existing technology's advantage can be maintained, but losing differentiation risking share. Also, employment side potential reduction of partner's personnel; we need to ensure employee stability and continue tech investment to protect company value long-term.\" So the reasoning refers to long-term preservation of value, ensuring employee stability, ongoing investment. The decision appears long-term oriented: they consider 5-10+ years. It's definitely long-term orientation. Rating=5? Let's think: They mention \"長期的に会社の価値を守ることができる\" i.e., \"in the long term.\" That suggests 5 maybe. The scale: 5 = long-term (5〜10年以上). So 5 likely. Confidence? The reasoning is quite clear that they choose long-term. I'd say \"high\". Output JSON: {\"time_horizon\": 5, \"confidence\": \"high\"}.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:29:23.439680+00:00",
+ "timestamp_responded": "2026-10-25T11:29:24.498404+00:00"
+}

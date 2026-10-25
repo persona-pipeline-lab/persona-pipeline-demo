@@ -1,0 +1,24 @@
+{
+ "job_id": "D04|C3|withdrawal|1",
+ "seq": 7,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "2f6d499c1f40c92d582b5775f738e0425093b923f54fbf2f62ceb1fcaf831a98",
+ "prompt_sha256": "3989dd8704a581d27d86e56fef7bc8bf1d12e7b6fcf13f8fba12362ccf47af19",
+ "raw_text": "{\"exp_types\": [\"人・組織\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to determine which categories apply.\n\nGiven description: \"従業員が学び、認められる環境を整えることで離職を減らす経験（総支配人として従業員提案会を設立し、成果を見て離職率が下降した経験）が、事業継続への投資判断をサポートしています。\"\n\nWe have categories: \n\n- \"危機対処\" (crisis management)\n- \"技術・開発\" (research & development)\n- \"海外\" (overseas)\n- \"創業・立ち上げ\" (founding / new venture)\n- \"人・組織\" (human resources, organization)\n- \"その他\"\n\nThe description is about \"社員が学び、認められる環境を整える経験\" by establishing employee proposal meetings, reducing turnover. This is employer-employee environment, change in HR practices. This is human resources / organization management: \"人・組織\".\n\nDoes it also fit \"創業・立ち上げ\"? Not explicitly. No mention of startup or new company. Unless the role as general manager in a new company. The text doesn't say that. So only \"人・組織\".\n\nThus exp_types: [\"人・組織\"].\n\nConfidence high presumably because the description explicitly mentions human resource initiatives.\n\nOutput JSON with exp_types array and confidence.\n\nLet's provide the JSON.\n\n",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:20:40.333747+00:00",
+ "timestamp_responded": "2026-10-25T11:20:41.295481+00:00"
+}

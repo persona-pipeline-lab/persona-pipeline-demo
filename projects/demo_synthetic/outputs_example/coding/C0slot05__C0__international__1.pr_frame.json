@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot05|C0|international|1",
+ "seq": 57,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "98494430cf4e8a22edf965b27cd6d6c79cc6b04f82aaf79055f4387c1e7ba8e2",
+ "prompt_sha256": "3d1ee893b6a913c58892e0fda27113968d47526b26d26bedc11794ce68d487ed",
+ "raw_text": "{\"pr_frame\":\"財務収益\",\"confidence\":\"high\"}",
+ "reasoning_text": "We are given a short description: \"現状では営業赤字と追加投資が企業財務を圧迫しており、短期的な収益性が大きな課題となっています。\"\n\nWe have classification categories: \"財務収益\", \"市場競争\", \"技術\", \"組織ステークホルダー\", \"複数拮抗\". We need to choose one. The core of the issue seems centered on financial performance: operating losses, added investment stressing finances, short-term profitability. So classification: \"財務収益\".\n\nConfidence likely high. We'll output JSON: {\"pr_frame\":\"財務収益\",\"confidence\":\"high\"}\n\nCheck instructions: output only JSON. Yes.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:23:48.843996+00:00",
+ "timestamp_responded": "2026-10-25T11:23:49.360205+00:00"
+}

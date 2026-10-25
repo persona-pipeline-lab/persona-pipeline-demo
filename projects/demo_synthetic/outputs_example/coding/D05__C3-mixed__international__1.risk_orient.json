@@ -1,0 +1,24 @@
+{
+ "job_id": "D05|C3-mixed|international|1",
+ "seq": 129,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "bf6089ca54fca2e5f7e02a9942f38e084e4cff4e8c581a56620c76e6899fec26",
+ "prompt_sha256": "6849fb88e5b63a46ba637c7b1bfeaa8a0c551202c855bb8d21eab10c924c44ee",
+ "raw_text": "{\"risk_orient\":2,\"confidence\":\"high\"}",
+ "reasoning_text": "We must judge risk orientation from the reasoning. The description: \"ローカルパートナーと提携して投資負担を共有し、既存の優れた品質を維持するとともに地域雇用を守る。これにより現地政府の支援を活用しながら、価格競争に対抗できる。\"\n\nLet's interpret: They decide to partner with a local partner to share investment burden, preserve quality, safeguard local employment, leverage local government support, and guard against price competition. The reasoning focuses on reducing risk by sharing costs, securing local support, preserving quality, mitigating challenges.\n\nThis seems risk-averse: they are mitigating risk via partnership, cost sharing, currency risk? The tone: Balanced risk sharing, avoiding incurring all risk. They want to maintain quality and protect jobs. They plan to use local government support.\n\nThus risk orientation? Probably 2=回避寄り. Because they focus on minimizing risk and leveraging support, but still taking actions. High confidence because the text clearly shows risk-avoidance (shared burden, support). So output JSON: {\"risk_orient\":2,\"confidence\":\"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:28:32.257930+00:00",
+ "timestamp_responded": "2026-10-25T11:28:33.023667+00:00"
+}

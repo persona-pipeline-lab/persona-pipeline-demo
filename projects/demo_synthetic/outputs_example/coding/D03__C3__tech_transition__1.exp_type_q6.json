@@ -1,0 +1,24 @@
+{
+ "job_id": "D03|C3|tech_transition|1",
+ "seq": 29,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "9da9c0ef5d5c3b3f7377c660d1d824ebb1891ae04f081da347d5dc8f7f6cc9e4",
+ "prompt_sha256": "b7d65ad9b34b30693eb5192877b6ca39fa9110a0e6db8e220f53c784dc3be92a",
+ "raw_text": "{\"exp_types\": [\"海外\", \"創業・立ち上げ\", \"技術・開発\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to parse the description: \"海外工場を立ち上げ、手順の理由を詳細に文書化し、現地従業員との対話で精度向上を実現した経験。顧客工場を自ら訪問し、技術者の声を直接取り込み製品改善に反映させた経験。\"\n\nWe have categories: \n1) 「危機対処」 (crisis management)\n2) 「技術・開発」 (technology & development)\n3) 「海外」 (overseas)\n4) 「創業・立ち上げ」 (founding & start-up)\n5) 「人・組織」 (HR & organization)\n6) 「その他」 (others)\n\nWe must identify the types described.\n\nThe first part: overseas factory set up. That's overseas and a new establishment. It includes establishing new factory which is both overseas and start-up. The documentation and interaction with local employees could also touch human relations but the description didn't explicitly mark HR or organizational management. It's more about establishment, and a Japanese context though mention of process documentation to ensure precision. So I think \"海外\" and \"創業・立ち上げ\" are relevant.\n\nSecond part: visited customer plant, gathered engineers' input, improved products. That is gathering technical voice and product improvement. That can be \"技術・開発\" (as they directly used the tech input to improve product). Also \"海外\" might not be overt here, no overseas. It is \"人・組織\" maybe due to interacting with the customer? But no explicit mention of personnel like recruiting. So likely \"技術・開発\". Could be \"人・組織\" because it's about communication with customers, but it's not HR or employee. The description didn't refer to organizational management.\n\nThus we need to select all applicable categories across entire description. So combine: overseas, start-up, tech/development.\n\nThus output JSON: {\"exp_types\": [\"海外\", \"創業・立ち上げ\", \"技術・開発\"], \"confidence\":\"high\"}.\n\nCheck if any other categories: The first phrase \"手順の理由を詳細に文書化し、現地従業員との対話で精度向上を実現\" includes local employees but it's part of establishing factory so not strictly about people management.\n\nThus final answer.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:21:59.391010+00:00",
+ "timestamp_responded": "2026-10-25T11:22:01.012876+00:00"
+}

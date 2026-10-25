@@ -1,0 +1,24 @@
+{
+ "job_id": "D04|C3-mixed|withdrawal|2",
+ "seq": 116,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "26418f691ac0d4e8be9d77e9fb5405856637f20de1ebca72716acfe05c36aef2",
+ "prompt_sha256": "dcf8ae3c20fb9e5ce335553a46ab69d5ed10a7627078a67a6187272cbf75db9c",
+ "raw_text": "{\"exp_types\": [\"人・組織\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to analyze the description: \"取引先からの手紙を読む習慣と、顧客工場で現場担当者と直接会話して改善要望を集めた経験が、意思決定時に大きく影響した。\"\n\nSo the experience is that they read letters from clients and directly talk with on-site staff at customer factories to gather improvement requests, which influenced decisions. This is an experience in interacting with customers, gathering feedback; presumably within \"人・組織\" (human relations) maybe but is that a category? The categories: \"危機対処\", \"技術・開発\", \"海外\", \"創業・立ち上げ\", \"人・組織\", \"その他\".\n\nThis experience is about \"顧客からの要望\" and \"現場との対話\". It's about \"人・組織\" because it's about interactions with people. But it's not about organizational management or HR, it's about gathering feedback. Could also be considered \"技術・開発\"? They gather improvement requests, maybe for product improvements. But the description doesn't specify that it was about developing product or technology. It’s about collecting improvement requests directly from customers to inform decision making.\n\nWhich categories fit? \"人・組織\" covers \"人事・労務・組織運営・師弟関係\" It's a bit wide. But here it's about communication with customers. It is more about \"人・組織\" because it's about external stakeholder communication.\n\nCould there be \"海外\"? Not mentioned. \"危機対処\"? No. \"創業・立ち上げ\"? No. \"技術・開発\"? Might be arguable. But it's not specifically about R&D or product design. It could be a part of product development. The phrase \"改善要望\" suggests improvement of products/services, which might be considered as part of technical development. But the experience may be more general: \"reading letters\" and \"direct conversation\". The question says: \"根拠に、言及された経験の型を次の6分類から該当するものすべて選んでください。\"\n\nSo we need to list all applicable categories. Based on description, it's likely \"人・組織\" is most relevant. Could also be \"技術・開発\" since improvement requests might be technical. But is that too much inference? The instruction: \"記述に明示された経験のみ拾う（推測しない）\". So we cannot infer it as \"技術・開発\" because it's not explicitly mentioned. It only mentions reading letters and talking. So we should choose only \"人・組織\" category.\n\nThus output JSON: {\"exp_types\": [\"人・組織\"], \"confidence\": \"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:27:40.368627+00:00",
+ "timestamp_responded": "2026-10-25T11:27:42.156290+00:00"
+}

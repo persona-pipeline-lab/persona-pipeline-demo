@@ -1,0 +1,24 @@
+{
+ "job_id": "D06|C3-mixed|international|1",
+ "seq": 131,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "c12f3b399c4f28421cdde8db21d927c5c0e8edd712f2027384d4346f7e43d94f",
+ "prompt_sha256": "0524af10b30843ea22bf3797e49a1129d716a136fbdef969f0306a3224f02e72",
+ "raw_text": "{\"risk_orient\": 5, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to rate risk orientation based on wording. The statement says: \"Long-term market growth continues. Investing in local production remains beneficial for brand trust and employment. Technology advantage protected, price competition base. Investment will absorb short-term deficits, future profit recovery.\"\n\nThis shows they see long-term benefit outweighing short-term losses. They accept short-term loss to achieve benefit. So risk acceptance. It is likely risk accepting. Scale: 5 = strongly risk accepting, 4 = risk accepting. The statement shows strong acceptance of short-term risk for long-term gain. So likely 5. Confidence high.\n\nLet's output JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:28:39.078248+00:00",
+ "timestamp_responded": "2026-10-25T11:28:39.519489+00:00"
+}

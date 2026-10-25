@@ -1,0 +1,24 @@
+{
+ "job_id": "D05|C3|withdrawal|1",
+ "seq": 9,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "c080faa39597b363a1320acb6455c44d5d881ea3d54cb2b840a7d25098dc4835",
+ "prompt_sha256": "f3e756be8db1afb94be5a5dbf7af346acf9d6a7fb7593cad710f4d3e0865bfb4",
+ "raw_text": "{\"time_horizon\": 5, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to rate time horizon 1-5 based on the reasoning. We must not use external knowledge. Just look at the description. The description says: high market growth rate, technology above standard; continuing large investment to maintain technology advantage and anticipate competitor movement. They record and share information daily to allow semi-free decision environment. So strategic choice: invest heavily to maintain advantage. That suggests a long-term perspective because they invest to maintain advantage and anticipate future moves. The time horizon likely long-term (5). The reasoning indicates focus on maintaining technology advantage over time, not just immediate profit. So time_horizon likely 5. Confidence? The text strongly indicates long-term orientation. Confidence high. Return JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:20:46.841011+00:00",
+ "timestamp_responded": "2026-10-25T11:20:47.331371+00:00"
+}

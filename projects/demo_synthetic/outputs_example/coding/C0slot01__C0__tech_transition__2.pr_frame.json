@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot01|C0|tech_transition|2",
+ "seq": 62,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "7778dc2182ca622e8f44973050c1ab9c530e233b282c06d41f2b0259e1148ddb",
+ "prompt_sha256": "63ab384ba4aa2fb9f41e0b98a9d86fe3f1f41a0d2bf741e87654313de09fd769",
+ "raw_text": "{\"pr_frame\":\"市場競争\",\"confidence\":\"high\"}",
+ "reasoning_text": "We have the task: choose a main problem frame among categories: \"財務収益\", \"市場競争\", \"技術\", \"組織ステークホルダー\", or \"複数拮抗\".\n\nGiven the description: \"市場拡大と競合先行に対して、現在の技術力の低下だけでなく顧客離れが進行しており、競争優位性の喪失が主たる問題となっている。\"\n\nInterpret: There's market expansion and leading competition. Current technology power is declining, customers leaving (churn). Competition advantage lost. Which frames? Outlines mainly about losing competitive advantage due to technology decline and customer loss. Two aspects: technology and market competition. But the core is \"競争優位性の喪失\" (loss of competitive advantage). That's primarily a market competition problem: losing customers relative to competitors, in context of market expansion? Alternatively technology is also key: tech decline. But the statement places emphasis on market and competition, also mentions tech decline as a cause of loss but solving competitively. The description mentions \"市場拡大と競合先行\" (market expansion and competitive advancement). So likely the category \"市場競争\".\n\nThus choose \"市場競争\" with high confidence.\n\nOutput JSON: {\"pr_frame\":\"市場競争\",\"confidence\":\"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:24:10.187878+00:00",
+ "timestamp_responded": "2026-10-25T11:24:11.088782+00:00"
+}

@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot04|C0|withdrawal|2",
+ "seq": 44,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "6efd6c5aa46e8a24188d8e21b3149d5e85dc4e0054cf6c0ca02b4e0e6b07cc35",
+ "prompt_sha256": "0eb170338438fee9c5d8cde2df41b799bc1ecefee7a96c1ed223f82af6834845",
+ "raw_text": "{\"pr_frame\":\"市場競争\",\"confidence\":\"high\"}",
+ "reasoning_text": "We need to classify as one of the labels: \"財務収益\", \"市場競争\", \"技術\", \"組織ステークホルダー\", \"複数拮抗\". The description: \"市場・競争の問題として、競合優位性の確保と顧客獲得の鈍化が主な課題です。\"\n\nClearly it's about market competition: securing competitive advantage, slowing customer acquisition. So \"市場競争\" is the main. Confidence high. Output JSON with keys pr_frame, confidence. Ensure formatting correct.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:22:55.321096+00:00",
+ "timestamp_responded": "2026-10-25T11:22:55.744587+00:00"
+}

@@ -1,0 +1,24 @@
+{
+ "job_id": "D01|C3-mixed|international|1",
+ "seq": 121,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "15ac2b840cffb4275953b5ae6bb5312b6f68832fe453305071988fef70d182f1",
+ "prompt_sha256": "6f1ff4505867191fd1f225943dcb97c205c17713ce571a4ddc9621a49dc6b13a",
+ "raw_text": "{\"risk_orient\": 5, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to rate risk orientation based on the wording of the reasoning. The reasoning: He acknowledges risk of losing customer base if not invest. Says invest to maintain quality advantage, expected growth 10%. He says \"資金負担を受けてでも継続し、投資を行う方向で決定した\" - meaning he will accept financial burden; risk is taken. The wording is strongly risk-taking: \"投資を行ずに顧客基盤を失うリスクが高まる\" that is push. He says \"受けてでも\" indicates risk acceptance. So risk orientation is high: 5.\n\nConfidence? The instructions say only internal reasoning, no external knowledge. The reasoning clearly indicates risk acceptance. So high confidence. So output JSON with risk_orient: 5, confidence: high.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:28:03.092525+00:00",
+ "timestamp_responded": "2026-10-25T11:28:03.673743+00:00"
+}

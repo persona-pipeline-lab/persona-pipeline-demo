@@ -1,0 +1,24 @@
+{
+ "job_id": "D06|C3|withdrawal|2",
+ "seq": 12,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "58d48d6e2eae715a1144c61bb18e271050ab6d2a1a1b04212d56d12f9a76365f",
+ "prompt_sha256": "8dcf390340c9bd677b1138f11bf0e0eaca007951ee77256efa68401a2fb90176",
+ "raw_text": "{\"exp_types\": [\"人・組織\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We must identify experience types among six categories. The passage: \"過去に社員の提案に一週間以内に返事をするという約束を継続し、提案数と返事数を正確に数える経験が、現在の投資判断に最も影響しました。\" That is about managing employee proposals, responding promptly, tracking proposal count. That relates to \"人・組織\" (people/organization) - yes. Also \"管理・運営\" but not listed. Not technology, not overseas, not crisis, not startup. So only \"人・組織\". Also possibly \"その他\"? No because it belongs. So just list [\"人・組織\"], confidence high.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:20:56.988020+00:00",
+ "timestamp_responded": "2026-10-25T11:20:57.517615+00:00"
+}

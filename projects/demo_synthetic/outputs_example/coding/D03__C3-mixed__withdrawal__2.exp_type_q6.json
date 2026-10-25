@@ -1,0 +1,24 @@
+{
+ "job_id": "D03|C3-mixed|withdrawal|2",
+ "seq": 114,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "d112cf3543cba9a77ec19666bf927f6ae046371733d5d84a39a36b416726a07e",
+ "prompt_sha256": "2819faee439e8470080c41d5a67cf4d4c71d0b0094549e2c945c09499f87d6f7",
+ "raw_text": "{\"exp_types\": [\"危機対処\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We have a Japanese prompt. We need to output a JSON with \"exp_types\": [...] list of classification names that match the experience. It's about a past experience: \"過去に資金繰りが厳しい事業を再建し、追加投資を行った経験がある。数字を怖がらずに詳細を分析し、段階的に投資を行うことで赤字から回復した。この経験が現在の判断に影響した。\" So we need to choose types from list: 「危機対処」（赤字・倒産危機・事故・不祥事・需要崩壊への対処）／「技術・開発」（研究開発・製品開発・生産技術の経験）／「海外」（海外駐在・海外事業の経験）／「創業・立ち上げ」（創業・新事業や新会社の立ち上げ）／「人・組織」（人事・労務・組織運営・師弟関係）／「その他」（上記いずれにも当たらない。単独でのみ使用）\n\nThe experience: \"資金繰りが厳しい事業を再建し、追加投資を行った経験\" - That's about crisis management. It's about rebuilding a business with cash flow issues, investing to recover from deficits. So strongly \"危機対処\". There's no mention of technology, overseas, startup, people. So we only choose \"危機対処\". Confidence: high because the statement explicitly says \"資金繰りが厳しい事業を再建し、追加投資を行った経験がある\" - That's a crisis recovery. So output: {\"exp_types\": [\"危機対処\"],\"confidence\":\"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:27:32.733186+00:00",
+ "timestamp_responded": "2026-10-25T11:27:33.942383+00:00"
+}

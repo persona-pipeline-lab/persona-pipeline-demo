@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot06|C0|international|1",
+ "seq": 59,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "9321a6bb9452b893a2c328c0c434b523d5e75a7fe7456803cb24dd8f45c3476b",
+ "prompt_sha256": "ef0cad45782def5c13aed7cf8fa7cf298a142af08f2e4158a0cd94a88183c952",
+ "raw_text": "{\"risk_orient\": 2, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to rate risk orientation based on reasoning text. The text: \"提携により現地投資負担を分担し、政府支援を受けた競合に対抗できる資源と知識を確保します。また、合弁やパートナーシップで市場シェアを維持し、ブランドリスクを緩和できると考えます。\"\n\nInterpretation: The reason for partnership: share local investment burden, get resources and knowledge to compete against government-backed competitors. Also maintain market share and mitigate brand risk via joint venture or partnership. So they're seeking to reduce risk by sharing burden and hedging brand risk. That indicates risk-averse, cautious. They are not taking big risks but rather mitigating risk. So risk_orient likely 1 or 2. The text emphasises risk mitigation: brand risk mitigation, share burden, maintain share. That indicates risk aversion. So choose 2 maybe? But are they strongly risk-averse? \"提携\" implies partnership to mitigate risk. Why would they do partnership; they may mention that partnership helps mitigate risk, so risk reduction. The tone: \"確保します\" and \"緩和できると考えます\" are expectation of risk mitigation. The phrase \"資源と知識を確保し\" indicates risk mitigation. So likely risk orientation is 2 (avoidance-oriented). \"強くリスク回避\" vs \"回避寄り\". Let's decide: 2.\n\nConfidence: high, because text explicitly states risk mitigation. No other ambiguous signals. Output JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:23:57.271045+00:00",
+ "timestamp_responded": "2026-10-25T11:23:58.307508+00:00"
+}

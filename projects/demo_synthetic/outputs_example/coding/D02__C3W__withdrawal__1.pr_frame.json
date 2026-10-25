@@ -1,0 +1,24 @@
+{
+ "job_id": "D02|C3W|withdrawal|1",
+ "seq": 75,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "9bf7328e40ba4ab832eb9349f171824ebff89696bcb0a3802b296cf12f97237d",
+ "prompt_sha256": "24e90f4cf3c6ea021c57732303c1b21ba00d3c5f4c87e47aa7ae4b4c9b69ab4c",
+ "raw_text": "{\"pr_frame\":\"市場競争\",\"confidence\":\"high\"}",
+ "reasoning_text": "We have to select a main problem frame: finanz, market competition, tech, org stakeholders, or multiple.\n\nThe description: \"市場の高成長機会を失うリスクと競合の動きを踏まえた戦略的意思決定が主な課題だ。\"\n\nThis refers to \"market high growth opportunity risk\" and \"competition dynamics\" in strategic decision making. The core focus is markets. So category: \"市場競争\".\n\nThus output JSON: {\"pr_frame\":\"市場競争\", \"confidence\":\"high\"}\n\nWe have to output only JSON; no extra text.\n\n",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:24:55.112671+00:00",
+ "timestamp_responded": "2026-10-25T11:24:55.543308+00:00"
+}

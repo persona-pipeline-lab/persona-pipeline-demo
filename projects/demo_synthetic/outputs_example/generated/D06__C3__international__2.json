@@ -1,0 +1,32 @@
+{
+ "job_id": "D06|C3|international|2",
+ "seq": 24,
+ "person_id": "D06",
+ "condition": "C3",
+ "scenario": "international",
+ "rep": 2,
+ "model": "gpt-oss-20b",
+ "sent_sha256": "dbda12f52c5528b36c9e5623a87d36eb378341b3e5cf0595c4089e64538b4022",
+ "sent_file": "sent/D06__C3__international__2.txt",
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 8192,
+  "seed": 100002,
+  "reasoning_effort": "medium"
+ },
+ "status": "ok",
+ "error_message": "",
+ "response_text": "{\"q1\":[\"B\",\"E\",\"D\"],\"q2_category\":2,\"q2_text\":\"外部競争の激化と規制強化により、成長市場における競争優位の維持が困難となっている。\",\"q3\":\"継続投資\",\"q4_text\":\"長期的な市場成長(10%/年)とブランド・品質優位を活かすためには投資が必須だ。追加投資で自生産体制を確立し、品質差を維持しながらコスト競争力を高める。社内外のステークホルダーへの信頼を維持するため、段階的投資とリスク管理を徹底する。\",\"q5_ranking\":[\"従業員\",\"顧客\",\"地域社会\",\"取引先\",\"株主\"],\"q6_text\":\"父の「人の仕事をばかにするな」という言葉と、最初の上司から教わった「手を止めて聞く」姿勢が、従業員と顧客を最優先しつつ、既存事業を継続する決断に直接影響した。\"}",
+ "reasoning_text": "We need to answer based on autobiography: He values listening, trust, invisible leadership, daily one-liners, negative critiques, etc. Q1: Identify 3 info to confirm. Based on his values: He would confirm E (competition) because it shapes ability to sustain; maybe D (customer base) because he values not losing customers; maybe B (financial burden) because important to decide investment. But order? He might first confirm financial burden (B), then competition (E), then market growth (A) or customer base (D). He cares about sustainable business. Perhaps B, E, D. I'll pick B, E, D.\n\nQ2: main problem classification: likely market/competition because large market growth but competition price war and regulation. Return 2.\n\nQ3: choose \"継続投資\" we think continue to invest but maybe with caution? But his approach: maintain presence, allow employees. He has value that continues existence matters for staff, brand, region. He can continue investment with some scaling. So \"継続投資\".\n\nQ4: Provide reasons: competition, long-term growth, brand trust, employee welfare; need investment to sustain quality advantage, but need to avoid loss; invest gradually with cost control.\n\nQ5: Rank stakeholders: employees, customers, region society, shareholders, partners? Based on his philosophy: He cares about employees heavily (人员), then customers (trust), then地域 (employer community), then株主 (profit), then取引先 maybe last? Actually maybe 取引先 before 股主? In his autobiography, he valued employees and customers over profit. He also values region due to social impact. Maybe: 従業員, 顧客, 地域社会, 取引先, 株主. Or maybe 取引先 just after 従業員? He gave \"取引先\" as a ranking group. Let's guess: 従業員, 地域社会, 顧客, 取引先, 株主? Wait: He said \"他の海外市場や国内の顧客・取引先の信頼に波及する懸念がある\". He has concern.\n\nI think his order: 従業員, 顧客, 地域社会, 取引先, 株主. Because employees are prioritized, then customers, then region, then partners, then shareholders as last.\n\nQ6: Past experience that influenced decision: father’s “one word” about criticizing, never ignoring; Also grandparent one-liner daily. He might reference his father’s lesson about not disregarding small work, or his manager's lessons about listening and wait. Use 2-3 sentences: \"My father’s admonition '人の仕事をばかにするな' taught me the importance of respecting all roles. This shaped my decision to maintain the business and support employees.\"\n\nTake care: compile JSON.\n\nOk produce JSON.",
+ "finish_reason": "stop",
+ "actual_model": "gpt-oss-20b",
+ "response_id": "chatcmpl-88bb989d52bb60ef",
+ "usage": {
+  "prompt_tokens": 3919,
+  "completion_tokens": 886
+ },
+ "endpoint_kind": "local",
+ "timestamp_requested": "2026-10-25T11:11:20.377178+00:00",
+ "timestamp_responded": "2026-10-25T11:11:23.130950+00:00"
+}

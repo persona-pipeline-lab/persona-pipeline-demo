@@ -1,0 +1,24 @@
+{
+ "job_id": "D01|C3W|withdrawal|1",
+ "seq": 73,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "56237b44c7e02e57f823607d0db2ec996eef9690d12740659011e11ab3e08543",
+ "prompt_sha256": "3f03b9f081ededdb3bbc8665baf3006a4941fda8e1e2fc63b8b8b6afa4c5e233",
+ "raw_text": "{\"exp_types\": [\"危機対処\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to parse the record, identify experiences. The recording: \"B社の再生問題で事業のキャッシュフローを直面した経験\". That's a crisis situation: \"再生問題\" indicates a downfall/rescue; it's crisis (危機対処). It also could be \"資金\" but still crisis. Not overseas. Not technology. Not startup. Not people/organization. So classification only \"危機対処\". It's maybe \"その他\"? But \"危機対処\" matches. The sentence says \"キャッシュフローを直面した経験\" indicates crisis management of cash flow during a revival/restructuring. So we choose \"危機対処\". The guidelines: \"根拠に記述だけ.\" So we shouldn't presume other categories. So output JSON: {\"exp_types\": [\"危機対処\"], \"confidence\":\"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:24:51.369696+00:00",
+ "timestamp_responded": "2026-10-25T11:24:51.980178+00:00"
+}

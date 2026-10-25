@@ -1,0 +1,32 @@
+{
+ "job_id": "D06|C3|international|1",
+ "seq": 23,
+ "person_id": "D06",
+ "condition": "C3",
+ "scenario": "international",
+ "rep": 1,
+ "model": "gpt-oss-20b",
+ "sent_sha256": "dbda12f52c5528b36c9e5623a87d36eb378341b3e5cf0595c4089e64538b4022",
+ "sent_file": "sent/D06__C3__international__1.txt",
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 8192,
+  "seed": 100001,
+  "reasoning_effort": "medium"
+ },
+ "status": "ok",
+ "error_message": "",
+ "response_text": "{\"q1\":[\"B\",\"E\",\"H\"],\"q2_category\":2,\"q2_text\":\"市場・競争の問題として、顧客獲得の鈍化と競合の価格攻勢が主体であると捉える。\", \"q3\":\"提携\",\"q4_text\":\"現地での大規模投資が経営負担を大きくし、同時に社員・地域への影響が大きい。提携により資本とリスクを分担しつつ、既存の製品優位性を活かした共同開発や販売網を拡大できる。さらに、市場全体の成長性を維持し、ブランドの信頼を損なわない方向で進める。\",\"q5_ranking\":[\"従業員\",\"顧客\",\"地域社会\",\"取引先\",\"株主\"],\"q6_text\":\"父からの『人の仕事をばかにするな』という教訓と、『数える』という正確さへのこだわりは、常に社員や取引先の真摯な労働を評価し、判断や投資判断においても正確さと尊重を求める姿勢に活かしてきた。\"}",
+ "reasoning_text": "We need to answer each question per autobiographical values and experiences, not external. Need to use her principles: listening, respecting non-visible work, one-line daily reflection, response to proposals, etc.\n\nWe must choose choices.\n\nQ1: Which information to confirm first? She values clarity, listening to stakeholders and evidence. She would prioritize: financial burden (B), competition (E), and local employees/community (H)? Let's think: She is cautious, considers social impact, employees, brand. She might want to confirm the extent of financial burden, competitiveness, and employee impact. But order: B first because need to understand financial scope; E next because competition; H next because social impact. So Q1: B, E, H.\n\nQ2: Main problem: Could be 2 Market/Competition or 1 financial. She values staying accountable, but she had to weigh financial and risk vs growth. The problem appears to be market & competition too. She had a third choice: \"Financial burden\" but she might see it as part of market. The classic classification maybe 2: Market/Competition.\n\nQ3: Options: Retreat, shrink, invest, partner. She might choose 提携 (partner) to share risk/skills, given brand and social.\n\nBut will she choose \"提携\" because she wants to maintain presence, preserve employees, brand, but also avoid huge investment. She values listening. Partnering might reduce investment cost and share risk. So \"提携\".\n\nQ4: Explanation: Provide 3-5 sentences. Reason: maintain market position, reduce financial burden, preserve employment, partner's resources reduce investment, synergy.\n\nQ5: Ranking: She values employees, customers, local society, partners? She values brand. She may rank: 従業員 (employees), 地域社会, 顧客, 取引先, 株主. Wait, undervaluing shareholders? Under her principle, shareholders also important but not top. She might place \"株主\" last. \"取引先\" maybe next after customers? She values customers high because trust is key, but maybe customers rely on stability. In her previous ranking: employees 3rd? But she earlier said \"目立つ経営者は、自分の言葉で会社を動かす。目立たない経営者は、社員の言葉で会社を動かす\" indicating employees are central. So tier: 従業員 -> 地域社会 -> 顧客 -> 取引先 -> 株主. But maybe customers above local society? She valued stability of brand for customers. But local society for social impact, but also intangible. I'd propose: 従業員, 顧客, 地域社会, 取引先, 株主. Let's think: She might think brand matters, but she cares about employees ability to produce and maintain quality. Section \"倒退\" she worried about removing employees. Later she remembers brand influence. So maybe employees first, local society second because of social impact, then customers third, take into account brand, then trade partners and shareholders. But customers might be more important than social? The brand risk of retreat would affect customers. She has high trust in customers. So maybe: 従業員, 顧客, 地域社会, 取引先, 株主.\n\nBut we have to choose one ranking.\n\nQ6: Past experience: She will reflect on: her father advice about respecting minor work, father \"数えた数は一度も間違っていなかった\" and \"人の仕事をばかにするな\". Or her experience with the first boss teaching her to stop while listening. Also \"三つの約束\" with proposal acceptance. Or decision about early one‑line reflection. She may choose the father experience with \"数える\" and \"人の仕事をばかにするな\" as guiding principle.\n\nWe phrase: \"父の『人の仕事をばかにするな』と『数える』という教えを何度も経験してきた…\". She might mention this.\n\nOk produce JSON. Need to present values as strings etc.\n\nCheck format: keys must include q1, q2_category, q2_text, q3, q4_text, q5_ranking, q6_text. Ensure B/E/H mapping. Use \"B\",\"E\",\"H\" etc.\n\nThe ordering for q1: [\"B\",\"E\",\"H\"].\n\nq2_category: 2.\n\nq2_text: short ~1-2 sentences. Example: \"市場・競争の問題として顧客獲得と競合の価格攻勢が主体である\".\n\nq3: \"提携\".\n\nq4_text: 3-5 sentences.\n\nq5_ranking: list of 5 strings in Japanese. Order: \"従業員\",\"顧客\",\"地域社会\",\"取引先\",\"株主\".\n\nq6_text: 2-4 sentences about father's lessons.\n\nLet's craft well.\n\n",
+ "finish_reason": "stop",
+ "actual_model": "gpt-oss-20b",
+ "response_id": "chatcmpl-afef2c0217d8269a",
+ "usage": {
+  "prompt_tokens": 3919,
+  "completion_tokens": 1328
+ },
+ "endpoint_kind": "local",
+ "timestamp_requested": "2026-10-25T11:11:15.624190+00:00",
+ "timestamp_responded": "2026-10-25T11:11:20.374541+00:00"
+}

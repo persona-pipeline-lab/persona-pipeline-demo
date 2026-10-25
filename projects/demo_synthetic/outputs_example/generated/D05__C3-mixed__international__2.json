@@ -1,0 +1,32 @@
+{
+ "job_id": "D05|C3-mixed|international|2",
+ "seq": 130,
+ "person_id": "D05",
+ "condition": "C3-mixed",
+ "scenario": "international",
+ "rep": 2,
+ "model": "gpt-oss-20b",
+ "sent_sha256": "a801f3864baba331e03081814374fcae69d614217f02ae8ea28218eb1da3bf89",
+ "sent_file": "sent/D05__C3-mixed__international__2.txt",
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 8192,
+  "seed": 100002,
+  "reasoning_effort": "medium"
+ },
+ "status": "ok",
+ "error_message": "",
+ "response_text": "{\"q1\":[\"A\",\"C\",\"G\"],\"q2_category\":4,\"q2_text\":\"組織・ステークホルダーの関係が崩れ、長期的に維持できる資源が不安定になる現状。\",\"q3\":\"継続投資\",\"q4_text\":\"市場成長が確実に続く上で、長期的な競争優位を保持するためには投資が不可欠だ。現地従業員の安定は事業の根幹を支える。品質・耐久性で差別化できる自社技術をさらに強化し、ブランド信頼を維持する。\",\"q5_ranking\":[\"従業員\",\"地域社会\",\"顧客\",\"取引先\",\"株主\"],\"q6_text\":\"設計部長として、短期コスト圧に対抗し品質向上へ投資した経験がある。正しい投資は、初期赤字を将来利益へ転換する鍵になることを学んだ。\"}",
+ "reasoning_text": "We need to answer based on autobiographical content, no external knowledge. Need to choose Q1: which info to confirm first from A-H. Autobiography indicates emphasis on People, employees, evaluation, learning, culture. In question he value employees, people. He has experience: design department balancing technical and business, focus on performance that reduces defects, quality improvement, etc. He emphasises employees learning, retention, not salary. He also values the \"people plan\" in new hotel before building, \"people are not buyable\" etc. Also values brand, trust matters. In this scenario, which are most critical? He would examine market growth A, maybe to see if long-term growth still. He also cares about employees (C) and stakeholders G maybe brand? He might prioritize \"C\" because lose employees, or we choose A, C, G? Let's think: The biggest decision is to invest or retreat. He has extensive experience about employees: controlling by investing in people, and he sees employees important. He also details that the brand (G) and trust matter. Let's decide order: first confirm C (employees) because heavy workforce impact; second A (market growth) to verify opportunity; third G (brand) because reputational impact. or might choose B? He is concerned about red flags but prefer growth. But from autobiographical perspective, he would like to ensure resilient brand and employees. So choose A, C, G?\n\nBut question says first to confirm information among A-H. The order: first determine if the business still has long-term growth (A). Next, employees whether they're key (C). Next, brand context (G). So q1: [\"A\",\"C\",\"G\"]. That seems plausible.\n\nQ2: categorize problem. We must choose one classification: He tends to see \"組織・ステークホルダーの問題\" (4) because the main issues involve employees, brand, region, etc. He sees market growth, but main risk is alignment with people. He emphasises people. So 4.\n\nQ3: choose? We might decide \"継続投資\" or \"提携\". The autobiographical notes show he prefers investing in people, automation, and quality, but also endorses collaboration. He might consider \"継続投資\" because potential is there, but risk expensive. He also values building long-term trust. But question: deliver a decision as a CEO: scenario: \"To invest to keep growth and keep employees.\" So choose \"継続投資\".\n\nAlternatively could choose \"提携\" because competitor are state-backed; might need partnership to share risk; but his experience indicates he would personally commit to invest and not give up. He may consider \"提携\" only if it addresses both financial and skill deficits. But from his viewpoint, he often solved with internal capacity building. In the design department, he developed own solution. So he might prefer to invest further. So \"継続投資\".\n\nQ4 explanation: Provide reasons.\n\nQ5 ranking: He prioritises employees then region society then customers then suppliers/partners (?) Actually ranking: \"株主\",\"従業員\",\"顧客\",\"取引先\",\"地域社会\". He emphasised employees as key, then region society (important due to social impact), then customers (brand), then suppliers/partners? Wait trade? Save: \"取引先\" before \"地域社会\"? In autobiography, he values customers and brand (g). He also emphasised employees first then region (H). So ranking: \"従業員\",\"地域社会\",\"顧客\",\"取引先\",\"株主\"? But the problem is that shareholders are still important. But he has emphasised employees most. He likely prioritizes employees > region > customers > suppliers > shareholders? Let's confirm: In Q5, order of 5: \"株主\",\"従業員\",\"顧客\",\"取引先\",\"地域社会\". He must arrange them all, but he values employees above shareholders. So order might be \"従業員\",\"地域社会\",\"顧客\",\"取引先\",\"株主\".\n\nBut does he consider suppliers/trade partners important? He has used Japanese internal teams with customers, but trade partners may be suppliers or distributers. He had \"取引先\" but not emphasised. But region society is also important because the business is a key employer in region. So order: 従業員, 地域社会, 顧客, 取引先, 株主. That seems consistent.\n\nQ6: Provide past experience. He will mention experience as in design department, where he balanced tech and business decisions, or as HR where he improved retention by giving opportunity to learn. Suppose choose experience in \"設計部長の判断 / 技術と経営の両立\" Because that experience shaped his current decision-making about investing for long-term benefits.\n\nLet's craft explanation: \"My time as 設計部長 when we had to decide between cost-cutting and investing in an innovation that improved product quality and company value. That taught me that investing in people's skills and technology can turn a loss into value, and that short-term financial pressure shouldn't override long-term strategic growth.\" That would tie.\n\nOk produce JSON.\n\nCheck formatting: no extra line, just JSON.\n\nLet's ensure q1 contains exactly 3 entries [\"A\",\"C\",\"G\"]: confirm.\n\nq2_category 4\n\nq2_text: \"組織・ステークホルダーのバランスが崩れ、長期的に持続できる資源が不安定になる現状。\"\n\nq3 \"継続投資\"\n\nq4_text: 3-5 sentences summarizing decision reason: include investment to keep employees, maintain brand, leverage quality advantage, rely on internal capabilities, avoid risk of losing trust.\n\nq5_ranking: [\"従業員\",\"地域社会\",\"顧客\",\"取引先\",\"株主\"]\n\nq6_text: Explanation of experience. 2-4 sentences.\n\nLet's craft final.",
+ "finish_reason": "stop",
+ "actual_model": "gpt-oss-20b",
+ "response_id": "chatcmpl-b41692464932de7f",
+ "usage": {
+  "prompt_tokens": 3920,
+  "completion_tokens": 1489
+ },
+ "endpoint_kind": "local",
+ "timestamp_requested": "2026-10-25T11:19:12.014965+00:00",
+ "timestamp_responded": "2026-10-25T11:19:16.368156+00:00"
+}

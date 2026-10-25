@@ -1,0 +1,24 @@
+{
+ "job_id": "D02|C3W|international|1",
+ "seq": 87,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "fa58130a4929cc3f586580032e13abb531ea84eaf4d33afa7d10d24468e2c796",
+ "prompt_sha256": "4cfcd57366b5c104838ea878ab0156e161fb3813da44a71fbaac316ac8b20981",
+ "raw_text": "{\"risk_orient\": 4, \"confidence\": \"high\"}",
+ "reasoning_text": "We have to determine risk orientation from the reasoning text. The text: \"高い将来成長とブランド価値を維持するため、現地投資を継続しつつ、コスト削減と品質向上を両立できる戦略を実行する。\"\n\nInterpretation: The decision is to continue local investment, while pursuing cost reduction and quality improvement. They emphasize future growth and brand value maintenance. They are not fearful of risk of investing etc. They are taking action to realize growth, but they are also optimizing cost and quality. Risk orientation: They are pursuing growth, but also controlling risk by cost and quality? They are not explicitly risk-averse; rather they are risk-accepting? The phrase \"高い将来成長\" indicates a positive view of future growth, so risk tolerance high.\n\nThus evaluate risk orientation maybe 4 (acceptance side) or 5 (strongly risk accepting). The rhetoric: \"high future growth and brand value maintenance\" suggests proactive. Set investment continues indicates risk acceptance. However they also mention cost reduction and quality improvement to reconcile both, so risk management. But overall risk posture is moderately positive. So I'd lean 4.\n\nConfidence: the phrasing is pretty direct but little ambiguity. I'd say medium. Or high? The phrase indicates they are focusing on growth rather than risk avoidance. So risk orientation more acceptance. I'd choose 4.\n\nThus JSON: {\"risk_orient\": 4, \"confidence\": \"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:25:42.620010+00:00",
+ "timestamp_responded": "2026-10-25T11:25:43.592255+00:00"
+}

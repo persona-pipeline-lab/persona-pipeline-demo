@@ -1,0 +1,24 @@
+{
+ "job_id": "D06|C3W|withdrawal|2",
+ "seq": 84,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "045110aaca50579a183c11bd1e28bc4c9192765b59952e3436034ae221c0c486",
+ "prompt_sha256": "0497c843e5a2e4bca885759a118615886665f19bfe7cddaea70c7ff349903fbc",
+ "raw_text": "{\"exp_types\": [\"危機対処\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to extract experience types from the statement: \"工場事故の際、配管更新の遅延が原因で環境へ危害を出した経験から、安全投資を優先し、社員と地域社会に謝罪し、透明性を保ちながら対策を講じた。\"\n\nThey ask: \"記述だけを根拠に、言及された経験の型を次の6分類から該当するものすべて選んでください。\"\n\nThe categories: \"危機対処\" (赤字・倒産危機・事故・不祥事・需要崩壊への対処), \"技術・開発\" (研究開発・製品開発・生産技術の経験), \"海外\" (海外駐在・海外事業の経験), \"創業・立ち上げ\", \"人・組織\", \"その他\".\n\nThe statement: Experience of factory accident due to pipe replacement delay, leading to environmental harm, answered by prioritizing safety investment, apologized to employees and community, maintaining transparency.\n\nThis is clearly a crisis response for an accident and environmental damage. There's also an element of safety investment and safety operations but that may not be \"技術・開発\" because it's not about research or development of product. It's more about crisis response. It's definitely \"危機対処\".\n\nNo mention of overseas, startup, HR, etc.\n\nThus the exp_types is [\"危機対処\"]. Confidence likely high.\n\nReturn JSON in required format.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:25:32.376903+00:00",
+ "timestamp_responded": "2026-10-25T11:25:33.396082+00:00"
+}

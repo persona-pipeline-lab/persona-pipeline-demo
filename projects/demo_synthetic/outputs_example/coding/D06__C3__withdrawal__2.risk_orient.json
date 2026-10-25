@@ -1,0 +1,24 @@
+{
+ "job_id": "D06|C3|withdrawal|2",
+ "seq": 12,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "bda4807dab25cefe2520e1be0977a243a2bb3f0bc40274cfc6aaf5e5b9054f11",
+ "prompt_sha256": "ad8249dc579b8c0a3376b628b06c0dcfb022e2cccd4e067f7342a6becc979559",
+ "raw_text": "{\"risk_orient\": 5, \"confidence\": \"medium\"}",
+ "reasoning_text": "We need to rate risk orientation based on justification language. The description says: Market growth 12% predicted, maintain technology advantage with additional investment. Exiting would short-term profit but losing future growth and brand effect. They want to protect employees, community, and existing customer trust.\n\nThe justification: they believe growth and opportunity are significant, they are willing to invest to maintain advantage, i.e., they're accepting risk for potential gains. They mention retreat would give short-term profit but lose growth opportunities and cause risk of losing brand. The language shows risk acceptance (focusing on gains). So rating likely 4, maybe 5? They view high growth, maintain advantage. They are risk accepting. However they still discuss risk of not exiting; risk is considered negative. But overall they choose to invest. The language \"技術優位を維持できる\" is a goal to maintain advantage; it's not risk-averse, they believe risk is beneficial. So rating 4-5. Let's consider \"strongly risk accepting\" (5) if they emphasize opportunity; \"risk accepting\" (4). Since the language states they see it as an opportunity and not fearing risk too much. They warn that not investing would cause risk of losing brand. But the orientation is more toward acceptance. I would lean 5 because they say \"短期利益改善\" but they prioritize long-term; they want to take risk. However \"高\" risk orientation due to growth and brand. I think 5 (strongly risk accepting). Confidence medium.\n\nLet's produce JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:20:55.624160+00:00",
+ "timestamp_responded": "2026-10-25T11:20:56.609781+00:00"
+}

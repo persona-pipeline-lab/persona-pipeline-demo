@@ -1,0 +1,52 @@
+project: project
+conditions: [C3, C0, C3W, C3-mixed]
+reps: 2
+scenarios:
+  - {id: scen_a, file: scenario_a.md}
+  - {id: scen_b, file: scenario_b.md}
+templates:
+  header: instruction_header.md
+  persona: persona_block.md
+  questions: questions.md
+  output_format: output_format.md
+  coding_prompt: coding_prompt.md
+  generation_params: generation_params.yaml
+  hashes: frozen_hashes.csv
+placeholders:
+  persona: "{AUTOBIOGRAPHY}"
+  coding: "{INPUT_TEXT}"
+paths:
+  persons_csv: inputs/persons.csv
+  texts_dir: inputs/texts
+  templates_dir: templates
+  outputs_dir: outputs
+  example_dir: outputs_example
+generation:
+  endpoint_kind: mock
+  base_url: "http://localhost:0/v1"
+  api_key_env: DEMO_TEST_NOT_SET
+  model: mock-model
+  max_tokens_param: max_tokens
+  retries: 0
+  retry_backoff_seconds: 0
+  params: {temperature: 1.0, top_p: 1.0, max_tokens: 8192, seed_base: 7, reasoning_effort: medium}
+accept:
+  q1_symbols: "ABCDEFGH"
+  q2_categories: [1, 2, 3, 4]
+  q3_options: ["撤退", "縮小", "継続投資", "提携"]
+  q5_names: ["株主", "従業員", "顧客", "取引先", "地域社会"]
+coding:
+  endpoint_kind: null
+  base_url: null
+  api_key_env: null
+  model: null
+  temperature: 1.0
+  top_p: null
+  max_tokens: 4096
+  reasoning_effort: null
+  json_mode: false
+  blocks:
+    - {name: block_one, source: q2_text, output_key: label_one}
+    - {name: block_two, source: q4_text, output_key: label_two}
+dataset_notice: >
+  TEST FIXTURE ONLY. Meaningless dummy data.

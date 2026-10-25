@@ -1,0 +1,24 @@
+{
+ "job_id": "D05|C3-mixed|international|1",
+ "seq": 129,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "55f5a2defc5c686b249ed025580de13c093330f7412bfd24bc04f248d9fbbb43",
+ "prompt_sha256": "03d5b9131d613df496f92d2af5800d88699cfa5bde74ed0698a48dd90a2e9a20",
+ "raw_text": "{\"pr_frame\":\"組織ステークホルダー\",\"confidence\":\"high\"}",
+ "reasoning_text": "We have to choose a classification. The statement: \"組織とステークホルダーが直面する持続可能性と社会的責任の問題が最も大きい。\" The core is about organizational and stakeholder issues regarding sustainability and social responsibility. That aligns with \"組織ステークホルダー\". So pr_frame: \"組織ステークホルダー\". Confidence high. Output JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:28:31.911309+00:00",
+ "timestamp_responded": "2026-10-25T11:28:32.255923+00:00"
+}

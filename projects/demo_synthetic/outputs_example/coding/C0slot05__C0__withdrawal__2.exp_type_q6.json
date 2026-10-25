@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot05|C0|withdrawal|2",
+ "seq": 46,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "80e209e46af6f87f2e78ac5fd7d477338499c71ff6e61b950936641aa908be49",
+ "prompt_sha256": "937d23ece32cffbeda2a750b877c5fd4af9ee80fe2862a5f427e81d99e503c45",
+ "raw_text": "{\"exp_types\": [\"技術・開発\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to identify the types of experience from categories mentioned: \"危機対処\", \"技術・開発\", \"海外\", \"創業・立ち上げ\", \"人・組織\", \"その他\".\n\nThe text: \"過去に自社が新技術投資を遅延させた際、競合に抜かれ業績が後退した経験がありました。その教訓から、積極的な投資が重要だと感じています。\"\n\nThey talk about experience where still company delayed new technology investment, leading to losing to competitor, and performance decline. This is experience related to technology development and investment decisions. It might also be crisis? The decline in performance could be a business crisis. But the main thing is a \"new technology investment\" delay - that's technological development decision. According to categories: \"技術・開発\" definitely applies. Could \"危機対処\" also? They state \"業績が後退した経験\" which may indicate potential crisis, but \"危機対処\" refers to crisis response such as bankruptcy, accident, scandal. Not exactly. It's more like \"the experience of a downturn due to delay.\" It isn't explicitly crisis management. The text says \"新技術投資を遅延させた際、競合に抜かれ業績が後退した経験\". That could be considered a risky scenario but not necessarily a crisis to respond to. Possibly not enough to assign \"危機対処\".\n\nAlso it's not overseas, not founding, not human resources or other. So I will select \"技術・開発\" only.\n\nConfidence: high. Provide JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:23:05.550742+00:00",
+ "timestamp_responded": "2026-10-25T11:23:06.639206+00:00"
+}

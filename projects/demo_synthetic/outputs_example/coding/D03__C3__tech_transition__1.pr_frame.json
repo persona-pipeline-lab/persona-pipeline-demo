@@ -1,0 +1,24 @@
+{
+ "job_id": "D03|C3|tech_transition|1",
+ "seq": 29,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "8e34a431e83c45c5c0caafa335ad71d11b42357e0d12b15cfbc234bc97b4d1fd",
+ "prompt_sha256": "ec62a1d822ed0ae6d5aca4aadf7b0c427b1ea88eb9cadc136ec7877e2fb75c26",
+ "raw_text": "{\"pr_frame\":\"市場競争\",\"confidence\":\"high\"}",
+ "reasoning_text": "We need to pick main problem frame from 5: financial profit, market competition, technology, stakeholder, multially.\n\nThe statement: \"顧客が新方式へ移行し、競合の優位性が高まることで、主力事業の市場価値が急速に失われています。\"\n\nKey: customers switching to new method, competitors gain advantage, core business market value rapidly declining. So the core issue is market competition: competition dynamics changing, customer shift. So choose \"市場競争\".\n\nSet confidence high.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:21:57.345870+00:00",
+ "timestamp_responded": "2026-10-25T11:21:57.748359+00:00"
+}

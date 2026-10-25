@@ -1,0 +1,24 @@
+{
+ "job_id": "D06|C3-mixed|tech_transition|2",
+ "seq": 144,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "8fdf31a24202b343e2e3f2083ad6cf2298ec1a99d37d5b8e43d8eba7ac3ed2af",
+ "prompt_sha256": "a101bb19bdb43e3d32033268e571f88cd3b729b784cd1320b243b2397e11220a",
+ "raw_text": "{\"time_horizon\": 4, \"confidence\": \"medium\"}",
+ "reasoning_text": "We have a statement. It says: \"市場成長率が高く、5年以内に新方式が過半に達する見通しであるため、技術把握と顧客保持を図る必要がある。既存従業員は新方式の開発に大きく関わるため、投資と人材育成を行うことで競争力を回復できると判断した。資金面でも構造調整を行い、追加投資を段階的に実施することができる。\"\n\nWe need to assess time horizon 1-5 from the language.\n\nThey mention \"5年以内\" i.e., within 5 years, the new method will reach majority. They talk about capital adjustment and incremental investments. That suggests a medium to longer horizon, maybe 3 or 4. The phrase \"5年以内\" indicates ~5 years, so close to long term but not super long. It also says \"段階的に実施\" incremental, thus they are planning over time, likely medium to long. But which integer? 3 would be mid-term (both short and long). 4 is long-term oriented. Since they mention \"5年以内\" as horizon for majority penetration, and \"段階的に実施\" likely a 3-5 year plan. And \"new方式が過半に達する見通しであるため\" indicates they take the 5-year horizon seriously. So I'd rate 4.\n\nConfidence: moderate.\n\nReturn JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:29:27.468097+00:00",
+ "timestamp_responded": "2026-10-25T11:29:28.491139+00:00"
+}

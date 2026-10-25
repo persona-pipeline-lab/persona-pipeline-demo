@@ -1,0 +1,24 @@
+{
+ "job_id": "D03|C3|withdrawal|2",
+ "seq": 6,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "4d5d0a522884a9dcfd3e7f3751763fa3a35313d0d513cdce58ed24cba337f31e",
+ "prompt_sha256": "c20d3d04083baeae6fdac112defbd22edb38453d5a3ef558e248b4d7725e5ffe",
+ "raw_text": "{\"risk_orient\":2,\"confidence\":\"high\"}",
+ "reasoning_text": "We need to rate risk orientation, based on reason. The description mentions growth, technological advantage but at risk if not invested. Employee job preservation, brand risk. They will continue investment despite some losses. The reason: avoid loss of jobs, brand, trust. That is risk avoidance. They fear losses in brand. They mention they will accept minor deficits to keep going. That suggests risk aversion though they're willing to accept small losses. They are not fully risk-averse, but strongly risk-averse to job loss and brand harm. That would be maybe rating 2 or 3? They are willing to invest to maintain competitive advantage, but \"若干の赤字を咎めつつ継続投資\" means \"while blaming a slight deficit, continues investment.\" So they acknowledge possible losses but chooses to invest. This shows some risk tolerance? But they are focused on the risk of withdrawal: brand, employee. So they emphasize risk avoidance. I think rating 2.\n\nConfidence: there's some ambiguity but likely high.\n\nSo JSON: {\"risk_orient\":2,\"confidence\":\"high\"}\n\nLet's output.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:20:35.054792+00:00",
+ "timestamp_responded": "2026-10-25T11:20:35.782174+00:00"
+}

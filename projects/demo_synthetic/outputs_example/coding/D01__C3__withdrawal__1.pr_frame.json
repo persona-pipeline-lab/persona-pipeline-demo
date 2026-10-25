@@ -1,0 +1,24 @@
+{
+ "job_id": "D01|C3|withdrawal|1",
+ "seq": 1,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "bbea35a15d2183315e5a55147dd8f12c33bdc79fe1e04dfe9ddc608e995e0d66",
+ "prompt_sha256": "ea73d7e24ab134583d35e2c04cadf290f9e95d4cf0dcc79b0cfa6caad8139009",
+ "raw_text": "{\"pr_frame\":\"組織ステークホルダー\",\"confidence\":\"high\"}",
+ "reasoning_text": "We need to choose one main problem frame from the five categories: Financial, Market Competition, Technology, Stakeholder relations, or Multiple antagonistic. The description: \"企業の事業継続は、安全確保と地域社会への責任感が不可欠であり、これらを怠ると将来の信頼失墜に繋がるという危機的状況だ。\" In English: \"Continuing business requires safety assurance and responsibility to the local community; neglecting them causes future loss of trust, a crisis.\" The core issue: maintaining safety and responsibility to local community; sustainability of business and trust. This is about stakeholder relations? Or \"organisational stakeholders\" includes responsibility to employees, suppliers, local community, brand. Yes, it's stakeholder. So choose \"組織ステークホルダー\".\n\nConfidence high.\n\nReturn JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:01:04.269797+00:00",
+ "timestamp_responded": "2026-10-25T11:01:04.960228+00:00"
+}

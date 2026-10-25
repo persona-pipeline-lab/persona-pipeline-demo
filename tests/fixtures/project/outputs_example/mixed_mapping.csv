@@ -1,0 +1,10 @@
+﻿person_id,new_ep_num,source_person,source_ep_index,replaced_ep_index,replaced_chars,new_chars
+T1,1,T3,1,1,27,27
+T1,2,T3,2,2,59,59
+T1,3,T2,2,3,91,75
+T2,1,T1,1,1,43,27
+T2,2,T1,2,2,75,59
+T2,3,T1,3,3,107,91
+T3,1,T1,1,1,27,27
+T3,2,T1,2,2,59,59
+T3,3,T2,3,3,123,107

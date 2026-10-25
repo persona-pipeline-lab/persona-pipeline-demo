@@ -1,0 +1,24 @@
+{
+ "job_id": "D02|C3|tech_transition|1",
+ "seq": 27,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "356a1b0acf55e1da7c520d07f7bd09cfe47f1ed6af4b596661fc5526c903a97a",
+ "prompt_sha256": "4c402fc1367a70ae8bd43532ca4b942cbc5a9c830b99f8da26934a20e63f119a",
+ "raw_text": "{\"time_horizon\": 2, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to rate time horizon 1-5 based on reasoning. The statement: They want to outsource new technology to external partner, keep existing brand and customer base, reduce risk, minimize employee impact, maintain community ties, reduce capital burden, adjust investment timing. This suggests a relatively short to medium-term: it focuses on current risk, employee impact, community, and cost, with outsourcing. Not a long-term growth. It is more short-term strategic, pragmatic. I'd assign 2 (short-term oriented). Confidence high because it's clear about short-term risk reduction and minimizing employee impact. Alternatively 3? But the reasoning emphasizes \"external technology while keep existing brand\" and controlling cost, investment timing; short to intermediate. I'd say 2.\n\nReturn JSON. Let's produce.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:21:51.590389+00:00",
+ "timestamp_responded": "2026-10-25T11:21:52.120203+00:00"
+}

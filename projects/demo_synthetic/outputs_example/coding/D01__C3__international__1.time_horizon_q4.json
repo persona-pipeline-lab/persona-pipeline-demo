@@ -1,0 +1,24 @@
+{
+ "job_id": "D01|C3|international|1",
+ "seq": 13,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "9367194cf30ec0512d2fbe4c5378d75b49495b0145c0919e077b041820dd8999",
+ "prompt_sha256": "03dc842ed1b5c4cfe4f11e546d1d18a9b677d40bca0b71a41285ab4fad52368a",
+ "raw_text": "{\"time_horizon\": 5, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to evaluate the time horizon based on the reasoning. The statement: \"現地の生産設備を改善... safety ... accident risk lower. 長期的な市場成長に乗るためには、短期的な赤字を受け入れつつ投資を進める必要がある。顧客信頼と地域社会への責任感が再建に不可欠である。\"\n\nThe reasoning emphasises long-term market growth, accept short-term deficits. The focus on future growth vs short-term suffers. That is long-term orientation. Score likely 5. \"長期的な市場成長を乗るために短期赤字を受け入れる\" indicates foreseeing 5-10 years. So 5. Confidence high: it's clearly a long-term orientation. Use only statement logic. Output JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:20:59.677720+00:00",
+ "timestamp_responded": "2026-10-25T11:21:00.270856+00:00"
+}

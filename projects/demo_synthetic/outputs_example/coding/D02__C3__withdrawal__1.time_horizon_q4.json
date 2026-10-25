@@ -1,0 +1,24 @@
+{
+ "job_id": "D02|C3|withdrawal|1",
+ "seq": 3,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "06150f41a6355b2f9dd82e39250b101af11a8e3671fb58ca9920ec93520abcef",
+ "prompt_sha256": "0cb3ca055aca3bd4efb2332b28eb7112e68e6efd48270ba1c0edb8dc73e2dac2",
+ "raw_text": "{\"time_horizon\": 4, \"confidence\": \"medium\"}",
+ "reasoning_text": "We need to judge the time horizon based on explanation only. Extract hints.\n\nSentence: \"市場成長率は高く、技術的優位性も残っているため、機会を逃すリスクを考慮すると継続が最優先です。投資に伴う資金負担は、経営の健全化と将来益への投資でカバーできると判断しました。数字管理体制を強化し、定期的な資金繰りレビューでリスクを可視化します。\"\n\nInterpretation: They emphasise market growth rate high, tech advantage still there; risk of missing opportunities; thus priority to continue. Investment burden can be covered by healthy management and future profit investments. They strengthen number management and do periodic cash flow reviews for risk visibility.\n\nPerspective: emphasis on future benefits; but they mention risk of missing opportunities now. They also talk about funding burden and covering with future profits. That indicates next few years to support these investments, likely medium-term? They invest to maintain advantage; likely 3? Let's analyze signals for time horizon.\n\nScale definitions:\n\n1=短期（今期・短期の損益が判断の主軸）\n2=短期寄り\n3=中期・両論\n4=長期寄り\n5=長期（5〜10年以上の成長・存続が判断の主軸）\n\nLooking at content: They talk about market growth rate high, tech advantage, risk of missing opportunities. This points to investing now to secure advantage, but also rely on future profits. There's emphasis on continuous investment to maintain advantage rather than short-term profit. They mention \"将来益への投資\" i.e., investment into future benefits. Also \"将来益への投資\" suggests some future horizon. They also mention risk management through cash flow review, which is more about ongoing rational.\n\nI think it's more medium-term: 3. They are not strictly short micro-term, but also not 5-year. Could be 3 or 4? Let's examine if they talk about 5-10 years: \"市場成長率は高く技術的優位性も残っている\" implies still relevant. Tech advantage could hold for a few years. They might think of sustaining advantage across several years, but not explicit 5-year. They focus on \"将来益への投資\" indicating 5-10-year growth? But also risk of opportunity.\n\nLet’s read: They say \"継続が最優先\" i.e., continuing. That's long-term perspective. They think it is a priority not optional. They also mention \"financial burden\" can be covered by future profits. So they think they'll generate future profits. That implies longer horizon than immediate.\n\nI lean to 4 (long-term oriented). But what qualifies as Long-term? 4=長期寄り; 5=長期 (5〜10年以上). Are they thinking about 5-10 years? Not explicitly. They talk about \"将来益\" but not with explicit time. The risk of missing opportunities suggests as long as you leave it you lose. That may be present to future but no timeframe.\n\nBecause they emphasize maintaining advantage and future profits, that tends to signify at least several years. I'd say 4. Let's set confidence medium.\n\nThus JSON: {\"time_horizon\": 4, \"confidence\": \"medium\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:01:13.936156+00:00",
+ "timestamp_responded": "2026-10-25T11:01:16.211767+00:00"
+}

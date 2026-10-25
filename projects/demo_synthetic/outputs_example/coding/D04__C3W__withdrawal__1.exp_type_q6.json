@@ -1,0 +1,24 @@
+{
+ "job_id": "D04|C3W|withdrawal|1",
+ "seq": 79,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "689b51df96926620a50b8edcf3bd94a82f24c4fa95e7e033f0a9472ec70c6902",
+ "prompt_sha256": "a31e124bd46ccde8e8b78bf55f07271bc0992a9de5abf27002d47c5bf4cd2a8f",
+ "raw_text": "{\"exp_types\": [\"人・組織\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to identify the type(s) from the six categories that match the described experience: \"取引先社長に対して用件を書かない手紙を継続し、信頼関係を築いた経験。これが顧客との長期関係・社内での意思決定の在り方に最も影響した.\"\n\nWhat category? It's about managing relationship with a customer, building trust, influencing long-term relationship and decision-making. This is about \"人・組織\": people/organization, especially \"人事・労務・組織運営・師弟関係\" I think they mention relationship with a customer, it's external. But classification \"人・組織\" includes \"労務・組織運営・師弟関係\" Usually not about external relationships, but maybe \"人・組織\" is about interactions. Also there is no mention of crisis, technology, overseas, startup. So only \"人・組織\" fits. The description: \"取引先社長 ... trust relationship\" Not about crisis or technology, so classification is \"人・組織\".\n\nConfidence high.\n\nReturn JSON: {\"exp_types\": [\"人・組織\"], \"confidence\": \"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:25:13.678012+00:00",
+ "timestamp_responded": "2026-10-25T11:25:14.538606+00:00"
+}

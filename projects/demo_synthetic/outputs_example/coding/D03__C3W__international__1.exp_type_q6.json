@@ -1,0 +1,24 @@
+{
+ "job_id": "D03|C3W|international|1",
+ "seq": 89,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "0ea1df0d319ce60fdb02841c085b6feeaf31b9420d286ec508ad0cef642a9e0d",
+ "prompt_sha256": "eb8a9f987bc98edfb83445e27619b38511fc84461b553fcf25bfddd1445ec07f",
+ "raw_text": "{\"exp_types\": [\"人・組織\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to identify categories of experience based on the description only.\n\nThe description: \"ホテルにおいて、従業員の学びと認められる環境を整えることが離職率低減に直接結びついた経験がある。従業員を中心にした提案会を設け、実行することで事業の継続性と成長を実現した。\"\n\nThis is about improving employee learning environment, reducing turnover, setting up suggestions (proposals) sessions, leading to continuity and growth. That's organizational human resources, employee development. That falls under 「人・組織」 because it's about people, HR, organization.\n\nAny other categories? Not \"危機対処\" as it's not crisis; not \"技術・開発\"; not \"海外\"; not \"創業・立ち上げ\". It's about internal HR/organizational improvement.\n\nThus exp_types: [\"人・組織\"].\n\nConfidence: high.\n\nReturn JSON with that.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:25:54.745594+00:00",
+ "timestamp_responded": "2026-10-25T11:25:55.445631+00:00"
+}

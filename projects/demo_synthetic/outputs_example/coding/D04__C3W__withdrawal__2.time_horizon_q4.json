@@ -1,0 +1,24 @@
+{
+ "job_id": "D04|C3W|withdrawal|2",
+ "seq": 80,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "427f6bc52887506187d41b24f83dded5e74d61e75c802bed5292ac65b51fdc7b",
+ "prompt_sha256": "65789a77016f713a3237ec2790b3f5cb1e5683a918d719d968fbbc7504f3e265",
+ "raw_text": "{\"time_horizon\": 4, \"confidence\": \"medium\"}",
+ "reasoning_text": "We need to judge time horizon based on description. The description says: \"市場成長と技術優位性を活かす一方で、資金負担とブランド・地域影響を最小限に抑えるために、リスクを分担できるパートナーとの提携を検討する。相手との関係を継続的に構築し、相互に価値を生み出すことが重要だと考える。\" So they are focusing on leveraging market growth and technology advantage while minimizing capital burden, brand and regional impact risk by partnering. They emphasize continuous relationship building and mutual value creation. That indicates moderate horizon? They mention capital burden minimization (short term cost), but also long-term partnerships and continuous relationship building, and value creation. The key factors: risk sharing, partnership continuous value, not just immediate benefits. \"市場成長\" implies medium to long term trend. \"技術優位性\" presumably long term advantage. They try to minimize risk and burden but still commit to partnership - likely medium to long term. I would grade as 4 (long-term oriented). But perhaps 3? The description emphasizes long-term relationships (continuous) but also looks at risk management in near term. But long-term commitment? They want to share risk, but still maintain relationship. \"市場成長と技術優位性\" implies expectation of medium to long term. I'd choose 4 (長期寄り). Confidence medium? The statement not thorough but it's strong on long-term partnership. So confidence medium.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:25:16.085070+00:00",
+ "timestamp_responded": "2026-10-25T11:25:17.102356+00:00"
+}

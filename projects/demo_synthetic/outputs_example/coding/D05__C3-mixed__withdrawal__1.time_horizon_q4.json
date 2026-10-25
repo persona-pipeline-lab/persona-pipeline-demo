@@ -1,0 +1,24 @@
+{
+ "job_id": "D05|C3-mixed|withdrawal|1",
+ "seq": 117,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "23aaa444860b5e7d87d0ada5880bad324f64abc48e8fe736b9efaa4a746e8a8e",
+ "prompt_sha256": "fd74c890b2406abd1a8203f1e63ecfa5f2da878e9dcdcbedca8659451f52d398",
+ "raw_text": "{\"time_horizon\": 2, \"confidence\": \"medium\"}",
+ "reasoning_text": "We need decide time horizon: The description says the market growth rate is high, tech advantage secured, but wants to reduce burden by cooperating to spread risk; minimize impact on employees and community, brand damage.\n\nThe narrative seems about strategic investment but careful to spread risk and minimize negative impacts. It doesn't mention long-term vision like future decades; it's about current market high growth, but they want to minimize costs and risk. It might be short-term? The mention of minimizing impact suggests risk management of footprint, but maybe they want a sustainable partnership. It's perhaps 3 moderate? The explicit reference to \"外部パートナーと協業することで、負担を分散させる\" seems about short to medium term risk. \"市場成長率は高く\" indicates near-term growth potential. So time horizon: 2 maybe short-term oriented.\n\nConfidence: medium.\n\nI'll output JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:27:43.956986+00:00",
+ "timestamp_responded": "2026-10-25T11:27:44.558654+00:00"
+}

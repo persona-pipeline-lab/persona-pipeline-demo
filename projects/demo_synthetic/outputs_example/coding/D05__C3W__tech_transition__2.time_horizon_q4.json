@@ -1,0 +1,24 @@
+{
+ "job_id": "D05|C3W|tech_transition|2",
+ "seq": 106,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "25c10fc9e54e2345a56efcfbf865a41b8b392f24a93ae13d1da77cc2e699de94",
+ "prompt_sha256": "d40f384e184459b618609289d3c2fe1bd961699abe299e01e0c10f66ebc2063b",
+ "raw_text": "{\"time_horizon\": 1, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to evaluate time horizon. The reasoning: The decision described: \"新方式を自社で開発するには多額の投資が必要だが、早期の協業により技術を取り込みつつリスクを分散できる。外部との提携で技術調達をスピードアップし、既存のブランド価値と従業員の雰囲気を保てる。\"\n\nFocus: early collaboration, risk distribution, technology acquisition speed, maintain brand and employee culture.\n\nThis seems to be about short-term benefits: speeding up tech acquisition and maintaining brand and culture. But also early collaboration to distribute risk might have longer-term potential but the phrase \"早期の協業\" (early collaboration) implies short-term action to accelerate tech. There's emphasis on short-term speed and risk mitigation rather than long-term growth. There's mention of brand and employee morale but those are maintained, not grown. No explicit long-term growth or sustainability. So likely time horizon 1 (short-term) or 2 (short-term leaning). The wording: \"早期の協業\" + \"技術調達をスピードアップ\" indicates intent for faster delivery. So probably 1 = short-term. Confidence high because it's clear.\n\nTherefore output:\n\n{\"time_horizon\": 1, \"confidence\": \"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:26:57.278878+00:00",
+ "timestamp_responded": "2026-10-25T11:26:58.167487+00:00"
+}

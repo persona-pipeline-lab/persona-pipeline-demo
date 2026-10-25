@@ -1,0 +1,24 @@
+{
+ "job_id": "D03|C3-mixed|tech_transition|2",
+ "seq": 138,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "8b14b06997b676245d8bbf023f10d5adc543bc82a4ab04b270a5b0b3887a9eae",
+ "prompt_sha256": "1f294412dde64ab507c649c8fa1a3f742d59900490d330df35f5cc7a1524ad9a",
+ "raw_text": "{\"exp_types\":[\"技術・開発\"], \"confidence\":\"high\"}",
+ "reasoning_text": "We need to parse the description:\n\n\"When I led the factory transformation, I turned tacit worker knowledge into quantifiable alerts, proving that traditional expertise can coexist with data-driven systems. That experience taught me how to merge legacy strengths with new technology, which is directly relevant to deciding on a partnership.\"\n\nPenal: The described experience: led factory transformation; turning tacit worker knowledge into quantifiable alerts; merging legacy strengths with new technology. That seems like \"技術・開発\" (technology/dev). Also possibly \"人・組織\" (since it involves worker knowledge, but it's more about process transformation, but the mention is about merging legacy strengths with new technology. It might be \"技術・開発\".\n\nSpecifically, which classification? \"Factory transformation\" is basically process improvement, technology integration, but \"技術・開発\" includes product development, production technology; that is a fit.\n\nAlso \"人・組織\" could be involved because it deals with tacit worker knowledge, training, integration, but the description mainly emphasizes technology integration.\n\nThus the relevant classification: \"技術・開発\".\n\nWe might also consider \"人・組織\" because merging worker knowledge with new tech involves people. But the instruction: \"根拠に、言及された経験の型を次の6分類から該当するものすべて選んでください。規則: 記述に明示された経験のみ拾う（推測しない）。外部知識を使わない。\"\n\nWe only see mention: factory transformation, turning tacit knowledge into alerts, merge legacy strengths (like old processes) with new technology. That is technology improvement. The mention of workforce is not a separate class? \"人・組織\" is about HR, organization management, relationships. In this case it's about merging old strengths with new tech - that may involve people adoption. But whether that specifically is \"人・組織\" experience? Possibly yes: being in lead role, merging traditions with new tech is relevant to organizational transformation. But the phrase \"pilot\" is unclear.\n\nThe instruction says \"経験の型\" - the type of experience. The classification categories: \"危機対処\",\"技術・開発\",\"海外\",\"創業・立ち上げ\",\"人・組織\",\"その他\".\n\nThe description: \"led the factory transformation\" - that is a transformation of processes.\n\nThis seems more like \"技術・開発\" because it's about technology integration. It might also be \"人・組織\" because they led factory transformation, but we don't have explicit mention of people management aspects, but they mention worker knowledge, so it's partly about workforce.\n\nBut maybe the question expects that \"工場変革\" is technology development.\n\nThus answer: \"技術・開発\".\n\nConfidence? Highly confident.\n\nTherefore JSON: {\"exp_types\":[\"技術・開発\"], \"confidence\":\"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:29:07.657784+00:00",
+ "timestamp_responded": "2026-10-25T11:29:09.477289+00:00"
+}

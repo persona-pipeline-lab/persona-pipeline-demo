@@ -1,0 +1,24 @@
+{
+ "job_id": "D02|C3-mixed|international|1",
+ "seq": 123,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "c8796d0baba0e8c80458ad91eb7d658d78527f08b887471f4438c3073cff64eb",
+ "prompt_sha256": "769473b5ee3807b994aab6bf0a60c1cb6029c06208f95bba349f88b5e41eee2a",
+ "raw_text": "{\"exp_types\":[\"危機対処\",\"人・組織\"], \"confidence\":\"high\"}",
+ "reasoning_text": "We need to determine the experience types mentioned. There are two experiences:\n\n1. \"過去の再建で、大手サプライヤーの安全投資を行い、従業員の安全と雇用を守った経験が影響した。\"\n\nThis describes crisis management: \"再建\" = restructuring, \"安全投資\" to protect employees' safety and employment. This is likely \"危機対処\" because it's about company crisis (rebuild). Also could be \"人・組織\" because protecting employees, but primary is crisis situation. It might also involve safety, but \"危機対処\" covers accidents? They mention safety investment. So likely crisis management.\n\n2. \"料理長の離職問題を経験した際に、学びの機会を作ることで離職率を下げたことは、今回も技術・人材育成を重視する判断に寄与した。\"\n\nThis is about human resources, staff retention, learning opportunities: belongs to \"人・組織\" because it's about HR, organisation. The mention of \"技術・人材育成\" could be seen as \"技術・開発\"? But it's about human resource development, but not specifically product tech. It's about training staff, possibly technical? It's more HR.\n\nSo answers: \"危機対処\", \"人・組織\".\n\nConfidence: high because straightforward. JSON: {\"exp_types\": [\"危機対処\",\"人・組織\"], \"confidence\":\"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:28:11.592941+00:00",
+ "timestamp_responded": "2026-10-25T11:28:12.619008+00:00"
+}

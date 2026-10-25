@@ -1,0 +1,24 @@
+{
+ "job_id": "D06|C3|international|2",
+ "seq": 24,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "d0c1ca685cfa8b5d754a1f0724178d8b2f1da898fe1855cb1128504af1c71307",
+ "prompt_sha256": "69722dd89d9b7efbaadb480e843cdb8463a80a7344cf36226b1418aa30febc8b",
+ "raw_text": "{\"time_horizon\": 5, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to judge time horizon. The text mentions long-term market growth 10%/year, brand & quality advantage, investments to build self-production, keep quality difference, improve cost competitiveness, maintaining trust with stakeholders, phased investment and risk management. This indicates a long-term focus: building internal production for long-term advantage. So rating should be 5? Possibly 5 is long-term 5-10+ years. The mention of \"長期的な市場成長(10%/年)とブランド・品質優位\" implies long-term. So \"5\".\n\nConfidence: fairly high because it's clear long-term. So high.\n\nThus JSON: {\"time_horizon\": 5, \"confidence\": \"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:21:45.387920+00:00",
+ "timestamp_responded": "2026-10-25T11:21:45.892466+00:00"
+}

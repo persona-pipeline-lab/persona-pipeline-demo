@@ -1,0 +1,24 @@
+{
+ "job_id": "D06|C3-mixed|withdrawal|1",
+ "seq": 119,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "96cd864e7a42d3332ea6a0f61bd6f020313cd33ec550a64c1fa0069b1d57b670",
+ "prompt_sha256": "92d48e1f21fd9e061ce2e5fc34d1f52cfc963c49842394964dc312a506e40988",
+ "raw_text": "{\"exp_types\": [\"危機対処\", \"技術・開発\"], \"confidence\":\"high\"}",
+ "reasoning_text": "We need to check the classification of experiences mentioned. The description: \"再建の三年で大規模投資を行い、研究所の予算削減と安全投資を同時に進めた経験が、今回の判断に最大の影響を与えている。\"\n\nKey experiences: \"再建の三年で大規模投資を行い\" (During the three years of recovery, carried out large-scale investment) and \"研究所の予算削減と安全投資を同時に進めた経験\". \"研究所\" refers to a research institute. So \"研究所の予算削減\" could be budget cuts for a research lab; \"安全投資\" could be safety investments. The classification system: \"危機対処\", \"技術・開発\", \"海外\", \"創業・立ち上げ\", \"人・組織\", \"その他\".\n\nWe have to identify all relevant classification types, based solely on what's explicitly mentioned. Let's check:\n\n- \"再建の三年\" refers to 'rebuilding', potentially a recovery from some crisis? Could be \"危機対処\" (crisis handling) since it's about recovery, but is that explicitly stated? \"再建\" means recovery/reconstruction, likely from a crisis. But is that explicitly a crisis? Potentially yes. But \"再建\" may refer to corporate restructuring. But it is likely category \"危機対処\".\n\n- \"大規模投資\" (large-scale investment) - maybe \"技術・開発\"? No, not necessarily. Could be general investment. No explicit \"技術・開発\" category.\n\n- \"研究所の予算削減\" (research institute budget cuts) - \"研究所\" suggests a lab; budget cuts might involve research & development; but it's about the budget for research lab. That could be \"技術・開発\"? Possibly, but may not be explicit.\n\n- \"安全投資\" (safety investment). Not a technology development.\n\n- The classification \"人・組織\" might cover budget cuts for research institute? Could also be part of organizational expenses.\n\nBut we look for explicit mention of the type. The text says: \"研究所の予算削減と安全投資\". We see \"研究所\" (research lab) but no mention of R&D or product development. So it does not explicitly mention technology development or research. It may relate to \"技術・開発\" because it's a research institute, but that is the entity, not necessarily the activity (R&D). Might still be an example of \"技術・開発\" because they are dealing with research institute budgets. The classification system: \"技術・開発\" refers to \"研究開発・製品開発・生産技術の経験\". Indeed, working on a research institute budget might be part of research & development. But is it explicit that there was research or product development? It's just budget for a research institute. The question: \"経験の型\" classification. They want to classify the type of experience that the writer had. The writer mentions \"研究所の予算削減と安全投資\" simultaneous progress. That is about financial management in research institute. This might fit \"技術・開発\"? Because research institute is in R&D field. So yes, this could be considered part of technical development?\n\nHowever, classification \"人・組織\" deals with HR, labor, organizational operations, mentor-mentee relationships. The text does not mention HR or personnel or organization but could be considered as part of organization? Possibly \"人・組織\" refers to HR and organization management. But there is no explicit mention of HR or organizational changes. So likely not.\n\n\"海外\" no mention of overseas.\n\n\"創業・立ち上げ\" no mention.\n\n\"その他\" maybe if there is no match. But there might be \"危機対処\" for \"再建\" and \"技術・開発\" for \"研究所\" or \"技術\" involvement. Which is brand more reliable? We have to not infer beyond explicit mention. The phrase \"再建\" indicates a large-scale investment in the period of recovery. That might be during a crisis, but is it stated as \"危機対処\" explicitly? Does the text say \"危機\"? It says \"再建の三年で大規模投資を行い\". That could be part of crisis recovery. So we can assign \"危機対処\". Also \"研究所の予算削減と安全投資を同時に進めた経験\" could be a type of \"技術・開発\" if we interpret \"研究所\" as R&D, budget cuts and safety investments. So choose both \"危機対処\" and \"技術・開発\".Confidence likely high.\n\nThus output: {\"exp_types\": [\"危機対処\", \"技術・開発\"], \"confidence\":\"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:27:52.438583+00:00",
+ "timestamp_responded": "2026-10-25T11:27:55.551958+00:00"
+}

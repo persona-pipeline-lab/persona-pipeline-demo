@@ -1,0 +1,24 @@
+{
+ "job_id": "D05|C3|international|2",
+ "seq": 22,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "8d3ef19c4c9483475312207fc4ccd01639c3f57387032a128af374bb079fd637",
+ "prompt_sha256": "6c7970b9329a9d50365f82bd4d75dd157c12911112425d21b4c280407ecdbacb",
+ "raw_text": "{\"time_horizon\": 1, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to evaluate time horizon: the reasoning text. They focus on dealing with local regulations and competition, helping invest by partnership sharing burden, protecting brand and employment, also leveraging partner's knowledge and network to handle slow new customer acquisition. So focus is to maintain brand and jobs, mitigate trading pressure, handle slow new customer acquisition. The emphasis seems on immediate risks: regulations and competition, investment burden, brand, employment. The mention of sharing knowledge and network could include medium term growth._short-term: protecting brand, job, address immediate competition. The phrase \" to protect brand and employment\" implies short-term safeguarding. So time horizon likely 1 (short-term). But we need reasoning. They talk about cooperation to share investment cost and share supply chain. This addresses immediate constraints. They also mention new customer acquisition slowdown; partnership knowledge and network helps. That could be medium-term. However emphasis is on mitigating immediate regulatory shocks and competition, and being safe. I'd lean 1. Provide confidence? They make clear short-term concerns. Provide \"high\" confidence.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:21:37.653265+00:00",
+ "timestamp_responded": "2026-10-25T11:21:38.344361+00:00"
+}

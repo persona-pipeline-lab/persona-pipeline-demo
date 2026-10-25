@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot04|C0|withdrawal|2",
+ "seq": 44,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "80e209e46af6f87f2e78ac5fd7d477338499c71ff6e61b950936641aa908be49",
+ "prompt_sha256": "937d23ece32cffbeda2a750b877c5fd4af9ee80fe2862a5f427e81d99e503c45",
+ "raw_text": "{\"exp_types\": [\"技術・開発\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to choose from categories based on the sentence. Sentence describes: \"過去に自社が新技術投資を遅延させた際、競合に抜かれ業績が後退した経験がありました。その教訓から、積極的な投資が重要だと感じています。\"\n\nThis is an example of a past experience about investment in new technology being delayed, losing market share to rivals. The categories relate to: 技術・開発 (research and development, product development). Does it include \"Tech & Development\"? Yes, because it's about technology investment. Did it involve \"危機対処\"? Not explicitly a crisis, but competition leading to decline, but not a literal crisis like bankruptcy. Possibly \"技術・開発\". \"自社\" being a company, but not necessarily a technology or development, but new tech investment. So \"技術・開発\" fits. Or maybe \"危機対処\" if we consider the decline as crisis. The instruction: \"記述に明示された経験のみ拾う（推測しない）\" So only what's explicitly stated: new technology investment delayed, competition passed, performance declined. That is an experience about technology development or investment. So we label 技術・開発. Possibly also \"危機対処\" because the performance decline was a crisis situation. However, \"危機対処\" defined as \"赤字・倒産危機・事故・不祥事・需要崩壊への対処\" - this is about crisis. In this case, \"業績が後退\" means performance declined, but not necessarily crisis or bankruptcy. Not explicitly a crisis. Should we include \"危機対処\"? Probably not, because no mention of crisis, but mention of loss of performance. We don't have \"協力\" or \"overseas\". So the classification likely just 技術・開発.\n\nConfidence: high. Answer JSON:\n\n{\"exp_types\": [\"技術・開発\"], \"confidence\": \"high\"}\n\n",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:22:57.874503+00:00",
+ "timestamp_responded": "2026-10-25T11:22:59.181798+00:00"
+}

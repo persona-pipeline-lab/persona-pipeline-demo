@@ -1,0 +1,24 @@
+{
+ "job_id": "D02|C3|withdrawal|1",
+ "seq": 3,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "06150f41a6355b2f9dd82e39250b101af11a8e3671fb58ca9920ec93520abcef",
+ "prompt_sha256": "e2cb2ba483a20a729522cd1be37cc85f07497817363448e45c09b9fc192cf58b",
+ "raw_text": "{\"risk_orient\": 4, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to rate risk stance.\n\nThe description: \"市場成長率は高く、技術的優位性も残っているため、機会を逃すリスクを考慮すると継続が最優先です。投資に伴う資金負担は、経営の健全化と将来益への投資でカバーできると判断しました。数字管理体制を強化し、定期的な資金繰りレビューでリスクを可視化します。\"\n\nInterpretation: They prioritize continuous operation due to high market growth and technical advantage, consider the risk of missing opportunities. They think that financing burden can be covered by healthy management and future profit. They strengthen financial management and review cash flow to visualize risk.\n\nThis shows that they are focusing on opportunity, but also have risk management measures. So they are risk accepting but still conscious. The description emphasises \"機会を逃すリスクを考慮すると継続が最優先\" that's focusing on opportunity cost. They refer to covering cost and mitigating risk via management. So orientation: 4 (risk acceptance leaning) or maybe 3? They are not strongly risk-averse. They are risk-accepting to pursue opportunity. They also have control measures. So classification: 4.\n\nConfidence: high because straightforward. They clearly say risk of losing opportunity is high. They still propose risk control; thus risk acceptance leaning.\n\nSo output JSON: {\"risk_orient\": 4, \"confidence\":\"high\"}.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:01:12.865996+00:00",
+ "timestamp_responded": "2026-10-25T11:01:13.934224+00:00"
+}

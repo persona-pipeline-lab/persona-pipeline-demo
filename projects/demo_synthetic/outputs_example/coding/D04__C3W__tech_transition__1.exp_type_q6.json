@@ -1,0 +1,24 @@
+{
+ "job_id": "D04|C3W|tech_transition|1",
+ "seq": 103,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "037b38ab88f9a030d52815a2909cce1d3a796ddce08eef0cea8ed4ce09ee6e68",
+ "prompt_sha256": "15af0b64b45a10eaa9a90f436238079208ecadda3b3a4ebf0c6a187dd017f88a",
+ "raw_text": "{\"exp_types\": [\"その他\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to choose classifications that match the described experience: \"大手顧客へ手紙を続けて送ることで取引の継続を確保した経験がある。手紙の継続的問い合わせと事前の相手の声を読む姿勢が、提携交渉や顧客対応における重要な教訓となった。\" This is about maintaining a client relationship, sending letters repeatedly, ensuring continued transactions, negotiation. The categories given:\n\n- 「危機対処」（赤字・倒産危機・事故・不祥事・需要崩壊への対処）\n- 「技術・開発」（研究開発・製品開発・生産技術の経験）\n- 「海外」（海外駐在・海外事業の経験）\n- 「創業・立ち上げ」（創業・新事業や新会社の立ち上げ）\n- 「人・組織」（人事・労務・組織運営・師弟関係）\n- 「その他」（上記いずれにも当たらない。単独でのみ使用）\n\nThis experience is about client relationship and negotiation with a major customer. That is not specifically crisis management, not specifically tech or dev, not overseas, not startup, not specifically people/organization management? It involves communication but is more about relationship maintenance. Does any category match? \"人・組織\" includes organization operations, but it's about managing humans. But it's not about hiring or HR; it's about client relations. \"人・組織\" could include client relationship? It's about interpersonal relations in business context, considered part of organization and people management.\n\nBut the categories: \"人・組織\" covers \"人事・労務・組織運営・師弟関係\". It includes organization management, performance management, mentor-mentee. It might be borderline. The scenario is about external relationships, not internal org membership. It's not \"other\".\n\nWe need to pick \"人・組織\"? Could be that the experience is about dealing with clients, like relationship management, still under \"人・組織\"? Or maybe \"その他\" is default. The instructions: \"規則: 記述に明示された経験のみ拾う（推測しない）。外部知識を使わない。出力は次のJSONのみ\". So we just categorize what is explicitly described. The wording: \"提携交渉や顧客対応\". This is about negotiation with external partners. None of the categories specifically mention negotiation or external clients. \"人・組織\" is about humans within organization. But might include 'employer-employee' interactions. But it's about external individuals.\n\nGiven no category matches exactly, \"その他\" is selected. Let's rationally define: It's about external customers, not about crisis, tech, overseas, startup, or organization. So \"その他\" is appropriate. Also maybe \"人・組織\" but it likely refers to internal. The instructions say \"単独でのみ使用\" for \"その他\", meaning only if it doesn't fit in other categories. Since it doesn't fit, \"その他\" is correct. Confidence high. We output JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:26:45.835392+00:00",
+ "timestamp_responded": "2026-10-25T11:26:47.880418+00:00"
+}

@@ -1,0 +1,24 @@
+{
+ "job_id": "D01|C3-mixed|international|1",
+ "seq": 121,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "15ac2b840cffb4275953b5ae6bb5312b6f68832fe453305071988fef70d182f1",
+ "prompt_sha256": "e004cd16780e90be20126f5db800ead204126523cf6dd48c33e7cb0c40720f79",
+ "raw_text": "{\"time_horizon\": 4, \"confidence\":\"high\"}",
+ "reasoning_text": "We need to classify time horizon. The reasoning: long years of experience; large investment, local production, quality and employee pride as competitive advantage; growing markets 10%; risk of losing customers if not invest; so they invest now. The focus: long-term growth and cost advantage, protecting position. The reasoning involves medium to long-term? The investment to maintain quality advantage, presumably future. The market growth 10% indicates long-term opportunity. They decide invest now, long-term benefit. This likely time horizon 4 or 5? 4 \"long-term inclined\" 5 = long-term (5-10+ years). They talk about 'long期' ? They say \"長期\" in reasoning? Actually the first sentence: \"現地での長年の経験から、製品の品質と従業員の誇りは競争力の源泉であることを学んだ.\" That's about long年経験. But the decision is to invest to maintain quality and cost; risk of losing customers in future. The decision is more long-term strategy. Likely 4. Confidence: high. Output JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:28:03.675388+00:00",
+ "timestamp_responded": "2026-10-25T11:28:04.425633+00:00"
+}

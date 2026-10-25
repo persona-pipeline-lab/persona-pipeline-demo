@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot05|C0|international|2",
+ "seq": 58,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "37cbf2aa96f13c097441a71605e42ae97e5fc68982ab64b2b45c17e7f88f7a46",
+ "prompt_sha256": "598e5a6451b9053944ed87479d4951b24462bbb8c30dd13dadffd69508890138",
+ "raw_text": "{\"risk_orient\": 2, \"confidence\": \"medium\"}",
+ "reasoning_text": "We need to assess the risk orientation based on the reasoning. The statement: \"市場は年率10％で成長…持続的にビジネスを行う意義は高い。投資規模が売上の30％に相当し、赤字継続は危険なので投資負担を分担できるパートナーとの提携を選択しました。パートナーは既存の生産設備を活用し、規制や通貨リスク低減にも協力します。さらに従業員と地域社会への影響を最小化しつつ、ブランド価値を維持できます。\"\n\nThey emphasize growth, risk of continued losses, choose partner to share investment burden, reduce risk. They are risk-averse? They want to avoid red-squared losses, looking for partnership to spread risk, minimize negative impact on employees/region. They value brand value, risk mitigation. It's risk-averse likely, not about seizing opportunities despite risk. They mention \"red risk low.\" They see opportunity, but they focus on risk mitigation. So rating 1 or 2. They seem to have moderate risk aversion: they choose partnership to avoid bearing full risk. They also see a high growth potential but choose to mitigate risk. So maybe 2 (risk-averse leaning). Because they are careful about risk, but not extreme. Score: 2. Confidence medium? The reasoning is clear, but maybe interpretation. Let's output JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:23:52.274443+00:00",
+ "timestamp_responded": "2026-10-25T11:23:53.255655+00:00"
+}

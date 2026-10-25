@@ -1,0 +1,24 @@
+{
+ "job_id": "D06|C3|international|1",
+ "seq": 23,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "58bc39df6f44f2e5600ec4b5287b4f49e26dc76c086625ca35eeafb2b6c14095",
+ "prompt_sha256": "a6a172620080b242c37259a12fdad6976ec173dffc555afe966323dd331eebcc",
+ "raw_text": "{\"time_horizon\": 4, \"confidence\": \"medium\"}",
+ "reasoning_text": "We need to assign a time horizon 1-5. Let's analyze the text: \"現地での大規模投資が経営負担を大きくし、同時に社員・地域への影響が大きい。提携により資本とリスクを分担しつつ、既存の製品優位性を活かした共同開発や販売網を拡大できる。さらに、市場全体の成長性を維持し、ブランドの信頼を損なわない方向で進める。\"\n\nIt emphasizes risk sharing, leveraging existing strengths, expanding distribution network, maintaining growth potential, protecting brand. It seems to be a strategic alliance to reduce capital expense, long-term? But the mentioned benefits include \"市場全体の成長性を維持\" implies long-term maintenance of growth. They must consider impact on employees and community. This speaks to sustainability and long-term brand. That suggests a long-term horizon beyond short to mid. Likely around 4 or 5. Let's think: They are concerned about large investment burden and risks to employees and region. They find partnership beneficial to split capital and risk, but still invest in joint development and sales. Protective for brand. This is likely a medium to long-term decision. The mention of \"market overall growth\" and \"brand trust\" suggests beyond short-term but still could be 3? The eventual objective is growth and brand, so long-term? The question: do they value long-term (5)-10 years or not? The narrative says \"市場全体の成長性を維持\" \"大規模投資が経営負担を大きくし\" \"提携で資本とリスクを分担\". This looks like a strategy for sustainability and long-term growth. So rating 4 or 5. Which one? Because no mention of 10+ years, but \"market is expected to maintain\" could be long term. Might be 4. Let's output time_horizon 4. Confidence medium? It's fairly certain. We'll output.\n\n",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:21:41.310082+00:00",
+ "timestamp_responded": "2026-10-25T11:21:42.646372+00:00"
+}

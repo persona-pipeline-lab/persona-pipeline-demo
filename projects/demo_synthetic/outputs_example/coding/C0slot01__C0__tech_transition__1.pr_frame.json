@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot01|C0|tech_transition|1",
+ "seq": 61,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "be6c38278ced2f50535acd37c656cd016cd42bd1afb0be8f0b4e4de7d07cb5f3",
+ "prompt_sha256": "6053feedcd2a3d9bac34bbee78783402f810c786efe92a39e416ccdee3616cc7",
+ "raw_text": "{\"pr_frame\":\"技術\",\"confidence\":\"high\"}",
+ "reasoning_text": "We need to parse the short description: \"主要問題は新方式の市場シェア拡大に伴い、既存技術の競争力が低下し顧客離れが生じている点です。\"\n\nWe have to choose a dominating problem frame among \"財務収益\", \"市場競争\", \"技術\", \"組織ステークホルダー\", or \"複数拮抗\".\n\nLet's examine: The statement: \"主要問題は新方式の市場シェア拡大に伴い、既存技術の競争力が低下し顧客離れが生じている点です.\"\n\nCore? \"市場シェア拡大\" implies market competition aspects: increasing share, but incumbent technology losing competitiveness leads to customer churn.\n\nThus core problem: market competition (市場競争) or technology? There's mention of existing technology's competitiveness decreasing.\n\nWhich is primary? It says \"新方式の市場シェア拡大に伴い、既存技術の競争力が低下し顧客離れ\". The core appears to be competition in market leading to tech obsolescence, resulting in lost customers. Might be both technology and market, but \"市場シェア拡大\" as driver and resulting in tech losing competitiveness. The problem centers around market competition because market share growth altering competitive dynamics. However the direct problem may be technological competitiveness. But the phrase says \"主要問題 ... 市場シェア拡大に伴い、既存技術の競争力が低下\" So root cause is market share expansion of new method, which affects existing tech's competitiveness. The key issue is technology losing competitiveness due to market shift. But the core issue is that the new method is capturing market share leading to competitor's tech failure. Might be considered \"市場競争\" because it's about market share. Yet they mention 既存技術競争力低下, which is technology. Which is weighed more? The phrase says \"主要問題は...\". Could be that primary problem is technology: the existing technology is no longer competitive, leading to customer churn. However also mention market share expansion—context.\n\nWhich frame is dominant? Based purely on wording: \"市場シェア拡大\" indicates market forces. The core problem: \"既存技術の競争力が低下し顧客離れ\". The central problem is that technology is losing competitiveness. That seems like a technology problem. But is the core issue \"既存技術の競争力が低下\"? That's technological. The market share note might be context.\n\nTherefore I think the best classification is \"技術\". Because the message states that because of new method gaining market share, existing tech has become less competitive and leading to customer loss – the fundamental problem is technological competitiveness.\n\nThus output: {\"pr_frame\":\"技術\",\"confidence\":\"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:24:05.778477+00:00",
+ "timestamp_responded": "2026-10-25T11:24:07.609188+00:00"
+}

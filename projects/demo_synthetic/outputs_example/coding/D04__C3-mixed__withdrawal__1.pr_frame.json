@@ -1,0 +1,24 @@
+{
+ "job_id": "D04|C3-mixed|withdrawal|1",
+ "seq": 115,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "e85363fe0d7810d0fbbbf97e7f5809e9c6a9cb4e243408f331790becfc8d1df6",
+ "prompt_sha256": "71883efe2e2948ac1ebff104353f8f77e68a3847b916c2a568cd9841ec1b3763",
+ "raw_text": "{\"pr_frame\":\"組織ステークホルダー\",\"confidence\":\"high\"}",
+ "reasoning_text": "We have prompt: It's asking: answerer gave short description: \"主な課題は、組織・ステークホルダーへの影響とそれが長期的な事業価値に与えるリスクである。\"\n\nWe need to pick 1 of the main problem frames: \"財務収益\", \"市場競争\", \"技術\", \"組織ステークホルダー\", or \"複数拮抗\".\n\nWe must decide which one is the core. The description mentions \"組織・ステークホルダーへの影響\" and \"長期的な事業価値に与えるリスク\". That's about organizational and stakeholder impact and long-term business value risk. That seems to align with \"組織ステークホルダー\". So likely that.\n\nConfidence: high.\n\nThus output JSON: {\"pr_frame\":\"組織ステークホルダー\",\"confidence\":\"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:27:33.944040+00:00",
+ "timestamp_responded": "2026-10-25T11:27:34.598598+00:00"
+}

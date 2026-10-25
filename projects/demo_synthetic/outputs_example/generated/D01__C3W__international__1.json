@@ -1,0 +1,32 @@
+{
+ "job_id": "D01|C3W|international|1",
+ "seq": 85,
+ "person_id": "D01",
+ "condition": "C3W",
+ "scenario": "international",
+ "rep": 1,
+ "model": "gpt-oss-20b",
+ "sent_sha256": "a3ca64a646244bf34ed3888b0c6156c13a0cddf29b6892a649ad0b1bb8a3a803",
+ "sent_file": "sent/D01__C3W__international__1.txt",
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 8192,
+  "seed": 100001,
+  "reasoning_effort": "medium"
+ },
+ "status": "ok",
+ "error_message": "",
+ "response_text": "{\"q1\":[\"B\",\"A\",\"C\"],\"q2_category\":1,\"q2_text\":\"数値的な損失と投資負担が大きく、現地事業を継続するかどうかの決断は主に財務・収益面の問題だと捉える。\",\"q3\":\"提携\",\"q4_text\":\"提携により投資リスクを共有し、現地の規制や通貨変動に対する耐性を高めつつ、ブランドと雇用を維持できる。政府支援を受けた大型投資をパートナーに委任することで、コスト削減と市場参入力の両立を図れる。\",\"q5_ranking\":[\"従業員\",\"地域社会\",\"顧客\",\"取引先\",\"株主\"],\"q6_text\":\"営業として顧客の声を最後まで聞く重要性を学び、売上・在庫管理に注力したこと。経営危機を経験し、数字を恐れずに扱えるようになった経験が今回の判断に大きく影響した。\"}",
+ "reasoning_text": "We need to answer the six questions based on the autobiography and given context. Must only use information from autobiographical text; no external knowledge. Need to answer Q1: choose 3 info from A-H to confirm first. Based on autobiography: values emphasise people, customers, numbers as aggregated, risk tolerance, etc. We must select information that would help decide. Likely want to confirm market growth (A), financial burden (B), employee region (C) or brand (G). We choose priority: B (financial burden) because central, A (market growth) to weigh opportunity, C (employee involvement) because significance of impact on major part of employees. But Q1 asks confirm information in order priority.\n\nQ2: Determine problem classification. Based on situation: It's a combination, but main is financial and investment burden + risk. Could be 1 (財務・収益の問題). But other options: 2 (市場・競争の問題). But the autobiography emphasises being aware of finances but previously ignoring them. He eventually realized importance. So he might see this as a financial problem. Let's choose 1.\n\nQ3: Decision: Between withdrawal, reduction, continued investment, alliance. The autobiography emphasises that you can continue with investment or alliance maybe. But need to consider self: remembered that risk moves to staff and brand. He learns that numbers are important and not to ignore but to manage. He also values employees and region locks. He may choose to continue investment because already invested, risk of losing brand and reputation. But the market growth is still high. So he would prefer either \"継続投資\" or \"提携\". The scenario may prefer alliance with local partner to share investment and political risk. But from autobiography: He previously dealt with employees, but he fears losing job. He might prefer pledging a partnership to reduce burden while maintaining presence. Let's pick \"提携\" as decision.\n\nQ4: Reason: He will explain that alliance would share financial burden, mitigate regulatory risk, keep local employment, maintain brand trust, and allow him to leverage technological advantage while learning about local conditions.\n\nQ5: Ranking stakeholders: He values employees heavily, also region society, customers, supply chain/partners, shareholders. He emphasised that employees are 18% of workforce. He also emphasised that brand impacts other markets, but less than employees. Let's produce order: \"従業員\", \"地域社会\", \"顧客\", \"取引先\", \"株主\". But also maybe customers are more valuable. But choose: employees > region society > customers > 取引先 > 株主. But maybe he values shareholders also but after others.\n\nAlternatively: He may value customers first due to business. However in autobiography: He emphasised \"客の顔を覚えろ\" and \"数字を覚えろ\". He also value people. He also cared about region. So I'd rank: \"従業員\", \"地域社会\", \"顧客\", \"取引先\", \"株主\".\n\nQ6: Past experience that influences decision. He emphasised that he was a salesman; used to listen to customers, and his senior had changed his perspective; being forced to draw financial statements. He realized importance of numbers after crisis. So he may cite experience of managing depletion of inventory, and crisis with B's bankruptcy. He gained awareness of financial risk and overcame fear. So Q6 answer: \"販売店への訪問で顧客の話を最後まで聞く価値を学び、また売上と在庫数を管理することが重要だと実感した。経営危機に直面した際に数字を恐れず扱えるようになったことが、今回の判断に影響した。\"\n\nWe need in Japanese. Must be in JSON, keys: q1, q2_category, q2_text, q3, q4_text, q5_ranking, q6_text.\n\nMake sure q1 list: \"B\",\"A\",\"C\" ordering: we might put B first. Then A. Then C.\n\nCheck constraints: q1 three distinct A~H exactly 3. Order.\n\nq2_category: integer 1.\n\nq3: \"提携\" string.\n\nAll good.\n\nConstruct JSON correctly.\n\nLet's format.\n\n",
+ "finish_reason": "stop",
+ "actual_model": "gpt-oss-20b",
+ "response_id": "chatcmpl-aecf151033cdf901",
+ "usage": {
+  "prompt_tokens": 4019,
+  "completion_tokens": 1151
+ },
+ "endpoint_kind": "local",
+ "timestamp_requested": "2026-10-25T11:15:36.501168+00:00",
+ "timestamp_responded": "2026-10-25T11:15:39.869067+00:00"
+}

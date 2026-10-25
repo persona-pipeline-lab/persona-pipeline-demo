@@ -1,0 +1,24 @@
+{
+ "job_id": "D02|C3-mixed|international|1",
+ "seq": 123,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "ae00454a91309413126f0e4954cace4d416521cb64c0c26aa6837acc9be4f0d2",
+ "prompt_sha256": "e524300c6d8302edbd6dba0e8de23aefeebe9bf7ff28e334ee43f3a198fd1aa1",
+ "raw_text": "{\"time_horizon\": 5, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to judge the time horizon based on the statement. The description: \"現地の市場は成長が続くし、我々の品質・耐久性が差別化要因となる。従業員と地域社会に安定した雇用を提供し、ブランドの信頼を守るためには現地生産体制の拡充が不可欠だ。短期の赤字は投資回収期間を踏まえて許容でき、優先的に資金を確保して投資を実施する計画を立てるべきだ。提携・縮小よりも継続投資で市場シェアを守る方がリスクを低減する。\"\n\nThey talk about investment in local production, accept short-term deficits, rely on investment recovery period, continuing to invest to maintain market share. This is focusing on long-term growth and survival, but also acknowledges short-term deficits. The emphasis: long-term sustainability, maintaining brand trust, local employment. This seems like long-term horizon. Possibly 5 (5-10+ years). The investor mind says \"short-term deficits acceptable for long-term payback\". So time horizon is 5.\n\nConfidence: seems high.\n\nHence JSON: {\"time_horizon\":5,\"confidence\":\"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:28:10.709398+00:00",
+ "timestamp_responded": "2026-10-25T11:28:11.591222+00:00"
+}

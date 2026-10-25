@@ -1,0 +1,24 @@
+{
+ "job_id": "D04|C3W|tech_transition|1",
+ "seq": 103,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "1deb905cabf89538afa5534e35a51f235218c433912923697501608c1e6b33fb",
+ "prompt_sha256": "a067b863c4b66dc2d8a12b8ca869ef7d81190b0f53fd89ea989d340ecd899928",
+ "raw_text": "{\"pr_frame\":\"市場競争\",\"confidence\":\"high\"}",
+ "reasoning_text": "We need to classify the main problem frame among 5 categories. The text: \"市場・競争の問題で、主力技術が陳腐化しつつあり、顧客の移行と競合の技術進化が収益圧迫を招いている。\" This indicates main issues: market competition, technology obsolescence, customers moving to competitors, technology evolution causing revenue pressure. So which frame? The options: \"財務収益\" (financial profit), \"市場競争\" (market competition), \"技術\" (technology), \"組織ステークホルダー\", \"複数拮抗\".\n\nWe must pick one. The core is the market competition, as the text begins \"市場・競争の問題\". Also references to technology obsolescence and competitor tech improvements. Which is the main? The description says \"market competition issues\" but also that the technology is becoming obsolete. Is the main problem about tech or competition? The phrase \"市場・競争の問題で\" indicates competition.\n\nThe question: \"記述だけを根拠に、主たる問題フレームを1つ選んでください。\" So we choose the predominant frame. It might be \"市場競争\". Even though technology is a factor, it's a part of the competition. So categorize as \"市場競争\".\n\nConfidence we are quite certain: \"high\".\n\nReturn JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:26:43.108350+00:00",
+ "timestamp_responded": "2026-10-25T11:26:44.038466+00:00"
+}

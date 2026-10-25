@@ -1,0 +1,24 @@
+{
+ "job_id": "D06|C3-mixed|international|1",
+ "seq": 131,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "42966f05a13c7d5e3ed1c2b0da567b75d84497113f0f2add8c15c38db755bcc3",
+ "prompt_sha256": "be696992b3147f3f47eb20b48c59168aa1d93a6eded8917cddf9c0000f1f2997",
+ "raw_text": "{\"exp_types\": [\"危機対処\",\"人・組織\"], \"confidence\":\"high\"}",
+ "reasoning_text": "We must pick types from the six categories based on disclosed experience. The text: \"再建プロジェクトで大規模投資と人材育成を両立し、従業員の安全と品質向上を実現した経験が、今回の投資判断に影響しています。\"\n\nThey mention a \"再建プロジェクト\" (reconstruction/rebuilding project). This could be crisis management? Rebuilding after some failure, like bankruptcy? But not explicitly stated. They talk about \"大規模投資と人材育成を両立\" (combining large-scale investment and human resource development). \"従業員の安全と品質向上を実現\" (safe and quality improvement). So categories potentially: \"危機対処\" if it's a crisis of some sort (rebuilding). \"技術・開発\"? Not specifically development of tech. \"海外\"? No. \"創業・立ち上げ\"? Not described. \"人・組織\" - yes, human resource development, employee safety, quality improvement, suggests organizational issues, maybe employee training. \"その他\" maybe not necessary.\n\nWe must rely on explicit mention. The experience includes \"再建プロジェクト\" (reconstruction). It doesn't explicitly say it's a crisis or default. But \"再建\" implies possibly a financial crisis or restructuring. But hmm. \"大規模投資\" could be a capital investment. \"人材育成\" pertains to HR.\n\nThus we may include \"危機対処\" if we interpret \"reconstruction\" as crisis, but maybe too far. However, \"reconstruction\" can be a process after crisis. \"再建プロジェクト\" suggests recovery after a crisis, maybe a factory or system. The question: \"判断に最も影響した過去経験\" So the experience is that project. The categories: the categories include \"危機対処\" for \"赤字・倒産危機・事故・不祥事・需要崩壊への対処\". \"再建プロジェクト\" presumably addresses crisis. So likely includes \"危機対処\".\n\nAlso \"人・組織\" because humans, safety and quality.\n\nThus two categories: 危機対処, 人・組織. Confidence: high. Ok.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:28:40.859970+00:00",
+ "timestamp_responded": "2026-10-25T11:28:42.354500+00:00"
+}

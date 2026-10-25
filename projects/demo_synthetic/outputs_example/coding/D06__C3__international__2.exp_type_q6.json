@@ -1,0 +1,24 @@
+{
+ "job_id": "D06|C3|international|2",
+ "seq": 24,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "69e5a2f2c9165bbf9ae62ec48d1395664b5b1090a54026bc234e0f1949b209bc",
+ "prompt_sha256": "0649913e240be706ee206c9ad63ff6c8cb098fa8efa600d1948cc04ae11bbed2",
+ "raw_text": "{\"exp_types\": [\"人・組織\"], \"confidence\":\"high\"}",
+ "reasoning_text": "We need to identify the experience types mentioned in the description. The description: \n\"父の「人の仕事をばかにするな」という言葉と、最初の上司から教わった「手を止めて聞く」姿勢が、従業員と顧客を最優先しつつ、既存事業を継続する決断に直接影響した。\"\n\nThe experience types: It mentions father's saying about people work. This is a value suggestion but not experience type. It mentions first boss taught \"stop and listen\". These are experiences of being taught a skill/attitude. From classification: categories are \"危機対処\", \"技術・開発\", \"海外\", \"創業・立ち上げ\", \"人・組織\", \"その他\".\n\nWhich categories apply? The experiences mentioned: father, first boss teaching. These are experiences in human relations / organization culture. The phrase \"人・組織\" might fit \"メンタリング / 上司から学んだ姿勢\" which relates to mentorship, leadership, and organizational behavior. So \"人・組織\" is a category.\n\nDoes it also mention \"創業・立ち上げ\"? The effect was decision to continue existing business. That's a business decision, not necessarily start-up. So probably not \"創業・立ち上げ\".\n\nNo mention of crisis. No mention of overseas or tech.\n\nSo \"人・組織\" only. Confidence high.\n\nWe produce JSON: {\"exp_types\": [\"人・組織\"], \"confidence\":\"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:21:45.895134+00:00",
+ "timestamp_responded": "2026-10-25T11:21:46.946542+00:00"
+}

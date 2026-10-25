@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot06|C0|international|1",
+ "seq": 59,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "c58744712de72941eb38680967376ba5b1c72059d25bfb22903bf9082eaf7b7c",
+ "prompt_sha256": "5ad97eb81f4c8972a63733d65eda3eea01bf53165b339c48f97544ca6c5439f8",
+ "raw_text": "{\"exp_types\": [\"海外\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to parse the answer: \"以前、国外事業の再編で現地パートナーとの合弁を結び、投資コストを低減し市場シェアを確保した経験があります。これを今回の判断に活かしています.\"\n\nWe need to pick all relevant categories from the six types: \"危機対処\", \"技術・開発\", \"海外\", \"創業・立ち上げ\", \"人・組織\", \"その他\". The statement: \"国外事業の再編で現地パートナーとの合弁を結び、投資コストを低減し市場シェアを確保した経験\". That is overseas business (overseas). Also, it's a joint venture, which is an organizational arrangement, might be \"人・組織\" (organization). However the rule states: only explicit stated experiences. Does it mention \"人事・労務・組織運営・師弟関係\"? It mentions \"合弁\" and \"現地パートナー\" which is partner, so could be organization-level. But classification \"人・組織\" might require direct mention of people or operational aspects. The phrase \"現地パートナーとの合弁\" is about partnership arrangement. This is perhaps \"海外\" is certainly indicated. The others? Could also be seen as \"創業・立ち上げ\"? It says \"再編で合弁を結び\". Not \"立ち上げ\". So not that. \"技術・開発\" not stated. \"危機対処\" not indicated. \"その他\" only if none of the above. So at least \"海外\" must be selected. Possibly also \"人・組織\"? The question: are we supposed to pick all applicable categories? Yes, \"該当するものすべて\". So if we interpret \"合弁\" as \"人・組織\" (organizational relationship between partner companies). Does that category cover partnership formation? The classification says: \"人・組織（人事・労務・組織運営・師弟関係）\". That includes organizational operation. A joint venture could be considered organizational arrangement. But I'm not fully sure if it's explicitly an \"organization\" in the sense of internal org. Might be ambiguous. The content doesn't mention people matters like hiring, training, etc. It says \"海外事業の再編で現地パートナーとの合弁を結び\". It's about a partnership with a local partner. That's more a business entity partnership, maybe in the realm of \"海外\". Could also be \"その他\" but we have \"海外\". So output should include at least \"海外\". Might also include \"人・組織\" if we consider partner gives organizational structure. However, we cannot guess beyond classification; we should only choose ones that are explicitly indicated. The phrase \"現地パートナーとの合弁\". It's about a joint venture with local partner, effectively an organizational arrangement. So \"人・組織\" could be considered. But rule: \"規則: 記述に明示された経験のみ拾う（推測しない）,\" we must not infer. The phrase \"組織運営\" or \"人事\" is not explicitly used. But \"合弁\" could be considered an organizational development activity. But that's somewhat inferring. The safe route: include only \"海外\". The question: \"言及された経験の型\" - experience types mentioned. The text mentions overseas business reorganization, establishing joint venture with local partner. That could be construed as \"海外\" and \"創業・立ち上げ\"? But it's not start of a new venture but a reorganization. So probably not \"創業・立ち上げ\". And \"技術・開発\" not mentioned. Crisis? no. People? not mentioned per se. So only \"海外\". I'll output that.\n\nConfidence: high.\n\nSo JSON: {\"exp_types\": [\"海外\"], \"confidence\": \"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:23:59.112457+00:00",
+ "timestamp_responded": "2026-10-25T11:24:01.656018+00:00"
+}

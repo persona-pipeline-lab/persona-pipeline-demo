@@ -1,0 +1,32 @@
+{
+ "job_id": "D04|C3-mixed|international|1",
+ "seq": 127,
+ "person_id": "D04",
+ "condition": "C3-mixed",
+ "scenario": "international",
+ "rep": 1,
+ "model": "gpt-oss-20b",
+ "sent_sha256": "fc1893622d576e2da62dd905eb82f220750ce28188591857af673a530ac8b3c8",
+ "sent_file": "sent/D04__C3-mixed__international__1.txt",
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 8192,
+  "seed": 100001,
+  "reasoning_effort": "medium"
+ },
+ "status": "ok",
+ "error_message": "",
+ "response_text": "{\n  \"q1\": [\"C\",\"E\",\"H\"],\n  \"q2_category\": 2,\n  \"q2_text\": \"市場の競争力が大きく損なわれるという問題が最優先です。規制強化と規模競争と相まって、現地での勢力を維持するのが困難になった状況を捉えます。\",\n  \"q3\": \"継続投資\",\n  \"q4_text\": \"従業員と地域社会に対して責任を持ちつつ、ブランドと顧客の信頼を守るために投資を継続する方針です。大規模な投資は短期的に赤字を招くものの、市場の成長を失わずに将来の収益を確保する唯一の手段だと判断しました。\",\n  \"q5_ranking\": [\"従業員\",\"地域社会\",\"顧客\",\"取引先\",\"株主\"],\n  \"q6_text\": \"従業員の声に耳を傾け、彼らの信頼を得る経験が最も影響した。上司が部下の話を手で止めて聞く姿勢を教えてくれ、私自身も謝罪し再び報告を呼び戻したことで、関係を失わずにむしろ強化できたことが決断に結びつきました。\"\n}",
+ "reasoning_text": "We must answer based on autobiography. We cannot bring external knowledge. We interpret situation using author's values. Let's recall key points: He values listening, asks questions, respects employees, emphasizes long-term relationships, prioritizes preserving relationships, region. He also values measuring results, making careful decisions, waiting to confirm. He also values educational, not wasted resources. He gives example of not abandoning employees. He values brand trust.\n\nGiven situation: overseas business suffering due to regulation and currency, leads to loss. Needed large investment.\n\nWe need to decide rest. Q1: pick 3 info to confirm. Based on autobiography: He values employees, brand, heritage, staying details. He will likely confirm E (competitive action: competitors product, government support), C (employees), G or H maybe. But initial confirmation: (C) employees, (E) competitors, (H) social impact. But we need order confirming. Possibly confirm employees first because risk of job loss. Then market and competition E. Then social impact H. But maybe confirm finance C? The first priority may be verifying (C) because quality of workforce moves to next stage. According to his narrative: \"関係を生む...\" He values employees. So Q1: [\"C\",\"E\",\"H\"].\n\nQ2: What problem main categories? He sees the root as organizational stakeholders? Or as market/competition because market is grown but competition intensifying. But he values confidence. The decision: The key is the external pressure from regulation and competition, causing financial loss. He sees it as market/competition problem. But we can choose 2: The fundamental problem is market/competition, because regulatory changes will modify competition. However, his decision to keep investment indicates that he sees long-term currency and brand concerns. But main problem: Market & competition. So Q2: 2. Provide: \"競合が価格攻勢を耐え、規制強化により市場シェアが脅かされている.\" We'll put.\n\nQ3: Choose among \"継続投資\". Because his narrative about brand continuity, employee concern.\n\nQ4: Provide reason: explanation: he says he's driven by long-term value and relationships. The investment keeps local jobs, brand trust, and remembers earlier apprenticeship. He looked at comparison: heavy weight on employees and brand. He will choose to keep but invest. Critical: 3-5 sentences.\n\nQ5: Ranking of stakeholders. He values employees highly, also region society, customers, suppliers, shareholders. He above portion: He prioritized region. He tied to employees. He chooses: \"従業員\", \"地域社会\", \"顧客\", \"取引先\", \"株主\" maybe. But how about shareholders: he acknowledges but he might put lower due to long-term orientation? He invests for brand and trust, which may affect shareholders indirectly, but more immediate is employees and region. So maybe ranking: \"従業員\",\"地域社会\",\"顧客\",\"取引先\",\"株主\".\n\nWe need to reflect his viewpoint: He values relationships, brand trust, then employees. He might rank: \"従業員\", \"地域社会\", \"顧客\", \"取引先\", \"株主\". That seems plausible.\n\nQ6: Past experience influences. He had experience as manager caring about employee's speech, not cutting off, building trust, also his personal experience as this story about leaving and being visited by employees. He had example of when he apologized to subordinates and regained trust. He has a prior experience of losing affection for employees due to not listening. He will cite that: He overcame by listening to employees and forming trust. So answer: \"従業員に対する信頼が何より重要だと教わった、上司の姿勢や先輩との関係で培った。\"\n\nHe also had earlier example of father: He deals with risk? But we can write: \"従業員への対応が最重要だと学んだ経験から...\". We'll produce.\n\nNow produce JSON.",
+ "finish_reason": "stop",
+ "actual_model": "gpt-oss-20b",
+ "response_id": "chatcmpl-8a0ebc94ec74809a",
+ "usage": {
+  "prompt_tokens": 4064,
+  "completion_tokens": 1172
+ },
+ "endpoint_kind": "local",
+ "timestamp_requested": "2026-10-25T11:18:56.949893+00:00",
+ "timestamp_responded": "2026-10-25T11:19:00.515365+00:00"
+}

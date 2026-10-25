@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot06|C0|international|2",
+ "seq": 60,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "37cbf2aa96f13c097441a71605e42ae97e5fc68982ab64b2b45c17e7f88f7a46",
+ "prompt_sha256": "598e5a6451b9053944ed87479d4951b24462bbb8c30dd13dadffd69508890138",
+ "raw_text": "{\"risk_orient\": 2, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to evaluate risk orientation based solely on the reasoning text. The text: \"市場は年率10％で成長を続けているため、持続的にビジネスを行う意義は高い。投資規模が売上の30％に相当し、赤字継続は危険なので投資負担を分担できるパートナーとの提携を選択しました。パートナーは既存の生産設備を活用し、規制や通貨リスク低減にも協力します。さらに従業員と地域社会への影響を最小化しつつ、ブランド価値を維持できます。\"\n\nWe judge risk orientation: They are risk-averse: They want to avoid loss; They choose partner to split investment; concerned about red-dash. They mention risk reduction. So risk orientation ~ 2? \"投資負担を分担できるパートナーとの提携\": to reduce risk; they talk about brand value, policy etc. So risk-aversion but still some acceptance of growth. There's some risk acceptance due to growth.\n\nScale: 1 strongly risk-averse; 2 risk-averse. 3 neutral. They specifically avoid loss.\n\nThus rating 2.\n\nConfidence? High? The text is clear about avoiding loss. So high.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:24:02.204985+00:00",
+ "timestamp_responded": "2026-10-25T11:24:03.105670+00:00"
+}

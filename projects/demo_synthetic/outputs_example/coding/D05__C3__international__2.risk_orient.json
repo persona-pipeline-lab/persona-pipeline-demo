@@ -1,0 +1,24 @@
+{
+ "job_id": "D05|C3|international|2",
+ "seq": 22,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "8d3ef19c4c9483475312207fc4ccd01639c3f57387032a128af374bb079fd637",
+ "prompt_sha256": "822c906d51ef43ad3cb42bee6eadbe3359c7971ed7695d65c91a6d93d0fcb107",
+ "raw_text": "{\"risk_orient\": 2, \"confidence\":\"high\"}",
+ "reasoning_text": "We need to assess risk orientation based on reasoning. The passage: \"現地の規制と競争圧力に対処するためには、政府支援を受けた競合との協業やサプライチェーンの共有が有効。提携によって投資負担を分担し、ブランドと雇用を守ることができる。加えて、パートナー側の知識とネットワークを活かすことで、新規顧客獲得の鈍化にも対処できる。\"\n\nEssential point: deal with regulation and competition by partnering with government-backed competitors, sharing supply chain. This reduces investment burden, protects brand and jobs, leverage partner knowledge and network to deal with slowdown in new customer acquisition.\n\nThis reasoning is about a risk mitigation strategy: they are applying collaboration to share risk, relieve burden, use partner networks. They see it as a mitigation, not necessarily overly risk-averse, but also not risk-taking. They don't say \"we risk taking\" but \"we use partnerships to mitigate.\" They are basically risk-averse but not extreme: They see regulation and competition risk, and propose collaboration to reduce. That is risk avoidance. But they are trying to turn risk into opportunity with partner knowledge, but the main stance is about sharing risk. So I'd lean toward risk avoidance orientation: maybe 2? Let's examine scale: 1=強くリスク回避的 (loss/uncertainty avoidance main axis), 2=回避寄り, 3=中立・両論, 4=受容寄り, 5=強くリスク受容的.\n\nThis is: they want to mitigate risk by sharing costs, preserving jobs, brand, and leveraging network to handle slowdown. So it's risk-avoidant. They are not claiming it's purely risk-owning or high risk. They see it as reducing risk by partnering. They are not emphasizing chance of huge gain but mitigation. That is \"回避寄り = 2.\" Confidence: likely high. We'll output accordingly.\n\nReturn JSON:\n\n{\"risk_orient\": 2, \"confidence\":\"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:21:36.294227+00:00",
+ "timestamp_responded": "2026-10-25T11:21:37.651033+00:00"
+}

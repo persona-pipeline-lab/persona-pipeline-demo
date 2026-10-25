@@ -1,0 +1,24 @@
+{
+ "job_id": "D04|C3-mixed|international|1",
+ "seq": 127,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "742628c27806fd0650f2f5e3feacb00456235e0f38873a7693a1cdfa9fdf4b3c",
+ "prompt_sha256": "c17bd9047b8dcd95ab0bfb1e7d62605a7030bd4bf96fbed6970c35e5bcc50f7b",
+ "raw_text": "{\"exp_types\": [\"人・組織\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to classify experiences: \"人・組織\" is relevant: employee voice, trust, leadership listening, etc. That's about people and organization. No other categories. So output JSON: {\"exp_types\": [\"人・組織\"], \"confidence\": \"high\"} The instructions: Use only the types mentioned. The only one that applies is \"人・組織\". So final.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:28:27.521541+00:00",
+ "timestamp_responded": "2026-10-25T11:28:27.847781+00:00"
+}

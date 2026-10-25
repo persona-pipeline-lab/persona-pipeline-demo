@@ -1,0 +1,24 @@
+{
+ "job_id": "D01|C3-mixed|tech_transition|2",
+ "seq": 134,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "4a39377b4443c399fc7a3e6c241b328771dedb6729c533ef00d938796c97ac31",
+ "prompt_sha256": "238d7430bb0d84146ad9dfb1872287d9be3df40b3eab2bf25551f32a95a7b7b0",
+ "raw_text": "{\"exp_types\": [\"海外\", \"技術・開発\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to analyze the statement. It says:\n\n\"海外工場で現地技術者と共に暮らし、手順の理由を文書化し品質向上を達成した経験が、技術導入の際に相手の理由共有が不可欠であるという観点を育んだ。今回の提携判断では、パートナーが技術の根拠を明確に示し、我々と協働できるかどうかを最重要視した。この経験が判断に最も影響を与えた。\"\n\nKey experiences: Overseas factory, living with local technicians, documenting reasons for steps, leading to quality improvement. So it involves overseas. Also technical & development: product/process improvement, documenting reasons.\n\nIt references \"技術・開発\" because it's technology implementation, documentation, quality improvement.\n\nIt also references \"海外\" because it happened at overseas factory with local technicians.\n\n\"人・組織\" maybe because it involved living with staff? But the description focuses on technical documentation rather than personnel management. So it's less direct.\n\nThe question: \"言及された経験の型を次の6分類から該当するものすべて選んでください。\" So we must return all relevant categories.\n\nThus we choose: \"海外\" and \"技術・開発\".\n\nWe need JSON: {\"exp_types\": [\"海外\", \"技術・開発\"], \"confidence\": \"high\"} Probably because it's clear.\n\nDouble-check: The experience described: living in overseas factory, working with local technicians, documenting reasons, quality improvement. So both overseas location and technical process improvement.\n\nThus output: {\"exp_types\": [\"海外\", \"技術・開発\"], \"confidence\": \"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:28:50.536092+00:00",
+ "timestamp_responded": "2026-10-25T11:28:51.689762+00:00"
+}

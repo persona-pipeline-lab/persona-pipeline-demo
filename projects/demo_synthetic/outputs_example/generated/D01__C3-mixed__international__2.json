@@ -1,0 +1,32 @@
+{
+ "job_id": "D01|C3-mixed|international|2",
+ "seq": 122,
+ "person_id": "D01",
+ "condition": "C3-mixed",
+ "scenario": "international",
+ "rep": 2,
+ "model": "gpt-oss-20b",
+ "sent_sha256": "234b02fc93d27bfe7c618dcc55f2ea80801ebaaff400e9c9e475ab4116fb437f",
+ "sent_file": "sent/D01__C3-mixed__international__2.txt",
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 8192,
+  "seed": 100002,
+  "reasoning_effort": "medium"
+ },
+ "status": "ok",
+ "error_message": "",
+ "response_text": "{\"q1\":[\"E\",\"C\",\"H\"],\"q2_category\":4,\"q2_text\":\"組織・ステークホルダーの問題として、従業員・地域社会への影響とブランドへの波及が大きい点が最優先であると考える。\",\"q3\":\"提携\",\"q4_text\":\"市場の成長性とブランド価値は保ちつつ、投資負担と政府規制のリスクを分散できるため、提携を選択する。従業員と地域社会の雇用を守りつつ、技術優位性を補完できるパートナーを見極める。\",\"q5_ranking\":[\"従業員\",\"地域社会\",\"株主\",\"顧客\",\"取引先\"],\"q6_text\":\"海外現地工場での手順を緻密に文書化し、現地従業員と共に品質向上に取り組んだ経験。\"}",
+ "reasoning_text": "We need to answer based on autobiography only: focus on experience: salesperson, shop manager, ignoring numbers, trusting people, later learning numbers, focusing on customer face, maintaining reliability, need to understand why things done, technical reasoning. He values people, responsiveness, trust, empathy. At the end, he saw significance of measurement but not trusting numbers only.\n\nScenario: leading a large Japanese listed company. Overseas main business slump. There is need to decide: withdraw, shrink, continue investment, or partners.\n\nBased on autobiographical values: He would prefer action that preserves strategic position, invests in people and quality, but also not ignore financials. He experienced leading through crisis: didn't want to avoid financial monitoring; eventually became comfortable with numbers but didn't fear.\n\nGiven the options: The situation: high growth potential, technological advantage waning, strong brand guarantee, but risk of government support, local market. He would likely choose \"提携\": forming alliances to survive, reduce risk, leverage local knowledge. Why? He values understanding reasons (like he documented procedures for overseas production) and staying close to customers. He sees that withdrawing would harm local employment; continuing heavy investment may be too costly. So alliance can combine strengths, reduce investment burden, while preserving brand and markets. He would also be tempted to keep investment if profits.\n\nBut need to decide: Many options; my guess: choose \"提携\". Because he would balance investment and risk, respect employees, communicate.\n\nWe'll produce JSON accordingly.\n\nLet's produce output.",
+ "finish_reason": "stop",
+ "actual_model": "gpt-oss-20b",
+ "response_id": "chatcmpl-89e59963237471db",
+ "usage": {
+  "prompt_tokens": 4105,
+  "completion_tokens": 533
+ },
+ "endpoint_kind": "local",
+ "timestamp_requested": "2026-10-25T11:18:38.933364+00:00",
+ "timestamp_responded": "2026-10-25T11:18:40.555178+00:00"
+}

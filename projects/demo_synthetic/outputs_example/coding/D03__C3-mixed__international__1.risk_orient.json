@@ -1,0 +1,24 @@
+{
+ "job_id": "D03|C3-mixed|international|1",
+ "seq": 125,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "65d3eb3899b8d3e7b3b0563fd399810a6fc7649d3f01921642dc985776090894",
+ "prompt_sha256": "689e27101831e2dd3767c5ea56a89924b2f0e94d3e19e761385a930a39951106",
+ "raw_text": "{\"risk_orient\":4,\"confidence\":\"high\"}",
+ "reasoning_text": "We have a statement: \"長期成長性は確かに高い。従業員を失わずに生産体制を整えることで、ブランド価値と市場シェアを守る。リスクを分散させるために、現地パートナーとの協業を図りつつ、投資を進める。\"\n\nWe need to evaluate risk orientation: 1 strongly risk-averse, 2 risk-averse, 3 neutral, 4 risk-seeking acceptance, 5 strongly risk-seeking. It's about a reasoning: high long-term growth, protect employees and brand, and diversify risk by partnering locally while investing. The wording indicates a balance: they talk about protecting employees, brand, market share; they mitigate risk via partnership and distribute risk. So they are not extremely risk-averse (like \"we will not invest at all\"). They also are not strongly risk adopting: they talk about \"invest\" but with risk diversification. They protect existing assets (employees). They show moderate risk tolerance: plan to invest but also reduce risk. That feels like 3 or 4? They say \"リスクを分散させるために...投資を進める.\" That \"invest\" is positive but with risk mitigation. So they seem to have a risk acceptance orientation around 4? Because they want to invest for growth while mitigating risk. The risk tolerance is somewhat like \"we accept risk but do management\".\n\nBut it's about \"risk disposition\" rationality. Since they want to invest (approach) and also distribute risk. This suggests moderate to slightly risk-accepting. As the phrase says \"長期成長性は確かに高い\" indicating they see potential high returns. They also think to protect employees, brand, market share. They talk about risk diversification via partnerships. So the orientation: not risk-averse, more towards risk acceptance. I would rate 4.\n\nConfidence: moderate or high. The reasoning is direct. I'd choose \"medium\" maybe, but the statement is quite clear. I'll choose high since the information is definitely present: they've considered risk diversification and still invest. That signals risk acceptance.\n\nThus Output JSON: {\"risk_orient\":4,\"confidence\":\"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:28:16.653787+00:00",
+ "timestamp_responded": "2026-10-25T11:28:18.070343+00:00"
+}

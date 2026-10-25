@@ -1,0 +1,24 @@
+{
+ "job_id": "D03|C3W|international|2",
+ "seq": 90,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "8c564f638a19f05e8d1b7e5ad3014b70736b56cdfc2576753a107a7eb4224007",
+ "prompt_sha256": "08c3638898fe3d7a6547384de5bf56da4ff6c425dc5fbc1324e031342c4a6878",
+ "raw_text": "{\"pr_frame\":\"組織ステークホルダー\",\"confidence\":\"high\"}",
+ "reasoning_text": "We need to pick a main problem frame based on the brief description:\n\n\"主に従業員とステークホルダーへの影響が大きく、経営基盤の安定よりも人材確保・社会的責任が問題であると考える。\"\n\nThis hints to \"組織ステークホルダー\" because mentions employees, stakeholders, social responsibility. So the frame: \"組織ステークホルダー\". Confidence high.\n\nWe must output only JSON.\n\n",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:25:55.447201+00:00",
+ "timestamp_responded": "2026-10-25T11:25:55.840653+00:00"
+}

@@ -1,0 +1,24 @@
+{
+ "job_id": "D06|C3W|withdrawal|1",
+ "seq": 83,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "61bc05323d72baa58640efb23925652aebbf7ef72e15d665ec465430d8fa7d75",
+ "prompt_sha256": "4fba9b08dc77f70fc3ba4b84ce45ce81d9f47ca7e99fa6793ebe50d088d36bcc",
+ "raw_text": "{\"risk_orient\": 4, \"confidence\": \"high\"}",
+ "reasoning_text": "We have to evaluate risk orientation based on statement. The statement expresses: \"市場は年成長12 %と高く、技術優位性も残っている。加えて、事故以降の安全投資が顧客と地域の信頼を取り戻し、将来の成長を支える。短期的な赤字を受け入れ、全体としての利益改善を図るのが合理的だ。\"\n\nWe interpret: The writer emphasizing high growth, tech advantage, returning trust, and rational to accept short-term losses to improve overall profits. That seems risk accepting: they see upside potential outweighing losses. They emphasize growth and opportunity. They accept short-term losses as rational. This implies risk orientation 4-5. Possibly 5? Because \"短期的な赤字を受け入れ\" indicates willingness to take losses for future. They mention \"合理的\" and \"将来の成長\". Risk acceptance. However guidelines: Strong risk acceptance 5 means even if uncertain, taking opportunities. Here they see opportunity but also rely on favorable conditions. There's confidence. So risk_orient maybe 4. Confidence medium? Maybe high because they articulate reasons. I'll set risk_orient 4, confidence high. Output JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:25:24.237928+00:00",
+ "timestamp_responded": "2026-10-25T11:25:25.082085+00:00"
+}

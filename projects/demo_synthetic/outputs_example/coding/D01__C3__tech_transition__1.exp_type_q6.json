@@ -1,0 +1,24 @@
+{
+ "job_id": "D01|C3|tech_transition|1",
+ "seq": 25,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "3d63a282e36cb35391059c0e0d4bc151899143f7c4fc774c648c07d5a469a26a",
+ "prompt_sha256": "08fcfa870de9aa5996ac7e138789f9aabd005efea1c6f15b9cea49bb0c2cba1c",
+ "raw_text": "{\"exp_types\": [\"危機対処\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We have to pick categories based on mention. The statement: \"工場長兼社長として起きた配管破損事故により、設備投資の重要性とステークホルダーへの説明責任を身をもって経験したこと。\" Means: As factory manager and CEO, experienced piping rupture accident causing equipment investment importance and stakeholder explanation responsibility. The accident is a crisis (危機対処). Also mentions equipment investment (技術・開発? Maybe this is about operation or investment, but still about technology: it's about equipment, technology). But we are not to guess too much. The explicit mention: accident. Crisis dealing. So we definitely include \"危機対処\". Also \"技術・開発\"? It mentions equipment investment, which is about technology development, equipment purchase. But does that count as \"技術・開発\" category? It says \"設備投資の重要性\" so that's investment in equipment (資産投資), which could be considered technology/production technology. It's part of \"技術・開発\" maybe? But the category is research, product development, production technology experience. This could be related to production technology decisions, not necessarily R&D. We could lean lower on that. Could also include \"人・組織\" (since factory head and CEO, but the mention is accident. There's no mention of personnel or organization. So likely only \"危機対処\".\n\nAlso \"その他\" no.\n\nThus provide JSON with exp_types = [\"危機対処\"] and confidence high.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:21:48.757430+00:00",
+ "timestamp_responded": "2026-10-25T11:21:49.769956+00:00"
+}

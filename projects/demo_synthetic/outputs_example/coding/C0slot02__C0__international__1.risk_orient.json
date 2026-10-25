@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot02|C0|international|1",
+ "seq": 51,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "9321a6bb9452b893a2c328c0c434b523d5e75a7fe7456803cb24dd8f45c3476b",
+ "prompt_sha256": "ef0cad45782def5c13aed7cf8fa7cf298a142af08f2e4158a0cd94a88183c952",
+ "raw_text": "{\"risk_orient\":2,\"confidence\":\"high\"}",
+ "reasoning_text": "We need to evaluate risk orientation based on reason wording: The statement: \"提携により現地投資負担を分担し、政府支援を受けた競合に対抗できる資源と知識を確保します。また、合弁やパートナーシップで市場シェアを維持し、ブランドリスクを緩和できると考えます。\"\n\nInterpretation: \"By partnering, we share the local investment burden and secure resources and knowledge that can counter competitors supported by government assistance. Also, by joint venture or partnership, we maintain market share, reduce brand risk.\" This shows risk-averse: seeking to mitigate risk, ensuring resources and knowledge, avoiding uncertainty via partnership, reducing brand risk. They are minimizing risk. So orientation is risk-averse: somewhere between 1 and 2. They are concerned about brand risk mitigation, share investment burden. So more risk-averse. So likely rating 2 (avoidance oriented). Confidence: high because clear risk-averse language. Provide JSON.\n\nLet's output: {\"risk_orient\":2,\"confidence\":\"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:23:23.550039+00:00",
+ "timestamp_responded": "2026-10-25T11:23:24.292969+00:00"
+}

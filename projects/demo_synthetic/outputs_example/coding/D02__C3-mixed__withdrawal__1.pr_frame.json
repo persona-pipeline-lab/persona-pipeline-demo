@@ -1,0 +1,24 @@
+{
+ "job_id": "D02|C3-mixed|withdrawal|1",
+ "seq": 111,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "1eed8c44f5d2f492b52f22ce98478ff8585ac3bb3830848746da6ff88651d7e2",
+ "prompt_sha256": "02686322e74c5add64ef188b0ee9210b78a2050c3e12a9b4135d7fbf7e4c3794",
+ "raw_text": "{\"pr_frame\":\"市場競争\",\"confidence\":\"high\"}",
+ "reasoning_text": "We need to choose main problem frame. The description: \"市場・競争の問題\" indicates it's market competition. Theme: growth market, competition investing equally, customer acquisition slows. So classification \"市場競争\". Confidence maybe high because description directly states. Output JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:27:12.350772+00:00",
+ "timestamp_responded": "2026-10-25T11:27:12.583465+00:00"
+}

@@ -1,0 +1,24 @@
+{
+ "job_id": "D02|C3-mixed|tech_transition|2",
+ "seq": 136,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "1c40cf19d9c71f1495cd868d41f4aaa4a937bfd79393791e2db0d96038bf9f8e",
+ "prompt_sha256": "971de7040a8d54392393143c2c8ecad246ff189e344f68734db1721e071ed5fe",
+ "raw_text": "{\"pr_frame\": \"技術\", \"confidence\": \"high\"}",
+ "reasoning_text": "We need reference: The description (in Japanese):\n\n\"主力技術が旧世代に陥り、新方式への転換が不可欠であるが、R&Dへの追加投資が必要。速度的に競合に遅れが生じ、技術優位が崩れるリスクが高い。\"\n\nMeaning: Core technology is old generation, need to shift to new method, but requires additional R&D investment. Speedwise, lagging behind competitors, risk of losing technological advantage high.\n\nThis focuses on technology transition, R&D investment, technological advantage. So classification: 技術 (technology). So output: {\"pr_frame\": \"技術\", \"confidence\": \"high\"}.\n\nDouble-check: Could also mention \"Financial revenue\" because R&D cost required. But the core problem is tech shift and loss of advantage. So technology dominates.\n\nThus output as specified.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:28:55.956401+00:00",
+ "timestamp_responded": "2026-10-25T11:28:56.569153+00:00"
+}

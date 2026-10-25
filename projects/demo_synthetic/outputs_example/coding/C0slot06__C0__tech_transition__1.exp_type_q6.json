@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot06|C0|tech_transition|1",
+ "seq": 71,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "e734a3968c0d6627fdcac7d8179fb7acfb9391f123638e13be45971f66fc28fb",
+ "prompt_sha256": "c5f269282e783856649f23d01fb486387b08b732326697a4b8018ba9174a4d56",
+ "raw_text": "{\"exp_types\": [\"技術・開発\", \"海外\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to read the statement and identify types of experiences referenced. The statement: \"前職では、国内市場が成熟した製造業で新しいデジタルプラットフォームを導入した際、海外のITベンダーと提携し、育成と導入を統合。顧客への価値提供を維持しながらコストを削減した経験がある。\"\n\nInterpretation: They introduced a new digital platform in a mature domestic manufacturing market, partnered with overseas IT vendor, integrated training and implementation. They maintained value to customers while reducing costs. Types:\n\n- 技術・開発: Because they introduced a new digital platform (development & implementation). It's a technology/action in development.\n\n- 海外: Because they partnered with overseas IT vendor.\n\n- それ以外: Not crisis, not founding, not people/org. So we output: [\"技術・開発\", \"海外\"].\n\nConfidence: high.\n\nReturn JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:24:44.442547+00:00",
+ "timestamp_responded": "2026-10-25T11:24:45.124604+00:00"
+}

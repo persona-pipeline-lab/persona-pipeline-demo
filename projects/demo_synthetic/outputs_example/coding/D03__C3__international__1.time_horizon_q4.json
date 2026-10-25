@@ -1,0 +1,24 @@
+{
+ "job_id": "D03|C3|international|1",
+ "seq": 17,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "881a07af26c321e79961e39ded52ce020be7c792108979cf1e05eb29058afffe",
+ "prompt_sha256": "8d3147c7b8dc5832090e6af47a6a3ed4b0ea8811a580bd29cbbe6b4002a8fcf0",
+ "raw_text": "{\"time_horizon\":5,\"confidence\":\"high\"}",
+ "reasoning_text": "We need to rate the time horizon implied by the reasoning. The description: \"市場成長率は10%と高く、ブランド認知も強固である。技術優位性を維持し、価格競合に耐えるには投資が不可欠である。撤退すると長期的な市場シェアの喪失と、社会的信用の低下が生じる。\"\n\nIt emphasizes high growth, strong brand, need to invest to maintain tech advantage, price competition. If retreat, long-term loss of market share and social credibility.\n\nThe focus is on sustaining advantage, long-term competitiveness. They argue a long-term view.\n\nTime horizon scale: 1 short, 2 short-ish, 3 medium, 4 long-ish, 5 long-term (5-10+ years). The emphasized cost of retreat implies long-term consequences so likely 5. But they also mention market growth 10% (short to medium), but investment to maintain advantage seems long-term. So I'd choose 5. Confidence? There's some ambiguity, but the mention of long-term losses suggests a strong signal for long-term. I'd say high confidence.\n\nThus output: {\"time_horizon\":5,\"confidence\":\"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:21:16.002971+00:00",
+ "timestamp_responded": "2026-10-25T11:21:16.811815+00:00"
+}

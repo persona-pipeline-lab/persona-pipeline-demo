@@ -1,0 +1,24 @@
+{
+ "job_id": "D04|C3-mixed|international|1",
+ "seq": 127,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "580fc6048356c362a69104273549ee1da685996df3af40c7ca4a7934b26a14ac",
+ "prompt_sha256": "c7d68a004e2acd2cbe54e0702a451483326c5625c049448f782cc361546b94be",
+ "raw_text": "{\"pr_frame\":\"市場競争\",\"confidence\":\"high\"}",
+ "reasoning_text": "We have a short description: \"市場の競争力が大きく損なわれるという問題が最優先です。規制強化と規模競争と相まって、現地での勢力を維持するのが困難になった状況を捉えます。\"\n\nWe need to choose a main problem frame among: 財務収益, 市場競争, 技術, 組織ステークホルダー, 複数拮抗.\n\nThe description mentions \"市場の競争力が大きく損なわれる\" which is market competitiveness. Also \"規制強化\" (regulation) and \"規模競争\" (scale competition). The core problem is loss of competitive advantage in the market. That is \"市場競争\". So the frame is 市場競争. Confidence likely high because it's explicit.\n\nThus output: {\"pr_frame\": \"市場競争\", \"confidence\": \"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:28:25.028904+00:00",
+ "timestamp_responded": "2026-10-25T11:28:25.701847+00:00"
+}

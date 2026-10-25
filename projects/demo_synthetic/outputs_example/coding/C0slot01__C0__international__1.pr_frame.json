@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot01|C0|international|1",
+ "seq": 49,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "a5e03184985df3b297a0fa6c448b03b3919dfbbdf074316bb7e8716717b0f158",
+ "prompt_sha256": "78fa3397e44575ad4f8395e06ecbce736172dd597ea8675701785e86c9669c43",
+ "raw_text": "{\"pr_frame\": \"財務収益\", \"confidence\": \"high\"}",
+ "reasoning_text": "We need to choose main problem frame: options: \"財務収益\" (financial profitability), \"市場競争\", \"技術\", \"組織ステークホルダー\", \"複数拮抗\". The description mentions sales deficits, required investment burden, hurting profitability, high financial risk. That's clearly financial profit. So select \"財務収益\" with high confidence. Output JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:23:13.210169+00:00",
+ "timestamp_responded": "2026-10-25T11:23:13.538244+00:00"
+}

@@ -1,0 +1,24 @@
+{
+ "job_id": "D03|C3-mixed|international|1",
+ "seq": 125,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "bdb9d3466942652c9dd4ce6204a39754249290ba3a0d691dc149102a707927e3",
+ "prompt_sha256": "401c4f80651e0ea72abca271c623651af79c8d4cb9965dd4e3e6fe621ef5696c",
+ "raw_text": "{\"exp_types\":[\"技術・開発\",\"人・組織\"], \"confidence\":\"high\"}",
+ "reasoning_text": "We need to categorize experience types from the excerpt: \"工場長時代に老朽化した設備の更新を後回しにした経験がある。結果としてコストが増大し、現場との信頼関係に亀裂が入った。そこで、投資決断を早めて実行する重要性を学んだ。\"\n\nWe need to identify all applicable types from the 6 categories: \"危機対処\" (crisis management:赤字・倒産危機・事故・不祥事・需要崩壊への対処), \"技術・開発\" (R&D, product development, production tech), \"海外\" (overseas assignments), \"創業・立ち上げ\" (startup/new business/company establishment), \"人・組織\" (HR, labor, organization management, mentoring), \"その他\" (none of above).\n\nThe description says: As a plant manager, had experience of delaying modernization of aging equipment. The result was increased costs and cracks in trust with the workforce. He learned importance of early investment decisions. This is about plant management, equipment modernization. Which categories? It may fit \"危機対処\"? The delay leading to cost increase and trust slipping could be seen as a negative process but perhaps not a crisis. It could be \"危機対処\" because it was managing risk of cost escalation, but no explicit crisis event; but the increase in cost and trust. I'd think likely \"危機対処\" because he had to act to mitigate risk; but rule: only explicit experiences. The description: \"工場長時代に老朽化した設備の更新を後回しにした経験がある。結果としてコストが増大し、現場との信頼関係に亀裂が入った。そこで、投資決断を早めて実行する重要性を学んだ。\"\n\nThis describes plant management, equipment upgrade, cost management—makes sense under \"技術・開発\" because equipment modernization is part of production technology. It also touches on \"人・組織\" because trust with workforce. But rule: only experiences explicitly mentioned. \"投資決断\" could be considered as technology decisions. So \"技術・開発\" is pertinent. \"人・組織\" is maybe included because trust issue. But mention is not explicitly about HR, manager-employee relations? He says trust relationships are cracked. Might still be \"人・組織\".\n\nNow \"危機対処\"? The description does not mention crisis like crisis management, a financial crisis, accident, etc. He addresses cost increase but not a crisis per se. It is more of poor management decision. So maybe not \"危機対処\". \"海外\"? Not mentioned. \"創業・立ち上げ\"? Not mentioned. \"その他\"? Not necessary.\n\nThus likely \"技術・開発\" and \"人・組織\". Let's see if \"人・組織\" is explicitly an experience type? The original categories are used to classify the type of experience. The content: planning equipment upgrade, and learning importance of early investment decisions. The relationship trust issues with workforce. That implies management of personnel relations, e.g., lost trust. That is indeed human/organizational. So \"人・組織\". So we output those two.\n\nConfidence high. Probably correct.\n\nWill produce JSON: {\"exp_types\":[\"技術・開発\",\"人・組織\"], \"confidence\":\"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:28:18.890753+00:00",
+ "timestamp_responded": "2026-10-25T11:28:21.120729+00:00"
+}

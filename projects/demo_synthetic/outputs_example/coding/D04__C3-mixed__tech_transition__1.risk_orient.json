@@ -1,0 +1,24 @@
+{
+ "job_id": "D04|C3-mixed|tech_transition|1",
+ "seq": 139,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "6f5c5d8dae87ec7a348a96200b0e425753fd48c16c8a1dd0932c46d5d7142982",
+ "prompt_sha256": "07dab5b33f016cff157c50cbb7f3c27dbb20431a70b2c67d82aa32194c27c726",
+ "raw_text": "{\"risk_orient\": 2, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to assess risk orientation based on description. The narrator says: overseas startup already has new method; developing alone would take too much time and risk. Propose partnership to share tech and funds, speed entry, deliver own strengths to customers. The gist: They see solo development too risky/time-consuming, so they avoid that; they prefer collaboration to mitigate risk. They emphasize risk in solo, but choose partnership. That indicates risk-averse orientation? But they are positive about partnership; they see risk of solo. The question: rating is about risk stance: 1 strongly risk-averse, 5 strongly risk-accepting. We're to judge based on language: They avoid solo, see risk large, partner mitigates. So they are risk-averse regarding solo but open to partnership to reduce risk. This suggests a risk-averse stance? Evaluate: They don't want to take risk; they prefer lower risk route. That is risk-averse. But they still commit to partnership which includes risk (but less). They are wise: that is risk-averse. Score maybe 2 or 1? They say \"時間とリスクが大きすぎる\" = too big, so avoidance. They don't say they'd try it anyway. So 2 (risk avoidance). Confidence? Reason is fairly explicit; high confidence.\n\nReturn JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:29:09.799590+00:00",
+ "timestamp_responded": "2026-10-25T11:29:10.662067+00:00"
+}

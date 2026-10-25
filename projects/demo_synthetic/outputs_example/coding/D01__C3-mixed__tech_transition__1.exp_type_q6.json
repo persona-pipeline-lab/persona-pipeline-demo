@@ -1,0 +1,24 @@
+{
+ "job_id": "D01|C3-mixed|tech_transition|1",
+ "seq": 133,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "2fbc9f2bca2af5b95715e85dea5e0e17b1879f2c57c6431af84f27c39bd666bd",
+ "prompt_sha256": "4f42794045e8583b369f53da404ce562fee408b9bce8732688918c1e3c84f932",
+ "raw_text": "{\"exp_types\": [\"海外\", \"技術・開発\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to select all relevant categories from six: Crisis, Tech&Dev, Overseas, Startup, People/Org, Other.\n\nThe statement: \"海外工場設立時に、手順の理由を文書化して品質向上を実現した経験が、技術の合理化と従業員の主体性を重視する判断に繋がった。\"\n\nIt includes overseas factory establishment (海外). It involves documentation of reasoning step to improve quality (Tech & Development? Actually it's about process improvements, quality. That's part of technology or process development; but category \"技術・開発\" includes research development, product development, production technology experience. Documenting reasons would be related to production technology. So this qualifies.\n\nIt does not mention crisis. So not crisis.\n\nNot startup.\n\nPeople/Org: It mentions staff's autonomy. But it's about judging decisions regarding technology rationalization and employee initiative. Could be considered People/Org? The background is overseas factory establishment. It didn't explicitly mention organization management, human resources. It says \"従業員の主体性を重視する判断\". But the experience itself is \"手順の理由を文書化して品質向上\". That is more technical. But the choice might include People/Org if we interpret \"従業員の主体性\" as organizational. But the instruction says: \"記述に明示された経験のみ拾う（推測しない）\". They explicitly mention \"海外工場設立\". That definitely is Overseas. They mention \"手順の理由を文書化して品質向上\" which is a technical/production process improvement. So \"技術・開発\".\n\nThey didn't explicitly mention people management or organizational management. So we likely not include People/Org.\n\nThus exp_types: [\"海外\", \"技術・開発\"].\n\nConfidence: maybe high.\n\nThus JSON: {\"exp_types\":[\"海外\",\"技術・開発\"],\"confidence\":\"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:28:47.406206+00:00",
+ "timestamp_responded": "2026-10-25T11:28:48.675367+00:00"
+}

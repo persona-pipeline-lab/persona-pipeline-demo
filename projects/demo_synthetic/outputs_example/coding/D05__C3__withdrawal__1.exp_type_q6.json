@@ -1,0 +1,24 @@
+{
+ "job_id": "D05|C3|withdrawal|1",
+ "seq": 9,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "dd07b8dccd4606dcdec27c96eb8f29cb95c10064f2b0277a9d035963f379ad4f",
+ "prompt_sha256": "54dc15d65573cee1f646b926190631edc325e08ec37a5bb3a80c3b75b1f3bdf4",
+ "raw_text": "{\"exp_types\": [\"人・組織\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to classify the experience type(s) from the description. The narrative: \"取引先に対して常に手紙を書き、彼らの個別の声を拾い上げ、信頼関係を築いた経験が、今回の継続投資決定に最も影響しました。\" So the experience is about building trust relationships with customers by writing letters, listening to their voices. This falls under \"人・組織\" (human/organizational, i.e., relationship, HR etc). Is it technical? Not really. No crisis. No overseas. Not startup. So only \"人・組織\".\n\nThus output: {\"exp_types\": [\"人・組織\"], \"confidence\": \"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:20:47.333589+00:00",
+ "timestamp_responded": "2026-10-25T11:20:47.874877+00:00"
+}

@@ -1,0 +1,24 @@
+{
+ "job_id": "D05|C3-mixed|tech_transition|2",
+ "seq": 142,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "0d5a711c5e8f32f77a6be300fddcc76e4b705c38a77e577215f49c27b516d56f",
+ "prompt_sha256": "6aebc11df8402356ef268a390e9433585edd3b864c18d98f8b0538d43309c90f",
+ "raw_text": "{\"time_horizon\": 5, \"confidence\": \"high\"}",
+ "reasoning_text": "We have to evaluate the time horizon of the judgment based only on language given. The statement mentions \"short-term losses accepted, long-term profit secured\" and \"maintain employment...\" It suggests long-term orientation: internal development, maintaining employment, securing long-term profit. The framing expresses long-term decision, but also mentions short-term red. But the dominant orientation is long-term. So rating maybe 5? Let's see intervals: 1=short-term, 2=short-term, 3=mid, 4=long-term, 5=long-term 5-10+. The language emphasises long-term profit, 5+ years. I think 5.\n\nConfidence: high because language is decisive. Should produce JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:29:19.700263+00:00",
+ "timestamp_responded": "2026-10-25T11:29:20.208917+00:00"
+}

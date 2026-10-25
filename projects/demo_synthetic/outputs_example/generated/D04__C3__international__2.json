@@ -1,0 +1,32 @@
+{
+ "job_id": "D04|C3|international|2",
+ "seq": 20,
+ "person_id": "D04",
+ "condition": "C3",
+ "scenario": "international",
+ "rep": 2,
+ "model": "gpt-oss-20b",
+ "sent_sha256": "2dc19fda40b6e4b60f04438c90e1b71e28a4047cbfbd416e06e35ac2a8675a7b",
+ "sent_file": "sent/D04__C3__international__2.txt",
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 8192,
+  "seed": 100002,
+  "reasoning_effort": "medium"
+ },
+ "status": "ok",
+ "error_message": "",
+ "response_text": "{\"q1\":[\"C\",\"B\",\"G\"],\"q2_category\":4,\"q2_text\":\"主に従業員とステークホルダーへの影響が大きく、経営基盤の安定よりも人材確保・社会的責任が問題であると考える。\",\"q3\":\"継続投資\",\"q4_text\":\"従業員が事業の根幹であると自らの経験から確信している。投資があることで現地での雇用を守り、従業員の学びの場と認められる環境を維持できる。ブランドへの影響を最小化し、国内外での信頼を保持できると判断した。\",\"q5_ranking\":[\"従業員\",\"顧客\",\"取引先\",\"地域社会\",\"株主\"],\"q6_text\":\"地方ホテルの支配人として従業員提案会を導入し、従業員が自ら改善案を出し実行する仕組みを作った経験。従業員の満足度向上が離職率低下に直結したことを実感した。\"}",
+ "reasoning_text": "We need to answer Q1-6 based on autobiographic experiences. The autobiography shows many lessons: employee retention more than salary, importance of learning opportunities, setting expectations for management, giving employees autonomy, making investment for local staff well-being, etc. We should use that to answer. Q1: choose 3 info items to confirm in order. Which would be priority: financial burden, employee impact, and strategic brand impact? Let's think: A=market growth, B=financial burden, C=employees, D=customers, E=competitors, F=tech, G=brand, H=social impact. With personal experience, we want to verify: B (financial cost), C (employee significance), G (brand effect) - because brand matters to trust and guarantee, because \"社員におもてなし\". Or maybe E (competition) important. But the autobiography shows prioritizing employee retention over numbers. In this context, employee base is 18% of total, large for legitimacy, and important risk. We also want to confirm competitor actions. But brand concern leads to considering potential impact on domestic trust.\n\nSo order: C first (employees), B second (financial burden), G third (brand). That fits that we want to check people impact first.\n\nHowever, maybe they'd want to check B, E, C? But earlier decisions: I think B, E, C is more common. Yet guidelines: choose relevant with personal experience: employee as a stakeholder is important; brand also. For \"first confirmation\" maybe we want to confirm financial viability B, competitor E, and employee C. But we need ranking of confirmation.\n\nIn the autobiography, the person prioritized employees over revenue, etc. He was concerned about employees leaving. So I'd choose C first: learn about employees. Second B: financial burden. Third G: brand impact to domestic.\n\nHence q1: [\"C\",\"B\",\"G\"]\n\nQ2: problem identification: Which category? It is likely \"組織・ステークホルダーの問題\" (4) due to staffing and brand, but also financial burden heavy. But his experience says \"人が辞める理由は給料ではない & 残業を認める\" etc. He values employees, but also brand. I'd choose 4 (組織・ステークホルダー). Write a sentence: \"主に従業員とステークホルダーへの影響が大きい問題である\". But also we need to mention maybe. We'll choose 4.\n\nQ3: decision: Probably \"継続投資\" because of growth potential, brand, employees. He might prioritize employees and growth, but financial burdens high; still may invest because employees critical and brand. So \"継続投資\".\n\nQ4: We need to explain reasons: referencing autobiographic insights. e.g., 1: employees central; 2: brand trust; 3: growth potential; 4: investing in local production builds goodwill; 5: no alternative to cause risk.\n\nWe can craft 3-5 sentences.\n\nQ5: ranking of stakeholders. Based on autobiography: he cares about employees above all; then customers (they want service from employees); then region society (employers); then trade partners maybe; then shareholders last. But maybe shareholders are also important but less than employees? But he emphasises decentralised decisions, focus on employee retention; this affects corporate success. Probably ranking: 従業員, 取引先, 顧客, 地域社会, 株主? Or perhaps 株主 also important? But he often said he cares about employees first, customers second, and region third, shareholders last? Yet autobiography does not mention shareholders. He prioritizes employees, customers, stable brand, society. So order: 従業員, 顧客, 地域社会, 取引先, 株主. Wait which one to put? Based on \"at first I examined employees, because I thought they held key.\" But might put 取引先 before 地域社会? The regional society is the community where business exists. His experiences saw that local society is impacted. He considered brand and reputation, but yes.\n\nLet's think: ranking importance: 1) 従業員 (most), 2) 顧客 (as they rely on employees), 3) 取引先 (partners supply), 4) 地域社会 (community), 5) 株主 (shareholders). But maybe better: 1 従業員, 2 取引先, 3 顧客, 4 地域社会, 5 株主. Not sure. But we need to reflect the autobiography emphasising employees, not customers. They emphasised employees being important for retention and service quality. Customers should be second? Because they purchase. Actually customers may be third after employees & partners? Wait environment: He said \"employee is key\" and \"service quality for customers\". He didn't mention partners. And region is also important. I'd rank: 従業員 > 顧客 > 取引先 > 地域社会 > 株主.\n\nWe'll give that.\n\nQ6: What past experience influenced? The author had experience: In person HR, removal of \"basic\" training; introduction of on-the-job training; experienced importance of training and recognition. Also, he used an example of letting employees propose things. I'd mention: \"支配人として従業員提案会を実施し、人が辞めないことが重要であると学んだ\" That is relevant to decision of maintaining local operations.\n\nOk produce JSON accordingly.",
+ "finish_reason": "stop",
+ "actual_model": "gpt-oss-20b",
+ "response_id": "chatcmpl-b588eff22426f20e",
+ "usage": {
+  "prompt_tokens": 4118,
+  "completion_tokens": 1440
+ },
+ "endpoint_kind": "local",
+ "timestamp_requested": "2026-10-25T11:10:59.498326+00:00",
+ "timestamp_responded": "2026-10-25T11:11:03.956200+00:00"
+}

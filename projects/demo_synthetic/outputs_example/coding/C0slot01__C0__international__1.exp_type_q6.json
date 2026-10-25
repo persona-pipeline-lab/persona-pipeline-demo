@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot01|C0|international|1",
+ "seq": 49,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "900a213eb2f365db6cc0711d55d2dcc751d3e421639ca48946962977bdb7acec",
+ "prompt_sha256": "de7c2af631b710b777ab210f8fbe4663c6c1c67199671727c29f059e3b378a99",
+ "raw_text": "{\"exp_types\": [\"海外\", \"危機対処\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to examine the description. The statement: \"過去に、新興市場で不採算だった事業を現地パートナーと提携することで回復させた経験があります。その際、投資の分散と現地営業知識の活用が決定的な効果をもたらしました。\"\n\nSo they mention recovering unprofitable business in emerging market by partnering with local partner. They mention investment diversification and local sales knowledge. That involves overseas experience: \"海外\" as they operated in emerging market, which is overseas location. Also might involve partnership, but the categories: \"海外\" (海外駐在・海外事業の経験). But they did not mention relocation or being a manager; they just did business in new market. That qualifies as \"海外\".\n\nAlso \"技術・開発\" - no, not technical or product.\n\n\"危機対処\" - recovering from unprofitable business is not exactly a crisis like bankruptcy; but could be considered a crisis but likely not.\n\n\"創業・立ち上げ\" - not new startup, just reviving existing operations.\n\n\"人・組織\" - no.\n\nThus classification: \"海外\". Might also consider \"危機対処\" because they revived an unprofitable operation. But \"危機対処\" includes \"需要崩壊への対処\" which is about turning around a losing business. That fits partially. But strictly, we need to pick all that fit from description. The description says \"新興市場で不採算だった事業を現地パートナーと提携することで回復させた経験\" - that's correcting a losing business outside domestic market. That fits both \"海外\" and maybe \"危機対処\". However, classification \"危機対処\" is specifically for \"赤字・倒産危機・事故・不祥事・需要崩壊への対処\". They overcame an unprofitable situation, which is \"赤字\" or \"需要崩壊への対処\". So yes it's crisis handling. So we can list both. Also \"海外\" because it's overseas. So output: {\"exp_types\": [\"海外\", \"危機対処\"], \"confidence\": \"high\"}.\n\nWe must adhere to JSON formatting exactly.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:23:15.265436+00:00",
+ "timestamp_responded": "2026-10-25T11:23:16.745364+00:00"
+}

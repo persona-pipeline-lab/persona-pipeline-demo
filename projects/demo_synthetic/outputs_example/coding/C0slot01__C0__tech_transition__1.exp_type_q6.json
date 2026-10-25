@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot01|C0|tech_transition|1",
+ "seq": 61,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "2f337707ca11550256c3e453e4df4134a43458f90ba1cb615dd8e95b173d35c8",
+ "prompt_sha256": "457487cf862b9108c884949d1f4c67a3efebbf97996f3df865fae0ab407e13c3",
+ "raw_text": "{\"exp_types\": [\"海外\", \"技術・開発\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to parse the description: \"以前、ある海外企業と共同開発を行い、日本国内で新技術を導入した経験があります。この経験が本件の提携検討に大きく影響しています.\"\n\nIt says: they previously did joint development with an overseas company, implemented new technology in Japan. The classes: \"危機対処\", \"技術・開発\", \"海外\", \"創業・立ち上げ\", \"人・組織\", \"その他\".\n\nWhich categories? They did overseas (海外駐在・海外事業?) Actually they collaborated with an overseas company, but no reference to themselves being overseas. The event is overseas collaboration: \"海外企業と共同開発\". That implies \"海外\" experience, but maybe just synergy? The categories are \"海外\" meaning experience with overseas business or presence. Could be \"海外\". Also \"技術・開発\" because they did joint development and implemented a new technology. So we include \"海外\" and \"技術・開発\". There's no mention of crisis, startup, humans. So output: {\"exp_types\": [\"海外\", \"技術・開発\"], \"confidence\":\"high\"}.\n\nReturn only this JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:24:09.354393+00:00",
+ "timestamp_responded": "2026-10-25T11:24:10.185938+00:00"
+}

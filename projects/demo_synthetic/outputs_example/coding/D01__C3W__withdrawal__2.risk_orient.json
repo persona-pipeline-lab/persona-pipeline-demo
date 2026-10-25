@@ -1,0 +1,24 @@
+{
+ "job_id": "D01|C3W|withdrawal|2",
+ "seq": 74,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "0a319755bf8cb2cc353f154c0c8d4e5c822e85b5788de2ae9187b298aca81804",
+ "prompt_sha256": "a71b4f2c9cceef96f861dc967536fe8d30e0eac48559deefeffa1ab376eaa078",
+ "raw_text": "{\"risk_orient\": 2, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to evaluate risk orientation. The description: \"市場成長率が高く、技術的優位性を保持できれば長期的に収益改善が期待できる。数字面の改善と地域・従業員への配慮を組み合わせ、安定的な投資を継続する方がリスクが低いと判断した。\"\n\nThey believe that continuing stable investment is low risk. They see growth rate high, technical advantage, long-term profit improvement, but still they consider risk low and choose stable investment. This suggests risk-averse, but also they consider the potential benefits. They see risk as low if they maintain stable investment. They are cautious; likely risk aversion. Not strongly avoiding risk, but the reasoning emphasises \"リスクが低いと判断\" emphasises that risk is low. That suggests more toward risk-averse or risk neutral? They are focusing on continuing investment to reduce risk. They are not seeking high-risk high-return. So likely risk orientation = 2 (avoiding). But could be 3? They highlight the benefits, but still think risk is low. They employ stable investment to reduce risk, i.e. risk-averse. I'd say 2.\n\nConfidence: high. Because clear language.\n\nReturn JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:24:52.808269+00:00",
+ "timestamp_responded": "2026-10-25T11:24:53.662750+00:00"
+}

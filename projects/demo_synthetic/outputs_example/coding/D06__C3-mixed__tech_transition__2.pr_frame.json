@@ -1,0 +1,24 @@
+{
+ "job_id": "D06|C3-mixed|tech_transition|2",
+ "seq": 144,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "773919cb433dcc58f7cc084294d5b156aa38e54e70298c0c1e0af972cbc3f1fd",
+ "prompt_sha256": "6c41928c00be44c63aa62128c426f179e0f82a3b5840fede25475cb3c3e20dbf",
+ "raw_text": "{\"pr_frame\":\"財務収益\",\"confidence\":\"high\"}",
+ "reasoning_text": "We need to classify which major problem frame: \"財務収益\" focus on loss, investment burden, profitability. The description specifically mentions \"営業赤字\" (operating loss), \"投資負担\" (investment burden), \"財務圧迫\" (financial pressure), \"収益性を維持できない\" (cannot maintain profitability). Obviously, main is financial revenue. So classify as 財務収益. Confidence: high.\n\nReturn JSON: {\"pr_frame\":\"財務収益\",\"confidence\":\"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:29:26.028679+00:00",
+ "timestamp_responded": "2026-10-25T11:29:26.419659+00:00"
+}

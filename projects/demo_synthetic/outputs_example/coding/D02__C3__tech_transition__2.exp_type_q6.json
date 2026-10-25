@@ -1,0 +1,24 @@
+{
+ "job_id": "D02|C3|tech_transition|2",
+ "seq": 28,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "a1656e14b93ae8a0329782a4f7d0981654be4340c22c9106652eae5000d84d23",
+ "prompt_sha256": "e079ccfd341802efc4aaf231f5b261da6eda49deda1b942686eaed95704a69f6",
+ "raw_text": "{\"exp_types\": [\"危機対処\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to identify types from the categories: crisis handling, tech/dev, overseas, startup/launch, people/organization, other. The text: \"B社の財務危機に直面したとき…\" indicates crisis handling (financial crisis). Also mentions 整理した財務管理. That's crisis handling. Does it mention anything else like overseas or startup? No. So only crisis handling. So output JSON: {\"exp_types\": [\"危機対処\"], \"confidence\":\"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:21:56.964323+00:00",
+ "timestamp_responded": "2026-10-25T11:21:57.343942+00:00"
+}

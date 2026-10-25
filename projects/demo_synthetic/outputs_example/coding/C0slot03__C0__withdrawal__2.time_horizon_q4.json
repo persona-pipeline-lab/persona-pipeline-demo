@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot03|C0|withdrawal|2",
+ "seq": 42,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "9d022cfc8de51fbf26dbd960bf9ff56e3577f72e013db6f293be063ce9a8ca25",
+ "prompt_sha256": "4a6f0451dca3a5813b66f411f40dd0b95d61a5ddeb437471b83334c66426ab53",
+ "raw_text": "{\"time_horizon\": 4, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to determine time horizon 1-5 based on narrative. Text emphasizes long-term? It mentions \"年間12%の市場成長率は引き続き高く\" – ongoing growth; \"技術継続性が必要\" – need for continuity; \"投資コストは当面赤字を伸ばす可能性\" – immediate cost; \"将来の利益増大と雇用維持の観点から継続が最適\" – future benefits; emphasize long-term. However it's still short-term competitiveness: \"早期投資が遅れるとシェアを失う恐れがある\". So medium to long. The scale: 1=短期, 2=短期寄り, 3=中期・両論, 4=長期寄り, 5=長期（5〜10年以上の成長・存続が判断の主軸）.\n\nIt indicates trading present deficits for future benefits, but also mentions urgent need to avoid loss, implying somewhat near-term. But the main argument for continuous investment for future benefits suggests long-term orientation. Could be 4: 長期寄り. Confident? The reasoning is clear: future benefits outweigh costs, maintain market share. I'd set confidence high. Output JSON: {\"time_horizon\": 4, \"confidence\": \"high\"}.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:22:49.467061+00:00",
+ "timestamp_responded": "2026-10-25T11:22:50.379080+00:00"
+}

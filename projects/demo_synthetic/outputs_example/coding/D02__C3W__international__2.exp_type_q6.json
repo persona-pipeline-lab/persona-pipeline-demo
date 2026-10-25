@@ -1,0 +1,24 @@
+{
+ "job_id": "D02|C3W|international|2",
+ "seq": 88,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "e6642994a7b9e87b093e5edcf365296e24d457c5af1d8b1c9ce095ad0296a64d",
+ "prompt_sha256": "cc9f9381295b842ef5b1ff8d47f2781849a55cfd6f87f447134ee06622080a38",
+ "raw_text": "{\"exp_types\": [\"海外\", \"技術・開発\", \"人・組織\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to classify the experiences mentioned. The question: \"回答者が「判断に最も影響した過去経験」を述べた記述\" We have the text. We need to pick classification(s) from six categories: \"危機対処\", \"技術・開発\", \"海外\", \"創業・立ち上げ\", \"人・組織\", \"その他\". We only use declared experiences. Let's parse.\n\nHe said: \"海外工場で現地従業員の作業手順を詳細に文書化し、技術とその理由を共有した経験が、技術優位性とローカルニーズの両立の重要性を教えてくれました。また、第一製品でユーザーの可用性を無視した失敗から、顧客と従業員の視点を常に取り入れるべきだと学びました。\"\n\nSo experiences: 1) Working in overseas factory, documenting local employees' procedures, sharing techniques and reasons. So \"海外\" (海外駐在・海外事業の経験). Also \"技術・開発\" (worked on technical details, document, share technology). Note: It is technical but it's more like \"技術・開発\" as they documented. But the phrase \"技術とその理由を共有\" suggests knowledge sharing of tech. Could be \"技術・開発\" type.\n\nMaybe also \"人・組織\" because it involves understanding local employees, working with them, understanding their perspectives? The text says \"現地従業員の作業手順\" (work procedures of local employees). That involves human/organization, but the emphasis is on documenting and sharing tech because they deal with local employees. But maybe mapping: It is about \"海外\" and \"技術・開発\".\n\nAlso second part: \"第一製品でユーザーの可用性を無視した失敗\" - This is a product failure due to ignoring user. They learned need to incorporate customer and employee perspectives. That is learning about \"人・組織\" (customer/employee viewpoints). But also could be \"技術・開発\" because product development. However it's more about user experience, which is design and organizational learning. The phrase \"顧客と従業員の視点を常に取り入れるべき\" indicates organizational. Might be \"人・組織\".\n\nHere we have overlapping. The instructions: pick all that match. So \"海外\", \"技術・開発\", \"人・組織\".\n\nCheck if \"創業・立ち上げ\" or \"危機対処\" are relevant. \"危機対処\" not mentioned. \"創業・立ち上げ\" not stated.\n\nTherefore exp_types should be [\"海外\", \"技術・開発\", \"人・組織\"]. confidence? The match is clear. I'd say high.\n\nLet's produce JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:25:50.199772+00:00",
+ "timestamp_responded": "2026-10-25T11:25:52.123962+00:00"
+}

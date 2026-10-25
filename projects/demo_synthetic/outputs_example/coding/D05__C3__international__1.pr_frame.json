@@ -1,0 +1,24 @@
+{
+ "job_id": "D05|C3|international|1",
+ "seq": 21,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "43d131ef382f72958f4ec035759f73d04f94111d1c86554e9ef66a2104021e9e",
+ "prompt_sha256": "cdc1a8c2aa50532f73f31818c345567883757dd3551600beeae6b9c128d7693a",
+ "raw_text": "{\"pr_frame\":\"組織ステークホルダー\",\"confidence\":\"high\"}",
+ "reasoning_text": "We have a short description: \"組織・ステークホルダーの問題に重点を置きます。\". It's basically stating that the issue focuses on \"organization and stakeholder\" problems. It indicates the main problem frame is \"組織ステークホルダー\". That matches the option list. So classification is that. Confidence high. Output JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:21:32.026314+00:00",
+ "timestamp_responded": "2026-10-25T11:21:32.329644+00:00"
+}

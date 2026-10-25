@@ -1,0 +1,24 @@
+{
+ "job_id": "D05|C3-mixed|tech_transition|2",
+ "seq": 142,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "fec862f90db3550e1c53fe9d18a3e245c6a38f91f74f40df26e35a7d314ed0ab",
+ "prompt_sha256": "b1d4284991c2f4699ee689295814b45e95b5b37edeb30f0a3faedca5830079d5",
+ "raw_text": "{\"pr_frame\": \"技術\", \"confidence\": \"high\"}",
+ "reasoning_text": "We need to classify main problem frame. The statement: \"技術の優位性を維持しながら市場のニーズに応えることが最重要であるため、技術の問題として捉える。\". The speaker says: ensure technological advantage while meeting market needs; it's considered a technological problem. That suggests the primary frame: 技術. So \"技術\" classification.\n\nConfidence: high, because it's explicitly labelled as a technology issue.\n\nReturn JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:29:18.432029+00:00",
+ "timestamp_responded": "2026-10-25T11:29:18.796443+00:00"
+}

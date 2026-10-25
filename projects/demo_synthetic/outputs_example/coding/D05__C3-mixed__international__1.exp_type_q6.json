@@ -1,0 +1,24 @@
+{
+ "job_id": "D05|C3-mixed|international|1",
+ "seq": 129,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "0523a676c431f737d2f3fa45073debf9afa6cef70d8b2d68432474c6a5e2ffa3",
+ "prompt_sha256": "06c3469eb95d359b2270672f4cf163f0f14c94b6cf4a22aa524ec1c5514acf80",
+ "raw_text": "{\"exp_types\": [\"技術・開発\"], \"confidence\": \"high\"}",
+ "reasoning_text": "The user is Japanese. They want me to identify which of the six experience categories apply, based solely on the text:\n\n\"設計部長として高品質を保つため三年かけて投資を行い、経営者としてその財務リスクとリターンを見極めた経験が、今回の提携判断につながった。\"\n\nWe need to detect explicit experiences mentioned.\n\nLet's parse:\n\n\"設計部長として高品質を保つため三年かけて投資を行い、経営者としてその財務リスクとリターンを見極めた経験が...\" So the person was a \"設計部長\" (\"design department manager\"). They invested over three years to maintain high quality. That is an experience of \"投資\" and \"財務リスクとリターンを見極めた\" as a manager.\n\nIt is an example of \"技術・開発\" because it's a design department manager (likely product development). And \"経営者\" denotes management; they \"見極めた経験\" refers to financial risk vs return. So perhaps \"技術・開発\" is clearly present; \"危機対処\" is not; \"海外\" not; \"創業・立ち上げ\" not; \"人・組織\" not; \"その他\" maybe. But the question might want all applicable categories. \"経営者として財務リスクとリターンを見極めた経験\" might be \"経営者として\" which is \"経営\" but not specific to the six categories.\n\nThe text doesn't mention crisis, development, overseas, start-up, people, organization, others. So only \"技術・開発\" applies.\n\nTherefore JSON:\n\n{\"exp_types\": [\"技術・開発\"], \"confidence\":\"high\"}\n\nCheck only explicit. That is OK.\n\nLet's output.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:28:33.991963+00:00",
+ "timestamp_responded": "2026-10-25T11:28:35.226566+00:00"
+}

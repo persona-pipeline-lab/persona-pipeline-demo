@@ -1,0 +1,24 @@
+{
+ "job_id": "D01|C3W|international|1",
+ "seq": 85,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "9dfc82b0cffd46d0a145832112c7d99ec302b19478f09a5f59bc1addcb750884",
+ "prompt_sha256": "b1bf121bc7042317c9fd04c9fbc0fc2992c84d30c39a9b63fb5f6d2ebccaa40f",
+ "raw_text": "{\"exp_types\": [\"危機対処\", \"その他\"], \"confidence\": \"medium\"}",
+ "reasoning_text": "We have to categorize the experiences mentioned into the six categories. The text says:\n\n\"営業として顧客の声を最後まで聞く重要性を学び、売上・在庫管理に注力したこと。経営危機を経験し、数字を恐れずに扱えるようになった経験が今回の判断に大きく影響した。\"\n\nThus experiences: 1) learning importance of listening to customer voice as a salesperson, focusing on sales and inventory management. This could be \"技術・開発\"? It involves sales, inventory management (operations). Actually it might fit \"人・組織\" because listening to customers is about communication. But categories provided: \"危機対処\", \"技術・開発\", \"海外\", \"創業・立ち上げ\", \"人・組織\", \"その他\".\n\nThe experience includes \"経営危機を経験し、数字を恐れずに扱えるようになった経験\" which clearly is a crisis management experience, thus \"危機対処\". Also \"顧客の声を聞く\" is maybe \"人・組織\". But do we count that as \"人・組織\"? The category \"人・組織\" covers \"人事・労務・組織運営・師弟関係\". Does listening to customers fall under this? It is external to organization. The category likely expects internal perspective like HR, labor, org operations, mentor-mentee relations. Customers are external, but listening to the voice may be part of sales operations.\n\nMaybe \"技術・開発\" includes \"研究開発・製品開発・生産技術の経験\". Sales and inventory don't match that. But \"infrastructure of sales\"? Not exactly.\n\nGiven the instructions: \"記述に明示された経験のみ拾う（推測しない）。外部知識を使わない。\" So we can only use explicit mention. The mention: \"顧客の声を最後まで聞く重要性を学び、売上・在庫管理に注力したこと。\" There's no mention of \"人事・労務\", nor \"海外\", nor \"創業・立ち上げ\". So likely no other categories.\n\nThus answer: \"危機対処\" (since explicit). For first part, it's ambiguous: \"顧客の声を聞く重要性を学び、売上・在庫管理\". Could be considered \"技術・開発\"? But vend? But it's about inventory management; not product development. Could be \"その他\". But the instruction says use \"その他\" only if none of the categories apply. Since we already have \"危機対処\" included, maybe include only that. But might need all types that apply. So \"危機対処\" and maybe \"その他\" if other experience doesn't fit any categories. The sales/inventory management part might not fit any category, so \"その他\".\n\nThus output: {\"exp_types\": [\"危機対処\", \"その他\"], \"confidence\": \"medium\"} because there's some uncertainty.\n\nBut consider if \"顧客の声を聞く\" is related to \"人・組織\" – but it's about listening, not about HR, but could be part of organizational culture? Still ambiguous. But I'd lean to \"その他\".\n\nThus final.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:25:36.491120+00:00",
+ "timestamp_responded": "2026-10-25T11:25:38.618360+00:00"
+}

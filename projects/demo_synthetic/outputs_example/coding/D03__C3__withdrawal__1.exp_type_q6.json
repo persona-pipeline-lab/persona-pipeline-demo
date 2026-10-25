@@ -1,0 +1,24 @@
+{
+ "job_id": "D03|C3|withdrawal|1",
+ "seq": 5,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "2cd3c815fc8b1cadcadb378e5694ae3346f5c956c67448894674c60b88131415",
+ "prompt_sha256": "7455b73d69dc9e9d526e20d16ad28929649a1c1c06a348021d8a6bc1cfb02a8c",
+ "raw_text": "{\"exp_types\": [\"技術・開発\", \"海外\", \"創業・立ち上げ\", \"人・組織\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to classify experiences, from provided text, based on six categories: \"危機対処\" (crisis handling), \"技術・開発\" (tech/dev), \"海外\" (overseas), \"創業・立ち上げ\" (startup/launch), \"人・組織\" (HR/organization), \"その他\" (none of above).\n\nWe are told to only pick categories that are explicitly mentioned. No inference. Use only info in the quotation.\n\nText: \"以前、A社で開発した製品が売れなかった原因に、性能だけでなく現場作業者の使いやすさを無視した点を痛感した。そこで作業者の動きを観察し、直接フィードバックを製品設計に取り入れた経験がある。さらに海外工場立ち上げで、手順の理由を文書化し従業員が自律的に改善できる環境を構築した経験も、今回の判断に大きく影響した。\"\n\nWe need to identify experience types:\n\n1. Observing workers, collecting feedback to product design: that's \"技術・開発\" because product design.\n\n2. Overseas factory establishment: It's overseas. \"海外\" category applies. Is it also \"創業・立ち上げ\"? It's \"工場立ち上げ\" – factory startup. But categories: \"創業・立ち上げ\" refers to \"創業・新事業や新会社の立ち上げ\". Factory startup might qualify, but it's not explicitly singled out as \"創業\". They mention \"海外工場立ち上げ\". That implies an establishment. So \"創業・立ち上げ\" may apply. But need to check category definitions: \"創業・立ち上げ\": \"創業・新事業や新会社の立ち上げ\". Factory start is new venture? It's a factory within a company but it's a new operation. It might be considered a \"立ち上げ\" experience, but I'm not entirely sure if it's considered \"新事業や新会社\". A factory might count.\n\nBut the rules: \"カテゴリーを該当するものすべて選んでください.\" So if we can interpret that factory inception is indeed a kind of \"立ち上げ\" (start-up). No external knowledge.\n\nThe phrase \"海外工場立ち上げ\": meets \"海外\" (overseas). It also meets \"創業・立ち上げ\" because they are establishing something new.\n\nAlso, \"手順の理由を文書化し従業員が自律的に改善できる環境を構築した経験\" is about organization building. Does this count as \"人・組織\"? They build environment, but it's not explicitly about HR or management. It's about process and environment but not necessarily HR. It's perhaps more \"人・組織\" because they are building environment to allow employees to self-improve. The phrase about \"従業員が自律的に改善できる環境\". That might be considered \"人・組織\" because it includes organizational environment. But given categories, \"人・組織\" includes \"人事・労務・組織運営・師弟関係\". They are enabling employees to self-improve by documenting reasons. That seems to relate to \"組織運営\". That would fit \"人・組織\". Our classification is limited to those categories. So we might include \"人・組織\".\n\nBut we need to be careful: They did not mention HR or personnel management explicitly. Still, building an environment for employees to self-improve is definitely about organizational operation. So we may include \"人・組織\".\n\n\"危機対処\" not present. \"その他\" not needed.\n\nThus we might output: [\"技術・開発\", \"海外\", \"創業・立ち上げ\", \"人・組織\"]\n\nConfidence: high? It's straightforward.\n\nLet's produce JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:20:31.854721+00:00",
+ "timestamp_responded": "2026-10-25T11:20:34.479659+00:00"
+}

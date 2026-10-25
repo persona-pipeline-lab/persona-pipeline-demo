@@ -1,0 +1,24 @@
+{
+ "job_id": "D01|C3-mixed|international|2",
+ "seq": 122,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "d711bb4253c2170deec864bbfd4c19af2404a5164edd82cf79e68339ea682fa2",
+ "prompt_sha256": "072f28bd0b565b732f63fee0aa9df838d0b850cd4b44c0389e2243b31da6d652",
+ "raw_text": "{\"time_horizon\": 3, \"confidence\": \"medium\"}",
+ "reasoning_text": "We need to judge time horizon of decision based on reasoning. The statement: \"市場の成長性とブランド価値は保ちつつ、投資負担と政府規制のリスクを分散できるため、提携を選択する。従業員と地域社会の雇用を守りつつ、技術優位性を補完できるパートナーを見極める。\"\n\nThey talk about maintaining growth and brand, and also reducing investment burden and risk, protecting jobs, complementing technology. This is more about stabilizing current situation, but also ensuring growth. The focus on reducing burden and risk suggests more of a medium-term? They invest in partnership to spread risk and maintain employment, which seems relatively medium to long. But \"5~10年\" long-term growth isn't explicit. They mention \"protect employment\" which might be short/medium. The risk distribution might be to maintain business viability at least medium. I'd give 3 vs 4. This is industry partnership, maintaining brand and growth—longer horizon but also risk. I'd say time horizon 3. Confidence: medium? It's not extremely clear. Probably medium.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:28:06.686254+00:00",
+ "timestamp_responded": "2026-10-25T11:28:07.471861+00:00"
+}

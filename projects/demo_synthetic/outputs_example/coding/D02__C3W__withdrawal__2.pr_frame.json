@@ -1,0 +1,24 @@
+{
+ "job_id": "D02|C3W|withdrawal|2",
+ "seq": 76,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "b11a9c83d0f5a73516d77c2e8d13d59b15c95f216cdeee4844b761fab8be2c38",
+ "prompt_sha256": "a954d1e9ba6d41c161b10bcf111d0f81f88675590d98c674aca3187b0369d9ab",
+ "raw_text": "{\"pr_frame\": \"組織ステークホルダー\", \"confidence\": \"high\"}",
+ "reasoning_text": "We have a short statement: \"組織・ステークホルダーの問題であり、従業員の雇用、地域社会の雇用ネットワーク、そしてブランドイメージに関わるリスクが重大です。\"\n\nWe need to choose the primary problem frame from given: 「財務収益」、「市場競争」、「技術」、「組織ステークホルダー」、「複数拮抗」. The statement explicitly says \"組織・ステークホルダーの問題\" -> That references the \"組織ステークホルダー\" frame. So answer is that frame.\n\nConfidence: The statement is explicit. So high. Output JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:24:58.441912+00:00",
+ "timestamp_responded": "2026-10-25T11:24:58.965581+00:00"
+}

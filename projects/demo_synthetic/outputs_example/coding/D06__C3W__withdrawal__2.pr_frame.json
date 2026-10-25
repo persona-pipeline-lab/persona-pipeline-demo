@@ -1,0 +1,24 @@
+{
+ "job_id": "D06|C3W|withdrawal|2",
+ "seq": 84,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "e60175e2f552e097cd6cf28ebc2b10897676e5fcfbd68f1367694836de5c06e7",
+ "prompt_sha256": "62ced79a38892758765c2bdb953b5e628f63117767b484e9833ac3b81ddc8132",
+ "raw_text": "{\"pr_frame\":\"技術\",\"confidence\":\"high\"}",
+ "reasoning_text": "We need to categorize classification among the given categories: 「財務収益」（赤字・投資負担・収益性が中心）／「市場競争」（市場の成長・競合・顧客獲得が中心）／「技術」（技術優位・技術転換が中心）／「組織ステークホルダー」（従業員・取引先・地域・ブランドへの責任が中心）／「複数拮抗」。\n\nThe description: \"技術優位の持続が不確実であり、競合が同業界へ同程度の投資を行なっているため、技術的優位性の確保が不可欠であると判断する。\"\n\nThis is about uncertainty around sustaining technical advantage, competitors investing similarly, so securing technical advantage is considered essential. That is clearly a technology issue. So pr_frame is \"技術\". confidence high likely. Output JSON only.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:25:29.285680+00:00",
+ "timestamp_responded": "2026-10-25T11:25:29.955809+00:00"
+}

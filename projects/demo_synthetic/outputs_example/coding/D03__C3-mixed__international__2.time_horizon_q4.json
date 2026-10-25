@@ -1,0 +1,24 @@
+{
+ "job_id": "D03|C3-mixed|international|2",
+ "seq": 126,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "9d570129ba3f14fc67e72d32531ab767cbf8239eeea8a9b17aba8ea91f06a131",
+ "prompt_sha256": "8bb8a8e49f5cb5f60b3e048f3e012c857db4e87013c8b0fdf4f9ed5ef810fcbc",
+ "raw_text": "{\"time_horizon\":4, \"confidence\":\"high\"}",
+ "reasoning_text": "We need decide time horizon. The reason: mentions \"継続的に見込める\" growth, \"短期的に受け入れ\" losses, \"採算性回復投資\", \"長期的競争力を維持\", \"社会的損失を招き\" of retreat. This leans to long-term but also some short-term pains. The language: \"長期的競争力維持\" and \"損失を短期的に受け入れ\" but overall says growth ongoing, investment necessary for future, justifying future returns. So time horizon likely 4 or 5. Determine 4? The phrase \"5〜10年以上の成長・存続\" given by 5; but the evidence not explicitly long-term beyond 10 years, but mentions continuous growth and long-term competitiveness. I'd rate 4 (long-term寄り). Confidence: high? The reasoning is clear. Probably high.\n\nSo output JSON: {\"time_horizon\":4,\"confidence\":\"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:28:22.455891+00:00",
+ "timestamp_responded": "2026-10-25T11:28:23.154412+00:00"
+}

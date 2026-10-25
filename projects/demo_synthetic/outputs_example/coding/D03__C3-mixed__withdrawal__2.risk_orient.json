@@ -1,0 +1,24 @@
+{
+ "job_id": "D03|C3-mixed|withdrawal|2",
+ "seq": 114,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "2ac409ba6a906fff1bc09109740b851ea73b2d9728156c5a1fa3179527217543",
+ "prompt_sha256": "86814d0849af78ef6cfa11722db8df7bc3cdf224050892d3851b2526e4e84f29",
+ "raw_text": "{\"risk_orient\": 4, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to evaluate risk orientation based on reasoning description. The description: \"市場は12％成長し競合も大規模投資を行っている。技術優位性があるが、先に投資しないと競争力を失う恐れがある。投資は短期的な負担を伴うが、将来の利益とブランド保全を実現できる。\"\n\nThis reasoning is: growth, competitors investing. The opportunity: own tech advantage but need to invest early to avoid losing edge. There's risk because investment is short-term burden. But also they talk about achieving future profit and brand preservation. The orientation: They emphasize the need to invest early to maintain competitive advantage, which indicates willingness to accept risk for future benefit. There is mention of loss if not investing (\"投資しないと競争力を失う恐れ\") highlights risk of loss. But they still push invest because of future benefit. Thus they weigh potential growth against burden.\n\nGiven scale: 1 strongly risk-averse, 5 strongly risk-accepting. The reasoning leans somewhat risk-accepting due to emphasising future profit/brand, but also acknowledges risk. I'd assign 4? Because they accept risk but not fully push risk. Let's consider 'risk-orient' 4 (accepting). Confidence: moderate-high? Provide \"high\"? They show reasonable calculation. I'd choose high.\n\nLet's output JSON accordingly.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:27:29.724834+00:00",
+ "timestamp_responded": "2026-10-25T11:27:30.668148+00:00"
+}

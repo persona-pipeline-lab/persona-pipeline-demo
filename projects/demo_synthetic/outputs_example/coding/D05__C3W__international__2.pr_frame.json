@@ -1,0 +1,24 @@
+{
+ "job_id": "D05|C3W|international|2",
+ "seq": 94,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "655be350fe865e469ef7203f6fd7766d20f0e775cc7a16e6ca4b66a8bf519c60",
+ "prompt_sha256": "0ae6e8ae301f143dcf0610ba292f3d532651f5cba7d2c202456d2b9855f2ff5e",
+ "raw_text": "{\"pr_frame\": \"市場競争\", \"confidence\": \"high\"}",
+ "reasoning_text": "We need to classify the problem frame into one of 5 categories: \"財務収益\", \"市場競争\", \"技術\", \"組織ステークホルダー\", or \"複数拮抗\".\n\nGiven the short description: \"外部競争の激化と規制強化により、成長市場における競争優位の維持が困難となっている。\"\n\nThis says: \"Due to intensified external competition and increased regulatory tightening, maintaining competitive advantage in a growth market has become difficult.\" The core problem is competition: difficulty maintaining a competitive advantage due to competitive pressure and regulation. While regulation could be a separate category but the main issue is market competition: sustaining competitive advantage, competition intensity. So choose \"市場競争.\"\n\nConfidence? It is quite clear, so high. Return JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:26:08.922985+00:00",
+ "timestamp_responded": "2026-10-25T11:26:09.510361+00:00"
+}

@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot05|C0|withdrawal|2",
+ "seq": 46,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "9d022cfc8de51fbf26dbd960bf9ff56e3577f72e013db6f293be063ce9a8ca25",
+ "prompt_sha256": "4a6f0451dca3a5813b66f411f40dd0b95d61a5ddeb437471b83334c66426ab53",
+ "raw_text": "{\"time_horizon\":4,\"confidence\":\"high\"}",
+ "reasoning_text": "We need to parse the given text:\n\n\"年間12%の市場成長率は引き続き高く、貴社の技術優位性を活かす機会があります。競合も大手が投資を進める中、早期投資が遅れるとシェアを失う恐れがあるため、追加投資による技術継続性が必要です。投資コストは当面赤字を伸ばす可能性がありますが、将来の利益増大と雇用維持の観点から継続が最適と判断します。\"\n\nWe interpret: Market growth 12% annually remains high, opportunity to leverage tech advantage. Competitors are investing; if early investment is delayed, share could be lost. Additional investment needed for tech continuity. Cost may increase deficits in the near term but future profit gains and employment maintenance justify.\n\nWe need to evaluate time horizon of decision based on reasoning alone. Which categories: 1 short-term, 2 short-term leaning, 3 moderate, 4 long-term leaning, 5 long-term (5-10+ years).\n\nThe decision is motivated by the need for early investment to maintain market share in a high-growth market with competitors also investing. They accept short-term losses for future gains.\n\nThis suggests moderate to long-term: They consider future benefits, but also immediate push to stay ahead. The reasoning includes \"将来の利益増大と雇用維持\". That implies long-term, but also sees market growth high, yet competitor invests now.\n\nGiven they are assessing upcoming discontinuities: \"追加投資による技術継続性\". Likely to secure 5-10 years growth.\n\nThus time horizon maybe 4: long-term leaning. The decision to invest now for long-term success but acknowledges near-term losses. So the time horizon is long-term (maybe 4-5). But since they emphasize future > immediate (but not 10-plus years? Actually \"将来の利益増大\" (future profit increase) maybe not defined but likely multiple years, but employer also cares about sustainability. Could be 3 moderate.\n\nBut weight: \"年間12%の市場成長率が継続\" \"業界内大手が今投資\" \"遅れるとシェアを失う恐れ\" So urgency but long-term benefits (profit growth, employment). It's balancing short-term risk but long-term benefit. The time horizon probably leaning long-term. I propose 4.\n\nConfidence: high because the text strongly indicates long-term benefits via continue tech. Use only text.\n\nOutput JSON: {\"time_horizon\":4,\"confidence\":\"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:23:03.862264+00:00",
+ "timestamp_responded": "2026-10-25T11:23:05.548584+00:00"
+}

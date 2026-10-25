@@ -1,0 +1,24 @@
+{
+ "job_id": "D02|C3|withdrawal|2",
+ "seq": 4,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "fcdf81c6261065527a672878447f625c1a5b56e651f08c481a494d1efdcdd40f",
+ "prompt_sha256": "62e55140c408a33862ab18b61ac2ad7972d450febee64e9dfbd7e6a940f0c0e0",
+ "raw_text": "{\"exp_types\": [\"危機対処\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to classify the experience described. The description: \"B社が民事再生に入った際、財務状況を自ら目で確かめ、数字に弱い自分を克服した経験が最も影響した。 具体的には、資金繰り表を一度も自分で見たことがなく、危機を通じて金銭的判断を積極的に行う必要性を痛感した.\"\n\nThis experience: dealing with a company going into civil rehabilitation (i.e., bankruptcy). The person had to examine finances, overcame weakness in numbers, and realized need for financial decisions. This is basically crisis handling: crisis coping, dealing with bankruptcy. So classification includes \"危機対処\" (crisis handling). It might also include \"人・組織\" because dealing with financials? Not necessarily, no mention of HR or organization. \"海外\" no. \"技術・開発\" no. \"創業・立ち上げ\" no. \"その他\" no.\n\nThus output with exp_types [\"危機対処\"] and confidence high.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:01:18.724123+00:00",
+ "timestamp_responded": "2026-10-25T11:01:19.545792+00:00"
+}

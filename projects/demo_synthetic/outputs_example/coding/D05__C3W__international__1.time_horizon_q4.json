@@ -1,0 +1,24 @@
+{
+ "job_id": "D05|C3W|international|1",
+ "seq": 93,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "e149f6b61088a3fbf3abf796bb486d562fe8ed80d0b792b76b9675f85ef88332",
+ "prompt_sha256": "2d3540ab90ea836597c8d1332e197b2da8a8cc6de14c074c2a66707a23135ea3",
+ "raw_text": "{\"time_horizon\": 5, \"confidence\": \"high\"}",
+ "reasoning_text": "We must decide the time horizon of the decision given the reasoning.\n\nThe text: \"長期的な市場成長（10％/年）と高い顧客信頼を見失う恐れが大きい。現地投資を行わないと他社に遅れを取り、ブランド価値に損失が拡大する。投資は将来に向けた防衛策であり、従業員や地域社会への責任を果たす。\"\n\nSo they talk about long-term market growth 10% per year, losing customer trust, brand value loss over time, investment as defense towards the future, responsibilities to employees and community. This seems strongly long-term. Which horizon? 5 corresponds to 5–10年以上. The reason emphasises long-term growth and future defense. So time horizon 5. Confidence: high? The statement strongly points to long-term. I'd say high confidence.\n\nOutput JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:26:07.715975+00:00",
+ "timestamp_responded": "2026-10-25T11:26:08.384045+00:00"
+}

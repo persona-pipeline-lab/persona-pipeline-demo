@@ -1,0 +1,24 @@
+{
+ "job_id": "D01|C3W|tech_transition|1",
+ "seq": 97,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "c8be23b55771a71cb4547e39f04bd44126fa478ad0c9da07bf02bdfea924c60f",
+ "prompt_sha256": "d858b68377150e806fa0f5a36faccb0f40187501c641be773d7e3d082a7b503d",
+ "raw_text": "{\"exp_types\": [\"危機対処\", \"人・組織\"], \"confidence\": \"medium\"}",
+ "reasoning_text": "We have a description: \"A社で店舗を閉鎖した際、従業員と地域社会への影響を丁寧に行いながら数字の重要性を痛感した経験。さらに、顧客の切替を目撃し技術移行の危機を体感したことが本決定に大きく影響した。\"\n\nWe need to pick all relevant experience types from six categories: crisis response (\"危機対処\"), technology & development (\"技術・開発\"), overseas (\"海外\"), startup/launch (\"創業・立ち上げ\"), people/organization (\"人・組織\"), other (\"その他\").\n\nWe must only use explicit mention.\n\nThe description: \"店舗を閉鎖した際\" -> that might be a crisis response (store closure could be part of crisis). Also pertains to people/organization because employee & community impact, region society.\n\nAlso \"数字の重要性\" doesn't matter.\n\n\"顧客の切替を目撃し技術移行の危機\" indicates a technology migration crisis, so \"危機対処\" likely, also \"技術・開発\"? It says technological transition crisis. The phrase \"技術移行の危機\" - maybe it's a crisis but also involves technology development.\n\nBut the category \"技術・開発\" covers research / product development or production technology. Since this is '技術移行' i.e., technology transfer/transition, not necessarily development, but a crisis around technology transition. But the phrase '技術移行の危機' might fit \"危機対処\".\n\nBut we have to \"拾う (pick) the experiences explicitly mentioned.\" There is explicit '店舗を閉鎖した際' (store closure), which is crisis. '従業員と地域社会への影響' indicates people/org. '顧客の切替を目撃し技術移行の危機', that's crisis around technology. So categories: \"危機対処\", \"人・組織\". Also \"技術・開発\"? The phrase '技術移行の危機' could be considered a crisis about technology. But the category '技術・開発' is for R&D, product dev,  production tech experience (development). This seems to refer to technology migration, but maybe still part of tech or development? However the description: \"技術移行の危機\", it's a crisis involving technology. Since we have a category for crisis, we may include \"危機対処\". But do we also include \"技術・開発\"? The phrase doesn't mention developing new tech, but migrating existing tech. That could still be considered technology experience. The categories are not exclusive; they might overlap. The rule says: \"経験の型を次の6分類から該当するものすべて選んでください\" -> choose all that apply. So we can include both \"危機対処\" and \"技術・開発\"? But not necessary if the phrase does not mention specific development. However \"技術移行の危機\" indicates technical migration, but is that considered \"技術・開発\"? Could be \"技術・開発経験\" because it's about technology adaptation. The phrase could be interpreted as part of technology experience because it's about technology transition. The category says (\"研究開発・製品開発・生産技術の経験\"). That seems more about creation of new tech or product, less about transition. But the phrase \"技術移行の危機\" could be part of business crisis. I'd say \"危機対処\" definitely.\n\nAlso \"人・組織\" because employees, community, culture. So I think \"危機対処\", \"人・組織\" definitely. Should we include \"技術・開発\"? The phrase '技術移行の危機' might be considered a technological challenge, but the category is about development experience, not crisis. Might be a slight overlap but since there's a distinct category \"危機対処\" for crisis, not development. I'd choose just \"危機対処\" and \"人・組織\". Confidence medium.\n\nThus output JSON: {\"exp_types\":[\"危機対処\",\"人・組織\"],\"confidence\":\"medium\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:26:20.326551+00:00",
+ "timestamp_responded": "2026-10-25T11:26:23.034703+00:00"
+}

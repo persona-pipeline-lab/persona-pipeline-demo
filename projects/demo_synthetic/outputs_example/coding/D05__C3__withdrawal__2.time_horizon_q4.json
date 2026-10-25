@@ -1,0 +1,24 @@
+{
+ "job_id": "D05|C3|withdrawal|2",
+ "seq": 10,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "427f6bc52887506187d41b24f83dded5e74d61e75c802bed5292ac65b51fdc7b",
+ "prompt_sha256": "65789a77016f713a3237ec2790b3f5cb1e5683a918d719d968fbbc7504f3e265",
+ "raw_text": "{\"time_horizon\": 4, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to decide time horizon scale 1-5. The description: \"市場成長と技術優位性を活かす一方で、資金負担とブランド・地域影響を最小限に抑えるために、リスクを分担できるパートナーとの提携を検討する。相手との関係を継続的に構築し、相互に価値を生み出すことが重要だと考える。\"\n\nThey focus on leveraging growth and tech advantage but minimizing risk/financial/brand impact by partnering to share risk. They emphasize continuous relationship, mutual value. This suggests more long-term thinking: building partnerships, ongoing value co-creation. The horizon might be mid to long term, but nuance. They mention \"市場成長\" and \"技術優位性\" which may be medium to long-term. They want to minimize risk with partner; continuous relationship indicates long-term. So I'd say 4 (long-term oriented). Confidence? The reasoning is fairly clear, but they didn't explicitly mention 5 years; maybe 4 is safe. Confidence high because the text indicates long-term orientation. So output JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:20:49.655497+00:00",
+ "timestamp_responded": "2026-10-25T11:20:50.451149+00:00"
+}

@@ -1,0 +1,24 @@
+{
+ "job_id": "D05|C3W|withdrawal|2",
+ "seq": 82,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "bda4807dab25cefe2520e1be0977a243a2bb3f0bc40274cfc6aaf5e5b9054f11",
+ "prompt_sha256": "c3dd062cf8c559f0530a56053e408a9b879e166184dd9915890aa8b6c026b4d6",
+ "raw_text": "{\"time_horizon\":5, \"confidence\":\"high\"}",
+ "reasoning_text": "We need to analyze the rationale. Key points: \n- Observes market growth rate 12%, sees investment to maintain tech advantage.\n- Notes short-term profit improvement would come from exit but would lose future growth opportunities, brand, regional community impact.\n- Emphasizes contributions to employees and community, and trust of existing customers.\nThis suggests long-term perspective: investing for future growth, keeping brand, community, employees.\n\nThus time horizon likely 4 or 5. 5 is 5-10+ years growth and survival. Language indicates future opportunities, brand, community, long-term trust. So 5 maybe. 4 also possible. But mention \"市場成長率12%を見越し\" indicates expecting market growth in coming years; \"将来成長機会\" leans long term. They value future rather than immediate.\n\nThe phrase \"将来成長機会とブランド・地域社会への波及効果を失うリスク\" - long term. So likely 5. Confidence: high.\n\nReturn JSON: {\"time_horizon\":5, \"confidence\":\"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:25:22.458935+00:00",
+ "timestamp_responded": "2026-10-25T11:25:23.179357+00:00"
+}

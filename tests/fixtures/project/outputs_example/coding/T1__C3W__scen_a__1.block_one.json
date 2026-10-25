@@ -1,0 +1,24 @@
+{
+ "job_id": "T1|C3W|scen_a|1",
+ "seq": 25,
+ "block": "block_one",
+ "source": "q2_text",
+ "input_sha256": "a6dbcd82ee05fff6828c7cd24f508ad1c0b26494b0397d0ba391ddbeb71fae98",
+ "prompt_sha256": "0fbbea004528503617a770050e1077cdb36c83e1f48679e6e5d9eefe4ed49707",
+ "raw_text": "{\"label_one\": \"ラベルA\", \"confidence\": \"high\"}",
+ "reasoning_text": "",
+ "error_message": "",
+ "model": "mock-model",
+ "actual_model": "mock-model-1",
+ "endpoint_kind": "mock",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T06:50:53.625842+00:00",
+ "timestamp_responded": "2026-10-25T06:50:53.625842+00:00"
+}

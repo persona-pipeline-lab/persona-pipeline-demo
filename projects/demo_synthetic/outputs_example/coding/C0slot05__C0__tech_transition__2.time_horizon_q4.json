@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot05|C0|tech_transition|2",
+ "seq": 70,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "cc158e074a010d7b01d0488f104d2e3099fbeea41ff44e50a550d15514866a12",
+ "prompt_sha256": "0400971f9282061ffee7b3cb8fc020fb9649eae3ad033926824711446f404e53",
+ "raw_text": "{\"time_horizon\":1, \"confidence\":\"high\"}",
+ "reasoning_text": "We need to grade time horizon based on reasoning. The text states: big financial burden, risk to liquidity, but partnering can share costs, quick tech adoption, use partners' patent network and market access, \"短期的に顧客基盤の拡大を図ることで売上回復を狙う\" meaning aiming for revenue recovery in the short term. So the focus is on immediate turnover. The strategy is to mitigate short-term financial strain and quickly recover sales. So period: short term – maybe 1. But also they are investing in development future tech, but risk mitigation. However the commentary says \"short term to expand customer base for sales recovery.\" So decision is short-term. So time_horizon: 1. Confidence: high? The reasoning is clear. So output JSON: {\"time_horizon\":1, \"confidence\":\"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:24:39.229695+00:00",
+ "timestamp_responded": "2026-10-25T11:24:39.814736+00:00"
+}

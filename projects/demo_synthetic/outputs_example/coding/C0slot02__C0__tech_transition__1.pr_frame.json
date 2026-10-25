@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot02|C0|tech_transition|1",
+ "seq": 63,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "75d0f79e5de0cfa045e842b1a480c313ed30ce4a2abc4ed7d42ff2d6f73cea68",
+ "prompt_sha256": "7737581a190fa9337d3294fbf78b169257d5b9f4d5db6d1d605f89bd2985dee6",
+ "raw_text": "{\"pr_frame\":\"技術\",\"confidence\":\"high\"}",
+ "reasoning_text": "We need to choose one of the five categories: \"財務収益\", \"市場競争\", \"技術\", \"組織ステークホルダー\", or \"複数拮抗\". The answer must be JSON only with fields pr_frame and confidence.\n\nWe have the short description: \"主に技術的遅れと競合優位性の喪失が深刻で、既存技術の優位を維持しつつ新方式へ転換が不可欠だ。\"\n\nSo it's about technical lag and losing competitive advantage, and need to maintain existing technology advantage while switching to new method. The problem's core: technical shortcomings and competitive advantage loss. That falls into \"技術\" frame. It also could be \"市場競争\" because losing competitive advantage is under competition. But the content emphasises technical lag and new approach. But the phrase \"競合優位性の喪失\" is key. But the root cause is technology. It says \"主に技術的遅れ\". So it's primarily technology. So choose \"技術\". Confidence high.\n\nThus output: {\"pr_frame\":\"技術\",\"confidence\":\"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:24:13.785729+00:00",
+ "timestamp_responded": "2026-10-25T11:24:14.567983+00:00"
+}

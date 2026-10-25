@@ -1,0 +1,24 @@
+{
+ "job_id": "D03|C3|international|1",
+ "seq": 17,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "b59c9ec4c69c85e520ad54b6529e4ffc6cf3c8d5285e9615578060e07abeec3b",
+ "prompt_sha256": "9922d5c4e8eba05e56a558cdd115855b58e719b68e9a5a98bc90f889a2ba56a6",
+ "raw_text": "{\"pr_frame\":\"市場競争\",\"confidence\":\"high\"}",
+ "reasoning_text": "We need to examine the description: \"市場・競争の問題。競合が値下げでシェアを狙い、政府規制の強化で価格競争の圧力が増し、既存の高品質が維持できなくなるリスクがある。\"\n\nThe question: choose primary problem frame among \"財務収益\", \"市場競争\", \"技術\", \"組織ステークホルダー\", \"複数拮抗\". Based on \"問題の核心\" in description. The core issues are: competition, market share, price competition due to regulation, risk of losing high quality. That is clearly about market competition. So choose \"市場競争\". Confidence high. Output JSON accordingly.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:21:14.310053+00:00",
+ "timestamp_responded": "2026-10-25T11:21:14.842123+00:00"
+}

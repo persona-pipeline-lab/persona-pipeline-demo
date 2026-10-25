@@ -1,0 +1,24 @@
+{
+ "job_id": "D03|C3-mixed|international|1",
+ "seq": 125,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "65d3eb3899b8d3e7b3b0563fd399810a6fc7649d3f01921642dc985776090894",
+ "prompt_sha256": "3d8b612c68e423cdeb8aa8d031e9aaa9672360fb3f2bb09f003c317c4d191431",
+ "raw_text": "{\"time_horizon\": 4, \"confidence\": \"medium\"}",
+ "reasoning_text": "We need to evaluate time horizon from reasoning. Let's parse.\n\n\"長期成長性は確かに高い\" indicates focus on long term. \"従業員を失わずに生産体制を整えることで、ブランド価値と市場シェアを守る\" that's about preserving brand value and market share. That seems less explicit about time horizon but kind of long-term.\n\n\"リスクを分散させるために、現地パートナーとの協業を図りつつ、投資を進める\" They invest gradually and collaborate to diversify risk. This indicates a balanced approach but still with growth intention. The writing seems to emphasize long-term growth prospects. I'd rate 4 or 5.\n\nWe should consider what \"長期寄り\" means: need to be more long-term orientation (more than 5 years). A mention \"長期成長性\" and \"投資を進める\" signs we are looking at long-term, maybe 5-10 years. We cannot say extreme long-term (5). So rating 4: long-term orientated but not sure at extreme.\n\nConfidence medium probably because not many explicit quantitative terms. I'd say confidence medium.\n\nReturn JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:28:18.072052+00:00",
+ "timestamp_responded": "2026-10-25T11:28:18.889222+00:00"
+}

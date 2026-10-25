@@ -1,0 +1,24 @@
+{
+ "job_id": "D03|C3-mixed|international|1",
+ "seq": 125,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "0cd4fb5f332643be739632a6d5a915a96230d96808bc3782eb64d95c72e04125",
+ "prompt_sha256": "80e2e920435d88267343843839002b6a10f83cd402206b99dc72086ccdeef022",
+ "raw_text": "{\"pr_frame\":\"財務収益\",\"confidence\":\"high\"}",
+ "reasoning_text": "We need to pick one primary issue frame among categories. The statement: \"主要な課題は現地事業の財務的な赤字と投資負担にあります。市場成長は期待できるものの、為替・規制のリスクを踏まえると収益性の確保が最優先です。\" The core is financial profitability: \"財務的な赤字と投資負担\" => \"財務収益\" frame. The certainty: \"収益性の確保\" also financial ROI. So likely \"財務収益\". Confidence high. Output JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:28:16.197641+00:00",
+ "timestamp_responded": "2026-10-25T11:28:16.652111+00:00"
+}

@@ -1,0 +1,24 @@
+{
+ "job_id": "D06|C3-mixed|withdrawal|1",
+ "seq": 119,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "aae2af19a8e2f770b5711c3698c164f1d0b95860fd8e143abf9b63ddbff1a7c6",
+ "prompt_sha256": "a64e2fc54aaf7bbf715c8d939e6ed532e91b12d1f42eba978a04173d149c62a3",
+ "raw_text": "{\"time_horizon\":5, \"confidence\":\"high\"}",
+ "reasoning_text": "We need to judge time horizon of 1-5, based on language. The description: \"市場は今後も年12％で成長し続けるため、投資で競争力を維持することが重要です。技術優位を保つための安全投資は短期赤字を犠牲にしても必須です。撤退するとブランドと地域社会に損害が及ぶほか、将来の市場機会を失う恐れがあります。したがって、追加投資を継続し、リスクを分散させていく方針とします。\" That talks about long-term growth, but mentions \"短期赤字を犠牲にしても必須\" implying short-term sacrifice for longer-term. The emphasis on ongoing investment, risk diversification, future opportunities. The time horizon might be 4 or 5. They say \"市場は今後も年12％で成長し続ける\" - implying many years. They mention \"将来の市場機会\". \"技術優位を保つため\" basically implies long-term. So likely 4 or 5. 5 would be 5-10+ years. The description doesn't say beyond 10 years explicitly, just '今後も年12％で成長し続ける', which could it be indefinite. But the statement is more about maintaining competitive advantage, risk diversification, continuing investment. That seems long-term oriented. I'd lean 5? But we need to evaluate the style. \"短期赤字を犠牲にしても必須\". That indicates accepting short-term pain for long-term benefit. \"逃げると...将来の市場機会を失う恐れがあります\". So more focus on future, future opportunities. I'd choose 5 maybe. But 5 is 5–10 years. Description says market will continue growing at 12% annually. Might be many years. \"追加投資を継続し、リスクを分散させていく方針\" indicates ongoing, indefinite. That implies long horizon. I'd pick 5. Confidence high.\n\nThus output: {\"time_horizon\":5, \"confidence\":\"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:27:50.998530+00:00",
+ "timestamp_responded": "2026-10-25T11:27:52.436999+00:00"
+}

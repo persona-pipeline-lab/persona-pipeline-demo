@@ -1,0 +1,24 @@
+{
+ "job_id": "D04|C3W|withdrawal|1",
+ "seq": 79,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "4cd66b3b68a5b8a4fef1f9660c027a5f67341c775d188ba030114e1472b22555",
+ "prompt_sha256": "f1a8d91cc491ab6d18fc65144cfe1d012be2ec2d905b4770d565fe765be2fdec",
+ "raw_text": "{\"time_horizon\":5,\"confidence\":\"high\"}",
+ "reasoning_text": "We need to evaluate time horizon of judgment: the justification describes long-term perspective: investment to maintain technical advantage, long-term market share growth, need to build foundation for new development. It emphasizes long-term benefit and competition. The scale: 1 = short-term, 5 = long-term (5-10+ years growth). This seems strongly long-term. So time_horizon likely 5. But we must consider nuance: The statement mentions \"long-term market share expansion\" explicitly. That is definitely long-term. So time_horizon: 5. Confidence: high. The result should be JSON with those fields.\n\nWe shouldn't use external knowledge, but we can interpret phrase.\n\nThus output: {\"time_horizon\":5,\"confidence\":\"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:25:13.170153+00:00",
+ "timestamp_responded": "2026-10-25T11:25:13.676415+00:00"
+}

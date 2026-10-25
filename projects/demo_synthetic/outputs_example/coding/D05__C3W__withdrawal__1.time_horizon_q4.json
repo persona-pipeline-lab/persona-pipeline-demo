@@ -1,0 +1,24 @@
+{
+ "job_id": "D05|C3W|withdrawal|1",
+ "seq": 81,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "1aa2e68e76c84de88940fe4a08cdfe7a906935f6aacc7ac5947803dcf2ff0f75",
+ "prompt_sha256": "195f69a3be2bfc575e7913ebdc9aac227a369b26bb58920ed0da0d6e5b575273",
+ "raw_text": "{\"time_horizon\": 4, \"confidence\": \"medium\"}",
+ "reasoning_text": "We need to judge the time horizon based on reasoning text. The description: \"市場は大きく成長し続ける可能性が高い。その成長に乗り込むために追加投資は必要だと認識し、従業員や地域へ与える安定的な影響を優先した。\" They focus on market growth potential, investing to ride it, and prioritize stable impacts on employees/region. That seems mid to long term? They talk about market growth remains high, investing to ride it, stable impacts. This indicates medium-term to long-term? But \"惨... \" They prioritize stable impacts, not just short-term profits. This indicates at least medium to long term. I'd rate 3 maybe? Wait clarify: 1=short-term, 2=short-term oriented, 3=mid-term or balanced, 4=long-term oriented, 5=very long-term. The text mentions \"market continues to grow\" and \"add invest to ride growth\" and \"prioritize stable impact.\" That suggests long-term thinking because they invest to capture growth and for stable impact. That's likely beyond immediate. I'd lean 4 maybe? But \"market continues to grow\" could be 5-year or longer. They invest in embedded stable impact on employees/region. That's not purely immediate. I'd pick 4. Confidence?\n\nConfidence: moderate - because limited info. So \"medium\". Return JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:25:18.901177+00:00",
+ "timestamp_responded": "2026-10-25T11:25:19.838693+00:00"
+}

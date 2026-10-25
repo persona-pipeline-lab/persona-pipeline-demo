@@ -1,0 +1,24 @@
+{
+ "job_id": "D06|C3-mixed|tech_transition|1",
+ "seq": 143,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "2dea2b8f630413b96e77624694881bc187abf9cc5d13ad7baabb8d7ba640a964",
+ "prompt_sha256": "532e89dfdd7970781094b948fea474fbf44949f3a3f4c754c08961eff2097629",
+ "raw_text": "{\"exp_types\": [\"技術・開発\", \"人・組織\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We have the user instruction. They provide a category list: \"危機対処\", \"技術・開発\", \"海外\", \"創業・立ち上げ\", \"人・組織\", \"その他\". We must ingest the given passage and select all applicable categories that are specifically mentioned.\n\nGiven passage: \"ホテルの再建の三年間で、技術インフラを優先しつつ従業員や地域の安全を守る経験が影響しました。技術投資と人材育成を両立させる姿勢を学び、今回の判断につなげました。\"\n\nWe examine mentions:\n\n- \"ホテルの再建の三年間\": That's like a crisis or rebuilding? But \"再建\" could be considered crisis management? It is not specifically \"赤字・倒産危機・事故・不祥事・需要崩壊への対処\". But could be considered \"危機対処\". However description: \"技術インフラを優先しつつ従業員や地域の安全を守る\". That indicates \"人・組織\" because human safety. Also mention \"技術投資\", that's \"技術・開発\". It also says \"人材育成\" => \"人・組織\". There's no mention of overseas. No mention of startup. So categories: 技術・開発, 人・組織. Possibly also 危機対処 because it's a crisis of hotel rebuild? But rule: Retrieve only experiences explicitly mentioned. The passage says \"ホテルの再建\" - \"rebuild\" could be a form of crisis but not explicitly crisis. It doesn't say \"赤字\" or \"倒産\". The safe interpretation: focus on \"技術・開発\" (技術投資) and \"人・組織\" (人材育成, 従業員, 地域の安全). So answer: 無し? The answer includes categorical names exactly. The categories list: \"危機対処\", \"技術・開発\", \"海外\", \"創業・立ち上げ\", \"人・組織\", \"その他\".\n\nWe produce JSON: {\"exp_types\": [\"技術・開発\",\"人・組織\"], \"confidence\": \"high\"}. Let's do that.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:29:24.500415+00:00",
+ "timestamp_responded": "2026-10-25T11:29:26.026963+00:00"
+}

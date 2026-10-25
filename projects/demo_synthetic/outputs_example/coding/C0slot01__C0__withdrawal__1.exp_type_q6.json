@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot01|C0|withdrawal|1",
+ "seq": 37,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "2ede0630a6cc5ccb497b2c3d25a18b0ae90fe012ee7f0cf8eeaccfca57e5fde5",
+ "prompt_sha256": "3faf95f2840a68543b5a5f3e0d1db1fc056f6c35b40d4bdf2d9064dd418e3861",
+ "raw_text": "{\"exp_types\": [\"技術・開発\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to identify the types of experience mentioned: The description: \"前回、国内のITベンダーと共同で資金を分割して開発プロジェクトを成功させた経験がある。この経験から、資金負担を分散するパートナーシップ構築の重要性を痛感した。\" So they collaborated with a domestic IT vendor, divided funding, developed a successful project. That is \"技術・開発\" (research/production development). It's also a partnership, so could be \"海外\"? No, domestic vendor. So not overseas. \"危機対処\"? No, they succeeded. \"創業\"? No. \"人・組織\"? No. So only \"技術・開発\".\n\nAlso could include \"パートナーシップ構築\" but not among categories. So output JSON with exp_types [\"技術・開発\"]. Confidence high.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:22:29.868455+00:00",
+ "timestamp_responded": "2026-10-25T11:22:30.510908+00:00"
+}

@@ -1,0 +1,24 @@
+{
+ "job_id": "D02|C3|withdrawal|2",
+ "seq": 4,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "ba4d5c0fe5ae52901708551439479336732b064d01d50855384b817cc279ec4f",
+ "prompt_sha256": "4491d9edd41fa87edf395c846268bde3d5aef6c973be1d92060f11872021f3aa",
+ "raw_text": "{\"pr_frame\":\"組織ステークホルダー\",\"confidence\":\"high\"}",
+ "reasoning_text": "We have the description: \"組織・ステークホルダーの問題である。\"\n\nWe need to classify into one of the frameworks: \"財務収益\", \"市場競争\", \"技術\", \"組織ステークホルダー\", \"複数拮抗\".\n\nSo this statement explicitly says \"組織・ステークホルダーの問題である。\" i.e., it's being described as an organizational stakeholders problem. So likely the correct classification is \"組織ステークホルダー\". That seems straightforward.\n\nWe also need to provide confidence: high/medium/low. The statement is pretty direct. So trust high. We should output JSON only. The output: {\"pr_frame\":\"組織ステークホルダー\",\"confidence\":\"high\"} In JSON. The format: no markdown. Good.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:01:16.849112+00:00",
+ "timestamp_responded": "2026-10-25T11:01:17.480208+00:00"
+}

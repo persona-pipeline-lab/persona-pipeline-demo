@@ -1,0 +1,24 @@
+{
+ "job_id": "D05|C3|tech_transition|1",
+ "seq": 33,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "7564fe890cf12bec46091b938fe7e20c79190e94ea104c2802f131b5f284c29e",
+ "prompt_sha256": "7d0ea6f49ca0c7f3c58e5e332d9abb3b9191aff36803ad612d643cfc97ace85f",
+ "raw_text": "{\"exp_types\": [\"人・組織\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to pick all applicable categories based on the description: \"取引先社長に対し継続的に手紙を書き、相手の行動変容を促した経験が、関係構築の重要性と提携による相互利益を実感させた。\" They wrote letters to a client CEO, influencing his behavior, realizing importance of relationship building and mutual benefits through alliance. The categories: \"危機対処\" \"技術・開発\" \"海外\" \"創業・立ち上げ\" \"人・組織\" \"その他\".\n\nThis is clearly about relationship building and influencing someone - that's human/organizational type - \"人・組織\" (people & organization). Could also be \"創業・立ち上げ\"? No, it's about relationship with a customer. Not crisis. Not tech. Not overseas. Not other.\n\nThus \"人・組織\" is the classification.\n\nConfidence likely high. Output JSON accordingly.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:22:17.653164+00:00",
+ "timestamp_responded": "2026-10-25T11:22:18.343376+00:00"
+}

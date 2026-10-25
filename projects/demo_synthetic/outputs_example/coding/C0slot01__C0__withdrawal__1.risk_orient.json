@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot01|C0|withdrawal|1",
+ "seq": 37,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "9816cbea3ab7c4830ccdb49c282ff5f628dc2298dbb913a534ae982a60982622",
+ "prompt_sha256": "9575e0e2006c60b2ff40371376579ad0557edcf809130f23345916056ed15d6f",
+ "raw_text": "{\"risk_orient\": 2, \"confidence\": \"medium\"}",
+ "reasoning_text": "We need to classify risk orientation based on the description.\n\nLet's parse the description: \"追加投資の規模が大きく、資金調達に時間がかかるため、資金リスクを分散するためにパートナー企業と共同で事業を推進したいと考える。技術優位性は維持できるが、競合が大型投資を行っているため、シナジーを活用できる提携が有効である。株主価値を維持しつつ、従業員・地域社会への影響も抑えられる構想である。\"\n\nIt states: investment size large, funding takes time, want to distribute risk by partnering jointly. They maintain competitive advantage but recognize competitors making large investments; synergy partnership is effective. They want to maintain shareholder value while reducing impact on employees/ community. They are focusing on risk diversification by joining with partner. No mention of risking heavy losses or novelty or ignoring risk. They are risk-averse? They want to mitigate risk by partnership and maintain value. The orientation is risk-averse or risk-averse in that they try to reduce risk. So maybe rating 2? They are avoiding risk but not extreme. They weigh risk diversification. It aligns with risk-averse toward risk due to desire to spread capital risk. They are not 'risk-seeking'.\n\nThus risk_orient likely 2. Confidence medium/ high? They have explicit risk mitigation efforts: risk acceptance? They accept some risk but not big. I'd say confidence medium.\n\nOutput JSON: {\"risk_orient\": 2, \"confidence\":\"medium\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:22:27.848428+00:00",
+ "timestamp_responded": "2026-10-25T11:22:28.921155+00:00"
+}

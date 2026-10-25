@@ -1,0 +1,24 @@
+{
+ "job_id": "D02|C3|international|2",
+ "seq": 16,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "f12ea44aad95d9c0c625bb646d214c1d7922b08f13e1a3aa19474f8be5888759",
+ "prompt_sha256": "116eee62adb3551a766bb0b54221b814c12ffff0887dbf2558623163c1490caa",
+ "raw_text": "{\"pr_frame\":\"組織ステークホルダー\",\"confidence\":\"high\"}",
+ "reasoning_text": "We need to choose main problem frame: options: 財務収益, 市場競争, 技術, 組織ステークホルダー, 複数拮抗.\n\nWe examine the description: \"現地事業の売上は減少しているものの、従業員や地域社会への影響が大きく、組織・ステークホルダーの問題が決定的です。\"\n\nCore is about employees, local community impact, organizational/stakeholder. So \"組織ステークホルダー\" clearly. Confidence high.\n\nReturn JSON: {\"pr_frame\":\"組織ステークホルダー\",\"confidence\":\"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:21:09.556304+00:00",
+ "timestamp_responded": "2026-10-25T11:21:10.062483+00:00"
+}

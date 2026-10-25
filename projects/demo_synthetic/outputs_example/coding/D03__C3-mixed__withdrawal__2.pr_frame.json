@@ -1,0 +1,24 @@
+{
+ "job_id": "D03|C3-mixed|withdrawal|2",
+ "seq": 114,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "98f80dea90b6f630c33b32bb3ff966d170675092180bd7a475d926b1674611c3",
+ "prompt_sha256": "9b777d5b8cead72d83dc34935dbb820c4556efc5a8d6e0bec6706d9672b66d86",
+ "raw_text": "{\"pr_frame\":\"財務収益\",\"confidence\":\"high\"}",
+ "reasoning_text": "We have to classify the main problem frame. Text says: \"主たる問題は財務・収益の不安定である。事業赤字と追加投資が財務に圧迫をかける中、持続的なキャッシュフロー確保が課題になる。\"\n\nSo main problem is financial and revenue instability, cash flow. That falls under \"財務収益\". That's the classification. Confidence high.\n\nReturn JSON: {\"pr_frame\":\"財務収益\",\"confidence\":\"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:27:29.327052+00:00",
+ "timestamp_responded": "2026-10-25T11:27:29.723167+00:00"
+}

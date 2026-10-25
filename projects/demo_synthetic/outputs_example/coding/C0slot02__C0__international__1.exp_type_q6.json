@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot02|C0|international|1",
+ "seq": 51,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "c58744712de72941eb38680967376ba5b1c72059d25bfb22903bf9082eaf7b7c",
+ "prompt_sha256": "5ad97eb81f4c8972a63733d65eda3eea01bf53165b339c48f97544ca6c5439f8",
+ "raw_text": "{\"exp_types\": [\"海外\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to identify all types from six categories that match the experience described: \"以前、国外事業の再編で現地パートナーとの合弁を結び、投資コストを低減し市場シェアを確保した経験があります。\"\n\nThe experience includes overseas operations: \"国外事業\" (overseas) and joint venture with local partner (partnership, could be overseas). So it's overseas experience. Also it involves restructure of overseas business: that could be part of overseas; but not crisis, technology, startup, human, or other. It's clearly overseas and maybe also \"技術・開発\" (no). \"創業・立ち上げ\" no. \"危機対処\" no.\n\nThus, only \"海外\". Possibly also \"人・組織\" if joint venture indicates partnership? But the rule: only pick categories that are explicitly mentioned. The description mentions \"国\" \"国外事業\", \"現地パートナーとの合弁\". That indicates overseas business collaboration. So overseas category. Also, \"投資コストを低減し市場シェアを確保\" relates to cost reduction and market share; but those are business aspects. Not exactly category \"人・組織\" unless there is mention of organizational relationships. There's mention of partnership with local partner, which implies some relationship, but \"人・組織\" refers to \"人事・労務・組織運営・師弟関係\". Does a partnership count as organizational? Might be considered organizational relationship. However, the category \"人・組織\" probably refers to internal HR, workforce, etc. The partnership is external. So probably not. The main category is overseas.\n\nThus output: \"海外\". Confidence: high.\n\nCheck that output format is JSON with key \"exp_types\" and \"confidence\".\n\nThus\n\n{\"exp_types\": [\"海外\"], \"confidence\": \"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:23:25.377461+00:00",
+ "timestamp_responded": "2026-10-25T11:23:26.618941+00:00"
+}

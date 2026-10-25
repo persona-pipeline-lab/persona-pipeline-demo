@@ -1,0 +1,24 @@
+{
+ "job_id": "D04|C3W|international|1",
+ "seq": 91,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "44d51aa9ff0bee684af369c9aa3e87178956bf7db05c42a1fea8dfc3e7d74654",
+ "prompt_sha256": "cfe30f7a5e3502a3393390d5365d48fd90b532fc58233a1b4286583cd3684b75",
+ "raw_text": "{\"risk_orient\": 2, \"confidence\": \"medium\"}",
+ "reasoning_text": "We need rating 1-5. The statement: \"地域社会および従業員への影響を最小限に抑えつつ、価格競争に対抗するためにリソースを共有するパートナーシップを構築したい。パートナーと協議しつつ、投資コストを抑えながら事業継続を図る。さらに、取引先や顧客との関係を維持できる。\"\n\nThey want to reduce impacts, reduce costs, maintain relationships, build partnership to share resources against price competition. It seems risk-averse? They focus on minimizing impacts, limiting cost, maintaining relationships, suggesting cautious strategy. They are not asking to take big risk; they are ceding risk by partnership. The language \"投資コストを抑えながら事業継続\" indicates cost control. So likely 2 => risk-averse. But let's analyze.\n\nThey want to mitigate impacts on community and employees: risk minimization. They want to compete via resource-sharing partnership: that's a risk mitigation strategy too. They want to reduce investment costs while maintaining relationships. They prioritize risk reduction more than seizing opportunity. So risk orientation: 2 (回避寄り). Confidence medium since somewhat clear.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:25:59.204141+00:00",
+ "timestamp_responded": "2026-10-25T11:26:00.071356+00:00"
+}

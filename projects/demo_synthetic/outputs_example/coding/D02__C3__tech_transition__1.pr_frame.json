@@ -1,0 +1,24 @@
+{
+ "job_id": "D02|C3|tech_transition|1",
+ "seq": 27,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "f2ddf1a25ba42279fc25e3c647af623573e9d97a861300e70ad4d4a55ebf06ff",
+ "prompt_sha256": "eeec3c3b6b710e3b6f9c6a8a7ad472d9d3240f06969248444514346bfeaf7c50",
+ "raw_text": "{\"pr_frame\":\"市場競争\",\"confidence\":\"high\"}",
+ "reasoning_text": "We need to parse: The description: \"主力事業の市場シェアが急速に減少しており、顧客が新方式へ移行することで収益圧迫が深刻化している。\"\n\nWe are to choose a main problem frame among the classification options: 「財務収益」, 「市場競争」, 「技術」, 「組織ステークホルダー」, 「複数拮抗」. Use the core of problem. The description says: main business market share is declining rapidly, customers moving to new method, causing revenue pressure. That implies market competition context: market share declining due to competitors, customers shifting to new solutions. Also revenue pressure is tied to that, but it's cause is market competition. So the primary issue would be market competition. There's no mention of technology or stakeholder issues explicitly. So choose 「市場競争」. Confidence maybe \"high\", since clear.\n\nReturn JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:21:49.771794+00:00",
+ "timestamp_responded": "2026-10-25T11:21:50.430673+00:00"
+}

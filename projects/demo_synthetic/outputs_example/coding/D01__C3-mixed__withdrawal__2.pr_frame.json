@@ -1,0 +1,24 @@
+{
+ "job_id": "D01|C3-mixed|withdrawal|2",
+ "seq": 110,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "6ea30367d1361a7451a8621b3315ea37c7f7dcac9ff87db080e632d2b78072a2",
+ "prompt_sha256": "69a82ada6008346998274aa2a1c8446f3020b35fdfc840887f6b3bcd8a194baf",
+ "raw_text": "{\"pr_frame\":\"市場競争\",\"confidence\":\"high\"}",
+ "reasoning_text": "We need to classify the short description: \"市場・競争の問題として、成長機会と競争激化に直面している。\"\n\nWe have classification options:\n\n1. 「財務収益」（赤字・投資負担・収益性が中心）\n2. 「市場競争」（市場の成長・競合・顧客獲得が中心）\n3. 「技術」（技術優位・技術転換が中心）\n4. 「組織ステークホルダー」（従業員・取引先・地域・ブランドへの責任が中心）\n5. 「複数拮抗」 (two or more frames equal weight, no ranking)\n\nThe phrase points to market/competition, growth opportunities, competition intensification. So it's about market competition. So classification is \"市場競争\". Confidence: high.\n\nReturn JSON: {\"pr_frame\": \"市場競争\",\"confidence\":\"high\"}\n\nRemember output only JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:27:08.189463+00:00",
+ "timestamp_responded": "2026-10-25T11:27:08.859057+00:00"
+}

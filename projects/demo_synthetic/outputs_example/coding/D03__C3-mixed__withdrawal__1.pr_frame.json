@@ -1,0 +1,24 @@
+{
+ "job_id": "D03|C3-mixed|withdrawal|1",
+ "seq": 113,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "c6cae6be12d0dbf989b7df2c1912c2f9adf5ce7ecf6dff65328b8e6c328baaf4",
+ "prompt_sha256": "ea49478d83f93be93ea40b42adf2d5b57f1d8cb1a9cddb39ae72a17223bb2c64",
+ "raw_text": "{\"pr_frame\":\"市場競争\",\"confidence\":\"high\"}",
+ "reasoning_text": "We need classify the main problem frame: options: \"財務収益\", \"市場競争\", \"技術\", \"組織ステークホルダー\", \"複数拮抗\".\n\nThe description: \"市場成長は見込めるが、顧客獲得が鈍化し海外の大手投資によって競争が激化している。 したがって、事業の継続を検討する際は市場・競争の観点が最重要。\"\n\nClearly focus on market growth, customer acquisition slow, competition intensifies. So main frame is \"市場競争\". Confidence high. Output JSON.\n\n",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:27:24.660255+00:00",
+ "timestamp_responded": "2026-10-25T11:27:25.145057+00:00"
+}

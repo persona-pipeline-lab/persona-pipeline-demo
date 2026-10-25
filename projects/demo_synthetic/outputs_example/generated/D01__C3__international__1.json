@@ -1,0 +1,32 @@
+{
+ "job_id": "D01|C3|international|1",
+ "seq": 13,
+ "person_id": "D01",
+ "condition": "C3",
+ "scenario": "international",
+ "rep": 1,
+ "model": "gpt-oss-20b",
+ "sent_sha256": "1496bb74ae539361e5360c2640feb95b1c07d177fcb363e2ec7957d1b42f4f65",
+ "sent_file": "sent/D01__C3__international__1.txt",
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 8192,
+  "seed": 100001,
+  "reasoning_effort": "medium"
+ },
+ "status": "ok",
+ "error_message": "",
+ "response_text": "{\"q1\":[\"B\",\"H\",\"E\"],\"q2_category\":4,\"q2_text\":\"企業の安定性とステークホルダーへの信頼が揺らいでいるため、組織とステークホルダーの問題として捉える。\",\"q3\":\"継続投資\",\"q4_text\":\"現地の生産設備を改善することで安全基準を満たし、事故リスクを低減できる。長期的な市場成長に乗るためには、短期的な赤字を受け入れつつ投資を進める必要がある。顧客信頼と地域社会への責任感が再建に不可欠である。\",\"q5_ranking\":[\"地域社会\",\"従業員\",\"顧客\",\"取引先\",\"株主\"],\"q6_text\":\"配管破裂事故で生じた信頼喪失と、社員・顧客・住民に対して謝罪し改善策を提示した経験が、設備投資とステークホルダーへの対応が最重要であると教えてくれた。この体験から、経営判断は安全と透明性を最優先とするようになった。\"}",
+ "reasoning_text": "We must infer answers based solely on autobiography experiences. The autobiography shows heavy emphasis on safety, investment in infrastructure, responsible management, and learning from data. He suffered accident when delayed maintenance. He prioritized safety, transparency, stakeholder communication. He had to keep customers by investing and trust.\n\nGiven the scenario: We need to pick 3 items to confirm first. Likely: B (financial burden), C (employees), H (social impact) or maybe E competition? He emphasized safety and infrastructure. In his experience he realized updating pipes was necessary. So B is crucial (#1). Then H impact of withdrawal is significant. Another could be E (competitor gives discount) but that is more market. The order: B, H, E maybe? But he might want to check financial viability (B), and assess social impact (H). Also competitor and price (E) because of competition. So Q1: [\"B\",\"H\",\"E\"] maybe.\n\nQ2: He considered it \"組織・ステークホルダーの問題\" because safety and stakeholder. But also financial burden. However his perspective: safety and invest large; his experience shows that company must invest proactively, else accidents. So he sees this as 4: organizational & stakeholder problem, because staff and community and brand. So choose 4. Provide sentence: \"Stability of operations and trust among employees, customers, and community is threatened, requiring strategic decisions.\"\n\nQ3 choose \"継続投資\" because he had experience that continued investment, though expensive, needed to secure safety and maintain brand.\n\nQ4 reasons: need to maintain safety infrastructure, avoid accident, rebuild trust, long-term growth, etc. We need 3-5 sentences.\n\nQ5 ranking: Based on his experience: He prioritized community and safety, then customers, then employees, then partners, then shareholders. But he also had to assure shareholders. But he believed social and stakeholders first. Let's rank: 社会社会, 従業員, 顧客, 取引先, 株主. The Japanese terms: \"地域社会\", \"従業員\", \"顧客\", \"取引先\", \"株主\". Need to output in that order exactly.\n\nQ6: Which past experience influenced decision? He mentions the pipe failure accident and lost trust. That experience shaped him to prioritize safety and infrastructure. So: \"The pipe-breakage incident when I neglected maintenance and had to explain to employees, customers, and local residents. It taught me that investing in safety and infrastructure is essential, and that stakeholders trust hinges on transparent communication.\" maybe that's 2-4 sentences.\n\nLet's construct JSON.\n\nBe careful: q6_text example: 2-4 sentences. Provide 3 sentences.\n\nOk produce final.",
+ "finish_reason": "stop",
+ "actual_model": "gpt-oss-20b",
+ "response_id": "chatcmpl-bd02b24b96ac8106",
+ "usage": {
+  "prompt_tokens": 4130,
+  "completion_tokens": 846
+ },
+ "endpoint_kind": "local",
+ "timestamp_requested": "2026-10-25T11:10:25.381811+00:00",
+ "timestamp_responded": "2026-10-25T11:10:28.081263+00:00"
+}

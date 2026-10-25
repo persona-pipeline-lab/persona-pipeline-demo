@@ -1,0 +1,24 @@
+{
+ "job_id": "D02|C3W|tech_transition|1",
+ "seq": 99,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "338f5edd4eeb1f10542046c8120a72dcb084f52d318d118cb1eb8b19f6490dd5",
+ "prompt_sha256": "eb23b593fef279a00f2477e43b3782100c73587b0c9d18ce6004a00da128e8bd",
+ "raw_text": "{\"pr_frame\":\"市場競争\",\"confidence\":\"high\"}",
+ "reasoning_text": "We must choose main problem frame. The description: \"主力事業が新方式に追いつけず、競合へのシェア奪取が困難となっている。\" Means main business cannot keep up with new method, so difficult to win market share from competitors. This is a market competition problem: market growth, competitors, customer acquisition. It also could be technology: can't keep up with new method = maybe technology. But description says inability to keep up with new method, leading to difficulty in capturing market share from competitors. That primarily indicates competition: losing market share to competitors due to technology lag. But the core focus: competing for market share; problem: cannot catch up to new method adopted by competitors. That is tech? It could be \"技術\" but it states main business fails to keep up with new method, making challenging to acquire competitor's market share. The core issue: new method - presumably technology change. But the phrase \"競合へのシェア奪取が困難\" - market competition. Which one is core? The description's \"主力事業が新方式に追いつけず\" indicates technology but the consequence \"競合へのシェア奪取が困難\" concerns competition. The key problem is losing market share due to lag in technology. The category selection: Likely \"市場競争\" because the issue is competition. The presence of technology likely subordinate. So choose 「市場競争」 with high confidence.\n\nLet's comply.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:26:25.756508+00:00",
+ "timestamp_responded": "2026-10-25T11:26:26.715801+00:00"
+}

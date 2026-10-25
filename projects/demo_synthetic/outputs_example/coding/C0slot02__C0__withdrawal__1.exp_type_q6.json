@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot02|C0|withdrawal|1",
+ "seq": 39,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "65db30457e8a317021a6c13f445e65c973a8cdcd61d543b3c6fa66ae1755ede7",
+ "prompt_sha256": "664e88c04d2a10e64feb5a178686b22e50723681b96a5f2d5a81b68eae8ae458",
+ "raw_text": "{\"exp_types\": [\"海外\", \"技術・開発\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to parse the Japanese description: \"過去に、海外企業と共同開発を行い、投資を分散しながら技術優位を確保した経験があり、その際に得た成功体験が今回の提携選択に大きく影響しました。\"\n\nInterpretation: They had experience of joint development with overseas companies, distributing investment while securing technological advantage. So this includes overseas (海外) because it's overseas development. And technology development (技術・開発). It describes overseas partnership for joint development: \"海外企業と共同開発\". So two categories: \"海外\" and \"技術・開発\". It doesn't mention crisis, startup, people. So those two.\n\nConfidence: Probably high.\n\nWe output JSON: {\"exp_types\": [\"海外\", \"技術・開発\"], \"confidence\":\"high\"}.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:22:39.225950+00:00",
+ "timestamp_responded": "2026-10-25T11:22:39.845436+00:00"
+}

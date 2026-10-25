@@ -1,0 +1,24 @@
+{
+ "job_id": "D03|C3-mixed|international|2",
+ "seq": 126,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "7280526cf0e38a87aa3602af87e26db92a33d76140263c7afdcccd4f2ee7aefb",
+ "prompt_sha256": "1b081e9e3867a7a0dceb742544d4c3e45d561189d88635f3ea7f69c7c381c84c",
+ "raw_text": "{\"pr_frame\":\"財務収益\",\"confidence\":\"high\"}",
+ "reasoning_text": "We need to identify main problem frame: The description says \"主要な課題は財務・収益の不安定さです。赤字と投資負担が事業継続を脅かしています。\" That's financial profitability. So choose \"財務収益\". Confidence high. Output JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:28:21.123059+00:00",
+ "timestamp_responded": "2026-10-25T11:28:21.389281+00:00"
+}

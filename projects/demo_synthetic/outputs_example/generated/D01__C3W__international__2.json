@@ -1,0 +1,32 @@
+{
+ "job_id": "D01|C3W|international|2",
+ "seq": 86,
+ "person_id": "D01",
+ "condition": "C3W",
+ "scenario": "international",
+ "rep": 2,
+ "model": "gpt-oss-20b",
+ "sent_sha256": "a3ca64a646244bf34ed3888b0c6156c13a0cddf29b6892a649ad0b1bb8a3a803",
+ "sent_file": "sent/D01__C3W__international__2.txt",
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 8192,
+  "seed": 100002,
+  "reasoning_effort": "medium"
+ },
+ "status": "ok",
+ "error_message": "",
+ "response_text": "{\n  \"q1\": [\"B\", \"C\", \"H\"],\n  \"q2_category\": 4,\n  \"q2_text\": \"現地事業の売上は減少しているものの、従業員や地域社会への影響が大きく、組織・ステークホルダーの問題が決定的です。\",\n  \"q3\": \"提携\",\n  \"q4_text\": \"提携によって現地生産体制を共有し、投資負担を軽減できる。この方法は規制に適応しつつ市場シェアを守り、従業員の雇用を維持し、地域社会への影響も最小限に抑える。\",\n  \"q5_ranking\": [\"従業員\", \"地域社会\", \"顧客\", \"取引先\", \"株主\"],\n  \"q6_text\": \"卸部門の大取引先の資金繰り危機を乗り越える際、数字を正確に把握し、従業員と共有した経験がある。そこから、数字と人の重要性を同時に考える必要性を痛感した。\"\n}",
+ "reasoning_text": "We need to answer based on autobiography experiences alone. We cannot bring external knowledge. Autobiography shows: he values customer faces, but later learned need to understand numbers. He had to accept loss, but kept his people in mind. He values loyalty and relationships, but also warns about numbers. He had to manage crisis, bank, restructuring. He also had sense of region and employees. So for Q1: choose three items to confirm. Considering problem: we need financial, market, stakeholder etc. First priority maybe: B financial burden, C employees, H social impact. Or A? Let's reason: need to understand amount of investment required B, how many employees would be affected C, and social impact H. That seems aligned with his experience of seeing effect on people. So Q1: B, C, H.\n\nQ2: Which category main? He would likely see it as organizational/stakeholder issue: because it is about employees and community and brand. However also financial. But from his view, being in crisis, he might see it as szer groups issues. He says \"最も重視するステークホルダー\" etc. So Q2_category: 4.\n\nFree text: e.g., \"現地のビジネスは収益性が低下しているが、従業員と地域社会に与える影響が大きく、組織とステークホルダーの問題が核心です\"\n\nQ3: choose one: maybe \"提携\" because he encountered banks and restructuring; collaboration may retain market with less risk? We might decide \"提携\". He knows he can't do everything alone, but his experience in sales indicates building relationships helps. Also might attempt to partner with local players to reduce investment. So choose \"提携\".\n\nQ4: Reason: We need 3-5 sentences. Outline: leveraging partner's local production reduces investment, retains employ, keeps brand, reduces financial burden; also regulatory compliance easier, brand continuity, community trust. Provide.\n\nQ5 ranking: Based on autobiography, he values employees, customers, region, stockholders? He actually values employees? He said \"希望退職\" etc. He cares about employees. He says \"株主\" maybe less. He says \"地域社会\" relevant. So ranking: \"従業員\",\"地域社会\",\"顧客\",\"取引先\",\"株主\". He says brand worry G but that's to clients; region side he says high. He values employees maybe top. Ok.\n\nQ6: Past experience: He was in crisis with B's debt & wrote issue to employees; learned that numbers matter; also he had to restructure, protecting employees, but also insisted to share truth. So choose: \"卸部門の取引先B社の資金繰り危機を通じて、数字をしっかり把握し、従業員と共有しながら意思決定を行う重要性を学んだ経験がある\" etc.\n\nLet's put final JSON.",
+ "finish_reason": "stop",
+ "actual_model": "gpt-oss-20b",
+ "response_id": "chatcmpl-9cba381007a4c322",
+ "usage": {
+  "prompt_tokens": 4019,
+  "completion_tokens": 902
+ },
+ "endpoint_kind": "local",
+ "timestamp_requested": "2026-10-25T11:15:39.873634+00:00",
+ "timestamp_responded": "2026-10-25T11:15:42.513529+00:00"
+}

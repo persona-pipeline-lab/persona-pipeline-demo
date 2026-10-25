@@ -1,0 +1,24 @@
+{
+ "job_id": "D02|C3|withdrawal|2",
+ "seq": 4,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "35a35451faa561894574cb00d210ccccbc4fb6c81c6ba5b8d3829ed385315a59",
+ "prompt_sha256": "38807676a598ce4702a67f5979280533f20a6300dbdd9ee7248af94068a16ad0",
+ "raw_text": "{\"risk_orient\": 5, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to evaluate risk orientation. The description: Market high growth, tech advantage still remains. Retreat would cause brand spillover, local impact, short-term profit improvement but long-term value blocked. Employee employment important; investment to maintain talent and improve metrics is rational risk management. So they prefer staying, invest, maintain talent. They see retreat as negative, long-term value harmed. They choose to invest (risk acceptance). Risk orientation: 5 strong risk acceptance, because they are willing to invest more to keep advantage; opportunity to maintain markets, not avoid risk; but they mention risk management rational. They choose to invest. That suggests risk acceptance. So likely rating 5. Confidence? Based on clear stance: avoid retreat, invest. So high confidence.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:01:17.481926+00:00",
+ "timestamp_responded": "2026-10-25T11:01:18.033290+00:00"
+}

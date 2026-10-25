@@ -1,0 +1,4 @@
+person_id,crisis,tech_background,crisis_source,tech_source,note
+T1,1,0,fictional test row,fictional test row,test
+T2,0,1,fictional test row,fictional test row,test
+T3,0,0,fictional test row,fictional test row,test

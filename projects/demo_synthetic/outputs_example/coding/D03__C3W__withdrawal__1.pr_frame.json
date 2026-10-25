@@ -1,0 +1,24 @@
+{
+ "job_id": "D03|C3W|withdrawal|1",
+ "seq": 77,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "81e60105d7f6822fb63b38a03ca2ca04c31ab1978dd09fcce9ffa3109b348bb4",
+ "prompt_sha256": "b8a370b744d5d6566fafe10d21c8a850e1be905f8c29635a6759bee419e047e1",
+ "raw_text": "{\"pr_frame\":\"組織ステークホルダー\",\"confidence\":\"high\"}",
+ "reasoning_text": "We need to select principal problem frame. The description: \"人が離職しない環境を整えずに短期だけ利益を追求すれば、長期的収益とブランド価値が失われると捉えています。\" \n\nKey points: workplace environment, employee retention, short-term profit focus, long-term revenue, brand value impact. This is about organizational stakeholder responsibility (employees, brand). It touches market? It is about brand, but specifically employees and their environment. So likely \"組織ステークホルダー\" frame: managing employees and maintaining brand = stakeholder issues.\n\nThe question option \"組織ステークホルダー\" refers to employees, suppliers, local community, brand responsibility. This is about employee environment and brand. So classification \"組織ステークホルダー\".\n\nConfidence: high.\n\nReturn JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:25:04.914977+00:00",
+ "timestamp_responded": "2026-10-25T11:25:05.518605+00:00"
+}

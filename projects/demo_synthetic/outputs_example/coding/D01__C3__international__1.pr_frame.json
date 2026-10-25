@@ -1,0 +1,24 @@
+{
+ "job_id": "D01|C3|international|1",
+ "seq": 13,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "85b88428305e130b284060b53dbf6c02dfb2009ef5fcfd9bb155e26ed985030f",
+ "prompt_sha256": "846dca8de5c84df704b97e41f86efe6cc73f628596080ca05a6f1d2cf114c83f",
+ "raw_text": "{\"pr_frame\":\"組織ステークホルダー\",\"confidence\":\"high\"}",
+ "reasoning_text": "We have a Japanese prompt: \"あなたは経営学研究のコーディング作業者です。以下は、ある戦略状況を提示された回答者が「この状況は何の問題か」を説明した短い記述です。記述だけを根拠に、主たる問題フレームを1つ選んでください。\n\n分類: 「財務収益」（赤字・投資負担・収益性が中心）／「市場競争」（市場の成長・競合・顧客獲得が中心）／「技術」（技術優位・技術転換が中心）／「組織ステークホルダー」（従業員・取引先・地域・ブランドへの責任が中心）／「複数拮抗」（2つ以上のフレームが同等の重みで並置され主従がつけられない場合のみ）\n\n規則: 記述内の語の数ではなく、記述が「問題の核心」と位置づけているものを選ぶ。外部知識を使わない。出力は次のJSONのみ:\n{\"pr_frame\": \"分類名\", \"confidence\": \"high/medium/low\"}\n\n【記述】\n企業の安定性とステークホルダーへの信頼が揺らいでいるため、組織とステークホルダーの問題として捉える。\"\n\nWe need to choose one problem frame (among the 5). The description: \"企業の安定性とステークホルダーへの信頼が揺らいでいるため、組織とステークホルダーの問題として捉える。\" The core: issues around stability and trust of stakeholders, considered as organizational and stakeholder issues. This aligns with \"組織ステークホルダー\" classification. So output {\"pr_frame\": \"組織ステークホルダー\", \"confidence\": \"high\"}.\n\nCheck other categories: \"財務収益\" would be about financial. This description talks about stability and trust. Not specifically about financial. \"市場競争\" not mentioned. \"技術\" not mentioned. So it's definitely \"組織ステークホルダー\". And clear question - \"主たる問題フレーム\" single one. So confidence high. Output the JSON only.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:20:57.520277+00:00",
+ "timestamp_responded": "2026-10-25T11:20:59.083315+00:00"
+}

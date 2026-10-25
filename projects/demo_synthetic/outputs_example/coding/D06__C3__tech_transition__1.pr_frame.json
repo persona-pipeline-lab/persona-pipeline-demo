@@ -1,0 +1,24 @@
+{
+ "job_id": "D06|C3|tech_transition|1",
+ "seq": 35,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "521355837a13f087eb5764e16abd91873a40f854af5bb8d302a59978eefd198b",
+ "prompt_sha256": "5eaed7ab8953e3d72d763c2faa5c286e73067d000dd6f43ecfafe18a93b5b595",
+ "raw_text": "{\"pr_frame\": \"市場競争\", \"confidence\": \"high\"}",
+ "reasoning_text": "We have a short description: \"顧客が新方式へ切り替えを始め、競合が進出するため主力事業が市場競争で失速する事態が主要な問題である。\" Summarize: Customers starting to switch to a new method, competitors entering, main business is losing pace due to market competition. So the core issue is \"市場競争\". So choose \"市場競争\" frame.\n\nConfidence: high.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:22:21.094018+00:00",
+ "timestamp_responded": "2026-10-25T11:22:21.462184+00:00"
+}

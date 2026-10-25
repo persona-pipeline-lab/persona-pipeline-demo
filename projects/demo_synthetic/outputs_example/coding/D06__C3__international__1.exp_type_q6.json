@@ -1,0 +1,24 @@
+{
+ "job_id": "D06|C3|international|1",
+ "seq": 23,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "c6977fbfcf3ca18f0c53fa5e60caa4a4a792fa4243ea8f193cd511df012a02b0",
+ "prompt_sha256": "5723ae62e9777bb2ea2f829b4a62bdd9dca3185d47b7c45d85c16722931926db",
+ "raw_text": "{\"exp_types\": [\"人・組織\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We have to categorize the described experience into the 6 categories. The statement: \"父からの『人の仕事をばかにするな』という教訓と、『数える』という正確さへのこだわりは、常に社員や取引先の真摯な労働を評価し、判断や投資判断においても正確さと尊重を求める姿勢に活かしてきた。\"\n\nThis is about experience teaching respect, and precise counting. It does not mention crisis, technology, overseas, startup, or other. It is about \"人事・労務・組織運営・師弟関係\" perhaps? Let's parse: \"社員や取引先の真摯な労働\" evaluation and respecting. This relates to people/organization. It doesn't indicate direct management of employees, but it's about attitudes towards employees and partners. The category \"人・組織\" is about people management, labor, organization operations, mentorship, etc. So likely \"人・組織\".\n\nBut we must consider not to use external knowledge. It's derived solely from this text: \" evaluating employees and trading partners' good work\". That shows a focus on people and how they are valued. So \"人・組織\" is relevant. No other categories apply.\n\nWe need to output JSON with \"exp_types\": array of strings containing classification names that match.\n\nWe so should output:\n\n{\"exp_types\": [\"人・組織\"], \"confidence\": \"high\"}\n\nI think high confidence: it's explicitly about evaluating employees, respecting them, etc. There's no mention of crisis or technology or overseas etc. So match only \"人・組織\".",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:21:42.648282+00:00",
+ "timestamp_responded": "2026-10-25T11:21:43.774206+00:00"
+}

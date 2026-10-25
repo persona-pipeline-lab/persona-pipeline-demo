@@ -1,0 +1,24 @@
+{
+ "job_id": "D01|C3W|international|1",
+ "seq": 85,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "119e43f4434660fa7abb560150a13ec8c7632f9c5f24fda5c6133417c3fde000",
+ "prompt_sha256": "9cdb0676df069a51875f55d5ae49c503626dacc47e6f2d8da7aa1f10ef6d4129",
+ "raw_text": "{\"time_horizon\":4,\"confidence\":\"high\"}",
+ "reasoning_text": "We need to read the description: \"提携により投資リスクを共有し、現地の規制や通貨変動に対する耐性を高めつつ、ブランドと雇用を維持できる。政府支援を受けた大型投資をパートナーに委任することで、コスト削減と市場参入力の両立を図れる。\"\n\nInterpretation: They are planning a partnership: they share investment risk, increase resilience to local regulations and currency fluctuations, maintain brand and jobs, they delegate large, government-supported investments to partners to achieve cost reduction and market entry.\n\nThe decision reasoning focuses on risk sharing via partnership and leveraging partner's local presence, delegating costs, etc. The language implies mid- to long-term, focusing on brand maintenance, resilience, cost savings, market entry. The mention of \"government support for large investment\" and \"delegation to partner\" indicates a strategy that may need to be sustained over time to build market entry. The time horizon could be 3-4. It references brand and employment; saving costs; resilience. The decision is strategic but not extremely short-term. The emphasis on enduring risk sharing, resilience, brand and employment maintenance suggest a medium to long-term horizon. Maybe 4? There's mention of large investment and delegating to partner to reduce costs while entering markets. That suggests longer-term commitment of several years. I'd consider 4: long-term oriented. The confidence: high because description is clear about strategic long-term orientation. Or medium? There's no mention of 5-year or indefinite, but indeed long-term. I'm leaning toward 4. The confidence: medium or high? The description is quite clear, so high.\n\nAnswer: JSON with time_horizon:4 and confidence high.\n\n",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:25:35.355058+00:00",
+ "timestamp_responded": "2026-10-25T11:25:36.489032+00:00"
+}

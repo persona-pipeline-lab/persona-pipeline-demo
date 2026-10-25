@@ -1,0 +1,24 @@
+{
+ "job_id": "D05|C3-mixed|withdrawal|2",
+ "seq": 118,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "e80f296a29422343a9c34aa90a039902892a119881e445d007457cd889b3c5e4",
+ "prompt_sha256": "9b685a05743dc4730982e726bb2649dc464f7936cc2b19584dd1f921b8904ea0",
+ "raw_text": "{\"pr_frame\":\"組織ステークホルダー\",\"confidence\":\"high\"}",
+ "reasoning_text": "The text: \"組織・ステークホルダーの問題で、既存事業が従業員や地域社会、顧客関係とブランドに関わる大きな影響を持つため、投資継続か退却かはそのバランスを取る課題だ。\" This is clearly focusing on organizational stakeholder issues: employee, society, customer relationships, brand; it's about balancing investment. So \"組織ステークホルダー\" classification. Confidence high.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:27:45.694332+00:00",
+ "timestamp_responded": "2026-10-25T11:27:46.102707+00:00"
+}

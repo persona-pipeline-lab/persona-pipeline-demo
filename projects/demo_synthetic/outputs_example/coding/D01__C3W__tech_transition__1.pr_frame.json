@@ -1,0 +1,24 @@
+{
+ "job_id": "D01|C3W|tech_transition|1",
+ "seq": 97,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "73126792fa77bf13e17fa25636976cdaa6abd548b365c09e04559becc0d7b321",
+ "prompt_sha256": "b2155a723c97cac2717fd9d2c1ff591c8b3dac3a122a461fd0f07d8ddce9a10d",
+ "raw_text": "{\"pr_frame\":\"技術\",\"confidence\":\"high\"}",
+ "reasoning_text": "We are to identify the main \"problem frame\" from given classification options, based on the description. The description says: main business existing technology is depreciating, competitors have new methods, investment is indispensable. The biggest issue is maintaining technical superiority. This points to \"技術\" frame: technology advantage/transition.\n\nThus select \"技術\". Confidence: high.\n\nReturn JSON: {\"pr_frame\":\"技術\",\"confidence\":\"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:26:17.673592+00:00",
+ "timestamp_responded": "2026-10-25T11:26:17.996345+00:00"
+}

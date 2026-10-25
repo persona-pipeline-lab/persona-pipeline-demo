@@ -1,0 +1,24 @@
+{
+ "job_id": "D01|C3-mixed|international|2",
+ "seq": 122,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "d711bb4253c2170deec864bbfd4c19af2404a5164edd82cf79e68339ea682fa2",
+ "prompt_sha256": "abd1cafff1d50e1f708f07c96acb80c619070d62a133d2ec43fd25a1606ea736",
+ "raw_text": "{\"risk_orient\": 2, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to interpret the reasoning. The statement: \"市場の成長性とブランド価値は保ちつつ、投資負担と政府規制のリスクを分散できるため、提携を選択する。従業員と地域社会の雇用を守りつつ、技術優位性を補完できるパートナーを見極める。\"\n\nThey choose to partner to diversify investment burden and government regulation risk. They want to keep growth and brand value, protect employment, complement tech advantage. Focus on risk distribution, not skipping. This indicates risk acceptance: they are mitigating risk via partnership, but still pursuing growth. The tone is risk-accepting or risk-averse? They are seeking to reduce risk by partnership but not avoiding. They accept risk but accept distribution. They are risk-averse? No, they want to mitigate risk. That is risk-averse attitude: minimize risk. But they also want growth, brand, tech advantage. They are balancing risk and opportunity. But the reason emphasises risk reduction. They choose partnership because they can de-risk: \"投資負担と政府規制のリスクを分散できるため\". That suggests risk-averse stance: they are avoiding direct risk by partner distribution. They are moderate risk-averse. 2 likely. But they are also pursuing growth. However risk orientation is assessed by how they approach risk: the justification emphasises risk reduction. So risk orientation is risk-averse. So score 2 = \"回避寄り\". Confidence high because clear risk aversion emphasised.\n\nThus output: {\"risk_orient\": 2, \"confidence\": \"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:28:05.598127+00:00",
+ "timestamp_responded": "2026-10-25T11:28:06.684337+00:00"
+}

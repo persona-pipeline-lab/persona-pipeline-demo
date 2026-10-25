@@ -1,0 +1,24 @@
+{
+ "job_id": "D04|C3|tech_transition|1",
+ "seq": 31,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "b50771e6a092d7042c307f60a0c535a2a6498d323f460dda2fbf684737b64e2f",
+ "prompt_sha256": "c81a6516601391482840310830ccbb4d186694c18a6a552291a8f4497c0a1f96",
+ "raw_text": "{\"pr_frame\":\"市場競争\",\"confidence\":\"high\"}",
+ "reasoning_text": "We need to pick one of the classification frames from: 「財務収益」, 「市場競争」, 「技術」, 「組織ステークホルダー」, 「複数拮抗」. The short description: \"主力事業の市場シェアが新技術を持つ競合に奪われつつあり、顧客の離れを防止できていないことが最も大きい。\"\n\nKissing: They say that the main issue is that primary business market share is being taken by competitors who have new technology, and they cannot prevent customer churn. So it's about loss of market share due to tech. Which category is core? It mentions competitor with new technology, market share lost, customers leaving. Could be \"市場競争\" (market competition) because market share loss due to competition. It also mentions technology: competitor has new technology. Among the frames, \"技術\" covers tech advantage or tech change. But the problem is about losing market share, customer churn due to new tech of competitors. The focus is on competitive pressure, specifically the ability of competitors to override with new tech. That can be interpreted as both \"市場競争\" (market competition) and \"技術\" (technology). Which one is core? The description says: \"主力事業の市場シェアが新技術を持つ競合に奪われつつあり\" emphasises new tech of competitor. Then \"顧客の離れを防止できていない\" emphasises losing customers, perhaps due to lack of adaptation. The core problem: inability to defend market share against competing tech. This is in \"市場競争\" or \"技術\"? The highlight of new technology leads to losing market share. In framing, \"市場競争\" is market growth, competition, customer acquisition. \"技術\" is technological advantage or technology shift. The core statement: \"主力事業の市場シェアが新技術を持つ競合に奪われつつあり\" - that is about a competitive threat from new technology. Likely \"市場競争\" because it's about losing market share. But \"技術\" also relevant: the competitor has new technology. However the description emphasises the result - losing market share and customer retention.\n\nThe instruction: \"記述が「問題の核心」と位置づけているものを選ぶ。外部知識を使わない。\" So we rely on the description: It identifies the biggest problem: loss of share to a tech-savvy competitor, inability to prevent churn. The core is losing market share due to competitor's new tech. The frame that includes market share loss is \"市場競争\". \"技術\" is about technology advantage, but the question emphasises market share competition. I'd go with market competition.\n\nConfidence: high.\n\nReturn JSON: {\"pr_frame\": \"市場競争\", \"confidence\": \"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:22:05.685610+00:00",
+ "timestamp_responded": "2026-10-25T11:22:07.622646+00:00"
+}

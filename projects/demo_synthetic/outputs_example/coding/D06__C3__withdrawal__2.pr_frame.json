@@ -1,0 +1,24 @@
+{
+ "job_id": "D06|C3|withdrawal|2",
+ "seq": 12,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "101cd9b9860bfa2212ae2d838990b5159ce691b597a232c8f396b0921d861882",
+ "prompt_sha256": "232b349e60adeb3a0267a758bfe4ce2a762a85735b929d8ceb72414727800e27",
+ "raw_text": "{\"pr_frame\": \"市場競争\", \"confidence\": \"high\"}",
+ "reasoning_text": "We have a description: \"主に市場・競争の問題であり、成長機会の保持と競合対策が最重要点です.\" It says it's mainly market competition problem, priority on retaining growth opportunities and competitor measures. So the main problem frame is \"市場競争\" (market competition). The confidence could be high because description matches exactly. So output JSON: {\"pr_frame\": \"市場競争\", \"confidence\": \"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:20:55.266096+00:00",
+ "timestamp_responded": "2026-10-25T11:20:55.621605+00:00"
+}

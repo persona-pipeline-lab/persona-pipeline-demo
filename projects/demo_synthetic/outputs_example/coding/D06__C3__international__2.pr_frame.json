@@ -1,0 +1,24 @@
+{
+ "job_id": "D06|C3|international|2",
+ "seq": 24,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "655be350fe865e469ef7203f6fd7766d20f0e775cc7a16e6ca4b66a8bf519c60",
+ "prompt_sha256": "0ae6e8ae301f143dcf0610ba292f3d532651f5cba7d2c202456d2b9855f2ff5e",
+ "raw_text": "{\"pr_frame\":\"市場競争\",\"confidence\":\"high\"}",
+ "reasoning_text": "We need to choose one primary problem frame: financial profitability, market competition, technology, stakeholder, or multiple. The description: \"外部競争の激化と規制強化により、成長市場における競争優位の維持が困難となっている。\" Means: external competition is intensifying and regulations are strengthening, making it difficult to maintain competitive advantage in a growing market. This points to market competition: external competition, competition advantage. The core issue is market competition. So classification \"市場競争\". Confidence high. Output JSON.\n\n",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:21:43.775994+00:00",
+ "timestamp_responded": "2026-10-25T11:21:44.188533+00:00"
+}

@@ -1,0 +1,24 @@
+{
+ "job_id": "D02|C3-mixed|withdrawal|1",
+ "seq": 111,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "7aa7e26c5a5c02978e25795f151af88fd4595b45a1368da2dfe614c662b47514",
+ "prompt_sha256": "65ae05787f13c38be88f343deb1b7d6190002703fc5a07a95cdf4655f16ab387",
+ "raw_text": "{\"exp_types\": [\"危機対処\", \"技術・開発\", \"人・組織\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to parse the description: \"再建の三年で、工場の安全と更新を行うために研究費を削減し、報酬を縮減した経験がある。従業員が離れない環境を整えることで、長期的に利益を取り戻せたことから、短期損失に耐えて投資を続ける重要性を実感した。\"\n\nThis talks about management during a three‑year reconstruction: reducing research costs and wages to invest in safety and factory renewal. The experience is about \"工場の安全と更新\" during \"再建\", so likely \"危機対処\" (crisis management) because company was in reconstruction (potentially due to financial stress). Also could be \"技術・開発\" because it mentions \"工場の更新\" maybe manufacturing technology. But the text says \"研究費を削減し、報酬を縮減\" which is cost cutting, not necessarily R&D, but \"工場の安全と更新\" implies improvements in production tech.\n\nWhich categories? The categories: \"危機対処\", \"技術・開発\", \"海外\", \"創業・立ち上げ\", \"人・組織\", \"その他\".\n\nThey explicitly mention \"再建\" which suggests crisis. So definitely \"危機対処\". They also mention \"安全\" and \"更新\" of the factory, but that's not necessarily R&D, but improvement of production technology might fit \"技術・開発\". The phrase \"研究費を削減\" suggests research funds earlier existed, but the action of cutting research funds might be part of cost cuts. The action is investing in factory upgrade, so \"技術・開発\" might be applicable.\n\nThey also talk about \"従業員が離れない環境を整える\" which relates to people/organization. So \"人・組織\" might apply. But the rule says we only pick categories that are explicitly mentioned experiences. We have categories: \"危機対処\" (explicit: reorganization during reconstruction). \"技術・開発\" might be based on \"工場の安全と更新\" i.e. factory renovation/upgrade. This might be considered technical improvement. The category \"人・組織\" is also explicit: they mention environment to keep employees.\n\nThe question: \"言及された経験の型を次の6分類から該当するものすべて選んでください。規則: 記述に明示された経験のみ拾う（推測しない）。 外部知識を使わない。\"\n\nThus we consider only explicitly mentioned experiences. What is explicitly mentioned?\n\n- \"再建\" (reconstruction), presumably due to crisis.\n- \"工場の安全と更新\" (factory safety and update).\n- \"研究費を削減し、報酬を縮減\" (reducing research costs and wages).\n- \"従業員が離れない環境を整える\" (keeping employees from leaving).\n\nAll these mention experiences. The categories we can match:\n\n- \"危機対処\": the reconstruction indicates crisis scenario, re-building, risk situation. So should choose \"危機対処\".\n\n- \"技術・開発\": development of factory safety and updates could be considered technology & development. But the phrase is \"工場の安全と更新\" which might be within manufacturing tech. Could be considered \"技術・開発\" but it's ambiguous. The phrase also could be considered part of improvement, which may be under \"技術・開発\".\n\nThe rule: \"規則: 記述に明示された経験のみ拾う（推測しない）\". It's mention that they had \"工場の安全と更新\". This is an experience in \"工場の安全\" and \"更新\". Does that fall into \"技術・開発\"? I'd consider yes, because it's improvement. But maybe not. The category \"技術・開発\" explicitly says \"(研究開発・製品開発・生産技術の経験)\". So improvements to production technology. That qualifies. So we can include \"技術・開発\".\n\n- \"人・組織\": The mention of \"従業員が離れない環境を整える\" explicitly indicates organizational and personnel experience. So include \"人・組織\".\n\nThe text also mention \"研究費を削減し、報酬を縮減\" which is cost management but not within a category explicitly. This might be under \"危機対処\" (cost cutting during crisis) as well.\n\nShould we also include \"その他\"? No, because all are captured.\n\nThus predicted categories: [\"危機対処\", \"技術・開発\", \"人・組織\"].\n\nConfidence? We have quite high confidence, maybe high or medium? I'd say high.\n\nReturn JSON accordingly.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:27:14.752706+00:00",
+ "timestamp_responded": "2026-10-25T11:27:17.853060+00:00"
+}

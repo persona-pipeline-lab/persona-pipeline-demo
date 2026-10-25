@@ -1,0 +1,24 @@
+{
+ "job_id": "D01|C3-mixed|withdrawal|1",
+ "seq": 109,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "c04be34235cc9c5bfc16d7ed51d63435e7c2e20ca252d8ce4d7d5c29085bae6b",
+ "prompt_sha256": "f0091a4bbd088b897d17abe18cc74c244f41e32722912fd6274460f69a5d5712",
+ "raw_text": "{\"exp_types\": [\"創業・立ち上げ\"], \"confidence\": \"high\"}",
+ "reasoning_text": "The user: Japanese. They want us to read a statement: \"A社スーパーを立ち上げた時に、売れ残りを数えながら顧客を思い、数字より人に価値を感じた経験が、今回の判断に活かされています。\"\n\nWe need to choose all relevant types among the six categories. The categories:\n\n- 「危機対処」（赤字・倒産危機・事故・不祥事・需要崩壊への対処）\n- 「技術・開発」（研究開発・製品開発・生産技術の経験）\n- 「海外」（海外駐在・海外事業の経験）\n- 「創業・立ち上げ」（創業・新事業や新会社の立ち上げ）\n- 「人・組織」（人事・労務・組織運営・師弟関係）\n- 「その他」（上記いずれにも当たらない。単独でのみ使用）\n\nThe statement says: \"A社スーパーを立ち上げた時に、売れ残りを数えながら顧客を思い、数字より人に価値を感じた経験が、今回の判断に活かされています。\"\n\nWe explicitly see \"A社スーパーを立ち上げた時\" => \"when launching/starting up a store\". That is \"創業・立ち上げ\" -> yes. Also possibly \"人・組織\" because \"顧客を思い、人に価値を感じた\": That's affecting people or customer orientation. But it's more about customer orientation, not necessarily employees. But \"人・組織\" is about people or organization, includes membership? But \"人・組織\" covers \"human resources / personnel management / organization operation / mentor-mentee relationships.\" The experience is about valuing customers over numbers; that's orientation towards people, but not exactly \"人事\" or \"労務\". But \"人・組織\" can also be used for customers? The classification is meant for experiences. \"人・組織\" says: \"人事・労務・組織運営・師弟関係\" - basically internal organizational, not customers. So maybe \"人・組織\" may not be relevant. The phrase is about \"顧客\" meaning customers, not literally employees or internal organization. It's value orientation to people. Might be \"人・組織\" if we interpret '人' as people but the category is about 'people management', 'organization operations', 'mentorship', etc. Possibly the category could be used for customer service orientation? The instruction says \"記述に明示された経験のみ拾う\" means pick experiences explicitly mentioned. So \"顧客\" is explicit, but not \"人事\". So we should not inflate; we might categorize under \"創業・立ち上げ\" only. But maybe also \"人・組織\"? The term \"顧客\" might be considered as part of organization? But the category says \"人事・労務・組織運営・師弟関係\" - those are internal. So likely not classification \"人・組織\", as it's not about employees. Also no sign of \"危機対処\" etc.\n\nThus the only classification is \"創業・立ち上げ\". Also \"その他\" is for experiences not belonging above; but since we have classification already, we don't use \"その他\". So exp_types should be [\"創業・立ち上げ\"].\n\nConfidence: high.\n\nThus output JSON: {\"exp_types\": [\"創業・立ち上げ\"], \"confidence\": \"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:27:05.823639+00:00",
+ "timestamp_responded": "2026-10-25T11:27:08.187774+00:00"
+}

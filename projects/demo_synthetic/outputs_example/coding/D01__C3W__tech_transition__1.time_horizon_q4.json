@@ -1,0 +1,24 @@
+{
+ "job_id": "D01|C3W|tech_transition|1",
+ "seq": 97,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "34bf78df1d0329ff8c12217f5f7d00277dfd1878235f6b206b53cae6395f70ff",
+ "prompt_sha256": "671dfd8865e20e9c32c960e6c7f106ac2f83522ae75215c0a3fb1e88e1b82bf4",
+ "raw_text": "{\"time_horizon\": 2, \"confidence\": \"high\"}",
+ "reasoning_text": "The task: Determine time horizon of decision based on written justification. Scale: 1=short-term focus (current period or short-term profits), 2=short-term leaning, 3=mid-term & balanced, 4=long-term leaning, 5=long-term focus (5-10 years). Don't use external knowledge; judge based on reasoning.\n\nWe need to evaluate the content. The reasoning stresses concern about existing technology lagging, unavoidable additional investment. They propose partnering for external tech to reduce development cost and ensure continuous supply to customers. They want to keep existing employees' skills and brand image. They also want to maintain local community ties while introducing new tech via partnership. Focus includes cost minimization, continuous supply, preserving brand, community relationships. This is overall pragmatic, seems to emphasize operational continuity, cost control, risk mitigation. It is somewhat short-term to ensure continuity and avoid investment. But the mention of new technology and long-term community? The partner? Let's parse.\n\n\"新方式は既存技術に比べ遅れを取っており、追加投資を避けられない。提携により外部技術を活用し、開発コストを抑えると同時に顧客への継続的供給を確保できる。既存従業員の技術を保持しつつ、ブランドイメージを維持できる点が重要。さらに、地域社会との連携を損なわずに新技術を導入するため、外部パートナーとの協業が最も適切だ。\"\n\nIt's about ensuring compliance with external technology, not necessarily long-term growth. They avoid additional investment maybe short-term pain: cost saving. They also preserve brand, maintain community ties. No mention of 5-10 years. It seems a bit balance but lean toward preserving current relationships and risk mitigation: short-term orientation.\n\nTime horizon rating maybe 2 (short-term leaning). Confidence: high because messages emphasize short-term concerns. Let's produce JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:26:19.018376+00:00",
+ "timestamp_responded": "2026-10-25T11:26:20.324580+00:00"
+}

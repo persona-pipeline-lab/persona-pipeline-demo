@@ -1,0 +1,24 @@
+{
+ "job_id": "D05|C3-mixed|tech_transition|1",
+ "seq": 141,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "b7f83ae91b42b2192150491d40bc8eefcfdeac876cd5579d35e81f4f1e43fc72",
+ "prompt_sha256": "dc26e4a0356406d374df8b6198cd63b24bd622d17cc8dabd017e91a4af07eff5",
+ "raw_text": "{\"pr_frame\": \"技術\", \"confidence\": \"high\"}",
+ "reasoning_text": "We need to choose the main problem frame category based on the description. The description says: \"主力事業が新方式に遅れ、競争力を失う危機がある。市場成長と顧客転換の速度を考慮すると、短期的な利益よりも技術転換と顧客確保が優先される。\"\n\nWe need to identify the \"core\" problem. The key issue is: main business losing competitiveness due to lagging new method, competition. Also mentions technology transition priorities and customer retention. So two frames: 技術 and 市場競争.\n\nBut the problem is not just technology; it also involves competitiveness due to adoption of new way. The text indicates priority: tech transition and customer acquisition. The core is that the business is lagging in adopting new technology, losing competitiveness. So the primary frame: 技術 (tech advantage and transition). Because it's about technology change and staying competitive.\n\nBut also market competition? It says \"market growth and customer conversion speed considered\". But the key problem is technologically, causing competitive disadvantage. So I'd choose 技術.\n\nCheck classification: \"技術\" is likely the correct frame.\n\nConfidence: maybe \"high\" as the text clearly mentions technology transition as priority. Kevin mention of technology seems the primary, while market competition is secondary. So yes high.\n\nReturn JSON: {\"pr_frame\": \"技術\", \"confidence\": \"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:29:15.025549+00:00",
+ "timestamp_responded": "2026-10-25T11:29:15.964196+00:00"
+}

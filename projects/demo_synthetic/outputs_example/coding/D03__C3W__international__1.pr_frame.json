@@ -1,0 +1,24 @@
+{
+ "job_id": "D03|C3W|international|1",
+ "seq": 89,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "b51eb8483ee310166c3c5ed2df98fb33c32419bfac6ed03d389ae132fd87202c",
+ "prompt_sha256": "47a17a1bca14075f1fbe2ca2278303848e47fc93567c2170f437a13962e6d43c",
+ "raw_text": "{\"pr_frame\":\"組織ステークホルダー\",\"confidence\":\"high\"}",
+ "reasoning_text": "We need to choose a primary problem frame: \"財務収益\", \"市場競争\", \"技術\", \"組織ステークホルダー\", \"複数拮抗\".\n\nThe description: \"この事業は、収益性・投資負担を超え、従業員・地域社会・ブランドへの関係性が最大のリスクになっていると判断する。\"\n\nThey are stating that beyond profitability/investment burden, the biggest risk is relationships with employees, local community, brand. So the core is relationships, others are secondary. That points to \"組織ステークホルダー\" frame. Confidence presumably \"high\".\n\nReturn JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:25:52.125814+00:00",
+ "timestamp_responded": "2026-10-25T11:25:52.634438+00:00"
+}

@@ -1,0 +1,32 @@
+{
+ "job_id": "D03|C3W|international|1",
+ "seq": 89,
+ "person_id": "D03",
+ "condition": "C3W",
+ "scenario": "international",
+ "rep": 1,
+ "model": "gpt-oss-20b",
+ "sent_sha256": "2dc19fda40b6e4b60f04438c90e1b71e28a4047cbfbd416e06e35ac2a8675a7b",
+ "sent_file": "sent/D03__C3W__international__1.txt",
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 8192,
+  "seed": 100001,
+  "reasoning_effort": "medium"
+ },
+ "status": "ok",
+ "error_message": "",
+ "response_text": "{\"q1\":[\"B\",\"C\",\"G\"],\"q2_category\":4,\"q2_text\":\"この事業は、収益性・投資負担を超え、従業員・地域社会・ブランドへの関係性が最大のリスクになっていると判断する。\",\"q3\":\"継続投資\",\"q4_text\":\"市場は10％成長し続けており、投資を行わず撤退すると将来的な市場シェアを大きく失う恐れがある。また、従業員が多く、育成と技術維持が不可欠であるため、規模を減らさずに現地生産体制を強化することで競争力を維持できる。\",\"q5_ranking\":[\"従業員\",\"地域社会\",\"顧客\",\"取引先\",\"株主\"],\"q6_text\":\"ホテルにおいて、従業員の学びと認められる環境を整えることが離職率低減に直接結びついた経験がある。従業員を中心にした提案会を設け、実行することで事業の継続性と成長を実現した。\"}",
+ "reasoning_text": "We must answer according to the autobiography insights. The narrator values learning opportunities, employee retention, no drama, incremental improvements. They reject large dramatic changes, prefer minimal disruptions. In such decision Q1: confirm information. Should pick likely B, C, E? The rest? Let's decide:\n\nWe must think from the narrator's perspective: a person who values employees, learning, heritage, staying; would confirm C (従業員) because they invested in people. Also confirm A for market growth, because market potential matters. Also confirm G brand impact? Might advise. But choose three in order: maybe B finance burden (#1), C employees (#2), G brand (#3). Wait but we need \"確認したい情報\" in order. The major decisions: need B to see financial viability, need C to assess impact on employees, need G to gauge brand risk. So order: B, C, G. Provide as array.\n\nThen Q2: categorize. Likely 4 (組織・ステークホルダー) as risk to employees and brand. But maybe it's also financial? However his values lean to avoid employee harm, brand risk. So Q2_category: 4. Q2_text: explanation.\n\nQ3: Choose \"継続投資\" because investment needed to keep operations, they value staying, retain employees. Could also consider \"提携\" maybe? But the autobiography shows a strong stance on building your own team and learning. He likes building systems. But may consider partnership? He might want to jointly invest to share burden? But I think prefer \"継続投資\" because commit to remain.\n\nQ4: reasons: company growth, employee skill, brand trust, market potential, etc. We need 3-5 sentences.\n\nQ5: Ranking stakeholders: The narrator values employees above others. Step by step: employee, customers, local community, partners/取引先, shareholders. But he runs company, but still employee priority. So ranking: \"従業員\", \"顧客\", \"地域社会\", \"取引先\", \"株主\". That aligns with his values. But maybe priorities: employees, local community, customers, partners, shareholders? He values employees most, then community, then customers? Need to think. He cares about employees and region. Might put local society second. But might keep customers next. However, customers bring revenue but employees produce service. We choose: \"従業員\", \"地域社会\", \"顧客\", \"取引先\", \"株主\".\n\nQ6: Past experience: his experience in management, where he had to decide to keep employees and minimize disruption. He says \"学べる職場、認められる職場\" etc. He experienced leaving an off-site decision about new one-year training and the importance of not negotiating large bills with others. He also used experience about turning around a direction for a hotel where employees had to learn new skills. So we provide 2-4 sentences.\n\nLet's compose JSON.",
+ "finish_reason": "stop",
+ "actual_model": "gpt-oss-20b",
+ "response_id": "chatcmpl-83ce342da8efa568",
+ "usage": {
+  "prompt_tokens": 4118,
+  "completion_tokens": 902
+ },
+ "endpoint_kind": "local",
+ "timestamp_requested": "2026-10-25T11:15:53.576279+00:00",
+ "timestamp_responded": "2026-10-25T11:15:56.218185+00:00"
+}

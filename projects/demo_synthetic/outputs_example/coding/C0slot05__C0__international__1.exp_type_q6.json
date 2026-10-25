@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot05|C0|international|1",
+ "seq": 57,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "c58744712de72941eb38680967376ba5b1c72059d25bfb22903bf9082eaf7b7c",
+ "prompt_sha256": "5ad97eb81f4c8972a63733d65eda3eea01bf53165b339c48f97544ca6c5439f8",
+ "raw_text": "{\"exp_types\": [\"海外\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to parse the description: \"以前、国外事業の再編で現地パートナーとの合弁を結び、投資コストを低減し市場シェアを確保した経験があります。これを今回の判断に活かしています。\"\n\nTranslate: Previously, in restructuring a foreign business, I formed a joint venture with a local partner, reduced investment costs, and secured market share. I'm using that for this decision.\n\nWe must choose relevant categories from the six. Which ones are explicitly mentioned? The event: \"国外事業\" implies overseas operations. \"再編\" restructuring, but that's not one of the categories. The description says \"現地パートナーとの合弁\" joint venture with a local partner. That is a type of overseas business experience. So \"海外\" qualifies. It didn't mention technology development, or crisis, or startup, or human resources. So only \"海外\" is relevant.\n\nThe categories list: \"海外\" is one. We should output JSON with exp_types: [\"海外\"], confidence: high (since text is explicit). No other categories.\n\nCheck if \"創業・立ち上げ\" could be considered because it's a new venture? It's a joint venture, not a startup per se. But classification: \"創業・立ち上げ\" is about founding new businesses or new companies. That didn't happen. So no.\n\nThe rule: \"記述に明示された経験のみ拾う（推測しない）\" So only mention \"国外事業の再編\" and \"合弁\".\n\nThus only overseas.\n\nTherefore JSON:\n\n{\"exp_types\": [\"海外\"], \"confidence\": \"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:23:50.888806+00:00",
+ "timestamp_responded": "2026-10-25T11:23:51.966362+00:00"
+}

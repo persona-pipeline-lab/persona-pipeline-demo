@@ -1,0 +1,24 @@
+{
+ "job_id": "D03|C3W|international|2",
+ "seq": 90,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "8ca1c82456f871305aaf9f7ab4a71dfb2deaa688adb038a7606f30ca9b9607a3",
+ "prompt_sha256": "674478aa7d92427561458b7f836df23456ce1d8fb690a11fbf1feeefefee0ab2",
+ "raw_text": "{\"time_horizon\": 4, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to evaluate the time horizon based only on the wording of the reasoning. The text:\n\n\"従業員が事業の根幹であると自らの経験から確信している。投資があることで現地での雇用を守り、従業員の学びの場と認められる環境を維持できる。ブランドへの影響を最小化し、国内外での信頼を保持できると判断した。\"\n\nEssentially: \"Employees are central to the business. With investment, local employment can be protected and employees can be in an environment recognized as a learning place. It minimizes brand impact, keeps trust domestically and abroad.\"\n\nDoes this emphasize long-term or short-term? It mentions protecting local employment, learning. These are more long-term oriented toward sustaining workforce, brand reputation, trust. But is investment immediate? There's no explicit multi-year horizon. But caring about employee environment and trust indicates mid to long term. It's about sustaining employees, trust; thinking about long-term brand. But it doesn't mention 5-10 years explicitly. Could be 'long-term or both? The instruction: scale 1-5. 3 = medium. They likely want 3 or 4. Let's analyze:\n\n1 short term: focus only on quarterly profits. Not present.\n\n2 short term oriented: maybe protecting employment to maintain short-term operations. They do mention local employment might be short-term.\n\n3 moderate: has consideration of long-term trust but not explicitly.\n\n4 long-term oriented: invests to maintain employees, trust. There's no explicit time horizon but more about sustaining workforce and brand over long period.\n\n5 long long: 5-10 years focus. Text doesn't mention 5-10 years.\n\nThus I'd place at 4? Rationale: emphasizes sustaining trust and employees as core to long-term stability.\n\nConfidence moderate? Might be high. I choose confident. Let's set confidence high. Output JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:25:56.799586+00:00",
+ "timestamp_responded": "2026-10-25T11:25:58.043650+00:00"
+}

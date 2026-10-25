@@ -1,0 +1,24 @@
+{
+ "job_id": "D02|C3|international|1",
+ "seq": 15,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "b5a61c1cd3acc8f253748f759501b15e29c7610b9784c385071a39f5e51b6636",
+ "prompt_sha256": "52fe2d164d04a52f8678c9d8e88d0ad7ce3a56a2fd1348d7af947793ae0b6e2d",
+ "raw_text": "{\"time_horizon\": 5, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to read the user scenario: The user is \"あなたは経営学研究のコーディング作業者です。以下は、ある戦略的選択の判断理由の記述です。記述だけを根拠に、判断の時間視野を1〜5の整数で評定してください。\"\n\nThen details: Scale: 1 short term, 2 short-term leaning, 3 mid-long, 4 long term leaning, 5 long term (5-10+ years). Rules: not the options but the reasoning language. No external knowledge. Output only JSON: {\"time_horizon\": integer 1-5, \"confidence\": \"high/medium/low\"}\n\nGiven the description: \n\"市場成長率は依然高く、ブランド信頼も強固です。長期的な利益回復には現地生産体制への投資が不可欠で、撤退はブランドと地域への打撃を招く恐れがあります。さらに、従業員の雇用確保や顧客の継続的な供給を維持することで、企業価値を守ることができると判断しました。\"\n\nWe need to interpret the time horizon. The reasoning references long-term profit recovery, resilience, brand, etc. It seems to emphasize long-term. So time_horizon likely 5. Confidence? The statement is fairly confident but maybe \"high\". There's direct mention of long-term profitability and investment needed. So high confidence. Output JSON exactly.\n\nThus: {\"time_horizon\": 5, \"confidence\": \"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:21:06.448217+00:00",
+ "timestamp_responded": "2026-10-25T11:21:07.504806+00:00"
+}

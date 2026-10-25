@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot03|C0|international|2",
+ "seq": 54,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "37cbf2aa96f13c097441a71605e42ae97e5fc68982ab64b2b45c17e7f88f7a46",
+ "prompt_sha256": "fd480498382c878b588956ccce6cb59631c89fdfa8258e1383ea12c12e5606e2",
+ "raw_text": "{\"time_horizon\": 4, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to evaluate time horizon. Clues: market growth 10% annually implies long-term? Realising sustained business. Investor scale 30% and continue to avoid loss so partnership. Focus on sustaining benefits, risk management, minimal social impact, maintain brand value. That indicates longer-term, but not too far: long-term? It says \"市場は年率10%で成長を続けているため、持続的にビジネスを行う意義は高い。\". That suggests good growth long-term, thus long-term horizon. Also not immediate profit focus. So assign 4 maybe. Confidence high because explicit mention of sustainability and growth. So JSON: time_horizon 4, confidence high.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:23:39.102107+00:00",
+ "timestamp_responded": "2026-10-25T11:23:39.612283+00:00"
+}

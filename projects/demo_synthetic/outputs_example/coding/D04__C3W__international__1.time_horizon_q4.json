@@ -1,0 +1,24 @@
+{
+ "job_id": "D04|C3W|international|1",
+ "seq": 91,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "44d51aa9ff0bee684af369c9aa3e87178956bf7db05c42a1fea8dfc3e7d74654",
+ "prompt_sha256": "b1d345a61631d53dc1e59cdd0d24eff005cb12b6c14190799d23658a11ff2769",
+ "raw_text": "{\"time_horizon\": 1, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to interpret the reasoning to judge time horizon. The description: \"地域社会および従業員への影響を最小限に抑えつつ、価格競争に対抗するためにリソースを共有するパートナーシップを構築したい。パートナーと協議しつつ、投資コストを抑えながら事業継続を図る。さらに、取引先や顧客との関係を維持できる。\"\n\nKey: They want to build partnership, share resources, to compete against price competition. They want to minimize impact on community and employees, keep costs low, maintain relationships. No mention of long-term growth or 5-10 year horizon. Focus is short-term, maybe immediate competitive response, avoid cost. It's about maintaining business continuity, mitigating immediate impact. There's no long-term strategic vision. So time horizon likely 1 or 2. \"短期寄り\" (2). Could be 1 if it's immediate. The key is the phrase: \"投資コストを抑えながら事業継続を図る\" - maintain continuity, i.e. immediate. They want to reduce cost now. Also maintain relationships. So they may not be focusing on longer-term growth, but short-term survival. I would choose 1 (short-term). But let's examine: \"価格競争に対抗するために\" - price competition arises in short-term markets, not long-term. They are focusing on \"リソースを共有するパートナーシップを構築したい\" which could be a medium-term. But there is no mention of new product development, etc. So it's short-term. I'd assign 1.\n\nConfidence? It is pretty clear. So high. The instruction: \"出力は次のJSONのみ:\" So we output JSON.\n\nThus:\n\n{\n \"time_horizon\": 1,\n \"confidence\":\"high\"\n}\n\nOk.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:26:00.073495+00:00",
+ "timestamp_responded": "2026-10-25T11:26:01.343656+00:00"
+}

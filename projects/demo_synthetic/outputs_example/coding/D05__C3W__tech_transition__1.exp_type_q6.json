@@ -1,0 +1,24 @@
+{
+ "job_id": "D05|C3W|tech_transition|1",
+ "seq": 105,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "7dfba797b0951174888bdccd365098462bd43ded108342574656d34340bb226e",
+ "prompt_sha256": "6c92ff0090a955b4e55c7dc329faa29754e04915e457b2c3b6836ec826bd11da",
+ "raw_text": "{\"exp_types\": [\"人・組織\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We have to choose all relevant categories from the six listed: \"危機対処\", \"技術・開発\", \"海外\", \"創業・立ち上げ\", \"人・組織\", \"その他\". The text says: \"父から受けた「人の仕事をばかにするな」の教えと、従業員の提案を一週間以内に返答する習慣が、他者の意見や価値を尊重し、協力を促す判断根拠になっています。\"\n\nThis is about \"人と組織\" (respect for others, collaboration). So \"人・組織\" is indicated. No mention of crisis, tech development, overseas, founding, other. So only \"人・組織\". Confidence likely high.\n\nWe need JSON output.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:26:55.320206+00:00",
+ "timestamp_responded": "2026-10-25T11:26:55.922136+00:00"
+}

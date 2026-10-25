@@ -1,0 +1,24 @@
+{
+ "job_id": "D03|C3W|withdrawal|1",
+ "seq": 77,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "953e11a9a13cbde140760b63f02325a7b0df3286d0ba449e156f103a11f24d0f",
+ "prompt_sha256": "fc387026208ab293bb11ac9fc6bc6e906d341125eb21e496a8f0498a2a7f036b",
+ "raw_text": "{\"exp_types\": [\"人・組織\"], \"confidence\":\"high\"}",
+ "reasoning_text": "We need to read the description and assign all applicable categories among the six. The description: \"料理長の若手離職率を下げるため、彼の仕事の一部を若手に移し、週に一度教える時間を設けた経験が最も影響した。\" So it's about moving part of a chef's work to young staff, setting up weekly teaching time to lower turnover among young chefs. This is about people and organization: Human resources, training, staff retention. It may be \"人・組織\". There's no crisis, technology, overseas, founding, etc. So the category is \"人・組織\". One category only.\n\nConfidence? It's pretty certain: high. Output JSON.\n\nAnswer: {\"exp_types\": [\"人・組織\"], \"confidence\":\"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:25:07.170815+00:00",
+ "timestamp_responded": "2026-10-25T11:25:07.751771+00:00"
+}

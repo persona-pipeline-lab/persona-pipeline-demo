@@ -1,0 +1,24 @@
+{
+ "job_id": "D02|C3-mixed|withdrawal|1",
+ "seq": 111,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "99152462e8f2841d6d8ef85279dfd96baa0768f24b023f3a0b9feb83d82d26cb",
+ "prompt_sha256": "fdbf57e2db2f623a86c87f706d06d32fb552ea283d32bebdb39d910351f5a598",
+ "raw_text": "{\"time_horizon\": 5, \"confidence\": \"high\"}",
+ "reasoning_text": "We must classify time horizon 1-5 based on reasoning. The description emphasises maintaining existing technology advantage, building safety and quality, requires continuous large-scale investment rather than short-term profit. Also mention employee retention and respect, as critical issues. Mentions long-term growth perspective, investing to differentiate and dominate market. So it's clearly long-term planning. So time_horizon likely 5 (very long term). Confidence high because clear focus on long-term growth and ongoing investment. Without external knowledge, but reasoning indicates long-term. Provide JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:27:14.356492+00:00",
+ "timestamp_responded": "2026-10-25T11:27:14.750029+00:00"
+}

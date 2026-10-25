@@ -1,0 +1,24 @@
+{
+ "job_id": "D06|C3|tech_transition|1",
+ "seq": 35,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "010c197cb69beb64a7fb5d63232f589bdefe0c0b52591514eb35e350a1ee2c3f",
+ "prompt_sha256": "9e48e25ef794aa5cce755a448b62bdaefa921cbf827f046edd13106205909522",
+ "raw_text": "{\"time_horizon\":4,\"confidence\":\"medium\"}",
+ "reasoning_text": "We need to assess time horizon. The statement: \"existing technology and responsibilities to existing customers and local community, while bridging tech gap via joint development with partners, maintain trust.\" Emphasis on existing responsibilities and bridging technical gap. Long-term? They focus on maintaining trust and responsibilities, but also bridging gap. Could be mid-term? The phrase \"maintaining trust\" and \"satisfy existing obligations\" suggests continuity but not necessarily growth. \"社内外の信頼を維持できる\" is about maintaining trust, which is more long-term sustainability. They are planning joint development to fill tech gap, perhaps a mid to long-term. There's no explicit immediate profit or short-term profit focus. I would say time horizon middle/high: likely 4? Actually 3 or 4. \"既存技術と既存顧客・地域社会への責務を守りながら\" preserving existing responsibilities, \"技術差を埋め\" bridging tech gap via joint development. That seems more medium-term to long-term as they are bridging tech difference. Emphasis on trust maintenance rather than immediate returns. I'd pick 4 maybe. Confidence: medium because some ambiguity.\n\nThus output JSON should like: {\"time_horizon\":4,\"confidence\":\"medium\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:22:22.373356+00:00",
+ "timestamp_responded": "2026-10-25T11:22:23.191768+00:00"
+}

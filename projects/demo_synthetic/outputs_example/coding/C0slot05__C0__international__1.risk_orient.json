@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot05|C0|international|1",
+ "seq": 57,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "9321a6bb9452b893a2c328c0c434b523d5e75a7fe7456803cb24dd8f45c3476b",
+ "prompt_sha256": "ef0cad45782def5c13aed7cf8fa7cf298a142af08f2e4158a0cd94a88183c952",
+ "raw_text": "{\"risk_orient\": 2, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to assess the risk orientation based on the reasoning. The statement: They say \"提携により現地投資負担を分担し、政府支援を受けた競合に対抗できる資源と知識を確保します。また、合弁やパートナーシップで市場シェアを維持し、ブランドリスクを緩和できると考えます。\"\n\nIt suggests they are mitigating risk by partnership, sharing investment burden, and reducing brand risk. They are focusing on countering competitive environment and mitigating risk rather than taking risks. They are risk-averse or risk-averse? They are sharing risk, reducing risk. Their rationale is about risk mitigation, so likely risk-averse orientation: level 2. So rating 2.\n\nConfidence high.\n\nAnswer: {\"risk_orient\": 2, \"confidence\": \"high\"}\n\nMake sure it's exactly JSON.\n\n",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:23:49.361888+00:00",
+ "timestamp_responded": "2026-10-25T11:23:49.992738+00:00"
+}

@@ -1,0 +1,24 @@
+{
+ "job_id": "D02|C3W|international|1",
+ "seq": 87,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "fa58130a4929cc3f586580032e13abb531ea84eaf4d33afa7d10d24468e2c796",
+ "prompt_sha256": "f4181e71d7651110393d22e872a34743feb8e706a7b46745d4483af104050ede",
+ "raw_text": "{\"time_horizon\": 4, \"confidence\": \"high\"}",
+ "reasoning_text": "We are asked: We are a coding work. Provide judgment on time horizon based on reasoning described. The text: \"高い将来成長とブランド価値を維持するため、現地投資を継続しつつ、コスト削減と品質向上を両立できる戦略を実行する。\"\n\nWe must determine time horizon: 1 short-term to 5 long-term. The reasoning: They mention high future growth and maintaining brand value, continuing local investment while balancing cost reduction and quality improvement. That is moderate? They talk \"将来成長\" presumably long-term, but also mention cost reduction and quality improvement that could be medium/short-term. They emphasize future growth and brand value, which suggests long-term. Likely 4: long-term oriented (like 3-5 years). But \"続けつつ\" implies continuing investment. Might be long-term. So 4 or 5? They say \"高い将来成長\" (high future growth). That may be long-term. Also \"ブランド価値を維持\" maybe long-term but could be medium-term as well. Given options, choose 4. Confidence: high due to obvious mention of future growth.\n\nSo output JSON: {\"time_horizon\": 4, \"confidence\": \"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:25:43.594091+00:00",
+ "timestamp_responded": "2026-10-25T11:25:44.465601+00:00"
+}

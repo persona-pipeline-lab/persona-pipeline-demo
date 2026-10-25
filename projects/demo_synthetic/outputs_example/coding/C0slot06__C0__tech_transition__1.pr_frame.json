@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot06|C0|tech_transition|1",
+ "seq": 71,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "75d0f79e5de0cfa045e842b1a480c313ed30ce4a2abc4ed7d42ff2d6f73cea68",
+ "prompt_sha256": "7737581a190fa9337d3294fbf78b169257d5b9f4d5db6d1d605f89bd2985dee6",
+ "raw_text": "{\"pr_frame\":\"技術\",\"confidence\":\"high\"}",
+ "reasoning_text": "We have to identify the main problem frame from the categories: financial revenue, market competition, technology, stakeholder, or multiple contested if two or more can be equally important. The description:\n\n\"主に技術的遅れと競合優位性の喪失が深刻で、既存技術の優位を維持しつつ新方式へ転換が不可欠だ。\"\n\nTranslating: \"The main issue is serious technical lag and loss of competitive advantage, and it is essential to maintain the advantage of existing technology while transitioning to new methods.\"\n\nKey points: technical lag, loss of competitive advantage—this points to technology issues but also competiveness. But the phrase \"技術的遅れ\" is technology, \"競合優位性の喪失\" is competition. However, the primary focus is \"技術的遅れ\" and \"新方式へ転換\". So we deduce that the main frame is technology, i.e., 技術. Some may argue it's market competition because of \"競合優位性の喪失\". But the core phrase: \"主に技術的遅れ\" indicates primary issue is technology. Also mention \"既存技術の優位を維持しつつ新方式へ転換\", which is about maintaining existing tech advantage while changing new methods. This is a technology transition challenge. So the classification likely is \"技術\".\n\nConfidence: high. Let's output JSON.\n\n",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:24:40.844531+00:00",
+ "timestamp_responded": "2026-10-25T11:24:41.793585+00:00"
+}

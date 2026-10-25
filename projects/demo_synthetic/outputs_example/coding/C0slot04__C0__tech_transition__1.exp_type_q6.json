@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot04|C0|tech_transition|1",
+ "seq": 67,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "e734a3968c0d6627fdcac7d8179fb7acfb9391f123638e13be45971f66fc28fb",
+ "prompt_sha256": "c5f269282e783856649f23d01fb486387b08b732326697a4b8018ba9174a4d56",
+ "raw_text": "{\"exp_types\": [\"技術・開発\", \"海外\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to parse the passage to identify experience types per categories.\n\nGiven passage: \"前職では、国内市場が成熟した製造業で新しいデジタルプラットフォームを導入した際、海外のITベンダーと提携し、育成と導入を統合。顧客への価値提供を維持しながらコストを削減した経験がある。\"\n\nLet's analyze keywords: \"製造業\" (manufacturing), \"デジタルプラットフォーム導入\" (implementation of digital platform), \"海外のITベンダーと提携\" (partnered with overseas IT vendor), \"育成と導入を統合\" (integrated development and implementation), \"顧客への価値提供を維持しながらコスト削減\" (maintained value provision while reducing costs).\n\nWhich categories fit? \n\n- \"海外\" seems to be applicable because they partnered with overseas vendor, not a direct overseas assignment but collaboration. The category says \"海外（海外駐在・海外事業の経験）\". The passage: \"海外のITベンダーと提携\" is a collaboration, not necessarily overseas assignment, but still involves overseas. The question: The classification: \"海外（海外駐在・海外事業の経験）\". So this might represent overseas experience in a business context. It might count.\n\n- \"技術・開発\" (技術・開発). It includes research development, product development, production technology experience. Here, \"新しいデジタルプラットフォーム導入\" includes design & implementation. That seems like development of digital platform, so qualifies.\n\n- \"人・組織\" maybe not. No mention of HR.\n\n- \"危機対処\" not.\n\n- \"創業・立ち上げ\" no.\n\n- \"その他\" maybe not.\n\nThus likely \"技術・開発\" and \"海外\".\n\nCheck: \"海外のITベンダーと提携し、育成と導入を統合\" The involvement: They integrated the training (育成) and implementation. Maybe \"技術・開発\" still.\n\nThus exp_types: [\"技術・開発\", \"海外\"]. Confidence: High. Output JSON only.\n\n",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:24:28.439806+00:00",
+ "timestamp_responded": "2026-10-25T11:24:29.916374+00:00"
+}

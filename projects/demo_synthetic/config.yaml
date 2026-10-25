@@ -1,0 +1,4 @@
+# Project-specific settings, merged over config/demo.yaml.
+# The demo uses the shared templates of projects/_template (one copy only).
+paths:
+  templates_dir: ../_template/templates

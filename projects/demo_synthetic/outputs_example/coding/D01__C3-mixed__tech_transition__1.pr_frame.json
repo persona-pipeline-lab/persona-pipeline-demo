@@ -1,0 +1,24 @@
+{
+ "job_id": "D01|C3-mixed|tech_transition|1",
+ "seq": 133,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "ee77cb091ff01128ddb043b328ebfc181c7e92f8690f13be99a8a2706113a373",
+ "prompt_sha256": "e572cbe6ab68e4c0acf21b4e9c54884d1ca50b1bc5773f1135cefa98f60937d0",
+ "raw_text": "{\"pr_frame\":\"技術\",\"confidence\":\"high\"}",
+ "reasoning_text": "We need to choose main problem frame according to description: \"主力事業の技術が競合に遅れ、顧客が代替へ移行しているため、技術的リスクが最も大きい。\" This indicates technology disadvantage. The dominant issue is technology. So classification: \"技術\". Confidence high. Output JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:28:45.219660+00:00",
+ "timestamp_responded": "2026-10-25T11:28:45.509901+00:00"
+}

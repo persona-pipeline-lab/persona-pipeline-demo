@@ -1,0 +1,24 @@
+{
+ "job_id": "D06|C3W|tech_transition|1",
+ "seq": 107,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "85b818a4613bafc50be21b7613972972317b8d8f08f94dc8f6ed2d2c2e3b4244",
+ "prompt_sha256": "78508fc443f105b669cf6b8ff89d572f5cf3baa540ad36ca7c67d13db0f5967b",
+ "raw_text": "{\"exp_types\": [\"危機対処\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to parse the Japanese description. It says:\n\n\"過去の配管破損事故で、設備投資を先送りしたことが顧客信頼と市場機会を失う原因になった経験が、今回の投資判断とステークホルダー対応に大きく影響した。\"\n\nInterpretation: The experience of a past piping failure accident where equipment investment was postponed, causing loss of customer trust and market opportunities, has heavily influenced this investment decision and stakeholder handling.\n\nWe must identify the type(s) of experience. The classification categories:\n\n- \"危機対処\" (Crisis response: deficits, bankruptcy, accidents, scandals, demand collapse) – this clearly involves an accident (配管破損事故) and crisis. So it fits \"危機対処\".\n\n- \"技術・開発\" – research development or product development. Not explicitly mentioned, but the accident is about equipment, which could involve technology. But the phrase \"設備投資\" is about investment, not about technology development. It's more crisis than tech. Not explicitly a tech/dev. So likely not.\n\n- \"海外\" – not mention of overseas. Not.\n\n- \"創業・立ち上げ\" – not mention. Not.\n\n- \"人・組織\" – no mention of people or org.\n\n- \"その他\" – we only choose other if none of the above. We have at least one, so not \"その他\".\n\nThus answer: \"危機対処\" only. Possibly also \"技術・開発\" because equipment investment entity may involve tech. But the description says \"配管破損事故\". That is a crisis. The answer only is \"危機対処\".\n\nConfidence: high.\n\nReturn JSON:\n\n{\"exp_types\": [\"危機対処\"], \"confidence\": \"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:27:02.254590+00:00",
+ "timestamp_responded": "2026-10-25T11:27:03.440649+00:00"
+}

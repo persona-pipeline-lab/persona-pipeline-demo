@@ -1,0 +1,24 @@
+{
+ "job_id": "D01|C3-mixed|tech_transition|2",
+ "seq": 134,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "f2ebe837cbe99a101b88705e443328d6289b2ba9bb390a67197357e9d14d96a6",
+ "prompt_sha256": "dd6c51e0f058cccb7e31636cc4009ebc79b13c8f495884d5d2591d6b1d357859",
+ "raw_text": "{\"risk_orient\": 4, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to evaluate risk orientation from the text: They say: new method requires huge investment/time, existing techniques insufficient. Propose partnership to share tech and funds, quickly regain market share. Partner R&D already advanced; joint ensures quality control. Also preserve brand image, employment. They say partnership \"diversifies risk\" and ensures short- and long-term revenue. So the reasoning seems moderately risk-accepting? They are showing advantage of partnership as mitigation of risk, but still shows willingness to invest? They see high investment required but risk is spread, so adopt risk accept. They don't talk about fear. They emphasize securing revenues, mitigating risk. So risk orientation: 4 – risk accepting. Confidence: high. Let's produce JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:28:49.057740+00:00",
+ "timestamp_responded": "2026-10-25T11:28:49.569542+00:00"
+}

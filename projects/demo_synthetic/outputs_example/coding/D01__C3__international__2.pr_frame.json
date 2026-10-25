@@ -1,0 +1,24 @@
+{
+ "job_id": "D01|C3|international|2",
+ "seq": 14,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "10ec445e85cb89a950c5494c31803ad72f495291460034d5421e2e713b0ab6ae",
+ "prompt_sha256": "d5d2581c2c2f64a79df9826503545426002c4a401c099016ca6572bf3cd0f1c0",
+ "raw_text": "{\"pr_frame\":\"市場競争\",\"confidence\":\"high\"}",
+ "reasoning_text": "We need to choose one of the frames. The description says: \"主に市場と競争の問題であり、価格攻勢と規制強化により競争力が脅かされている。\" It's mainly a market and competition problem: price attacks and regulatory tightening threatening competitiveness. This is about \"市場競争\" (market competition). That frame obviously. No other frame. So output JSON:\n\n{\"pr_frame\":\"市場競争\",\"confidence\":\"high\"}\n\nWe must not include anything else.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:21:02.111950+00:00",
+ "timestamp_responded": "2026-10-25T11:21:02.488097+00:00"
+}

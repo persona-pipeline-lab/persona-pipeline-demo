@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot06|C0|withdrawal|2",
+ "seq": 48,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "6efd6c5aa46e8a24188d8e21b3149d5e85dc4e0054cf6c0ca02b4e0e6b07cc35",
+ "prompt_sha256": "0eb170338438fee9c5d8cde2df41b799bc1ecefee7a96c1ed223f82af6834845",
+ "raw_text": "{\"pr_frame\":\"市場競争\",\"confidence\":\"high\"}",
+ "reasoning_text": "We need to classify problem frame: \"市場競争\" presumably. The description: \"市場・競争の問題として、競合優位性の確保と顧客獲得の鈍化が主な課題です。\"\n\nIt clearly points to market competition: competition advantage and customer acquisition slowdown, i.e., market competition issues. So frame \"市場競争\". Confidence high. So output JSON.\n\n",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:23:09.346637+00:00",
+ "timestamp_responded": "2026-10-25T11:23:09.672370+00:00"
+}

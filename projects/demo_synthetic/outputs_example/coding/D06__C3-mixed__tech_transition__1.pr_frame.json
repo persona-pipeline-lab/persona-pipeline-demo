@@ -1,0 +1,24 @@
+{
+ "job_id": "D06|C3-mixed|tech_transition|1",
+ "seq": 143,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "b9d66f7444e190634a08ac34e84a8195dc0a1bda2783bd6557b251812c12f6a4",
+ "prompt_sha256": "feceff4ad0a3ccf068de3c2ce64f14655611eb364bb1092990c315865cb96aa6",
+ "raw_text": "{\"pr_frame\": \"技術\", \"confidence\": \"high\"}",
+ "reasoning_text": "We have a description: \"自社の新方式が競合に比べずらいことが主な課題であり、技術の劣化を止めるために投資が不可欠です。\"\n\nWe need to choose the main problem frame: \"財務収益\", \"市場競争\", \"技術\", \"組織ステークホルダー\", \"複数拮抗\".\n\nWe have to select based on the problem's core.\n\nThe description says: \"自社の新方式が競合に比べずらいことが主な課題であり、技術の劣化を止めるために投資が不可欠です。\"\n\nInterpretation: The core problem is that the company's new technology/method is slower/easier? Actually \"ずらい\" means \"slower\" or \"lagging\". So the main issue is that the company's new way is inferior to competitors. That's a technological issue. \"技術の劣化を止めるために投資が不可欠\" indicates that to stop technological deterioration, investment is essential. That suggests a technological problem, requiring investment to improve. So the main frame is \"技術\".\n\nWe need to output JSON: {\"pr_frame\": \"技術\", \"confidence\": \"high\"} maybe.\n\nWe can't provide explanation. Just JSON.\n\nThus final.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:29:21.272439+00:00",
+ "timestamp_responded": "2026-10-25T11:29:22.181587+00:00"
+}

@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot02|C0|tech_transition|1",
+ "seq": 63,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "addc0a4cd647f0c479f34cfa8dd86a6b4adb5fe7377b3985a462a967e01a1e60",
+ "prompt_sha256": "18dd6335ae72c51c53968d8258985e5c366a6d7c968df058d365005cc5bfc870",
+ "raw_text": "{\"risk_orient\": 4, \"confidence\": \"high\"}",
+ "reasoning_text": "We must analyze the reasoning text. It's about partner with overseas emerging company: share R&D costs, accelerate tech development, plus complementary market access to prevent customer churn. And maintain brand image while efficently using resources. This reasoning seems positive about risk, focusing on efficiency and opportunity. It shows embrace of risk - because partnering with emerging entity introduces uncertainty. But they emphasize benefits, risk taken. So likely risk orientation 4: risk accepting. The confidence: presumably high because strong positive language. So output JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:24:14.569592+00:00",
+ "timestamp_responded": "2026-10-25T11:24:14.944824+00:00"
+}

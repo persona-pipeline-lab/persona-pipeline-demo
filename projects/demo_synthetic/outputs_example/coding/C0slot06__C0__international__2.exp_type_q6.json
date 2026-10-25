@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot06|C0|international|2",
+ "seq": 60,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "60e4ff315fe0905af8636f020c428ef93acf0f6c182713611a67a288105573c0",
+ "prompt_sha256": "3fd1bbc6122a5c11ed8ff17370b79153351d0390373ee5cc611b5d849985e424",
+ "raw_text": "{\"exp_types\": [\"危機対処\"], \"confidence\": \"medium\"}",
+ "reasoning_text": "We need to identify experience types from the description. The description: \"過去に別市場で同様の規制強化に直面した際、合弁事業を組んで投資を分担し、リスクを軽減した経験があります。今回もパートナーシップで投資を共有する方針を支持します。\"\n\nThis indicates past experience dealing with regulatory tightening in a different market, forming a joint venture to share investment and mitigate risk. Types: \"技術・開発\" no, \"危機対処\" maybe, since regulatory tightening could be considered risk. But the description says risk mitigation, not dire crisis. Might be \"危機対処\" because regulatory pressure is a risk. Also \"海外\" probably if it's a different market, but not necessarily overseas. Could be \"海外\" if the different market is abroad. But not explicitly stated; \"別市場\" means a separate market, but could be domestic different segment. So can't be certain. The rule says no inference beyond explicit. So we cannot assume overseas.\n\nThus only explicit experience: \"合弁事業を組んで投資を分担し、リスクを軽減した経験\". That is more about partnership and risk sharing, i.e., joint venture. That is about \"創業・立ち上げ\"? No. It's about forming a joint venture, akin to partnership establishment. Also possibly \"危機対処\" framed by regulatory tightening as challenge. But the text does not mention crisis, only regulatory tightening. So we might use \"危機対処\" as risk mitigation. The guideline says only literal phrases.\n\nSo category \"危機対処\" might apply. Or maybe \"人・組織\"? No. \"技術・開発\"? No. \"海外\"? Not explicit.\n\nThus \"危機対処\" fits regulatory tightening risk mitigation experience. But the description: \"規制強化\" is indeed a threat, maybe considered crisis. So I think include \"危機対処\". Also \"海外\" might be safe if \"別市場\" implies overseas. But must avoid inference. I'd lean only \"危機対処\". If we include \"海外\" would be assumption. So only one type.\n\nConfidence: medium.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:24:04.335959+00:00",
+ "timestamp_responded": "2026-10-25T11:24:05.776430+00:00"
+}

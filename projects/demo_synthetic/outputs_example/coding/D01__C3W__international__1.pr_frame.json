@@ -1,0 +1,24 @@
+{
+ "job_id": "D01|C3W|international|1",
+ "seq": 85,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "5b440e31e3a9729dfe5854a4c7363f156155b667571ca56067712afd760cea3c",
+ "prompt_sha256": "37539dcf8e8061a17e672be45b1a51f2a751ee8a461c16726544e661aa89be6e",
+ "raw_text": "{\"pr_frame\":\"財務収益\",\"confidence\":\"high\"}",
+ "reasoning_text": "We need to choose one of the frames. The description: \"数値的な損失と投資負担が大きく、現地事業を継続するかどうかの決断は主に財務・収益面の問題だと捉える。\" It states that the decision revolves around numeric losses and investment burden, i.e., financial profitability. So it's \"財務収益\" (financial profitability) frame. Confidence high. Output JSON only.\n\n",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:25:33.397624+00:00",
+ "timestamp_responded": "2026-10-25T11:25:33.767935+00:00"
+}

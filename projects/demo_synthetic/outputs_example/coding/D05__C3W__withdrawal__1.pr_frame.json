@@ -1,0 +1,24 @@
+{
+ "job_id": "D05|C3W|withdrawal|1",
+ "seq": 81,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "c117b23291c57a0cc17221f296c1aa0b7c94f58620e0021db00b8ee980533794",
+ "prompt_sha256": "9f77698bde47745484b30aa28ce4e17fd9877e6285b7b65e743e7837af1e1073",
+ "raw_text": "{\"pr_frame\": \"技術\", \"confidence\": \"high\"}",
+ "reasoning_text": "We need to classify the primary problem frame from given description. The description: \"技術優位が短期的に持続できるかが意思決定の鍵になるため、最も重要な問題は5に対する技術の未来だと捉えます。\" This indicates it's about technology (技術優位). So classification: 「技術」. Confidence: high. Output JSON.\n\nMake sure to output exactly JSON structure.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:25:17.709617+00:00",
+ "timestamp_responded": "2026-10-25T11:25:18.059849+00:00"
+}

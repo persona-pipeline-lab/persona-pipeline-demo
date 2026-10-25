@@ -1,0 +1,24 @@
+{
+ "job_id": "D01|C3|tech_transition|1",
+ "seq": 25,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "3cb8f8d720a2e97ca0d7c3ea8216e875ba399ab0c9484622cbc1814f52da3472",
+ "prompt_sha256": "939c6fa98b2d085d5c61eca04e2d00d2f27847cd9d2aed1a576bd28555102e71",
+ "raw_text": "{\"risk_orient\": 2, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to rate risk orientation based on reasoning. The statement describes sharing technology to accelerate development speed, dispersing resources to reduce risk. They emphasize sharing tech and using partner patents to complement strengths and ensure market trust. They see risk reduction via resource dispersion, increased speed, leverage partner IP. That indicates risk-averse or risk-neutral? They aim to reduce risk. The tone: use collaboration to mitigate risk, ensuring market trust. So risk orientation low? Possibly risk-avoidant (1-2). Probably 2 (avoidance-oriented). Confidence: high. We'll output JSON.\n\nBut need integer 1-5. So {\"risk_orient\": 2, \"confidence\": \"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:21:47.351755+00:00",
+ "timestamp_responded": "2026-10-25T11:21:47.835397+00:00"
+}

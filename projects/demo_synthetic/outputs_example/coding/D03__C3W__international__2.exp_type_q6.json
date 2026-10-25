@@ -1,0 +1,24 @@
+{
+ "job_id": "D03|C3W|international|2",
+ "seq": 90,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "495728565d5392993b910a6a24473104e6c264b7ca39878ef93a66f8a79affd9",
+ "prompt_sha256": "14b458c90a29396bd6608a278c12eda1c6894dc121baf0f7670440ae0e3bf81f",
+ "raw_text": "{\"exp_types\": [\"人・組織\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to classify experiences based on the description. The description: \"地方ホテルの支配人として従業員提案会を導入し、従業員が自ら改善案を出し実行する仕組みを作った経験。従業員の満足度向上が離職率低下に直結したことを実感した。\"\n\nSo a hotel manager introduced employee suggestion meetings, employees propose improvements, implemented them, leading to increased satisfaction and lower turnover.\n\nWhich categories apply? The categories: \"危機対処\" (crisis handling), \"技術・開発\" (research/production tech), \"海外\" (overseas), \"創業・立ち上げ\" (startup), \"人・組織\" (human/organization), \"その他\".\n\nThis experience involves employee engagement, organizational culture change, HR/organizational practices. So likely \"人・組織\". No other categories mention. So list contains only \"人・組織\". Confidence high.\n\nReturn JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:25:58.045876+00:00",
+ "timestamp_responded": "2026-10-25T11:25:58.766557+00:00"
+}

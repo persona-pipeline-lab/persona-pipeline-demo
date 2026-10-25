@@ -1,0 +1,24 @@
+{
+ "job_id": "D02|C3W|international|1",
+ "seq": 87,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "f23dfd1fc74567ecfda6fad44005a2ee20d545c7341498c775e98088b2137c2c",
+ "prompt_sha256": "8f180ddc89b0c987a330ddba32e218f1153f4660100c49281d0cd98c2f6bf796",
+ "raw_text": "{\"pr_frame\":\"財務収益\",\"confidence\":\"high\"}",
+ "reasoning_text": "We have a short Japanese description: \"財務負担と投資リスクが主な障壁であり、これが事業継続を難しくしている。\"\n\nWe need to choose the major problem frame. Options:\n\n- 財務収益 (deficits, investment burden, profitability)\n- 市場競争 (growth, competition, acquisition)\n- 技術 (advantage, conversion)\n- 組織ステークホルダー (employee, partner, region, brand responsibility)\n- 複数拮抗 (more than one frame equal weight)\n\nThe description says \"financial burden and investment risk are primary obstacles that make business continuity difficult.\" This points to financial burden and risk, i.e., 財務収益 frame.\n\nConfidence? The textual evidence points clearly to finances. There's no mention of market, technology, stakeholders. So high confidence.\n\nReturn JSON:\n\n{\"pr_frame\": \"財務収益\", \"confidence\": \"high\"}\n\nThat's simple.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:25:41.960133+00:00",
+ "timestamp_responded": "2026-10-25T11:25:42.618004+00:00"
+}

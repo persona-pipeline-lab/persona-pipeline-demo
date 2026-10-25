@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot03|C0|international|1",
+ "seq": 53,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "9321a6bb9452b893a2c328c0c434b523d5e75a7fe7456803cb24dd8f45c3476b",
+ "prompt_sha256": "9a2937ca722d0d8de3b135df63ebd3359e1729ca9fa231ada95070a261fe9e57",
+ "raw_text": "{\"time_horizon\": 2, \"confidence\": \"medium\"}",
+ "reasoning_text": "We need to classify time horizon. The description says: \"提携により現地投資負担を分担し、政府支援を受けた競合に対抗できる資源と知識を確保します。また、合弁やパートナーシップで市場シェアを維持し、ブランドリスクを緩和できると考えます。\" The emphasis: \"現地投資負担を分担し、政府支援を受けた競合に対抗できる資源と知識を確保\" and \"合弁やパートナーシップで市場シェアを維持し、ブランドリスクを緩和できると考えます\" suggests a strategy to collaborate to stay in market, maintain share; focus on mitigating brand risk. This seems somewhat mid-term? Actually, it's more about short- to mid-term? It deals with current investment shared burden, securing resources and knowledge to counter competition; aim to maintain share and mitigate brand risk. Not very long-term. It's more immediate. Probably time horizon 2 or 3. Let's analyze: The focus is on sharing investment burden, which is about current capital. It competes against competitors supported by government, but partnership ensures resources and knowledge. It's a tactical/strategic decision to maintain share. Market share maintenance is short-term to medium-term. I'd lean toward 2: short-term. But \"資源と知識を確保\" could be somewhat longer-term for sustainable advantage. However, no explicit 5-year timeframe. We'll score medium confidence. I think it's 2.\n\nReturn JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:23:35.248769+00:00",
+ "timestamp_responded": "2026-10-25T11:23:36.315078+00:00"
+}

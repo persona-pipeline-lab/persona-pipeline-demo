@@ -1,0 +1,24 @@
+{
+ "job_id": "D06|C3-mixed|withdrawal|2",
+ "seq": 120,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "b3d6382b4cfc4595c436a59890e3f0891608be9557876a168892363bf9da5b0c",
+ "prompt_sha256": "a8b1bf15ea3a29690ccace19b5c41ddc7ca7407df96e89ea301c0ac53554f2a0",
+ "raw_text": "{\"time_horizon\": 4, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to evaluate time horizon rating 1-5 based solely on reason and wording. The passage: market grows 12% annually, so to realize future profitability, investment is essential. The writer prioritizes maintaining tech advantage and stability for employees and community. Short-term deficits acceptable, but employee turnover and community effects are severe. So they consider investment as protecting foundation. Therefore they choose to accept short-term losses and continue investment.\n\nThey are thinking about protecting foundation; context: Market growth, but maybe long-term growth. This seems like medium to long-term focus? They mention future profitability, but also immediate need for stability. They think short-term deficit OK. They view \"basically investing to guard the foundation\" implies medium to long horizon? They rate with 3? But we must judge: \"短期的な赤字は容認できる\" but they consider employee retention and community effect, which are longer-run. They plan to invest for future profitability, ignoring short-term loss. That seems to focus on long-term advantage (maybe 4). But maybe they're rationally evaluating mid-term? Let's parse:\n\n- They say \"市場が年12％で成長\" -> that is an indicator of medium/long expectation. \n- \"将来の収益性を実現\" -> future (maybe medium to long). \n- But they accept short-term deficits. \n- They set \"従業員と地域社会に安定感を与えることを最優先\". That too is long-term perspective, because these affect future operations. They also want to maintain tech advantage, which is long-term. \nThus likely time horizon is 4 (long-term oriented). \n\nConfidence: fairly high, because reasoning evidence is clear.\n\nSo output JSON: {\"time_horizon\": 4, \"confidence\":\"high\"}\n\nBut check: maybe 3? No, because they explicitly mention future profitability and stable foundation, even though short-term deficits are permissible. That is long-run view (since they are willing to sacrifice short-run). It's aiming to secure long-term future.\n\nThus answer: 4.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:27:56.942999+00:00",
+ "timestamp_responded": "2026-10-25T11:27:58.256880+00:00"
+}

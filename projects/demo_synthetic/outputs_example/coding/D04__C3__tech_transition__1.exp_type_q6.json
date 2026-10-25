@@ -1,0 +1,24 @@
+{
+ "job_id": "D04|C3|tech_transition|1",
+ "seq": 31,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "b4746c07dcf2c316eb865755610b174fe8cc750b9c1769f96cb2391c6047d46c",
+ "prompt_sha256": "849eb154fe6de5f5d0f6caf956167dafb106379cbf523101ada610166e34fd57",
+ "raw_text": "{\"exp_types\": [\"人・組織\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We have to list all applicable categories from the six. The description: \"地方の中規模ホテルで総支配人を務めた際、従業員の提案会を月に一度設置し、提案を実行することで離職率を低減させた経験。さらに人事部で学んだ、人が辞める理由は学びの場を失うことであるという実感が、今回の判断に影響した。\"\n\nWe need to classify based on the experience type in categories:\n\n- 「危機対処」: crisis handling, debt crisis, bankruptcy, accidents, scandals, demand collapse.\n- 「技術・開発」: research & development, product development, manufacturing technology.\n- 「海外」: overseas assignment, overseas business.\n- 「創業・立ち上げ」: founding, new business, new company.\n- 「人・組織」: HR, labor, organization management, mentor-mentee relationships.\n- 「その他」: none of the above or unique.\n\nThe experience: Being a general manager at a regional hotel, implementing an employee suggestion meeting to reduce turnover. This is about human resources and organizational management. So relevant category: 「人・組織」. Not any other. Maybe \"人・組織\" only.\n\nCheck: Is there any other? The mention of human resources (人事部). So it's HR.\n\nThus JSON: {\"exp_types\": [\"人・組織\"], \"confidence\": \"high\"}\n\nWe must output only the JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:22:10.923378+00:00",
+ "timestamp_responded": "2026-10-25T11:22:11.954844+00:00"
+}

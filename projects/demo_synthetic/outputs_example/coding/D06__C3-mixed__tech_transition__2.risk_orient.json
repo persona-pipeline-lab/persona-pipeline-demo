@@ -1,0 +1,24 @@
+{
+ "job_id": "D06|C3-mixed|tech_transition|2",
+ "seq": 144,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "8fdf31a24202b343e2e3f2083ad6cf2298ec1a99d37d5b8e43d8eba7ac3ed2af",
+ "prompt_sha256": "6827797d2375648592b9f2929b07d8c5eb8aa554ec365c95b3db1f61ad2ba504",
+ "raw_text": "{\"risk_orient\": 4, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to evaluate risk orientation from the description. Text: \"市場成長率が高く、5年以内に新方式が過半に達する見通しであるため、技術把握と顧客保持を図る必要がある。既存従業員は新方式の開発に大きく関わるため、投資と人材育成を行うことで競争力を回復できると判断した。資金面でも構造調整を行い、追加投資を段階的に実施することができる。\"\n\nThey note high growth market, new方式 to become majority in 5 years. They plan to invest and develop personnel. They say can do staged additional investment. They see it as needed to maintain competitiveness; they believe they can recover competition. They talk about investment and training, and can adjust funds gradually.\n\nWe need to decide risk orientation: They see a high growth market and a plan to invest to maintain market position. They mention the investment can be staged. They don't express fear of loss but rather a pragmatic approach: it's necessary, can be done gradually. So that indicates risk‑accepting orientation. Not extreme, but leaning toward risk‑acceptance. The scale: 1 strongly risk-averse, 5 strongly risk-accepting. This seems 4. Because they accept risk but plan to stage it, so risk-accepting but not extreme. Confidence: fairly high because they have a clear plan and evidence.\n\nThus, JSON: risk_orient: 4; confidence: high.\n\nLet's produce output.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:29:26.421402+00:00",
+ "timestamp_responded": "2026-10-25T11:29:27.466567+00:00"
+}

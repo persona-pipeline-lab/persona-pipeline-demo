@@ -1,0 +1,24 @@
+{
+ "job_id": "D03|C3-mixed|tech_transition|1",
+ "seq": 137,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "7cf9d157227d7d5f0698d8f2b0a810333d5a7177f0c0dfa3ced39346d8ff455c",
+ "prompt_sha256": "318f8c11aff5f7112f999597353621e842c3cde759626e016f4523710ac2c95c",
+ "raw_text": "{\"exp_types\": [\"技術・開発\", \"人・組織\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to classify the experience types. The text: \"工場長時代に生産現場の勘を数字化し前兆を検知する仕組みを導入した経験と、従業員の提案箱を通じて意思決定を社員に委任した経験が、提携によるリスク共有と組織力強化の重要性を認識させました。\" So we have two experiences:\n\n1. Introduced a system to digitize the intuition of the production line and detect precursors. What category does that fit? Possibly \"技術・開発\" (research and development, product development, production technology). Digitization of process flows. Could also be \"人・組織\" if focusing on organizational processes? Actually system to detect precursors is a technology development, so \"技術・開発\" likely.\n\n2. Delegating decision-making to employees via suggestion box. That relates to \"人・組織\" (human resources, organization operations, mentor-mentee relationships) because it's about organizational empowerment.\n\nDoes it fit other categories? Not definitely crisis, not overseas, not founding. So two categories: 技術・開発, 人・組織.\n\nConfidence: high.\n\nWe must output JSON only.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:29:04.037524+00:00",
+ "timestamp_responded": "2026-10-25T11:29:04.925110+00:00"
+}

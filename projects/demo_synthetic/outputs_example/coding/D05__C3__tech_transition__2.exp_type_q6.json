@@ -1,0 +1,24 @@
+{
+ "job_id": "D05|C3|tech_transition|2",
+ "seq": 34,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "68c70980322c7860622f5d65f4fe70178f57913863be89ab68e703f1318edab1",
+ "prompt_sha256": "ceb99a4fdc5b565090b96e52a7ee784cb3a7876698c4701206dff9662aef1481",
+ "raw_text": "{\"exp_types\": [\"人・組織\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to identify types among six categories based on the logged experience. The text: \"前職で厳しい社長に向け手紙を書き続け、結局親しくなり提携を獲得した経験が、関係構築の重要性と提携の有効性を裏付けた。\" He wrote letters to a strict CEO, eventually became friendly and secured a partnership. This is about building relationships with a leader, resulting in a partnership. Which categories? The relevant ones: \"人・組織\" (人事・労務・組織運営・師弟関係) maybe, but it's relationship with a leader, possibly \"人・組織\" as it's about interpersonal relationship. Or might also be \"創業・立ち上げ\" no. \"危機対処\" no. \"技術・開発\" no. \"海外\" no. \"その他\" maybe. The category \"人・組織\" likely fits. Could also be \"継続的インタラクション\" but not in categories.\n\nThus output: exp_types: [\"人・組織\"]; confidence high.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:22:20.295366+00:00",
+ "timestamp_responded": "2026-10-25T11:22:21.092143+00:00"
+}

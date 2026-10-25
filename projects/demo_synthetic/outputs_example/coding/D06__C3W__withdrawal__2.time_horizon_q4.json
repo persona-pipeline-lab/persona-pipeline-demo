@@ -1,0 +1,24 @@
+{
+ "job_id": "D06|C3W|withdrawal|2",
+ "seq": 84,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "ee3ff9ccc68718f71731970a849c46bc654a5af0eda18cff3a08b2d3aba58d94",
+ "prompt_sha256": "1108e3e3812a752839d70a677e362ac485b4e65706a60ce1828bd1d974a71a88",
+ "raw_text": "{\"time_horizon\":5,\"confidence\":\"high\"}",
+ "reasoning_text": "We need to output JSON with time_horizon 1-5 and confidence high/medium/low. Determine based on description.\n\nDescription:\n\n\"既存の市場成長率が高いため、投資によって競合優位を維持すれば将来的な収益化が見込める。加えて、従業員・地域社会への安全投資は信頼回復に不可欠であり、短期的な赤字を犠牲にして長期的価値を保つ。社内外の情報を透明に共有し、リスクを可視化した上で投資判断を行った。\"\n\nIt emphasizes maintaining competitive advantage due to high market growth, expects future profitability. Also invests in safety, paying short-term losses to preserve long-term value. Transparency of risk.\n\nThis suggests long-term horizon. It is about preserving long-term value, expecting future benefits, sacrificing short-term profit. So horizon 5 maybe. But maybe 4? The phrase \"将来的な収益化が見込める\" and \"長期的価値を保つ\" indicates long-term. 5 indicates 5-10 years. This seems like likely long-term. Let's take 5.\n\nConfidence: we have clear explicit mention that short-term losses are sacrificed. So high confidence.\n\nReturn JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:25:31.495708+00:00",
+ "timestamp_responded": "2026-10-25T11:25:32.375145+00:00"
+}

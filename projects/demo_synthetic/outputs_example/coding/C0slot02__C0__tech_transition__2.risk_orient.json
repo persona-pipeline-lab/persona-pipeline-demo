@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot02|C0|tech_transition|2",
+ "seq": 64,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "cc158e074a010d7b01d0488f104d2e3099fbeea41ff44e50a550d15514866a12",
+ "prompt_sha256": "3fef67b3c9d3031efbf0140a912eebee287abfe82cca682aeec0a15433130d09",
+ "raw_text": "{\"risk_orient\": 2, \"confidence\": \"medium\"}",
+ "reasoning_text": "We evaluate risk orientation from reasoning. The narrative: large capital burden; dividing cost, quickly incorporate technology, use IP and market access, expand customer base short-term, aim for revenue recovery. They adopt joint venture with overseas to mitigate investment risk. The reasoning has risk aversion due to large outlay; but they prefer to partner to reduce risk. They see cost sharing, technology transfer, market access as benefits.\n\nThis sounds risk-averse: they highlight divide risk; but they also see opportunity. The tone seems to be to reduce pressure and get quick upswing. Is this risk tolerant? They are avoiding large single investment but open to joint venture. This indicates risk aversion (cooperative approach is risk mitigating). Might be 2 or 3: they are exploring risk management fairly. The style: \"資金負担が大きく ... 圧迫する恐れがある\" -> risk aversion. \"分担し技術迅速 ... 取り込み\" -> risk mitigation. They aim revenue recovery; the primary motive is to salvage business. So risk orientation likely 2. Confidence medium. Provide JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:24:17.136815+00:00",
+ "timestamp_responded": "2026-10-25T11:24:17.874347+00:00"
+}

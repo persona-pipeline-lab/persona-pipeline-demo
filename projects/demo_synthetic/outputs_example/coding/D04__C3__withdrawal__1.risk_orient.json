@@ -1,0 +1,24 @@
+{
+ "job_id": "D04|C3|withdrawal|1",
+ "seq": 7,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "482f9051300209d1c3b27e63d81fa2b23c88af54b47f8a5ddaddf5d6dea5c911",
+ "prompt_sha256": "a017dcdc9d86a41ff78d66f16d94f3b33ab155838fffc5120e1667f7d53fbe4e",
+ "raw_text": "{\"risk_orient\": 5, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to rate risk orientation. The statement: \"市場は高成長で技術優位があり、ブランドと従業員・地域の信頼を維持することが長期価値につながるため、投資を継続しつつ効率化を図る。短期的な赤字は投資による将来収益で相殺できると判断した。撤退は従業員と地域社会に大きな打撃を与え、ブランドが損なわれるリスクが高い。\"\n\nInterpretation: They are saying they will continue investment, offset short-term losses, due to long-term value. They also note that withdrawal would have negative social impact and brand risk. So they argue for continued investment in high-growth, tech advantage. They are basically accepting risk to invest for future. They acknowledge short-term losses but expect future payback. They view withdrawal as harmful. So they are risk accepting. Weighted 5? Because they see discount, future. They are strongly risk accepting because they believe that despite short-term negative, they will gain future. They are not risk-averse. So risk_orient = 5. Confidence high? The reasoning is fairly clear. So \"confidence\":\"high\".\n\nReturn JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:20:38.980859+00:00",
+ "timestamp_responded": "2026-10-25T11:20:39.837771+00:00"
+}

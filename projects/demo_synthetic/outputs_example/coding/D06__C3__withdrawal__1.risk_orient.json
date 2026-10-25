@@ -1,0 +1,24 @@
+{
+ "job_id": "D06|C3|withdrawal|1",
+ "seq": 11,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "38a7a7001dbb38af94976418d6838785ac234603b7e7191adf886cb3dab08875",
+ "prompt_sha256": "4b59faaee8d67485b1e042357d14dd3f3bfe166b08e111864d660a65153b3caa",
+ "raw_text": "{\"risk_orient\": 4, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to analyze the reasoning. The description: \"市場は年率12%で成長し、技術優位も確認できるため、投資を継続して長期的な成長機会を確保する価値が高い。リスクはあるが、競合が同じ市場へ投資しているため、遅れを取ると取り返しがつかなくなる恐れがある。内部リソースと地域社会に与える影響を守るため、投資を継続する判断に至った。\"\n\nWe must judge risk orientation based on reasoning. The reasoning mention: market growth 12% per annum, confirming technological advantage, so value high to secure long-term growth opportunity. \"リスクはあるが\" indicates risk exists but not heavily emphasised. They mention competitor investing; if lagging, it's catastrophic. Also mention protecting internal resources and local community impact. So the reasoning suggests a proactive stance: although risk exists, it's necessary. It's not strongly risk-averse; it acknowledges risk but still continues. This seems to lean towards risk acceptance. \"リスクはあるが\" - \"there is risk, but\". They state probability of damage if lagging is catastrophic. It shows sense of urgency, not being risk-averse. So rating likely 4 or 5. Which one? Let's see the scale: 5 = \"強くリスク受容的（不確実でも機会を取りに行くことが判断の主軸）\". 4 = \"受容寄り（不確実でも利益を追求する傾向）\". 3 = \"中立\". 2 = risk-averse. 1 = strong risk-averse. The wording: \"リスクはあるが\" and \"遅れを取ると取り返しがつかなくなる恐れがある\" indicates risk but emphasises if we delay, it's catastrophic, so they are ready to invest. They also emphasise internal resources and community to be protected by continuing the investment. So they accept risk for the benefit. This is risk-acceptance. Might be level 4. It's not \"very strongly\" risk-accepting because there's some mention of risk. It's not 5. So rating 4. Confidence: high? The reasoning is clear. So high. Output JSON only.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:20:51.992015+00:00",
+ "timestamp_responded": "2026-10-25T11:20:53.510998+00:00"
+}

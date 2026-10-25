@@ -1,0 +1,32 @@
+{
+ "job_id": "C0slot03|C0|scen_b|1",
+ "seq": 23,
+ "person_id": "",
+ "condition": "C0",
+ "scenario": "scen_b",
+ "rep": 1,
+ "model": "mock-model",
+ "sent_sha256": "6d5acbf794dad52123f26396e1d30c67542703cdec16b7f6f32a5191e4de7e69",
+ "sent_file": "sent/C0slot03__C0__scen_b__1.txt",
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 8192,
+  "seed": 701,
+  "reasoning_effort": "medium"
+ },
+ "status": "ok",
+ "error_message": "",
+ "response_text": "{\"q1\": [\"H\", \"A\", \"B\"], \"q2_category\": 4, \"q2_text\": \"これはテスト用の回答です。これはテスト用の回答です。これはテスト用の回答です。\", \"q3\": \"提携\", \"q4_text\": \"これはテスト用の理由です。これはテスト用の理由です。\", \"q5_ranking\": [\"取引先\", \"地域社会\", \"株主\", \"従業員\", \"顧客\"], \"q6_text\": \"これはテスト用の経験です。\"}",
+ "reasoning_text": "",
+ "finish_reason": "stop",
+ "actual_model": "mock-model-1",
+ "response_id": "mock-23",
+ "usage": {
+  "prompt_tokens": 10,
+  "completion_tokens": 20
+ },
+ "endpoint_kind": "mock",
+ "timestamp_requested": "2026-10-25T06:50:53.544820+00:00",
+ "timestamp_responded": "2026-10-25T06:50:53.544820+00:00"
+}

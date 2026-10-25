@@ -1,0 +1,24 @@
+{
+ "job_id": "D03|C3|tech_transition|2",
+ "seq": 30,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "a74534fefdee3607500f9c647972398f1efc8ef3ed6c843fc1595b6173ff2366",
+ "prompt_sha256": "fb06bce466d4cd10a580c111adf937d89763e7916c22aa6560d72fdfbbe044b1",
+ "raw_text": "{\"exp_types\": [\"技術・開発\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We have to select types among six categories: \"危機対処\", \"技術・開発\", \"海外\", \"創業・立ち上げ\", \"人・組織\", \"その他\". The description: \"設計部長時代、顧客工場を訪問して作業者の声を直接拾い、製品設計に反映した経験が、顧客目線と技術進化の両立を重視する判断に大きく影響した。\" It's specifically about design director visiting client plant and hearing workers' voices, reflecting in product design. This is clearly \"技術・開発\". Does it involve others? The description referencing \"顧客工場を訪問して...作業者の声を直接拾い、製品設計に反映\" indicates the experience of direct engagement with production workers. This could be \"人・組織\" because it's about listening to operators? But it's a design director, so the experience is about incorporating customer feedback into design. Actually, it's bridging customers perspective and technology. The classification \"技術・開発\" covers research/ development / product development / manufacturing technology experience. Yes. \"人・組織\" refers to HR, labor, organization management, and teacher-student relationship. Maybe not. He visited the client's factory and captured worker's voice, but that doesn't necessarily deal with HR or management. The mention of \"作業者の声を直接拾い\" that is basically capturing feedback. It is not necessarily organizational management. So only \"技術・開発\". Output JSON: {\"exp_types\": [\"技術・開発\"], \"confidence\":\"high\"}.\n\nCheck mapping: Could also be \"人・組織\"? He is interacting with workers, but it's usage of field visits to gather information for product design. That is basically technology development. The categories: \"人・組織\" is for HR, labor, organization operation, mentor-mentee. Since this is not about that, just about design director's approach. So only \"技術・開発\". Should we also include \"その他\"? No.\n\nThus output.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:22:04.277764+00:00",
+ "timestamp_responded": "2026-10-25T11:22:05.683990+00:00"
+}

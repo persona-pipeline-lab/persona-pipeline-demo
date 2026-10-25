@@ -1,0 +1,24 @@
+{
+ "job_id": "D01|C3W|withdrawal|2",
+ "seq": 74,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "479d1756566d1a3b416b7a8f611d4fd8995d67202e13e547d64b931aa33f4844",
+ "prompt_sha256": "c97fc199d93c4ab0cfc202342d7805df90e61758b25e751fec1cdf5e217ff074",
+ "raw_text": "{\"exp_types\": [\"危機対処\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to classify types. The statement: \"当社のB社取引先が民事再生に陥った際、資金繰り表を直視し、数字と人の関係の重要性を痛感した経験が今の判断に最も影響した。\" So context: B company partner went into civil rehabilitation (i.e., bankruptcy). They saw cash flow statement etc. So type: \"危機対処\" - crisis handling, i.e., dealing with downturn, collapse of partner. It also may be \"人・組織\" but it's not about internal employees. It's about partner. \"技術・開発\" no. \"海外\" no. \"創業・立ち上げ\" no. \"その他\" no. So answer: [\"危機対処\"]. Confidence high. Output JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:24:54.510035+00:00",
+ "timestamp_responded": "2026-10-25T11:24:55.110917+00:00"
+}

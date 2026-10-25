@@ -1,0 +1,24 @@
+{
+ "job_id": "D05|C3|withdrawal|1",
+ "seq": 9,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "b00ff996dec8773dc46f4b75d34ab79fd97f428366c68ab3056e411789ce30e6",
+ "prompt_sha256": "0770287d1fb7b93e3a0a36da674563798936f27a56c58975f13e64cc4422d76e",
+ "raw_text": "{\"pr_frame\":\"技術\",\"confidence\":\"high\"}",
+ "reasoning_text": "We have a short description: \"技術優位性の持続時期が不明で、競合が同領域で投資を進めており、事業の価値に大きく関わるため、主に技術上の課題と見なします。\"\n\nWe need to choose the main problem frame: financial profitability, market competition, technology, stakeholder organization, or multiple conflicting.\n\nThe description says: \"技術優位性の持続時期が不明で、競合が同領域で投資を進めており、事業の価値に大きく関わるため、主に技術上の課題と見なします。\"\n\nIt states: the duration of technological advantage is uncertain, competitor invests in same domain, big impact on business value, mainly considered a technical issue.\n\nThus the main problem frame is \"技術\" (Technology) problem. Confidence high. Let's do JSON.\n\n",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:20:45.446146+00:00",
+ "timestamp_responded": "2026-10-25T11:20:46.108828+00:00"
+}

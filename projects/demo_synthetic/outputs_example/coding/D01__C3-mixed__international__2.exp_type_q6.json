@@ -1,0 +1,24 @@
+{
+ "job_id": "D01|C3-mixed|international|2",
+ "seq": 122,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "3ffe7a545c99f46278e5c0f6846bd4107b0b9468318a6a05a96fe79a5b39c3fa",
+ "prompt_sha256": "773f952f1f29a9f9a866a348702c2459e41a2acde4552f0c85ff3e171d7076c4",
+ "raw_text": "{\"exp_types\": [\"海外\", \"技術・開発\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to classify experience types. The description: \"海外現地工場での手順を緻密に文書化し、現地従業員と共に品質向上に取り組んだ経験。\" This is about overseas factory, documenting procedures, working with local employees to improve quality. Which categories?\n\nOutline: \n- \"海外\": overseas experience indeed. The experience is overseas factory so qualifies as overseas.\n- \"技術・開発\": This involves procedure documentation and quality improvement. That may be considered technical or development? However \"技術・開発\" is defined as research/production technology experience. Writing procedures and improving quality could be considered production technology or process improvement. But we should only pick categories that are explicitly stated. The description mentions \"手順を緻密に文書化\" (meticulously document processes) and \"品質向上\" (improve quality). That can be considered production technology experience, but it's also a part of overseas experience. Could it also be \"人・組織\"? It involves working with local employees. But \"人・組織\" category includes personnel, labour, organizational management, teacher-mentee relationships. The mention is about working with local employees. But it's more about process and quality improvement, not about personnel management. It's not necessarily about organizational changes. So should we include \"人・組織\"? Possibly no.\n\n\"危機対処\": no\n\"創業・立ち上げ\": no\n\"その他\": no\n\nSo we include overseas, and maybe 技術・開発. The question: \"記述だけを根拠に、言及された経験の型を次の6分類から該当するものすべて選んでください。\"\n\nBecause writing procedures and quality improvement is indeed a technical development experience. The category \"技術・開発\" is for research development, product development, production technology experience. Documenting processes for quality improvement is part of production technology. So we can include that.\n\nHence expected output: \n{\"exp_types\": [\"海外\", \"技術・開発\"], \"confidence\": \"high\"}\n\nWe must output JSON only. No markdown.\n\nLet's produce that.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:28:07.473956+00:00",
+ "timestamp_responded": "2026-10-25T11:28:08.883977+00:00"
+}

@@ -1,0 +1,24 @@
+{
+ "job_id": "D02|C3-mixed|withdrawal|2",
+ "seq": 112,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "d01750586ba69e71779de659603cef15a95ef2a0fa3568e09c988f7434291cc4",
+ "prompt_sha256": "eca3cd34f5f6e791f84ffb776deed4f5718697d2f0d1cb1f07e2d8f6b61d7b68",
+ "raw_text": "{\"time_horizon\": 4, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to assign a time horizon 1-5 based on the reasoning. The passage: \"市場成長率が12％であり、技術優位を保つには継続的な投資が不可欠です。財務負担は大きいものの、短期赤字を埋めるために組織再編と効率化を図ることで投資の回収を目指します。従業員の学びや安全性への投資は、長期的に顧客満足と売上を安定させるための土台となります。さらに、地域社会と取引先の信頼を維持しつつ、株主価値を長期的に高める計画です。\"\n\nWe need to interpret what urgency or horizon is primary.\n\nLanguage includes short-term sacrifice (赤字) compensated by reorganization/efficiency to recover investment. Also emphasises long-term: \"従業員の学びや安全性への投資は長期的に顧客満足と売上を安定\", \"株主価値を長期的に高める計画\". So it is a mix: short-term suffering, but long-term focus. The time horizon rating is on scales: 1=short-term, 2=短期寄り, 3=中期・両論, 4=長期寄り, 5=長期. The passage: it says \"短期赤字を埋めるために組織再編と効率化\" but overall it's about \"長期的に\", and it \"長期的に高める\". But it's also a continuous investment.\n\nWe need \"理由の語り方\". We see emphasis on long-term: \"長期的に顧客満足と売上を安定\" and \"株主価値を長期的に高め\". However, it also mentions short-term deficits but they're part of the strategy. So the overall orientation: The main rationale for the decision appears to be maintaining competitive advantage and long-term shareholder value. But with short-term actions for recovery.\n\nWhich rating: 4 (long-term寄り). It is not purely short-term. 4 indicates long-term oriented. But 3 would be middle-term or both. Let’s see: The text indicates \"市場成長率が12％\" - high growth environment, technology advantage requiring continuous investment. The cost is high, but they're planning to reorg to recover. They invest in employees for long-term satisfaction and stable sales, also maintain social trust, and increase shareholder value long term. So it's basically a long-term primary focus, with short-term adjustments. So rating 4. Confidence? The passage seems clear enough: yes, there's 4. Confidence medium? It's quite clear. I'll output: {\"time_horizon\": 4, \"confidence\":\"high\"} because of clear mention of long-term orientation.\n\nTherefore answer JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:27:20.176615+00:00",
+ "timestamp_responded": "2026-10-25T11:27:22.078353+00:00"
+}

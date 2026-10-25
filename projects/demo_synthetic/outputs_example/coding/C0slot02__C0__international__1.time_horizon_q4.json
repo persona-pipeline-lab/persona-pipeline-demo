@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot02|C0|international|1",
+ "seq": 51,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "9321a6bb9452b893a2c328c0c434b523d5e75a7fe7456803cb24dd8f45c3476b",
+ "prompt_sha256": "9a2937ca722d0d8de3b135df63ebd3359e1729ca9fa231ada95070a261fe9e57",
+ "raw_text": "{\"time_horizon\":4, \"confidence\":\"medium\"}",
+ "reasoning_text": "We need to determine the time horizon: 1-5.\n\nThe description: Company is planning to share investment burden via partnership, accessing resources and knowledge to counter friendly competitor that receives government support. Also via JV or partnership keep market share, mitigate brand risk.\n\nFocus on partnership to share costs, securing resources and knowledge, competition vs gov support. Longer-term? The description is about sharing burden to allow longer-term stability. The mention \"資源と知識を確保\" (securing resources and knowledge). \"市場シェアを維持\" (maintaining market share) and \"ブランドリスクを緩和\" (mitigating brand risk). These are strategic, long-term. But the immediate action is establishing partnership; could be short term to counter immediate competitor threat. But the language: \"資源と知識を確保\" (securing resources and knowledge) and \"長期\"? The decision mining: \"提携により現地投資負担を分担\" (sharing local investment burden) helps counter competitor with government support. The goal is to secure resources and knowledge, meaning longer-term advantage rather than immediate earnings. \"市場シェアを維持\" - maintain market share. That is more medium-term maybe. It could be medium-term as well. \"ブランドリスクを緩和\" (mitigate brand risk) seems about risk management, could be immediate but often considered longer-term. The overall seems to focus on securing resources and maintaining brand over time. So I'd categorize as 4 (long-term orientated). The confidence: unknown level, moderate. I'd say medium confidence.\n\nThus JSON: {\"time_horizon\":4,\"confidence\":\"medium\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:23:24.295220+00:00",
+ "timestamp_responded": "2026-10-25T11:23:25.375328+00:00"
+}

@@ -1,0 +1,24 @@
+{
+ "job_id": "D05|C3-mixed|withdrawal|1",
+ "seq": 117,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "23aaa444860b5e7d87d0ada5880bad324f64abc48e8fe736b9efaa4a746e8a8e",
+ "prompt_sha256": "cd8c11b81f468dc97b1e755e0ed4e9e8e383f08f8c338b7e163a437a4ec4fe32",
+ "raw_text": "{\"risk_orient\": 2, \"confidence\": \"medium\"}",
+ "reasoning_text": "We need to analyze the reasoning for risk orientation. The text: \"市場成長率は高く、技術的優位性も確保できるが、追加投資の負担を低減するために外部パートナーと協業することで、負担を分散させる。さらに、従業員と地域社会への影響を最小化し、ブランドへのダメージを抑えることができる。\"\n\nInterpretation: They highlight market growth high, technical advantage possible. The main reason: \"to reduce additional investment burden, collaborate with external partners to spread the burden.\" Also minimize impact on employees, community, reduce brand damage. So they're focusing on risk mitigation via collaboration, distribution of financial burden, minimizing negative impacts. They mention that they can mitigate risk; they still see potential benefit (growth). They are not strongly risk-averse, but they stress risk reduction. They adopt a risk-accepting stance but also mitigating. Use of partner collaboration indicates risk sharing. But they still see value; they aim to spread risk. So risk orientation: moderately risk-averse? They are focusing on load spreading, minimizing negative effects. That seems a risk-aversion orientation, but moderate. Why? They are actively mitigating risk by reducing burden and impact. Likely rating 2. They mention risk reduction, but still acknowledge growth. Not strongly risk-averse, but leaning.\n\nConfidence? Reasonable. So output JSON with risk_orient 2, confidence medium.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:27:42.975979+00:00",
+ "timestamp_responded": "2026-10-25T11:27:43.954970+00:00"
+}

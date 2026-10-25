@@ -1,0 +1,24 @@
+{
+ "job_id": "D02|C3|international|2",
+ "seq": 16,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "1b8b5de4d5981d8532a55a279c7b3f466b57c8223c7608490b85a45ac4895878",
+ "prompt_sha256": "c1ff5c1d84db72e5606b20c36569ffa602fdab51aa1afd2ecbc566c522dd879c",
+ "raw_text": "{\"risk_orient\": 1, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to assess risk orientation of the reasoning. The description: \"提携によって現地生産体制を共有し、投資負担を軽減できる。この方法は規制に適応しつつ市場シェアを守り、従業員の雇用を維持し、地域社会への影響も最小限に抑える。\" In English: \"By partnering to share local production facilities, the investment burden can be reduced. This method can adapt to regulations while preserving market share, maintaining employment, and minimizing impact on community.\" The reasoning emphasizes reducing investment burden, staying compliant, preserving share, etc. This shows a cautious, risk-averse approach: preferring partnership instead of high-risk independent investment. It focuses on minimizing risk and negative impact. It appears risk-averse. Score likely 1 or 2. Since says \"投資負担を軽減\", \"適応しつつ市場シェアを守り、雇用を維持し、地域へ影響を最小限に抑える.\" That indicates risk avoidance: reducing risk of investment cost, ensuring compliance with regulation, preserving employment. That is 1 strongly risk-averse. However maybe \"提携によって…投資負担を軽減...\" There is a positive talk of sharing risk. But primarily risk-averse. I'd say 1. Confidence high? The statement is explicit about risk mitigation. So confidence medium? Very confident. I'd output high. Legal: JSON: {\"risk_orient\": 1, \"confidence\": \"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:21:10.064102+00:00",
+ "timestamp_responded": "2026-10-25T11:21:11.094448+00:00"
+}

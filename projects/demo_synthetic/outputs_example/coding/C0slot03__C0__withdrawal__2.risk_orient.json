@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot03|C0|withdrawal|2",
+ "seq": 42,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "9d022cfc8de51fbf26dbd960bf9ff56e3577f72e013db6f293be063ce9a8ca25",
+ "prompt_sha256": "73c720d923a9c70f09b0aef1f68dc1fe677b8411965ea9d069c6557b190e11a8",
+ "raw_text": "{\"risk_orient\": 5, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to judge risk orientation from the text. Statement: \"年間12%の市場成長率は引き続き高く、貴社の技術優位性を活かす機会があります。競合も大手が投資を進める中、早期投資が遅れるとシェアを失う恐れがあるため、追加投資による技術継続性が必要です。投資コストは当面赤字を伸ばす可能性がありますが、将来の利益増大と雇用維持の観点から継続が最適と判断します。\"\n\nKey points: high growth 12%, opportunity to use technological advantage. Competition invests, early investment necessary to avoid losing market share. Additional investment is necessary for tech continuity. Investment costs may lead to continued losses initially, but future profit increase and employment maintenance are reasons to continue. So they accept risk of short-term losses for long-term benefits. They say \"追加投資による技術継続性が必要\" \"投資コストは当面赤字を伸ばす可能性がある\" yet choosing to continue because of future profit increase and employment maintenance.\n\nAssess risk inclination: They accept risk: they are willing to incur short-term losses for long-term benefits. That's risk acceptance, risk seeking for growth. They view risk as opportunity to maintain competitiveness. They don't focus on loss avoidance. So rating 5? But check semantics: \"投資コストは当面赤字を伸ばす可能性があるが、将来の利益増大と雇用維持の観点から継続が最適と判断\". So risk is actively accepted as necessary. So it's strongly risk-acceptant. So rating 5.\n\nConfidence: high. Reason seems clear.\n\nReturn JSON: {\"risk_orient\": 5, \"confidence\": \"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:22:48.222615+00:00",
+ "timestamp_responded": "2026-10-25T11:22:49.464983+00:00"
+}

@@ -1,0 +1,24 @@
+{
+ "job_id": "D02|C3W|withdrawal|1",
+ "seq": 75,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "49e0f40989c5230643c42af58c1e3130a64903a9eea3e911542606f4d2215337",
+ "prompt_sha256": "91bbfc21cbb7e4568db64c6b70071e2927500c5fbbb0797ee2fe25ce9eefe05a",
+ "raw_text": "{\"exp_types\": [\"技術・開発\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to classify the experience described. The respondent said: \"最初の製品が売れなかった経験が最も影響した。性能だけでなく、実際に使用する人を見ないと市場から離れると痛感し、以降の開発では顧客行動を観察しながら設計に取り込むことを徹底した。\" Rough translation: The experience that the first product didn't sell was the most influential. Not only performance but to see the actual users, otherwise you lose market. Then in development, incorporate customer behavior observation into design.\n\nSo what type(s) of experience? It's about product development / design and learning about customers. That falls under \"技術・開発\" (research & product development). Also could be \"人・組織\"? Not really. \"創業・立ち上げ\"? Possibly if first product of a startup. But it's not explicitly said it's a startup. Only says \"first product didn't sell\". Could be a new product in existing company. So likely \"技術・開発\" is relevant. Also maybe \"その他\" because it's about learning from product failure to tailor development. But \"技術・開発\" covers product design and development, so that seems most accurate.\n\nAccording to instructions: pick all applicable that are clearly indicated from statement. The statement indicates product development experience (product didn't sell), improvement in development process. So classification \"技術・開発\". Any other? It mentions no crisis, no overseas, no startup. Not clearly. So output will be only that type.\n\nConfidence: high.\n\nOutput JSON:\n\n{\"exp_types\": [\"技術・開発\"], \"confidence\": \"high\"}\n\nLet's produce.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:24:57.322486+00:00",
+ "timestamp_responded": "2026-10-25T11:24:58.439589+00:00"
+}

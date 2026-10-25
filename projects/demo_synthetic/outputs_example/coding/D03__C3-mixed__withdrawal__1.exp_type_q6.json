@@ -1,0 +1,24 @@
+{
+ "job_id": "D03|C3-mixed|withdrawal|1",
+ "seq": 113,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "cb460f5b649010faa56fb07f647bf5d9ac4b8a67752cedee70d7585f4e2720cb",
+ "prompt_sha256": "7731991bdc1c1d0f4461bea53a1dc6a4bb0c32c3055b005a96a147f273a620d1",
+ "raw_text": "{\"exp_types\": [\"危機対処\",\"技術・開発\",\"人・組織\"], \"confidence\": \"medium\"}",
+ "reasoning_text": "We have to identify categories from the six provided: \"危機対処\", \"技術・開発\", \"海外\", \"創業・立ち上げ\", \"人・組織\", \"その他\".\n\nWe consider only explicit mentions. Does the description explicitly mention \"危機対処\"? \"赤字を抱える事業\" - that's a financial crisis, but is it explicitly a crisis? Possibly. The text says: 工場長として勘を数字にし、現場の従業員と協調しながら前兆警告システムを導入した経験が最も影響した。これはシステムを導入して危機を防ぐという意味で「危機対処」? But does \"危機対処\" require mention of crisis? They said \"前兆警告システム\" to presumably avoid something like production loss. The description does mention \"赤字を抱える事業\" which is a crisis. So that might qualify for \"危機対処\". However, the instruction states \"規則: 記述に明示された経験のみ拾う（推測しない）\". The phrase \"前兆警告システム\" is a preventive system. There's no explicit mention of \"倒産\", \"事故\", or \"不祥事\" etc. They mention \"赤字を抱える事業\" which is a financial crisis scenario. So consider them as \"危機対処\"? They don't explicitly talk about managing bankruptcy or crisis. Possibly they are loosely related. But the instruction insists on not guessing. They explicitly mention \"赤字を抱える事業\" (running a business that is in deficit). Since crisis encompasses that, we may include. The phrase \"持続可能性\" etc. They also mention \"技術的課題を共に解決\" which is \"技術・開発\". They mention \"前兆警告システムを導入\" - that's a technical development or implementation. The category \"技術・開発\" applies.\n\nThey also mention \"従業員の信頼を得て\" and \"人材と技術を結び付け\" - \"人・組織\" applies.\n\nThey don't mention overseas, startup, or others.\n\nThus likely applicable categories: \"技術・開発\", \"人・組織\" maybe \"危機対処\" if we count \"赤字\".\n\nThe question: \"根拠に…言及された経験の型…該当するものすべて選んでください.\" So indeed we include all that appear explicitly. They specifically mention: \"前兆警告システム\", \"技術的課題\" - technical development. They mention \"赤字\" which is a financial crisis. The experience with a crisis might be considered. I'd include \"危機対処\".\n\nConfidence: I'd say \"medium\" because there's some ambiguity whether \"赤字\" counts as crisis. The instruction says \"推測しない\". Might be borderline. I lean to include \"危機対処\". But we could omit if it's too inferential. But \"赤字を抱える事業\" explicitly says experience dealing with deficits which is a crisis. So include.\n\nThus JSON: {\"exp_types\": [\"危機対処\",\"技術・開発\",\"人・組織\"], \"confidence\":\"medium\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:27:27.163084+00:00",
+ "timestamp_responded": "2026-10-25T11:27:29.324679+00:00"
+}

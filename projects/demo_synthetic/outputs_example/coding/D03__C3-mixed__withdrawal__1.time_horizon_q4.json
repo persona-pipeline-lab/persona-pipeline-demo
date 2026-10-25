@@ -1,0 +1,24 @@
+{
+ "job_id": "D03|C3-mixed|withdrawal|1",
+ "seq": 113,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "e477527886e78b10961145dc6faec7a46b79e2452c46895c4f07756947759123",
+ "prompt_sha256": "6cc07ddf00054edc6b7c117e86d4ef54a1bcc378fce26d7b4df3208c21b6ac8e",
+ "raw_text": "{\"time_horizon\": 3, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to rate the time horizon from 1-5, based on reasoning that says: \"追加投資が必要だが、技術的優位と市場成長は根拠がある。撤退すると雇用・地域・ブランドへの波及が大きく、従業員のモチベーションや顧客の信頼も失う。投資により設備を更新し、顧客獲得力を高めれば、将来的に赤字を黒字に転換できる。さらに、従業員へ継続的な支援を示すことで、組織としての結束力も保てる。\"\n\nWe decide the time horizon. The reasoning includes future, long-term, but also discusses immediate consequences. We should weigh broader long-term growth vs immediate short-term crisis. The primary justification: technology advantage and market growth; investment to convert losses to profits; emphasises future transition to black to red; but also warns about immediate brand and employment risk if retreat. So this suggests that they consider long-term change but also immediate risk. The level of time horizon: 3? Or maybe 4? Let's parse.\n\n- It says \"将来的に赤字を黒字に転換できる\" which is future, but not specifying years; could be medium or long. No explicit time horizon. Also \"継続的な支援\" etc. The main driver is technology advantage and market growth: 5-10 years? They don't say how long, but \"将来\" likely medium. It balances medium and long: the risk of retreat is immediate but the eventual conversion into profit is maybe longer. So we might classify as 3 (medium). Considering that it's not particularly short, but it also doesn't commit to 5+ years. So 3. Confidence? High? Because reasoning is clear. So I'd do high.\n\nThus produce JSON: {\"time_horizon\": 3, \"confidence\": \"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:27:25.876330+00:00",
+ "timestamp_responded": "2026-10-25T11:27:27.160895+00:00"
+}

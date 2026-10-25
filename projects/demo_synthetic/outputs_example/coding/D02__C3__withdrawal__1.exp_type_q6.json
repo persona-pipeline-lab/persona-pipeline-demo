@@ -1,0 +1,24 @@
+{
+ "job_id": "D02|C3|withdrawal|1",
+ "seq": 3,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "8140e786beb3e130ab0d7a6debd68f3fb4ac52a35b893b933609cf82ad56fdbb",
+ "prompt_sha256": "c4235dfb37198e508258254e4e8a34dc0571363d21a1652c8b1d9354fb2cde94",
+ "raw_text": "{\"exp_types\": [\"危機対処\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to classify types mentioned in the narrative. The statement:\n\n\"前にB社の倒産危機を経験し、取引先の支払遅延を数字で把握できずに資金繰りを崩した恐怖を味わった。そこから数字管理の重要性と、顧客・従業員・地域社会の顔を同時に管理する必要性を学んだ。\"\n\nThe explicit experience: \"倒産危機\" experienced. So type \"危機対処\" (crisis handling). Also they mention \"数字管理\" etc but that's not a type category. So only crisis type.\n\nNo mention of technology, overseas, startup, people/org, other. So output exp_types = [\"危機対処\"]. Confidence high. Let's add JSON stripping any trailing spaces.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:01:16.214291+00:00",
+ "timestamp_responded": "2026-10-25T11:01:16.846906+00:00"
+}

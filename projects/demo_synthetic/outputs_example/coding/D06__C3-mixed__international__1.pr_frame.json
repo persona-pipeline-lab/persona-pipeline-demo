@@ -1,0 +1,24 @@
+{
+ "job_id": "D06|C3-mixed|international|1",
+ "seq": 131,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "5a5205110262a05bb030fb4145defdf2d18c6269ef71db6bb6716034cafb9a9d",
+ "prompt_sha256": "ff0acfd595a8d36f94cdf2d5a64180e042942461952478757a9af780b89e6ec4",
+ "raw_text": "{\"pr_frame\": \"組織ステークホルダー\", \"confidence\": \"high\"}",
+ "reasoning_text": "We have to identify which main problem frame: \"財務収益\", \"市場競争\", \"技術\", \"組織ステークホルダー\", \"複数拮抗\". The statement: \"組織・ステークホルダーの問題で、従業員と地域社会への影響が重大です。\"\n\nThis clearly indicates \"組織ステークホルダー\" problem frame. So high confidence.\n\nWe output JSON: {\"pr_frame\": \"組織ステークホルダー\", \"confidence\": \"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:28:38.639620+00:00",
+ "timestamp_responded": "2026-10-25T11:28:39.075955+00:00"
+}

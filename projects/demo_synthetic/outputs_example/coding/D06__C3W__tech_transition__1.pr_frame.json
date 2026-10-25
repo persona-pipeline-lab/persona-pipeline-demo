@@ -1,0 +1,24 @@
+{
+ "job_id": "D06|C3W|tech_transition|1",
+ "seq": 107,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "66c0aa96ddf6a88e1ec2f992cf79c53f0db1ef62c0bd8121ef7e97b524a31c76",
+ "prompt_sha256": "7f5785acaf9a36969db6ae30ee4c422284e04cfe8a8b16af6d63f9a9fb0f4919",
+ "raw_text": "{\"pr_frame\":\"市場競争\",\"confidence\":\"high\"}",
+ "reasoning_text": "We have a short description: \"市場や競合の変化が主題で、既存技術の市場シェアが脅かされている。\"\n\nWe need to select main problem frame. Options:\n\n- \"財務収益\" (financial profitability)\n- \"市場競争\" (market competition)\n- \"技術\" (technology)\n- \"組織ステークホルダー\" (stakeholders responsibility)\n- \"複数拮抗\" (multiple frames).\n\nThe description: '市場や競合の変化が主題で、既存技術の市場シェアが脅かされている。': Market and competition changes are main theme, and existing technology's market share is threatened. So core is market competition threat due to competitors, market changes. The technology itself is threat to market share, but the core problem is about market competition (market share threatened). So likely \"市場競争\".\n\nCheck if this is \"技術\": It mentions technology as threatened, but says market share threatened. But the focus is on market and competition changing, so the threat arises from market competition. So pick 市場競争. Confidence: high. So JSON: {\"pr_frame\":\"市場競争\",\"confidence\":\"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:26:59.136547+00:00",
+ "timestamp_responded": "2026-10-25T11:26:59.963745+00:00"
+}

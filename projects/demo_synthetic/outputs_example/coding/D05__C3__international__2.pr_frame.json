@@ -1,0 +1,24 @@
+{
+ "job_id": "D05|C3|international|2",
+ "seq": 22,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "26bb81a9ce50da636bad40c97211d03578da6a7fa6071a8f89b38635745f18b7",
+ "prompt_sha256": "5315ca4654f2c2b44aa5f894ac6241650b15c6173de82852cece23e079067c4d",
+ "raw_text": "{\"pr_frame\":\"組織ステークホルダー\",\"confidence\":\"high\"}",
+ "reasoning_text": "We need to choose the primary problem frame: options: 財務収益, 市場競争, 技術, 組織ステークホルダー, 複数拮抗.\n\nThe description: \"組織・ステークホルダーの問題。特に従業員・地域社会への影響とブランド信頼の維持が重要。\"\n\nClearly focuses on organization and stakeholders, specifically employees, local society, brand trust. That aligns with 組織ステークホルダー category. So answer: \"組織ステークホルダー\", confidence high.\n\nReturn JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:21:35.830186+00:00",
+ "timestamp_responded": "2026-10-25T11:21:36.292315+00:00"
+}

@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot05|C0|withdrawal|1",
+ "seq": 45,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "65db30457e8a317021a6c13f445e65c973a8cdcd61d543b3c6fa66ae1755ede7",
+ "prompt_sha256": "664e88c04d2a10e64feb5a178686b22e50723681b96a5f2d5a81b68eae8ae458",
+ "raw_text": "{\"exp_types\": [\"技術・開発\", \"海外\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to determine which classifications match the described experience. The description: \"overseas企業と共同開発を行い、投資を分散しながら技術優位を確保した経験\". This indicates overseas involvement, joint development, technical development. We only pick explicit experiences.\n\nWhich categories? \"技術・開発\" because it's joint development and securing technical advantage. \"海外\" because overseas company involvement. So output: exp_types: [\"技術・開発\", \"海外\"]. confidence high.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:23:01.938569+00:00",
+ "timestamp_responded": "2026-10-25T11:23:02.344023+00:00"
+}

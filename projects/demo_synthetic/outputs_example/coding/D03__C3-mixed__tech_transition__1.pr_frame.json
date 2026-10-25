@@ -1,0 +1,24 @@
+{
+ "job_id": "D03|C3-mixed|tech_transition|1",
+ "seq": 137,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "227ff470b5f8f12caa5d64d9f3f6462060328e6d0ce8365ccc47ca29f1de6745",
+ "prompt_sha256": "15f5896b264b062b6cf2c66a079a771c2c66f92f3da779efd5cb88a3908251d7",
+ "raw_text": "{\"pr_frame\":\"市場競争\",\"confidence\":\"high\"}",
+ "reasoning_text": "We need to determine which of the five categories: \"財務収益\", \"市場競争\", \"技術\", \"組織ステークホルダー\", or \"複数拮抗\" best fits the primary problem described.\n\nThe statement: \"主に市場を失い、競合が新方式で優位に立ちつつあることが最大の課題です.\"\n\nIt says they mainly lose market, competitors are getting advantage with new ways. So it's about market competition: competitive disadvantage, losing market share, new methods. So the main frame: 市場競争.\n\nConfidence: high.\n\nThus JSON: {\"pr_frame\":\"市場競争\",\"confidence\":\"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:29:01.480200+00:00",
+ "timestamp_responded": "2026-10-25T11:29:01.967640+00:00"
+}

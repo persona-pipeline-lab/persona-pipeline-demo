@@ -1,0 +1,24 @@
+{
+ "job_id": "D06|C3-mixed|withdrawal|1",
+ "seq": 119,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "aae2af19a8e2f770b5711c3698c164f1d0b95860fd8e143abf9b63ddbff1a7c6",
+ "prompt_sha256": "71309bc46e251012653b1b79a2b9e93270a41aa7f23e15d799cdb8320156c426",
+ "raw_text": "{\"risk_orient\": 4, \"confidence\": \"medium\"}",
+ "reasoning_text": "We need to classify risk orientation 1-5. The description: They emphasize market growth, maintain competitiveness via investment even if short-term losses. They mention \"安全投資\" (safe investment) but also short-term deficits, \"必須\". They suggest will continue to invest, diversify risk. This indicates a leaning toward risk tolerance: They are willing to take losses for long-term gain, invest to keep technological edge, risk diversification. The wording: \"投資で競争力を維持することが重要\", \"安全投資\" but costs short-term deficits. \"リスクを分散させていく方針\". They see risk as manageable, but not avoid. The question: is it risk-accepting or risk-averse? They say \"短期赤字を犠牲にしても必須\" suggests willingness to accept risk of loss, so risk accepting. \"リスクを分散させていく方針\" not eliminating risk but mitigating. So likely 4 - risk-accepting but some caution.\n\nConfidence moderate due to consistent statements. They stress protecting brand but also note market growth. Slight risk-averse nib? but phrase \"投資で競争力を維持することが重要\" and \"安全投資\" seems to accept risk. At lower level: 5 might be too strong since they are not ignoring risk.\n\nThus 4.\n\nLet's craft JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:27:50.065858+00:00",
+ "timestamp_responded": "2026-10-25T11:27:50.996777+00:00"
+}

@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot04|C0|international|2",
+ "seq": 56,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "60e4ff315fe0905af8636f020c428ef93acf0f6c182713611a67a288105573c0",
+ "prompt_sha256": "3fd1bbc6122a5c11ed8ff17370b79153351d0390373ee5cc611b5d849985e424",
+ "raw_text": "{\"exp_types\": [\"危機対処\", \"創業・立ち上げ\"], \"confidence\":\"medium\"}",
+ "reasoning_text": "We have to identify the experience types based on the description. The description: \"過去に別市場で同様の規制強化に直面した際、合弁事業を組んで投資を分担し、リスクを軽減した経験があります。今回もパートナーシップで投資を共有する方針を支持します。\"\n\nSo they faced similar regulatory tightening in a different market, and formed a joint venture to share investment and reduce risk. That seems to be type \"技術・開発\"? No, it's about joint venture to share investment, risk management with partner. It includes risk mitigation due to regulation. Which categories correspond? \n\"危機対処\" can be crisis management like regulatory risk? But \"規制強化\" could be a crisis or risk. Might not be crisis? It's risk from regulation, but not necessarily crisis like bankruptcy. Might be \"人・組織\"? The experience is about partnership, integration, risk sharing. \"海外\" could be here if it's a different market, but it's a '別市場', could be domestic but different market. But maybe it's \"海外\"? No explicit mention of overseas. The term '別市場' means a different market but not necessarily overseas. So maybe not \"海外\". \"創業・立ち上げ\"? The joint venture might be a new business. But not necessarily founding. But could be founding a joint venture? It says \"合弁事業を組んで\" meaning formed a joint venture. That could be considered as \"創業・立ち上げ\"? Possibly. But it's definitely a partnership. \"人・組織\"? Involves partnership with other companies. That might involve organizational aspects. But the type is \"人・組織\": people, labor, organization management, mentoring. Might not be exactly. There's also \"危機対処\" for regulatory tightening risk. I'd lean \"危機対処\" because facing regulatory strengthening can be considered a risk. Also \"技術・開発\" doesn't match because no tech or product dev. \"海外\" no mention of overseas. \"創業・立ち上げ\" formation of a new JV could be considered a startup. \"人・組織\"? partner management.\n\nThus maybe the answer includes \"危機対処\" and \"創業・立ち上げ\". And maybe \"人・組織\"? But we should stick to explicit clues. The explicit: \"合弁事業を組んで投資を分担し、リスクを軽減した経験\" = J.V. formation to share investment and reduce risk. There's explicit risk and partnership. So categories: \"危機対処\" (risk mitigation due to regulatory change), \"創業・立ち上げ\" (forming a joint venture = new venture). \"人・組織\" maybe as it involves partnership with other firms; but \"人・組織\" is about HR, labor, organizational management, mentor-mentee relationship. JV is not exactly that. So I'd choose \"危機対処\" and \"創業・立ち上げ\". Confidence moderate.\n\nConfidence = medium. So JSON:\n\n{\"exp_types\": [\"危機対処\", \"創業・立ち上げ\"], \"confidence\":\"medium\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:23:46.749825+00:00",
+ "timestamp_responded": "2026-10-25T11:23:48.841106+00:00"
+}

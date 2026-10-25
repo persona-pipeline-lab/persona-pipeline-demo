@@ -1,0 +1,24 @@
+{
+ "job_id": "D04|C3-mixed|withdrawal|1",
+ "seq": 115,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "63bf0a3d580262c900cdd37b27ecc6284b60ce4162375ce2d1cb52701dd7fa17",
+ "prompt_sha256": "e39120f03bf77c81cf18adc73b67c7ccec817aeb07e7ae4f8bbb73d24071405f",
+ "raw_text": "{\"time_horizon\": 5, \"confidence\": \"high\"}",
+ "reasoning_text": "We have instruction: \"あなたは経営学研究のコーディング作業者です。以下は、ある戦略的選択の判断理由の記述です。記述だけを根拠に、判断の時間視野を1〜5の整数で評定してください。\"\n\nWe have to output JSON with \"time_horizon\": integer 1-5, \"confidence\": \"high/medium/low\". The rule: choose based on reason's wording not options, no external knowledge. The description says: \"市場成長率が高く技術優位性も残っている上に、追加投資によって将来の収益基盤を維持できる。ブランドと地域社会への信頼を失うことは、他事業への波及効果が大きい。短期的な利益よりも長期的な価値を守るため、継続投資を選択する。\"\n\nThis clearly indicates long-term orientation: they emphasize long-term value over short-term profits, and they want to preserve value for long-term. So time_horizon should be maybe 5 (for 5-10 years). Unless maybe 4? The scale: 4=長期寄り, 5=長期（5〜10年以上の成長・存続が判断の主軸）. The statement references preserving value over 5-10 years likely. Let's interpret: They say \"長期的な価値を守るため\" meaning long-term. It indicates long-term focus. Without explicit year but presumably long-term. The choice likely 5. Confidence: high because statement clearly states long-term. So JSON:\n\n{\"time_horizon\": 5, \"confidence\": \"high\"}\n\nEnsure correct JSON. No extra.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:27:35.508478+00:00",
+ "timestamp_responded": "2026-10-25T11:27:36.671338+00:00"
+}

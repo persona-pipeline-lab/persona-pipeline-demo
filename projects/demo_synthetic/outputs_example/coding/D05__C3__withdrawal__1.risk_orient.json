@@ -1,0 +1,24 @@
+{
+ "job_id": "D05|C3|withdrawal|1",
+ "seq": 9,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "c080faa39597b363a1320acb6455c44d5d881ea3d54cb2b840a7d25098dc4835",
+ "prompt_sha256": "1a7caf3855eb57284a43e63b045b8ab37f81cc19937ddd925f5225b29a8b00ab",
+ "raw_text": "{\"risk_orient\": 5, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to rate risk orientation. The text: \"市場成長率が高く、我々の技術が業界標準を上回っている点は変わらぬ根拠です。大規模投資を継続することで、技術優位性を維持し、競合の動きを先取りできます。毎朝の手帖で関係者の声を記録し、情報を共有することで半自由に意思決定できる環境を作ります。\" They emphasize market growth, superior technology, continuous large investment as maintaining superiority, keeping ahead. They are taking risk to invest large amounts to maintain market lead. They believe growth high. So risk orientation likely 5 (strongly risk-accepting). Confidence high likely. No negative tone about risk. So output. It's fairly explicit: \"大規模投資を継続する\". There's no mention of risk aversion. So 5. Confidence high.\n\nThus JSON: {\"risk_orient\": 5, \"confidence\": \"high\"}.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:20:46.111440+00:00",
+ "timestamp_responded": "2026-10-25T11:20:46.838821+00:00"
+}

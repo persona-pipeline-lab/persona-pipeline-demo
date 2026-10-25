@@ -1,0 +1,24 @@
+{
+ "job_id": "D01|C3|withdrawal|1",
+ "seq": 1,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "d56741fe77f003689fbae06b9d7c0052d9e7c1d80e38871f7514a5ae59c0182c",
+ "prompt_sha256": "d18dd2b423eca45a9ae6301d1e9310883bc3bc26abee458592cb613aa2954ffa",
+ "raw_text": "{\"exp_types\": [\"危機対処\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to pick all relevant classifications from the six: 「危機対処」, 「技術・開発」, 「海外」, 「創業・立ち上げ」, 「人・組織」, 「その他」. The description: Younger age, as factory manager experienced an accident, crisis with employees and community trust. The accident leads crisis; afterwards safety measures and transparency, rebuilding success. So main experience type is crisis management. Also \"人・組織\" maybe because they dealt with employees and community, but primary focus is crisis. It says \"工場長として事故の場を経験し、従業員と地域の信頼を失う危機に直面\" It's a crisis. The accident as a manufacturing accident, but not specifically technology development. So not \"技術・開発\". Not \"海外\", \"創業・立ち上げ\" or \"その他\" except maybe if nothing else fits. The classification includes \"人・組織\" if it's about people, HR, organization. The text: \"従業員と地域の信頼を失う危機\". They dealt with people. But the classification may still be included. However the question says \"記述に明示された経験のみ拾う\". The description explicitly says \"工場長として事故の場を経験し、従業員と地域の信頼を失う危機\". That might be interpreted as crisis handling. Human aspect of trust indicates organization, but is it explicitly mentioning \"採用・登記\"? Not mention. The main phrase: \"危機に直面\". That is clearly crisis category.\n\nThus we output: exp_types: [\"危機対処\"] probably.\n\nConfidence: high.\n\nCheck for \"危機対処\". Should we include \"人・組織\"? The brief explicitly says \"事故の場を経験し、従業員と地域の信頼を失う危機\". That acts on people but it's still crisis. Might classify \"人・組織\" as well? He did handle employees trust rebuild. However only \"従業員と地域の信頼\" about trust. That may be considered part of people/organization. The \"人・組織\" is not strongly stated; it's more about crisis. The guidelines ask for \"experience types\" that are explicitly described. \"人・組織\" isn't explicitly described beyond trust. But it might be considered. The phrase \"再建に成功した経験\" includes organizational rebuilding. The question: \"記述に明示された経験のみ拾う（推測しない）\". The description explicitly says crisis situation, accident, crisis. It says safe measures, transparency. Maybe that's part of crisis management. It doesn't explicitly mention HR, training, or organizational design beyond trust. So I'd include only \"危機対処\".\n\nConfidence high.\n\nThus JSON: {\"exp_types\": [\"危機対処\"], \"confidence\":\"high\"}.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:01:06.712939+00:00",
+ "timestamp_responded": "2026-10-25T11:01:08.697938+00:00"
+}

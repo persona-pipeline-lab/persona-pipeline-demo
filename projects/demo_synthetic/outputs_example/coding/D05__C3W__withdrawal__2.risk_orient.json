@@ -1,0 +1,24 @@
+{
+ "job_id": "D05|C3W|withdrawal|2",
+ "seq": 82,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "bda4807dab25cefe2520e1be0977a243a2bb3f0bc40274cfc6aaf5e5b9054f11",
+ "prompt_sha256": "ad8249dc579b8c0a3376b628b06c0dcfb022e2cccd4e067f7342a6becc979559",
+ "raw_text": "{\"risk_orient\": 4, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to assess risk orientation. The text: \"市場成長率12%を見越し、追加投資により技術優位を維持できると判断しました。撤退は短期利益改善につながるものの、将来成長機会とブランド・地域社会への波及効果を失うリスクが大きいです。従業員、地域社会への貢献を守りつつ既存顧客の信頼も維持します.\"\n\nThey decide to invest to maintain tech advantage. They see growth, but mention risk of losing growth opportunity and brand effect if withdraw. They talk about risk to lose opportunities is large. They invest. They are risk accepting? They perceive potential benefits outweigh risk, invest in growth. They use growth rate 12% (high). They mention loss but more weight on opportunity. So risk orientation: 4-5. That is '受容寄り' (4) to '強く受容的' (5). Probably 4? The language: \"市場成長率12%を見越し…将来成長機会…リスクが大きいです\". They acknowledge risk but choose invest to maintain advantage. They are somewhat risk tolerant, but not extreme? They do consider risk but decide to invest to avoid missing opportunity. That is risk acceptance. So rating 4. Confidence: high because text directly states made decision. Output JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:25:21.503723+00:00",
+ "timestamp_responded": "2026-10-25T11:25:22.457224+00:00"
+}

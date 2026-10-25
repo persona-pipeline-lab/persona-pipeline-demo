@@ -1,0 +1,24 @@
+{
+ "job_id": "D06|C3W|tech_transition|1",
+ "seq": 107,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "bbcf16b40f9ef431194e1295a0f580d26b34a115635beee342d6f1171f0a5b35",
+ "prompt_sha256": "5c2957278da33380b2c4da28c6587d201c4732643bc44fdb906d0e77bc1d822c",
+ "raw_text": "{\"risk_orient\":1,\"confidence\":\"high\"}",
+ "reasoning_text": "We must interpret the reasoning style: They say new method requires big investment; alone too risky, so collaborate to spread risk, continue using existing equipment to maintain market position. The focus is on risk avoidance: avoid high risk investment alone, spread risk, maintain current position. So it's risk-averse. So rating 1 or 2. They also mention maintaining position; risk-averse. They are not taking risk, but minimizing. So 1=strongly risk-averse. They might feel risk is too high. So I'd choose 1. Confidence high? The statement is clear. So {\"risk_orient\":1,\"confidence\":\"high\"}.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:26:59.966073+00:00",
+ "timestamp_responded": "2026-10-25T11:27:00.417613+00:00"
+}

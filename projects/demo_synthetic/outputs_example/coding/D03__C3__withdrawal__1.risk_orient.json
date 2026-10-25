@@ -1,0 +1,24 @@
+{
+ "job_id": "D03|C3|withdrawal|1",
+ "seq": 5,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "36b8138925e1d363b23f495c38c01682b104e83db93c2943e7e45f78ddf18321",
+ "prompt_sha256": "696a5ddb61ddb21f496997517be4d2a899e27e8cb07a74879bb8d2386735a2b9",
+ "raw_text": "{\"risk_orient\": 5, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to parse the reasoning text and evaluate the risk orientation.\n\nKey aspects:\n- Market growth 12% continuous.\n- Existing tech advantage can be maintained with 30% annual investment.\n- Competitors are investing; we can differentiate via measuring and improvement integration.\n- Retrenchment would hurt brand, affect society; not good for long-term success.\n- So the reasoning frames that continuing is worthwhile; they commit to continued investment, differentiation, continuation. That shows risk acceptance: they are committed to invest and pursue uncertainties to achieve long-term success despite potential losses.\n\nThey also note that retreat would have negative brand effect, so risk-of- losing reputation etc.\n\nThey don't mention loss aversion explicitly. They are optimistic about continued growth, strategic advantage, so likely risk-accepting. The reasoning says \"市場は12%成長\" => Opportunity. They will invest to maintain advantage. They say \"撤退すると … 長期的成功に寄与しない\" meaning better to keep going. This implies risk-accepting orientation: they embrace risk, invest, accept uncertainty.\n\nThus align with orientation 5: strongly risk-accepting. Confidence? The reasoning is clear and explicit. So confidence high.\n\nReturn JSON: risk_orient: 5, confidence: \"high\".",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:20:30.440134+00:00",
+ "timestamp_responded": "2026-10-25T11:20:31.271663+00:00"
+}

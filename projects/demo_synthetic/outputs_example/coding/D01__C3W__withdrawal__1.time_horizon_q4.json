@@ -1,0 +1,24 @@
+{
+ "job_id": "D01|C3W|withdrawal|1",
+ "seq": 73,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "d9a55cc5235f256ce64f12e1f90e8feab78fd8acb1a410f0ff464d232b804c38",
+ "prompt_sha256": "430af031a1c46aa6f3f7ef60d9d12eb303964237297c2f1fefc4ee3caa1319c4",
+ "raw_text": "{\"time_horizon\":5,\"confidence\":\"high\"}",
+ "reasoning_text": "We need to process the Japanese description: \"市場成長率が高く、技術優位性も残っているため、撤退は将来機会を失うリスクが大きいと判断しました。加えて、従業員や地域社会への社会的影響を最小限に抑え、ブランド価値の継続を図るためには投資を継続する方が望ましいと考えます。新たな投資を行えば、競合と比較して優位性を維持できると判断しました。\"\n\nWe need to rate the time horizon of the judgment using 1-5, based on the language. They mention: \"市場成長率が高く、技術優位性も残っている\" suggests long-term growth. They also mention \"投資を継続する方が望ましい\", focusing on future opportunities, minimize social impact, and maintain brand value. They mention future opportunities. There is mention of \"将来機会\" (future opportunities), \"技術優位性も残っている\" implies current advantage but also likely future. There is an emphasis on long-term strategic benefit. Probably 5.\n\nConfidence: The evaluation seems definitive: \"将来機会を失うリスク\" => future. So high confidence.\n\nReturn JSON. Use high confidence. Output must be JSON only.\n\nThus: {\"time_horizon\":5,\"confidence\":\"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:24:50.401597+00:00",
+ "timestamp_responded": "2026-10-25T11:24:51.367584+00:00"
+}

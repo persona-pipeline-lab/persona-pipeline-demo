@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot06|C0|withdrawal|2",
+ "seq": 48,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "9d022cfc8de51fbf26dbd960bf9ff56e3577f72e013db6f293be063ce9a8ca25",
+ "prompt_sha256": "73c720d923a9c70f09b0aef1f68dc1fe677b8411965ea9d069c6557b190e11a8",
+ "raw_text": "{\"risk_orient\": 4, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to score risk orientation based on the reasoning.\n\nText: \"年間12%の市場成長率は引き続き高く、貴社の技術優位性を活かす機会があります。競合も大手が投資を進める中、早期投資が遅れるとシェアを失う恐れがあるため、追加投資による技術継続性が必要です。投資コストは当面赤字を伸ばす可能性がありますが、将来の利益増大と雇用維持の観点から継続が最適と判断します。\"\n\nInterpretation: They note high market growth, competitive pressure, early investment needed. Recognize that investing now may increase current losses but expected future gains. So they weigh long-term benefits over short-term losses. Risk perspective: They accept temporary losses to capture growth, but also note potential losses. They are risk seeking in a sense: they are willing to invest despite current red ink, because they favor future profits and maintain employment. The tone is proactive acceptance of risk to gain advantage and maintain competitive edge. That seems risk-accepting, perhaps rating 4 or 5. The narrative says \"投資コストは当面赤字を伸ばす可能性がありますが、将来の利益増大と雇用維持の観点から継続が最適\" which indicates they accept potential losses to get future benefits. That suggests risk acceptance but not extreme; it's a balanced stance. So I'd give 4: risk-accepting but not radical. Confidence high: the text is explicit.\n\nThus JSON: {\"risk_orient\": 4, \"confidence\": \"high\"}\n\nLet's output.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:23:09.674430+00:00",
+ "timestamp_responded": "2026-10-25T11:23:10.812512+00:00"
+}

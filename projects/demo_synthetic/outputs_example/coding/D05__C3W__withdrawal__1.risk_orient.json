@@ -1,0 +1,24 @@
+{
+ "job_id": "D05|C3W|withdrawal|1",
+ "seq": 81,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "1aa2e68e76c84de88940fe4a08cdfe7a906935f6aacc7ac5947803dcf2ff0f75",
+ "prompt_sha256": "70c5d1a194dad267c272a21a2533f9910bf115d5a4527644c9127ec6066e841d",
+ "raw_text": "{\"risk_orient\": 4, \"confidence\": \"medium\"}",
+ "reasoning_text": "We need to read the description: \"市場は大きく成長し続ける可能性が高い。その成長に乗り込むために追加投資は必要だと認識し、従業員や地域へ与える安定的な影響を優先した。\"\n\nInterpretation: The market is believed to have high potential for continued growth. To capture this growth, additional investment is necessary, but they prioritise stable impacts on employees and the community. The reasoning: The company sees growth; they invest to capitalize but also prioritize stability. They recognize that investing may bring risk but also produce benefits, but they also care about employees and community. That suggests a balanced view: leaning toward risk acceptance? They say \"additonal investment needed\" but prioritising stability, but risk orientation depends on the focus: they are investing to capitalize growth, so they are risk-tolerant tendency. They weigh potential benefits; they also prioritize stability but still invest. So risk orientation: maybe 4 (acceptance) rather than 5. There's some caution because they also apply to not jeopardize employees. However, they think growth likely high and decide to invest. That suggests moderately risk accepting. Score 4. Confidence medium because some nuance. Provide JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:25:18.061970+00:00",
+ "timestamp_responded": "2026-10-25T11:25:18.898874+00:00"
+}

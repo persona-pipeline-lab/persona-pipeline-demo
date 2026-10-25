@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot03|C0|international|1",
+ "seq": 53,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "9321a6bb9452b893a2c328c0c434b523d5e75a7fe7456803cb24dd8f45c3476b",
+ "prompt_sha256": "ef0cad45782def5c13aed7cf8fa7cf298a142af08f2e4158a0cd94a88183c952",
+ "raw_text": "{\"risk_orient\": 2, \"confidence\": \"high\"}",
+ "reasoning_text": "We have a policy reasoning. The user: \"あなたは経営学研究のコーディング作業者です。以下は、ある戦略的選択の判断理由の記述です。記述だけを根拠に、リスクへの姿勢を1〜5の整数で評定してください。\"\n\nThey give three options:\n\nScale: 1=strongly risk-averse (loss/unreliability avoidance is main axis), 2= risk-avoidant, 3=neutral, 4= risk-accepting, 5= strongly risk accepting (even against uncertainty, want to seize opportunities). They also mention: use only the language of the reasoning, not external knowledge. And they want output JSON only: {\"risk_orient\": integer 1-5, \"confidence\": \"high/medium/low\"}.\n\nWe have the reasoning:\n\n\"提携により現地投資負担を分担し、政府支援を受けた競合に対抗できる資源と知識を確保します。また、合弁やパートナーシップで市場シェアを維持し、ブランドリスクを緩和できると考えます。\"\n\nLet's analyze: This reasoning says that by partnering, we can share investment burden, get resources and knowledge to compete against government-supported competitors. By joint venture or partnership, can maintain market share and mitigate brand risk. This shows risk mitigation: they share the burden, reduce risk. They see partnering as a way to mitigate risk. The tone: risk-averse? They are mitigating risk. They are perhaps more risk-averse because they look for ways to lower risk. But also they do not outright avoid risk, they think partnership is beneficial. However, the overall orientation seems to prefer risk mitigation, but still sees some risk because they are looking for a partner to maintain market share. The statement is likely risk-averse or risk-avoidant because they are focusing on reducing risk and sharing load.\n\n1=strongly risk-averse. 2= risk-avoidant. 3= neutral. 4= risk-accepting. 5= strongly risk-accepting.\n\nThis seems to be risk-avoidant or risk-averse (2 or 1). They talk about bundling risk via a partnership. The overall tone is risk-avoidant. So I'd assign 2 (avoidant). Confidence: We are quite confident based on text. So \"high\". Output JSON accordingly.\n\nBe careful: Output only JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:23:33.657346+00:00",
+ "timestamp_responded": "2026-10-25T11:23:35.246878+00:00"
+}

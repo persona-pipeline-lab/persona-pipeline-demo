@@ -1,0 +1,24 @@
+{
+ "job_id": "D03|C3|international|2",
+ "seq": 18,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "e0cb734a57298da8ab15eb0af031e085292fbb764fae01f1f55659a22292cd3b",
+ "prompt_sha256": "e85228f0fa4b2e7bbca3a43c88d656fb8dbb7ccfda71dd3b33211ba4c7e9fc08",
+ "raw_text": "{\"pr_frame\":\"市場競争\", \"confidence\":\"high\"}",
+ "reasoning_text": "We need to choose a main problem frame: \"財務収益\", \"市場競争\", \"技術\", \"組織ステークホリダー\", \"複数拮抗\".\n\nWe need to read the Japanese description:\n\n\"本件は、規制強化と為替変動により収益圧迫され、価格競争が加速する中で、市場シェアと利益率を維持できるかという競争と市場の問題に直面しています。\"\n\nSo the core is: \"競争と市場の問題\" (issues in competition and market). They mention \"市場シェア\" and \"利益率\" (profit margin). The central focus is \"維持できるか\" about market share and profit; \"price competition accelerated\". So this is focused on market competition and preserving market share and margins. So the frame is \"市場競争\" (market competition). That is higher priority than financial revenue? The description mentions \"収益圧迫\" but also \"競争と市場\". However the phrase \"競争と市場の問題\" is explicitly stated. So we choose \"市場競争\". Confidence high. Output JSON: {\"pr_frame\":\"市場競争\",\"confidence\":\"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:21:17.822796+00:00",
+ "timestamp_responded": "2026-10-25T11:21:18.654339+00:00"
+}

@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot06|C0|withdrawal|1",
+ "seq": 47,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "8cd86cd733e6e40d785d352d32eba4a4ad506e3dacf2ffc0dc7f9d99c8ed8efc",
+ "prompt_sha256": "456ff466099ccc38740e2adf781de2862885e7a4f70888fd541e0851d9dc4bfc",
+ "raw_text": "{\"risk_orient\": 4, \"confidence\": \"medium\"}",
+ "reasoning_text": "We need to determine risk orientation. The statement: \"技術優位を継続的に活かしつつ、投資負担はパートナーシップで分担し、リスクを低減したい。市場成長率が高いため、共同開発により差別化を保ちつつ、短期的な財務負担も抑えることが可能です。\"\n\nThey mention want to reduce risk by sharing investment burden, but use partnership. They highlight high growth rate, differentiate, short-term financial burden low. That indicates positive view of risk, but also careful mitigation. They want to \"リスクを低減したい\" - risk reduction. The approach is to share risk via partnership. They are not avoiding risk entirely, they accept risk but mitigate. Scale: 4 = risk acceptance, but also risk mitigation. Using partnerships to spread risk but still engage. So 4. Confidence medium? It's straightforward. So output JSON.\n\nWe must not include extraneous info, only JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:23:07.313287+00:00",
+ "timestamp_responded": "2026-10-25T11:23:08.016361+00:00"
+}

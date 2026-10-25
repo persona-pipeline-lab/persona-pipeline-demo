@@ -1,0 +1,24 @@
+{
+ "job_id": "D01|C3W|withdrawal|2",
+ "seq": 74,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "a9cb07b7850b183283a7ebe257aa2412a3208d59866d435939873b954f93aa8d",
+ "prompt_sha256": "020200b2789506222814dacdff1723e4883edebdfd0041b0554a8ffaaa83754b",
+ "raw_text": "{\"pr_frame\":\"複数拮抗\",\"confidence\":\"high\"}",
+ "reasoning_text": "We need to identify the main problem frame. The statement: \"財務的負担と組織・ステークホルダーへの影響が主な問題となっている。\"\n\nSo main issues: financial burden and influence on organization/stakeholders. Does that align with frames? There's \"財務収益\" (financial revenue) and \"組織ステークホルダー\" (organizational stakeholder). It says both are issues. The rule: choose only one main frame. The statement says both are main issues. But rule says: If multiple frames are equally weighted and no hierarchy can be assigned, choose \"複数拮抗\". The question: Are both main? The statement says \"財務的負担と組織・ステークホルダーへの影響が主な問題となっている。\"\n\nIt indicates both are primary concerns. So that would be multiple. The rule: choose \"複数拮抗\" only if two or more frames are of equal weight and no primary-subordinate.\n\nThus here likely multiple. So return複数拮抗.\n\nConfidence: high because clearly mentions both. The JSON: {\"pr_frame\": \"複数拮抗\", \"confidence\": \"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:24:51.981967+00:00",
+ "timestamp_responded": "2026-10-25T11:24:52.806636+00:00"
+}

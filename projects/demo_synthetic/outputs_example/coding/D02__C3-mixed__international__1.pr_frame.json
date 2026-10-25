@@ -1,0 +1,24 @@
+{
+ "job_id": "D02|C3-mixed|international|1",
+ "seq": 123,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "30c76bede6470def2d8fd87415371c7c89907adedeb0bc838d50262cb795979e",
+ "prompt_sha256": "80f1a5572b57dda5d1fb82aa80f86418640943e3a55a7197a41a5b4151083e44",
+ "raw_text": "{\"pr_frame\":\"組織ステークホルダー\",\"confidence\":\"high\"}",
+ "reasoning_text": "We have to choose a main problem frame from given categories:\n\n- 財務収益 (profitability)\n- 市場競争 (market growth, competition)\n- 技術 (technology)\n- 組織ステークホルダー (employees, suppliers, community, brand responsibility)\n- 複数拮抗 (multiple, equal weight)\n\nThe description: \"市場の成長は続くが、従業員と地域社会への影響が最も重要な課題だ。\" Means \"Market growth continues, but the impact on employees and local community is the most important issue.\" So core problem: concerns about employees and local community, implying organizational stakeholder. So choose 組織ステークホルダー.\n\nConfidence likely high. Because it's very clear.\n\nReturn JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:28:08.886235+00:00",
+ "timestamp_responded": "2026-10-25T11:28:09.442743+00:00"
+}

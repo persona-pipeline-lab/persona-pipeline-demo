@@ -1,0 +1,24 @@
+{
+ "job_id": "D02|C3-mixed|tech_transition|1",
+ "seq": 135,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "cdb6ec491769a634f1991d3ccf38264f2eae7f8dc1f85b7e0f688e1e3c0e322a",
+ "prompt_sha256": "dfbcca27b16b12678f3d4be870b60179e97243c09d36aa81e182b7c7241175c1",
+ "raw_text": "{\"exp_types\": [\"技術・開発\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We have to identify experience types based on the statement. The statement: \"B社との月次訪問で構築した信頼と共に、共同開発を推進した経験が、資源とリスクを分散させつつ技術開発を進める提携判断へ直結した。\"\n\nInterpretation: The experience involves b company's monthly visits, building trust, promoting joint development, and this experience contributed to partnership decisions that spread resources and risks while advancing technology development.\n\nWhich types?\n\n- \"技術・開発\": Yes, since joint development and advancing tech development.\n\n- \"その他\": maybe no. \"海外\": no mention of overseas. \"危機対処\": no mention of crisis. \"創業・立ち上げ\": not mentioned. \"人・組織\": building trust is part of organizational relationships, but the statement focuses on joint development rather than HR or organization management. It could possibly count as \"人・組織\" since mutual trust and collaboration imply relationship management. But regulation: \"記述に明示された経験のみ拾う（推測しない）.\" So the description doesn't explicitly mention human resources or organizational operation, but says \"共同開発を推進した経験\". That is basically joint development. Might relate to technological development rather than HR. building trust includes interpersonal aspect but not necessarily P&R. But they ask to pick all relevant categories from the 6. \"人・組織\" category is about human resources, staff management, organization operations, mentorship. The phrase \"信頼と共に、共同開発を推進した経験\" can be considered part of organization or collaboration, but I think it's more joint development.\n\nThe instructions: \"記述に明示された経験のみ拾う（推測しない）.\" Building trust is shown. But it's not explicitly \"organizing, personnel, etc.\" So I think only 技術・開発.\n\nConfidence \"high\".\n\nReturn JSON with [\"技術・開発\"].\n\nLet's produce output.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:28:54.650337+00:00",
+ "timestamp_responded": "2026-10-25T11:28:55.953993+00:00"
+}

@@ -1,0 +1,24 @@
+{
+ "job_id": "D06|C3|international|1",
+ "seq": 23,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "edeafa95693caa1b9e8827f70edead3b373e12514c9c4db9c79eb5a5b9035206",
+ "prompt_sha256": "862161fb97312a42c1dff21ad97efb46f1ac1b3c49a3007ed4c701ee10779623",
+ "raw_text": "{\"pr_frame\": \"市場競争\", \"confidence\": \"high\"}",
+ "reasoning_text": "We need to parse the instruction: There's a short description: \"市場・競争の問題として、顧客獲得の鈍化と競合の価格攻勢が主体であると捉える。\"\n\nThe task: given such a description, choose the main problem frame among options: \"財務収益\" (financial performance), \"市場競争\" (market competition), \"技術\" (technology), \"組織ステークホルダー\" (organization and stakeholders), \"複数拮抗\" (multiple competing frames of equal weight only).\n\nWe must choose the frame that the description places as the core issue. The description explicitly says \"市場・競争の問題として、顧客獲得の鈍化と競合の価格攻勢が主体である\". That is clearly about market competition - focusing on customer acquisition slowdown and competitive price attack. So the correct frame is \"市場競争\".\n\nConfidence? high. The description clearly states that. So output JSON: {\"pr_frame\": \"市場競争\", \"confidence\": \"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:21:39.647465+00:00",
+ "timestamp_responded": "2026-10-25T11:21:40.383246+00:00"
+}

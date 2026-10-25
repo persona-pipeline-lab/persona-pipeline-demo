@@ -1,0 +1,24 @@
+{
+ "job_id": "D06|C3|withdrawal|1",
+ "seq": 11,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "38a7a7001dbb38af94976418d6838785ac234603b7e7191adf886cb3dab08875",
+ "prompt_sha256": "46006fcd3754ed63335786cb43579be71628eed932b29886a549f32fa05c7c2b",
+ "raw_text": "{\"time_horizon\":5,\"confidence\":\"high\"}",
+ "reasoning_text": "We need to decide time horizon rating 1-5. We examine text: \"市場は年率12%で成長し、技術優位も確認できるため、投資を継続して長期的な成長機会を確保する価値が高い。リスクはあるが、競合が同じ市場へ投資しているため、遅れを取ると取り返しがつかなくなる恐れがある。内部リソースと地域社会に与える影響を守るため、投資を継続する判断に至った。\"\n\nIt mentions long-term opportunities, 12% growth, technological advantage, risk but need to keep pace. The focus is to secure long-term growth. That implies long-term or mid-long horizon. The scale: 5 = long-term (5-10+ years). 4 is long-term oriented, 3 is mid-term or both. They said \"長期的な成長機会を確保する価値が高い\" so \"long-term growth opportunities\" is main axis, presumably >5 years. So rating 5 likely. The confidence: I think high? The statement explicitly calls it \"長期的\" so we can be fairly confident. So output {\"time_horizon\":5,\"confidence\":\"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:20:53.512623+00:00",
+ "timestamp_responded": "2026-10-25T11:20:54.395188+00:00"
+}

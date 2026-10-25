@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot03|C0|withdrawal|2",
+ "seq": 42,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "80e209e46af6f87f2e78ac5fd7d477338499c71ff6e61b950936641aa908be49",
+ "prompt_sha256": "937d23ece32cffbeda2a750b877c5fd4af9ee80fe2862a5f427e81d99e503c45",
+ "raw_text": "{\"exp_types\": [\"技術・開発\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to classify the type(s) of experience mentioned in the description. The description: \"過去に自社が新技術投資を遅延させた際、競合に抜かれ業績が後退した経験がありました。その教訓から、積極的な投資が重要だと感じています。\" So the past experience is: the company delayed new technology investment, getting outpaced by competitors and performance declined. This appears to be \"技術・開発\" - it involves technology investment, product development, new technology. Also maybe \"危機対処\" but it's about performance decline rather than crisis. But it's not a crisis like bankruptcy. It's more \"技術・開発\" because it's about new tech investment. Could also be \"その他\"? No. The classification should include all applicable categories. For each type that is explicitly mentioned: new technology investment, delay, competitor loss. So that is technology development. There's no explicit mention of crisis or overseas or new company. So only \"技術・開発\" applies. Confidence high. Output JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:22:50.381251+00:00",
+ "timestamp_responded": "2026-10-25T11:22:51.124711+00:00"
+}

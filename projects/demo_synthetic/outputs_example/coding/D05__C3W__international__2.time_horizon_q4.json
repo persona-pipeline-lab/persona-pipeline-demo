@@ -1,0 +1,24 @@
+{
+ "job_id": "D05|C3W|international|2",
+ "seq": 94,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "d0c1ca685cfa8b5d754a1f0724178d8b2f1da898fe1855cb1128504af1c71307",
+ "prompt_sha256": "69722dd89d9b7efbaadb480e843cdb8463a80a7344cf36226b1418aa30febc8b",
+ "raw_text": "{\"time_horizon\": 5, \"confidence\": \"high\"}",
+ "reasoning_text": "We have to evaluate the time horizon of the judgment based solely on the wording. The description mentions \"長期的な市場成長(10%/年)とブランド・品質優位を活かすためには投資が必須だ。追加投資で自生産体制を確立し、品質差を維持しながらコスト競争力を高める。社内外のステークホルダーへの信頼を維持するため、段階的投資とリスク管理を徹底する。\" This emphasizes long-term, 10% annual growth, invest to maintain quality advantage etc. That suggests a long-term horizon. The scale: 5=長期（5〜10年以上の成長・存続が判断の主軸). Does the text indicate 5? It mentions \"長期的な市場成長(10%/年)\" and establishing a self-producer system. That sounds like future returns, beyond a few years. It doesn't specifically say 10 years, but the mention \"長期的\" possibly is a long-term horizon. Decision: time_horizon = 5, confidence high? Might be medium? The phrase \"段階的投資とリスク管理を徹底する\" could be about risk management, but still long-term. The main focus is 10% annual growth, brand advantage, investing to keep that. That sounds long-term. So we assign 5 and high confidence. Good.\n\nNow produce JSON: {\"time_horizon\": 5, \"confidence\": \"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:26:10.514146+00:00",
+ "timestamp_responded": "2026-10-25T11:26:11.540459+00:00"
+}

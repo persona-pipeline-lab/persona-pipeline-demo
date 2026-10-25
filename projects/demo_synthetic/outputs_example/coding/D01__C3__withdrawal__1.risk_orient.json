@@ -1,0 +1,24 @@
+{
+ "job_id": "D01|C3|withdrawal|1",
+ "seq": 1,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "0b3dfff8a6aca5ddfb58b5b067241043d8f523fc0926013ae5a1016f55eb95d7",
+ "prompt_sha256": "ee6e63a1573a32c15b3c4a023d099e8343a6724ad1b63f13ef81e0cad441da15",
+ "raw_text": "{\"risk_orient\":4, \"confidence\":\"high\"}",
+ "reasoning_text": "We have to interpret the reasoning language to classify risk orientation. Sentences: They say: \"安全基盤を整備し、技術優位を維持するためには追加投資が必要不可欠である。短期的な赤字は許容でき、長期的な市場成長を確保するために投資を継続する方が企業価値を高める。事故の教訓から、投資を怠るリスクが大きいと痛感している。\" So they discuss risk avoidance: they say short-term losses acceptable; long-term growth will enhance value; they are aware that risk of neglecting investment is big. That suggests they are risk-accepting: they accept short-term losses for future gains. They are not risk-averse. They mention risk of missing investment as big. That is essentially risk-accepting: they accept risk.\n\nBut we must consider scale: 1 strongly risk-averse, 5 strongly risk-accepting. The statement emphasises acceptance of risk for future value. So risk orientation likely high: maybe 4 or 5? But evaluate nuance: \"短期的な赤字は許容でき、長期的...\" indicates they accept short-term risk. \"投資を怠るリスクが大きいと痛感\" indicates they realize risk is high when not investing. They are somewhat risk acceptance, not risk seeking beyond known.\n\nGiven language, I'd assign 4: risk acceptant. Could be 5 if unbounded, but there is mention of risk of neglect; significance but not extremely high, but not very high either. Likely 4.\n\nConfidence: Assertions are clear; high confidence. So JSON: {\"risk_orient\":4, \"confidence\":\"high\"}\n\nCheck mapping: risk_orient: integer 1-5. Good.\n\nReturn only JSON.\n\n",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:01:04.962191+00:00",
+ "timestamp_responded": "2026-10-25T11:01:06.240796+00:00"
+}

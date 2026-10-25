@@ -1,0 +1,24 @@
+{
+ "job_id": "D01|C3W|tech_transition|2",
+ "seq": 98,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "61c70f468a0ce4226df2655605de51a2b896c5b778fd37ea60485e13fb0fe156",
+ "prompt_sha256": "a71c1cf675c9c34e1c784878cfcda890ecbf71059d9bda817425db4f186db927",
+ "raw_text": "{\"pr_frame\":\"市場競争\",\"confidence\":\"high\"}",
+ "reasoning_text": "We have a short statement: \"主力事業が顧客の需要変化に合わせて移行できず、競争圧力が高まっている。\" Means: \"The company's main business cannot transition in line with changing customer demand, and competitive pressure is increasing.\" The core issue: inability to adapt to changing customer demand. That suggests the main problems are market competition, customer demand. The issue is that main business cannot keep up with changes, which leads to competitive pressure. That is market competition - market condition. Are there other frames? Could be \"market competition\" or \"technology\" if the shift is technological or brand. But the core is adaptation to shifting customer demand, leading to increased competitive pressure. It likely refers to market competition frame (issues of market growth, competition, customer acquisition). So classification: \"市場競争\" (market competition). Confidence high.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:26:23.036644+00:00",
+ "timestamp_responded": "2026-10-25T11:26:23.632349+00:00"
+}

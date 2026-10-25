@@ -1,0 +1,55 @@
+{
+ "manifest_version": 1,
+ "created_at": "2026-10-25T20:29:33",
+ "templates": {
+  "coding_prompt.md": "a696e9a149ef678c54cf5b0f0c7d4358e3955b25fd8b297d1f60d8ec1513931c",
+  "generation_params.yaml": "d6ad209b67d8d2ec75700a2ac9c3f66c82866953108f771111c0e1354418e46b",
+  "instruction_header.md": "dc0290942c2da9392c6f313f945d4f5873384f046cfcbbed60e43eb6566ac028",
+  "output_format.md": "7b42fbaeedd8e00a3407654909bf01a57997beac702eaaba086efe7126153631",
+  "persona_block.md": "e4c916c8d998c475b317eb2fe3c325a8708bdc7d1c5167202004d9faada925dd",
+  "questions.md": "8ed0516709d1285e60889b99b961b9ad82c9395a2f31105a5df6b68077e8650d",
+  "scenario_international.md": "2cb7d8c74a944e703d49d3513aec29403cf9031a95fe07faf1912ce7e602c113",
+  "scenario_tech_transition.md": "2a975cf29b18898cb72a01576046e3220cbe5adb28c68c0b5bbebd9b2c976913",
+  "scenario_withdrawal.md": "303fa2a12ba08e185e918a9731c82db189ea3aa6282754f2e0813c6171f754bd",
+  "frozen_hashes.csv": "26115344f6df5bd5fd0d42fb5b67acd90c45728bfd1706ab92d07f583395efac"
+ },
+ "persons_csv": "76a8b3fcc156f76c488ce8113a9b3b9e002c346ef09550c01f75f10d16940252",
+ "texts": {
+  "D01": "971f7ceec2e3413c3375c39d718704a6b5251881533c97b2e92ece281429bdcf",
+  "D02": "d74ca2d057319aa8aabe03fcd5f8ccffbd57d10e840873690a79178ab69a4137",
+  "D03": "297d53a6d50698582f3a2521d24c5d6018ecf1f5dddfc22b0a7f64b07632cb7b",
+  "D04": "83ed64ca18478bd4df4961ae5508690cdc7496196db811ffc73eca70b53622b6",
+  "D05": "5541b193d9187011db3f4f6e30ab069053a7aff9021c5f0b83ab51b09883218c",
+  "D06": "7db282ae2c87892140047f0701c05e13badbdce65746fb8437f76c5c1fe7adda"
+ },
+ "config_subset_sha256": "14fa1cd0b975d8743a8a9d61814cfb3b0720e605014675508a8a11686ed87d4d",
+ "generation": {
+  "model": "gpt-oss-20b",
+  "actual_model_ids": [
+   "gpt-oss-20b"
+  ],
+  "endpoint_kind": "local",
+  "reasoning_effort": "medium",
+  "params": {
+   "temperature": 1.0,
+   "top_p": 1.0,
+   "max_tokens": 8192,
+   "seed_base": 1000
+  },
+  "n_records": 144,
+  "first_request": "2026-10-25T11:00:39.306021+00:00",
+  "last_request": "2026-10-25T11:20:22.741105+00:00"
+ },
+ "coding": {
+  "model": "gpt-oss-20b",
+  "endpoint_kind": "local",
+  "same_as_generation": true,
+  "blocks": [
+   "pr_frame",
+   "risk_orient",
+   "time_horizon_q4",
+   "exp_type_q6"
+  ]
+ },
+ "python": "3.12.9"
+}

@@ -1,0 +1,24 @@
+{
+ "job_id": "D06|C3W|international|1",
+ "seq": 95,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "c890dc7dad26dac22ceb9d4b6f2022c9a61342c81ddccac18137236198effc9a",
+ "prompt_sha256": "d16af7e801e9dec1aad1701c9f196be77ec487c643fc46bd28d95650524883d7",
+ "raw_text": "{\"exp_types\": [\"危機対処\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We have a Japanese text. We need to list types of experience mentioned in the description: from the six categories: \"危機対処\" (危機= crisis), \"技術・開発\", \"海外\", \"創業・立ち上げ\", \"人・組織\", \"その他\". They say we should only pick experiences explicitly mentioned. The description: \"事故の朝から再建の三年にわたり、現場の安全と地域社会への責任を重視した経験が最も影響した。これにより、短期的な利益よりも長期的な信頼構築と基盤投資の重要性を実感した。\"\n\nInterpretation: There was an accident (\"事故\") and \"reconstruction for three years\" etc. That implies crisis response: accident, safety, etc. So \"危機対処\" applies. It also might involve \"人・組織\" because security? But the snippet mentions focusing on safety and community responsibility; but it involves crisis. It says \"現場の安全と地域社会への責任\" meaning site safety and community responsibility. That is crisis. Not specifically about organization but about safety.\n\nThus only \"危機対処\".\n\nConfidence high.\n\nReturn JSON.\n\n",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:26:14.244195+00:00",
+ "timestamp_responded": "2026-10-25T11:26:15.087990+00:00"
+}

@@ -1,0 +1,24 @@
+{
+ "job_id": "D01|C3-mixed|tech_transition|2",
+ "seq": 134,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "c33d583105fdf61c1ee55810d96044e4e193506c55ef4fac1d0399acefde5a84",
+ "prompt_sha256": "7b14f32271c405f1e544ae74b899cbc20782965571651d9177568058632fa521",
+ "raw_text": "{\"pr_frame\":\"技術\",\"confidence\":\"high\"}",
+ "reasoning_text": "We need to pick the main problem frame based on description: \"主力事業を動かす技術優位性を失う恐れが最重要で、技術の遅れが市場競争力を大きく低下させる。\"\n\nThis is focusing on technology: loss of technological advantage, technology lag reduces market competitiveness. So core is \"技術\" frame. So output JSON {\"pr_frame\":\"技術\",\"confidence\":\"high\"} or medium. It's clear, so high.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:28:48.677063+00:00",
+ "timestamp_responded": "2026-10-25T11:28:49.056282+00:00"
+}

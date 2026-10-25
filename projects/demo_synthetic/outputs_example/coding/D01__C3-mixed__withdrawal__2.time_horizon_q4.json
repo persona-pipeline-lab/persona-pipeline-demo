@@ -1,0 +1,24 @@
+{
+ "job_id": "D01|C3-mixed|withdrawal|2",
+ "seq": 110,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "c6b209460044f8d794e8fd6b31b6c685e64c5698b8029470b63a3430d7b11ab6",
+ "prompt_sha256": "0bb6e5a4deb95390317908db91382bb72c779a39dff6a0896d4122e5c3814206",
+ "raw_text": "{\"time_horizon\": 5, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to evaluate based on description. The description mentions technical superiority and market growth synergy, continuous investment leading to value creation, direct customer feedback for improvement, maintain regional employment and brand value, secure future competitive advantage => implies a long-term outlook. Also mentions ongoing investment, continuous improvement over time, future competitive advantage. That suggests long-term (5-10+ years, long-horizons). So time_horizon 5. Confidence? Reason shown strongly indicates long term. maybe high. I'll output JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:27:10.360135+00:00",
+ "timestamp_responded": "2026-10-25T11:27:10.734445+00:00"
+}

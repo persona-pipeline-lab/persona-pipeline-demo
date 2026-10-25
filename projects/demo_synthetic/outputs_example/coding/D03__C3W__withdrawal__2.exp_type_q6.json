@@ -1,0 +1,24 @@
+{
+ "job_id": "D03|C3W|withdrawal|2",
+ "seq": 78,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "6f2e1fbe6b852e8b366bb1e50e84ca52173db1c8a3fbdf4bf9cf71b8223a736d",
+ "prompt_sha256": "00d383600def7e094d48371299edd6349cec2f5e850dfaa888873f4b22d89541",
+ "raw_text": "{\"exp_types\": [\"人・組織\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to pick all relevant experience types from the six categories based on the provided text. The text says: \"私は支配人として、多くの若手従業員が学びと認められる環境を整えることの重要性を痛感してきた。従業員が技術を学べずに離職してしまうケースを目にし、それを防ぐために投資を惜しまない姿勢を身につけた。\"\n\nThis indicates experience in \"人・組織\" because it describes managing employees, creating learning environment, dealing with employee retention, investing for training. Doesn't explicitly mention crisis or overseas, or tech or startup. So classification \"人・組織\" is relevant. Possibly also \"技術・開発\"? He talked about employees not being able to learn technology and invest. But he didn't directly talk about technical development; it's more about organizational support for learning. So only \"人・組織\". Confidence high.\n\nOutput JSON: {\"exp_types\": [\"人・組織\"], \"confidence\": \"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:25:10.525973+00:00",
+ "timestamp_responded": "2026-10-25T11:25:11.272491+00:00"
+}

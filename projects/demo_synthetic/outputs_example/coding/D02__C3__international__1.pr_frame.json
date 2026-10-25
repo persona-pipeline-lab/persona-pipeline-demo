@@ -1,0 +1,24 @@
+{
+ "job_id": "D02|C3|international|1",
+ "seq": 15,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "1fec5d2c8e2d670dc63d51919da0b660ef748ce0f4bb557209fbefb460fa0c16",
+ "prompt_sha256": "df86f6403b6223bada4adea0798fe23c5bf630e866d223ed74ec25421b7b1f3e",
+ "raw_text": "{\"pr_frame\":\"財務収益\",\"confidence\":\"high\"}",
+ "reasoning_text": "We need to pick the main problem frame. The description: \"主に財務・収益の問題で、営業赤字と投資負担が急増している。\" This focuses on financial revenue problems: negative profits, investment burden skyrocketing. So \"財務収益\". Confidence high. Output JSON.\n\nMake sure only JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:21:05.722005+00:00",
+ "timestamp_responded": "2026-10-25T11:21:06.003108+00:00"
+}

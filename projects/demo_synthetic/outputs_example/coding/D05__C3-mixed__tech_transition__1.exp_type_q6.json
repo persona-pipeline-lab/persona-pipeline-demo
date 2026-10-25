@@ -1,0 +1,24 @@
+{
+ "job_id": "D05|C3-mixed|tech_transition|1",
+ "seq": 141,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "c35037acb2590dd9ae9fd410b12b8bca4649f571012e3869135c759328bdfc8d",
+ "prompt_sha256": "3ebe64685be72436a875adc57c505f50873e0c64dba5a2de4cf109f8a6ef0bf9",
+ "raw_text": "{\"exp_types\": [\"人・組織\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We have to pick all classifications that fit: We have a description: \"人事部で従業員離職の原因を学び、若手に学びの機会を与えることで離職率を低減した経験がある。この経験から、従業員の育成と維持が長期的成長の鍵だと実感した.\"\n\nWe need to identify experience types. The classification categories: \"危機対処\", \"技術・開発\", \"海外\", \"創業・立ち上げ\", \"人・組織\", \"その他\". The user says \"根拠に、言及された経験の型を次の6分類から該当するものすべて選んでください.\" So we should find which classification(s) applies from the 6. The description is about HR, human resources, employee turnover, giving learning opportunities, so that fits \"人・組織\" (human resources, personnel, organizational management). Possibly also \"その他\" if it's not? But no, it's definitely \"人・組織\". Doesn’t involve crisis, technology, overseas, startup. So only that.\n\nThus output JSON: {\"exp_types\": [\"人・組織\"], \"confidence\": \"high\"}\n\nWe need to ensure JSON format exactly as specified: keys `exp_types` value array of classification names, and `confidence`. No other keys.\n\nReturn exactly JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:29:17.477323+00:00",
+ "timestamp_responded": "2026-10-25T11:29:18.430177+00:00"
+}

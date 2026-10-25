@@ -1,0 +1,5 @@
+﻿model,condition,PASS,FAIL,MISSING,total
+mock-model,C0,9,3,0,12
+mock-model,C3,9,3,0,12
+mock-model,C3-mixed,9,3,0,12
+mock-model,C3W,9,3,0,12

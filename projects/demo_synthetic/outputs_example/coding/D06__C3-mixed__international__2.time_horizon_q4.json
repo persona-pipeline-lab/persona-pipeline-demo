@@ -1,0 +1,24 @@
+{
+ "job_id": "D06|C3-mixed|international|2",
+ "seq": 132,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "93039add1e9f73b9143bf71c15b97dc84b53c10ee1ccf538471cac512e8d17b1",
+ "prompt_sha256": "7584ab216759dfb8a3fa2f5a2693b6b422ecf9457f23215dfb1599d6af69866d",
+ "raw_text": "{\"time_horizon\": 5, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to evaluate time horizon. The reasoning: \"長期成長率10%で市場は拡大しているため、競争優位を維持するには生産体制を強化する必要があります。過去に安全投資で短期的に赤字になった経験があるが、最終的に投資が売上と利益を安定させました。従業員と顧客の信頼を失わないためにも、持続的投資が重要だと判断します。\"\n\nThey emphasize long-term growth, 10% growth, maintain competitive advantage, maintain trust, sustainable investment. So time horizon is long-term. 5 scale: 1-5. I'd say 5 (long-term focus). Confidence: I think this is clear. High confidence. Output JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:28:43.407980+00:00",
+ "timestamp_responded": "2026-10-25T11:28:43.999146+00:00"
+}

@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot06|C0|tech_transition|2",
+ "seq": 72,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "7778dc2182ca622e8f44973050c1ab9c530e233b282c06d41f2b0259e1148ddb",
+ "prompt_sha256": "63ab384ba4aa2fb9f41e0b98a9d86fe3f1f41a0d2bf741e87654313de09fd769",
+ "raw_text": "{\"pr_frame\": \"市場競争\", \"confidence\": \"high\"}",
+ "reasoning_text": "We need to identify the main problem frame from the categories: \"財務収益\", \"市場競争\", \"技術\", \"組織ステークホルダー\", \"複数拮抗\". The description says: \"市場拡大と競合先行に対して、現在の技術力の低下だけでなく顧客離れが進行しており、競争優位性の喪失が主たる問題となっている。\" The key issues: market expansion and competition leading, current technology strength decrease, customers leaving, and competition advantage loss. It focuses on market competition, technology, and maybe customers. The core is \"競争優位性の喪失\" => competition advantage loss. That aligns with market competition. However, technology also is highlighted. The description mentions technology strength decrease. But central is \"競合先行\", \"市場拡大\", \"顧客離れ\". The main problem concept: loss of competitive advantage. Market competition seems primary frame. The technology can be a contributing but main frame is \"市場競争\". So pick panel \"市場競争\" with high confidence. The JSON output: {\"pr_frame\": \"市場競争\", \"confidence\": \"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:24:45.126349+00:00",
+ "timestamp_responded": "2026-10-25T11:24:45.961911+00:00"
+}

@@ -1,0 +1,24 @@
+{
+ "job_id": "D02|C3W|tech_transition|2",
+ "seq": 100,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "a74534fefdee3607500f9c647972398f1efc8ef3ed6c843fc1595b6173ff2366",
+ "prompt_sha256": "fb06bce466d4cd10a580c111adf937d89763e7916c22aa6560d72fdfbbe044b1",
+ "raw_text": "{\"exp_types\": [\"技術・開発\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to identify experience types from the six classifications. The description: \"設計部長時代、顧客工場を訪問して作業者の声を直接拾い、製品設計に反映した経験が、顧客目線と技術進化の両立を重視する判断に大きく影響した。\"\n\nThis mentions being design manager visiting customer factories, collecting worker voices, reflecting in product design. That is \"技術・開発\" (technological development) because it's about product design and technology. Also might be \"人・組織\" because he collected voices of employees and used to inform design? But his role was design manager, visiting, collecting voices. It's not direct \"人事・労務・組織運営・師弟関係\". It's more about stakeholder management. But the classification \"人・組織\" is for people and organization management, like HR, labor, organizational operation, mentorship. This experience is more technical and product design, so primarily \"技術・開発.\" Maybe also \"人・組織\" if we consider interacting with operators. However the rule: \"記述に明示された経験のみ拾う\" - meaning we can only include explicit classification. The description only explicitly says \"製品設計\", \"設計部長時代\" - that is technical. It does not explicitly mention \"people\" management or organizing. So I'd include only \"技術・開発\". Let's set confidence \"high\".\n\nOutput JSON:\n\n{\"exp_types\": [\"技術・開発\"], \"confidence\": \"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:26:34.568768+00:00",
+ "timestamp_responded": "2026-10-25T11:26:35.637830+00:00"
+}

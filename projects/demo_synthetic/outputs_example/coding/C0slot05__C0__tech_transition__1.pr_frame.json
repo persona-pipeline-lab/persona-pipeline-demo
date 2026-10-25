@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot05|C0|tech_transition|1",
+ "seq": 69,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "75d0f79e5de0cfa045e842b1a480c313ed30ce4a2abc4ed7d42ff2d6f73cea68",
+ "prompt_sha256": "7737581a190fa9337d3294fbf78b169257d5b9f4d5db6d1d605f89bd2985dee6",
+ "raw_text": "{\"pr_frame\":\"技術\",\"confidence\":\"high\"}",
+ "reasoning_text": "We need to choose main problem frame. The description: \"主に技術的遅れと競合優位性の喪失が深刻で、既存技術の優位を維持しつつ新方式へ転換が不可欠だ。\" This indicates both technical lag and loss of competitive advantage. The core is \"技術\". It says the primary problem is technological lag and need to transition, maintain existing tech advantage while switching to new method. So classification: \"技術\".\n\nConfidence likely high. Output JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:24:34.234779+00:00",
+ "timestamp_responded": "2026-10-25T11:24:34.628401+00:00"
+}

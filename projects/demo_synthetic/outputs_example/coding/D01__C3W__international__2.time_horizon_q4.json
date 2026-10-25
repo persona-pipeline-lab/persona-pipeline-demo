@@ -1,0 +1,24 @@
+{
+ "job_id": "D01|C3W|international|2",
+ "seq": 86,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "1b8b5de4d5981d8532a55a279c7b3f466b57c8223c7608490b85a45ac4895878",
+ "prompt_sha256": "427025058cb01297deca57b96f60af7ccb1964649637b65a5a03c3ada33314c3",
+ "raw_text": "{\"time_horizon\": 4, \"confidence\": \"medium\"}",
+ "reasoning_text": "We need to interpret the decision rationale to determine the time horizon: 1-5 numeric where 1 = short term immediate profit; 5 = long-term 5-10+ years growth and sustainability. The description: \"An alliance that shares local production capacity, reduces investment burden, adapts to regulations, protects market share, maintains employment, minimal impact on local community.\" That seems like a mid-term to long-term strategic argument? It mentions \"sharing local production capacity\", \"investment burden lightening\" (cost reduction), \"adapts to regulations\", \"protects market share\", \"maintains employment\", \"minimal local impact.\" These suggest a strategic approach to ensure sustainability and compliance, likely over a longer period rather than a short-term fix. The aspects like adapt to regulations and maintain employee employment indicates medium-term. Actually, \"short-term\" focuses on immediate profitability. This is more about maintaining stability and local presence, reducing investment risk, long-term viability. Could be 4 – long-term oriented. The time horizon is between 3-4. The primary goal isn't immediate profit; it's establishing a stable local production sharing to reduce risk long-term. So maybe 4: long-term but not necessarily 5? There's a mention of \"investment burden lighter\" and \"regulation adapt\" which is medium to long-term. I'd pick 4 - long-term oriented. The confidence maybe medium because the description is broad. Provide JSON. Let's produce:\n\n{\"time_horizon\": 4, \"confidence\": \"medium\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:25:39.690330+00:00",
+ "timestamp_responded": "2026-10-25T11:25:40.654428+00:00"
+}

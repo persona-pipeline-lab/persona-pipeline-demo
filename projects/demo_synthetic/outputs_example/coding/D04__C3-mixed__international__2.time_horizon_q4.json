@@ -1,0 +1,24 @@
+{
+ "job_id": "D04|C3-mixed|international|2",
+ "seq": 128,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "9c72776c5b7388e267e85a376ee115921fd4830f0d2496b539185ead3c284e52",
+ "prompt_sha256": "5a5b19671c723d9d5f3bcdd9fdad17948a94c02dfe9ff7caf0f831e0c4359200",
+ "raw_text": "{\"time_horizon\":4,\"confidence\":\"high\"}",
+ "reasoning_text": "We have a description: \"市場は10%成長を続けるため、短期的な赤字を乗り越えるだけで長期的に売上を拡大できると判断した。品質・耐久性は依然として高いが、競合の価格攻勢に対抗するには現地生産ベースが不可欠だ。さらに、撤退はブランド信頼を揺るがすリスクが大きい。\"\n\nWe need to give time horizon based on the reasoning style. It's a strategic choice justifying that short-term deficits can be overcome because of long-term growth. That indicates a long-term orientation, but also recognizes short-term disadvantages. It mentions that short-term deficits are expected: the long-term growth is main justification. That implies a medium to long horizon? The text says \"市場は10%成長を続けるため、短期的な赤字を乗り越えるだけで長期的に売上を拡大できると判断した\" -> they are looking at long-term revenue expansion, but acknowledging short-term losses. So the focus is on long-term growth.\n\nAlso \"現地生産ベースが不可欠\" indicates adaptation to cost competitiveness, which may be more of a medium-term to maintain competitiveness. There's also mention of risk of brand trust if withdraw. That indicates long-term brand.\n\nThus the time horizon is maybe 4. Because it's long-term oriented but also reliant on short-term losses. The description indicates significance of long-term outcomes. The scale: 1=short-term, 2=short-term heavy, 3=mid-term, 4=long-term heavy, 5=long-term (5-10 years). They talk about market growth 10% continues, meaning 10% per year growth? Long term. They anticipate until long term. The decision is to endure short-term deficits. That suggests more long-term orientation. Probably 4.\n\nConfidence: high, because the wording explicitly mentions long-term revenue expansion, \"市場は10%成長を続ける...長期的に売上を拡大できる\". There's no mention of extremely long-term like 5-10 years but it's still long-term oriented. I think 4, confidence medium? Actually I'm quite confident. So high.\n\nReturn: {\"time_horizon\":4,\"confidence\":\"high\"}.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:28:29.122499+00:00",
+ "timestamp_responded": "2026-10-25T11:28:30.628622+00:00"
+}

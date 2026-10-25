@@ -1,0 +1,24 @@
+{
+ "job_id": "D05|C3W|tech_transition|1",
+ "seq": 105,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "683dff6567e66a451371bc7ab508d0fa457662460372f6bdc668c268e452eab4",
+ "prompt_sha256": "71c1a48276aad0f0421914820b735d97898c4e068b62d52e37ed1f22b9594f6e",
+ "raw_text": "{\"pr_frame\": \"市場競争\", \"confidence\": \"high\"}",
+ "reasoning_text": "We have a description: \"市場・競争の問題として、既存技術が競合に劣り、顧客が新方式へ移行し始めることで収益機会が失われ、業界全体の成長に追随できなくなるリスクが高まっています。\"\n\nWe need to pick underlying problem frame: \"市場競争\" vs \"技術\" vs others. The description mentions \"既存技術が競合に劣り\" indicating technology disadvantage. It also mention \"顧客が新方式へ移行し始める\" meaning customers are moving to new method (perhaps new technology by competitor). It says \"収益機会が失われ\" and \"業界全体の成長に追随できなくなるリスクが高まっています.\"\n\nThe core issue seems to be competitiveness due to technology; losing market share due to competition and technology gaps. It's a combination of market competition and technology. However the classification says if it's \"複数拮抗\" only if two or more frames are equally weighted, otherwise choose one. Which one is core? The description emphasises technology disadvantage causing customers to switch, leading to revenue loss and falling behind the industry's growth. That seems to incorporate both market competition (customer acquisition, market share) and technology (technical disadvantage). But arguably the core is \"市場競争\" because it's about competing in market, customers moving away, revenue lost, industry growth. It acknowledges technology disadvantage as cause. The question says choose the main problem frame. \"問題の核心\" is \"existing technology is inferior\" which is a technology issue. So likely \"技術\" frame. But wording: \"市場・競争の問題として\" at start. So they frame it as 市場競争. But also mention 技術. Might be ambiguous.\n\nThe instruction: choose the single primary problem frame. We must decide. Let's parse: The description: \"市場・競争の問題として\" => He identifies it as market competition issue. Then he explains cause: existing technology inferior... So the primary is 市場競争/market competition. Even though technology is root cause, but overall it is a market problem. The classification asks to choose one. Let's choose \"市場競争\".\n\nConfidence: high because it's explicitly titled that.\n\nReturn JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:26:51.040462+00:00",
+ "timestamp_responded": "2026-10-25T11:26:52.517417+00:00"
+}

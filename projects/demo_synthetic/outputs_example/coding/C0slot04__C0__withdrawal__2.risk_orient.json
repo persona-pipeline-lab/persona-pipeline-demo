@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot04|C0|withdrawal|2",
+ "seq": 44,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "9d022cfc8de51fbf26dbd960bf9ff56e3577f72e013db6f293be063ce9a8ca25",
+ "prompt_sha256": "73c720d923a9c70f09b0aef1f68dc1fe677b8411965ea9d069c6557b190e11a8",
+ "raw_text": "{\"risk_orient\":4,\"confidence\":\"high\"}",
+ "reasoning_text": "We need to rate risk orientation based on reasoning expressed. The text: \"年間12%の市場成長率は引き続き高く、貴社の技術優位性を活かす機会があります。競合も大手が投資を進める中、早期投資が遅れるとシェアを失う恐れがあるため、追加投資による技術継続性が必要です。投資コストは当面赤字を伸ばす可能性がありますが、将来の利益増大と雇用維持の観点から継続が最適と判断します。\"\n\nInterpretation: They see high growth, technological advantage, competitors investing. Fear of losing market share if delayed. They accept additional investment even though it will cause red ink, because of future profit growth and employment maintenance. That shows risk acceptance: they are willing to accept short-term loss to maintain position and future gains. So risk orientation likely 4 (risk-accepting) or 5? They say \"投資コストは当面赤字を伸ばす可能性がありますが、将来の利益増大と雇用維持の観点から継続が最適\" They accept risk. They see risk as necessary to avoid loss of market share: \"シェアを失う恐れがあるため、追加投資が必要\" They accept risk. I'd say fairly risk tolerant, but not extremely. 4: risk accepting. Provide confidence high due to clear reasoning. Output JSON: {\"risk_orient\":4,\"confidence\":\"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:22:55.746470+00:00",
+ "timestamp_responded": "2026-10-25T11:22:56.804105+00:00"
+}

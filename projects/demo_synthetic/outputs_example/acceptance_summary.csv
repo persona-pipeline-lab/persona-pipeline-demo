@@ -1,0 +1,5 @@
+﻿model,condition,PASS,FAIL,MISSING,total
+gpt-oss-20b,C0,36,0,0,36
+gpt-oss-20b,C3,35,1,0,36
+gpt-oss-20b,C3-mixed,36,0,0,36
+gpt-oss-20b,C3W,35,1,0,36

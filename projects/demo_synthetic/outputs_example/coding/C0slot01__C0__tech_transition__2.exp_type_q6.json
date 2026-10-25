@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot01|C0|tech_transition|2",
+ "seq": 62,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "b8759ccc39de01e8cd96b21c05482bd41e4669afa7ce8d354dd7fc9d3b9a8041",
+ "prompt_sha256": "52e172fdbb4e8fdaeb888da221b659b2656f528775f48af2c38f34e7aa79fb4c",
+ "raw_text": "{\"exp_types\": [\"危機対処\", \"技術・開発\", \"海外\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to extract the experience types from the description. The description: \"以前、同業界で新技術導入の遅れが危機的状態を招いた際、海外のサプライヤーと戦略提携を結び、共同開発で市場へ迅速に投入した経験がある。これにより投資リスクを分散し、短期間で市場シェアを回復できた点を貴社の状況に活かすべきと考える。\"\n\nWe can identify the experiences:\n\n- \"新技術導入の遅れが危機的状態を招いた際\" implies crisis, so crisis management. The response: \"海外のサプライヤーと戦略提携を結び、共同開発で市場へ迅速に投入\" implies overseas collaboration, overseas business experience; also technology development.\n\nWe have three categories: \"危機対処\", \"技術・開発\", and \"海外\".\n\nThe description says: \"海外のサプライヤーと戦略提携\" not necessarily being \"海外駐在\" but \"海外にあるサプライヤー\" overseas. This is not exactly \"海外事業\" but it's foreigners. We need to match the classification \"海外\" meaning overseas presence or overseas business. Yes, the Likely classification: overseas.\n\nAlso \"共同開発\" is a technology development scenario.\n\nThus the experience types are: \"危機対処\", \"技術・開発\", \"海外\". Perhaps \"創業・立ち上げ\"? no. \"人・組織\"? no. So we output JSON.\n\nWe also need confidence: high. Because category matches.\n\nThus output JSON:\n\n{\"exp_types\": [\"危機対処\", \"技術・開発\", \"海外\"], \"confidence\":\"high\"}.\n\n",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:24:12.538772+00:00",
+ "timestamp_responded": "2026-10-25T11:24:13.784162+00:00"
+}

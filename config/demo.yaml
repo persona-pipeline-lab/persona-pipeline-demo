@@ -1,0 +1,78 @@
+# Demo configuration. Everything that can be changed without touching the code is here.
+# The project's own config.yaml (projects/<name>/config.yaml) is merged on top of this file.
+
+project: projects/demo_synthetic        # relative to the repository root; override with --project
+
+# --- design ---------------------------------------------------------------
+conditions: [C3, C0, C3W, C3-mixed]     # any subset of these four
+reps: 2                                  # repetitions per (slot, condition, scenario)
+scenarios:                               # file = a file in the templates folder
+  - {id: withdrawal, file: scenario_withdrawal.md}
+  - {id: international, file: scenario_international.md}
+  - {id: tech_transition, file: scenario_tech_transition.md}
+
+templates:                               # file names inside the templates folder
+  header: instruction_header.md
+  persona: persona_block.md
+  questions: questions.md
+  output_format: output_format.md
+  coding_prompt: coding_prompt.md
+  generation_params: generation_params.yaml
+  hashes: frozen_hashes.csv
+
+placeholders:
+  persona: "{AUTOBIOGRAPHY}"            # replaced by the person's text inside persona_block.md
+  coding: "{INPUT_TEXT}"                # replaced by the sentence to be coded inside coding_prompt.md
+
+paths:                                   # relative to the project folder
+  persons_csv: inputs/persons.csv
+  texts_dir: inputs/texts
+  templates_dir: templates
+  outputs_dir: outputs                   # working folder (not tracked by git)
+  example_dir: outputs_example           # saved example run (tracked); used by `replay`
+
+# --- generation endpoint (any OpenAI-compatible server) ---------------------
+generation:
+  endpoint_kind: local                   # free label recorded in the records: local | colab | api
+  base_url: "http://localhost:1234/v1"   # LM Studio default; Ollama: http://localhost:11434/v1
+  api_key_env: DEMO_GEN_API_KEY          # name of the environment variable that holds the key (may be empty for local servers)
+  model: gpt-oss-20b
+  max_tokens_param: max_tokens           # some APIs need max_completion_tokens
+  timeout_seconds: 900
+  retries: 2
+  retry_backoff_seconds: 10
+  params:
+    temperature: 1.0                     # these three must equal templates/generation_params.yaml
+    top_p: 1.0
+    max_tokens: 8192
+    seed_base: 1000                      # seed = seed_base * 100 + rep
+    reasoning_effort: medium             # recorded in the ledger and the records; set null if the server rejects it
+
+# --- acceptance: value sets (the seven-rule structure itself is fixed in the code) ---
+accept:
+  q1_symbols: "ABCDEFGH"
+  q2_categories: [1, 2, 3, 4]
+  q3_options: ["撤退", "縮小", "継続投資", "提携"]
+  q5_names: ["株主", "従業員", "顧客", "取引先", "地域社会"]
+
+# --- coding endpoint (separate from generation). null = same as generation ---
+coding:
+  endpoint_kind: null
+  base_url: null
+  api_key_env: null
+  model: null
+  temperature: 1.0
+  top_p: null
+  max_tokens: 4096
+  reasoning_effort: null
+  json_mode: false                       # true asks the server for response_format=json_object
+  blocks:                                # order = order of the blocks in templates/coding_prompt.md
+    - {name: pr_frame, source: q2_text, output_key: pr_frame}
+    - {name: risk_orient, source: q4_text, output_key: risk_orient}
+    - {name: time_horizon_q4, source: q4_text, output_key: time_horizon}
+    - {name: exp_type_q6, source: q6_text, output_key: exp_types}
+
+# Written next to the datasets (dataset_NOTICE.txt) and printed. Wording to be reviewed.
+dataset_notice: >
+  SYNTHETIC DEMONSTRATION DATA. These tables were produced from fictional texts to show that the
+  procedure runs end to end. They have no research meaning and must not be analysed as findings.

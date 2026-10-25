@@ -1,0 +1,24 @@
+{
+ "job_id": "D03|C3|withdrawal|2",
+ "seq": 6,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "e32653ac263b363990167072c156ac3976f990cd2e9b79fe54525425624b8137",
+ "prompt_sha256": "1cd37081d24d7387e0e8e0805af9d789688b90cc205fb9b86154ae1c02c8bfcb",
+ "raw_text": "{\"exp_types\": [\"技術・開発\", \"海外\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to output JSON with exp_types array containing applicable categories based on the statement. The statement says: \"最初の製品が売れなかった経験からユーザーを観察し、作業者の「測りたくなるか」を設計に取り入れたことや、海外工場で手順の理由を文書化し文化ギャップを埋めた経験が、何度も投資と改善を繰り返す意志を支えています。\"\n\nInterpretation: There is experience in product development (技術・開発): \"最初の製品が売れなかった経験\" => product development. Also \"ユーザー観察\" and design. \"測りたくなるか\" indicates design. That's tech/development.\n\nSecond part: \"海外工場で手順の理由を文書化し文化ギャップを埋めた経験\" => overseas factory. So \"海外\" category.\n\nThus categories: 技術・開発, 海外. That's it. Not crisis etc. So output exp_types: [\"技術・開発\", \"海外\"], confidence high.\n\nReturn JSON: {\"exp_types\": [\"技術・開発\", \"海外\"], \"confidence\":\"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:20:37.537015+00:00",
+ "timestamp_responded": "2026-10-25T11:20:38.402113+00:00"
+}

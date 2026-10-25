@@ -1,0 +1,24 @@
+{
+ "job_id": "D06|C3W|international|1",
+ "seq": 95,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "38ab2ac4cbd04562365bbfba0562a7fcc4125c9ce9be0bb209f8c21723c98c53",
+ "prompt_sha256": "5bbd74a20ef27724da5cf8928f141ec65a1b18566f1dc7f4a2ebbcd016de30ed",
+ "raw_text": "{\"time_horizon\": 5, \"confidence\": \"high\"}",
+ "reasoning_text": "We have to decide the time horizon rating based on the textual reasoning. The text emphasizes long-term market growth, maintaining tech advantage, brand, future revenue recovery and market share. It warns that delaying leads to regulation or competition accelerated, causing bigger losses. They suggest a phased update instead of waiting. So the focus is on long-term growth, protecting from future threat. This seems focused on 5 years or more. But still a 3? The phrase \"将来的に\" suggests future. \"5〜10年以上\" is specific for 5. So answer likely 5. Need confidence: The statement is strongly long-term oriented, with margins expecting future revenue. So high. The limitations: not external knowledge, only based on reasoning language. So high confidence.\n\nThus output JSON with time_horizon 5, confidence high.\n\n",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:26:13.679111+00:00",
+ "timestamp_responded": "2026-10-25T11:26:14.242197+00:00"
+}

@@ -1,0 +1,24 @@
+{
+ "job_id": "D02|C3-mixed|withdrawal|2",
+ "seq": 112,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "18ad2b99428c7c645406f18d31372d7b9c28795516cd39bca07e34385e601619",
+ "prompt_sha256": "7cda288bbae2a18f99eb0a6cc95f4d68b56f21c2674870c94f9b2d8847195f15",
+ "raw_text": "{\"exp_types\": [\"危機対処\", \"技術・開発\", \"人・組織\"], \"confidence\": \"medium\"}",
+ "reasoning_text": "We need to choose all applicable classifications that match the experiences mentioned explicitly within the description. The text:\n\n\"工場の安全投資と研究所予算削減を含む再建期間において、短期の損失を見越しながら基盤を強化する経験が、今回の継続投資決断に大きく影響しました。従業員が学べる環境と安全性を最優先にする方針が、長期的な業績回復と成長を支える鍵だと実感しました。\"\n\nIt describes factory safety investment, research lab budget cuts, during a reconstruction period. The experience: reengineering to strengthen foundation with short-term losses, ensuring employee learning environment and safety priority.\n\nNow which categories apply? Concerns: \"危機対処\" might apply because it's a reconstruction period after likely a crisis or downturn. That could be considered crisis response. The phrase \"再建期間\" suggests maybe crisis or financial distress. So \"危機対処\" likely.\n\n\"技術・開発\" – \"研究所予算削減を含む\" – research lab budget reduction maybe not necessarily development experience. It says safety investment and research lab budget cuts. \"研究所予算削減\" may not necessarily explicit development but research. But category \"技術・開発\" is for R&D, product development, production technology. The text mentions \"研究所予算削減\" but that's a reduction, not experience about developing technology. But maybe it still involves research labs. Not explicit but maybe qualifies as \"技術・開発\" because it mentions research lab as part of the organization. However they only mention budget cuts, not technology development. I'd lean that it's not technology or R&D-specific for decisions? The classification: \"研究開発・製品開発・生産技術の経験\" – mention of research lab might still be part of R&D, but they cut it. There was an experience of dealing with labor reallocation? Not explicitly. I'd probably include \"技術・開発\" because research lab relates to R&D experience. But maybe it's ambiguous.\n\n\"海外\" – no mention of overseas.\n\n\"創業・立ち上げ\" – no mention.\n\n\"人・組織\" – mention \"従業員が学べる環境と安全性を最優先にする\" – that is about employee environment and safety. That's organizational/HR policies. That falls under \"人・組織\" because employee experience, organizational culture, HR. So include that.\n\n\"その他\" – only if none of the above fit. We have at least crisis and people. So no need \"その他\".\n\nThus likely \"危機対処\" and \"人・組織\". Possibly include \"技術・開発\" but that might be too broad. The text: \"工場の安全投資\" refers to plant safety investment. That is a safety technology, maybe production technology or safety tech. \"工場の安全投資\" indicates improving plant safety technology, thus \"技術・開発\" might include production technology. The category includes production technology experience. So that qualifies. So maybe include that as well.\n\nThus classification list: [\"危機対処\", \"人・組織\", \"技術・開発\"]. Provide confidence: high? Let's consider uncertainty: whether \"危機対処\" is correct? The phrase \"再建期間\" indicates likely a reconstruction period after crisis. So yes. \"人・組織\"? yes. \"技術・開発\"? Since it's investment in safety and budget cuts for research, but not explicit development. However \"工場の安全投資\" - that is technology development for safety. So qualifies. So low uncertainty? \"技術・開発\" might be arguable. We can include but lower confidence. Provide high? Might be medium? Crisp. I think moderate confidence. So set confidence to \"medium\".\n\nJSON format: {\"exp_types\": [...], \"confidence\":\"medium\"} Ensure correct.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:27:22.080296+00:00",
+ "timestamp_responded": "2026-10-25T11:27:24.658101+00:00"
+}

@@ -1,0 +1,24 @@
+{
+ "job_id": "C0slot02|C0|withdrawal|2",
+ "seq": 40,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "9d022cfc8de51fbf26dbd960bf9ff56e3577f72e013db6f293be063ce9a8ca25",
+ "prompt_sha256": "73c720d923a9c70f09b0aef1f68dc1fe677b8411965ea9d069c6557b190e11a8",
+ "raw_text": "{\"risk_orient\": 5, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to determine risk orientation based on wording: It mentions high growth, opportunity to capitalize on technical advantage, competition investing, fear of loss of market share if delayed. Also says investment will likely result in current losses (赤字 extend) but future profits and employment maintenance. The reasoning leans toward risk acceptance: they accept the risk of near-term losses for potential future gains; they emphasize opportunity: high growth, maintain advantage, competition pressure, risk of losing share. They view risk as a necessary investment rather than avoiding losses. The words: \"追加投資による技術継続性が必要です。投資コストは当面赤字を伸ばす可能性がありますが、将来の利益増大と雇用維持の観点から継続が最適と判断します。\" They accept short term losses. So this is risk-accepting; likely rating 4 or 5. Let's quantify: \"高く\", \"機会があります\" strongly claims opportunity; \"早期投資が遅れるとシェアを失う恐れがある\" threat but also \"継続が最適\" indicates they accept risk. That fits 5? But does it show \"機会を取りに行くことが判断の主軸\"? Yes. \"投資コストは当面赤字を伸ばす可能性\" but they still choose it for future benefit. So it's strongly risk-accepting: rating 5. Confidence? The language strongly indicates risk reception; it's clear. Confidence high. So output JSON: risk_orient:5, confidence:\"high\".",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:22:40.044850+00:00",
+ "timestamp_responded": "2026-10-25T11:22:41.096804+00:00"
+}

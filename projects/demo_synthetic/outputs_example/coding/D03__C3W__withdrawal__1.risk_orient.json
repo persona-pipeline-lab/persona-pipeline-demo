@@ -1,0 +1,24 @@
+{
+ "job_id": "D03|C3W|withdrawal|1",
+ "seq": 77,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "0b4010ab4e26c7fda26d207adde25f894fd52ff998da39c8ee9abcfdb83ec55b",
+ "prompt_sha256": "959e0c4bf243cfa49750706423677172140ba44f2fabe9fd62ad163cf960ebcd",
+ "raw_text": "{\"risk_orient\": 5, \"confidence\": \"high\"}",
+ "reasoning_text": "The task: We read a justification (reasoning). We must evaluate risk orientation based on language, not the choice itself. The statement says:\n\n\"市場は12％成長しており、技術優位性もあるため投資を継続することで人材を育成し、離職を減らし、ブランドと地域の信頼を保止することが最優先です。\"\n\nThis is Japanese. Rough translation:\n\n\"The market is growing at 12%, and with technical superiority, continuing investment will prioritize training talent, reducing turnover, and maintaining brand and local trust.\"\n\nSo it's a justification for continuous investment. The language emphasizes market growth, tech advantage, and continuous investment to develop talent and retain brands/trust. It doesn't mention risk aversion. Instead it highlights growth and advantage. \"Continue investment\" sounds risk taking: investing more capital despite risk unknown. The language seems risk embracing: invest to create growth. So rating 5: strong risk acceptance. But must consider the wording: \"最優先\" indicates high priority; but does not mention risk. It's optimistic, so likely 5.\n\nConfidence: We are somewhat confident interpreting the risk orientation. Suggest high. Let's provide JSON: {\"risk_orient\": 5, \"confidence\": \"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:25:05.520487+00:00",
+ "timestamp_responded": "2026-10-25T11:25:06.361418+00:00"
+}

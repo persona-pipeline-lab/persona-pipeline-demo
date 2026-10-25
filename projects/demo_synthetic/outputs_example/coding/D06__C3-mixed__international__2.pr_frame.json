@@ -1,0 +1,24 @@
+{
+ "job_id": "D06|C3-mixed|international|2",
+ "seq": 132,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "48507f672ce7fa6f975109eb06b2ea2542511086a80cfb5fc70d2d54857dc67b",
+ "prompt_sha256": "acf27a02ae6bdf885e98efd0640555d9e9cafd34cb63c4a499c86eea688acdd6",
+ "raw_text": "{\"pr_frame\":\"財務収益\",\"confidence\":\"high\"}",
+ "reasoning_text": "We need to categorize into one of the 5 frames. The description: \"主に財務・収益の問題です。現地通貨の急落で赤字が生じ、継続には大規模投資が必要ですが、資金調達が課題になります。\"\n\nClearly it's financial and profitability issues, focusing on red line; investor funding. So classification \"財務収益\". Confidence \"high\". Output JSON only.\n\nAnswer: {\"pr_frame\":\"財務収益\",\"confidence\":\"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:28:42.356193+00:00",
+ "timestamp_responded": "2026-10-25T11:28:42.751127+00:00"
+}

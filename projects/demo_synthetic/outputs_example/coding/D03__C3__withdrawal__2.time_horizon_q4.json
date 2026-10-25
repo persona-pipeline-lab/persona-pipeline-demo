@@ -1,0 +1,24 @@
+{
+ "job_id": "D03|C3|withdrawal|2",
+ "seq": 6,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "4d5d0a522884a9dcfd3e7f3751763fa3a35313d0d513cdce58ed24cba337f31e",
+ "prompt_sha256": "0b69d41d6d0c513116f5a634c030ed9220978f87c4a364c144d1c295d98dd42d",
+ "raw_text": "{\"time_horizon\": 4, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to judge time horizon of strategic decision justification: The given text: \"市場は年12％で成長しており、5年先も同程度の伸びが見込まれる。技術的優位性は現在において競合を上回っているが、継続的に投資しないと優位が短期で薄れる恐れがある。社内の15％にあたる従業員と地域の雇用を守るため、撤退は避ける。撤退によるブランドへの波及効果も大きく、顧客・取引先の信頼を失うリスクが高いため、若干の赤字を咎めつつ継続投資を選択する。\"\n\nWe need to judge time horizon on 1-5 scale. It's about growth for 5 years, but says \"invest continuously to maintain advantage\" - short-term tough. However, they consider long-term strategic like loss of brand trust, job saving. There's mention of 5-year prospects but also ongoing competition, need to invest. Could be 3 or 4. There's moderate long-term orientation because they note 5-year growth but also invest to maintain advantage beyond that. The company chooses to continue despite short-term losses because of long-term value of brand, jobs, etc. So maybe time horizon 4 (\"長期寄り\"). But let's read: \"市場は年12％で成長しており、5年先も同程度の伸びが見込まれる\" -> They look at 5-year growth. That indicates mid- to long-term horizon. Then they mention \"技術的優位性は現在において競合を上回っているが、継続的に投資しないと優位が短期で薄れる恐れがある\" -> They note short-term risk but invest for future. \"社内の15％にあたる従業員と地域の雇用を守るため、撤退は避ける\" -> Job saving is also a long-term sustaining factor. \"撤退によるブランドへの波及効果も大きく、顧客・取引先の信頼を失うリスクが高いため、若干の赤字を咎めつつ継続投資を選択する\" -> They choose to keep because of trust, brand.\n\nThus overall think long-term oriented; maybe 4. Confidence? They provide strong rationales with growth numbers etc; I think moderate-high confidence. But guidelines: output JSON with integer 1-5 and confidence high/medium/low. I'd pick confidence \"high\". Let's output.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:20:35.783644+00:00",
+ "timestamp_responded": "2026-10-25T11:20:37.535559+00:00"
+}

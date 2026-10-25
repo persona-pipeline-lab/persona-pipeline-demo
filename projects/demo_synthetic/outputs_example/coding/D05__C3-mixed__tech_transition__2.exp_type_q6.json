@@ -1,0 +1,24 @@
+{
+ "job_id": "D05|C3-mixed|tech_transition|2",
+ "seq": 142,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "4022c2ae66ebd77548cefbfb33c8810ee3d94842e41cac6dcc29d47bd570df73",
+ "prompt_sha256": "8fa20d3e7993bb06884cd25375bb8ca9bd20e031e8f671e78ec001922984aa44",
+ "raw_text": "{\"exp_types\": [\"技術・開発\", \"人・組織\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to parse the statement: \"従業員が学べない環境での離職を減らした経験や、技術開発に大きな投資を行い顧客に価値を示し続けた経験から、技術と投資を組み合わせて長期的に持続可能な成長を図る重要性を学んだ。\"\n\nThey mention two experiences: 1) reducing employee turnover in an environment where employees cannot learn; 2) investing heavily in technology development to continuously show value to customers.\n\nWe need to match to the six classifications:\n\n- \"危機対処\": crisis response like bankruptcy etc. Not described here.\n\n- \"技術・開発\": research & development & product dev & production tech experience. That includes \"技術開発に大きな投資を行い顧客に価値を示し続けた経験\". That matches technology & development.\n\n- \"海外\": not mentioned.\n\n- \"創業・立ち上げ\": not mentioned.\n\n- \"人・組織\": includes HR, labor, organization management, mentorship. Reducing employee turnover due to lack of learning environment is about HR & organization. That seems to match \"人・組織\".\n\n- \"その他\": not needed.\n\nThus two types: \"技術・開発\" and \"人・組織\".\n\nConfidence: high because it's explicitly mentioned.\n\nThus output JSON: {\"exp_types\": [\"技術・開発\", \"人・組織\"], \"confidence\": \"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:29:20.210707+00:00",
+ "timestamp_responded": "2026-10-25T11:29:21.270088+00:00"
+}

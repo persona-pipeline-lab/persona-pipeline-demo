@@ -1,0 +1,24 @@
+{
+ "job_id": "D02|C3W|tech_transition|1",
+ "seq": 99,
+ "block": "exp_type_q6",
+ "source": "q6_text",
+ "input_sha256": "d797e552e28c4969f4c219e9ee39a741d58765266a8d952aca7c12acde83719b",
+ "prompt_sha256": "bed5429ccac796db9db0900c429c574afaf58b6cddd22dbf4e94ca9c3cdc91f0",
+ "raw_text": "{\"exp_types\": [\"技術・開発\", \"海外\"], \"confidence\": \"high\"}",
+ "reasoning_text": "We need to classify into which categories: \"危機対処\", \"技術・開発\", \"海外\", \"創業・立ち上げ\", \"人・組織\", \"その他\".\n\nWe read the statement: \"最初の製品失敗から得た教訓―使用者の実際の動きを観察し、設計に反映させる重要性。海外工場で現地技術者と協働し、手順の理由を文書化した経験が、技術とノウハウの共有を重視する姿勢を培った。これらが、外部企業との提携に踏み切る根拠になった。\"\n\nWe need to list all relevant types. Direct mention: produsfail -> learn -> designers. That indicates \"技術・開発\" because it's about product design and lessons. Also \"海外\" due to overseas factory, collaborating with local technicians. There's no mention of crisis, startup, people/org or other. So likely just \"技術・開発\" and \"海外\".\n\nBut does \"海外\" classify as overseas experience? Yes, overseas factory, collaboration? That is overseas experience: \"海外\". So include those two.\n\nConfidence? We are quite certain. So high.\n\nReturn JSON: {\"exp_types\": [\"技術・開発\", \"海外\"], \"confidence\": \"high\"}\n\nNote: formatting must be JSON. Ensure proper quoting.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:26:30.275075+00:00",
+ "timestamp_responded": "2026-10-25T11:26:31.246149+00:00"
+}

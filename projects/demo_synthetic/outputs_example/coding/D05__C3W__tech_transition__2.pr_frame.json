@@ -1,0 +1,24 @@
+{
+ "job_id": "D05|C3W|tech_transition|2",
+ "seq": 106,
+ "block": "pr_frame",
+ "source": "q2_text",
+ "input_sha256": "f40ee55262d118cbb37261cc0e08964ed83c644deafa38083387047e9873b7ed",
+ "prompt_sha256": "a6806762f5e1d6576316fe2f6067f0dfc4672fb8407d1264a55d26c2536b019d",
+ "raw_text": "{\"pr_frame\": \"市場競争\", \"confidence\": \"high\"}",
+ "reasoning_text": "We need to choose main problem frame based on the short description. The description: \"競合の新方式が市場で拡大しており、主要顧客の切り替えが進むため、競争と成長機会の押さえ方が課題となっている。\"\n\nMeaning: Competitors' new methods are expanding in market and main customers are switching, so controlling competition and growth opportunities is the challenge.\n\nThis is about market competition, growth opportunity, customer acquisition/retention.\n\nThus the category is \"市場競争\" (market competition). So pr_frame: \"市場競争\". Confidence high.\n\nReturn JSON.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:26:55.924140+00:00",
+ "timestamp_responded": "2026-10-25T11:26:56.395758+00:00"
+}

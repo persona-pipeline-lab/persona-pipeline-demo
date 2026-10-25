@@ -1,0 +1,24 @@
+{
+ "job_id": "D04|C3|international|2",
+ "seq": 20,
+ "block": "time_horizon_q4",
+ "source": "q4_text",
+ "input_sha256": "8ca1c82456f871305aaf9f7ab4a71dfb2deaa688adb038a7606f30ca9b9607a3",
+ "prompt_sha256": "674478aa7d92427561458b7f836df23456ce1d8fb690a11fbf1feeefefee0ab2",
+ "raw_text": "{\"time_horizon\": 4, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to analyze the provided text. The decisions are based on \"従業員が事業の根幹であると自らの経験から確信している。投資があることで現地での雇用を守り、従業員の学びの場と認められる環境を維持できる。ブランドへの影響を最小化し、国内外での信頼を保持できると判断した。\" This seems to focus on employee welfare and brand trust by making investment to preserve local employment. The emphasis is on maintaining impact on brand minimal and trust domestic/external. This indicates long-term perspective? The text does not mention immediate returns but indicates trust, brand, and employee welfare, which often is long-term. It emphasizes \"ensure local employment\" which is a long-term benefit. However it also \"minimize brand impact\", especially \"brandへの影響を最小化し、国内外での信頼を保持\" is about the present? Actually, it might be both.\n\nWe need to assign time horizon 1-5: 1 = short term, 5 = long term. I hypothesize 4: long-term oriented. Because the mention of \"employments\", \"learning environment\", \"brand trust\" indicates long-term. There's no mention of short-term profit. So likely 4 or 5. The example says \"3=中期・両論\" if they consider both. If it mentions \"minimize brand impact\" and \"maintain trust domestically and abroad\" that is probably long-term brand trust.\n\nBut we need to interpret textual clues. The statement: \"従業員が事業の根幹であると自らの経験から確信している。投資があることで現地での雇用を守り、従業員の学びの場と認められる環境を維持できる。ブランドへの影響を最小化し、国内外での信頼を保持できると判断した。\" => He is certain that employees are core. He says investment helps protect local employment and maintain learning environment, preserving brand trust domestically and abroad. The emphasis is on preserving trust and employment for the long run. Not immediate profits.\n\nWhat about confidence: high, medium, low. Evaluate relative clarity. The statement is fairly confident: he's certain about employees. He evaluates that investment helps achieve long-term goals. We can set \"medium\" or \"high\". Since it's fairly straightforward, maybe high.\n\nHence final output: {\"time_horizon\": 4, \"confidence\": \"high\"}\n\nLet's produce JSON only with no commentary.",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:21:29.614652+00:00",
+ "timestamp_responded": "2026-10-25T11:21:31.296804+00:00"
+}

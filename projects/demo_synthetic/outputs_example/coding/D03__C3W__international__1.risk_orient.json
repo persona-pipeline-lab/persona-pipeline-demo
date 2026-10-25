@@ -1,0 +1,24 @@
+{
+ "job_id": "D03|C3W|international|1",
+ "seq": 89,
+ "block": "risk_orient",
+ "source": "q4_text",
+ "input_sha256": "1dfefa2f04d14fede7df842884bb186ae53a0a15fb954065444eaceb5859d9dc",
+ "prompt_sha256": "ff8bf76096e1690d4ca73f0f6316ee407d14c98aefeee717ebf391b480f4d1c0",
+ "raw_text": "{\"risk_orient\": 4, \"confidence\": \"high\"}",
+ "reasoning_text": "We need to analyze only the reasoning text: \"市場は10％成長し続けており、投資を行わず撤退すると将来的な市場シェアを大きく失う恐れがある。また、従業員が多く、育成と技術維持が不可欠であるため、規模を減らさずに現地生産体制を強化することで競争力を維持できる。\"\n\nInterpretation: The reasoning emphasises that investing and not pulling out risks losing market share. It implies willingness to invest, sustaining scale, maintain production. It's risk-accepting orientation? It suggests market growth 10% continuing, so future losses by not investing; wants to reinforce present production to maintain competitiveness. The tone: They see risk of losing future market share if they don't invest, but they are willing to invest to maintain competitiveness. That is risk acceptance, but also risk-avoidance? Let's think: The decision: invest no withdrawal. Reason: Market growing; withdrawal leads to loss. So they evaluate risk as potential loss; they decide to invest to avoid loss. So they are risk-averse to the loss of market share, but they are willing to take risk to invest. The reasoning is risk acceptance of financial risk to maintain competitiveness; they see market growth and emphasize the importance of staying to avoid loss. The orientation: risk-accepting? The scale implies that they will invest, not leaving. So they accept risk of spending.\n\nThus scoring: 4 (受容寄り) maybe. They are accepting the potential risk of not investing, but see the benefit of investing. They are not strongly risk-averse; they are leaning risk acceptance.\n\nConfidence: high because the reasoning strongly indicates risk orientation. So output: {\"risk_orient\": 4, \"confidence\": \"high\"}",
+ "error_message": "",
+ "model": "gpt-oss-20b",
+ "actual_model": "gpt-oss-20b",
+ "endpoint_kind": "local",
+ "same_as_generation": true,
+ "params": {
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 4096,
+  "reasoning_effort": "medium",
+  "seed": null
+ },
+ "timestamp_requested": "2026-10-25T11:25:52.636586+00:00",
+ "timestamp_responded": "2026-10-25T11:25:53.825462+00:00"
+}
