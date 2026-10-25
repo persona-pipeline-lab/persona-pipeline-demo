@@ -24,7 +24,7 @@ The template files were produced by extracting, from the study's frozen prompt d
 
 The prompts that the models receive are in Japanese. English reference translations may be placed in `templates/reference_translation_en/`; they are **not** used for generation and **not** hashed.
 
-## 2. Three ways to run it
+## 2. Two ways to run it
 
 1. **Replay mode (no model, seconds).** Uses the answers saved in `projects/demo_synthetic/outputs_example/`.
 
@@ -52,8 +52,6 @@ The prompts that the models receive are in Japanese. English reference translati
 
    The default model name is `gpt-oss-20b`. The saved example was generated with vLLM 0.30.0 (`--reasoning-parser openai_gptoss`) on one NVIDIA H200 (141 GB) of a research cluster; see `projects/demo_synthetic/RUN_RECORD.md`. Other servers may differ in hardware needs and in how they separate the reasoning text (not verified here).
    Keys are read from the environment variable named in the config; they are never written to a file.
-
-3. **Colab (free GPU).** Not available in this version; planned for a later stage.
 
 ### Two levels of reproducibility
 
@@ -114,7 +112,7 @@ If you change a template file, regenerate `frozen_hashes.csv` deliberately; the 
 ## 7. Limits and what has not been checked
 
 - The saved example (`outputs_example/`) comes from one real run (vLLM + gpt-oss-20b on one GPU; `projects/demo_synthetic/RUN_RECORD.md`). The automated tests still use a dummy client and small fixtures, not a live model.
-- Whether the free Colab tier can run the default model, and whether other endpoints keep the reasoning text out of the answer, are not checked. In the saved run the reasoning text was returned in a separate field and no answer contained it.
+- Whether other endpoints keep the reasoning text out of the answer is not checked. In the saved run the reasoning text was returned in a separate field and no answer contained it.
 - 2 of the 144 answers in the saved run failed acceptance rule 1 (not valid JSON: a Japanese closing quote `」` where `"` was expected). They are kept in `rejects.csv` and excluded from the coding and from the accepted rows of dataset A, as the procedure prescribes.
 - The default coder is the generating model (a simplification).
 - Synthetic texts cannot show that findings from real data would be reproduced.
