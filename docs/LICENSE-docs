@@ -1,4 +1,4 @@
-Documentation, templates, scenarios, questions and synthetic texts in this repository
+Documentation, templates, scenarios, questions and fictional autobiographies in this repository
 (everything that is not program code) are licensed under the
 Creative Commons Attribution 4.0 International license (CC BY 4.0).
 
@@ -9,4 +9,4 @@ The program code (engine/, demo.py, tools/, tests/) is licensed under the Apache
 
 Attribution: "The authors" (anonymous during Stage 1 review; to be updated at Stage 3).
 
-NOTE (draft): the full legal text is referenced by URL, not embedded.
+Note: the full legal text is referenced by URL, not embedded.

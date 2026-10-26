@@ -1,6 +1,6 @@
-# English summaries of the synthetic autobiographies (D01–D06)
+# English summaries of the fictional autobiographies (D01–D06)
 
-These are one-paragraph summaries of fictional, synthetic texts written for the demo. The people, companies and events do not exist. The summaries describe the content of each text only; they do not state the attribute values in `persons.csv`. The Japanese texts in `texts/` are the only inputs the engine uses; these summaries are for readers who do not read Japanese.
+These are one-paragraph summaries of fictional autobiographies written for the public demo. The people, companies and events do not exist. The summaries describe the content of each text only; they do not state the attribute values in `persons.csv`. The Japanese texts in `texts/` are the only inputs the engine uses; these summaries are for readers who do not read Japanese.
 
 ## D01
 

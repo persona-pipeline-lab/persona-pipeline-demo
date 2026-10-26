@@ -33,7 +33,7 @@ paths:                                   # relative to the project folder
 
 # --- generation endpoint (any OpenAI-compatible server) ---------------------
 generation:
-  endpoint_kind: local                   # free label recorded in the records: local | colab | api
+  endpoint_kind: local                   # free label recorded in the records: local | api
   base_url: "http://localhost:1234/v1"   # LM Studio default; Ollama: http://localhost:11434/v1
   api_key_env: DEMO_GEN_API_KEY          # name of the environment variable that holds the key (may be empty for local servers)
   model: gpt-oss-20b
@@ -72,7 +72,7 @@ coding:
     - {name: time_horizon_q4, source: q4_text, output_key: time_horizon}
     - {name: exp_type_q6, source: q6_text, output_key: exp_types}
 
-# Written next to the datasets (dataset_NOTICE.txt) and printed. Wording to be reviewed.
+# Written next to the datasets (dataset_NOTICE.txt) and printed.
 dataset_notice: >
   SYNTHETIC DEMONSTRATION DATA. These tables were produced from fictional texts to show that the
   procedure runs end to end. They have no research meaning and must not be analysed as findings.

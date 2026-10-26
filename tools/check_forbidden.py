@@ -5,7 +5,8 @@
 
 Checks
   * absolute paths: C:\\Users, /home/, /Users/
-  * forbidden words (project-internal labels; Dropbox and scratchpad are matched case-insensitively)
+  * forbidden words (Dropbox and scratchpad, matched case-insensitively); project-specific labels go in the
+    external list given by DEMO_NAME_LIST, like names
   * secret-looking strings (sk-..., AKIA..., ghp_..., AIza..., api_key = <long token>)
   * .ipynb files: non-empty outputs, execution counts, and metadata keys beyond kernelspec/language_info
   * optional: names listed in the file named by the environment variable DEMO_NAME_LIST
@@ -27,7 +28,7 @@ SKIP_FILES = {os.path.join("tools", "check_forbidden.py"), "BUILD_REPORT.md"}
 PATH_PATTERNS = [("abs_path", re.compile(r"[A-Za-z]:[\\/]+Users|/home/|/Users/"))]
 # Personal names and model names are NOT listed here (this file is public); put them in the
 # external list given by DEMO_NAME_LIST.
-WORDS = [("SMJ", 0), ("W4", 0), ("scratchpad", re.I), ("Dropbox", re.I)]
+WORDS = [("scratchpad", re.I), ("Dropbox", re.I)]
 WORD_PATTERNS = [("word:" + w, re.compile(re.escape(w), fl)) for w, fl in WORDS]
 SECRET_PATTERNS = [
     ("secret", re.compile(r"sk-[A-Za-z0-9_-]{16,}")),
