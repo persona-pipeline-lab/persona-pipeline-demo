@@ -13,7 +13,7 @@ It does not test hypotheses and it does not compute any test statistic.
 | Part | Folder | What it is |
 |---|---|---|
 | Engine (generic) | `engine/`, `demo.py` | Python code that assembles prompts, sends them, runs the format check and the classification, builds the dataset and audits the record. Contains no template wording. |
-| Template (empty) | `projects/_template/` | Where you put your own texts and person table. The `templates/` folder holds the templates (Japanese) and their SHA-256 record. |
+| Project template (empty inputs) | `projects/_template/` | Where you put your own texts and person table. The `templates/` folder holds the templates (Japanese) and their SHA-256 record. |
 | Public demo example | `projects/demo_synthetic/` | Fictional autobiographies, a fictional person table, saved responses (`outputs_example/`). The attribute values in the person table were **set by the authors as a design table** when the texts were written; they were not derived from the texts. Two of the six texts (D05, D06) carry no cue to their attributes on purpose. |
 | Tests | `tests/` | Replay-mode tests (no GPU, no model). |
 | Tools | `tools/` | A pre-push scan (`check_forbidden.py`). |
@@ -36,7 +36,7 @@ The prompts that the models receive are in Japanese. English reference translati
    It first compares `manifest.json` with the current templates, texts and settings (and stops if anything differs),
    then rebuilds every text, compares the SHA-256 values with the saved ledger, runs the format check,
    reads the saved classification results, builds the dataset and runs the audit. The rejected responses are printed before the dataset is built.
-   The automated tests run this mode.
+   The automated tests run this mode on small test fixtures (`tests/fixtures/`).
 
 2. **Generate mode (your own PC or any OpenAI-compatible endpoint).** Edit `config/demo.yaml` (`generation.base_url`, `generation.model`, optionally `coding.*`), then:
 
@@ -49,6 +49,8 @@ The prompts that the models receive are in Japanese. English reference translati
    python demo.py dataset
    python demo.py audit
    ```
+
+   Optionally, `python demo.py snapshot` copies the finished run to `outputs_example/` and writes `manifest.json`, so that `replay` can use it. It deletes the existing `outputs_example/` first.
 
    The default model name is `gpt-oss-20b`. The saved example was generated with vLLM 0.30.0 (`--reasoning-parser openai_gptoss`) on one NVIDIA H200 (141 GB) of a research cluster; see `projects/demo_synthetic/RUN_RECORD.md`. Other servers may differ in hardware needs and in how they separate the reasoning text (not verified here).
    Keys are read from the environment variable named in the config; they are never written to a file.
@@ -82,7 +84,7 @@ Values in the output (for example the choice of option) stay in Japanese. Free-t
 | Public demo step | Study step | What is simplified |
 |---|---|---|
 | Build, hash check | Machine assembly from fixed templates, pre-send check, ledger | Same design (ported) |
-| Generate | Open-weight models on a research cluster, thousands of jobs | One small model, tens of jobs; `reasoning_effort` is a new degree of freedom |
+| Generate | Open-weight models on a research cluster, thousands of jobs | One small model, 144 jobs in the saved run; `reasoning_effort` is a new degree of freedom |
 | Format check | Seven format criteria; rejections recorded only | Same design |
 | Classification | A model from a different family, four variables, sentence only | Default: same model as generation (can be separated); the same four variables |
 | Dataset | A larger dataset built by a separate script | Two minimal tables |
@@ -121,9 +123,9 @@ If you change a template file, regenerate `frozen_hashes.csv` deliberately; the 
 ## 8. Status, provenance and how to verify
 
 - **Version.** Tag `v0.1-stage1` is the snapshot that accompanies a Stage 1 research proposal under anonymous review. Author names and a citation will be added at a later stage.
-- **Tested on.** Windows 11 (Python 3.12.10) and Ubuntu via GitHub Actions (Python 3.12): `python -m pytest`, `python demo.py check`, `python demo.py replay` and `python tools/check_forbidden.py`.
+- **Tested on.** Windows 11 (Python 3.12.10): `python -m pytest`, `python demo.py check`, `python demo.py replay` and `python tools/check_forbidden.py`. Ubuntu via GitHub Actions (Python 3.12): `python -m pytest`, `python demo.py check` and `python tools/check_forbidden.py` (the replay tests inside pytest use small test fixtures, not `projects/demo_synthetic/`).
 - **Saved run.** `projects/demo_synthetic/RUN_RECORD.md` records the model revision, server version, generation parameters, counts, timing and the two rejected responses.
-- **Fictional autobiographies.** The six autobiographies were written for this public demo; `projects/demo_synthetic/WRITING_NOTES.md` records the writing rules and the checks made (no years, no real names, no real events). They were also compared with the texts of this study (no 12-character overlap) and probed with three commercial models using this study's fixed re-identification prompt (0 of 90 trials named a person of this study under the pre-registered rules).
+- **Fictional autobiographies.** The six autobiographies were written for this public demo; `projects/demo_synthetic/WRITING_NOTES.md` (in Japanese) records the writing rules and the checks made (no years, no real names, no real events). They were also compared with the texts of this study (no 12-character overlap) and probed with three commercial models using this study's fixed re-identification prompt (0 of 90 trials named a person of this study under decision rules fixed in advance).
 - **Integrity.** `projects/_template/templates/frozen_hashes.csv` and `projects/demo_synthetic/outputs_example/manifest.json` hold SHA-256 values; `python demo.py replay` stops if any template, text or relevant config value differs from the saved run.
 - **Not included.** Real autobiographies, real names, the real-data responses, and the analysis code for this study's hypotheses. During review, questions reach the authors through the journal.
 
